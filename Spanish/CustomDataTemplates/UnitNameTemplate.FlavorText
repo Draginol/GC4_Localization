@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Data/Schema/FlavorText.xsd">
+
+
+  
+  <FlavorTextDef>
+    <InternalName>LASTNAME</InternalName>
+    
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <IgnoreGender>true</IgnoreGender>
+        <CitizenRace>CITIZEN_RACE</CitizenRace>
+      </Requirements>
+      <Text>Smith</Text>
+      <Text>Jones</Text>
+      
+      <PreferenceWeight>200</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  
+  <FlavorTextDef>
+    <InternalName>FIRSTNAME</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <IgnoreGender>true</IgnoreGender>
+        <CitizenRace>CITIZEN_RACE</CitizenRace>
+      </Requirements>
+      <Text>Bob</Text>
+      <Text>Joe</Text>
+      
+      <PreferenceWeight>200</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef> 
+  
+</FlavorTextDefs>
