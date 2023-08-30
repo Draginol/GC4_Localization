@@ -14,6 +14,6 @@ We've provided a simple Python GUI app in the main directory of the repository. 
 When you're ready to share your translations, check in your changes. Our team will review submissions to decide what becomes an official part of the game. We appreciate every contribution, and if you make significant edits, we'll make a dedicated effort to include your name in the game's official credits.
 
 ### Game Language Support
-Keep in mind, the game will only support languages other than English after September 2023. But if you're using the September 1 Insider's branch, you can select your language from the Options menu right away.
+Keep in mind, the game won't support all the languages in game yet. But if you're using the September 1 Insider's branch, you can select your language from the Options menu right away.
 
 Happy translating, good luck, and most importantly, have fun!
