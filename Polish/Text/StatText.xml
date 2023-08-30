@@ -1,0 +1,2831 @@
+<?xml version="1.0" ?>
+<root>
+  <StringTable>
+    <Label>STATNAME_EscapeAbility</Label>
+    <String>&quot;Umiejętność Ucieczki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_HitPointsCap</Label>
+    <String>&quot;Maksymalna liczba punktów życia, jaką mogą mieć nasze statki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EscapeChance</Label>
+    <String>&quot;Szanse na Ucieczkę z Bitwy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AdministratorCount</Label>
+    <String>&quot;Liczba Administratorów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EngineerCount</Label>
+    <String>&quot;Liczba Inżynierów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ScientistCount</Label>
+    <String>&quot;Liczba Naukowców&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EntrepreneurCount</Label>
+    <String>&quot;Liczba Handlarzy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FarmerCount</Label>
+    <String>&quot;Hrabi Farmer&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EntertainerCount</Label>
+    <String>&quot;Liczba Artystów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SoldierCount</Label>
+    <String>&quot;Liczba Żołnierzy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ClericCount</Label>
+    <String>&quot;Hrabia Klerka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrisonerCount</Label>
+    <String>&quot;Liczba Więźniów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_WarProfitMult</Label>
+    <String>&quot;Czerpanie zysków z wojny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ExpBonus</Label>
+    <String>&quot;Bonus doświadczenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Deception</Label>
+    <String>&quot;Oszustwo&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Intimidation</Label>
+    <String>&quot;Zastraszenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Intimidation</Label>
+    <String>&quot;Zastraszenie jest używane do manipulowania innymi z powodu strachu, aby zmusić ich do wykonania tego, co chcesz. Może być używane przeciwko innym cywilizacjom, aby poprawić warunki handlowe, a także zmusić wydarzenia do pójścia na twoją korzyść. Jest to potężne narzędzie, ale kiedy zawiedzie, celem nie będzie szybko zapomnieć, co próbowałeś zrobić.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Persuasion</Label>
+    <String>&quot;Perswazja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Persuasion</Label>
+    <String>&quot;Perswazja to zdolność, którą możemy wykorzystać podczas handlu z innymi cywilizacjami. Zwiększa ona postrzeganą wartość naszego handlu.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonyApproval</Label>
+    <String>&quot;Akceptacja Kolonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RandomTechSlots</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] Losowe Sloty Technologiczne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_RandomTechSlots</Label>
+    <String>Kontroluje liczbę dostępnych technologii, które mogą być wybrane do badania.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanBuildAsteroidMiningBase</Label>
+    <String>&quot;Może budować bazy górnicze na asteroidach&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FactionPower</Label>
+    <String>&quot;Moc frakcji [ICON=Stat_Faction_Power_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EconomicPower</Label>
+    <String>&quot;[ICON=Stat_Economic_Power_Icon] Potęga Gospodarcza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MilitaryPower</Label>
+    <String>&quot;Moc militarna [ICON=Stat_Military_Power_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechPower</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] Moc Technologiczna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetClass</Label>
+    <String>&quot;[ICON=Stat_Planet_Class_Icon] Klasa Planety&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetClassEffect</Label>
+    <String>&quot;[ICON=Stat_Planet_Class_Icon] Efekt Klasy Planety&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BasePlanetDefense</Label>
+    <String>&quot;Obrona Bazy [ICON=Stat_Planet_Class_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SoldieringBonus</Label>
+    <String>&quot;Umiejętności żołnierskie [ICON=Stat_Legion_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CitizenDefense</Label>
+    <String>&quot;[ICON=Stat_Planet_Class_Icon] ObronaObywatelska&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsHomeworld</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Świat ojczysty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsCapital</Label>
+    <String>&quot;Stolica [ICON=CivilizationCapital_Stat_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Credits</Label>
+    <String>&quot;Skarbiec [ICON=Stat_Credits_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Approval</Label>
+    <String>&quot;[ICON=ApprovalStatIcon] Zatwierdzenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Approval</Label>
+    <String>&quot;Akceptacja to miara, jak twoi obywatele postrzegają twój rząd. Może być ona wpływana przez twoją [HS=HS_Taxes]Stawkę Podatkową[/HS], [HS=HS_Ideology]Ideologię[/HS], [HS=HS_Crime]Przestępczość[/HS] i wiele więcej. Różne gatunki mają różne motywacje, więc sprawdź swoich obywateli, aby zobaczyć, co jest lubiane i nielubiane.[BR][BR]Akceptacja twojej planety to średnia akceptacja wszystkich obywateli na tej planecie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GoodsAndServices</Label>
+    <String>&quot;[ICON=Stat_Morale_Icon] Morale&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FundedProduction</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] Możliwości produkcyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_FundedProduction</Label>
+    <String>&quot;Maksymalna produkcja dostępna, gdy jesteś w pełni finansowany.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FundedResearch</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] Pojemność badawcza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_FundedResearch</Label>
+    <String>&quot;Maksymalna produkcja dostępna, gdy jesteś w pełni finansowany.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Military</Label>
+    <String>&quot;[ICON=MilitaryManufacturingStatIcon] Wojskowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Military</Label>
+    <String>&quot;Oto, ile produkcji dany świat przyczynia się do lokalnej Stoczni.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Research</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] Badania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Research</Label>
+    <String>&quot;Im wyższy jest twój Poziom Badawczy, tym szybciej uczysz się nowych technologii. Poziom Badawczy zapewniają zasoby naturalne twojego świata [HS=HS_NaturalResources]Natural Resources[/HS] i jest zwiększany dzięki ulepszeniom badawczym i naukowcom.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EmporiumFavor</Label>
+    <String>&quot;Ulubione Emporium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_EmporiumFavor</Label>
+    <String>&quot;Endless Emporium to frakcja, która kontroluje międzygalaktyczny handel.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_NaturalLeagueFavor</Label>
+    <String>&quot;Przychylność Naturalnej Ligi&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_NaturalLeagueFavor</Label>
+    <String>&quot;Naturalna Liga to rosnący ruch, który odrzuca cybernetykę i syntetyczne formy życia we wszystkich rodzajach.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_WarforgedFavor</Label>
+    <String>&quot;Przychylność Warforged&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_WarforgedFavor</Label>
+    <String>&quot;Warforged to rosnący ruch, który wierzy, że tylko silni przetrwają.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CulturePoints</Label>
+    <String>&quot;Punkty Kultury&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CulturePointsPerTurn</Label>
+    <String>&quot;[ICON=Stat_Culture_Icon] Punkty Kultury Na Miesiąc&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CreditsPerTurn</Label>
+    <String>&quot;Miesięczny dochód [ICON=Stat_Credits_Net_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GrossCreditsPerTurn</Label>
+    <String>&quot;Dochód [ICON=Stat_Credits_Net_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_InfluencePerTurn</Label>
+    <String>&quot;Wzrost wpływu [ICON=InfluenceGrowth_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CulturePerTurnBenevolent</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Dobroczynna Produkcja Kultury&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CulturePerTurnNeutral</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Produkcja Ideologii Pragmatycznej&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CulturePerTurnMerciless</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Bezwzględna Produkcja Kultury&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ProductionPoints</Label>
+    <String>&quot;[ICON=Stat_Raw_Productive_Icon] Surowa Produkcja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ProductionPoints</Label>
+    <String>&quot;Surowa produkcja Twojej planety jest używana do zasilania produkcji, badań i bogactwa.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_InfluencePerTurn</Label>
+    <String>&quot;Kulturowa produkcja Twojej planety definiuje wpływ na galaktykę.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PreviousTurnProductionPoints</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Punkty Produkcji z Poprzedniej Tury&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonyGrossIncome</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] Dochód brutto&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ColonyGrossIncome</Label>
+    <String>&quot;Liczba Kredytów generowanych przez twoje światy. Proporcja, która trafia do twojego skarbca, jest oparta na twoim Podatku.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Mining</Label>
+    <String>&quot;Całkowita liczba zasobów zebranych z strategicznych zasobów gromadzonych przez twoje bazy kosmiczne na miesiąc.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonyTaxRevenue</Label>
+    <String>&quot;Dochód [ICON=Stat_Credits_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ColonyTaxRevenue</Label>
+    <String>&quot;Dochód zebrany z tego świata jest zależny zarówno od Bogactwa świata, jak i stawki podatku, którą ustawiłeś.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Influence</Label>
+    <String>&quot;[ICON=Stat_Influence_Icon] Wpływ&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Influence</Label>
+    <String>&quot;Wpływ kontroluje rozprzestrzenianie się granic twojej cywilizacji. Przy wystarczająco dużym wpływie, możesz zdominować granice innej cywilizacji, a nawet przejąć kontrolę nad ich światami.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_InfluenceTally</Label>
+    <String>&quot;Wpływ [ICON=Stat_Influence_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Growth</Label>
+    <String>&quot;[ICON=Stat_Growth_Icon] Wzrost&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Growth</Label>
+    <String>&quot;Gdy na twoim świecie zostanie wygenerowany wystarczający Wzrost, powstaje nowy obywatel. Zanieczyszczenie będzie redukować Wzrost świata, podczas gdy Kliniki Płodności i inne ulepszenia populacji mogą go zwiększyć.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Tourism</Label>
+    <String>&quot;Turystyka [ICON=Stat_Tourism_Income_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Tourism</Label>
+    <String>&quot;Połowa twojego Turystyki jest przypisywana do twojego [HS=HS_ColonyGrossIncome]Dochodu[/HS], a połowa do twojego [HS=HS_Influence]Wpływu[/HS].&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Tourism_Supernova</Label>
+    <String>&quot;Turystyka zwiększa ilość [HS=HS_ColonyGrossIncome]Income[/HS], którą zdobywasz, w zależności od wielkości twojej Strefy Kontroli.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TourismIncome</Label>
+    <String>&quot;Dochód z turystyki [ICON=Stat_Tourism_Income_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_TourismIncome</Label>
+    <String>&quot;Dochód z turystyki jest dodawany do twojego [HS=HS_ColonyGrossIncome]Income[/HS].&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Food</Label>
+    <String>&quot;[ICON=Stat_Food_Icon] Jedzenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Food</Label>
+    <String>&quot;Planety produkują jedzenie, które jest konsumowane przez Twoich obywateli. Aby zdobyć więcej, skolonizuj nowe światy lub specjalizuj swoich obywateli na Rolników.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonyNetIncome</Label>
+    <String>&quot;[ICON=Stat_Credits_Net_Icon] Dochód&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonySpending</Label>
+    <String>&quot;Kolonia [ICON=Stat_Credits_Icon] Wydatki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CreditSpending</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] Wydatki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Population</Label>
+    <String>&quot;Populacja [ICON=Stat_Population_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Population</Label>
+    <String>&quot;Liczba obywateli, którzy mieszkają na twoim świecie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PopulationCap</Label>
+    <String>&quot;[ICON=Stat_Population_Cap_Icon] Limit Populacji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_PopulationCap</Label>
+    <String>&quot;To reprezentuje maksymalną liczbę obywateli, którzy mogą mieszkać na tym świecie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PopulationCapYor</Label>
+    <String>&quot;[ICON=Stat_Population_Cap_Icon] Sztuczny limit populacji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GrowthYor</Label>
+    <String>&quot;[ICON=Stat_Growth_Icon] Syntetyczny Wzrost&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SyntheticLife</Label>
+    <String>&quot;Syntetyczne Życie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CarbonBasedLife</Label>
+    <String>&quot;Życie oparte na węglu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SiliconBasedLife</Label>
+    <String>&quot;Życie na bazie krzemu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AquaticLife</Label>
+    <String>&quot;Wodne Życie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AmmoniaBasedLife</Label>
+    <String>&quot;Życie oparte na amoniaku&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EngineersAbility</Label>
+    <String>&quot;Inżynierowie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UnrelentingAbility</Label>
+    <String>&quot;Nieustępliwy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AncientAbility</Label>
+    <String>&quot;[ICON=Ancient_Icon] Starożytna Umiejętność&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EntrepreneursAbility</Label>
+    <String>&quot;Zdolność Przedsiębiorcy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PatrioticAbility</Label>
+    <String>&quot;Patriotyczna Zdolność&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanColonizeExtremeWorld</Label>
+    <String>&quot;Może Kolonizować Ekstremalne Światy.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_OperationsPoints</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Punkty Operacyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetaryBombardment</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Bombardowanie Planetarne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetaryDefense</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] Planetary Defense&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_PlanetaryDefense</Label>
+    <String>&quot;Ulepszenia obrony planetarnej pomagają zatrzymać najeźdźców na długo zanim dotrą do powierzchni twojej kolonii.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ResistanceBonus</Label>
+    <String>&quot;[ICON=Planetary_Resistance_Icon] Opor&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ResistanceBonus</Label>
+    <String>&quot;Odporność pomoże twojej populacji bronić się podczas inwazji i uczyni ją mniej podatną na obce wpływy.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetaryDefensesHP</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] Planetarna Obrona&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_PlanetaryDefensesHP</Label>
+    <String>&quot;Ilość obrażeń, które twoja kolonia może przyjąć przed utratą zdolności obrony podczas inwazji.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetaryDefensesMaxHP</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] Maksymalna Obrona Planetarna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetaryDefensesSource_PlanetaryDefensesUpgrades</Label>
+    <String>&quot;Ulepszenia Obronne [ICON=UNLOCK_ICON_TECH_BONUS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetaryDefensesSource_PopulationEffect</Label>
+    <String>&quot;[ICON=Stat_Population_Icon] Determinacja Populacji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetaryDefensesSource_FlatPopulation</Label>
+    <String>&quot;[ICON=Stat_Population_Icon] Liczba Ludności&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_PlanetaryDefensesMaxHP</Label>
+    <String>&quot;Ilość uszkodzeń, które twoja kolonia może przyjąć przed zostaniem bezbronny podczas inwazji.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetaryDefensesRepairAbility</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] Szybkość Naprawy Planetarnych Obron&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_PlanetaryDefensesRepairAbility</Label>
+    <String>&quot;Procent maksymalnych punktów obrony twojej planety, które możesz odzyskać każdego tygodnia.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TotalShipAttack</Label>
+    <String>&quot;[ICON=Malevolence_Icon] Atak Oblężniczy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_TotalShipAttack</Label>
+    <String>&quot;Uszkodzenia, które oblegający statek może wyrządzić obleganemu planetowi.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanBeSurveyed</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Może być zbadany.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AssaultFightersCap</Label>
+    <String>&quot;Limit Atakujących Myśliwców [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AssaultFighters</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Myśliwce Szturmowe&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_InterceptorFighters</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Interceptor Fighters&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_InterceptorFightersCap</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Limit Mysliwców Interceptor&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EscortFighters</Label>
+    <String>&quot;Eskorta Myśliwców [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EscortFightersCap</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Limit Eskortowych Myśliwców&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GaurdianFighters</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Strażnicy Wojownicy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GaurdianFightersCap</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Czapka Strażników Wojowników&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TradeLicensesMax</Label>
+    <String>&quot;[ICON=Stat_Trade_Icon] Maksymalna Licencja Handlowa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_TradeLicensesMax</Label>
+    <String>Licencje handlowe są wymagane do nawiązywania tras handlowych z innymi światami.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TradeLicensesUsed</Label>
+    <String>&quot;Użyte Licencje Handlowe [ICON=Stat_Trade_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanTourism</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Umożliwia turystykę&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TradeRouteIncome</Label>
+    <String>&quot;Dochód z Trasy Handlowej [ICON=Stat_Trade_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RaidIncome</Label>
+    <String>&quot;Dochód z Rajdu Handlowego [ICON=Stat_Raid_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UseLocalSliders</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Korzystanie z Poziomów Produkcji Cywilizacji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Diplomacy</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Bonus Dyplomacji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Diplomacy</Label>
+    <String>&quot;Bonus Dyplomacji to modyfikator wpływający na Twoje relacje z innymi cywilizacjami. Wyższy poziom Dyplomacji sprawi, że będą one bardziej skłonne do handlu z Tobą i oferowania Ci traktatów, a mniej prawdopodobne jest, że wypowiedzą Ci wojnę. Każdy przywódca cywilizacji ma swoją własną osobowość i oceni swoje relacje z Tobą inaczej.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomaticCapital</Label>
+    <String>&quot;[ICON=Stat_DiplomaticCapital_Icon] Kapitał Dyplomatyczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_DiplomaticCapital</Label>
+    <String>&quot;Kapitał dyplomatyczny to waluta, która może być używana z innymi frakcjami podczas Handlu.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomaticCapitalCost</Label>
+    <String>&quot;Koszt Kapitału Dyplomatycznego [ICON=Stat_DiplomaticCapital_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_DiplomaticCapitalCost</Label>
+    <String>&quot;Kapitał dyplomatyczny to waluta, którą można używać podczas handlu z innymi frakcjami.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomaticCapitalIncome</Label>
+    <String>&quot;Dochód z Kapitału Dyplomatycznego [ICON=Stat_DiplomaticCapital_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_DiplomaticCapitalIncome</Label>
+    <String>&quot;Kapitał dyplomatyczny to waluta, która może być używana z innymi frakcjami podczas handlu.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomacyBenevolent</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Życzliwa Dyplomacja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomacyNeutral</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Pragmatyczna Dyplomacja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomacyMerciless</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Złośliwa Dyplomacja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomacyTradeRouteWeight</Label>
+    <String>&quot;Dyplomacja Szlaku Handlowego [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomacySharedBordersWeight</Label>
+    <String>&quot;Kara za Wspólne Granice [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ImmuneToWar</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odporny na Wojnę&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ImmuneToCultureFlip</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odporny na Zmianę Kultury&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AngersOthersWhenWarVictimWeight</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Denerwuje Innych W Czasie Wojny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AlliesNeutralRaces</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Gniew z Rodzimej Planety Zainwadowany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomaticTradeOfferValueMult</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Dyplomatyczna Wartość Handlu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DiplomaticTradeOfferValueMultMinors</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Wartość handlu dyplomatycznego dla nieletnich&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Favored</Label>
+    <String>&quot;Ulubieniec [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UnlimitedRange</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Nieograniczony Zasięg&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Elerium</Label>
+    <String>&quot;[ICON=Stat_Elerium_Icon] Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Asteroid</Label>
+    <String>&quot;[ICON=Stat_Asteroid_Icon] Asteroidy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Durantium</Label>
+    <String>&quot;[ICON=Stat_Durantium_Icon] Durantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Antimatter</Label>
+    <String>&quot;[ICON=Stat_Antimatter_Icon] Antymateria&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Promethion</Label>
+    <String>&quot;[ICON=Stat_Promethion_Icon] Promethion&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Thulium</Label>
+    <String>&quot;[ICON=Stat_Thulium_Icon] Tul&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EleriumCost</Label>
+    <String>&quot;[ICON=Stat_Elerium_Icon] Koszt Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DurantiumCost</Label>
+    <String>&quot;Koszt Durantium [ICON=Stat_Durantium_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AntimatterCost</Label>
+    <String>&quot;[ICON=Stat_Antimatter_Icon] Koszt Antymaterii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PromethionCost</Label>
+    <String>&quot;Koszt Promethionu [ICON=Stat_Promethion_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumCost</Label>
+    <String>&quot;Koszt tulku [ICON=Stat_Thulium_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EleriumNet</Label>
+    <String>&quot;[ICON=Stat_Elerium_Icon] Sieć Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DurantiumNet</Label>
+    <String>&quot;[ICON=Stat_Durantium_Icon] Sieć Durantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AntimatterNet</Label>
+    <String>&quot;[ICON=Stat_Antimatter_Icon] Sieć Antymaterii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PromethionNet</Label>
+    <String>&quot;[ICON=Stat_Promethion_Icon] Sieć Promethion&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumNet</Label>
+    <String>&quot;[ICON=Stat_Thulium_Icon] Sieć Tulowego&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AscensionPoints</Label>
+    <String>&quot;[ICON=AscensionPointsStatIcon] Punkty Wzniesienia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AscensionPointsPerTurn</Label>
+    <String>&quot;[ICON=AscensionPointsStatIcon] Wzrost Na miesiąc&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechVictoryPoints</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Punkty Zwycięstwa Technologicznego&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HitPoints</Label>
+    <String>&quot;[ICON=Hitpoints_Icon] Punkty Zdrowia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_HitPoints</Label>
+    <String>&quot;Ilość obrażeń, jakie statek może przyjąć zanim zostanie zniszczony.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HitPointsCap</Label>
+    <String>&quot;[ICON=Hitpoints_Icon] Punkty życia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_StrategicRepair</Label>
+    <String>&quot;[ICON=Stat_Ship_Maintenance_Icon] Strategiczna Naprawa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ExpPoints</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Punkty Doświadczenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ExpPointsCap</Label>
+    <String>&quot;Limit punktów doświadczenia [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TacticalRepair</Label>
+    <String>&quot;[ICON=Stat_Ship_Maintenance_Icon] Taktyczna Naprawa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmorMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShieldMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PointMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa Broni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa Broni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa Broni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShipRangeMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SupportMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MovesCapMass</Label>
+    <String>&quot;[ICON=Moves_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MassCap</Label>
+    <String>&quot;[ICON=Moves_Icon] Pojemność&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SensorRangeMass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SensorRange</Label>
+    <String>&quot;[ICON=SensorRange_Icon] Zasięg sensora&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_SensorRange</Label>
+    <String>Określa, z jakiej odległości ten obiekt może dostrzegać inne obiekty, takie jak anomalie i statki wroga.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SensorPower</Label>
+    <String>&quot;[ICON=SensorRange_Icon] Moc czujnika&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Mass</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Masa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Logistics</Label>
+    <String>&quot;[ICON=ShipLogistics_Icon] Logistyka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Logistics</Label>
+    <String>&quot;Logistyka determinuje, ile statków może działać razem w flotylli. Każdy statek ma koszt Logistyki, a każdy gracz ma wartość Logistyki. Generalnie, większe statki kosztują więcej Logistyki niż mniejsze statki.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LogisticsCap</Label>
+    <String>&quot;[ICON=ShipLogistics_Icon] Logistyka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Administration</Label>
+    <String>&quot;[ICON=Stat_Admin_Icon] Administracja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Administration</Label>
+    <String>&quot;Administracja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PoliticalCapital</Label>
+    <String>&quot;[ICON=Stat_Admin_Icon] Kapitał Polityczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PoliticalCapital</Label>
+    <String>&quot;Kapitał Polityczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Moves</Label>
+    <String>&quot;[ICON=Moves_Icon] Rusza się&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MovesCap</Label>
+    <String>&quot;[ICON=Moves_Icon] Porusza się&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_MovesCap</Label>
+    <String>&quot;Maksymalna odległość, którą twoje statki mogą pokonać w jednej turze.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SiegeAbility</Label>
+    <String>&quot;[ICON=Moves_Icon] Ocena Podboju&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SiegeEffectiveness</Label>
+    <String>&quot;[ICON=Moves_Icon] Bonus za Oblężenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_SiegeAbility</Label>
+    <String>&quot;Miara zdolności statku do podporządkowania sobie wrogiej planety.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TacticalSpeed</Label>
+    <String>&quot;[ICON=TacticalSpeed_Icon] Prędkość Taktyczna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Acceleration</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Przyspieszenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DefenseRange</Label>
+    <String>&quot;Zasięg Obrony [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Level</Label>
+    <String>&quot;Poziom ulepszenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Level</Label>
+    <String>&quot;Korzyści z ulepszenia rosną wraz z poziomem. Umieszczenie typu ulepszenia na jego idealnym terenie, lub umieszczenie go obok innych ulepszeń, które go wspierają, poprawi jego poziom.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AdjacencyOnlyLevel</Label>
+    <String>&quot;Poziom Sąsiedztwa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Crew</Label>
+    <String>&quot;Załoga [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CreditValue</Label>
+    <String>&quot;Wartość [ICON=Stat_Credits_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShieldManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PointManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticManufacturingCost</Label>
+    <String>&quot;Koszt Produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShipRangeManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MovesCapManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SensorRangeManufacturingCost</Label>
+    <String>&quot;Koszt produkcji [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Maintenance</Label>
+    <String>&quot;[ICON=Stat_Ship_Maintenance_Icon] Konserwacja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Maintenance</Label>
+    <String>&quot;Koszt utrzymania struktur i innych elementów świata bazowego i kolonii.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShipMaintenance</Label>
+    <String>&quot;Konserwacja statku [ICON=Stat_Ship_Maintenance_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_StarbaseMaintenance</Label>
+    <String>&quot;Konserwacja Bazy Kosmicznej [ICON=Stat_Starbase_Maintenance_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PolicyMaintenance</Label>
+    <String>&quot;Konserwacja Polityki [ICON=Stat_Starbase_Maintenance_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_PolicyMaintenance</Label>
+    <String>&quot;Koszt programów politycznych&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SalvageRatio</Label>
+    <String>&quot;[ICON=Stat_Ship_Maintenance_Icon] Współczynnik Odzysku&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ManufacturingCost</Label>
+    <String>&quot;Koszt budowy [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ManufacturingCost</Label>
+    <String>&quot;To jest ilość Produkcji, która jest potrzebna do konstrukcji.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MaxManufacturing</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] Produkcja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Manufacturing</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] Produkcja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_Manufacturing</Label>
+    <String>&quot;Im wyższy poziom twojego sektora Produkcji, tym szybciej będziesz mógł budować ulepszenia na planetach i statkach w twoich stoczniach.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ManufacturingOverflow</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] Magazynowane Towary&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ManufacturingOverflow</Label>
+    <String>&quot;Nadwyżka produkcji dostępna do wykorzystania w następnym projekcie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmorManufacturingCost</Label>
+    <String>&quot;Koszt pancerza [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ModuleConstructionPoints</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] Punkty Konstrukcji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ModuleConstructionPointsCap</Label>
+    <String>&quot;Limit punktów konstrukcyjnych [ICON=Stat_Manufacturing_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanDetectCloak</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Wykryj Maskowanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanCloak</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Maskowanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanSurvey</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Badanie Anomalii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsBattleship</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Pancernik&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsProbe</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Sonda&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsMiner</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Górnik&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsFighter</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Myśliwiec&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsBomber</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Bombowiec&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsFrigate</Label>
+    <String>&quot;Fregata [ICON=CanSurveyIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsCruiser</Label>
+    <String>&quot;Krążownik [ICON=CanSurveyIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsDreadnought</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Dreadnought&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsSiege</Label>
+    <String>&quot;Oblężenie [ICON=SiegeShip_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanUpgrade</Label>
+    <String>&quot;Możliwość ulepszenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanColonize</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Kolonizuj Planety&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanConstruct</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Buduj Bazy Gwiazd &amp; Stocznie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanCreateTradeRoute</Label>
+    <String>&quot;[ICON=Stat_Trade_Icon] Utwórz Szlak Handlowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanInvade</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Zainwaduj Planety&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanSalvage</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Statek do Odzyskiwania Wraków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanGenocidePlanet</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Może Dokonać Ludobójstwa na Planetach&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToNebula</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] jest odporny na Mgławicę&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToRange</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] jest odporny na ataki na odległość&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShipRange</Label>
+    <String>&quot;Zasięg statku [ICON=Shiprange_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ShipRange</Label>
+    <String>&quot;Dystans, jaki statki nie-sond mogą pokonać z dala od naszych planet i baz gwiazdowych.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Accuracy</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Precyzja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Jamming</Label>
+    <String>&quot;[ICON=Intuitive_Icon] Unikanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamWeapon</Label>
+    <String>&quot;[ICON=BeamAttackIcon] Broń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticWeapon</Label>
+    <String>&quot;[ICON=KineticAttackIcon] Broń kinetyczna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileWeapon</Label>
+    <String>&quot;[ICON=MissileAttackIcon] Broń rakietowa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShieldDamageWeapon</Label>
+    <String>&quot;Uszkodzenie Tarczy [ICON=ShieldDamageIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmorDamageWeapon</Label>
+    <String>&quot;Uszkodzenie Pancerza [ICON=ArmorDamageIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PointDamageWeapon</Label>
+    <String>&quot;[ICON=PointDamageIcon] Punkty Obrażeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamRange</Label>
+    <String>&quot;Zasięg wiązki [ICON=BeamRangeIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamCooldown</Label>
+    <String>&quot;[ICON=BeamCooldownIcon] Czas Ochłodzenia Wiązki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticRange</Label>
+    <String>&quot;[ICON=KineticRangeIcon] Zasięg Kinetyczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileRange</Label>
+    <String>&quot;Zasięg rakiet [ICON=MissileRangeIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileCooldown</Label>
+    <String>&quot;[ICON=MissileCooldownIcon] Czas odnowienia pocisku&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamAccuracy</Label>
+    <String>&quot;[ICON=BeamAccuracyIcon] Precyzja Wiązki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticAccuracy</Label>
+    <String>&quot;[ICON=KineticAccuracyIcon] Kinetyczna precyzja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileAccuracy</Label>
+    <String>&quot;[ICON=MissileAccuracyIcon] Celność pocisków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamAttack</Label>
+    <String>&quot;[ICON=BeamAttackIcon] Atak Promieniem&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticAttack</Label>
+    <String>&quot;[ICON=KineticAttackIcon] Atak kinetyczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileAttack</Label>
+    <String>&quot;[ICON=MissileAttackIcon] Atak Rakietowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IgnoreShield</Label>
+    <String>&quot;[ICON=ShieldDamageIcon] Ignoruj Tarczę&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IgnoreArmor</Label>
+    <String>&quot;[ICON=ArmorDamageIcon] Ignoruj Zbroję&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IgnorePoint</Label>
+    <String>&quot;[ICON=PointDamageIcon] Punkt do zignorowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShieldStrength</Label>
+    <String>&quot;[ICON=ShieldStrengthIcon] Siła Tarczy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmorRating</Label>
+    <String>&quot;[ICON=ArmorRateingIcon] Ocena Pancerza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PointDefense</Label>
+    <String>&quot;[ICON=PointDefenseIcon] Unikanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Threat</Label>
+    <String>&quot;[ICON=ThreatStatIcon] Zagrożenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Fortitude</Label>
+    <String>&quot;[ICON=FortitudeStatIcon] Wytrzymałość&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Value</Label>
+    <String>&quot;Wartość [ICON=ValueStatIcon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_StarbaseRange</Label>
+    <String>&quot;Zasięg Stacji Kosmicznej [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MoveCost</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Koszt ruchu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Mining</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Wydobycie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Soldiering</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Żołnierzowanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Soldiering</Label>
+    <String>&quot;Skraca czas potrzebny na inwazję na światy.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TradeRouteValueRaw</Label>
+    <String>&quot;Wartość Trasy Handlowej [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TradeRouteValue</Label>
+    <String>&quot;Wartość Szlaku Handlowego [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RaidBonus</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Bonus za Rajd&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RaidValue</Label>
+    <String>&quot;Wartość Rajdu [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsInitiator</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] jest Inicjatorem&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ModifierValue</Label>
+    <String>&quot;Wartość Modyfikatora [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticCooldown</Label>
+    <String>&quot;[ICON=KineticCooldownIcon] Kinetyczne Ochłodzenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Productive</Label>
+    <String>&quot;[ICON=Stat_Productive_Icon] Produktywny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Brutal</Label>
+    <String>&quot;[ICON=Stat_Brutal_Icon] Brutalny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Influential</Label>
+    <String>&quot;[ICON=Stat_Influential_Icon] Wpływowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Organized</Label>
+    <String>&quot;[ICON=Stat_Organized_Icon] Zorganizowany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Resilient</Label>
+    <String>&quot;[ICON=Stat_Resilient_Icon] Wytrzymały&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Tough</Label>
+    <String>&quot;[ICON=Stat_Tough_Icon] Twardy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Trader</Label>
+    <String>&quot;[ICON=Stat_Trader_Icon] Handlarz&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Adventure</Label>
+    <String>&quot;Przygoda [ICON=Stat_Adventure_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Fast</Label>
+    <String>&quot;[ICON=Stat_Fast_Icon] Szybko&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Wealth</Label>
+    <String>&quot;[ICON=Stat_Wealth_Icon] Bogactwo&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Wealth</Label>
+    <String>&quot;Bogactwo to miara rzadkich i cennych zasobów planety.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Courageous</Label>
+    <String>&quot;[ICON=Stat_Courageous_Icon] Odważny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Clever</Label>
+    <String>&quot;[ICON=Stat_Clever_Icon] Mądry&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Lease</Label>
+    <String>&quot;[ICON=Stat_Lease_Icon] Wynajem&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_United_Planets_Tax</Label>
+    <String>&quot;[ICON=Stat_United_Planets_Tax_Icon] Podatek od Zjednoczonych Planet&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SponsorDecay</Label>
+    <String>&quot;Zanik Stoczni [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LeaderMaxRecruits</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Maksymalna liczba rekrutów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ModifierValue</Label>
+    <String>Zwiększa szybkość korzyści, które otrzymujemy z relikwii Precursorów.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_LeaderMaxRecruits</Label>
+    <String>Modyfikuje liczbę liderów, z których możemy rekrutować.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LeaderCostModify</Label>
+    <String>&quot;Koszt Lidera [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_LeaderCostModify</Label>
+    <String>Modyfikuje koszt rekrutacji nowych liderów.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LeaderTraitChance</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Szansa na Cechę Lidera&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Faction</Label>
+    <String>&quot;Frakcja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Planet</Label>
+    <String>&quot;Planeta&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Colony</Label>
+    <String>&quot;Kolonia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Starbase</Label>
+    <String>&quot;Baza kosmiczna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Shipyard</Label>
+    <String>Stocznia</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Ship</Label>
+    <String>&quot;Statek&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Fleet</Label>
+    <String>&quot;Flota&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_AllShipsInFleet</Label>
+    <String>&quot;Wszystkie statki w flocie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Improvement</Label>
+    <String>&quot;Ulepszenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Tile</Label>
+    <String>&quot;Płytka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_StrategicResource</Label>
+    <String>&quot;Strategiczny Zasób&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_StarbaseModule</Label>
+    <String>&quot;Moduł Bazy Gwiezdnej&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_TradeRoute</Label>
+    <String>&quot;Szlak Handlowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_TradeRoutePath</Label>
+    <String>&quot;Trasa Szlaku Handlowego&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Asteroid</Label>
+    <String>&quot;Asteroida&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Unit</Label>
+    <String>&quot;Jednostka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Hyperlane</Label>
+    <String>&quot;Podprzestrzenny Strumień&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Hypergate</Label>
+    <String>&quot;Brama Podprzestrzeni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_DeadPlanet</Label>
+    <String>&quot;Martwa Planeta&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_SecondaryPlayer</Label>
+    <String>&quot;Gracz&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Policy</Label>
+    <String>&quot;Polityka&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_EnemyFleet</Label>
+    <String>&quot;Flota Wroga&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_Thinktank</Label>
+    <String>&quot;Fakcja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>MODIFIERTARGETNAME_EmptyGalacticTile</Label>
+    <String>&quot;Pusty Kafelek&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DroneCount</Label>
+    <String>&quot;Liczba dronów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RebellionPointsMax</Label>
+    <String>&quot;Punkty Rebelii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BeamDamageReduction</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odporność na Promień&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MissileDamageReduction</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odporność na pociski rakietowe&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_KineticDamageReduction</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Rezystancja kinetyczna&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToPirates</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odporny na Piratów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanRespawnOnTradeRouteDeath</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Odradza się, gdy trasa jest przerwana&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanColonizeDeadWorld</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Może Kolonizować Martwy Świat&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MovesCapOverride</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Dzieli Ruchy z Flotą&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ShipRangeOverride</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Dzieli Zasięg z Flotą&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanColonizeAquaticWorld</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Może Kolonizować Wodne Światy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ExpValue</Label>
+    <String>&quot;Wartość XP [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToInvasion1</Label>
+    <String>&quot;[ICON=Military_Priority_Icon] Odporny na wojnę informacyjną&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToInvasion2</Label>
+    <String>&quot;[ICON=Military_Priority_Icon] Odporny na biologiczną wojnę&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToInvasion3</Label>
+    <String>&quot;[ICON=Military_Priority_Icon] Odporny na bombardowanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToInvasion4</Label>
+    <String>&quot;[ICON=Military_Priority_Icon] Odporny na Pływowe Zakłócenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsImmuneToInvasion5</Label>
+    <String>&quot;[ICON=Military_Priority_Icon] Odporny na Detonację Rdzenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RedundantAssemblyAbility</Label>
+    <String>&quot;[ICON=Ancient_Icon] Zdolność do Redundantnego Montażu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ScavengersAbility</Label>
+    <String>&quot;Zdolność Zbieraczy [ICON=Ancient_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ScavengersChance</Label>
+    <String>&quot;[ICON=Ancient_Icon] Szansa Zbieracza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArchivistAbility</Label>
+    <String>&quot;[ICON=Ancient_Icon] Zdolność Archiwisty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Coercion</Label>
+    <String>&quot;Wymuszenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ResistanceToPlanetCapture</Label>
+    <String>&quot;Schwytać Opor&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CitizenRate</Label>
+    <String>&quot;Szybkość Generowania Obywateli&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TrainingRate</Label>
+    <String>&quot;Tempo Szkolenia Obywateli&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PointsPerAgent</Label>
+    <String>&quot;[ICON=Stat_Legion_Icon] Punkty Szpiegowskie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SecurityLevel</Label>
+    <String>&quot;[ICON=Stat_Legion_Icon] Bezpieczeństwo&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_SecurityLevel</Label>
+    <String>&quot;Agenci kontrwywiadu są oddani ochronie przed zagrożeniami, zarówno krajowymi, jak i obcymi, którzy chcą ukraść nasze technologie. Przywódców można tymczasowo przypisać na ekranie Rząd, aby zwiększyć naszą czujność.[BR][BR]Przypisz więcej obywateli do kontrwywiadu, aby spowolnić lub zapobiec kradzieży naszej technologii przez zagranicznych szpiegów.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LegionsAvailable</Label>
+    <String>&quot;[ICON=Stat_Legion_Icon] Legiony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_LegionsAvailable</Label>
+    <String>&quot;Legiony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_StartingSoldierAmount</Label>
+    <String>&quot;[ICON=Stat_Legion_Icon] Początkowi Żołnierze&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Resource_Commanders</Label>
+    <String>&quot;[ICON=Stat_Commander_Icon] Dowódcy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Resource_Agents</Label>
+    <String>&quot;[ICON=Stat_Agent_Icon] Szpiedzy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_Population</Label>
+    <String>&quot;Jak bardzo rośnie twoja populacja na miesiąc.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_ColonyNetIncome</Label>
+    <String>&quot;Ile galaktycznych kredytów generują twoje kolonie w każdej turze. Procent tej kwoty trafia do twojego skarbca na podstawie twojego wskaźnika podatkowego.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_ShipRangeUnderride</Label>
+    <String>Pasuje do zasięgu floty, w której się znajduje.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_MovesCapUnderride</Label>
+    <String>&quot;Dopasowuje prędkość do floty, w której się znajduje.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_TriggerAndNoShipBattle</Label>
+    <String>&quot;Spowoduje efekt zamiast walki podczas ataku.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_Administration</Label>
+    <String>&quot;Do administratorzy są potrzebni do tworzenia konstruktorów, statków kolonizacyjnych i statków badawczych. Specjalizuj swoich obywateli w Administratorów, aby zdobyć więcej Administracji.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESCRIPTION_PoliticalCapital</Label>
+    <String>&quot;Kapitał polityczny może być wykorzystany w handlu lub do przekonania innych graczy do głosowania na ciebie w Zjednoczonych Planetach.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AirSuperiority</Label>
+    <String>&quot;[ICON=Stat_Legion_Icon] Powietrzna Dominacja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Garrisons</Label>
+    <String>&quot;[ICON=Stat_Defending_Legion_Icon] Garnizony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Garrisions</Label>
+    <String>&quot;Broni przed najeźdźcami.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_LegionsAvailable</Label>
+    <String>&quot;Legiony dostępne do inwazji na planety, lub do obrony własnej planety z Generałem&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Food_Cost</Label>
+    <String>&quot;[ICON=Stat_Food_Icon] Konsumpcja żywności&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Food</Label>
+    <String>&quot;Jedzenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EleriumIncome</Label>
+    <String>&quot;[ICON=Stat_Elerium_Icon] Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DurantiumIncome</Label>
+    <String>&quot;[ICON=Stat_Durantium_Icon] Durantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AntimatterIncome</Label>
+    <String>&quot;[ICON=Stat_Antimatter_Icon] Antymateria&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PromethionIncome</Label>
+    <String>&quot;[ICON=Stat_Promethion_Icon] Promethion&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumIncome</Label>
+    <String>&quot;[ICON=Stat_Thulium_Icon] Tul&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UltraSpice</Label>
+    <String>&quot;[ICON=Icon_Res_UltraSpice] Arnor Przyprawa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UltraSpiceCost</Label>
+    <String>&quot;[ICON=Icon_Res_UltraSpice] Arnor Przyprawa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UltraSpiceIncome</Label>
+    <String>&quot;[ICON=Icon_Res_UltraSpice] Przyprawa z Arnor&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_UltraSpice</Label>
+    <String>&quot;Arnor Spice&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_UltraSpiceCost</Label>
+    <String>&quot;Arnor Spice&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_UltraSpiceIncome</Label>
+    <String>&quot;Przyprawa Arnor&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EpimetheusPollen</Label>
+    <String>&quot;[ICON=Icon_Res_EpimetheusPollen] Pyłek Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EpimetheusPollenCost</Label>
+    <String>&quot;[ICON=Icon_Res_EpimetheusPollen] Pyłek Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_EpimetheusPollenIncome</Label>
+    <String>&quot;[ICON=Icon_Res_EpimetheusPollen] Pyłek Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_EpimetheusPollen</Label>
+    <String>&quot;Pyleń Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_EpimetheusPollenCost</Label>
+    <String>&quot;Pyleń Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_EpimetheusPollenIncome</Label>
+    <String>&quot;Pyleń Epimeteusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HeliosOre</Label>
+    <String>&quot;[ICON=Icon_Res_HeliosOre] Helios Ruda&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HeliosOreCost</Label>
+    <String>&quot;[ICON=Icon_Res_HeliosOre] Helios Ruda&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HeliosOreIncome</Label>
+    <String>&quot;[ICON=Icon_Res_HeliosOre] Ruda Heliosa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HeliosOre</Label>
+    <String>&quot;Ruda Heliosa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HeliosOreCost</Label>
+    <String>&quot;Helios Ruda&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HeliosOreIncome</Label>
+    <String>&quot;Ruda Heliosa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumCatalyst</Label>
+    <String>&quot;[ICON=Icon_Res_ThuliumCatalyst] Katalizator z tulitu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumCatalystCost</Label>
+    <String>&quot;[ICON=Icon_Res_ThuliumCatalyst] Katalizator z tulitu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThuliumCatalystIncome</Label>
+    <String>&quot;[ICON=Icon_Res_ThuliumCatalyst] Katalizator z tulitu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ThuliumCatalyst</Label>
+    <String>Katalizator Tulu</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ThuliumCatalystCost</Label>
+    <String>&quot;Katalizator Tulu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ThuliumCatalystIncome</Label>
+    <String>Katalizator Tulu</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechapodHive</Label>
+    <String>&quot;[ICON=Icon_Res_TechapodHive] Ulica Techapod&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechapodHiveCost</Label>
+    <String>&quot;[ICON=Icon_Res_TechapodHive] Ul Techapodów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechapodHiveIncome</Label>
+    <String>&quot;[ICON=Icon_Res_TechapodHive] Ul Techapodów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_TechapodHive</Label>
+    <String>&quot;Ul pszczół Techapod&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_TechapodHiveCost</Label>
+    <String>&quot;Ul pszczół Techapod&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_TechapodHiveIncome</Label>
+    <String>&quot;Ul pszczół Techapod&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArtocarpusViriles</Label>
+    <String>&quot;[ICON=Icon_Res_ArtocarpusViriles] Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArtocarpusVirilesCost</Label>
+    <String>&quot;[ICON=Icon_Res_ArtocarpusViriles] Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArtocarpusVirilesIncome</Label>
+    <String>&quot;[ICON=Icon_Res_ArtocarpusViriles] Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArtocarpusViriles</Label>
+    <String>&quot;Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArtocarpusVirilesCost</Label>
+    <String>&quot;Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArtocarpusVirilesIncome</Label>
+    <String>&quot;Artocarpus Viriles&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MonsatiumDeposit</Label>
+    <String>&quot;Złoże Monsatium [ICON=Icon_Res_MonsatiumDeposit]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MonsatiumDepositCost</Label>
+    <String>&quot;Złoże Monsatium [ICON=Icon_Res_MonsatiumDeposit]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MonsatiumDepositIncome</Label>
+    <String>&quot;Złoże Monsatium [ICON=Icon_Res_MonsatiumDeposit]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_MonsatiumDeposit</Label>
+    <String>&quot;Złoże Monsatium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_MonsatiumDepositCost</Label>
+    <String>&quot;Złoże Monsatium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_MonsatiumDepositIncome</Label>
+    <String>&quot;Złoże Monsatium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CrystallizedElerium</Label>
+    <String>&quot;[ICON=Icon_Res_CrystallizedElerium] Skrystalizowany Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CrystallizedEleriumCost</Label>
+    <String>&quot;[ICON=Icon_Res_CrystallizedElerium] Skrystalizowane Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CrystallizedEleriumIncome</Label>
+    <String>&quot;[ICON=Icon_Res_CrystallizedElerium] Skrystalizowany Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CrystallizedElerium</Label>
+    <String>&quot;Skryształkowana Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CrystallizedEleriumCost</Label>
+    <String>&quot;Skryształkowana Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CrystallizedEleriumIncome</Label>
+    <String>&quot;Skryształkowana Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_XanthiumDeposit</Label>
+    <String>&quot;[ICON=Icon_Res_XanthiumDeposit] Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_XanthiumDepositCost</Label>
+    <String>&quot;[ICON=Icon_Res_XanthiumDeposit] Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_XanthiumDepositIncome</Label>
+    <String>&quot;[ICON=Icon_Res_XanthiumDeposit] Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_XanthiumDeposit</Label>
+    <String>&quot;Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_XanthiumDepositCost</Label>
+    <String>&quot;Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_XanthiumDepositIncome</Label>
+    <String>&quot;Złoże Ksantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AurorusArboretum</Label>
+    <String>&quot;[ICON=Icon_Res_AurorusArboretum] Aurorus Arboretum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AurorusArboretumCost</Label>
+    <String>&quot;[ICON=Icon_Res_AurorusArboretum] Aurorus Arboretum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AurorusArboretumIncome</Label>
+    <String>&quot;[ICON=Icon_Res_AurorusArboretum] Arboretum Aurorus&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_AurorusArboretum</Label>
+    <String>&quot;Aurorus Arboretum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_AurorusArboretumCost</Label>
+    <String>&quot;Aurorus Arboretum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_AurorusArboretumIncome</Label>
+    <String>&quot;Aurorus Arboretum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrometheusStone</Label>
+    <String>&quot;[ICON=Icon_Res_PrometheusStone] Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrometheusStoneCost</Label>
+    <String>&quot;[ICON=Icon_Res_PrometheusStone] Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrometheusStoneIncome</Label>
+    <String>&quot;[ICON=Icon_Res_PrometheusStone] Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrometheusStone</Label>
+    <String>&quot;Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrometheusStoneCost</Label>
+    <String>&quot;Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrometheusStoneIncome</Label>
+    <String>&quot;Kamień Prometeusza&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HyperSilicates</Label>
+    <String>&quot;[ICON=Icon_Res_HyperSilicates] Hyper Silikaty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HyperSilicatesCost</Label>
+    <String>&quot;[ICON=Icon_Res_HyperSilicates] Hiperkrzemiany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HyperSilicatesIncome</Label>
+    <String>&quot;[ICON=Icon_Res_HyperSilicates] Hiperkrzemiany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HyperSilicates</Label>
+    <String>&quot;Hiperkrzemiany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HyperSilicatesCost</Label>
+    <String>&quot;Hiperkrzemiany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HyperSilicatesIncome</Label>
+    <String>&quot;Hiperkrzemiany&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrecursorNanites</Label>
+    <String>&quot;[ICON=Icon_Res_PrecursorNanites] Prekursor Nanity&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrecursorNanitesCost</Label>
+    <String>&quot;[ICON=Icon_Res_PrecursorNanites] Nanity Precursorów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PrecursorNanitesIncome</Label>
+    <String>&quot;[ICON=Icon_Res_PrecursorNanites] Nanity Precursorów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrecursorNanites</Label>
+    <String>&quot;Nanity Precursorów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrecursorNanitesCost</Label>
+    <String>&quot;Nanity Precursorów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_PrecursorNanitesIncome</Label>
+    <String>&quot;Nanity Precursora&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HarmonyCrystals</Label>
+    <String>&quot;[ICON=Icon_Res_HarmonyCrystals] Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HarmonyCrystalsCost</Label>
+    <String>&quot;[ICON=Icon_Res_HarmonyCrystals] Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_HarmonyCrystalsIncome</Label>
+    <String>&quot;[ICON=Icon_Res_HarmonyCrystals] Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HarmonyCrystals</Label>
+    <String>&quot;Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HarmonyCrystalsCost</Label>
+    <String>&quot;Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_HarmonyCrystalsIncome</Label>
+    <String>&quot;Kryształy Harmonii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LabEquipment</Label>
+    <String>&quot;Sprzęt laboratoryjny [ICON=Icon_Res_LabEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LabEquipmentCost</Label>
+    <String>&quot;Sprzęt laboratoryjny [ICON=Icon_Res_LabEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_LabEquipmentIncome</Label>
+    <String>&quot;Sprzęt laboratoryjny [ICON=Icon_Res_LabEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_LabEquipment</Label>
+    <String>&quot;Sprzęt laboratoryjny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_LabEquipmentCost</Label>
+    <String>&quot;Sprzęt laboratoryjny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_LabEquipmentIncome</Label>
+    <String>&quot;Sprzęt laboratoryjny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IndustrialScaffolding</Label>
+    <String>&quot;[ICON=Icon_Res_IndustrialScaffolding] Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IndustrialScaffoldingCost</Label>
+    <String>&quot;[ICON=Icon_Res_IndustrialScaffolding] Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IndustrialScaffoldingIncome</Label>
+    <String>&quot;[ICON=Icon_Res_IndustrialScaffolding] Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_IndustrialScaffolding</Label>
+    <String>&quot;Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_IndustrialScaffoldingCost</Label>
+    <String>&quot;Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_IndustrialScaffoldingIncome</Label>
+    <String>&quot;Przemysłowe Rusztowania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmoryModule</Label>
+    <String>&quot;[ICON=Icon_Res_ArmoryModule] Moduł Arsenału&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmoryModuleCost</Label>
+    <String>&quot;[ICON=Icon_Res_ArmoryModule] Moduł Arsenału&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ArmoryModuleIncome</Label>
+    <String>&quot;[ICON=Icon_Res_ArmoryModule] Moduł Arsenału&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArmoryModule</Label>
+    <String>&quot;Moduł Zbrojowni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArmoryModuleCost</Label>
+    <String>&quot;Moduł Arsenału&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ArmoryModuleIncome</Label>
+    <String>&quot;Moduł Arsenału&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CommercialGoods</Label>
+    <String>&quot;[ICON=Icon_Res_CommercialGoods] Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CommercialGoodsCost</Label>
+    <String>&quot;[ICON=Icon_Res_CommercialGoods] Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CommercialGoodsIncome</Label>
+    <String>&quot;[ICON=Icon_Res_CommercialGoods] Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CommercialGoods</Label>
+    <String>&quot;Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CommercialGoodsCost</Label>
+    <String>&quot;Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_CommercialGoodsIncome</Label>
+    <String>&quot;Towary Komercyjne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BroadcastEquipment</Label>
+    <String>&quot;Sprzęt do transmisji [ICON=Icon_Res_BroadcastEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BroadcastEquipmentCost</Label>
+    <String>&quot;Sprzęt do transmisji [ICON=Icon_Res_BroadcastEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BroadcastEquipmentIncome</Label>
+    <String>&quot;Sprzęt do transmisji [ICON=Icon_Res_BroadcastEquipment]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_BroadcastEquipment</Label>
+    <String>&quot;Sprzęt do transmisji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_BroadcastEquipmentCost</Label>
+    <String>&quot;Sprzęt do transmisji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_BroadcastEquipmentIncome</Label>
+    <String>&quot;Sprzęt do transmisji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Drones</Label>
+    <String>&quot;[ICON=Icon_Res_Drones] Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DronesCost</Label>
+    <String>&quot;[ICON=Icon_Res_Drones] Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_DronesIncome</Label>
+    <String>&quot;[ICON=Icon_Res_Drones] Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Drones</Label>
+    <String>&quot;Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_DronesCost</Label>
+    <String>&quot;Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_DronesIncome</Label>
+    <String>&quot;Drony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Modules</Label>
+    <String>&quot;Moduły [ICON=Icon_Res_Modules]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ModulesCost</Label>
+    <String>&quot;[ICON=Icon_Res_Modules] Moduły&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ModulesIncome</Label>
+    <String>&quot;[ICON=Icon_Res_Modules] Moduły&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Modules</Label>
+    <String>&quot;Moduły&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ModulesCost</Label>
+    <String>&quot;Moduły&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_ModulesIncome</Label>
+    <String>&quot;Moduły&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Nanobots</Label>
+    <String>&quot;[ICON=Icon_Res_Nanobots] Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_NanobotsCost</Label>
+    <String>&quot;[ICON=Icon_Res_Nanobots] Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_NanobotsIncome</Label>
+    <String>&quot;[ICON=Icon_Res_Nanobots] Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Nanobots</Label>
+    <String>&quot;Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_NanobotsCost</Label>
+    <String>&quot;Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_NanobotsIncome</Label>
+    <String>&quot;Nanoboty&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SnugglerColony</Label>
+    <String>&quot;[ICON=Icon_Res_SnugglerColony] Kolonia Przytulaczy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SnugglerColonyCost</Label>
+    <String>&quot;[ICON=Icon_Res_SnugglerColony] Kolonia Przytulasków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_SnugglerColonyIncome</Label>
+    <String>&quot;[ICON=Icon_Res_SnugglerColony] Kolonia Przytulaków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_SnugglerColony</Label>
+    <String>&quot;Kolonia Snuggler&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_SnugglerColonyCost</Label>
+    <String>&quot;Kolonia Przytulasków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_SnugglerColonyIncome</Label>
+    <String>&quot;Kolonia Przytulasków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Elerium</Label>
+    <String>&quot;Elerium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Durantium</Label>
+    <String>&quot;Durantium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Antimatter</Label>
+    <String>&quot;Antymateria&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Promethion</Label>
+    <String>&quot;Promethion&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>ICONLESS_STATNAME_Thulium</Label>
+    <String>&quot;Thulium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TaxationRate</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] Podatki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanSupplySocial</Label>
+    <String>&quot;[ICON=CanSupplySocial_Icon] Nadmiar Produkcji Społecznej&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanSupplyMilitary</Label>
+    <String>&quot;[ICON=CanSupplyMilitary_Icon] Nadmierna Produkcja Wojskowa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanBuildHypergate</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Zbuduj Hyperbramy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MoveCost_Hyperlane</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Prędkość hiperdrogi&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MineralConversion</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Konwersja Minerałów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechnologyConversion</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Konwersja Technologii&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_WealthConversion</Label>
+    <String>&quot;Konwersja Bogactwa [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FertilityConversion</Label>
+    <String>&quot;Konwersja Farmingu [ICON=Stat_Temp_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Minerals</Label>
+    <String>&quot;[ICON=Stat_Minerals_Icon] Minerały&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Minerals</Label>
+    <String>&quot;Minerały są miarą surowych zasobów mineralnych planety dostępnych do bezpośredniego wykorzystania w budowie ulepszeń i statków.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Technology</Label>
+    <String>&quot;Technologia [ICON=Stat_Technology_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Technology</Label>
+    <String>&quot;Technologia to rzadki naturalny zasób, który odzwierciedla nietypowe i najciekawsze aspekty planety. Naukowcy mogą badać te aspekty, aby posunąć nasze badania do przodu.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Fertility</Label>
+    <String>&quot;[ICON=Stat_Fertility_Icon] Farming&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Fertility</Label>
+    <String>&quot;Płodność reprezentuje ilość życia biologicznego, które planeta jest w stanie wspierać. To jest kluczowe dla wyprodukowania wystarczającej ilości jedzenia, aby nakarmić naszych obywateli.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetInfluence</Label>
+    <String>&quot;Znaczenie kulturowe [ICON=Stat_Culture_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_PlanetInfluence</Label>
+    <String>&quot;Znaczenie kulturowe reprezentuje potencjał planety do generowania wpływów, co pozwala na rozszerzanie twoich granic.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MineralNet</Label>
+    <String>&quot;[ICON=Stat_Minerals_Icon] Wejście mineralne&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechnologyNet</Label>
+    <String>&quot;[ICON=Stat_Technology_Icon] Technologiczny Wkład&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_WealthNet</Label>
+    <String>&quot;Wejście Bogactwa [ICON=Stat_Wealth_Icon]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_FertilityNet</Label>
+    <String>&quot;[ICON=Stat_Fertility_Icon] Wejście do Farmy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetInfluenceNet</Label>
+    <String>&quot;[ICON=Stat_Culture_Icon] Kulturowe Wprowadzenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ColonySponsorDecayMod</Label>
+    <String>&quot;Rozkład&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ColonySponsorDecayMod</Label>
+    <String>Procent utraconej produkcji zasobów z powodu niewydolności na drodze do sponsorowanego świata rdzeniowego.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ProtestingThreshold</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Próg Protestu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PlanetTilesAvailable</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Kafelki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanAssassinateDiplomats</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Zabij Dyplomatów&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanAssassinateDiplomats</Label>
+    <String>Pozwala na zamach na dyplomatów przydzielonych do Ciebie.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Crime</Label>
+    <String>&quot;[ICON=CrimeIcon32] Zbrodnia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Crime</Label>
+    <String>&quot;Przestępczość zmniejsza dochód twojej kolonii, a także zwiększa prawdopodobieństwo, że nowi obywatele będą przestępcami, co z kolei podnosi poziom przestępczości. Obywatele będą również cierpieć na obniżenie Aprobaty, jeśli przestępczość jest zbyt wysoka.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Pollution</Label>
+    <String>&quot;[ICON=ControlPollution32] Zanieczyszczenie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Pollution</Label>
+    <String>&quot;Jakość środowiska na planecie. Wysokie zanieczyszczenie redukuje wzrost obywateli i produkcję jedzenia.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PollutionTally</Label>
+    <String>&quot;[ICON=ControlPollution32] Nagromadzenie zanieczyszczeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_PollutionPerTurn</Label>
+    <String>&quot;[ICON=ControlPollution32] Zanieczyszczenie na miesiąc&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Control</Label>
+    <String>&quot;Kontrola [ICON=ControlIcon32]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Control</Label>
+    <String>&quot;Twoja zdolność do wymuszania natychmiastowych efektów, takich jak tłumienie protestów, przyspieszanie budowy i wykonanie rozkazów wykonawczych. Generuj kontrolę poprzez wydarzenia, cechy ideologiczne i specjalne ulepszenia.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ControlTally</Label>
+    <String>&quot;[ICON=ControlIcon32] Skumulowana Kontrola&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ControlPerTurn</Label>
+    <String>&quot;Kontrola [ICON=ControlIcon32] na miesiąc&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UnitSpecializationCost</Label>
+    <String>&quot;Koszt Specjalizacji Obywatela&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_UnitSpecializationCost</Label>
+    <String>&quot;Dostosowuje koszt specjalizacji obywateli&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MaxEnactedPolicies</Label>
+    <String>&quot;[ICON=Stat_Admin_Icon] Maksymalna liczba wprowadzonych polityk&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_MaxEnactedPolicies</Label>
+    <String>&quot;Twardy limit na liczbę polityk, które możesz wprowadzić naraz.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Intelligence</Label>
+    <String>&quot;[ICON=LeaderStat_Intelligence_Icon] Inteligencja&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Intelligence</Label>
+    <String>&quot;Inteligencja modyfikuje [HS=HS_Research]Research[/HS] oraz powiązane zadania. Dla liderów, Inteligencja jest ważna dla Ministra Technologii oraz dla [HS=HS_Governor]Governors[/HS] na światach skoncentrowanych na technologii.[BR][BR]Dla obywateli, Inteligencja jest ważna dla naukowców.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Social</Label>
+    <String>&quot;[ICON=LeaderStat_Social_Icon] Społeczność&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Social</Label>
+    <String>&quot;Social wpływa na umiejętności lidera w zadaniach [HS=HS_Approval]Approval[/HS] i [HS=HS_Influence]Influence[/HS]. Wysoki poziom umiejętności Social jest ważny dla dyplomatów, Ministrów Kolonizacji i [HS=HS_Governor]Governors[/HS].[BR][BR]Dla obywateli, Social jest ważny dla artystów i handlowców.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Diligence</Label>
+    <String>&quot;[ICON=LeaderStat_Diligence_Icon] Dbałość&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Diligence</Label>
+    <String>&quot;Diligencja modyfikuje umiejętności lidera w zadaniach związanych z produkcją. Wysoka Diligencja jest ważna dla [HS=HS_Commander]Dowódców[/HS] i dla [HS=HS_Governor]Gubernatorów[/HS] świata opartego na [HS=HS_Manufacturing]Produkcji[/HS].[BR][BR]Dla obywateli, Diligencja jest ważna dla pracowników i rolników&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Resolve</Label>
+    <String>&quot;[ICON=LeaderStat_Resolve_Icon] Rozwiązanie&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Resolve</Label>
+    <String>&quot;Resolve wpływa na umiejętności lidera w zadaniach wojskowych. Wysoki poziom Resolve czyni z niego potężnego [HS=HS_Commander]Dowódcę[/HS].[BR][BR]Dla obywateli, Resolve jest ważne dla Żołnierzy. Całkowity poziom Resolve obywateli danego świata dodaje do oporu tej planety [HS=HS_Resistance]Resistance[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Expectations</Label>
+    <String>&quot;[ICON=LeaderStat_Expectations_Icon] Oczekiwania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Expectations</Label>
+    <String>&quot;Oczekiwania modyfikują [HS=HS_Approval]Zgoda[/HS] obywatela. Obywatele z wysokimi oczekiwaniami będą potrzebować rozrywki i zasobów luksusowych, podczas gdy ci z niskimi oczekiwaniami są znacznie łatwiejsi do zadowolenia.[BR][BR]Specjalizacja jednostki zwiększy jej oczekiwania.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Loyalty</Label>
+    <String>&quot;[ICON=LeaderStat_Loyalty_Icon] Lojalność&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_Loyalty</Label>
+    <String>&quot;Loyalty to jest opinia lidera o tobie.[BR][BR]Lider z lojalnością poniżej 30 jest narażony na rezygnację lub próby podważenia twojej pozycji. Lider o wyjątkowo wysokiej lojalności może zaoferować dodatkowe wsparcie i pomoc.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ApprovalFromSoldierUnits</Label>
+    <String>&quot;Akceptacja od Jednostek Żołnierskich&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ApprovalFromSoldierUnits</Label>
+    <String>&quot;Akceptacja udzielona przez obywateli przydzielonych do roli Żołnierzy.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyIndividualism</Label>
+    <String>&quot;Indywidualizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyIndividualism</Label>
+    <String>&quot;DO ZROBIENIA OPIS: Indywidualizm Ideologiczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyIndividualism</Label>
+    <String>&quot;[HS=HS_Ideology_Individualism]Indywidualizm[/HS] [HS=HS_IdeologyIndividualism]Ideologia Indywidualizmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTotalitarianism</Label>
+    <String>&quot;Totalitaryzm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTotalitarianism</Label>
+    <String>TODO OPIS: TotalitaryzmIdeologiczny</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyTotalitarianism</Label>
+    <String>&quot;[HS=HS_Ideology_Totalitarianism]Totalitaryzm[/HS] [HS=HS_IdeologyTotalitarianism]Ideologia Totalitaryzmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyEgalitarianism</Label>
+    <String>&quot;Egalitaryzm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyEgalitarianism</Label>
+    <String>TODO OPIS: IdeologiaEgalitaryzmu</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyEgalitarianism</Label>
+    <String>&quot;[HS=HS_Ideology_Egalitarianism]Egalitaryzm[/HS] [HS=HS_IdeologyEgalitarianism]Ideologia Egalitaryzmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraditionalism</Label>
+    <String>&quot;Tradycjonalizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraditionalism</Label>
+    <String>TODO OPIS: IdeologiaTradycjonalizmu</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyTraditionalism</Label>
+    <String>&quot;[HS=HS_Ideology_Tradition]Tradycja[/HS] [HS=HS_IdeologyTraditionalism]Ideologia Tradycji[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyProgressivism</Label>
+    <String>&quot;Progresywizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyProgressivism</Label>
+    <String>&quot;DO ZROBIENIA OPIS: ProgresywizmIdeologiczny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyProgressivism</Label>
+    <String>&quot;[HS=HS_Ideology_Progressivism]Progresywizm[/HS] [HS=HS_IdeologyProgressivism]Ideologia Progresywizm[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyPacifism</Label>
+    <String>&quot;Pacyfizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyPacifism</Label>
+    <String>TODO OPIS: IdeologiaPacyfizmu</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyPacifism</Label>
+    <String>&quot;[HS=HS_Ideology_Pacifism]Pacyfizm[/HS] [HS=HS_IdeologyPacifism]Ideologia Pacyfizmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyNihilism</Label>
+    <String>&quot;Nihilizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyNihilism</Label>
+    <String>TODO OPIS: IdeologiaNihilizmu</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyNihilism</Label>
+    <String>&quot;[HS=HS_Ideology_Nihilism]Nihilizm[/HS] [HS=HS_IdeologyNihilism]Ideologia Nihilizmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyCollectivism</Label>
+    <String>&quot;Kolektywizm&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyCollectivism</Label>
+    <String>&quot;DO ZROBIENIA OPIS: IdeologiaKolektywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAMEFORGENTOOLTIP_IdeologyCollectivism</Label>
+    <String>&quot;[HS=HS_Ideology_Collectivism]Kolektywizm[/HS] [HS=HS_IdeologyCollectivisms]Ideologia Kolektywizmu[/HS]&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostTotalitarianism</Label>
+    <String>&quot;Koszt cechy ideologii totalitaryzmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostTotalitarianism</Label>
+    <String>&quot;Koszt punktów kultury za następną cechę kulturową totalitaryzmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostIndividualism</Label>
+    <String>&quot;Koszt cechy ideologii indywidualizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostIndividualism</Label>
+    <String>&quot;Koszt punktów kultury dla następnego indywidualistycznego cechy kulturowej&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostTraditionalism</Label>
+    <String>&quot;Koszt cechy ideologii tradycjonalizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostTraditionalism</Label>
+    <String>&quot;Koszt punktów tradycjonalizmu dla następnego cechu kulturowego Tradycji&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostProgressivism</Label>
+    <String>&quot;Koszt cechy ideologii progresywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostProgressivism</Label>
+    <String>&quot;Koszt punktów kultury na następny cechę kulturową progresywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostPacifism</Label>
+    <String>&quot;Koszt Cechy Ideologii Pacyfizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostPacifism</Label>
+    <String>&quot;Koszt punktów kultury na następną cechę kulturalną pacyfizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostCollectivism</Label>
+    <String>&quot;Koszt cechy ideologii kolektywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostCollectivism</Label>
+    <String>&quot;Koszt punktów kultury na następną cechę kulturową kolektywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitCostNihilism</Label>
+    <String>&quot;Koszt cechy ideologii nihilizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitCostNihilism</Label>
+    <String>&quot;Koszt punktów kultury na następną cechę kulturową Nihilizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceTotalitarianism</Label>
+    <String>&quot;Zniżka za cechę totalitaryzmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceTotalitarianism</Label>
+    <String>&quot;Liczba wyborów Totalitaryzmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceIndividualism</Label>
+    <String>&quot;Zniżka za cechę indywidualizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceTraditionalism</Label>
+    <String>&quot;Zniżka za Cechę Tradycjonalizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceTraditionalism</Label>
+    <String>&quot;Liczba wyborów Tradycjonalizmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceProgressivism</Label>
+    <String>&quot;Zniżka za cechę progresywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceProgressivism</Label>
+    <String>&quot;Liczba wyborów Postępowości w wydarzeniach&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoicePacifism</Label>
+    <String>&quot;Zniżka dla Cechy Pacyfizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoicePacifism</Label>
+    <String>&quot;Liczba wyborów pacyfizmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceEgalitarianism</Label>
+    <String>&quot;Liczba wyborów Egalitaryzmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceCollectivism</Label>
+    <String>&quot;Zniżka za Cechę Kolektywizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceCollectivism</Label>
+    <String>&quot;Liczba wyborów Kolektywizmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceEgalitarianism</Label>
+    <String>&quot;Zniżka za Cechę Egalitaryzmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceIndividualism</Label>
+    <String>&quot;Liczba wyborów Indywidualizmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IdeologyTraitChoiceNihilism</Label>
+    <String>&quot;Zniżka za Cechę Nihilizmu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IdeologyTraitChoiceNihilism</Label>
+    <String>&quot;Liczba wyborów nihilizmu podczas wydarzeń&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_UpgradeSlots</Label>
+    <String>&quot;Miejsca na ulepszenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_UpgradeSlots</Label>
+    <String>&quot;Miejsca na ulepszenia&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IgnoreRushLimit</Label>
+    <String>&quot;Ignoruj Limit Szybkości&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_IgnoreRushLimit</Label>
+    <String>&quot;Pozwól graczowi przyspieszyć tyle projektów, na ile może sobie pozwolić.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_RushCosts</Label>
+    <String>&quot;Koszty Szybkości&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_RushCosts</Label>
+    <String>&quot;Bonusowy modyfikator do kosztu przyspieszenia projektu.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ApprovalFromClericUnits</Label>
+    <String>&quot;Akceptacja od Jednostek Księży&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ApprovalFromClericUnits</Label>
+    <String>&quot;Akceptacja udzielona przez Klerków na twoich planetach.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ApprovalFromScientistUnits</Label>
+    <String>&quot;Akceptacja od jednostek naukowych&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_ApprovalFromScientistUnits</Label>
+    <String>&quot;Bonus za akceptację wynikający z posiadania Naukowców na kolonii.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_AOERange</Label>
+    <String>&quot;Zasięg Efektu Obszarowego&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_AOERange</Label>
+    <String>&quot;Promień obszaru, gdy modyfikatory obszaru działania są stosowane na mapie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Prestige</Label>
+    <String>&quot;[ICON=Stat_Prestige_Icon] Prestiż&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Prestige</Label>
+    <String>&quot;Miara postępu w kierunku dominacji galaktycznej.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThinktankFavor</Label>
+    <String>&quot;[ICON=Stat_ThinktankFavor_Icon] Przysługa&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ThinktankFavor</Label>
+    <String>&quot;Ulepszone wyniki przychylności myślącego zbiornika skutkują lepszymi bonusami dla ciebie od przydzielonych liderów.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BazaarDiscount</Label>
+    <String>&quot;[ICON=Stat_BazaarDiscount_Icon] Zniżka na Bazarze&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_BazaarDiscount</Label>
+    <String>&quot;Zniżka przy zakupie na Galaktycznym Bazarze.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_MemberCount</Label>
+    <String>&quot;Liczba Członków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TerrorStarBuildProgress</Label>
+    <String>&quot;Postęp Budowy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanIgnoreAtWarWithHomeworld</Label>
+    <String>&quot;[ICON=Stat_Temp_Icon] Spokojni Obcokrajowcy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanIgnoreAtWarWithHomeworld</Label>
+    <String>&quot;Obywatele planet, które podbiłeś, nie obniżają już poziomu akceptacji, jeśli prowadzisz wojnę z ich gatunkiem.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IntimidationBonus</Label>
+    <String>&quot;Bonus za Intimidację&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_IntimidationBonus</Label>
+    <String>&quot;Zwiększa skuteczność twoich taktyk zastraszania.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanIgnoreDiploPenaltyAtWarWithFriend</Label>
+    <String>&quot;Ignoruj Wojny z Przyjaciółmi&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanIgnoreDiploPenaltyAtWarWithFriend</Label>
+    <String>&quot;Inne cywilizacje ignorują, kiedy jesteś w stanie wojny z ich przyjaciółmi.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanIgnoreDiploPenaltyTradingWithEnemy</Label>
+    <String>&quot;Ignoruj Handel z Wrogami&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanIgnoreDiploPenaltyTradingWithEnemy</Label>
+    <String>&quot;Inne cywilizacje ignorują, kiedy handlujesz z ich wrogiem.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TechRandomOfferDiscountBonus</Label>
+    <String>&quot;Bonus Zniżki na Badania&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_TechRandomOfferDiscountBonus</Label>
+    <String>&quot;Dodatkowe zwiększenie zniżki na badania oferowane na losowe technologie.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TotalAttack</Label>
+    <String>&quot;[ICON=AllWeaponsIcon] Całkowity Atak&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_TotalAttack</Label>
+    <String>&quot;Całkowita moc ataku we wszystkich typach broni&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_TotalDefense</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] Całkowita Obrona&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_TotalDefense</Label>
+    <String>&quot;Całkowita moc obrony we wszystkich typach obrony&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_Conquest</Label>
+    <String>&quot;[ICON=Conquest_Icon] Ocena Podboju&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDEC_Conquest</Label>
+    <String>&quot;Miara skuteczności floty w prowadzeniu oblężenia wrogiej planety&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BazaarPremium</Label>
+    <String>&quot;Bazar Premium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_BazaarPremium</Label>
+    <String>&quot;Premia przy sprzedaży na Galaktycznym Bazarze.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_ThinktankPremium</Label>
+    <String>&quot;Thinktank Premium&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_ThinktankPremium</Label>
+    <String>Bonus do korzyści z Thinktanków.</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanIgnoreThinktankPenalties</Label>
+    <String>&quot;Ignoruj kary Thinktanków&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanIgnoreThinktankPenalties</Label>
+    <String>&quot;Ignoruj negatywne efekty Thinktanks.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_CanStopCrime</Label>
+    <String>&quot;Może Zatrzymać Przestępstwo&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_CanStopCrime</Label>
+    <String>&quot;Zapobiegaj gromadzeniu się przestępstw&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsAtWar</Label>
+    <String>&quot;Jest w stanie wojny&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_IsAtWar</Label>
+    <String>&quot;Czy gracz jest w stanie wojny z kimkolwiek?&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_IsAtPeace</Label>
+    <String>&quot;Jest W Stanie Pokoju&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_IsAtPeace</Label>
+    <String>&quot;Czy gracz jest w pokoju ze wszystkimi?&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_GovernorColonyStatsPremium</Label>
+    <String>&quot;Statystyki Premium Kolonii Gubernatora&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_GovernorColonyStatsPremium</Label>
+    <String>&quot;Wzrost statystyk Kolonii pod wpływem Gubernatora.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATNAME_BattleRating</Label>
+    <String>&quot;[ICON=Combat_Raiting_Icon] Ocena Walki&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATDESC_BattleRating</Label>
+    <String>Kombinacja mocy broni, szybkości strzelania, zasięgów, zdolności obronnych i pojemności punktów życia, wskazująca ogólną skuteczność w bitwie.</String>
+  </StringTable>
+</root>

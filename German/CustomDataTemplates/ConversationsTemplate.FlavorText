@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Erster Kontakt Eröffnungstext]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+    
+  <!-- Peaceful-->
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Erster Kontakt Friedliche Reaktion]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+  
+  <!-- Neutral -->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Erster Kontakt Neutrale Reaktion]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Kriegserklärung Eröffnungstext]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+
+  </FlavorTextDef>
+
+  <!-- Aggressive -->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_AGGRESSIVE</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Kriegserklärung Aggressive Reaktion]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Disappointed-->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_DISAPPOINTED</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Kriegserklärung Enttäuschte Reaktion]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Frieden Eröffnungstext]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+
+  </FlavorTextDef>
+
+  <!-- agree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Frieden Antwort Zustimmen]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Frieden Antwort Zustimmen Zähler]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- disagree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Frieden Antwort verweigern]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Frieden Antwort Verweigerung Zähler]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <!-- Conversation: DemandCredits -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Wir verlangen, dass Sie uns {AMOUNT:2}Krediten geben.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Krediten akzeptieren.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Forderung nach Krediten ablehnen.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Ablehnung der Nachfrage nach Krediten]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandCreditsPerTurn -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Zahlen Sie uns {AMOUNT:2} Krediten pro Woche.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Krediten pro Woche akzeptieren]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Krediten pro Woche ablehnen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Ablehnung der Nachfrage nach Krediten pro Woche.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandTech -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage {TECHNAME:2}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Technologie akzeptieren]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Technologie ablehnen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Ablehnung der Nachfrage nach Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[{AMOUNT:2} Kredite beantragen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antrag auf Gutschriften akzeptieren.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf einen angenommenen Antrag auf Gutschriften.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antrag auf Gutschriften ablehnen.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Anfrage {TECHNAME:2}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Anfrage für Technik akzeptieren]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf ein angenommenes Ersuchen um Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Anfrage nach Technik ablehnen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Wir werden von den {PLAYERFACTIONLONG:3} angegriffen. Bitte, {LEADERNAME:2}, helfen Sie uns mit {AMOUNT:2} Credits.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Bitte um Hilfe in Form von Krediten annehmen.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf ein angenommenes Hilfeersuchen in Form von Krediten]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ablehnung der Bitte um Hilfe in Form von Krediten]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Wir werden angegriffen von der {PLAYERFACTIONLONG:3}. Wir könnten Ihre Hilfe gebrauchen, {LEADERNAME:2}. Würden Sie uns mit {TECHNAME:2}?]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nimm die Anfrage nach Hilfe in Form von Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf ein angenommenes Hilfeersuchen in Form von Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ablehnung der Bitte um Hilfe in Form von Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestWar help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Wir werden von der {PLAYERFACTIONLONG:3}angegriffen. Bitte schließ dich uns im Kampf gegen die {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Anfrage annehmen, Krieg gegen das {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf angenommene Bitte um Hilfe im Kampf gegen die {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ablehnung der Anfrage um Hilfe im Kampf gegen den {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+  <!-- Default: a request, happy if they oblige-->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Wir geben dir {AMOUNT:1} Credits, wenn du Krieg gegen das {PLAYERFACTIONLONG:3} erklärst.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Erkläre der {PLAYERFACTIONLONG:3} den Krieg für Credits]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die angenommene Anfrage, Krieg für Credits zu erklären]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ablehnung der Kriegserklärung wegen Credits]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Forderung nach einer Kriegserklärung an {PLAYERFACTIONLONG:3} im Austausch für {AMOUNT:1} Credits]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Credits akzeptieren]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nachfrage nach Credits ablehnen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf abgelehnte Nachfrage nach Credits]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayTechForDeclareWarOnOther -->
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antrag auf Kriegserklärung an {PLAYERFACTIONLONG:3} im Austausch für {TECHNAME:1}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Anfrage akzeptieren, Krieg zu erklären, im Austausch für Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die angenommene Anfrage, Krieg zu erklären im Austausch für Technologie]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Lehne den Antrag ab, Krieg zu erklären im Austausch für Technologie.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveCredits -->
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Biete ein Geschenk von {AMOUNT:1} Credits.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Schenkung von Credits]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveTech -->
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Biete ein Geschenk von {TECHNAME:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf das Geschenk der Technik]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: OnPlayerDead -->
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Die Fraktion {PLAYERFACTIONLONG:3} wurde vernichtet.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die Nachricht von der zerstörten Fraktion]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandStarbaseRemoval -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Verlangen Sie die Entfernung der Sternenbasis {OBJECTNAME}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Akzeptiere die Forderung, die Sternenbasis zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die akzeptierte Forderung, die Sternenbasis zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Lehne die Forderung ab, die Sternenbasis zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die abgelehnte Forderung nach Entfernung der Sternenbasis]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- DemandAscensionStarbase -->
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START)-->
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Verlangt die Entfernung der Sternenbasis für den Aufstieg {OBJECTNAME}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Akzeptiere die Forderung, die Sternenbasis des Aufstiegs zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die akzeptierte Forderung, die Sternenbasis für den Aufstieg zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Lehne die Forderung ab, die Sternenbasis des Aufstiegs zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die abgelehnte Forderung, die Sternenbasis des Aufstiegs zu entfernen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Biete {AMOUNT:1} Credits für die Aufstiegs-Sternenbasis {OBJECTNAME}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Akzeptiere Credits für die Sternenbasis des Aufstiegs]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf akzeptierte Credits für die Sternenbasis des Aufstiegs]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Angebotene Credits für die Sternenbasis des Aufstiegs ablehnen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf das abgelehnte Angebot von Credits für die Sternenbasis Ascension]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END)-->
+
+  <!--Get off my lawn-->
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Warnung {PLAYERFACTIONLONG:2} vor dem Aufbau militärischer Präsenz im {PLAYERFACTIONLONG:1} Weltraum]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf Warnungen vor militärischer Aufrüstung im {PLAYERFACTIONLONG:1} Weltraum]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Schlusstext zur Warnung vor militärischem Aufbau im {PLAYERFACTIONLONG:1} Weltraum ]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Warnung vor der {PLAYERFACTIONLONG:3} Militärmacht]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Warnung vor der militärischen Macht der {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Schlusstext zur Warnung vor der militärischen Macht der {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Biete {OBJECTNAME:1} an, um im Krieg gegen {PLAYERFACTIONLONG:3} zu helfen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf das angebotene Objekt, um im Krieg gegen {PLAYERFACTIONLONG:3} zu helfen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Schlusstext für das angebotene Objekt, um im Krieg gegen {PLAYERFACTIONLONG:3} zu helfen]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ergebt euch {PLAYERFACTIONLONG:2}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Reaktion auf die Kapitulation]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Informiere den Feind {PLAYERFACTIONLONG:2} über die Kapitulation, aber gib {PLAYERFACTIONLONG:3} die restlichen Vermögenswerte]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Antwort auf die Übergabe mit dem Begünstigten {PLAYERFACTIONLONG:3}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Informieren Sie {PLAYERFACTIONLONG:2} über die Kapitulation an das {PLAYERFACTIONLONG:3}, aber geben Sie alle verbleibenden Vermögenswerte an {PLAYERFACTIONLONG:2}]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Akzeptieren Sie die verbleibenden Vermögenswerte bei der Übergabe.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+</FlavorTextDefs>

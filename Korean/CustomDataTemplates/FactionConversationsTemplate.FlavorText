@@ -1,0 +1,1135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTag>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신을 만나게 되어 기쁩니다, {PLAYERFACTION:2}</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTag>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTION:1}은 {PLAYERFACTION:2}에 대해 더 배우기를 기대하고 있습니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신은 수많은 은하계 중 하나인 {LEADERNAME:2}입니다, 조심스럽게 행동하십시오.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>마찬가지로 {LEADERNAME:1}님.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Peaceful-->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+      </Requirements>
+      <Text>당신을 만나게 되어 기쁩니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTo>
+      </Requirements>
+      <Text>우리는 당신에 대해 더 배우기를 기대합니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Neutral -->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+      </Requirements>
+      <Text>우리가 당신을 알게 된 후에 만나게 되어 얼마나 기쁜지 알게 될 것입니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTo>
+      </Requirements>
+      <Text>우리를 알게 되면 분명히 우리를 사랑하게 될 거라고 확신합니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <!-- Neutral -->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+      </Requirements>
+      <Text>우리는 교역에 개방적입니다. [COLOR=UIDefaultHighlight](교역 시작)[/COLOR].</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTag>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>전쟁을 위해 준비하십시오!</Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTag>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+      </Requirements>
+      <Text>전쟁을 준비하셨습니까, {PLAYERFACTION:2}?</Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Aggressive -->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_AGGRESSIVE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTo>
+      </Requirements>
+      <Text>가져와라! 우리는 너를 벌레처럼 짓밟을 것이다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTo>
+      </Requirements>
+      <Text>오, 우리는 준비되어 있다. 너희는 이 날을 후회하게 될 것이다!</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Disappointed-->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_DISAPPOINTED</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTo>
+      </Requirements>
+      <Text>아쉽게도 우리는 문제를 해결하지 못했다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTo>
+      </Requirements>
+      <Text>당신이 전쟁이 필요한 선택이라고 느낀 것에 대해 우리는 유감을 표합니다. 하지만 우리가 누가 더 잘 준비되었는지를 알게 될 것입니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+   
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTag>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>이 전쟁을 끝내고 화해합시다.</Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTag>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+      </Requirements>
+      <Text>이 전쟁을 끝내자.</Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- agree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTo>
+      </Requirements>
+      <Text>그럼요.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTo>
+      </Requirements>
+      <Text>좋군요.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>멋지다.</Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+      </Requirements>
+      <Text>훌륭하다.</Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- disagree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTo>
+      </Requirements>
+      <Text>아니. 그냥 아니야.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTo>
+      </Requirements>
+      <Text>아니오.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신은 실수를 저지르고 있습니다.</Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+      </Requirements>
+      <Text>좋아. 그렇게 해라.</Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <!-- Conversation: DemandCredits -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 당신에게 {AMOUNT:2} 크레딧을 주는 것을 요구합니다.</Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>DEMAND_CREDITS_CUSTOM_FACTION</ResponseTo>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:2}는 당분간 당신이 원하는 것을 줄 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>DEMAND_CREDITS_CUSTOM_FACTION</ResponseTo>
+      </Requirements>
+      <Text>{PLAYERFACTION:2}은 밀리지 않을 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>나는 이것을 후회하지만, 당신이 그럴 것보다는 덜하다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandCreditsPerTurn -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>하루에 {AMOUNT:2} 크레딧을 지불하고 또 하루를 살아남은 것을 축하하십시오.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>당신은 무례한 사람이군요, {LEADERNAME:1}님. 하지만 우리는 일단 이 요청에 따르겠습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>당신은 성가신 사람이에요, {LEADERNAME:1} 우리는 이런 것을 참아내지 않을 거에요.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>그것을 듣고 매우 유감스럽게 생각합니다. 하지만 당신이 느낄 유감보다는 그렇게 많지 않습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandTech -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{TECHNAME:2}에 대한 정보를 제공해 주시면, 아마도 우리의 관계에 도움이 될 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>좋은 관계를 유지하고자 하는 희망으로, {PLAYERFACTIONLONG:2}는 당분간 당신이 원하는 것을 드릴 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>당신이 우리가 {TECHNAME:2}에 대한 지식을 그냥 넘겨줄 것이라고 생각하는 것이 귀엽네요. 직접 숙제를 해보세요.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>그것을 듣고 유감스럽게 생각합니다. 하지만 당신이 느낄 후회보다는 아닙니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{AMOUNT:2} 크레딧의 선물로 우리를 돕는 것을 고려해보시겠습니까?</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>물론입니다. 우리 두 제국의 이익을 위해 계속 협력해 나가기를 바랍니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>감사합니다, 당신의 지원은 크게 감사드립니다!</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>죄송합니다만, 현재 {PLAYERFACTIONLONG:2}은 당신을 도울 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리를 돕기 위해 {TECHNAME:2}에 대한 지식을 선물로 생각해 보실 수 있으신가요?</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>물론입니다. 우리 두 제국의 이익을 위해 계속 협력해 나가기를 바랍니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신의 도움에 크게 감사드립니다! 감사합니다!</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>죄송합니다만, 현재 {PLAYERFACTIONLONG:2}은 귀하의 요청을 도와드릴 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에게 공격받고 있습니다. 부디, {LEADERNAME:2}님, 우리에게 {AMOUNT:2} 크레딧을 주시어 도와주십시오.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>동의합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신의 도움에 감사드립니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>{PLAYERFACTIONLONG:2}은 현재 당신을 도와줄 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에게 공격당하고 있습니다. 당신의 도움이 필요합니다, {LEADERNAME:2}. 우리에게 {TECHNAME:2}을 제공해주시겠습니까?</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>동의합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신의 기술을 공유해 주셔서 감사합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>{PLAYERFACTIONLONG:2}는 자신만의 문제가 있습니다. 아니요.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestWar help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에게 공격받고 있습니다. 상황은 매우 심각하며, {LEADERNAME:2}님. 오직 {PLAYERFACTIONLONG:3}에게 전쟁을 선포하는 경우에만 우리의 생존이 가능합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>그럼, 우리는 그들에게 전쟁을 선포하겠다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신의 도움에 감사드립니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>{PLAYERFACTIONLONG:2}는 현재 {PLAYERFACTIONLONG:3}에게 전쟁을 선포할 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+  <!-- Default: a request, happy if they oblige-->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:3}은 위험하며, 그들을 제거하는 데 도움을 주시면 감사하겠습니다. 이 일을 대신해 주시는 대가로 {AMOUNT:1} 크레딧을 받아주시겠습니까?</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에 대해 전쟁을 선포할 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신을 믿고 있었습니다. 감사합니다!</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>미안하지만, {PLAYERFACTIONLONG:2}가 지금 이 부담을 감당할 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:3}에게 전쟁을 선포하고, 우리는 {AMOUNT:1} 크레딧을 제공하여 모든 비용 문제를 제거할 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에게 전쟁을 선포할 것입니다. 우리 두 제국의 이익을 위해 계속 협력해 나가길 바랍니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>당신의 이익을 위해 우리가 용병이 되는 것에는 관심이 없습니다, {LEADERNAME:1}.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신은 곧 어쩔 수 없이 한 쪽을 선택해야만 할 것이고, 그때쯤이면 우리의 관대한 제안을 받아들였으면 좋았을 거라 후회하게 될 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayTechForDeclareWarOnOther -->
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:3}은 위험하므로 그들을 제거하는 데 도움을 주시면 감사하겠습니다. 그들에게 전쟁을 선포하고, 우리는 당신의 전투를 돕기 위해 {TECHNAME:1}의 지식을 드리겠습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>우리는 {PLAYERFACTIONLONG:3}에게 전쟁을 선포할 것이다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신을 믿고 있었습니다. 감사합니다!</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>미안하지만, {PLAYERFACTIONLONG:2}가 지금 이 부담을 감당할 수 없습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveCredits -->
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:1}은 우리의 우정을 {AMOUNT:1} 크레딧의 선물로 표시하고 싶어합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>이 선물에 감사드립니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveTech -->
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:1}은 우리의 우정을 {TECHNAME:1}에 대한 지식의 선물로 표시하고 싶어합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>이 선물에 감사드립니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: OnPlayerDead -->
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:3}는 파괴되었습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <Text>이해했습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandStarbaseRemoval -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신의 별 기지 {OBJECTNAME}는 우리의 이익에 직접적인 위협입니다. 즉시 철수하라는 우리의 요구를 받아들여 주십시오.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>좋아, 우리는 즉시 파괴하겠다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>훌륭합니다, 당신은 {PLAYERFACTIONLONG:1}의 존경을 받았습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>아니, 별 기지는 그대로 있을 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신이 이해하고 계시다면, 이것이 당신의 의도를 의심스럽게 만든다는 것을, {LEADERNAME:2}님.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- DemandAscensionStarbase -->
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START)-->
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신의 별 기지 {OBJECTNAME}가 필요합니다. 주지 않는다면, 우리는 강제로 빼앗을 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>자신을 진정하세요. 우리가 그것을 제거할 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>당신은 올바른 선택을 했습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>아니요, 감사합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>그렇다면, 전쟁이다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 당신의 별 기지 {OBJECTNAME}를 원합니다, 그곳에는 승천의 문이 있습니다. 우리는 그것에 대해 {AMOUNT:1}을 주겠습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text>알겠습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>훌륭합니다, 당신은 {PLAYERFACTIONLONG:1}의 감사를 받았습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text>번호.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text>우리는 이것을 포기하지 않을 것입니다, {LEADERNAME:2}.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END)-->
+
+  <!--Get off my lawn-->
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:2}, 우리 문앞에서 병력을 집결하는 것을 보았다. 그만두어야 한다.</Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:2}, 우리 집앞에서 병력을 쌓는 것을 보고 있습니다. 그만두어야 합니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:2}, 우리 문턱 바깥에서 병력을 모으는 것을 보았습니다. 그만두어야 합니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>{PLAYERFACTIONLONG:2} 우리는 당신을 좋아하지만, 우리가 보고 있는 군사력 증강에는 반대합니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Text>여기 볼 것은 없다...</Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>왜 나를 막지 않는 건가요?</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>여기서 볼 것은 없다...</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>당신은 우리를 믿어야 합니다, 친구여.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Text>우리는 이것에 대해 알아볼 것이다.</Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>우리는 이것에 대해 살펴보겠습니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>우리는 당신을 지켜보고 있을 것입니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text>당신을 위해, 우리의 신뢰가 잘못된 곳에 놓이지 않았기를 바랍니다.</Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신에게 경고드립니다, {LEADERNAME:2}님, {PLAYERFACTIONLONG:3}은 강력한 군사력을 갖추고 있습니다. 그들을 주의하십시오.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>경고해줘서 고마워. 우리 조심할게.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>항상.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:2}님, {PLAYERFACTIONLONG:3}와의 싸움에 약간의 어려움을 겪고 계신 것 같습니다. 우리가 전쟁 노력을 돕기 위해 이 {OBJECTNAME:1}을 받아주시길 바랍니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신의 도움이 완벽한 타이밍에 도착했습니다. 감사합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 항상 우리의 친구들을 돕습니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:2}님, 당신이 이기셨습니다. 우리는 항복하고 남은 모든 자산을 당신의 손에 넘길 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>당신이 이성을 깨닫게 된 것에 감사하다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리는 끝났을지도 모르지만, {LEADERNAME:2}, 우리 사람들을 당신의 감독 아래 넘겨줄 것이라고 생각한다면 당신은 바보입니다. 우리의 남은 자산은 모두 우리의 친구인 {PLAYERFACTIONLONG:3}에게 넘겨질 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>원하시는 대로 하십시오, 그러나 결국에는 별로 차이를 만들지 않을 것입니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>우리에게는 선택의 여지가 없습니다, {LEADERNAME:2}님, 우리는 {PLAYERFACTIONLONG:3}에게 항복해야 합니다. 당신은 과거에 우리에게 친절했기 때문에, 우리의 제국의 나머지 부분을 드리는 것이 우리의 소망입니다. 우리의 자원을 사용하여 {PLAYERFACTIONLONG:3}에게 반격하십시오!</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>감사합니다.</Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: 그럼, 우리 거래를 해봅시다.</Text>
+      <Text>{LEADERNAME:1}: 이것은 수용 가능하다.</Text>
+      <Text>{LEADERNAME:1}: 동의합니다.</Text>
+      <Text>{LEADERNAME:1}: 이건 작동해.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_REFUSE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: 이 제안은 수용할 수 없습니다.</Text>
+      <Text>{LEADERNAME:1}: 아니요.</Text>
+      <Text>{LEADERNAME:1}: 이것은 나에게 맞지 않을 것입니다.</Text>
+      <Text>{LEADERNAME:1}: 우리는 더 필요해.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_PERFORMED</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: 합의에 이를 수 있어서 기쁩니다.</Text>
+      <Text>{LEADERNAME:1}: 오늘은 좋은 날이었다.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+</FlavorTextDefs>

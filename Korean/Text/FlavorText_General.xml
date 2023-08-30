@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- Created with the Flavor Text Editor -->
+    <!-- FlavorText_General.xml -->
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>탈라스 오르다 컬란 바나.
+(유니버설 번역기를 연구해야 합니다.)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
+                <ListenerHasUniversalTranslator>true</ListenerHasUniversalTranslator>
+                <RelationsRange>
+                    <RangeMax>-1</RangeMax>
+                </RelationsRange>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
+                <RevisitedTopicBarrierCount>2</RevisitedTopicBarrierCount>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>당신이 아마 의심하듯이, 우리는 곧 당신의 살속에 알을 낳게 될 것입니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>당신이 아르노르와 공포의 군주들을 선조들로 언급하는 것을 들었습니다. 우리는 처음으로 은하계의 다른 부분들을 연결하는 부분공간 흐름을 발견했습니다.[BR][BR]일반적으로 알려져 있지 않은 사실은, 이를 위한 특별한 기술을 우리가 발명한 것이 아니라는 것입니다. 그것들은 발명이 아니라 발견이었습니다.[BR][BR]부분공간 흐름은 사실 우주의 자연 현상입니다. 우리가 알기로는, 완전히 다른 은하계에 이르는 흐름들이 존재할 수 있습니다.</Text>
+            <Text>우주에는 부분 공간 흐름보다 훨씬 더 이상한 기이함들이 존재합니다. 예를 들어, 완전히 다른 우주 사이를 이동하는 차원의 문이 있습니다.[BR][BR]우리는 한 번, 자체의 역사적인 이야기가 있는 우주에서 온 Arilou라는 다른 우주의 종족을 만났습니다.</Text>
+            <Text>선도자들이 사라진 지 오랜 후, 우리는 단순히 우주를 탐사하며 다음 위대한 놀라움을 찾는 것에 만족했습니다.[BR][BR]불행히도, 우주에는 당신이 공포의 군주라고 부르는 종족보다 훨씬 더 나쁜 존재들이 있습니다.[BR][BR]고대의 창조자들인 미스릴라르는 선도자들을 만들기 전에 많은 종류의 창조물들을 실험했고, 그 모든 것들이 사라진 것은 아닙니다. 두려움을 가지고 말하건대, 이제 몇몇은 깨어나 있습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>오래 전, 우리의 세계에는 다섯 가지 다른 지성 종족이 존재했습니다. 그들을 '지혜롭다'고 부를 수도 있겠지만, 저는 그런 의미론적인 놀이에 끼어들 권한이 없습니다. 어쨌든, 우리만이 살아남은 것입니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리에게 있어 자기 이익은 최고의 도덕입니다. 당신이 살아남는 것이 우리의 이익이라면, 당신이 우리의 가장 충실한 친구가 될 것임을 절대적으로 확신할 수 있습니다.[BR][BR]물론, 반대로, 당신이 죽는 것이 우리의 이익이라면, 당신이 죽을 것임을 동등하게 확신할 수 있습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>역사에 잊혀져 버렸지만, 별들 사이의 관문인 스타게이트는 우리 문명이 발명한 것입니다.[BR][BR]20만 년 동안 우리는 스타게이트 네트워크를 만드는데 수조를 투자했습니다.[BR][BR]스타게이트는 우주선이 하이퍼스페이스 레벨 2에서 어느 두 곳 사이로도 이동할 수 있게 해주었습니다. 이로 인해 10광년을 이동하는 우주선의 여행 시간이 단지 3년 조금 넘게 줄어들었습니다.[BR][BR]물론, 하이퍼드라이브 기술의 확산으로 개별 우주선들은 훨씬 더 빠르게 이동할 수 있게 되어 우리의 노력은 과거의 것이 되었습니다. 하지만 수만 년 동안 이 은하계의 일부는 우</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>다른 문명들은 우주가 유한한 것뿐만 아니라 도달할 수 있는 부분은 극히 일부일 뿐이라는 사실을 깨닫지 못하고 있다. [BR][BR]틀림없이, 이 은하계가 우리가 도달할 수 있을 유일한 곳이다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리의 세계는 선조들이 그들의 전성기에 '엘리멘탈'이라고 불렀습니다. [BR][BR]우리가 드레드니르와 엘라스니르라고 부른 두 선조 진영 간의 첫 번째 외계 대리전은 우리 행성 표면에서 싸워졌습니다. 그것은 은하계의 다른 종들이 현대 형태로 진화하기 훨씬 전의 일이었습니다. 그렇습니다, 인간마저도 포함해서 말이죠.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_YOR</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리는 가까운 미래에 당신들을 전멸시키지 않을 수도 있습니다. 그러나 결국에는 진실을 마주해야 할 것입니다.
+
+우리는 계산을 완료했습니다. 부티스 공허라 불리는 대공허는 단순히 수십억 년 동안의 다이슨 구체 건설로 수많은 은하계의 빛을 가리는 결과일 뿐입니다. 그 공허의 중심에 있는 문명은 이미 그들의 단일성을 경험했습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리 문명은 한때 평화로운, 산업화 이전의 수중 낙원이었습니다. 그러다가 드렝진이 나타났습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리는 수세기 동안 우주 여행에 대해 알고 있었습니다. 하늘에서 내려와 우리의 후손을 끊임없이 훔치는 약탈자들이 있을 때, 우리가 어떻게 알지 못하겠습니까?[BR][BR] 그들의 선박 중 하나가 우리 행성의 표면에서 탈출하지 못한 것은 우리에게 행운이었습니다. 그리고 우리는 그들의 비밀을 알게 되었습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>우리는 그들이 우리의 고향 행성을 빼앗았다는 이유로 Yor를 파괴하려는 것이 아니다. [BR][BR]일부 보고서와는 달리, 우리가 Yor를 창조한 것은 아니다. 선구자들이 우리에게 그들을 만들라고 명령했지만, Yor가 가진 실제 생명의 불씨는 우리로부터 나온 것이 아니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>다양한 종이 존재하는 은하에서는 가장 두드러진 특성을 기반으로 다른 문명을 단순히 스테레오 타입화하기 쉽습니다.[BR][BR]우리는 욕심 많은 존재로 취급받습니다. 그러나 이는 사실이 아닙니다. 우리의 이념은 기회입니다. 우리가 거래를 할 때, 우리는 고객과 우리 자신을 위한 더 나은 우주를 만들고 있습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리가 탐험가가 된 것은 선택이 아니라 필연이다.[BR][BR]모든 세계의 생명력을 적극적으로 흡수하는 무언가가 존재한다. 그래서 많은 행성들이 죽어있는 것을 발견하는 것이다. 이런 세계들은 원래는 죽지 않았다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리는 지구로 돌아가는 것을 고대하고 있습니다. 하지만 지구가 수년 동안 선조들의 방패에 갇혀있는 동안, 우리의 함대는 선조들이 만든 소형 우주에 갇혀 있었습니다.[BR][BR]우리는 그 소형 우주에서 지울 수 없는 것들을 보았습니다. 그것은 단지 드라기놀의 구슬, 소위 베인 무기만이 아니었습니다. 그 소형 우주와 함께 나온 것이었습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ONYX_HIVE</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>정보가 충분한 은하는 평화로운 은하입니다. 다른 이들에 대해 알고 싶다면, 우리를 찾아오십시오.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>우리는 확실히 물리적으로 다른 종을 압도할 수 있는 능력이 있지만, 실제로 직접적인 물리적 폭력을 피하려 최선을 다합니다.[BR][BR]우리 종은 이제 우리에게서 잃어버린 원래의 향향에서만 번식할 수 있습니다. 우리는 오래 살지만, 불멸의 존재도 아니고 파괴할 수 없는 존재도 아닙니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>'더 웨이'가 신앙에 기반한 종교라는 오해가 있습니다. 그렇지 않습니다. [BR][BR]우리는 그렇게 위대한 영광을 지닌 존재와 직접적이고 물리적인 접촉을 가진 종들의 집합체입니다. 그 존재의 우주에 대한 계획은 너무나 숭고해서, 우리는 이 신성한 목적을 다른 이들에게 전파하는 데 자신을 의무화하게 느낍니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>5</RangeMin>
+                    <RangeMax>8</RangeMax>
+                </RelationsRange>
+                <RevisitedTopicBarrierCount>2</RevisitedTopicBarrierCount>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리와 같은 철학을 가진 문명들이 모여서 우리에게 반대하는 자들을 파괴해야 할 시기가 다가오고 있습니다.</Text>
+            <Text>곧, {LEADERNAME:2}, 은하계는 어떤 방식으로든 하나로 통합될 것입니다.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>우리는 지금까지 선택하신 이념적인 길에 만족하고 있습니다. 자비는 바른 길입니다.</Text>
+            <Text>악의 유혹을 저항하는 것은 항상 쉽지 않습니다. 하지만 이것이 우리 모두에게 더 나은 은하계를 구축하는 데 도움이 될 것입니다.</Text>
+            <Text>우주는 이미 충분히 어두우니, {LEADERNAME:2}님, 더 이상 어둡게 만들지 말아주세요. 지금까지 선택해 온 길에 우리는 만족하고 있습니다.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Merciless</PersonalityType>
+            </Requirements>
+            <Text>당신이 우리에게 인상을 남겼습니다, {LEADERNAME:2}님. 약자가 강자의 먹이가 된다는 당신의 이해는 우리로부터 존경을 얻었습니다.</Text>
+            <Text>약한 자들이 고통스런 존재 상태를 계속 겪게 두는 것이 더 친절한 것일까요? 아니면 그들의 고통을 종결시키기 위해 그들을 소멸시키는 것이 더 친절한 것일까요? {LEADERNAME:2} 님의 행동을 기준으로 보면, 우리와 같은 생각인 것 같습니다. 약한 자들은 소멸되어야 합니다.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+                <ListenerRaceTrait>SiliconBasedAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>정확히, 당신은 무엇인가요? 암석 기반의 벌레 종류라도요?</Text>
+            <Text>실리콘 기반의 생명체가 자연적으로 진화했다는 것은 믿기 어렵습니다. 당신이 자연적으로 생겨난 것이 확실한가요?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+                <ListenerRaceTrait>AmphibiousAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>{PLAYERFACTION:2}은 그들의 고향 세계, {LEADERNAME:2}의 하수구에 머물렀어야 했습니다. 우주에는 물이 거의 없습니다.</Text>
+            <Text>우주의 진공은 당신 같은 사람, {LEADERNAME:2}이 있을 곳이 아닙니다. 당신은 고향 세계의 바다로 돌아가야 합니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>CommonEnemy</RequiredDiplomacyFlag>
+                <PersonalityType>Cruel</PersonalityType>
+            </Requirements>
+            <Text>{PLAYERFACTION:2}와 {PLAYERFACTION:1}가 우리의 공통의 적들을 함께 짓밟을 것입니다! 우리는 그들과 그들의 애완동물을 고문하는 것을 기대하고 있습니다!</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>CommonEnemy</RequiredDiplomacyFlag>
+                <PersonalityType>Diplomatic</PersonalityType>
+            </Requirements>
+            <Text>우리가 은하계 전쟁의 시기에 처해 있는 것은 안타깝다. 하지만 당신이 우리의 공통된 적과 싸우고 있으니 우리는 승리가 확실하다고 믿습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>TradeWithOpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>조심하십시오, {LEADERNAME:2}님. 우리 사람들은 악과 연관된 자들에게 양해를 베풀지 않습니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>YouAreWarMonger</RequiredDiplomacyFlag>
+                <PersonalityType>Peaceful</PersonalityType>
+            </Requirements>
+            <Text>조기에 전쟁을 선포함으로써 얻을 수 있는 이점은 당신에게 훨씬 더 많은 호의를 비용으로 치뤄야 할 것입니다, {LEADERNAME:2}.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TAUNTING_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>-3</RangeMax>
+                </RelationsRange>
+                <RequiredDiplomacyFlag>OpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>당신의 문명은 나를 병들게 합니다. 당신이 우주에 퍼트리는 악과 부도덕함은 우리에게 당신의 멸망을 꿈꾸게 만듭니다.</Text>
+            <Text>당신의 사악한 문명은 결국 도덕적 기준을 갖지 못한 모든 문명들이 겪는 운명을 당하게 될 것입니다.</Text>
+            <Text>우리는 여러분의 문명이 계속 존재하는 것에 대해 슬퍼합니다. 우리는 여러분의 종이 우주에서 멸종하는 그날을 기다리고 있습니다.</Text>
+            <Text>당신의 문명은 윤리적으로 부적절한 길을 선택했습니다. 우리는 단지 시간이 지나면서 모든 악한 제국이 수행하는 운명을 당신이 겪게 되기를 바랄 뿐입니다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TAUNTING_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>-3</RangeMax>
+                </RelationsRange>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>OpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>당신의 힘이 인상적이라고 생각하십니까? 당신의 문명은 항상 쉽고 빠른 길을 선택했기 때문에 번창하고 있을 뿐입니다.</Text>
+            <Text>당신의 힘에도 불구하고, 우리는 당신의 도덕적 선택 때문에 여전히 당신을 열등한 존재로 보고 있습니다.</Text>
+            <Text>당신의 문명의 중심에 있는 부패는 당신에게 일시적인 권력의 이익을 줬습니다. 그러나 결국, 당신의 문명은 무너질 것이고 우리는 그곳에서 웃고 있을 것입니다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>WarWithAlly</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당신은 우리의 동맹인 {LEADERNAME:2}와 전쟁 중입니다. 평화를 찾아내거나 결과를 감수하십시오.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+            </Requirements>
+            <Text>우리 사람들은 당신의 엄청난 힘을 존경합니다, {LEADERNAME:2}님.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_YOR_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>나는 애니메이션된 고기와 대화하고 있다는 사실을 믿을 수 없어. 너는 어떻게 기능하는 거야?</Text>
+            <Text>저는 그저 이해하고 싶을 뿐입니다. 당신은 "입"이라고 부르는 구멍에 위치한 고기 조각을 통해 공기를 밀어내어 소통한다는 건가요?</Text>
+            <Text>당신이라는 생명체의 존재에 우리는 계속해서 놀라워하고 있습니다. 당신은 본질적으로 끈적한 액체 덩어리일 뿐입니다. 당신은 어떻게 창조된 것인가요?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>진심인가요? 우리 앞에서 뻔뻔스럽게 우리 사람들을 반란으로 선동하려고 하시는 건가요?</Text>
+            <Text>당신이 우리 사람들을 문화적으로 지배하려는 시도를 그만두지 않는다면, 우리는 전쟁을 선포해야 할 것입니다.</Text>
+            <Text>당신의 통신 별기지들이 우리의 세계에 너무 가깝게 당신의 추한 문화를 퍼뜨리고 있습니다. 그것들을 제거하십시오.</Text>
+            <Text>우리 행성 근처에 너희의 통신 별 기지가 위치해 있는 것을 우리는 좋아하지 않아.</Text>
+            <Text>당신의 통신 별 기지가 우리 세계에 너무 가까워서, 우리는 당신의 불쾌한 엔터테인먼트를 포착하고 있습니다.</Text>
+            <PreferenceWeight>40</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>딸이 와서 당신들의 놀라운 행동 방식에 대해 말해주었습니다. 그녀에게 어떻게 알게 되었는지 물었더니, 우리의 영향권 안에 당신들의 문화 별 기지가 있다는 것을 알게 되었습니다! 그것을 없애십시오.</Text>
+            <Text>진지하게 당신이 인류를 문화적으로 지배할 수 있다고 생각하십니까? 우리는 초콜릿이 있습니다!</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당신의 비열한 문화가 우리를 불편하게 합니다. 당장 우리의 영향권에서 터무니없는 별 기지를 철수시키십시오.</Text>
+            <Text>당신의 문화는 토리안 파이어 칠리에는 상대가 되지 못합니다.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리 사람들은 타이탄들, 마법 왕들, 그리고 추락한 요정들에게 저항해 왔습니다. 우리는 당신들의 비열한 문화에도 저항할 것입니다.</Text>
+            <Text>우리의 세계는 실제로 마법과 같습니다. 정말로 그들이 당신과 함께하길 원할까요?</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당장 당신의 악랄한 문화를 따르도록 우리 사람들을 세뇌하려는 시도를 그만두십시오.</Text>
+            <Text>우리 사람들은 깊이 있게 영적입니다. 우리는 여러분이 우리에게 가하는 문화적 공격을 더 이상 참아내지 않을 것입니다.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_YOR</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당신은 시간을 낭비하고 있습니다. 우리 사람들은 문화적으로 동화될 수 없습니다.</Text>
+            <Text>비생물체로서, 우리는 당신의 문화가 필요 없습니다. 우리는 그것에 면역입니다. 우리의 세계는 절대 반란을 일으키지 않을 것입니다.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리는 당신의 문화에 관심이 없습니다. 우리 행성 바로 옆에 별 기지를 세우는 것을 우리가 모르리라고 생각했습니까?</Text>
+            <Text>우리는 이미 한 세상을 피해야 했고, 외계 문화에 종속되려는 의도는 없습니다. 여러분의 별 기지를 제거하십시오.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>TradeWithOpposingCulture</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>누구와 거래하는지 조심하십시오. 우리의 친구가 되고 싶다면, 야비한 이념을 가진 사람들과 거래하지 마십시오.</Text>
+            <Text>우리가 반대하는 모든 것을 대표하는 문화를 가진 문명과 거래하고 있다는 것을 알아야 합니다.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_OPENBORDERS_GENERAL</ResponseTag>
+            <Requirements>
+                <RequiredDiplomacyFlag>OpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리는 여러분과 함께 일하는 것의 편리성에 대해 우리 사람들로부터 많은 보고를 받고 있습니다.
+
+우리 두 나라 사이에 존재하는 개방적인 국경 조약은 우리 시민과 여러분의 시민 사이의 상업과 관계를 크게 향상시켰습니다.</Text>
+            <Text>열린 국경 조약 덕분에 이 분야에서의 항해가 훨씬 용이해졌습니다. 감사합니다.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_ATWAR_GENERAL</ResponseTag>
+            <Requirements>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+                <RequiredDiplomacyFlag>StrongerMilitary</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>곧, 당신들의 세계는 우리의 것이 될 것입니다.</Text>
+            <Text>지금 항복하면, 우리는 자비를 베풀 것입니다.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>2</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당신의 행성들은 정복을 위해 충분히 성숙했습니다. 지금도, 나의 군사 고문들이 나에게 행동을 취하라고 충고하고 있습니다.</Text>
+            <Text>당신의 군대가 너무 약해 이미 정복당하지 않은 것이 기적입니다.</Text>
+            <PreferenceWeight>70</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+                <SpeakerRaceTrait>EntrepreneursAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>우리가 자본주의를 얼마나 사랑하는지는 모르지만, 당신이 고의적으로 우리 사람들을 선동하여 당신에게 가입하도록 하는 것은 우리가 좋아하지 않습니다. 당신의 별 기지를 제거하십시오. 그렇지 않으면 문제를 일으킬 것입니다.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>TradeRoute</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리의 상호 무역은 우리의 관계를 계속해서 강화시키고 있다.</Text>
+            <Text>우리는 우리의 거래 관계가 우리 사람들 사이에 신뢰감을 형성하고 있다는 것을 발견하고 있습니다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>0</RangeMin>
+                    <RangeMax>1</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>SharedBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리의 공유된 경계선은 나의 고문들을 신경질나게 만드네. 반드시 너의 영역에 머물러 있도록 해.</Text>
+            <Text>우리는 당신의 국경을 존중하지 않는다는 것을 인정합니다. 아마도 개방 국경 조약의 시기가 된 것일까요?</Text>
+            <Text>우리의 가까운 국경 때문에 긴장감이 존재합니다. 개방된 국경 조약은 이를 완화시킬 것입니다.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>StarbaseInZOCWithoutOpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>당신이 우리 별 기지에 대해 상당히 짜증내고 있는 우리 군대를 인식해야 합니다. 당신은 우리와의 개방적인 국경 조약을 협상해야 합니다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>ShipInZOCWithoutOpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리는 침범하는 귀하의 선박을 공격할 계획이 없지만, 그것들이 우리에게 어느 정도의 불안감을 준다는 것을 알아두십시오. 만약 우리의 영향권을 통과하려면, 개방된 국경 조약을 협상하십시오.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>MilitaryShipNearMyPlanet</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리는 개방된 국경 조약 없이 당신들의 무장한 우주선이 우리의 세계 근처를 여행하는 것에 대해 우려하고 있습니다.</Text>
+            <Text>우리와의 좋은 관계를 유지하고 싶다면, 개방된 국경 조약 없이 무장한 우주선을 우리의 우주로 보내지 마십시오.</Text>
+            <Text>우리는 조약 없이 우리 우주로 진입하는 군사 함선을 좋아하지 않습니다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RelativeStrength>SpeakerMuchStronger</RelativeStrength>
+                <RequiredDiplomacyFlag>ConquestVictoryGoal</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리의 궁극적 목표는 은하계를 정복하는 것입니다. 당신을 완전히 소비할 때, 그것이 개인적인 의도가 아니었음을 알게 되길 바랍니다.</Text>
+            <Text>우리 사람들은 은하계 정복을 갈망한다.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>ColonizedWithinZOC</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>우리의 영향권 내에 있는 행성을 개척하였습니다. 그 때문에 반드시 전쟁을 일으킬 것이라는 의미는 아니지만, 그 행성의 인민이 결국 우리에게 합류하기로 결정한다면 놀라지 마십시오.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>당신의 장기 계획이 정확히 무엇인가요? 제 군사 고문들이 당신의 문명이 군사력이 부족한 만큼 우리의 통치 아래에서 더 안전할 것이라고 말합니다.</Text>
+            <Text>당신은 우리에게 당신의 세계를 주는 것을 고려해 본 적이 있나요? 당신의 사람들은 우리의 보호 아래에서 훨씬 안전할 것입니다.</Text>
+            <Text>당신의 군사력 부족은 약탈자들에게 쉬운 목표가 되고 있습니다.</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>당신의 세계들... 너무나도 방어가 미흡하군요. 정복하기에 너무나도 적절합니다.</Text>
+            <Text>당신의 평화주의에 감사드립니다. 이것이 당신의 최종 정복을 훨씬 쉽게 만들어 줄 것입니다.</Text>
+            <Text>당신은 우리가 다른 일들로 바빠 있어 다행이라는 것을 전혀 모르고 있습니다. 당신의 불쌍한 군대와 풍부한 세계들이 우리를 부르고 있습니다. 이해하시나요?</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Spiritual</PersonalityType>
+            </Requirements>
+            <Text>당신의 사람들이 우리에게 올바른 삶의 방식을 배우기 위해 우리를 부르고 있습니다.</Text>
+            <Text>당신의 세계에는 너무 많은 신성모독이 존재합니다. 곧 그들에게 적절한 도덕적 질서를 세워야 할 시간이 올지도 모릅니다.</Text>
+            <Text>당신의 사람들이 그들의 죄로부터의 구원을 갈망하고 있습니다. 우리는 그들의 구원의 도구가 될 수 있습니다.</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Cruel</PersonalityType>
+            </Requirements>
+            <Text>당신의 세계는 식사로 적합한 생명체로 가득 차 있습니다. 당신들은 도살당하기를 기다리는 소와 같습니다.</Text>
+            <Text>당신의 행성들은 우리에게 매우 매력적입니다. 우리의 돌격 부대는 다소 사디스틱 할 수 있지만, 시간이 지나면 당신도 그들을 존경하게 될 것입니다.</Text>
+            <Text>당신의 행성들은 우리가 차지할 준비가 되어 있습니다. 전통적으로, 우리는 희생자를 살아있는 채로 가죽을 벗겨, 하지만 당신이 자발적으로 세계를 우리에게 내줄 의향이 있다면, 우리는... 음, 진지하게 말하자면 여전히 당신을 살아있는 채로 가죽을 벗길 것입니다.</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>

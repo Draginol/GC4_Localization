@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StringTableList
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>Component_Name</Label>
+    <String>&quot;Компонент&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Dec</Label>
+    <String>&quot;Компонент&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Name</Label>
+    <String>&quot;Среднедальномерные ЭСМ&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Dec</Label>
+    <String>&quot;[ICON=PointDefenseIcon] Союзные корабли в зоне действия получают 8 очков обороны.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Name</Label>
+    <String>&quot;Ремонтные Дроны&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Dec</Label>
+    <String>&quot;[ICON=Hitpoints_Icon] Союзные корабли в зоне действия восстанавливают 4 очка прочности за ход.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Name</Label>
+    <String>&quot;Поле стазиса&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Dec</Label>
+    <String>&quot;[ICON=Moves_Icon] Вражеские корабли в зоне действия получают -2 хода.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Name</Label>
+    <String>&quot;Автономный двигатель&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Dec</Label>
+    <String>&quot;[ICON=ShipLogistics_Icon] не требует логистики.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Skyfire_Dec</Label>
+    <String>&quot;[ICON=KineticAugmentIcon] +30% к кинетической атаке всего флота.[BR]
+	[ICON=ApprovalStatIcon] +30% к производству на любой планете, на которой базируется этот корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HeartOfConquest_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] +30% к атаке лучом на всю флотилию.[BR]
+	[ICON=ApprovalStatIcon] +10% одобрения на любой планете, где стационирует этот корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Curiosity_Dec</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] +1 к исследованию, когда аномалия обследуется.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Name</Label>
+    <String>&quot;Двигатель Устрашения&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Dec</Label>
+    <String>&quot;[ICON=Stat_Control_Icon] +1 Контроль за битвой.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Name</Label>
+    <String>&quot;Модуль на утилизацию&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] +100 кредитов за битву.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Name</Label>
+    <String>&quot;Регенерирующие Корпуса&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Dec</Label>
+    <String>&quot;[ICON=Hitpoints_Icon] Полностью восстанавливает здоровье после каждого боя.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Name</Label>
+    <String>&quot;Встроенные Медиа&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Dec</Label>
+    <String>&quot;[ICON=InfluenceGrowth_Icon] +5 к влиянию на каждый центральный мир за битву.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Name</Label>
+    <String>&quot;Диссектор&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Dec</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] +1 к исследованию за битву.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Name</Label>
+    <String>&quot;Адаптивные лазеры&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] +1 Лучевая Атака на каждый уровень.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Name</Label>
+    <String>&quot;Адаптивные ракеты&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Dec</Label>
+    <String>&quot;[ICON=MissileAugmentIcon] +1 к ракетной атаке за уровень.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Name</Label>
+    <String>&quot;Двигатель Импульса&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Dec</Label>
+    <String>&quot;[ICON=Moves_Icon] +1 Ход за уровень&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Perserverance_Dec</Label>
+    <String>&quot;[ICON=ApprovalStatIcon] +10% к одобрению на любой планете, на которой стоит этот корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_EternalCity_Dec</Label>
+    <String>&quot;[ICON=ApprovalStatIcon] +10% одобрения к любой планете, на которой стационируется этот корабль.[BR]
+    [ICON=Stat_Research_Icon] +30% исследований для любой планеты, на которой стационируется этот корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Gaze_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] +25% к атаке лучами для всех кораблей в его флоте.[BR]
+      [ICON=ShieldStrengthIcon] +5 к щитам для всех кораблей в его флоте.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Name</Label>
+    <String>&quot;Лаборатория Рекламации&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Dec</Label>
+    <String>&quot;[ICON=Stat_Special_Icon] 100% шанс захватить корабли, побежденные в бою.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Name</Label>
+    <String>&quot;Камера яиц&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Dec</Label>
+    <String>&quot;[ICON=Stat_Special_Icon] 25% шанс захватить корабли, побежденные в бою.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Name</Label>
+    <String>&quot;Наёмник&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Dec</Label>
+    <String>&quot;Наёмник используется для размещения при создании шаблонов. Не будет виден игроку в окончательной версии.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Name</Label>
+    <String>&quot;Борик Быстрый&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Dec</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Исследовательский корабль
+[ICON=Moves_Icon] Быстрый&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Name</Label>
+    <String>&quot;Адрастос Ваня&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Dec</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Исследовательский корабль[BR]
+[ICON=Shiprange_Icon] Очень длинный радиус действия корабля.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Name</Label>
+    <String>&quot;Cain Rhuin&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Dec</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Исследовательский корабль[BR]
+[ICON=Shiprange_Icon] Делит диапазон с флотом.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Name</Label>
+    <String>&quot;Mirazu Ysen&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Dec</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Исследовательский корабль[BR]
+[ICON=Stat_Credits_Icon] Зарабатывает 25 кредитов за каждый исследованный аномали.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Name</Label>
+    <String>&quot;LL'anso&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Dec</Label>
+    <String>&quot;[ICON=ImmuneToNebula] Иммунитет к эффектам туманности[BR]
+[ICON=Stat_Special_Icon] Игнорируется пиратами.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Name</Label>
+    <String>&quot;Непредсказуемый Кен&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Dec</Label>
+    <String>&quot;[ICON=Shiprange_Icon] Очень быстрый[BR]
+[ICON=Shiprange_Icon] Чрезвычайно длинный радиус действия корабля.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Name</Label>
+    <String>&quot;Sizzor Thane&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Dec</Label>
+    <String>&quot;[ICON=SensorRange_Icon] Исключительно большой диапазон датчика.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Name</Label>
+    <String>&quot;Blandon Xute&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Dec</Label>
+    <String>&quot;[ICON=Mining_Icon] +100% к выходу ресурсов из горнодобывающей космической базы, на которой стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Name</Label>
+    <String>&quot;Pizzota Of Karn&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Dec</Label>
+    <String>&quot;[ICON=InfluenceGrowth_Icon] +100% влияния за ход на любой космической базе, на которой стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Name</Label>
+    <String>&quot;Retuio III&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Dec</Label>
+    <String>&quot;[ICON=AreaofEffectIcon] +3 к зоне влияния любой космической базы, на которой станционирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Name</Label>
+    <String>&quot;Доктор Ангекио Зи&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Dec</Label>
+    <String>&quot;[ICON=CanColonizeIcon] Вмещает больше колонистов
+[ICON=Stat_Manufacturing_Icon] +25% к производству в любой колонии, основанной с помощью этого корабля.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Name</Label>
+    <String>&quot;Bin Beebo&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Dec</Label>
+    <String>&quot;[ICON=CanColonizeIcon] может колонизировать водные, замерзшие и безжизненные экстремальные миры.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Name</Label>
+    <String>&quot;Доступный Слот&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Dec</Label>
+    <String>&quot;[ICON=CanInvadeIcon] может вторгаться в миры до эпохи Войны.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Name</Label>
+    <String>&quot;Draedilik Строитель&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Dec</Label>
+    <String>&quot;[ICON=StarbaseSupport] строит звездную базу с 5 бесплатными модулями.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Name</Label>
+    <String>&quot;Аватар-278&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Dec</Label>
+    <String>&quot;[ICON=Stat_Raw_Productive_Icon] +5 к базовому производству на любой планете, на которой стационируется корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Name</Label>
+    <String>&quot;T'y't'n'lp&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Dec</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] +15% к производству на любой планете, у которой станционирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Name</Label>
+    <String>&quot;Кран&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Dec</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] +5 очков исследования к любой планете, у которой станционирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Name</Label>
+    <String>&quot;Annjeanette Sil&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Dec</Label>
+    <String>&quot;[ICON=ApprovalStatIcon] +5 к очкам морали на любой планете, где стационируется корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Name</Label>
+    <String>&quot;Дружелюбный Майк&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] +5 кредитов за ход на любую планету, где стационирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Name</Label>
+    <String>&quot;Silvainout&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Dec</Label>
+    <String>&quot;[ICON=Stat_Military_Power_Icon] +75% к уклонению[BR]
+[ICON=KineticRangeIcon] Атака с помощью масс-драйвера высокой мощности.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Name</Label>
+    <String>&quot;Qualen Dohg&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Dec</Label>
+    <String>&quot;У [ICON=Hitpoints_Icon] количество очков здоровья среднего корабля.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Name</Label>
+    <String>&quot;Принц Витуриан&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Dec</Label>
+    <String>&quot;[ICON=BeamRangeIcon] +50% дальности луча[BR]
+[ICON=ShieldStrengthIcon] Игнорирует 75% урона от луча.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Name</Label>
+    <String>&quot;Зик Мягкосердечный&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Dec</Label>
+    <String>&quot;[ICON=Stat_Special_Icon] Игнорирует 30% всего полученного урона.[BR]
+[ICON=BeamAugmentIcon] Мощное прототипное лучевое оружие.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Name</Label>
+    <String>&quot;Tad Stormbringer&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Dec</Label>
+    <String>&quot;[ICON=MissileAugmentIcon] Мощные прототипы ракет.[BR]
+[ICON=Stat_Handy_Icon] Мгновенный ремонт в конце битвы.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Name</Label>
+    <String>&quot;Lain&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] Мощные прототипы лучевого оружия.[BR]
+[ICON=Shiprange_Icon] Дальнего действия[BR]
+[ICON=Moves_Icon] Прототип гипердвигателя.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Name</Label>
+    <String>&quot;Сер Манкс из Каула&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] +50% к его лучевой атаке, а также ко всем кораблям в его флоте.[BR]
+[ICON=Stat_Planetary_Defense_Icon] Высокая оборона и очки здоровья.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Name</Label>
+    <String>&quot;Риф Фарсир&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Dec</Label>
+    <String>&quot;[ICON=CanSurveyIcon] Корабль-исследователь[BR]
+[ICON=Shiprange_Icon] Дальнего действия.[BR]
+[ICON=Moves_Icon] Быстрый.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Name</Label>
+    <String>&quot;Доступный Слот&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Dec</Label>
+    <String>&quot;Старый модуль был удален из-за изменений в механике игры. (Оставлено как заполнитель)&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Name</Label>
+    <String>&quot;Доступный слот&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Dec</Label>
+    <String>&quot;Старый модуль был удален из-за изменений в механике игры. (Оставлено как заполнитель)&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Name</Label>
+    <String>&quot;Ишуа из Антарзеи&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Dec</Label>
+    <String>&quot;[ICON=StarbaseSupport] Мгновенно 100 очков влияния при постройке.[BR]
+[ICON=InfluenceGrowth_Icon] 100% влияния за каждый последующий ход.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Name</Label>
+    <String>&quot;Fitrios Pompados&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] Строит торговый маршрут с двойной нормальной прибылью.[BR]
+[ICON=Stat_Special_Icon] Возрождается на родной планете, если сломается.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Name</Label>
+    <String>&quot;Доктор Джонди Ианс&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Dec</Label>
+    <String>&quot;[ICON=AscensionPointsStatIcon] Удваивает бонус, предоставляемый для изучения предтеч.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Name</Label>
+    <String>&quot;Инквизитор&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Dec</Label>
+    <String>&quot;[ICON=ApprovalStatIcon] +100% одобрения к любой планете, на которой стационирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Name</Label>
+    <String>&quot;Kalli Datun&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] +5 кредитов за ход на любой планете, где стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Name</Label>
+    <String>&quot;Melkiur Savante&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Dec</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] +5 очков исследования любой планете, у которой станционирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Name</Label>
+    <String>&quot;Ghhhhhsk&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Dec</Label>
+    <String>&quot;[ICON=InfluenceGrowth_Icon] +100% влияния за ход на любой планете, на которой стационирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Name</Label>
+    <String>&quot;Мастер языков&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Dec</Label>
+    <String>&quot;[ICON=InfluenceGrowth_Icon] +150 очков к базовому влиянию любой колонии, пока корабль находится там.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Name</Label>
+    <String>&quot;LL-88&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Dec</Label>
+    <String>&quot;[ICON=Malevolent_Icon] +1 очко культуры каждый раз, когда корабль или флот, в котором он находится, выигрывает битву.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Name</Label>
+    <String>&quot;Возмездие&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Dec</Label>
+    <String>&quot;Мощный военный корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Name</Label>
+    <String>&quot;Базилиск&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Dec</Label>
+    <String>&quot;[ICON=KineticAugmentIcon] Прототипы масс-драйверов.[BR]
+[ICON=Moves_Icon] Быстрый[BR]
+[ICON=Shiprange_Icon] Чрезвычайно дальний диапазон.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Name</Label>
+    <String>&quot;Spinn&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Dec</Label>
+    <String>&quot;[ICON=FightersCap_Icon] Несет 5 перехватчиков-дронов.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Name</Label>
+    <String>&quot;Адмирал Варо&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Dec</Label>
+    <String>&quot;[ICON=MissileAugmentIcon] Мощное прототипное ракетное оружие.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Name</Label>
+    <String>&quot;Ночной Кулак&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] Мощное прототипное лучевое оружие.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Name</Label>
+    <String>&quot;Watterson Bitte&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Dec</Label>
+    <String>&quot;[ICON=Moves_Icon] +50% к ходам всех кораблей во флоте.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Name</Label>
+    <String>&quot;Kreuger von Trant&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Dec</Label>
+    <String>&quot;[ICON=ShieldStrengthIcon] Все корабли во флоте получают бесплатно 10 очков щитовой защиты.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Name</Label>
+    <String>&quot;Holopai&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Dec</Label>
+    <String>&quot;[ICON=AllWeaponsIcon] +30% к дальности всех оружий во флоте.[BR]
+[ICON=AllWeaponsIcon] +30% к скорострельности всех оружий во флоте.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Name</Label>
+    <String>&quot;Strafford Leet&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] +30% уклонения для всех кораблей во флоте.[BR]
+[ICON=BeamAugmentIcon] +30% точности для всех оружий во флоте.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Name</Label>
+    <String>&quot;Бан Сьюрт из Иллии&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Dec</Label>
+    <String>&quot;[ICON=KineticAttackIcon] Все корабли во флоте игнорируют 75% всех повреждений от масс-драйвера.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Name</Label>
+    <String>&quot;Yiyiz Ziyiy&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Dec</Label>
+    <String>&quot;[ICON=StatTooltipBreakdown_Military_Icon] +100% к военному производству на любой планете, где стационируется корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Name</Label>
+    <String>&quot;Evelon Masha&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] +50% к уклонению флота и восстанавливает 250 кредитов каждый раз, когда выживает в битве.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Name</Label>
+    <String>&quot;Laqt Reecher&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Dec</Label>
+    <String>&quot;[ICON=AreaofEffectIcon] +100% к области влияния любой космической базы, на которой стационирует корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Name</Label>
+    <String>&quot;Последний боярин&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Dec</Label>
+    <String>&quot;[ICON=CanColonizeIcon] Превратите любую одну мертвую планету в обитаемую планету класса 16.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Name</Label>
+    <String>&quot;ruire podaq nu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Dec</Label>
+    <String>&quot;[ICON=AreaofEffectIcon] Мгновенно переворачивает любую не-столичную планету в зоне воздействия.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Name</Label>
+    <String>&quot;Dak-Tat-Sum&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Dec</Label>
+    <String>&quot;[ICON=Stat_Manufacturing_Icon] +25% к производству на любой планете, у которой стационируется корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Name</Label>
+    <String>&quot;Mancel Slader&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Dec</Label>
+    <String>&quot;[ICON=Stat_Research_Icon] +25% к исследованию на любой планете, на которой стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Name</Label>
+    <String>&quot;Электор Беллума&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Dec</Label>
+    <String>&quot;[ICON=Stat_Credits_Icon] +25% к кредитам за ход к любой планете, на которой стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Name</Label>
+    <String>&quot;LK Seeth&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Dec</Label>
+    <String>&quot;[ICON=Stat_Raw_Productive_Icon] +10% к первичному производству на любой планете, у которой стационируется корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Name</Label>
+    <String>&quot;Арх Сейнгрейв&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Dec</Label>
+    <String>&quot;[ICON=InfluenceGrowth_Icon] +250 очков к базовому влиянию и +100% влияния за ход на любой планете, на которой стоит корабль.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Name</Label>
+    <String>&quot;Вожак стаи Джат&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Dec</Label>
+    <String>&quot;[ICON=FightersCap_Icon] 4 Штурмовых дрона[BR]
+[ICON=FightersCap_Icon] 4 Дрона-сопровождения.[BR]
+[ICON=FightersCap_Icon] 5 Штурмовых истребителей.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Name</Label>
+    <String>&quot;Lisette de Urt&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Dec</Label>
+    <String>&quot;[ICON=KineticAugmentIcon] Мощные прототипы масс-драйверов.[BR]
+[ICON=Stat_Planetary_Defense_Icon] Высокие защиты всех типов.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Name</Label>
+    <String>&quot;Url Stratego&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] Мощное лучевое оружие.[BR]
+[ICON=ShipLogistics_Icon] Занимает всего 2 логистических очка.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Name</Label>
+    <String>&quot;Raz Pleetson&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Dec</Label>
+    <String>&quot;[ICON=MissileAugmentIcon] Мощное ракетное оружие.[BR]
+[ICON=Shiprange_Icon] Дальнего действия.[BR]
+[ICON=Moves_Icon] Быстрый.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Name</Label>
+    <String>&quot;Poelacca&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Dec</Label>
+    <String>&quot;[ICON=AllWeaponsIcon] Мощное оружие всех видов.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Name</Label>
+    <String>&quot;XRT80-DEF&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Dec</Label>
+    <String>&quot;[ICON=FightersCap_Icon] 6 Эскортных дронов.[BR]
+[ICON=FightersCap_Icon] 10 Штурмовых истребителей.[BR]
+[ICON=JammingIcon] 50% уклонения для всех кораблей во флоте.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Name</Label>
+    <String>&quot;Enopriumta Xu&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Dec</Label>
+    <String>&quot;[ICON=KineticAugmentIcon] Мощные Масс-Драйверы.[BR]
+[ICON=KineticRangeIcon] +100% к дальности стрельбы масс-драйверов.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Name</Label>
+    <String>&quot;Старейшина Криат&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Dec</Label>
+    <String>&quot;[ICON=BeamAugmentIcon] Мощное лучевое оружие.[BR]
+[ICON=BeamAugmentIcon] Игнорирует 75% лучевого урона.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Name</Label>
+    <String>&quot;Отец Лесман&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Dec</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] +50% ко всем защитам во флоте.[BR]
+[ICON=JammingIcon] 75% Уклонение.[BR]
+[ICON=BeamAugmentIcon] Быстрый&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Name</Label>
+    <String>&quot;Hon Malteuse&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Dec</Label>
+    <String>&quot;[ICON=AllWeaponsIcon] Мощные Прототипы Оружия.[BR]
+[ICON=Shiprange_Icon] Дальний Диапазон[BR]
+[ICON=Moves_Icon] Быстро.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Name</Label>
+    <String>&quot;Kelpie Wittque&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Dec</Label>
+    <String>&quot;[ICON=Moves_Icon] +50% ходов ко всем кораблям во флоте.[BR]
+[ICON=Shiprange_Icon] Весь флот получает дальность 350 тайлов.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Name</Label>
+    <String>&quot;Brootus&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Dec</Label>
+    <String>&quot;[ICON=Stat_Planetary_Defense_Icon] +10 ко всем защитам во флоте.[BR]
+[ICON=Stat_Special_Icon] Игнорирует 75% всего урона.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Name</Label>
+    <String>&quot;Тень&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Dec</Label>
+    <String>&quot;[ICON=Stat_Ship_Maintenance_Icon] Мощные Масс-Драйверы.[BR]
+[ICON=Stat_Ship_Maintenance_Icon] Увеличивает стратегический и тактический ремонт для всего флота.&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Name</Label>
+    <String>&quot;Доступный Слот&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Dec</Label>
+    <String>&quot;Старый модуль был удален из-за изменений в механике игры. (Оставлено как заполнитель)&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Name</Label>
+    <String>&quot;Усилитель Доброй Воли&quot;</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Dec</Label>
+    <String>&quot;Планеты в радиусе действия этого корабля имеют [ICON=CrimeIcon32] -100% преступности.&quot;</String>
+  </StringTable>
+</StringTableList>

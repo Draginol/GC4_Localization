@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+    <StringTable>
+        <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
+        <String><![CDATA[Certaines balises sont simplement le nom de la balise dans {}.[BR]Syntaxe : {GAMETAG} [BR]Exemple : "{PLANETNAME} est un super endroit où vivre !"[BR]D'autres ont un : suivi d'un nombre qui est l'IndexTexteJeu, pour différencier entre plusieurs remplacements possibles.[BR]Dans le texte d'ambiance des conversations, 1 est l'Orateur (joueur initiant la conversation), 2 est l'Auditeur (joueur recevant la conversation) et 3 est le Joueur Tiers (joueur dont l'Orateur et l'Auditeur parlent).[BR]Dans les conversations où quelque chose est offert, utilisez l'IndexTexteJeu pour indiquer qui donne l'objet (AMOUNT, TECHNAME, OBJECTNAME)[BR]Syntaxe : {GAMETAG:#} [BR]Exemple 1 : "Nous, les {PLAYERFACTIONLONG:1} déclarons la guerre à vous, les {PLAYERFACTIONLONG:2}" [BR]Exemple 2 : "Les {PLAYERFACTION:3} n'existent plus."]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
+        <String><![CDATA[Version courte du nom de la civilisation du joueur]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
+        <String><![CDATA[Nom de la civilisation du joueur]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
+        <String><![CDATA[Description détaillée de la faction des joueurs]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
+        <String><![CDATA[Liste des caractéristiques des factions de joueurs]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_ORIGINALTEXT</Label>
+        <String><![CDATA[Texte d'origine avec substitutions avant de passer par le post-traitement :]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_PREVIOUSCONV</Label>
+        <String><![CDATA[Texte de conversation précédent avec des substitutions avant de passer par le post-traitement]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
+        <String><![CDATA[N'est plus utilisé. Utilisez PLAYERFACTION ou PLAYERFACTIONLONG à la place]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
+        <String><![CDATA[Nom du dirigeant de la civilisation un joueur]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
+        <String><![CDATA[Tours avant achèvement un projet]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
+        <String><![CDATA[Nom d&apos;un projet dans une file d&apos;attente (chantier astronaval ou planète)]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
+        <String><![CDATA[Utilisé pour la condition de victoire pour mettre fin au jeu]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
+        <String><![CDATA[Liste des joueurs ayant rempli la condition de victoire]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
+        <String><![CDATA[Le nom de la planète mentionnée dans la discussion]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
+        <String><![CDATA[La quantité de quelque chose, généralement des crédits offerts/exigés/demandés]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
+        <String><![CDATA[Nom d'une technologie offerte/demandée/demandée.]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
+        <String><![CDATA[Nom d'un objet offert/demandé/demandé]]></String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
+        <String><![CDATA[Nom d'un travailleur dont il est question]]></String>
+    </StringTable>
+</StringTableList>

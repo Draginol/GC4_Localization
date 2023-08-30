@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StringTableList
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>Component_Name</Label>
+    <String>구성 요소</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Dec</Label>
+    <String>구성 요소</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Name</Label>
+    <String>중거리 ECMs</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Dec</Label>
+    <String>[ICON=PointDefenseIcon] 효과 범위 내의 동맹 함선들은 8 포인트 방어를 받습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Name</Label>
+    <String>수리 드론</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Dec</Label>
+    <String>[ICON=Hitpoints_Icon] 효과 범위 내의 동맹 함선들은 매 턴마다 4의 히트 포인트를 수리합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Name</Label>
+    <String>스테이시스 필드</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Dec</Label>
+    <String>[ICON=Moves_Icon] 효과 범위 내의 적 함선들은 -2의 움직임을 받습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Name</Label>
+    <String>자율주행 엔진</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Dec</Label>
+    <String>[ICON=ShipLogistics_Icon]는 물류가 필요하지 않습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Skyfire_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] 전체 함대에 대한 +30%의 운동 에너지 공격.[BR][ICON=ApprovalStatIcon] 이 함선이 정박해 있는 어떤 행성에도 +30%의 제조력 증가.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HeartOfConquest_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 전체 함대에 대한 +30% 빔 공격.[BR][ICON=ApprovalStatIcon] 이 함선이 정박해 있는 어떤 행성이든 +10%의 승인률을 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Curiosity_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] 이상현상이 조사될 때 연구 +1.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Name</Label>
+    <String>위협 엔진</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Dec</Label>
+    <String>[ICON=Stat_Control_Icon] 전투당 제어 +1.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Name</Label>
+    <String>스크랩 모듈</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] 전투당 +100 크레딧.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Name</Label>
+    <String>Regenerating Hulls</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Dec</Label>
+    <String>[ICON=Hitpoints_Icon] 모든 전투 후 완전히 회복합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Name</Label>
+    <String>임베디드 미디어</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] 전투당 모든 핵심 세계에 영향력 +5.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Name</Label>
+    <String>디스세터</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] 전투당 +1 연구.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Name</Label>
+    <String>적응형 레이저</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 당 레벨별 +1 빔 공격.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Name</Label>
+    <String>적응형 미사일</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] 레벨당 미사일 공격 +1.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Name</Label>
+    <String>모멘텀 엔진</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Dec</Label>
+    <String>[ICON=Moves_Icon] 레벨당 이동 +1</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Perserverance_Dec</Label>
+    <String>이 배가 정박된 어떤 행성에도 [ICON=ApprovalStatIcon] +10% 승인을 줍니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_EternalCity_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] 이 함선이 정박해 있는 어떤 행성에도 +10%의 승인을 부여합니다.[BR][ICON=Stat_Research_Icon] 이 함선이 정박해 있는 어떤 행성에도 +30%의 연구를 부여합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Gaze_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 모든 함대의 빔 공격력을 25% 증가시킵니다.[BR][ICON=ShieldStrengthIcon] 모든 함대의 방어막을 5 증가시킵니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Name</Label>
+    <String>회수 실험실</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] 100% chance to capture ships defeated in battle.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Name</Label>
+    <String>알의 방</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] 전투에서 패배한 함선을 포획할 확률이 25%입니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Name</Label>
+    <String>용병</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Dec</Label>
+    <String>우병을 사용하여 템플릿을 만들 때 배치에 사용합니다. 완성된 버전에서는 플레이어가 볼 수 없습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Name</Label>
+    <String>빠른 보릭</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Dec</Label>
+    <String>[ICON=CanSurveyIcon] 탐사선[BR][ICON=Moves_Icon] 빠른</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Name</Label>
+    <String>Adrastos Vanya</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Dec</Label>
+    <String>[ICON=CanSurveyIcon] 탐사선[BR][ICON=Shiprange_Icon] 극도로 긴 선박 범위.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Name</Label>
+    <String>Cain Rhuin</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Dec</Label>
+    <String>[ICON=CanSurveyIcon] 탐사선[BR][ICON=Shiprange_Icon] 함대와 거리를 공유합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Name</Label>
+    <String>Mirazu Ysen</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Dec</Label>
+    <String>[ICON=CanSurveyIcon] 탐사선[BR][ICON=Stat_Credits_Icon] 이상현상 당 25 크레딧을 획득합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Name</Label>
+    <String>LL'anso</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Dec</Label>
+    <String>[ICON=ImmuneToNebula] 성운 효과에 면역[BR][ICON=Stat_Special_Icon] 해적에게 무시당함.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Name</Label>
+    <String>불안정한 켄</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Dec</Label>
+    <String>[ICON=Shiprange_Icon] 매우 빠른[BR][ICON=Shiprange_Icon] 극도로 긴 선박 범위.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Name</Label>
+    <String>Sizzor Thane</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Dec</Label>
+    <String>[ICON=SensorRange_Icon] 매우 넓은 센서 범위.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Name</Label>
+    <String>Blandon Xute</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Dec</Label>
+    <String>[ICON=Mining_Icon] 함선이 정박된 채굴 별기지의 자원 수확량이 +100% 증가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Name</Label>
+    <String>카른의 피조타</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] 선박이 정박해 있는 어떤 스타베이스에서도 턴당 영향력 +100%.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Name</Label>
+    <String>Retuio III</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Dec</Label>
+    <String>[ICON=AreaofEffectIcon] 선박이 정박 중인 모든 별기지의 효과 범위에 +3을 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Name</Label>
+    <String>Dr. Angekio Zi</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Dec</Label>
+    <String>[ICON=CanColonizeIcon]는 더 많은 식민지인[BR][ICON=Stat_Manufacturing_Icon]을 보유하고 있습니다. 이 배로 설립된 어떤 식민지에도 +25% 제조력을 가집니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Name</Label>
+    <String>빈 비보</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Dec</Label>
+    <String>[ICON=CanColonizeIcon]는 수중, 빙결, 그리고 황량한 극한의 세계를 식민화할 수 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Name</Label>
+    <String>사용 가능한 슬롯</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Dec</Label>
+    <String>[ICON=CanInvadeIcon]는 전쟁의 시대 이전에 세계를 침략할 수 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Name</Label>
+    <String>드래딜릭 더 빌더</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Dec</Label>
+    <String>[ICON=StarbaseSupport]는 5개의 무료 모듈로 스타베이스를 건설합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Name</Label>
+    <String>아바타-278</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Dec</Label>
+    <String>[ICON=Stat_Raw_Productive_Icon] 선박이 정박해 있는 어떤 행성에도 +5 원시 생산량을 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Name</Label>
+    <String>T'y't'n'lp</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Dec</Label>
+    <String>[ICON=Stat_Manufacturing_Icon] 선박이 정박해 있는 어떤 행성에도 제조력 +15% 증가.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Name</Label>
+    <String>크레인</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] 선박이 정박해 있는 어떤 행성에도 +5 연구 포인트를 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Name</Label>
+    <String>Annjeanette Sil</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] 선박이 정박해 있는 어떤 행성에도 +5의 사기 점수를 부여합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Name</Label>
+    <String>친근한 마이크</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] 배가 정박된 어느 행성이든 회전당 +5 크레딧을 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Name</Label>
+    <String>Silvainout</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Dec</Label>
+    <String>[ICON=Stat_Military_Power_Icon] +75% 회피[BR][ICON=KineticRangeIcon] 높은 질량 드라이버 공격.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Name</Label>
+    <String>Qualen Dohg</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Dec</Label>
+    <String>[ICON=Hitpoints_Icon]은 중형선박의 체력을 가지고 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Name</Label>
+    <String>프린스 비투리안</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Dec</Label>
+    <String>[ICON=BeamRangeIcon] +50% 빔 범위[BR][ICON=ShieldStrengthIcon] 빔 피해의 75%를 무시합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Name</Label>
+    <String>Zeek the Meek</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] 모든 피해의 30%를 무시합니다.[BR][ICON=BeamAugmentIcon] 강력한 프로토타입 빔 무기입니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Name</Label>
+    <String>Tad Stormbringer</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] 강력한 프로토타입 미사일.[BR][ICON=Stat_Handy_Icon] 전투 종료 후 즉시 수리됩니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Name</Label>
+    <String>Lain</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 강력한 프로토타입 빔 무기.[BR][ICON=Shiprange_Icon] 장거리[BR][ICON=Moves_Icon] 프로토타입 초월광역 드라이브.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Name</Label>
+    <String>Kaul의 Ser Manx</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 빔 공격력이 50% 증가하며, 소속된 모든 함선도 마찬가지입니다.[BR][ICON=Stat_Planetary_Defense_Icon] 방어력과 체력이 높습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Name</Label>
+    <String>Reef Farseer</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Dec</Label>
+    <String>[ICON=CanSurveyIcon] 탐사선[BR][ICON=Shiprange_Icon] 장거리.[BR][ICON=Moves_Icon] 빠름.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Name</Label>
+    <String>사용 가능한 슬롯</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Dec</Label>
+    <String>Old Module was removed do to game mechanic changes. (Left as placeholder)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Name</Label>
+    <String>Available Slot</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Dec</Label>
+    <String>게임 메카닉 변경으로 인해 오래된 모듈이 제거되었습니다. (플레이스홀더로 남겨둠)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Name</Label>
+    <String>안타르제아의 이슈아</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Dec</Label>
+    <String>[ICON=StarbaseSupport] 건설 시 즉시 100의 영향력 포인트를 얻습니다. [BR][ICON=InfluenceGrowth_Icon] 그 후 매 턴마다 100%의 영향력을 얻습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Name</Label>
+    <String>Fitrios Pompados</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon]은 일반 수익의 두 배를 가져오는 무역로를 건설합니다.[BR][ICON=Stat_Special_Icon]이 파괴되면 본토에서 재생성됩니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Name</Label>
+    <String>Dr. Jondi Ians</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Dec</Label>
+    <String>[ICON=AscensionPointsStatIcon]는 선구자 연구에 주어진 보너스를 두 배로 늘립니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Name</Label>
+    <String>인퀴지터</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] 배가 정박된 어떤 행성에도 +100% 승인을 부여합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Name</Label>
+    <String>Kalli Datun</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] 배가 정박해 있는 어떤 행성에서도 턴당 +5 크레딧.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Name</Label>
+    <String>Melkiur Savante</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] 배가 정박해 있는 어떤 행성에도 +5 연구 포인트를 부여합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Name</Label>
+    <String>Ghhhhhsk</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] 선박이 정박된 어떤 행성에서도 턴당 영향력 +100%.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Name</Label>
+    <String>언어의 마스터</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] 선박이 정박 중인 어느 콜로니든지 기본 영향력에 +150 포인트를 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Name</Label>
+    <String>LL-88</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Dec</Label>
+    <String>[ICON=Malevolent_Icon] 선박이나 그 선박이 속한 함대가 전투에서 승리할 때마다 +1 문화 점수를 얻습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Name</Label>
+    <String>리트리뷰션</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Dec</Label>
+    <String>강력한 전함.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Name</Label>
+    <String>바실리스크</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] 프로토타입 질량 드라이버.[BR][ICON=Moves_Icon] 빠른[BR][ICON=Shiprange_Icon] 극도로 장거리.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Name</Label>
+    <String>Spinn</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Dec</Label>
+    <String>[ICON=FightersCap_Icon]는 5대의 인터셉터 드론을 운반합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Name</Label>
+    <String>아드미럴 와로</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] 강력한 프로토타입 미사일 무기.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Name</Label>
+    <String>더 나이트 피스트</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 강력한 프로토타입 빔 무기.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Name</Label>
+    <String>Watterson Bitte</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Dec</Label>
+    <String>[ICON=Moves_Icon] 함대의 모든 함선의 움직임이 50% 증가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Name</Label>
+    <String>Kreuger von Trant</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Dec</Label>
+    <String>[ICON=ShieldStrengthIcon] 모든 함대의 선박들이 무료로 10 포인트의 방어막을 받습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Name</Label>
+    <String>Holopai</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] 함대의 모든 무기 범위를 +30% 늘립니다.[BR][ICON=AllWeaponsIcon] 함대의 모든 무기의 발사 속도를 +30% 증가시킵니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Name</Label>
+    <String>Strafford Leet</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Dec</Label>
+    <String>[ICON=BeamAugmentIcon]  함대 내 모든 선박에 대한 회피율 +30%.[BR][ICON=BeamAugmentIcon]  함대의 모든 무기에 대한 정확도 +30%.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Name</Label>
+    <String>Illia의 Ban Seurt</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Dec</Label>
+    <String>[ICON=KineticAttackIcon] 모든 함대의 모든 함선은 질량 드라이버 피해의 75%를 무시합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Name</Label>
+    <String>Yiyiz Ziyiy</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Dec</Label>
+    <String>[ICON=StatTooltipBreakdown_Military_Icon] 선박이 정박된 어떤 행성에도 군사 생산을 +100% 증가시킵니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Name</Label>
+    <String>Evelon Masha</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] +50% 함대 회피율과 전투에서 살아남을 때마다 250 크레딧을 회수합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Name</Label>
+    <String>Laqt Reecher</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Dec</Label>
+    <String>[ICON=AreaofEffectIcon] 선박이 정박해 있는 어떤 별 기지의 영향 범위에 +100%를 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Name</Label>
+    <String>마지막 보야르</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Dec</Label>
+    <String>[ICON=CanColonizeIcon] 어떤 한 멸망한 행성을 16 클래스의 살기 좋은 행성으로 변환하세요.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Name</Label>
+    <String>ruire podaq nu</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Dec</Label>
+    <String>[ICON=AreaofEffectIcon]는 영향 범위 내의 모든 비-수도성 행성을 즉시 뒤집습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Name</Label>
+    <String>Dak-Tat-Sum</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Dec</Label>
+    <String>[ICON=Stat_Manufacturing_Icon] 배를 정박시킨 어느 행성이든 제조력이 25% 증가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Name</Label>
+    <String>Mancel Slader</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] 선박이 정박한 어느 행성이든 연구에 +25% 증가.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Name</Label>
+    <String>벨룸의 선거인</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] 선박이 정박한 어떤 행성에도 턴당 크레딧이 25% 증가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Name</Label>
+    <String>LK Seeth</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Dec</Label>
+    <String>[ICON=Stat_Raw_Productive_Icon] 선박이 정박된 어떤 행성에도 원재료 생산량 +10% 증가.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Name</Label>
+    <String>아치 세인그레이브</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] 기지 영향력에 +250 포인트와 함께 선박이 정박된 어떤 행성이라도 턴당 영향력 +100%를 추가합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Name</Label>
+    <String>무리의 리더 잣</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Dec</Label>
+    <String>[ICON=FightersCap_Icon] 4 대 공격 드론[BR][ICON=FightersCap_Icon] 4 대 호위 드론.[BR][ICON=FightersCap_Icon] 5 대 공격 전투기.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Name</Label>
+    <String>Lisette de Urt</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] 강력한 원형 질량 드라이버.[BR][ICON=Stat_Planetary_Defense_Icon] 모든 종류의 높은 방어력.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Name</Label>
+    <String>Url Stratego</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 강력한 빔 무기.[BR][ICON=ShipLogistics_Icon] 로지스틱스 포인트는 단지 2점을 차지합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Name</Label>
+    <String>Raz Pleetson</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] 강력한 미사일 무기.[BR][ICON=Shiprange_Icon] 장거리[BR][ICON=Moves_Icon] 빠름.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Name</Label>
+    <String>Poelacca</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] Powerful weapons of all kinds.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Name</Label>
+    <String>XRT80-DEF</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Dec</Label>
+    <String>[ICON=FightersCap_Icon] 6 대 호위 드론.[BR][ICON=FightersCap_Icon] 10 대 공격 전투기.[BR][ICON=JammingIcon] 함대 내 모든 선박에 50% 회피율.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Name</Label>
+    <String>Enopriumta Xu</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] 강력한 질량 드라이버.[BR][ICON=KineticRangeIcon] +100% 질량 드라이버 범위.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Name</Label>
+    <String>엘더 크리아트</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] 강력한 빔 무기.[BR][ICON=BeamAugmentIcon] 빔 피해의 75%를 무시합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Name</Label>
+    <String>레스맨 아버지</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Dec</Label>
+    <String>[ICON=Stat_Planetary_Defense_Icon] 함대의 모든 방어에 +50%.[BR][ICON=JammingIcon] 75% 회피.[BR][ICON=BeamAugmentIcon] 빠름</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Name</Label>
+    <String>혼 말테우스</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] 강력한 프로토타입 무기.[BR][ICON=Shiprange_Icon] 장거리[BR][ICON=Moves_Icon] 빠른.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Name</Label>
+    <String>Kelpie Wittque</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Dec</Label>
+    <String>[ICON=Moves_Icon] 함대 내 모든 선박에 +50% 이동력 부여.[BR][ICON=Shiprange_Icon] 전체 함대에 350 타일 범위 부여.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Name</Label>
+    <String>Brootus</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Dec</Label>
+    <String>[ICON=Stat_Planetary_Defense_Icon] 함대의 모든 방어력에 +10을 추가합니다.[BR][ICON=Stat_Special_Icon] 모든 피해의 75%를 무시합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Name</Label>
+    <String>그림자</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Dec</Label>
+    <String>[ICON=Stat_Ship_Maintenance_Icon] 강력한 질량 드라이버.[BR][ICON=Stat_Ship_Maintenance_Icon] 전체 함대의 전략적 및 전술적 수리 능력을 향상시킵니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Name</Label>
+    <String>사용 가능한 슬롯</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Dec</Label>
+    <String>게임 메커니즘 변경으로 인해 오래된 모듈이 제거되었습니다. (플레이스홀더로 남겨둠)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Name</Label>
+    <String>Goodwill 증폭기</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Dec</Label>
+    <String>이 배의 반경 내에 있는 행성들은 [ICON=CrimeIcon32] -100%의 범죄율을 가지고 있습니다.</String>
+  </StringTable>
+</StringTableList>
