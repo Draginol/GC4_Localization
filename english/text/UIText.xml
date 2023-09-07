@@ -129,7 +129,7 @@
     </StringTable>
     <StringTable>
         <Label>LOADINGWND_STRING</Label>
-        <String>LOADING...</String>
+        <String>FINALIZING...</String>
     </StringTable>
     <StringTable>
         <Label>ALPHA_DESPLAY_STRING</Label>
@@ -1610,6 +1610,14 @@
     <StringTable>
         <Label>COLONY_SORT_FOOD_TOOLTIP</Label>
         <String>Sort by Food</String>
+    </StringTable>
+    <StringTable>
+        <Label>COLONY_SORT_POLLUTION_TOOLTIP</Label>
+        <String>Sort by Pollution</String>
+    </StringTable>
+    <StringTable>
+        <Label>COLONY_SORT_CRIME_TOOLTIP</Label>
+        <String>Sort by Crime</String>
     </StringTable>
     <StringTable>
         <Label>COLONY_SORT_CLASS_TOOLTIP</Label>
@@ -3453,7 +3461,7 @@
     </StringTable>
     <StringTable>
         <Label>SHIP_DESIGNER_CATEGORY_Seeing</Label>
-        <String>Seeing</String>
+        <String>Intueri</String>
     </StringTable>
     <StringTable>
         <Label>SHIP_DESIGNER_CATEGORY_Phalenoid</Label>
@@ -3469,7 +3477,7 @@
     </StringTable>
     <StringTable>
         <Label>Seeing_Appearance_Name</Label>
-        <String>Seeing</String>
+        <String>Intueri</String>
     </StringTable>
     <StringTable>
         <Label>Phalenoid_Appearance_Name</Label>
@@ -18528,7 +18536,7 @@
     </StringTable>
     <StringTable>
         <Label>LEADER_UNLOCKED_LABEL</Label>
-        <String>%s Position Available</String>
+        <String>%s Position</String>
     </StringTable>
     <StringTable>
         <Label>POLICY_UNLOCKED_LABEL</Label>
@@ -20981,12 +20989,20 @@
         <String>[COLOR={VALUE:0}]{VALUE:1}GB[/COLOR]</String>
     </StringTable>
     <StringTable>
-        <Label>YourMemoryFormat</Label>
-        <String>You have {VALUE}GB available</String>
+        <Label>YourMemoryFormat_Met</Label>
+        <String>At least {VALUE:0}GB of Memory is recommended for this Galaxy Map.[BR][BR]You have {VALUE:1}GB available and meet this recommendation.</String>
     </StringTable>
     <StringTable>
-        <Label>YourCoresFormat</Label>
-        <String>You have {VALUE} Logical Cores available</String>
+        <Label>YourMemoryFormat_NotMet</Label>
+        <String>At least {VALUE:0}GB of Memory is recommended for this Galaxy Map.[BR][BR]You have {VALUE:1}GB available and DO NOT meet this recommendation.</String>
+    </StringTable>
+    <StringTable>
+        <Label>YourCoresFormat_Met</Label>
+        <String>At least {VALUE:0} Logical Cores are recommended for this Galaxy Map.[BR][BR]You have {VALUE:1} Logical Cores available and meet this recommendation.</String>
+    </StringTable>
+    <StringTable>
+        <Label>YourCoresFormat_NotMet</Label>
+        <String>At least {VALUE:0} Logical Cores are recommended for this Galaxy Map.[BR][BR]You have {VALUE:1} Logical Cores available and DO NOT meet this recommendation.</String>
     </StringTable>
     <StringTable>
         <Label>ShipyardAddSelectedButton</Label>
@@ -24659,6 +24675,10 @@
     <StringTable>
         <Label>MPGalaxySettingsTurnSpeed</Label>
         <String>Turn Time Limit</String>
+    </StringTable>
+    <StringTable>
+        <Label>TurnTimeLimitTypes_ShowTurnTimeFormat</Label>
+        <String>{ORIGINALTEXT} ({AMOUNT}s)</String>
     </StringTable>
     <StringTable>
         <Label>TurnTimeLimitTypes_Random</Label>
