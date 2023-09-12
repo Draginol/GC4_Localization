@@ -5,14 +5,14 @@
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Les {PLAYERFACTIONLONG:1} sont une faction dirigée par {LEADERNAME:1}. Ils ont les traits de personnalité {PLAYERTRAITS:1}. Les {PLAYERFACTIONLONG:2} sont une faction dirigée par {LEADERNAME:2}. Ils ont les traits de personnalité {PLAYERTRAITS:2}. Ils sont décrits comme suit : {PLAYERFACTIONDESCRIPTION:2}. Ils sont rivaux de diverses espèces et mondes d'origine dans un conflit intragalactique pour la domination.</Text>
+            <Text>Les {PLAYERFACTIONLONG:1} sont une faction dirigée par {LEADERNAME:1}. Ils ont les traits de personnalité {PLAYERTRAITS:1}. Les {PLAYERFACTIONLONG:2} sont une faction dirigée par {LEADERNAME:2}. Ils ont les traits de personnalité {PLAYERTRAITS:2}. Ils sont décrits comme suit : {PLAYERFACTIONDESCRIPTION:2}. Ils sont rivaux de diverses espèces et mondes d'origine dans un conflit pour la domination intragalactique.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Les {PLAYERFACTIONLONG:1} sont une faction dirigée par {LEADERNAME:1}. Ils ont les traits de personnalité de {PLAYERTRAITS:1}. Les {PLAYERFACTIONLONG:2} sont une faction dirigée par {LEADERNAME:2}. Ils ont les traits de personnalité de {PLAYERTRAITS:2}. Ils sont décrits comme suit : {PLAYERFACTIONDESCRIPTION:2}. Ils sont rivaux de diverses espèces et mondes d'origine dans un conflit intragalactique pour la domination. Précédemment, {LEADERNAME:1} a dit ce qui suit à {LEADERNAME:2}: {PREVIOUSCONV:0} </Text>
+            <Text>Les {PLAYERFACTIONLONG:1} sont une faction dirigée par {LEADERNAME:1}. Ils ont les traits de personnalité de {PLAYERTRAITS:1}. Les {PLAYERFACTIONLONG:2} sont une faction dirigée par {LEADERNAME:2}. Ils ont les traits de personnalité de {PLAYERTRAITS:2}. Ils sont décrits comme suit : {PLAYERFACTIONDESCRIPTION:2}. Ils sont rivaux de diverses espèces et mondes d'origine dans un conflit pour la domination intragalactique. Précédemment, {LEADERNAME:1} a dit ce qui suit à {LEADERNAME:2}: {PREVIOUSCONV:0} </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -97,7 +97,7 @@
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_PEACEFUL_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Écrivez une réponse succincte en première personne de  à une autre faction, dans la voix de, en réponse à une première introduction pour un jeu vidéo de stratégie. Utilisez un ton neutre et non engageant. Indiquez que l'orateur est ouvert au commerce. Soyez créatif et dans la manière dont quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1} le ferait. N'utilisez pas les mêmes mots que dans les descriptions des traits de personnalité. Répondez en moins de 10 mots. </Text>
+            <Text>Veuillez rédiger une réponse succincte à une autre faction, à la première personne, en réponse à une première introduction, en vue d'une utilisation dans un jeu vidéo de stratégie. Nous répondons à une civilisation qui se décrit comme {PLAYERFACTIONDESCRIPTION:1}. Soyez amical, mais reconnaissez ses caractéristiques uniques. Ne réutilisez pas les mots des descriptions des traits de personnalité. Répondez en moins de 10 mots. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -118,14 +118,14 @@
         <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Écris une réponse brève en première personne de {LEADERNAME:1} à une autre faction, dans la voix de {LEADERNAME:1}, en réponse à une déclaration de guerre contre {PLAYERFACTION:1} pour un jeu vidéo de stratégie. Utilise un ton agressif. Sois créatif et dans la manière dont quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1} le ferait. Ne réutilise pas de mots dans les descriptions des traits de personnalité. Réponds en moins de 10 mots. </Text>
+            <Text>Écris une réponse brève à la première personne de {LEADERNAME:1} à une autre faction, dans la voix de {LEADERNAME:1}, en réponse à une déclaration de guerre contre {PLAYERFACTION:1} pour un jeu vidéo de stratégie. Utilise un ton agressif. Sois créatif et dans la manière dont quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1} le ferait. Ne réutilise pas de mots dans les descriptions des traits de personnalité. Réponds en moins de 10 mots. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Écrivez une réponse succincte en première personne de {LEADERNAME:1} à une autre faction dans la voix de {LEADERNAME:1} en réponse à une déclaration de guerre contre {PLAYERFACTION:1} pour utilisation dans un jeu vidéo de stratégie. Utilisez un ton déçu. Soyez créatif et à la manière de quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1}. N'utilisez pas les mêmes mots dans les descriptions des traits de personnalité. Répondez en moins de 10 mots. </Text>
+            <Text>Écrivez une réponse succincte à la première personne de {LEADERNAME:1} à une autre faction dans la voix de {LEADERNAME:1} en réponse à une déclaration de guerre contre {PLAYERFACTION:1} pour utilisation dans un jeu vidéo de stratégie. Utilisez un ton déçu. Soyez créatif et à la manière de quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1}. N'utilisez pas les mêmes mots dans les descriptions des traits de personnalité. Répondez en moins de 10 mots. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -139,28 +139,28 @@
         <InternalName>GENERIC_GREETING_PROMPT</InternalName>
         <MaxTokens>300</MaxTokens>
         <FlavorTextOption>
-            <Text>Écrivez une introduction à la conversation en première personne de {LEADERNAME:1} à {LEADERNAME:2} dans la voix de {LEADERNAME:1} pour utilisation dans un jeu vidéo de stratégie. Soyez créatif. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}, alors assurez-vous d'en tenir compte. Ne réutilisez pas de mots dans les descriptions des traits de personnalité. Répondez en moins de 75 mots. Incluez une reformulation de ce qui suit : {ORIGINALTEXT:0}</Text>
+            <Text>Écrivez une introduction à la conversation à la première personne de {LEADERNAME:1} à {LEADERNAME:2} dans la voix de {LEADERNAME:1} pour utilisation dans un jeu vidéo de stratégie. Soyez créatif. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}, alors assurez-vous d'en tenir compte. Ne réutilisez pas de mots dans les descriptions des traits de personnalité. Répondez en moins de 75 mots. Incluez une reformulation de ce qui suit : {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>OPTIONS_MAIN_TEXT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Écrivez une réplique pour changer de sujet en première personne de {LEADERNAME:1} à {LEADERNAME:2} avec la voix de {LEADERNAME:1} pour un jeu vidéo de stratégie. Soyez créatif et dans le style de quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1}. N'utilisez pas les mêmes mots pour décrire les traits de personnalité. Répondez en moins de 25 mots. Incluez une reformulation de ceci : {ORIGINALTEXT:0}</Text>
+            <Text>Écrivez une réplique pour changer de sujet à la première personne de {LEADERNAME:1} à {LEADERNAME:2} avec la voix de {LEADERNAME:1} pour un jeu vidéo de stratégie. Soyez créatif et dans le style de quelqu'un qui se décrit comme {PLAYERFACTIONDESCRIPTION:1}. N'utilisez pas les mêmes mots pour décrire les traits de personnalité. Répondez en moins de 25 mots. Incluez une reformulation de ceci : {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Rédigez une déclaration de guerre en première personne de {LEADERNAME:2} à {LEADERNAME:1} avec la voix de {LEADERNAME:2} pour un jeu vidéo de stratégie. Soyez créatif. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}. Tenez compte de leur description, mais souvenez-vous qu'ils sont très en colère. N'utilisez pas les mêmes mots que dans les traits de personnalité. Répondez en moins de 25 mots. Incluez une reformulation de : {ORIGINALTEXT:0}</Text>
+            <Text>Rédigez une déclaration de guerre à la première personne de {LEADERNAME:2} à {LEADERNAME:1} avec la voix de {LEADERNAME:2} pour un jeu vidéo de stratégie. Soyez créatif. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}. Tenez compte de leur description, mais souvenez-vous qu'ils sont très en colère. N'utilisez pas les mêmes mots que dans les traits de personnalité. Répondez en moins de 25 mots. Incluez une reformulation de : {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Rédigez une réponse à une offre commerciale en première personne de {LEADERNAME:2} à {LEADERNAME:1} dans la voix de {LEADERNAME:1} pour utilisation dans un jeu vidéo de stratégie. Soyez créatif. Ne réutilisez pas de mots dans les descriptions des traits de personnalité. Ne mentionnez pas le nom du dirigeant ou de la faction. Répondez en 25 mots ou moins. Commencez la réponse par {LEADERNAME:1} suivi d'un deux-points. Incluez une reformulation de ce qui suit : {ORIGINALTEXT:0}</Text>
+            <Text>Rédigez une réponse à une offre commerciale à la première personne de {LEADERNAME:2} à {LEADERNAME:1} dans la voix de {LEADERNAME:1} pour utilisation dans un jeu vidéo de stratégie. Soyez créatif. Ne réutilisez pas de mots dans les descriptions des traits de personnalité. Ne mentionnez pas le nom du dirigeant ou de la faction. Répondez en 25 mots ou moins. Commencez la réponse par {LEADERNAME:1} suivi d'un deux-points. Incluez une reformulation de ce qui suit : {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -181,7 +181,7 @@
         <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Inventez un nom pour le chef de la {PREVIOUSCONV:0} faction dans un jeu de stratégie au tour par tour de science-fiction. Soyez créatif. N'utilisez pas directement de noms de traits. Répondez en 2 à 4 mots.</Text>
+            <Text>Inventez un nom pour le Leader de la {PREVIOUSCONV:0} faction dans un jeu de stratégie au tour par tour de science-fiction. Soyez créatif. N'utilisez pas directement de noms de traits. Répondez en 2 à 4 mots.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -209,7 +209,7 @@
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Veuillez rédiger une description détaillée d'une faction nommée {PLAYERFACTION:1} dans un jeu de stratégie de science-fiction au tour par tour. Soyez créatif. Ne pas utiliser directement les noms de traits. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}. Écrivez-le dans le style d'Orson Scott Card ou d'un autre excellent auteur de science-fiction. Répondez en moins de 50 mots.</Text>
+            <Text>Veuillez rédiger une description détaillée d'une faction nommée {PLAYERFACTION:1} dans un jeu de stratégie de science-fiction au tour par tour. Soyez créatif. Ne pas utiliser directement les noms de traits. Ils se décrivent comme {PLAYERFACTIONDESCRIPTION:1}. Écrivez-le dans le style d'un excellent auteur de science-fiction. Répondez en moins de 50 mots.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -288,7 +288,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Veuillez écrire un commentaire sur l'acceptation mutuelle réussie d'une offre commerciale faite à une faction appelée{PLAYERFACTION:1} dans un jeu de stratégie au tour par tour de science-fiction.\nSoyez créatif.\n N'utilisez aucun nom de trait directement.\n Répondez en moins de 20 mots.\Un mot de la forme {*:1} est un balisage qui fait référence au locuteur et doit être considéré comme immuable.\nUn mot de la forme {*:2}est un balisage qui fait référence à l'écouteur et doit être considéré comme immuable.\n Tout texte généré du formulaire {*} doit utiliser le formulaire{*:1} en se référant à l'orateur et {*:2} en se référant à l'auditeur. \n Graine avec un nombre aléatoire : {PREVIOUSCONV:0}, n'incluez pas la graine dans votre réponse.</Text>
+            <Text>Veuillez écrire un commentaire sur l'acceptation mutuelle réussie d'une offre commerciale faite à une faction appelée{PLAYERFACTION:1} dans un jeu de stratégie au tour par tour de science-fiction.Soyez créatif. N'utilisez aucun nom de trait directement. Répondez en moins de 20 mots. Un mot de la forme {*:1} est un balisage qui fait référence au locuteur et doit être considéré comme immuable.\nUn mot de la forme {*:2}est un balisage qui fait référence à l'écouteur et doit être considéré comme immuable. Tout texte généré du formulaire {*} doit utiliser le formulaire{*:1} en se référant à l'orateur et {*:2} en se référant à l'auditeur.  Graine avec un nombre aléatoire: {PREVIOUSCONV:0}, n'incluez pas la graine dans votre réponse.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
