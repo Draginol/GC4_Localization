@@ -21,6 +21,10 @@
         <Label>GOODBYEBUTTON</Label>
         <String>Goodbye</String>
     </StringTable>
+	<StringTable>
+		<Label>DELAYBUTTON</Label>
+		<String>Decide later.</String>
+	</StringTable>
 
     <!-- Debug Only -->
      <StringTable>
@@ -7703,6 +7707,10 @@
         <Label>AUTOCOLONIZE_ACTION_LABEL</Label>
         <String>Auto Colonizing</String>
     </StringTable>
+	<StringTable>
+		<Label>AUTOMINE_ACTION_LABEL</Label>
+		<String>Auto Mining</String>
+	</StringTable>
     <StringTable>
         <Label>IDLE_ACTION_LABEL</Label>
         <String>Idling</String>
@@ -14738,6 +14746,10 @@
         <Label>Hotkey_FleetContext_AutoColonize</Label>
         <String>Fleet - Auto Colonize</String>
     </StringTable>
+	<StringTable>
+		<Label>Hotkey_FleetContext_AutoMine</Label>
+		<String>Fleet - Auto Mine</String>
+	</StringTable>
     <StringTable>
         <Label>Hotkey_FleetContext_ConstructStarbase</Label>
         <String>Fleet - Construct Starbase</String>
@@ -14890,10 +14902,26 @@
         <Label>HOTKEY_TOOLTIP_SURVEY_TEXT</Label>
         <String>[B]Survey[/B][BR][COLOR=UIDefaultHot]Will attempt to find and go to anomalies.[/COLOR]</String>
     </StringTable>
-    <StringTable>
+	<StringTable>
+		<Label>HOTKEY_TOOLTIP_SURVEY_NOVALIDTARGETS_TEXT</Label>
+		<String>[B]Survey[/B][BR][COLOR=BrightRed]No Surveyable Anomalies.[/COLOR]</String>
+	</StringTable>
+	<StringTable>
         <Label>HOTKEY_TOOLTIP_AUTOCOLONIZE_TEXT</Label>
         <String>[B]Auto Colonize[/B][BR][COLOR=UIDefaultHot]Will attempt to colonize the most attractive known planet, or find some to colonize.[/COLOR]</String>
     </StringTable>
+	<StringTable>
+		<Label>HOTKEY_TOOLTIP_AUTOCOLONIZE_NOVALIDTARGETS_TEXT</Label>
+		<String>[B]Auto Colonize[/B][BR][COLOR=BrightRed]No Colonizable Planets.[/COLOR]</String>
+	</StringTable>
+	<StringTable>
+		<Label>HOTKEY_TOOLTIP_AUTOMINE_TEXT</Label>
+		<String>[B]Auto Mine[/B][BR][COLOR=UIDefaultHot]Will attempt to establish a mining base at a nearby asteroid, if available.[/COLOR]</String>
+	</StringTable>
+	<StringTable>
+		<Label>HOTKEY_TOOLTIP_AUTOMINE_NOVALIDTARGETS_TEXT</Label>
+	    <String>[B]Auto Mine[/B][BR][COLOR=BrightRed]No available asteroids to mine.[/COLOR]</String>
+	</StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_EXPLORE_TEXT</Label>
         <String>[B]Explore[/B][BR][COLOR=UIDefaultHot]Will attempt to clear the fog of war.[/COLOR]</String>
@@ -16010,6 +16038,10 @@
         <Label>CANNOT_BUILD_ERROR_LABEL</Label>
         <String>[COLOR=BrightRed]Cannot build: [/COLOR]</String>
     </StringTable>
+	<StringTable>
+		<Label>IS_SYNTHETIC_ERROR_LABEL</Label>
+		<String>[COLOR=BrightRed]Synthetic life cannot take advantage of traditional population growth bonuses[/COLOR]</String>
+	</StringTable>
     <StringTable>
         <Label>UnderPopulationCapOnly</Label>
         <String>[COLOR=BrightRed]population at capacity[/COLOR]</String>
@@ -24518,31 +24550,31 @@
     </StringTable>
     <StringTable>
         <Label>GalaxyDifficultyTooltip</Label>
-        <String>Sets the default AI difficulty</String>
+        <String>Sets the default AI difficulty.</String>
     </StringTable>
     <StringTable>
         <Label>PlayerProximityTooltip</Label>
-        <String>How near to each other factions can have their homeworlds placed</String>
+        <String>Sets distance between players' starting homeworlds.</String>
     </StringTable>
     <StringTable>
         <Label>GamePacingTooltip</Label>
-        <String>Modifies global manufacturing</String>
+        <String>Modifies Manufacturing speed.</String>
     </StringTable>
     <StringTable>
         <Label>ResearchRateTooltip</Label>
-        <String>Modifies how fast research is completed</String>
+        <String>Modifies Research speed.</String>
     </StringTable>
     <StringTable>
         <Label>MaxHumansTooltip</Label>
-        <String>The maximum number of human players that can play together.</String>
+        <String>Sets the max allowed amount of human-controlled civilizations.</String>
     </StringTable>
     <StringTable>
         <Label>GalaxySizeTooltip</Label>
-        <String>How large the overall galaxy should be.</String>
+        <String>Sets the size of the galaxy.</String>
     </StringTable>
     <StringTable>
         <Label>NumSectorsTooltip</Label>
-        <String>How many clusters of stars known as Sectors there should be.</String>
+        <String>Sets the number of Sectors the galaxy is divided into.</String>
     </StringTable>
     <StringTable>
         <Label>StartingClusterSizeTooltip</Label>
@@ -24550,7 +24582,7 @@
     </StringTable>
     <StringTable>
         <Label>StarFrequencyTooltip</Label>
-        <String>How many stars there should be</String>
+        <String>Sets how many star systems the galaxy is populated with.</String>
     </StringTable>
     <StringTable>
         <Label>PlanetFrequencyTooltip</Label>
@@ -24558,11 +24590,11 @@
     </StringTable>
     <StringTable>
         <Label>HabitalPlanetFrequencyTooltip</Label>
-        <String>How many planets should be habitable</String>
+        <String>Sets how many of the planets in the galaxy are habitable.</String>
     </StringTable>
     <StringTable>
         <Label>ExtremePlanetFrequencyTooltip</Label>
-        <String>How many habitable planets should be extreme</String>
+        <String>Sets how many of the habitable planets have Extreme environment types.</String>
     </StringTable>
     <StringTable>
         <Label>AnomalyFrequencyTooltip</Label>
@@ -24578,7 +24610,7 @@
     </StringTable>
     <StringTable>
         <Label>ResourceFrequencyTooltip</Label>
-        <String>How many strategic resources there should be</String>
+        <String>Sets how many strategic resources the galaxy is populated with.</String>
     </StringTable>
     <StringTable>
         <Label>AsteroidFrequencyTooltip</Label>
@@ -24594,11 +24626,15 @@
     </StringTable>
     <StringTable>
         <Label>MinorRaceFrequencyTooltip</Label>
-        <String>How many minor factions there should be</String>
+        <String>Sets how many Minor Civilizations the galaxy is populated with.</String>
     </StringTable>
     <StringTable>
         <Label>HostileEntityTooltip</Label>
-        <String>How many hostile shipyards and ships there should be at the start of the game</String>
+        <String>Sets how many hostile Shipyards and Monster Nests the galaxy is populated with.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TurnTimeLimitTooltip</Label>
+        <String>Sets the maximum time a player's turn can last.</String>
     </StringTable>
     <StringTable>
         <Label>NO_IDEOLOGY</Label>
@@ -25655,7 +25691,21 @@
 		  <Label>HighlightPlanetTiles</Label>
 		  <String>Highlight Planet Tiles</String>
 	  </StringTable>
-    <!-- ***************************************************************************** -->
+
+	<StringTable>
+		<Label>Help_Translate</Label>
+		<String>Help Translate Galactic Civilizations</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Automate_Planet_Title</Label>
+		<String>Automate</String>
+	</StringTable>
+	
+
+
+
+	<!-- ***************************************************************************** -->
 
     <!-- ******************DO NOT TRANSLATE THIS STRING******************************* -->
     <StringTable>
