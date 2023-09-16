@@ -4,7 +4,7 @@ def install_module(module_name):
     subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
 
 # List of modules to check
-required_modules = ["PyQt5", "openai"]
+required_modules = ["PyQt5", "openai","lxml"]
 
 for module in required_modules:
     try:
@@ -12,8 +12,6 @@ for module in required_modules:
     except ImportError:
         print(f"{module} not found. Installing...")
         install_module(module)
-
-
 import sys
 import os
 import openai
@@ -24,6 +22,7 @@ from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
+from lxml import etree as ET  # Use lxml's ElementTree API
 
 import subprocess
 import sys
@@ -60,8 +59,9 @@ class TranslationApp(QMainWindow):
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
         self.table = QTableWidget(self)
-        self.table.setColumnCount(4)
-        self.table.setHorizontalHeaderLabels(['File Name', 'Label', 'English', 'Translation'])
+        self.table.setColumnCount(5)
+        self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation'])
+
         
         self.table.itemChanged.connect(self.on_item_changed)
 
@@ -118,10 +118,11 @@ class TranslationApp(QMainWindow):
 
     
     def on_item_changed(self, item):
-        if item.column() == 3:  # Check if the translation column was changed
+        if item.column() == 4:  # Check if the translation column was changed
             self.changed_items.add(item)
 
     def save_translations(self):
+        import html  # Make sure you have this import
         file_updates = {}
 
         # Group items by file path
@@ -147,14 +148,17 @@ class TranslationApp(QMainWindow):
 
         # For each file, make a single pass and update translations
         for file_path, items in file_updates.items():
-            tree = ET.parse(file_path)
+            parser = ET.XMLParser(remove_blank_text=True)  # Use lxml's parser
+            tree = ET.parse(file_path, parser)  # Use the parser
             for item in items:
                 for elem in tree.findall('StringTable'):
                     if elem.find('Label').text == item.label:
-                        elem.find('String').text = item.text()
-
+                        fixed_text = html.unescape(item.text())  # Decode the entities
+                        elem.find('String').text = fixed_text
+           
             try:
-                tree.write(file_path)
+                with open(file_path, "wb") as f:  # Write in binary mode
+                    f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
             except PermissionError:
                 QMessageBox.warning(self, "Error", f"Permission denied when trying to write to {file_path}")
                 return
@@ -173,6 +177,7 @@ class TranslationApp(QMainWindow):
 
 
 
+
     def load_directory(self):
         default_directory = "H:\\Projects\\GC4\\GalCiv4\\Game\\Data\\English"
         
@@ -183,7 +188,7 @@ class TranslationApp(QMainWindow):
         
         if directory:
             self.parent_directory = os.path.dirname(directory)
-            self.settings.setValue("last_directory", self.parent_directory)
+            self.settings.setValue("last_directory", directory)
 
             for subdir, _, files in os.walk(directory):
                 for file in files:
@@ -199,15 +204,18 @@ class TranslationApp(QMainWindow):
             self.populate_table()
 
 
+
     def populate_table(self):
         self.table.setRowCount(len(self.english_strings))
         self.table.itemChanged.disconnect(self.on_item_changed)
 
         for idx, ((file_name, label), (string, file_path)) in enumerate(self.english_strings.items()):
             self.table.setItem(idx, 0, QTableWidgetItem(file_name))
-            self.table.setItem(idx, 1, QTableWidgetItem(label))  # This is for the Label column
-            self.table.setItem(idx, 2, QTableWidgetItem(string))
-            self.table.setItem(idx, 3, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
+            # Initialize the Translated File Name column as empty for now
+            self.table.setItem(idx, 1, QTableWidgetItem(""))  
+            self.table.setItem(idx, 2, QTableWidgetItem(label))
+            self.table.setItem(idx, 3, QTableWidgetItem(string))
+            self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
         self.table.itemChanged.connect(self.on_item_changed)
 
 
@@ -215,7 +223,7 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.disconnect(self.on_item_changed)
         lang = self.language_box.currentText()
         if lang != "English":
-            sibling_directory = os.path.join(self.parent_directory, lang)
+            sibling_directory = os.path.join(self.parent_directory, lang, "text") # Construct the path for translated files
             translations = {}
 
             for subdir, _, files in os.walk(sibling_directory):
@@ -230,8 +238,11 @@ class TranslationApp(QMainWindow):
 
             for idx, (file_name, label) in enumerate(self.english_strings.keys()):
                 translation, trans_file_path = translations.get(label, (self.english_strings[(file_name, label)][0], self.english_strings[(file_name, label)][1]))
-                self.table.setItem(idx, 3, CustomTableWidgetItem(translation, trans_file_path, label))
+                # Set the translated file name in the 2nd column
+                self.table.setItem(idx, 1, QTableWidgetItem(os.path.basename(trans_file_path)))
+                self.table.setItem(idx, 4, CustomTableWidgetItem(translation, trans_file_path, label))
         self.table.itemChanged.connect(self.on_item_changed)
+
 
     def translate_to_language(self, text, target_language):
         prompt = f"Succinctly translate this English string into {target_language}: {text}"
@@ -261,18 +272,18 @@ class TranslationApp(QMainWindow):
             progress.show()
 
         for idx, row in enumerate(selected_rows):
-            english_text_item = self.table.item(row, 2)  # Assuming the English column is index 2
+            english_text_item = self.table.item(row, 3)  # Corrected column index for English
             english_text = english_text_item.text()
 
             target_language = self.language_box.currentText()
             translated_text = self.translate_to_language(english_text, target_language)
 
-            translation_item = self.table.item(row, 3)  # Assuming the Translation column is index 3
+            translation_item = self.table.item(row, 4)  # Corrected column index for Translation
             if not translation_item:  # If the cell is empty
                 file_path = self.table.item(row, 0).text()
-                label = self.table.item(row, 1).text()
+                label = self.table.item(row, 2).text()  # Assuming the Label column is index 2
                 translation_item = CustomTableWidgetItem("", file_path, label)
-                self.table.setItem(row, 3, translation_item)
+                self.table.setItem(row, 4, translation_item)  # Corrected column index for Translation
 
             translation_item.setText(translated_text)
 
@@ -285,9 +296,10 @@ class TranslationApp(QMainWindow):
 
         # Reset the button text after translation
         self.translate_button.setText("Translate")
-         # Close the progress dialog after the operation
+        # Close the progress dialog after the operation
         if total_rows > 4:
             progress.close()
+
 
 
 
