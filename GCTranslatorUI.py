@@ -19,7 +19,7 @@ import os
 import openai
 from xml.etree import ElementTree as ET
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
-                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox)
+                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog)
 from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
@@ -95,6 +95,28 @@ class TranslationApp(QMainWindow):
         if os.path.exists(last_directory):
             self.parent_directory = last_directory
 
+        # Add the OpenAI Key button
+        self.openai_key_button = QPushButton("Enter OpenAI Key", self)
+        self.openai_key_button.clicked.connect(self.set_openai_key)
+        layout.addWidget(self.openai_key_button)
+
+        # Retrieve and set the openai key if it exists
+        openai_key = self.settings.value("openai_key", None)
+        if openai_key:
+            openai.api_key = openai_key
+
+    def set_openai_key(self):
+        # Open an input dialog to get the OpenAI key
+        key, ok = QInputDialog.getText(self, 'OpenAI Key', 'Enter your OpenAI key:')
+        if ok:
+            # Set the key in the openai library
+            openai.api_key = key
+            # Store the key using QSettings
+            self.settings.setValue("openai_key", key)
+            # Optional: You can display a message saying the key has been set
+            QMessageBox.information(self, "Success", "OpenAI Key has been set successfully!")
+
+    
     def on_item_changed(self, item):
         if item.column() == 3:  # Check if the translation column was changed
             self.changed_items.add(item)
