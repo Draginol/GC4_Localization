@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
     <!-- Created with the GC4 editor -->
     <!-- AbilityText.xml -->
@@ -495,6 +495,18 @@
         <String><![CDATA[Beginnt mit zwei Kolonieschiffen, um schnell neue Welten zu finden und zu kolonisieren.]]></String>
     </StringTable>
     <StringTable>
+	<Label>ScoutingFleet_Name</Label>
+	<String>[ICON=ColonyShip_Icon] Pfadfinderflotte</String>
+    </StringTable>
+    <StringTable>
+	<Label>ScoutingFleet_ShortName</Label>
+	<String>Pfadfinderflotte</String>
+    </StringTable>
+    <StringTable>
+	<Label>ScoutingFleet_Dec</Label>
+	<String>Du beginnst mit einem Kolonieschiff und drei Sonden.</String>
+    </StringTable>
+    <StringTable>
         <Label>ColonyStartingShip_Name</Label>
         <String><![CDATA[[ICON=ColonyShip_Icon] Kolonieschiff]]></String>
     </StringTable>
@@ -696,7 +708,7 @@
     </StringTable>
     <StringTable>
         <Label>WatcherAbility_Dec</Label>
-        <String><![CDATA[+7 [HS=HS_SensorRange]Sensorenreichweite[/HS] für Planeten. +2 [HS=HS_SensorRange]Sensorenreichweite[/HS] für Schiffe und Sternenbasen. Beginne mit drei kostenlosen Sonden.]]></String>
+        <String>Gewährt das Kosmische Auge als Ausführungsbefehl. Das Kosmische Auge kann einen Teil der Galaxie aufdecken und gewährt zusätzliche Forschung oder eine neue Technologie, wenn es auf dem Planeten eines anderen Spielers eingesetzt wird.[BR][BR]+7 [HS=HS_SensorRange]Sensorreichweite[/HS] für Planeten.[BR]+2 [HS=HS_SensorRange]Sensorreichweite[/HS] für Schiffe und Sternenbasen.</String>
     </StringTable>
     <StringTable>
         <Label>RadiatedAbility_Name</Label>
@@ -730,4 +742,21 @@
         <Label>NocturnalAbility_SeasonOfDreamingTitle</Label>
         <String><![CDATA[Traumsaison]]></String>
     </StringTable>
+
+    <StringTable>
+        <Label>NocturnalAbility_SeasonOfWakingTitle_Format</Label>
+        <String>Jahreszeit des Erwachens ({AMOUNT} Verbleibende Monate)</String>
+    </StringTable>
+    <StringTable>
+        <Label>NocturnalAbility_SeasonOfDreamingTitle_Format</Label>
+        <String>Saison der Träume ({AMOUNT} Verbleibende Monate)</String>
+    </StringTable>
+    <StringTable>
+    	<Label>NocturnalAbility_SeasonOfWakingDescription</Label>
+	<String>Entwickelt, um in Zyklen zu funktionieren, die jeweils 15 Monate dauern.[BR][BR]Jahreszeit des Erwachens: [HS=HS_Manufacturing]Produktion[/HS] und [HS=HS_Growth]Wachstum[/HS] werden angekurbelt. [BR][BR]{AMOUNT} Monate verbleiben.</String>
+    </StringTable>
+	<StringTable>
+		<Label>NocturnalAbility_SeasonOfDreamingDescription</Label>
+		<String>Entwickelt, um in Zyklen zu funktionieren, die jeweils 15 Monate dauern.[BR][BR]Saison der Träume: [HS=HS_Research]Forschung[/HS] und [HS=HS_Influence]Einfluss[/HS] werden gestärkt. [BR][BR]{AMOUNT} verbleibende Monate.</String>
+	</StringTable>
 </StringTableList>

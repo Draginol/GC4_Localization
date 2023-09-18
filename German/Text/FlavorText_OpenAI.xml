@@ -209,14 +209,14 @@
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte schreibe eine detaillierte Beschreibung einer Fraktion namens {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel. Sei kreativ. Verwende keine Eigenschaftsnamen direkt. Sie beschreiben sich selbst als {PLAYERFACTIONDESCRIPTION:1}. Schreibe es im Stil eines hervorragenden Sci-Fi-Autors. Beantworte sie in weniger als 50 Wörtern.</Text>
+            <Text>Bitte schreibe eine Beschreibung für eine Fraktion namens {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel. Verwende keine Eigenschaftsnamen direkt. Schreibe sie im Stil eines herausragenden Sci-Fi-Autors. Beschränke dich auf drei Sätze.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte schreibe eine Beschreibung in Prosa über die Stärken und Schwächen der Fraktion {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel. Sei kreativ. Sie beschreiben sich selbst als {PLAYERFACTIONDESCRIPTION:1}. Schreibe im Stil von Orson Scott Card. Verwende keine Eigenschaftsnamen direkt. Antworte in weniger als 30 Wörtern.</Text>
+            <Text>Bitte schreibe eine Beschreibung der Stärken und Schwächen der Fraktion namens {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel. Schreibe im Stil von Orson Scott Card. Verwende keine Eigenschaftsnamen direkt. Beschränke dich auf zwei Sätze.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -237,7 +237,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte schreibe eine Antwort auf eine Eröffnung eines Gesprächs, dass von der Fraktion namens {PLAYERFACTION:1} begonnen wurde in einem rundenbasierten Science-Fiction-Strategiespiel. Sei kreativ. Verwende keine Merkmalsnamen direkt. Antworte in weniger als 20 Wörtern. Ein Wort der Form {*:1} ist ein Markup, das sich auf den Sprecher bezieht und als unveränderlich betrachtet werden sollte. Ein Wort der Form {*:2} ist ein Markup, das sich auf den Zuhörer bezieht und als unveränderlich betrachtet werden sollte. Jeder generierte Text des Formulars {*} muss das Formular verwenden {*:1} wenn es um Sprecher und geht  wenn es um Zuhörer geht.</Text>
+            <Text>Bitte schreibe eine Antwort auf eine Eröffnung eines Gesprächs, dass von der Fraktion namens {PLAYERFACTION:1} begonnen wurde in einem rundenbasierten Science-Fiction-Strategiespiel. Sei kreativ. Verwende keine Merkmalsnamen direkt. Antworte in weniger als 20 Wörtern. Ein Wort der Form {*:1} ist ein Markup, das sich auf den Sprecher bezieht und als unveränderlich betrachtet werden sollte. Ein Wort der Form {*:2} ist ein Markup, das sich auf den Zuhörer bezieht und als unveränderlich betrachtet werden sollte. Jeder generierte Text des Formulars {*} muss das Formular verwenden {*:1} wenn es um Sprecher geht und {*:2}   wenn es um Zuhörer geht. Paraphrasiere auch folgendes: {PREVIOUSCONV:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
