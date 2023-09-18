@@ -61,7 +61,8 @@ class TranslationApp(QMainWindow):
         self.table = QTableWidget(self)
         self.table.setColumnCount(5)
         self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation'])
-
+        # Enable sorting on the QTableWidget
+        self.table.setSortingEnabled(True)
         
         self.table.itemChanged.connect(self.on_item_changed)
 
@@ -162,6 +163,11 @@ class TranslationApp(QMainWindow):
         for file_path, items in file_updates.items():
             parser = ET.XMLParser(remove_blank_text=True)  # Use lxml's parser
             tree = ET.parse(file_path, parser)  # Use the parser
+            # Set the attributes on the root element
+            root = tree.getroot()
+            root.attrib["xmlns:xsi"] = "http://www.w3.org/2001/XMLSchema-instance"
+            root.attrib["xsi:noNamespaceSchemaLocation"] = "../../Schema/Lib/StringTable.xsd"
+
             for item in items:
                 for elem in tree.findall('StringTable'):
                     if elem.find('Label').text == item.label:
@@ -169,8 +175,17 @@ class TranslationApp(QMainWindow):
                         elem.find('String').text = fixed_text
             
             try:
-                with open(file_path, "wb") as f:  # Write in binary mode
-                    f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
+                xml_content = ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True)
+                
+                # Decode the XML content
+                xml_str = xml_content.decode('utf-8')
+
+                xml_str = xml_str.replace('\r\n', '\r')
+                
+                xml_str = xml_str.replace('\r', '\r\n')
+                
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(xml_str)
             except PermissionError:
                 QMessageBox.warning(self, "Error", f"Permission denied when trying to write to {file_path}")
                 return
