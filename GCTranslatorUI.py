@@ -165,8 +165,15 @@ class TranslationApp(QMainWindow):
             tree = ET.parse(file_path, parser)  # Use the parser
             # Set the attributes on the root element
             root = tree.getroot()
-            root.attrib["xmlns:xsi"] = "http://www.w3.org/2001/XMLSchema-instance"
-            root.attrib["xsi:noNamespaceSchemaLocation"] = "../../Schema/Lib/StringTable.xsd"
+
+            default_ns = root.nsmap[None] if None in root.nsmap else None
+
+            namespaces = {
+                'xsi': "http://www.w3.org/2001/XMLSchema-instance"
+            }
+            if default_ns:
+                namespaces[None] = default_ns
+            root.set("{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation", "../../Schema/Lib/StringTable.xsd")
 
             for item in items:
                 for elem in tree.findall('StringTable'):
@@ -273,7 +280,7 @@ class TranslationApp(QMainWindow):
 
 
     def translate_to_language(self, text, target_language):
-        prompt = f"In the context of a sci-fi game translate this English string, without using more words into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
