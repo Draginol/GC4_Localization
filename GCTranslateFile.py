@@ -5,6 +5,8 @@ import openai
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
                              QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox, QInputDialog, QProgressDialog)
 from PyQt5.QtCore import QSettings, Qt
+from PyQt5 import sip
+
 from lxml import etree as ET  # Use lxml's ElementTree API
 import html
 
@@ -129,58 +131,38 @@ class TranslationApp(QMainWindow):
             self.changed_items.add(item)
 
     def save_translations(self):
-        import html  # Make sure you have this import
-        file_updates = {}
+        import html
 
-        # Group items by file path
+        if not self.changed_items:
+            QMessageBox.information(self, "Info", "No changes detected to save.")
+            return
+
+        # Extract file_path from the first item (since all items should have the same file path)
+        file_path = next(iter(self.changed_items)).file_path
+
+        parser = ET.XMLParser(remove_blank_text=True)
+        tree = ET.parse(file_path, parser)
+        
         for item in self.changed_items:
-            if sip.isdeleted(item):  # Check if the item is still valid
-                continue
+            for elem in tree.findall('StringTable'):
+                if elem.find('Label').text == item.label:
+                    fixed_text = html.unescape(item.text())
+                    elem.find('String').text = fixed_text
 
-            if item.file_path not in file_updates:
-                file_updates[item.file_path] = []
-
-            file_updates[item.file_path].append(item)
-
-        num_changed_files = len(file_updates)
-
-        if num_changed_files > 3:
-            # Create a QProgressDialog for saving
-            progress = QProgressDialog("Saving translations...", None, 0, num_changed_files, self)
-            progress.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
-            progress.setWindowModality(Qt.WindowModal)  # This will block the main window
-            progress.show()
-
-        current_file_count = 0
-
-        # For each file, make a single pass and update translations
-        for file_path, items in file_updates.items():
-            parser = ET.XMLParser(remove_blank_text=True)  # Use lxml's parser
-            tree = ET.parse(file_path, parser)  # Use the parser
-            for item in items:
-                for elem in tree.findall('StringTable'):
-                    if elem.find('Label').text == item.label:
-                        fixed_text = html.unescape(item.text())  # Decode the entities
-                        elem.find('String').text = fixed_text
-           
-            try:
-                with open(file_path, "wb") as f:  # Write in binary mode
-                    f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
-            except PermissionError:
-                QMessageBox.warning(self, "Error", f"Permission denied when trying to write to {file_path}")
-                return
-
-            current_file_count += 1
-            if num_changed_files > 3:
-                # Update the progress dialog
-                progress.setValue(current_file_count)
-                QApplication.processEvents()  # Process events to update the UI immediately
-
-        # Close the progress dialog if it was shown
-        if num_changed_files > 3:
-            progress.close()
+        try:
+            with open(file_path, "wb") as f:
+                f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
+            # Inform the user that save was successful
+            QMessageBox.information(self, "Success", f"Translations saved successfully to {file_path}")
+        except PermissionError:
+            QMessageBox.warning(self, "Error", f"Permission denied when trying to write to {file_path}")
+            return
+        except Exception as e:  # Catch any other exceptions
+            QMessageBox.warning(self, "Error", f"Error when trying to write to {file_path}: {str(e)}")
+            return
 
         self.changed_items.clear()
+
 
 
     def populate_table(self):
