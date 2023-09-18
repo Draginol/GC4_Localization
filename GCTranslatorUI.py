@@ -122,18 +122,30 @@ class TranslationApp(QMainWindow):
             self.changed_items.add(item)
 
     def save_translations(self):
-        import html  # Make sure you have this import
+        import html  # Ensure this import is at the top
         file_updates = {}
 
         # Group items by file path
         for item in self.changed_items:
             if sip.isdeleted(item):  # Check if the item is still valid
                 continue
+            
+            # Retrieve the file path from the "Translated File Name" column
+            trans_file_path_item = self.table.item(item.row(), 1)
+            
+            # If the cell is empty, skip this item
+            if not trans_file_path_item or not trans_file_path_item.text():
+                continue
+            
+            selected_language = self.language_box.currentText()
+            trans_directory = os.path.join(self.parent_directory, selected_language, "text")
+            trans_file_path = os.path.join(trans_directory, trans_file_path_item.text())
 
-            if item.file_path not in file_updates:
-                file_updates[item.file_path] = []
 
-            file_updates[item.file_path].append(item)
+            if trans_file_path not in file_updates:
+                file_updates[trans_file_path] = []
+
+            file_updates[trans_file_path].append(item)
 
         num_changed_files = len(file_updates)
 
@@ -155,7 +167,7 @@ class TranslationApp(QMainWindow):
                     if elem.find('Label').text == item.label:
                         fixed_text = html.unescape(item.text())  # Decode the entities
                         elem.find('String').text = fixed_text
-           
+            
             try:
                 with open(file_path, "wb") as f:  # Write in binary mode
                     f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
@@ -174,6 +186,7 @@ class TranslationApp(QMainWindow):
             progress.close()
 
         self.changed_items.clear()
+
 
 
 
@@ -245,7 +258,7 @@ class TranslationApp(QMainWindow):
 
 
     def translate_to_language(self, text, target_language):
-        prompt = f"Succinctly translate this English string into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game translate this English string, without using more words into {target_language}: {text}"
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
