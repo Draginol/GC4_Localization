@@ -98,21 +98,26 @@ class TranslationApp(QMainWindow):
 
 
     def load_single_file(self):
-            starting_directory = self.parent_directory if self.parent_directory else "H:\\Projects\\GC4\\GalCiv4\\Game\\Data\\English"
-            file_path, _ = QFileDialog.getOpenFileName(self, "Select XML File", starting_directory, "XML Files (*.xml)")
-            
-            if file_path:
-                self.parent_directory = os.path.dirname(file_path)
-                self.settings.setValue("last_directory", file_path)
+        # Clear the table and the english_strings dictionary
+        self.table.setRowCount(0)
+        self.english_strings.clear()
+        
+        starting_directory = self.parent_directory if self.parent_directory else "H:\\Projects\\GC4\\GalCiv4\\Game\\Data\\English"
+        file_path, _ = QFileDialog.getOpenFileName(self, "Select XML File", starting_directory, "XML Files (*.xml)")
+        
+        if file_path:
+            self.parent_directory = os.path.dirname(file_path)
+            self.settings.setValue("last_directory", file_path)
 
-                file_name = os.path.basename(file_path)
-                tree = ET.parse(file_path)
-                for elem in tree.findall('StringTable'):
-                    label = elem.find('Label').text
-                    string = elem.find('String').text
-                    self.english_strings[(file_name, label)] = (string, file_path)  # Store with filename and label
+            file_name = os.path.basename(file_path)
+            tree = ET.parse(file_path)
+            for elem in tree.findall('StringTable'):
+                label = elem.find('Label').text
+                string = elem.find('String').text
+                self.english_strings[(file_name, label)] = (string, file_path)  # Store with filename and label
 
-                self.populate_table()
+            self.populate_table()
+
 
     def set_openai_key(self):
         # Open an input dialog to get the OpenAI key
@@ -144,6 +149,10 @@ class TranslationApp(QMainWindow):
         tree = ET.parse(file_path, parser)
         
         for item in self.changed_items:
+            # Check if the item is still valid
+            if sip.isdeleted(item):
+                continue
+
             for elem in tree.findall('StringTable'):
                 if elem.find('Label').text == item.label:
                     fixed_text = html.unescape(item.text())
