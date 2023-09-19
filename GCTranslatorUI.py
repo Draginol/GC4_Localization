@@ -4,7 +4,7 @@ def install_module(module_name):
     subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
 
 # List of modules to check
-required_modules = ["PyQt5", "openai","lxml"]
+required_modules = ["PyQt5", "openai","lxml","subprocess","threading"]
 
 for module in required_modules:
     try:
@@ -23,9 +23,9 @@ from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
-
+from concurrent.futures import ThreadPoolExecutor
 import subprocess
-import sys
+import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
 
@@ -61,7 +61,8 @@ class TranslationApp(QMainWindow):
         self.table = QTableWidget(self)
         self.table.setColumnCount(5)
         self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation'])
-
+        # Enable sorting on the QTableWidget
+        self.table.setSortingEnabled(True)
         
         self.table.itemChanged.connect(self.on_item_changed)
 
@@ -122,18 +123,31 @@ class TranslationApp(QMainWindow):
             self.changed_items.add(item)
 
     def save_translations(self):
-        import html  # Make sure you have this import
+        import html  # Ensure this import is at the top
         file_updates = {}
 
+        print(f"Saving files...")
         # Group items by file path
         for item in self.changed_items:
             if sip.isdeleted(item):  # Check if the item is still valid
                 continue
+            
+            # Retrieve the file path from the "Translated File Name" column
+            trans_file_path_item = self.table.item(item.row(), 1)
+            
+            # If the cell is empty, skip this item
+            if not trans_file_path_item or not trans_file_path_item.text():
+                continue
+            
+            selected_language = self.language_box.currentText()
+            trans_directory = os.path.join(self.parent_directory, selected_language, "text")
+            trans_file_path = os.path.join(trans_directory, trans_file_path_item.text())
 
-            if item.file_path not in file_updates:
-                file_updates[item.file_path] = []
 
-            file_updates[item.file_path].append(item)
+            if trans_file_path not in file_updates:
+                file_updates[trans_file_path] = []
+
+            file_updates[trans_file_path].append(item)
 
         num_changed_files = len(file_updates)
 
@@ -150,15 +164,36 @@ class TranslationApp(QMainWindow):
         for file_path, items in file_updates.items():
             parser = ET.XMLParser(remove_blank_text=True)  # Use lxml's parser
             tree = ET.parse(file_path, parser)  # Use the parser
+            # Set the attributes on the root element
+            root = tree.getroot()
+
+            default_ns = root.nsmap[None] if None in root.nsmap else None
+
+            namespaces = {
+                'xsi': "http://www.w3.org/2001/XMLSchema-instance"
+            }
+            if default_ns:
+                namespaces[None] = default_ns
+            root.set("{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation", "../../Schema/Lib/StringTable.xsd")
+
             for item in items:
                 for elem in tree.findall('StringTable'):
                     if elem.find('Label').text == item.label:
                         fixed_text = html.unescape(item.text())  # Decode the entities
                         elem.find('String').text = fixed_text
-           
+            
             try:
-                with open(file_path, "wb") as f:  # Write in binary mode
-                    f.write(ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True))
+                xml_content = ET.tostring(tree, pretty_print=True, encoding='utf-8', xml_declaration=True)
+                
+                # Decode the XML content
+                xml_str = xml_content.decode('utf-8')
+
+                xml_str = xml_str.replace('\r\n', '\r')
+                
+                xml_str = xml_str.replace('\r', '\r\n')
+                
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(xml_str)
             except PermissionError:
                 QMessageBox.warning(self, "Error", f"Permission denied when trying to write to {file_path}")
                 return
@@ -174,9 +209,6 @@ class TranslationApp(QMainWindow):
             progress.close()
 
         self.changed_items.clear()
-
-
-
 
     def load_directory(self):
         default_directory = "H:\\Projects\\GC4\\GalCiv4\\Game\\Data\\English"
@@ -244,8 +276,11 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.connect(self.on_item_changed)
 
 
-    def translate_to_language(self, text, target_language):
-        prompt = f"Succinctly translate this English string into {target_language}: {text}"
+    def translate_to_language(self, text, row, target_language):
+        label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
+        label_name = label_item.text()
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}', translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
+
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
@@ -261,6 +296,8 @@ class TranslationApp(QMainWindow):
             return None
 
     def perform_translation(self):
+        translation_lock = threading.Lock()
+        translation_counter = 0
         selected_rows = list(set(item.row() for item in self.table.selectedItems()))
         total_rows = len(selected_rows)
 
@@ -268,38 +305,45 @@ class TranslationApp(QMainWindow):
         if total_rows > 4:
             progress = QProgressDialog("Please Wait...", None, 0, total_rows, self)
             progress.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
-            progress.setWindowModality(Qt.WindowModal)  # This will block the main window
+            progress.setWindowModality(Qt.WindowModal)
             progress.show()
 
-        for idx, row in enumerate(selected_rows):
-            english_text_item = self.table.item(row, 3)  # Corrected column index for English
+        def translate_row(row): 
+            print(f"Translating row {row} in thread {threading.current_thread().name}")
+            english_text_item = self.table.item(row, 3)
             english_text = english_text_item.text()
-
             target_language = self.language_box.currentText()
-            translated_text = self.translate_to_language(english_text, target_language)
+            translated_text = self.translate_to_language(english_text, row, target_language)
+            return row, translated_text
 
-            translation_item = self.table.item(row, 4)  # Corrected column index for Translation
-            if not translation_item:  # If the cell is empty
-                file_path = self.table.item(row, 0).text()
-                label = self.table.item(row, 2).text()  # Assuming the Label column is index 2
-                translation_item = CustomTableWidgetItem("", file_path, label)
-                self.table.setItem(row, 4, translation_item)  # Corrected column index for Translation
+        # Split the rows into chunks
+        CHUNK_SIZE = 25
+        chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
-            translation_item.setText(translated_text)
+        for chunk in chunks:
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
+                    translation_item = self.table.item(row, 4)
+                    if not translation_item:
+                        file_path = self.table.item(row, 0).text()
+                        label = self.table.item(row, 2).text()
+                        translation_item = CustomTableWidgetItem("", file_path, label)
+                        self.table.setItem(row, 4, translation_item)
 
-            # Update the button text to show progress
-            self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
-            # Update the progress dialog
-            if total_rows > 4:
-                progress.setValue(idx + 1)
-            QApplication.processEvents()  # To update the UI immediately
+                    translation_item.setText(translated_text)
 
-        # Reset the button text after translation
+                    self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
+                    if total_rows > 4:
+                        progress.setValue(idx + 1)
+                    QApplication.processEvents()
+
+            # Save translations after each chunk
+            self.save_translations()
+            translation_counter += len(chunk)
+
         self.translate_button.setText("Translate")
-        # Close the progress dialog after the operation
         if total_rows > 4:
             progress.close()
-
 
 
 
