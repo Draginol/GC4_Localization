@@ -4,7 +4,7 @@ def install_module(module_name):
     subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
 
 # List of modules to check
-required_modules = ["PyQt5", "openai","lxml"]
+required_modules = ["PyQt5", "openai","lxml","subprocess","threading"]
 
 for module in required_modules:
     try:
@@ -24,9 +24,8 @@ from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
 from concurrent.futures import ThreadPoolExecutor
-
 import subprocess
-import sys
+import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
 
@@ -127,6 +126,7 @@ class TranslationApp(QMainWindow):
         import html  # Ensure this import is at the top
         file_updates = {}
 
+        print(f"Saving files...")
         # Group items by file path
         for item in self.changed_items:
             if sip.isdeleted(item):  # Check if the item is still valid
@@ -209,10 +209,6 @@ class TranslationApp(QMainWindow):
             progress.close()
 
         self.changed_items.clear()
-
-
-
-
 
     def load_directory(self):
         default_directory = "H:\\Projects\\GC4\\GalCiv4\\Game\\Data\\English"
@@ -300,6 +296,8 @@ class TranslationApp(QMainWindow):
             return None
 
     def perform_translation(self):
+        translation_lock = threading.Lock()
+        translation_counter = 0
         selected_rows = list(set(item.row() for item in self.table.selectedItems()))
         total_rows = len(selected_rows)
 
@@ -307,38 +305,46 @@ class TranslationApp(QMainWindow):
         if total_rows > 4:
             progress = QProgressDialog("Please Wait...", None, 0, total_rows, self)
             progress.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
-            progress.setWindowModality(Qt.WindowModal)  # This will block the main window
+            progress.setWindowModality(Qt.WindowModal)
             progress.show()
 
-        def translate_row(row):
+        def translate_row(row): 
+            print(f"Translating row {row} in thread {threading.current_thread().name}")
             english_text_item = self.table.item(row, 3)
             english_text = english_text_item.text()
             target_language = self.language_box.currentText()
-            return row, self.translate_to_language(english_text, row, target_language)
+            translated_text = self.translate_to_language(english_text, row, target_language)
+            return row, translated_text
 
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            for idx, (row, translated_text) in enumerate(executor.map(translate_row, selected_rows)):
-                translation_item = self.table.item(row, 4)
-                if not translation_item:  # If the cell is empty
-                    file_path = self.table.item(row, 0).text()
-                    label = self.table.item(row, 2).text()
-                    translation_item = CustomTableWidgetItem("", file_path, label)
-                    self.table.setItem(row, 4, translation_item)
+        # Split the rows into chunks
+        CHUNK_SIZE = 25
+        chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
-                translation_item.setText(translated_text)
+        for chunk in chunks:
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
+                    translation_item = self.table.item(row, 4)
+                    if not translation_item:
+                        file_path = self.table.item(row, 0).text()
+                        label = self.table.item(row, 2).text()
+                        translation_item = CustomTableWidgetItem("", file_path, label)
+                        self.table.setItem(row, 4, translation_item)
 
-                # Update the button text to show progress
-                self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
-                # Update the progress dialog
-                if total_rows > 4:
-                    progress.setValue(idx + 1)
-                QApplication.processEvents()  # To update the UI immediately
+                    translation_item.setText(translated_text)
 
-        # Reset the button text after translation
+                    self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
+                    if total_rows > 4:
+                        progress.setValue(idx + 1)
+                    QApplication.processEvents()
+
+            # Save translations after each chunk
+            self.save_translations()
+            translation_counter += len(chunk)
+
         self.translate_button.setText("Translate")
-        # Close the progress dialog after the operation
         if total_rows > 4:
             progress.close()
+
 
 
 
