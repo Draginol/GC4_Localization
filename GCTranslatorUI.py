@@ -23,6 +23,7 @@ from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
+from concurrent.futures import ThreadPoolExecutor
 
 import subprocess
 import sys
@@ -279,8 +280,11 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.connect(self.on_item_changed)
 
 
-    def translate_to_language(self, text, target_language):
-        prompt = f"In the context of a sci-fi game translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
+    def translate_to_language(self, text, row, target_language):
+        label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
+        label_name = label_item.text()
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}', translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
+
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
@@ -306,36 +310,35 @@ class TranslationApp(QMainWindow):
             progress.setWindowModality(Qt.WindowModal)  # This will block the main window
             progress.show()
 
-        for idx, row in enumerate(selected_rows):
-            english_text_item = self.table.item(row, 3)  # Corrected column index for English
+        def translate_row(row):
+            english_text_item = self.table.item(row, 3)
             english_text = english_text_item.text()
-
             target_language = self.language_box.currentText()
-            translated_text = self.translate_to_language(english_text, target_language)
+            return row, self.translate_to_language(english_text, row, target_language)
 
-            translation_item = self.table.item(row, 4)  # Corrected column index for Translation
-            if not translation_item:  # If the cell is empty
-                file_path = self.table.item(row, 0).text()
-                label = self.table.item(row, 2).text()  # Assuming the Label column is index 2
-                translation_item = CustomTableWidgetItem("", file_path, label)
-                self.table.setItem(row, 4, translation_item)  # Corrected column index for Translation
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            for idx, (row, translated_text) in enumerate(executor.map(translate_row, selected_rows)):
+                translation_item = self.table.item(row, 4)
+                if not translation_item:  # If the cell is empty
+                    file_path = self.table.item(row, 0).text()
+                    label = self.table.item(row, 2).text()
+                    translation_item = CustomTableWidgetItem("", file_path, label)
+                    self.table.setItem(row, 4, translation_item)
 
-            translation_item.setText(translated_text)
+                translation_item.setText(translated_text)
 
-            # Update the button text to show progress
-            self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
-            # Update the progress dialog
-            if total_rows > 4:
-                progress.setValue(idx + 1)
-            QApplication.processEvents()  # To update the UI immediately
+                # Update the button text to show progress
+                self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
+                # Update the progress dialog
+                if total_rows > 4:
+                    progress.setValue(idx + 1)
+                QApplication.processEvents()  # To update the UI immediately
 
         # Reset the button text after translation
         self.translate_button.setText("Translate")
         # Close the progress dialog after the operation
         if total_rows > 4:
             progress.close()
-
-
 
 
 
