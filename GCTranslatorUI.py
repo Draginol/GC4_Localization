@@ -323,7 +323,7 @@ class TranslationApp(QMainWindow):
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=8) as executor:
+            with ThreadPoolExecutor(max_workers=64) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:
