@@ -1,3 +1,5 @@
+import sys
+import subprocess
 
 def install_module(module_name):
     """Install the given module using pip."""
@@ -12,7 +14,7 @@ for module in required_modules:
     except ImportError:
         print(f"{module} not found. Installing...")
         install_module(module)
-import sys
+
 import os
 import openai
 from xml.etree import ElementTree as ET
@@ -24,7 +26,7 @@ from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
 from concurrent.futures import ThreadPoolExecutor
-import subprocess
+
 import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
@@ -321,7 +323,7 @@ class TranslationApp(QMainWindow):
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=8) as executor:
+            with ThreadPoolExecutor(max_workers=64) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:
