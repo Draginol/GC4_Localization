@@ -1,3 +1,5 @@
+import sys
+import subprocess
 
 def install_module(module_name):
     """Install the given module using pip."""
@@ -12,7 +14,7 @@ for module in required_modules:
     except ImportError:
         print(f"{module} not found. Installing...")
         install_module(module)
-import sys
+
 import os
 import openai
 from xml.etree import ElementTree as ET
@@ -24,7 +26,7 @@ from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
 from concurrent.futures import ThreadPoolExecutor
-import subprocess
+
 import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
