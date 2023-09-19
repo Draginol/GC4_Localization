@@ -4,9 +4,59 @@ from tkinter import filedialog
 from lxml import etree
 import openai
 from langdetect import detect
+import keyring
 
 # Set your OpenAI API key
-openai.api_key = "put your open AI key here."
+SERVICE_NAME = "StardockFlavorTextTranslator"
+API_KEY_ACCOUNT_NAME = "openai_api_key"
+
+def gui_get_openai_key():
+    """
+    Open a GUI window to input the OpenAI API key.
+    """
+    def on_submit():
+        api_key = entry.get()
+        keyring.set_password(SERVICE_NAME, API_KEY_ACCOUNT_NAME, api_key)
+        root.destroy()
+
+    root = tk.Tk()
+    root.title("Enter OpenAI API Key")
+
+    label = tk.Label(root, text="Enter your OpenAI API key:")
+    label.pack(padx=10, pady=10)
+
+    entry = tk.Entry(root, width=50, show="*")
+    entry.pack(padx=10, pady=10)
+
+    submit_button = tk.Button(root, text="Submit", command=on_submit)
+    submit_button.pack(pady=10)
+
+    root.mainloop()
+
+
+def set_openai_key():
+    """
+    Prompt the user for the OpenAI API key and store it securely.
+    """
+    api_key = input("Enter your OpenAI API key: ")
+    keyring.set_password(SERVICE_NAME, API_KEY_ACCOUNT_NAME, api_key)
+    print("API key stored securely.")
+
+def get_openai_key():
+    """
+    Retrieve the stored OpenAI API key.
+    If not found, prompt the user to enter it.
+    """
+    api_key = keyring.get_password(SERVICE_NAME, API_KEY_ACCOUNT_NAME)
+    if not api_key:
+        print("API key not found. Please enter it.")
+        gui_get_openai_key()
+        api_key = keyring.get_password(SERVICE_NAME, API_KEY_ACCOUNT_NAME)
+    return api_key
+
+# Set the OpenAI API key
+openai.api_key = get_openai_key()
+
 
 # Open a directory selection dialog
 root = tk.Tk()
@@ -54,7 +104,7 @@ def process_files_in_directory(directory, language):
                 tree = etree.parse(file_path)
                 root = tree.getroot()
 
-                for text_element in root.findall(".//String"):
+                for text_element in root.findall(".//Text"):
                     original_text = text_element.text
 
                     # Check if text is in English
