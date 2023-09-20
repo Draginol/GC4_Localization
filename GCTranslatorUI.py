@@ -6,7 +6,7 @@ def install_module(module_name):
     subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
 
 # List of modules to check
-required_modules = ["PyQt5", "openai","lxml","subprocess","threading"]
+required_modules = ["PyQt5", "openai","lxml"]
 
 for module in required_modules:
     try:
@@ -17,17 +17,14 @@ for module in required_modules:
 
 import os
 import openai
-from xml.etree import ElementTree as ET
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
-                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog)
+                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QListWidget)
 from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
 from PyQt5.QtCore import Qt
 from lxml import etree as ET  # Use lxml's ElementTree API
 from concurrent.futures import ThreadPoolExecutor
-
-
 
 import threading
 
@@ -57,6 +54,32 @@ class TranslationApp(QMainWindow):
 
         layout = QVBoxLayout()
 
+        # Create Menu Bar
+        menu_bar = self.menuBar()
+        file_menu = menu_bar.addMenu("File")
+
+        # Load English Directory Action
+        load_action = QAction("Load English Directory", self)
+        load_action.triggered.connect(self.load_directory)
+        file_menu.addAction(load_action)
+
+        # Save Translations Action
+        save_action = QAction("Save Translations", self)
+        save_action.triggered.connect(self.save_translations)
+        file_menu.addAction(save_action)
+
+        # Adding Language Memory View action to File menu
+        self.language_memory_view_action = QAction("Language Memory View", self)
+        self.language_memory_view_action.triggered.connect(self.show_language_memory)
+        file_menu.addAction(self.language_memory_view_action)
+
+        # Enter OpenAI Key Action
+        openai_key_action = QAction("Enter OpenAI Key", self)
+        openai_key_action.triggered.connect(self.set_openai_key)
+        file_menu.addAction(openai_key_action)
+
+        
+
         self.language_box = QComboBox(self)
         self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
         self.language_box.addItems(self.languages)
@@ -65,27 +88,17 @@ class TranslationApp(QMainWindow):
         self.table = QTableWidget(self)
         self.table.setColumnCount(5)
         self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation'])
-        # Enable sorting on the QTableWidget
         self.table.setSortingEnabled(True)
-        
         self.table.itemChanged.connect(self.on_item_changed)
+        self.table.itemChanged.connect(self.update_translation)
 
-        self.load_button = QPushButton("Load English Directory", self)
-        self.load_button.clicked.connect(self.load_directory)
-
-        self.save_button = QPushButton("Save Translations", self)
-        self.save_button.clicked.connect(self.save_translations)
 
         self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
-        layout.addWidget(self.load_button)
-        layout.addWidget(self.translate_button)
 
-
-        
         layout.addWidget(self.language_box)
         layout.addWidget(self.table)
-        layout.addWidget(self.save_button)
+        layout.addWidget(self.translate_button)
 
         central_widget = QWidget(self)
         central_widget.setLayout(layout)
@@ -100,16 +113,142 @@ class TranslationApp(QMainWindow):
         if os.path.exists(last_directory):
             self.parent_directory = last_directory
 
-        # Add the OpenAI Key button
-        self.openai_key_button = QPushButton("Enter OpenAI Key", self)
-        self.openai_key_button.clicked.connect(self.set_openai_key)
-        layout.addWidget(self.openai_key_button)
-
         # Retrieve and set the openai key if it exists
         openai_key = self.settings.value("openai_key", None)
         if openai_key:
             openai.api_key = openai_key
 
+        # Function to show unique English text entries along with their translations
+    def show_language_memory(self):
+
+        # Fetching all English entries and their translations from the table
+        english_entries = [self.table.item(row, 3).text() for row in range(self.table.rowCount()) if self.table.item(row, 3)]
+        translations = [self.table.item(row, 4).text() for row in range(self.table.rowCount()) if self.table.item(row, 4)]
+        
+        # Creating a dictionary with unique English entries as keys and their translations as values
+        english_translation_dict = dict(zip(english_entries, translations))
+
+        # Displaying the unique entries along with their translations in a new window
+        self.memory_window = QWidget()
+        self.memory_window.setWindowTitle("Language Memory View")
+        layout = QVBoxLayout(self.memory_window)
+        
+        # Creating a table widget with two columns
+        self.table_widget = QTableWidget()
+        self.table_widget.setColumnCount(2)
+        self.table_widget.setHorizontalHeaderLabels(['English', 'Translation'])
+        self.table_widget.setSortingEnabled(True)
+        # Add an "Export to TMX" button
+        export_to_tmx_button = QPushButton("Export to TMX")
+        export_to_tmx_button.clicked.connect(self.export_to_tmx)
+        layout.addWidget(export_to_tmx_button)
+
+
+        self.table_widget.itemChanged.connect(self.update_main_from_memory)
+        self.table.itemChanged.connect(self.update_translation)
+        
+        self.table_widget.itemChanged.disconnect(self.update_main_from_memory)
+        self.table.itemChanged.disconnect(self.update_translation)
+        
+        # Populating the table widget with data
+        for index, (english, translation) in enumerate(english_translation_dict.items()):
+            self.table_widget.insertRow(index)
+            self.table_widget.setItem(index, 0, QTableWidgetItem(english))
+            self.table_widget.setItem(index, 1, QTableWidgetItem(translation))
+        
+        layout.addWidget(self.table_widget)
+        self.memory_window.show()
+        # Connecting signal to detect changes in the translation memory table
+        self.table_widget.itemChanged.connect(self.update_main_from_memory)
+        self.table.itemChanged.connect(self.update_translation)
+        
+    def export_to_tmx(self):
+        # Fetch the selected language from the combo box
+        target_language_code = self.language_box.currentText()  # Assuming the combo box object's name is language_combobox
+        
+        # Create a basic TMX structure
+        tmx_content = '''<?xml version="1.0" encoding="UTF-8"?>
+    <tmx version="1.4">
+    <header creationtool="GCTranslatorUI" segtype="sentence" adminlang="en-us" srclang="EN" datatype="plaintext" o-tmf="GCTranslatorUI" creationdate="yyyymmddT00:00:00Z" nontrans="yes"/>
+    <body>
+        {translation_units}
+    </body>
+    </tmx>
+    '''
+
+        # Extract the English text and its corresponding translation to create the TMX content
+        translation_units = []
+        for row in range(self.table_widget.rowCount()):
+            english_text = self.table_widget.item(row, 0).text()
+            translated_text = self.table_widget.item(row, 1).text()
+            translation_units.append(f'''
+        <tu>
+        <tuv xml:lang="EN">
+            <seg>{english_text}</seg>
+        </tuv>
+        <tuv xml:lang="{target_language_code}">  
+            <seg>{translated_text}</seg>
+        </tuv>
+        </tu>
+    ''')
+
+        tmx_content = tmx_content.format(translation_units="".join(translation_units))
+
+        # Save the TMX content to a file using a file dialog
+        options = QFileDialog.Options()
+        file_name, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()", "","TMX Files (*.tmx);;All Files (*)", options=options)
+        if file_name:
+            with open(file_name, 'w', encoding='utf-8') as file:
+                file.write(tmx_content)
+
+
+            tmx_content = tmx_content.format(translation_units="".join(translation_units))
+
+            # Save the TMX content to a file using a file dialog
+            options = QFileDialog.Options()
+            file_name, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()", "","TMX Files (*.tmx);;All Files (*)", options=options)
+            if file_name:
+                with open(file_name, 'w', encoding='utf-8') as file:
+                    file.write(tmx_content)
+
+
+
+    def update_translation(self, item):
+        # Checking if the modified item is from the Translation column
+
+        if item.tableWidget() == self.table:
+            return
+
+        if item.column() == 4:
+            # Fetching the English string corresponding to the modified translation
+            english_string = self.table.item(item.row(), 3).text()
+            new_translation = item.text()
+
+            # Iterating over the main table to find and update rows with the same English string
+            for row in range(self.table.rowCount()):
+                if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
+                    self.table.item(row, 4).setText(new_translation)
+
+    
+    
+    # Function to update the main table and memory view based on changes in the translation memory table
+    def update_main_from_memory(self, item):
+        # Checking if the modified item is from the Translation column of the memory table
+        if item.column() == 1:
+            # Fetching the English string corresponding to the modified translation in the memory table
+            english_string = self.table_widget.item(item.row(), 0).text()
+            new_translation = item.text()
+
+            # Iterating over the main table and the memory table to find and update rows with the same English string
+            for row in range(self.table.rowCount()):
+                if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
+                    self.table.item(row, 4).setText(new_translation)
+            
+            for row in range(self.table_widget.rowCount()):
+                if self.table_widget.item(row, 0) and self.table_widget.item(row, 0).text() == english_string:
+                    self.table_widget.item(row, 1).setText(new_translation)
+
+          
     def set_openai_key(self):
         # Open an input dialog to get the OpenAI key
         key, ok = QInputDialog.getText(self, 'OpenAI Key', 'Enter your OpenAI key:')
@@ -244,6 +383,7 @@ class TranslationApp(QMainWindow):
     def populate_table(self):
         self.table.setRowCount(len(self.english_strings))
         self.table.itemChanged.disconnect(self.on_item_changed)
+        self.table.itemChanged.disconnect(self.update_translation)
 
         for idx, ((file_name, label), (string, file_path)) in enumerate(self.english_strings.items()):
             self.table.setItem(idx, 0, QTableWidgetItem(file_name))
@@ -253,10 +393,12 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 3, QTableWidgetItem(string))
             self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
         self.table.itemChanged.connect(self.on_item_changed)
+        self.table.itemChanged.connect(self.update_translation)
 
 
     def switch_language(self):
         self.table.itemChanged.disconnect(self.on_item_changed)
+        self.table.itemChanged.disconnect(self.update_translation)
         lang = self.language_box.currentText()
         if lang != "English":
             sibling_directory = os.path.join(self.parent_directory, lang, "text") # Construct the path for translated files
@@ -278,6 +420,7 @@ class TranslationApp(QMainWindow):
                 self.table.setItem(idx, 1, QTableWidgetItem(os.path.basename(trans_file_path)))
                 self.table.setItem(idx, 4, CustomTableWidgetItem(translation, trans_file_path, label))
         self.table.itemChanged.connect(self.on_item_changed)
+        self.table.itemChanged.connect(self.update_translation)
 
 
     def translate_to_language(self, text, row, target_language):
@@ -348,9 +491,6 @@ class TranslationApp(QMainWindow):
         self.translate_button.setText("Translate")
         if total_rows > 4:
             progress.close()
-
-
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
