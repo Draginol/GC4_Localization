@@ -165,13 +165,13 @@ class TranslationApp(QMainWindow):
     def export_to_tmx(self):
         # Fetch the selected language from the combo box
         target_language_code = self.language_box.currentText()  # Assuming the combo box object's name is language_combobox
-        
-        # Create a basic TMX structure
-        tmx_content = '''<?xml version="1.0" encoding="UTF-8"?>
+        # Create the start and end of the basic TMX structure
+        tmx_start = '''<?xml version="1.0" encoding="UTF-8"?>
     <tmx version="1.4">
     <header creationtool="GCTranslatorUI" segtype="sentence" adminlang="en-us" srclang="EN" datatype="plaintext" o-tmf="GCTranslatorUI" creationdate="yyyymmddT00:00:00Z" nontrans="yes"/>
     <body>
-        {translation_units}
+    '''
+        tmx_end = '''
     </body>
     </tmx>
     '''
@@ -181,18 +181,18 @@ class TranslationApp(QMainWindow):
         for row in range(self.table_widget.rowCount()):
             english_text = self.table_widget.item(row, 0).text()
             translated_text = self.table_widget.item(row, 1).text()
-            translation_units.append(f'''
+            translation_units.append('''
         <tu>
         <tuv xml:lang="EN">
-            <seg>{english_text}</seg>
+            <seg>''' + english_text + '''</seg>
         </tuv>
-        <tuv xml:lang="{target_language_code}">  
-            <seg>{translated_text}</seg>
+        <tuv xml:lang="''' + target_language_code + '''">  
+            <seg>''' + translated_text + '''</seg>
         </tuv>
         </tu>
     ''')
 
-        tmx_content = tmx_content.format(translation_units="".join(translation_units))
+        tmx_content = tmx_start + "".join(translation_units) + tmx_end
 
         # Save the TMX content to a file using a file dialog
         options = QFileDialog.Options()
@@ -200,16 +200,6 @@ class TranslationApp(QMainWindow):
         if file_name:
             with open(file_name, 'w', encoding='utf-8') as file:
                 file.write(tmx_content)
-
-
-            tmx_content = tmx_content.format(translation_units="".join(translation_units))
-
-            # Save the TMX content to a file using a file dialog
-            options = QFileDialog.Options()
-            file_name, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()", "","TMX Files (*.tmx);;All Files (*)", options=options)
-            if file_name:
-                with open(file_name, 'w', encoding='utf-8') as file:
-                    file.write(tmx_content)
 
 
 
