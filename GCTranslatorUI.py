@@ -176,7 +176,8 @@ class TranslationApp(QMainWindow):
             self.table.itemChanged.connect(self.on_item_changed)
             self.table.itemChanged.connect(self.update_translation)
             self.table_widget.itemChanged.connect(self.update_main_from_memory)
-        # Function to show unique English text entries along with their translations
+    
+    # Function to show unique English text entries along with their translations
     def show_language_memory(self):
 
         # Fetching all English entries and their translations from the table
