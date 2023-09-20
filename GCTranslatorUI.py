@@ -14,7 +14,7 @@ for module in required_modules:
     except ImportError:
         print(f"{module} not found. Installing...")
         install_module(module)
-
+import re
 import os
 import openai
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
@@ -30,6 +30,14 @@ import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
 
+# Adjusted function to replace special characters within the content of <seg> tags in XML, 
+# and to handle scenarios where the content inside the <seg> tags looks like the start or end of an XML tag.
+def replace_seg_content_adjusted(match):
+    text_content = match.group(1)
+    # Ensure that any content inside <seg> tags which looks like a starting or ending XML tag gets escaped properly.
+    return "<seg>" + text_content.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;") + "</seg>"
+
+
 class CustomTableWidgetItem(QTableWidgetItem):
     def __init__(self, text, file_path, label):
         super().__init__(text)
@@ -43,6 +51,8 @@ class CustomTableWidgetItem(QTableWidgetItem):
         if isinstance(other, CustomTableWidgetItem):
             return self.file_path == other.file_path and self.label == other.label
         return False
+
+
 
 
 class TranslationApp(QMainWindow):
@@ -118,6 +128,9 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
+    
+
+
     def import_from_tmx(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getOpenFileName(self, "QFileDialog.getOpenFileName()", "", "TMX Files (*.tmx);;All Files (*)", options=options)
@@ -125,25 +138,34 @@ class TranslationApp(QMainWindow):
         if file_name:
             with open(file_name, 'r', encoding='utf-8') as file:
                 content = file.read()
-                # Replace unescaped & characters with &amp;
-                adjusted_content = content.replace("&", "&amp;")
+                
+                # Remove XML declaration
+                content = re.sub(r'^<\?xml.*?\?>', '', content)
+                
+                # Replace special characters only within the content of <seg> tags
+                adjusted_content = re.sub(r'<seg>(.*?)</seg>', replace_seg_content_adjusted, content)
 
             # Parse the adjusted content
-            root = ET.fromstring(adjusted_content.encode('utf-8'))
+            root = ET.fromstring(adjusted_content)
 
             # Clear the current content of the table
             self.table_widget.setRowCount(0)
+
+            self.table.itemChanged.disconnect(self.on_item_changed)
+            self.table.itemChanged.disconnect(self.update_translation)
+            self.table_widget.itemChanged.disconnect(self.update_main_from_memory)
+
 
             # Extract source (English) and target translations and populate the table
             for tu in root.xpath('//tu'):
                 english_text = tu.xpath('./tuv[@xml:lang="EN"]/seg/text()')
                 translated_text = tu.xpath('./tuv[not(@xml:lang="EN")]/seg/text()')
 
-                # Convert &amp; back to & for displaying in the application
+                # Convert &amp; back to & and &lt; to < and &gt; to > for displaying in the application
                 if english_text:
-                    english_text[0] = english_text[0].replace("&amp;", "&")
+                    english_text[0] = english_text[0].replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
                 if translated_text:
-                    translated_text[0] = translated_text[0].replace("&amp;", "&")
+                    translated_text[0] = translated_text[0].replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
 
                 if english_text and translated_text:
                     row_position = self.table_widget.rowCount()
@@ -151,6 +173,9 @@ class TranslationApp(QMainWindow):
                     self.table_widget.setItem(row_position, 0, QTableWidgetItem(english_text[0]))
                     self.table_widget.setItem(row_position, 1, QTableWidgetItem(translated_text[0]))
 
+            self.table.itemChanged.connect(self.on_item_changed)
+            self.table.itemChanged.connect(self.update_translation)
+            self.table_widget.itemChanged.connect(self.update_main_from_memory)
         # Function to show unique English text entries along with their translations
     def show_language_memory(self):
 
