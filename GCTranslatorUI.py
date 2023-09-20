@@ -93,7 +93,7 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.connect(self.update_translation)
 
 
-        self.translate_button = QPushButton("Translate", self)
+        self.translate_button = QPushButton("Translate (OpenAI)", self)
         self.translate_button.clicked.connect(self.perform_translation)
 
         layout.addWidget(self.language_box)
@@ -118,6 +118,39 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
+    def import_from_tmx(self):
+        options = QFileDialog.Options()
+        file_name, _ = QFileDialog.getOpenFileName(self, "QFileDialog.getOpenFileName()", "", "TMX Files (*.tmx);;All Files (*)", options=options)
+        
+        if file_name:
+            with open(file_name, 'r', encoding='utf-8') as file:
+                content = file.read()
+                # Replace unescaped & characters with &amp;
+                adjusted_content = content.replace("&", "&amp;")
+
+            # Parse the adjusted content
+            root = ET.fromstring(adjusted_content.encode('utf-8'))
+
+            # Clear the current content of the table
+            self.table_widget.setRowCount(0)
+
+            # Extract source (English) and target translations and populate the table
+            for tu in root.xpath('//tu'):
+                english_text = tu.xpath('./tuv[@xml:lang="EN"]/seg/text()')
+                translated_text = tu.xpath('./tuv[not(@xml:lang="EN")]/seg/text()')
+
+                # Convert &amp; back to & for displaying in the application
+                if english_text:
+                    english_text[0] = english_text[0].replace("&amp;", "&")
+                if translated_text:
+                    translated_text[0] = translated_text[0].replace("&amp;", "&")
+
+                if english_text and translated_text:
+                    row_position = self.table_widget.rowCount()
+                    self.table_widget.insertRow(row_position)
+                    self.table_widget.setItem(row_position, 0, QTableWidgetItem(english_text[0]))
+                    self.table_widget.setItem(row_position, 1, QTableWidgetItem(translated_text[0]))
+
         # Function to show unique English text entries along with their translations
     def show_language_memory(self):
 
@@ -138,6 +171,12 @@ class TranslationApp(QMainWindow):
         self.table_widget.setColumnCount(2)
         self.table_widget.setHorizontalHeaderLabels(['English', 'Translation'])
         self.table_widget.setSortingEnabled(True)
+
+        # Add an "Import from TMX" button
+        import_from_tmx_button = QPushButton("Import from TMX")
+        import_from_tmx_button.clicked.connect(self.import_from_tmx)
+        layout.addWidget(import_from_tmx_button)
+
         # Add an "Export to TMX" button
         export_to_tmx_button = QPushButton("Export to TMX")
         export_to_tmx_button.clicked.connect(self.export_to_tmx)
@@ -478,7 +517,7 @@ class TranslationApp(QMainWindow):
             self.save_translations()
             translation_counter += len(chunk)
 
-        self.translate_button.setText("Translate")
+        self.translate_button.setText("Translate via OpenAI")
         if total_rows > 4:
             progress.close()
 
