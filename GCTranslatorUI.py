@@ -128,55 +128,6 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
-    
-
-
-    def import_from_tmx(self):
-        options = QFileDialog.Options()
-        file_name, _ = QFileDialog.getOpenFileName(self, "QFileDialog.getOpenFileName()", "", "TMX Files (*.tmx);;All Files (*)", options=options)
-        
-        if file_name:
-            with open(file_name, 'r', encoding='utf-8') as file:
-                content = file.read()
-                
-                # Remove XML declaration
-                content = re.sub(r'^<\?xml.*?\?>', '', content)
-                
-                # Replace special characters only within the content of <seg> tags
-                adjusted_content = re.sub(r'<seg>(.*?)</seg>', replace_seg_content_adjusted, content)
-
-            # Parse the adjusted content
-            root = ET.fromstring(adjusted_content)
-
-            # Clear the current content of the table
-            self.table_widget.setRowCount(0)
-
-            self.table.itemChanged.disconnect(self.on_item_changed)
-            self.table.itemChanged.disconnect(self.update_translation)
-            self.table_widget.itemChanged.disconnect(self.update_main_from_memory)
-
-
-            # Extract source (English) and target translations and populate the table
-            for tu in root.xpath('//tu'):
-                english_text = tu.xpath('./tuv[@xml:lang="EN"]/seg/text()')
-                translated_text = tu.xpath('./tuv[not(@xml:lang="EN")]/seg/text()')
-
-                # Convert &amp; back to & and &lt; to < and &gt; to > for displaying in the application
-                if english_text:
-                    english_text[0] = english_text[0].replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-                if translated_text:
-                    translated_text[0] = translated_text[0].replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-
-                if english_text and translated_text:
-                    row_position = self.table_widget.rowCount()
-                    self.table_widget.insertRow(row_position)
-                    self.table_widget.setItem(row_position, 0, QTableWidgetItem(english_text[0]))
-                    self.table_widget.setItem(row_position, 1, QTableWidgetItem(translated_text[0]))
-
-            self.table.itemChanged.connect(self.on_item_changed)
-            self.table.itemChanged.connect(self.update_translation)
-            self.table_widget.itemChanged.connect(self.update_main_from_memory)
-    
     # Function to show unique English text entries along with their translations
     def show_language_memory(self):
 
@@ -197,11 +148,6 @@ class TranslationApp(QMainWindow):
         self.table_widget.setColumnCount(2)
         self.table_widget.setHorizontalHeaderLabels(['English', 'Translation'])
         self.table_widget.setSortingEnabled(True)
-
-        # Add an "Import from TMX" button
-        import_from_tmx_button = QPushButton("Import from TMX")
-        import_from_tmx_button.clicked.connect(self.import_from_tmx)
-        layout.addWidget(import_from_tmx_button)
 
         # Add an "Export to TMX" button
         export_to_tmx_button = QPushButton("Export to TMX")
