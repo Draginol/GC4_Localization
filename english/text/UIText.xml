@@ -5244,6 +5244,10 @@
         <String>Revenue</String>
     </StringTable>
     <StringTable>
+        <Label>NetIncomeLABEL</Label>
+        <String>Net Monthly Income</String>
+    </StringTable>
+    <StringTable>
         <Label>ColonyGrossIncomeLABEL</Label>
         <String>Colony Income</String>
     </StringTable>
@@ -5385,7 +5389,7 @@
     </StringTable>
     <StringTable>
         <Label>BattleCasualtiesPrediction_Format</Label>
-        <String>Us: {VALUE:1}[BR]    Them: {VALUE:2}</String>
+        <String>Us: {VALUE:1}[BR]Them: {VALUE:2}</String>
     </StringTable>
     <StringTable>
         <Label>EJECTALLBUTTONLABEL</Label>
@@ -5413,7 +5417,7 @@
     </StringTable>
     <StringTable>
         <Label>Campaign</Label>
-        <String>Campaign</String>
+        <String>Mission</String>
     </StringTable>
     <StringTable>
         <Label>CONTEXTSHIPS</Label>
@@ -7641,11 +7645,15 @@
     </StringTable>
     <StringTable>
         <Label>TURNS_TO_UPGRADE_TOOLTIP</Label>
-        <String>Months to complete upgrade</String>
+        <String>The number of Months it will take to complete upgrades to this ship.[BR]This will increase based on distance to nearest available shipyard</String>
     </StringTable>
+	<StringTable>
+		<Label>TURNS_TO_UPGRADE_EXPLANATION_TOOLTIP</Label>
+		<String>The number of Months it will take to complete upgrades to this ship.[BR][BR]Value is determined by the distance to the nearest Shipyard. The closer a ship is to a Shipyard, the fewer Months it takes to complete.[BR][BR]This ship is %u tiles away from the nearest Shipyard {OBJECTNAME}.</String>
+	</StringTable>
     <StringTable>
         <Label>CREDITS_TO_UPGRADE_TOOLTIP</Label>
-        <String>Credits required to upgrade</String>
+        <String>The amount of Credits it will cost to complete upgrades to this ship.[BR][BR]Value is determined by the difference in cost between the ship's current equipment and the latest equipment, along with a modifier to rush the supplies.</String>
     </StringTable>
     <StringTable>
         <Label>CULTURE_DONE_DISABLED_TOOLTIP</Label>
@@ -10525,11 +10533,11 @@
     </StringTable>
     <StringTable>
         <Label>CAMPAIGNLABEL</Label>
-        <String>CAMPAIGN</String>
+        <String>MISSIONS</String>
     </StringTable>
     <StringTable>
         <Label>CAMPAIGNSCENARIOSTITLE</Label>
-        <String>Campaign</String>
+        <String>Missions</String>
     </StringTable>
     <StringTable>
         <Label>LOADCAMPAIGNGAMEBTNLABEL</Label>
@@ -11128,7 +11136,11 @@
         <String>To use a custom leader foreground, create a 16:9 PNG image, then copy it here:</String>
     </StringTable>
     <StringTable>
-        <Label>CUSTOM_FACTION_CHOOSE_PIC_LEADER_FG_INFOTEXT_GENERATED</Label>
+      <Label>CUSTOM_FACTION_CHOOSE_PIC_LEADER_FG_INFOTEXT_GENERATED</Label>
+      <String>Pick the image you feel best suits your leader:</String>
+    </StringTable>
+    <StringTable>
+        <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZEN_FG_INFOTEXT_GENERATED</Label>
         <String>Pick the image you feel best suits your leader:</String>
     </StringTable>
     <StringTable>
@@ -13054,11 +13066,11 @@
     </StringTable>
     <StringTable>
         <Label>Policies_Approval_With_Icon</Label>
-        <String>[ICON=Stat_Morale_Icon] Approval</String>
+        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
     </StringTable>
     <StringTable>
         <Label>Policies_Government_With_Icon</Label>
-        <String>[ICON=Stat_Morale_Icon] Approval</String>
+        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
     </StringTable>
     <StringTable>
         <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
@@ -14926,7 +14938,7 @@
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_UPGRADE_TEXT</Label>
-        <String>[B]Upgrade[/B][BR][COLOR=UIDefaultHot]Add a component to a leveled-up ship.[/COLOR]</String>
+        <String>[B]Upgrade[/B][BR][COLOR=UIDefaultHot]Upgrade ships to refit them with the latest version of weapons, armor, and equipment.[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_DECOMMISSION_TEXT</Label>
@@ -23248,7 +23260,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_ArmorRating_Dec</Label>
-        <String>Armor protects ships from Kinetic attacks.</String>
+        <String>Armor helps mitigate incoming damage. When a ship is fired upon, its armor rating is rolled against the attack. If the armor rating roll is higher, it mitigates the damage. After every armor roll, the armor rating is reduced by 5% of its original armor value for the battle.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_AsteroidMiner_Name</Label>
@@ -23272,7 +23284,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_BeamWeapon_Dec</Label>
-        <String>Beam weapons do moderate damage for a reason Manufacturing cost. They are weak against ships with strong Shields.</String>
+        <String>Beam Weapons have high accuracy, and with a medium cooldown time, provide a consistent source of damage at medium range. They can volley up to 2 tiles away.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_Chaos_Name</Label>
@@ -23380,7 +23392,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_KineticWeapon_Dec</Label>
-        <String>Kinetic weapons are powerful but have a high Manufacturing cost. They are weak against ships with a high Armor Rating.</String>
+        <String>Kinetic weapons have a short range, but their fast cooldown and medium accuracy have a devastating effect at close distance.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_ManufacturedGoods_Name</Label>
@@ -23404,7 +23416,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_MissileWeapon_Dec</Label>
-        <String>Missile weapons can be used to attack at range. They are not terribly accurate and have a long reload time but they have the advantage of first strike.</String>
+        <String>Missile Weapons have the longest range of any weapon type. They have a slow cooldown and inconsistent accuracy. They can volley up to 4 tiles away.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_Mission_Name</Label>
@@ -23508,7 +23520,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_ShieldStrength_Dec</Label>
-        <String>Shields protect ships from Beam weapon attacks.</String>
+        <String>Shields absorb incoming damage. When a ship's shields absorb damage, that amount is lost from the shield strength for the entire battle. A ship will not take damage to its [HS=HS_HitPoints]Hit Points[/HS] until its shield strength has been used up.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_Siege_Name</Label>
@@ -23866,6 +23878,10 @@
         <Label>MasterTech_SubspaceStreaming_TriggerDesc</Label>
         <String>Subspace Stream Travel</String>
     </StringTable>
+	<StringTable>
+		<Label>MasterTech_StarshipRefits_TriggerDesc</Label>
+		<String>Ship Refitting Available</String>
+	</StringTable>
     <StringTable>
         <Label>MasterTech_ColonialPolicies_TriggerDesc</Label>
         <String>Policy Assignment Available</String>
@@ -25419,8 +25435,12 @@
         <String>Saving Civilization Data...</String>
     </StringTable>
     <StringTable>
-        <Label>Supernova_Generating_Leader_Images</Label>
-        <String>Searching for matching leader images...</String>
+      <Label>Supernova_Generating_Leader_Images</Label>
+      <String>Searching for matching leader images...</String>
+    </StringTable>
+    <StringTable>
+      <Label>Supernova_Generating_Citizen_Images</Label>
+      <String>Searching for matching citizen images...</String>
     </StringTable>
     <StringTable>
         <Label>SuperNova_Research_Candidates_Title</Label>
