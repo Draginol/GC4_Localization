@@ -57,7 +57,7 @@
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an introduction in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 100 words. </Text>
+            <Text>Write an introduction in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} for use in a strategy game. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 100 words. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -162,7 +162,7 @@
         <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to a trade offer in first person from {LEADERNAME:2} to {LEADERNAME:1} in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative. Do not reuse any words in the personality traits descriptions. Do not use either leader's name or faction name. Respond in 25 words or less.  Start the response with {LEADERNAME:1} followed by a colon. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Please write a response to a trade offer in first person from {LEADERNAME:2} to {LEADERNAME:1} in the voice of {LEADERNAME:1} for use in a strategy game. Be creative. Do not reuse any words in the personality traits descriptions. Do not use either leader's name or faction name. Respond in 10 words or less.  Start the response with {LEADERNAME:1} followed by a colon. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -183,49 +183,49 @@
         <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a name for the leader of the {PREVIOUSCONV:0} faction in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond in between 2 and 4 words.</Text>
+            <Text>Please come up with a name for the leader of the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Do not use any trait names directly. Respond in between 2 and 4 words.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a name for the homeworld of the {PREVIOUSCONV:0} faction in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. They have described themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in between 1 and 3 words.</Text>
+            <Text>Please come up with a name for the homeworld of the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Do not use any trait names directly. They have described themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in between 1 and 3 words.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a naval or space ship callsign for the {PREVIOUSCONV:0} faction in a science fiction turn based strategy game. Be creative. Response shall be an acronym or abbreviation and consist of exactly 2 or 3 capital letters with each capital letter followed by a period punctuation mark. Do not include any full words. For example H.M.S.  Another example U.S.S.  Response shall not exceed 6 letters including periods. </Text>
+            <Text>Please come up with a naval or space ship callsign for the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Response shall be an acronym or abbreviation and consist of exactly 2 or 3 capital letters with each capital letter followed by a period punctuation mark. Do not include any full words. For example H.M.S.  Another example U.S.S.  Response shall not exceed 6 letters including periods. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a brief description of a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 30 words.</Text>
+            <Text>Please write a brief description of a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 30 words.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a description of a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Do not use any trait names directly. Write it in the style of an outstanding Sci-Fi author. Limit to three sentences.</Text>
+            <Text>Please write a description of a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Do not use any trait names directly. Write it in the style of an outstanding Sci-Fi author. Limit to three sentences. Add carriage returns to break up the text into readable paragraphs.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a description of the strengths and weaknesses of the faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Write in the style of Orson Scott Card. Do not use any trait names directly. Limit to two sentences.</Text>
+            <Text>Please write a description of the strengths and weaknesses of the faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Write in the style of hard Sci-Fi. Do not use any trait names directly. Limit to two sentences. Add carriage returns to break up the text into readable paragraphs.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_MOTTO_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a motto for a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 45 characters.</Text>
+            <Text>Please write a motto for a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 45 characters.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -276,21 +276,21 @@
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an acceptance response to a trade offer made to a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Their response should reference something from how they describe themselves while still accepting the trade deal. Do not use any trait names directly. Respond in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Please write a succint single phrase acceptance comment in first person to a trade offer made by another faction to us, a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Their response to the faction making the offer should reference something from how they describe themselves while still accepting the trade deal. Do not use any trait names directly. Respond in under 12 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a refusal response to a trade offer made to a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. {PLAYERFACTION:1} describes itself as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly. Respond in under 20 words. Have their refusal go along with how they describe themselves in an amusing way. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Please write a succint single phrase refusal comment in first person to a trade offer made by another faction to us, a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond to the faction making the offer in under 20 words. Have their refusal go along with how they describe themselves in an amusing way. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a comment upon the successful mutual acceptance of a trade offer made to a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Please write a succint single phrase comment in the first person upon the successful acceptance of a trade offer made to us, a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond to the faction making the offer in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>

@@ -11,12 +11,44 @@
         <String>In 2178, the humans of a United Earth developed Hyperdrive Propulsion systems, discovering faster-than-light travel.[BR][BR]Humanity had already established interstellar contact with two civilizations: The Korx and the Arcean Empire. Some scientists, eager to share their discoveries, transmit the specifications for the new drive systems to the Arceans and the Korx. Both groups go silent immediately after receiving the specifications for this new technology. Earth is left alone in the universe once again.[BR][BR]You are Commander DL Bradley, leader of the newly formed Terran Alliance. This group has been created to oversee the manned exploration of space and the colonization of new planets. Humanity's new Hyperdrive Propulsion makes such grand ambitions possible.[BR][BR]Unfortunately, you must contend with a new threat: Pirates. A group of terrorists have acquired the Hyperdrive plans. They threaten all colonization efforts as long as they keep a foothold in nearby star systems. At some point, we will need to find and destroy their base.[BR][BR]Your primary mission is to colonize at least 8 worlds with at least one large enough to warrant a governor and establish leaders to support the effort.</String>
     </StringTable>
     <StringTable>
+        <Label>Campaign_Tutorail_UseProbe</Label>
+        <String>Locate the Other Civilization</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UseProbe_Dec</Label>
+        <String>Give orders to the Probe until all its [ICON=Moves_Icon] [HS=HS_Moves]Moves[/HS] have been utilized. Select the Probe and use it to explore the galaxy.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_SurveyFirstAnomaly</Label>
+        <String>Scan an Anomaly</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_SurveyFirstAnomaly_Dec</Label>
+        <String>Utilize the [HS=HS_SurveyShip]Survey Ship[/HS] to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. [HS=HS_SurveyOrder]Surveying[/HS] an [HS=HS_Anomaly]Anomaly[/HS] takes several [HS=HS_Months]Months[/HS] of uninterrupted work. If the [HS=HS_SurveyShip]Survey Ship[/HS] is moved or given different orders, it will lose all progress toward uncovering the [HS=HS_Anomaly]Anomaly[/HS].[BR][BR]Select that [HS=HS_SurveyShip]Survey Ship[/HS] using the LEFT Mouse Button and give it orders to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. This can be done by setting an [HS=HS_Anomaly]Anomaly[/HS] as the ship's destination with the RIGHT Mouse Button.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_SurveyTargetAnomalies</Label>
+        <String>Scan 5 Anomalies</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_SurveyTargetAnomalies_Dec</Label>
+        <String>Utilize the [HS=HS_SurveyShip]Survey Ship[/HS] to [HS=HS_SurveyOrder]Survey[/HS] several [HS=HS_Anomaly]Anomalies[/HS]. Plenty of unknown items are in space -left behind intentionally or unintentionally. Mastering the stars will require us to discover and address many [HS=HS_Anomaly]Anomalies[/HS].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_ColonizeFirstPlanet</Label>
+        <String>Colonize a Planet</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_ColonizeFirstPlanet_Dec</Label>
+        <String>Utilize the Colony Ship to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. Mars is a near-perfect candidate. Mars can provide beneficial resources and is close to the Alliance's Home World.[BR][BR]Select that Colony Ship using the LEFT Mouse Button and give it orders to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. This can be done by setting a colonizable Planet as the ship's destination with the RIGHT Mouse Button.</String>
+    </StringTable>
+    <StringTable>
         <Label>Campaign_Tutorail_ColonizeTargetPlanets</Label>
         <String>Colonize 8 Planets</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_ColonizeTargetPlanets_Dec</Label>
-        <String>Explore the galaxy to find planets to colonize. Planets can be colonized using Colony Ships. Colony Ships can be constructed at a Shipyard or obtained through the Draft Colonists Executive Order.</String>
+        <String>Explore the galaxy to find planets to [HS=HS_ColonizeOrder]Colonize[/HS]. Planets can be [HS=HS_ColonizeOrder]Colonized[/HS] using Colony Ships. Colony Ships can be constructed at a [HS=HS_Shipyard]Shipyard[/HS] or obtained through the Draft Colonists [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS].</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_FillCabinet</Label>
@@ -24,7 +56,7 @@
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_FillCabinet_Dec</Label>
-        <String>Grant benefits to the entire Alliance by recruiting Leaders and putting them to work. Recruited Leaders can be assigned roles in the Ministry, accessible through the Leader Screen. Each position provides a unique benefit based on a specific stat, so pick the best person for the job to get the best benefit possible.</String>
+        <String>Grant benefits to the entire Alliance by recruiting [HS=HS_Leaders]Leaders[/HS] and putting them to work. Recruited [HS=HS_Leaders]Leaders[/HS] can be assigned roles in the [HS=HS_MinistersScreen]Ministers Screen[/HS], accessible through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. Each position provides a unique benefit based on a specific stat, so pick the best person for the job to get the best benefit possible.</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_AppointGovernor</Label>
@@ -32,7 +64,23 @@
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_AppointGovernor_Dec</Label>
-        <String>Planets with a Planet Class 10 or greater can be turned into Coreworlds by assigning a Governor to the planet. To assign a Governor, you'll first need a Leader available. Planets with Governors can be upgraded to improve output and support a new Shipyard.</String>
+        <String>Planets with a [HS=HS_PlanetClass]Planet Class[/HS] 10 or greater can be turned into [HS=HS_CoreWorld]Core Worlds[/HS] by assigning a [HS=HS_Governor]Governor[/HS] to the planet. To assign a [HS=HS_Governor]Governor[/HS], you'll first need a Leader available. Planets with [HS=HS_Governor]Governors[/HS] can be upgraded to improve output and support a new [HS=HS_Shipyard]Shipyard[/HS].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UnlockPolicyScreen</Label>
+        <String>Research Colonial Pollicies</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
+        <String>Access the [HS=HS_ResearchCenter]Research Center[/HS] and ensure the current [HS=HS_Tech]Tech[/HS] being researched is Colonial Pollicies. How many [HS=HS_Months]Months[/HS] the [HS=HS_Tech]Tech[/HS] takes to research is determined by the Research rating across all [HS=HS_CoreWorld]Core Worlds[/HS].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_EnactAPolicy</Label>
+        <String>Enact a Policy</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_EnactAPolicy_Dec</Label>
+        <String>[HS=HS_Policy]Policies[/HS] are a way to affect every Colony and fleet in a civilization. Enact a [HS=HS_Policy]Policy[/HS] under the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] to help accomplish goals. [HS=HS_Policy]Policies[/HS] can be changed anytime during your turn to better suit changing circumstances.</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_DestroyTheShipyard</Label>
@@ -40,7 +88,23 @@
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_DestroyTheShipyard_Dec</Label>
-        <String>Pirates have set up a base in this part of the galaxy. While they're allowed a Shipyard, they can produce ships that threaten the whole Alliance. Destroying the Pirate's Shipyard will weaken their forces and drive them from the galaxy.</String>
+        <String>[HS=HS_Pirates]Pirates[/HS] have set up a base in this part of the galaxy. While they're allowed a [HS=HS_Shipyard]Shipyard[/HS], they can produce ships that threaten the whole Alliance. Destroying the [HS=HS_Pirates]Pirate's[/HS] [HS=HS_Shipyard]Shipyard[/HS] will weaken their forces and drive them from the galaxy.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_RushPlanetaryImprovement</Label>
+        <String>Rush a Planetary Improvement</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_RushPlanetaryImprovement_Dec</Label>
+        <String>To [HS=HS_Rush]Rush[/HS] a Planetary Improvement, select a [HS=HS_CoreWorld]Core World[/HS] and open the Management window. Selecting any item in the Build Queue with the LEFT Mouse Button will bring up some contextual options. Among those is the [HS=HS_Rush]Rush[/HS] option. As long as you have the [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] and [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] required, selecting the [HS=HS_Rush]Rush[/HS] option will [HS=HS_Rush]Rush[/HS] the specific improvement. The [HS=HS_Rush]Rush[/HS] option will be grayed out and unresponsive if you do not have the necessary resources.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UseExecutiveOrder</Label>
+        <String>Use an Executive Order</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UseExecutiveOrder_Dec</Label>
+        <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders [/HS] are selected from the related radial option. Some will execute as soon as the usage is confirmed. Others require a target and must be directed after confirming the order. Hover the Mouse over the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] option and then use the LEFT Mouse Button to select an order.</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_Overall</Label>
@@ -48,11 +112,11 @@
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_FindCoreWorld</Label>
-        <String>Colonize a Core World</String>
+        <String>Colonize a Class 10 or Greater Planet</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_FindCoreWorld_Dec</Label>
-        <String>You've successfully colonized enough planets for the Alliance; however, the Alliance wants to enhance its foothold with a new Coreworld. To establish a new Coreworld, you'll need a Colony on a planet with a Planet Class 10 or higher. Continue to search the galaxy for a planet at Planet Class 10 or greater to colonize.</String>
+        <String>You've successfully [HS=HS_Colinizing]Colonized[/HS] enough planets for the Alliance; however, the Alliance wants to enhance its foothold with a new [HS=HS_CoreWorld]Core World[/HS]. To establish a new [HS=HS_CoreWorld]Core World[/HS], you'll need a Colony on a planet with a [HS=HS_PlanetClass]Planet Class[/HS] 10 or higher. Continue to search the galaxy for a planet at [HS=HS_PlanetClass]Planet Class[/HS] 10 or greater to [HS=HS_ColonizeOrder]Colonize[/HS].</String>
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_UnlockLeaders</Label>
@@ -60,7 +124,31 @@
     </StringTable>
     <StringTable>
         <Label>Campaign_Tutorail_UnlockLeaders_Dec</Label>
-        <String>There are a lot of benefits that Leaders provide to the entire civilization. The project Colonial Leadership needs to be completed at the homeworld to recruit and manage Leaders. The project can be queued up and completed through the planet management screen from the Projects section.</String>
+        <String>Projects can be completed at a [HS=HS_CoreWorld]Core World[/HS] to gain resources and additional benefits. The Colonial Leadership Project is critical to success as it allows access to Leaders and Leader Management.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_MineAnAsteroid</Label>
+        <String>Mine an Asteroid</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_MineAnAsteroid_Dec</Label>
+        <String>(PLACEHOLDER) Brief description of the objective to mine an asteroid.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_BuildEconomicStarbase</Label>
+        <String>Build an Economic Starbase</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_BuildEconomicStarbase_Dec</Label>
+        <String>(PLACEHOLDER) Brief description of the objective to build an economic starbase.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UnlockAsteroidMining</Label>
+        <String>Unlock Asteroid Mining</String>
+    </StringTable>
+    <StringTable>
+        <Label>Campaign_Tutorail_UnlockAsteroidMining_Dec</Label>
+        <String>(PLACEHOLDER) Brief description of the objective to mastering the Asteroid Mining tech.</String>
     </StringTable>
     <!--EVENT TEXT-->
     <StringTable>
