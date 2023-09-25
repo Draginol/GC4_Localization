@@ -12,13 +12,18 @@ def extract_text_with_meta(filepath):
     for flavor_text_def in root.findall('.//FlavorTextDef'):
         internal_name = flavor_text_def.find('InternalName').text
         for idx, text_element in enumerate(flavor_text_def.findall('.//FlavorTextOption/Text')):
-            results.append((internal_name, idx + 1, text_element.text))
+            results.append((os.path.basename(filepath), internal_name, idx + 1, text_element.text))
     return results
 
-def create_tmx_entry(internal_name, text_index, source_text, target_language_code):
+def create_tmx_entry(filename, internal_name, text_index, source_text, target_language_code):
     tu = ET.Element("tu")
+    
+    prop_filename = ET.SubElement(tu, "prop", type="Filename")
+    prop_filename.text = filename
+
     prop_name = ET.SubElement(tu, "prop", type="InternalName")
     prop_name.text = internal_name
+    
     prop_index = ET.SubElement(tu, "prop", type="TextIndex")
     prop_index.text = str(text_index)
 
@@ -42,7 +47,7 @@ def main():
     root = tk.Tk()
     root.withdraw()  # Hide the main window
 
-    directory = filedialog.askdirectory(title="Select a directory")  # Show directory selection dialog
+    directory = filedialog.askdirectory(title="Select the directory with English Flavor Text")  # Show directory selection dialog
     if not directory:
         print("Directory selection was canceled.")
         return
@@ -66,8 +71,8 @@ def main():
     for dirpath, dirnames, filenames in os.walk(directory):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
-            for internal_name, text_index, text_content in extract_text_with_meta(filepath):
-                tu = create_tmx_entry(internal_name, text_index, text_content, target_language_code)
+            for file_name, internal_name, text_index, text_content in extract_text_with_meta(filepath):
+                tu = create_tmx_entry(file_name, internal_name, text_index, text_content, target_language_code)
                 body.append(tu)
 
     # Ask user where to save the TMX file (only the directory)
