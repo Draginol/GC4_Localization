@@ -6,14 +6,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Nouveau bronze</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Troie</Text>
+            <Text>Plymouth</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -24,27 +17,34 @@
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Agartha</Text>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Plymouth</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Arcadie</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Baltia</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Cibola</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Jotunheim</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Païtiti</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -58,28 +58,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Antarctique</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Amérique du Nord</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Amérique du Sud</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Afrique</Text>
+            <Text>Asie</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -90,11 +69,32 @@
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Lémurie</Text>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asie</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asie</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asie</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Mu</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Mauritia</Text>
+            <Text>Mu</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -103,7 +103,7 @@
         </FlavorTextOption>
     </FlavorTextDef>
 
-    <FlavorTextDef>
+<FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
             <Requirements>
@@ -119,7 +119,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Montre des objets précieux à l'écran.[/I] [COLOR=UIDefaultHighlight](Ouvre Commerce)[/COLOR]</Text>
+            <Text>[I]Tends une pierre d'une couleur presque incompréhensible.[/I] [COLOR=UIDefaultHighlight](Ouvre le commerce)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -186,7 +186,7 @@
     <FlavorTextDef>
         <InternalName>ASCENSION_WARNING_RESPONSE_WAIT</InternalName>
         <FlavorTextOption>
-            <Text>Donnez-moi un instant.</Text>
+            <Text>Un instant SVP.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -251,7 +251,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>Bonjour, extraterrestre que j'espère pas trop méchant. Nous sommes la Fraternité Mimot, et nous sommes ravis de vous rencontrer, et nous ne sommes pas délicieux.</Text>
+            <Text>Bonjour alien, j'espère que nous n'etes pas trop méchants. Nous sommes la Fraternité Mimot, et nous sommes ravis de vous rencontrer, et nous ne sommes pas délicieux.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -269,13 +269,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Cette rencontre nous fait voir de l'espoir dans vos yeux. Ce ne sera pas pour longtemps.</Text>
+            <Text>Une nouvelle créature. Quel plaisir! Pas de peur encore. Le feu dans ton regard est toujours présent. Oh, cela va vite changer.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Votre vie, telle que vous la connaissez, est désormais terminée. Bientôt, vous serez nos esclaves.</Text>
+            <Text>Une nouvelle créature. Quel plaisir! Pas de peur encore. Le feu dans ton regard est toujours présent. Oh, cela va vite changer.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6194,9 +6194,6 @@
             <PreferenceWeight>11</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-
-
     <FlavorTextDef>
         <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
         <FlavorTextOption>
@@ -6290,7 +6287,6 @@
                 <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
             </Requirements>
             <Text>Nous avons une proposition commerciale. C'est simple et facile à comprendre en apparence. N'ayez aucune inquiétude.</Text>
-        </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
@@ -7001,6 +6997,7 @@
         <FlavorTextOption>
             <Text>On est toujours prêt à aider un ami.</Text>
             <Text>Très bien, nous sommes ravis d'aider.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -7010,12 +7007,14 @@
             <Text>Ça va énormément aider notre peuple.</Text>
             <Text>Merci pour votre aide.</Text>
             <Text>Votre volonté de partager avec nous est vraiment appréciée.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
             <Text>Cette connaissance est trop dangereuse pour être partagée.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -7023,6 +7022,7 @@
         <FlavorTextOption>
             <Text>Les {PLAYERFACTIONLONG:1} subissent un revers économique, {LEADERNAME:2}. Seriez-vous prêt à nous donner {AMOUNT:2} crédits pour nous aider?</Text>
             <Text>On constate que notre trésorerie est tendue à cause des récents... incidents internes. On apprécierait si vous pouviez nous donner {AMOUNT:2} crédits pour financer le budget de cette année.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -7036,21 +7036,21 @@
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
             <Text>Nous n'allons pas vous mentir, {LEADERNAME:2}. Les {PLAYERFACTIONLONG:1} aiment vraiment l'argent. Beaucoup. On en rêve. On dort avec. On... eh bien, on fait beaucoup de choses avec. Et on en a besoin de plus. Beaucoup plus. Ça aiderait nos relations si vous nous donniez {AMOUNT:2} crédits.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Progressivism</PersonalityType>
             </Requirements>
             <Text>Notre recherche continue coûte cher, {LEADERNAME:2}. Le {PLAYERFACTIONLONG:1} vous demande {AMOUNT:2} crédits pour que nous puissions continuer à investir dans de nouvelles technologies. Ce faisant, cela profitera à notre relation.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Xenophobic</PersonalityType>
             </Requirements>
             <Text>Nous nous méfions des étrangers, {LEADERNAME:2}. Cependant, les habitants de {PLAYERFACTIONLONG:1} rencontrent quelques difficultés. Si vous pouviez nous fournir {AMOUNT:2} crédits, cela renforcerait notre lien.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -9522,19 +9522,19 @@
 			<Requirements>
 				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
 			</Requirements>
-			<Text>Let's keep this short. I only need to know what your kind looks like to know what to hunt for when we've shattered your worlds and broken your wills.</Text>
+			<Text>Qu'elle créature puante vient polluer mon écran ?</Text>
 		</FlavorTextOption>
 		<FlavorTextOption>
 			<Requirements>
 				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
 			</Requirements>
-			<Text>The universe belongs to the Korath and the Korath alone. We will wipe out any that dare exist in our presence.</Text>
+			<Text>Qu'elle créature puante vient polluer mon écran ?</Text>
 		</FlavorTextOption>
 		<FlavorTextOption>
 			<Requirements>
 				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
 			</Requirements>
-			<Text>Run and cry to whatever you think will save you from extinction at the hands of the Korath.</Text>
+			<Text>Qu'elle créature puante vient polluer mon écran ?</Text>
 		</FlavorTextOption>
 
 		<FlavorTextOption>
@@ -9986,7 +9986,7 @@
 			<Requirements>
 				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
 			</Requirements>
-			<Text>We've let you languish long enough. The time has come to rip your civilization apart and rid the galaxy of your ilk![BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+			<Text>Pour ne pas être des notres, vous êtes des misérables. Bientôt, ce sera fini, pour vous et tous les votres.</Text>
 		</FlavorTextOption>
 
 		<FlavorTextOption>
@@ -10016,7 +10016,7 @@
 			<Requirements>
 				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
 			</Requirements>
-			<Text>If you're not here to surrender to your extinction by the Korath Clan, what do you want?</Text>
+			<Text>Faisons vite, racaille alien.</Text>
 		</FlavorTextOption>
 		
 	</FlavorTextDef>
@@ -10368,7 +10368,7 @@
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>Avons-nous l'AIR d'être le genre de personnes faisant de la charité aux extraterrestres ?</Text>
+            <Text>Êtes-vous sérieusement en train de demander de l'argent à une civilisation pratiquant l'esclavage?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -10588,7 +10588,7 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>Ce n'est pas en m'obligeant à vous donner des choses gratuitement que nous serons moins en colère. Mais la mort non plus. Alors d'accord, prennez-le.</Text>
+            <Text>Vous avez le dessus maintenant. Mais quand vous serez notre esclave, nous reparlerons de ce jour.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -11758,7 +11758,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Ça fait plaisir de discuter avec vous, Korath.</Text>
+            <Text>Aujourd'hui, vous avez l'air un peu plus moche que d'habitude.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -15875,7 +15875,7 @@
         </FlavorTextOption>
     </FlavorTextDef>
 
-    <FlavorTextDef>
+<FlavorTextDef>
         <InternalName>PORTRAIT</InternalName>
         <FlavorTextOption>
             <Requirements>
@@ -16376,6 +16376,29 @@
             <Text>Citizen_Portrait_Yor-12.png</Text>
             <Text>Citizen_Portrait_Yor-13.png</Text>
             <Text>Citizen_Portrait_Yor-14.png</Text>
+            <Text>Citizen_Portrait_Yor_G_1.png</Text>
+            <Text>Citizen_Portrait_Yor_G_2.png</Text>
+            <Text>Citizen_Portrait_Yor_G_3.png</Text>
+            <Text>Citizen_Portrait_Yor_G_4.png</Text>
+            <Text>Citizen_Portrait_Yor_G_5.png</Text>
+            <Text>Citizen_Portrait_Yor_G_6.png</Text>
+            <Text>Citizen_Portrait_Yor_G_7.png</Text>
+            <Text>Citizen_Portrait_Yor_G_8.png</Text>
+            <Text>Citizen_Portrait_Yor_G_9.png</Text>
+            <Text>Citizen_Portrait_Yor_G_10.png</Text>
+            <Text>Citizen_Portrait_Yor_G_11.png</Text>
+            <Text>Citizen_Portrait_Yor_G_12.png</Text>
+            <Text>Citizen_Portrait_Yor_G_13.png</Text>
+            <Text>Citizen_Portrait_Yor_G_14.png</Text>
+            <Text>Citizen_Portrait_Yor_G_15.png</Text>
+            <Text>Citizen_Portrait_Yor_G_16.png</Text>
+            <Text>Citizen_Portrait_Yor_G_17.png</Text>
+            <Text>Citizen_Portrait_Yor_G_18.png</Text>
+            <Text>Citizen_Portrait_Yor_G_19.png</Text>
+            <Text>Citizen_Portrait_Yor_G_20.png</Text>
+            <Text>Citizen_Portrait_Yor_G_21.png</Text>
+            <Text>Citizen_Portrait_Yor_G_22.png</Text>
+            <Text>Citizen_Portrait_Yor_G_23.png</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
