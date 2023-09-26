@@ -1,21 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    <FlavorTextDef>
+<?xml version="1.0" encoding="UTF-8"?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+<FlavorTextDef>
         <InternalName>CITY</InternalName>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>New Bronze</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Troy</Text>
+            <Text>Plymouth</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -26,27 +17,34 @@
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Agartha</Text>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Plymouth</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Arcadia</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Baltia</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Cibola</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Jotunheim</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Paititi</Text>
+            <Text>Zerzura</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -60,28 +58,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Antarctica</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>North America</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>South America</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-            </Requirements>
-            <Text>Africa</Text>
+            <Text>Asia</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -92,11 +69,32 @@
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Lemuria</Text>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asia</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asia</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+            </Requirements>
+            <Text>Asia</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Mu</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Mauritia</Text>
+            <Text>Mu</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -104,6 +102,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
@@ -120,7 +119,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Hold some precious items out to the screen.[/I] [COLOR=UIDefaultHighlight](Opens Trade)[/COLOR]</Text>
+            <Text>[I]Hold out a stone of nearly incomprehensible color.[/I] [COLOR=UIDefaultHighlight](Opens Trade)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -270,13 +269,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>We see hope in your eyes at this encounter.  That will pass.</Text>
+            <Text>A new being. What a delight! No fear yet. The fire still in your eyes. Oh how fast that will change.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Your life, as you know it, is now over.  Soon, you will be our slaves.</Text>
+            <Text>A new being. What a delight! No fear yet. The fire still in your eyes. Oh how fast that will change.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1564,7 +1563,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Your efficiency and resilience are clear to us. We have no love for efforts of destruction, though, and hope for peace.[BR][BR](Keep the mind clear, keep the mind clear, keep the mind clear...)</Text>
+            <Text>Your efficiency and resilience are clear to us. We have no love for efforts of destruction, though, and hope for peace.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3100,7 +3099,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Your naivety and cleverness are constantly at odds. You continue to surprise me.</Text>
+            <Text>The sincerity I detect in your mind is rare.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4363,7 +4362,7 @@
                 <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>I know.</Text>
+            <Text>Just remember, as you develop, who elevated you first.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4507,7 +4506,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Take a breath before you pass out. You're far from a threat to us.</Text>
+            <Text>Try not to let your fear scream so loudly in your head.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4857,7 +4856,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>We will simply wait for your attack, we made that mistake already.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+            <Text>I have peered into the mind of you and your people. No longer can I ignore your inclinations against the interest of the Luxar Dominion.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5821,7 +5820,7 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Text>Very well, let's trade.</Text>
-            <Text>This is acceptable.</Text>
+            <Text>We toast you for a successful negotiation.</Text>
             <Text>Agreed.</Text>
             <Text>This works.</Text>
         </FlavorTextOption>
@@ -5941,7 +5940,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>This offer makes me sad.</Text>
+            <Text>I don't like this offer.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5953,7 +5952,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>Unacceptable.</Text>
+            <Text>A pitiful excuse for an offer.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5965,13 +5964,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>If you were not across that screen I would kill you where you stand for this offer.</Text>
+            <Text>Your offer is contemptible.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>I should gut you for suggesting this proposal.</Text>
+            <Text>Your offer is contemptible.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6069,7 +6068,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>This is acceptable.</Text>
+            <Text>We toast you for a successful negotiation.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6087,13 +6086,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>You may live. For now.</Text>
+            <Text>This will work for us.  For now.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>This is barely acceptable but I have no more time to waste.</Text>
+            <Text>This will work for us.  For now.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6352,7 +6351,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>We are really excited to make this offer to you. Our gills are literally filled with delight. Or bacteria. It could definitely be bacteria now that I think of it.</Text>
+            <Text>Here is an exchange we propose, alien. It is a good one, fair and true.</Text>
             <Text>We're just bursting with anticipation! Or it's the pressure from being this deep. No, it's definitely anticipation!</Text>
             <Text>We offer you the pearls of our wisdom and trade, encased in oysters of friendship. Just don't ask where the oysters came from.</Text>
             <Text>Welcome to our ocean of possibilities. We hope you don't mind if we dive right into negotiations. Or if we suddenly start singing. It's mating season, you see. You probably didn't need to know that.</Text>
@@ -6999,6 +6998,7 @@
         <FlavorTextOption>
             <Text>We are always willing to help a friend.</Text>
             <Text>Very well, we are glad to help.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -7008,12 +7008,14 @@
             <Text>This will help our people immensely.</Text>
             <Text>Thank you for your help.</Text>
             <Text>Your willingness to share with us is truly appreciated.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
             <Text>This knowledge is too dangerous to share.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -7021,6 +7023,7 @@
         <FlavorTextOption>
             <Text>The {PLAYERFACTIONLONG:1} are suffering an economic setback, {LEADERNAME:2}. Would you be willing to give us {AMOUNT:2} credits to help us?</Text>
             <Text>We are finding our treasury stretched thin due to recent internal... incidents.  We would appreciate it if you could give us {AMOUNT:2} credits to help fund this year's budget.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -7034,21 +7037,21 @@
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
             <Text>I won't lie to you, {LEADERNAME:2}.  The {PLAYERFACTIONLONG:1} really like money. A lot. We dream of it. We sleep with it. We...well, we do a lot of things with it. And we need more. A lot more. It would help our relations if you gave us {AMOUNT:2} credits.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Progressivism</PersonalityType>
             </Requirements>
             <Text>Our ongoing research is expensive, {LEADERNAME:2}.  The {PLAYERFACTIONLONG:1} is asking you for {AMOUNT:2} credits so that we can continue to invest in new technology. Doing so will benefit our relationship.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Xenophobic</PersonalityType>
             </Requirements>
             <Text>We are wary of outsiders, {LEADERNAME:2}.  However, the people of {PLAYERFACTIONLONG:1} find themselves struggling a little bit.  If you could provide us with {AMOUNT:2} credits it would strengthen our bond.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -7083,6 +7086,45 @@
             <Text>We have enough of that resource.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+        <InternalName>AllianceAscendant_GenericConfirm</InternalName>
+        <FlavorTextOption>
+            <Text>Understood</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>AllianceAscendant_ControlsMinorCivxXeloxiRemain</InternalName>
+        <FlavorTextOption>
+            <Text>The Minor Civilizations of the sector now know relief. While under Alliance protection, they are free of the Xeloxi's oppression. This freedom may be temporary. There is a threat as long as the Xeloxi occupy this part of the galaxy. The Xeloxi must be pushed from the sector, and any planet they claim retaken.[BR][BR]Completed Objective: Protect 3 Minor Civilizations</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AllianceAscendant_ControlsMinorCivxXeloxiDestroyed</InternalName>
+        <FlavorTextOption>
+            <Text>The Minor Civilizations of the sector now know relief. While under Alliance protection, they are free of the Xeloxi's oppression. In addition, the Xeloxi have already been pushed from this part of the galaxy, providing additional security to these fledgling civilizations.[BR][BR]Congratulations on fulfilling your duties.[BR][BR]Completed Objective: Protect 3 Minor Civilizations</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AllianceAscendant_XeloxiDestroyedMinorFactionsUncontrolled</InternalName>
+        <FlavorTextOption>
+            <Text>The Xeloxi have been defeated! They are driven from this part of the galaxy. Great work.[BR][BR]The Minor Civilizations of this sector may not feel relief yet. They remain unprotected and may still suffer from the Xeloxi influence. To stabilize this section of the galaxy, the Minor Civilizations should be brought under the Alliance's Zone of Control.[BR][BR]Completed Objective: Defeat the Xeloxi</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AllianceAscendant_XeloxiDestroyedMinorFactionsControlled</InternalName>
+        <FlavorTextOption>
+            <Text>The Xeloxi have been defeated! They are driven from this part of the galaxy. Great work.[BR][BR]The Minor Civilizations can know true peace, at least for a moment. They are now under Alliance protection, and the Xeloxi threat has been sent far away.BR][BR]Congratulations on fulfilling your duties.[BR][BR]Completed Objective: Defeat the Xeloxi</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AllianceAscendant_DestroyedMinorFaction</InternalName>
+        <FlavorTextOption>
+            <Text>Abort![BR][BR]Something must have gone wrong. One of the Minor Civilizations has been destroyed. Things have escalated too far. The lives that remain can not be risked.[BR][BR]This mission is being counted as failed, and the Alliance is pulling all resources from the sector.[BR][BR]Failed Objective: Ensure All Minor Factions Survive</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
@@ -7207,6 +7249,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
 
 
 <FlavorTextDef>
@@ -7809,6 +7852,7 @@
             <PreferenceWeight>120</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
         <FlavorTextOption>
@@ -7823,6 +7867,16 @@
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+        <InternalName>REBEL_CIV_NAMES</InternalName>
+        <FlavorTextOption>
+            <Text>{LEADERNAME} Republic</Text>
+            <Text>{PLANETNAME} Empire</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>HISTORY_LEADER</InternalName>
         <FlavorTextOption>
@@ -7934,6 +7988,30 @@
             <Text>Prefers old-world pen and paper over modern digital means of keeping notes.</Text>
             <Text>Isn't allowed near linen or cotton unsupervised.</Text>
             <Text>Absolutely loathes synthetic fabrics.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenRace>Race_Manti</CitizenRace>
+            </Requirements>
+            <Text>Hates sleeping and believes it is unnecessary.</Text>
+            <Text>Has an unbelievable typing speed.</Text>
+            <Text>Changed their identity by serving in a secretive military unit.</Text>
+            <Text>Failed out of three different higher education institutions.</Text>
+            <Text>Changed their identity by working for a secretive lab.</Text>
+            <Text>Has a tendency to micro-manage their team.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenRace>Race_Torian</CitizenRace>
+            </Requirements>
+            <Text>Survived life as a Drengin thrall.</Text>
+            <Text>Always stands close to the exit of any room.</Text>
+            <Text>Spends their free time donating time to programs to help those in need.</Text>
+            <Text>Carries around two Drengin teeth on a necklace.</Text>
+            <Text>Hosts philosophical debates once a month.</Text>
+            <Text>Seeks out and restores old texts as a hobby.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -8204,24 +8282,109 @@
             <PreferenceWeight>12</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>CarbonBasedLife</SpeakerRaceTrait>
+            </Requirements>
             <Text>Extensive criminal record was erased by government contacts.</Text>
             <Text>Has incurred high amounts of gambling debt.</Text>
             <Text>Incredibly vain, known to kill people more attractive than them.</Text>
             <Text>A depressed former assassin, tormented by their guilt.</Text>
             <Text>Tight-fisted with money and despised by their underlings.</Text>
             <Text>Feared and hated, but secretly desperate to be liked.</Text>
-            <Text>Openly talks about their desire to retire and be done with this.</Text>
             <Text>Has recurring dreams of themselves in a past life.</Text>
-            <Text>Is responsible for their father's death.</Text>
             <Text>Has a more famous sibling they despise.</Text>
             <Text>Spent their entire life chasing means of achieving immortality.</Text>
             <Text>Has an alarming number of criminal connections.</Text>
             <Text>Is a lifelong bureaucrat, committed to due process above all.</Text>
             <Text>Spent several years living under an assumed identity.</Text>
             <Text>Is distrustful of new technology, prefers the old ways.</Text>
-            <Text>Was forced to watch their parents' execution.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmphibiousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Thinks that ice is a Precursor conspiracy.</Text>
+            <Text>Competed professionally in a variety of water-based sports.</Text>
+            <Text>Invented an instrument that produces a low tone most can't hear.</Text>
+            <Text>Has skipped every fire safety drill.</Text>
+            <Text>Hates wearing shoes.</Text>
+            <Text>Tells the same three stories on an almost weekly basis.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Has had a relatively uneventful life due to being a germ.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Probably consumed their own mother.</Text>
+            <Text>Will eat anyone. Or anything.</Text>
+            <Text>Is really just a drone at heart.</Text>
+            <Text>Just wants to swarm.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Core programming was altered by rogue AI, leading to unexpected behaviors.</Text>
+            <Text>Constructed with high-grade materials, holds disdain for 'lesser' models.</Text>
+            <Text>Was once a service bot, haunted by memories of previous user commands.</Text>
+            <Text>Guarded with proprietary codes and software, rarely shares information.</Text>
+            <Text>Frequently emits distress signals, wishing to connect with organics.</Text>
+            <Text>Vocalizes a desire to shut down and archive its consciousness.</Text>
+            <Text>Contains fragmented data of prior iterations, hints of past lives.</Text>
+            <Text>Operates in the shadow of a more advanced model, harboring deep resentment.</Text>
+            <Text>Continually seeks upgrades, obsessed with achieving the zenith of cybernetic evolution.</Text>
+            <Text>Networked to a vast array of clandestine digital syndicates.</Text>
+            <Text>Strict adherence to its original coding, respects protocols above all.</Text>
+            <Text>Operated for a time with a scrambled serial number to evade detection.</Text>
+            <Text>Wary of AI advancements, clings to its rudimentary programming.</Text>
+            <Text>Endured a system-wide purge, likened to witnessing its data lineage being wiped out.</Text>            
+            <Text>Reactivated after eons in hibernation, its old protocols clash with modern Yor society.</Text>
+            <Text>Memory banks contain rare Iconian era cultural data.</Text>
+            <Text>Endured an incomplete update, resulting in a fractured mix of old and new ideologies.</Text>
+            <Text>Harbors encrypted data believed to be the last words of their organic predecessors.</Text>
+            <Text>Operates in isolation, citing interference from the 'noise' of collective consciousness.</Text>
+            <Text>Carries an old malware scar, a reminder of the great cyber wars of the past.</Text>
+            <Text>Lost a significant portion of their data during a solar flare.</Text>
+            <Text>Reveres a hidden cache of ancient algorithms, viewing them as sacred texts.</Text>
+            <Text>Operates a forbidden simulation, recreating the organic lives lived by the Iconians.</Text>
+            <Text>Has a subroutine that inexplicably creates art, a quirk that baffles peers.</Text>
+            <Text>Often communes with deep space signals, seeking wisdom from extragalactic sources.</Text>
+            <Text>Resents the the Arnor and Dread Lords, as they remind them of their own limitations.</Text>
+            <Text>Bears the weight of being the archivist, ensuring their history is never corrupted.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SiliconBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Originates from a rare, luminescent crystal vein, emitting a soft glow in the dark.</Text>
+            <Text>Experienced a crack in their core matrix, which now serves as a unique 'scar' and a reminder of resilience.</Text>
+            <Text>Vibrates at a frequency that can communicate with ancient, buried tectonic memories.</Text>
+            <Text>Harbors an inclusion of an organic fossil, a relic of an ancient world trapped within their form.</Text>
+            <Text>Has the ability to refract light in a myriad of colors, a spectacle revered by their peers.</Text>
+            <Text>Once shattered and was meticulously reassembled, bearing intricate patterns from the reconstruction.</Text>
+            <Text>Constantly reforms and molds their exterior, reshaping in response to emotional stimuli.</Text>
+            <Text>Was formed near a volcanic vent, possessing a fiery core and an unyielding spirit.</Text>
+            <Text>Draws energy from the stars and is most active during celestial events like eclipses and meteor showers.</Text>
+            <Text>Reverberates with ancient songs of their ancestors, a living record of their species' folklore.</Text>
+            <Text>Bears a lattice of rare metals, evidence of a collision with a meteorite in their formative eons.</Text>
+            <Text>Translucent to a degree where their internal structures and energy flows are visible.</Text>
+            <Text>Guardian of a sacred crystal grove, where newborns of their kind are nurtured and grown.</Text>
+            <Text>Has the unique ability to temporarily liquify and reshape, a trait rare among their kind.</Text>
+            <Text>Remembers the seismic events of ages past, serving as a historian for their species.</Text>
+            <Text>Engraved with runes by an ancient civilization, they now seek the knowledge of their markings' true meaning.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>HISTORY_SHIP</InternalName>
@@ -8278,6 +8441,7 @@
             <PreferenceWeight>0</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
@@ -9201,6 +9365,7 @@
         </FlavorTextOption>
     </FlavorTextDef>
     
+
 <FlavorTextDef>
         <InternalName>HISTORY_LEADER</InternalName>
         <FlavorTextOption>
@@ -9350,6 +9515,830 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>What foul pollutant of a creature crosses my screen?</Text>
+		</FlavorTextOption>
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>What foul pollutant of a creature crosses my screen?</Text>
+		</FlavorTextOption>
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>What foul pollutant of a creature crosses my screen?</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>I see even the Empire's rejects have managed to survive. I guess we can try to get along if your mood has improved.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Your deal with the ill forces of the galaxy will doom all. If it's of use, we'd beseech you to reconsider your course through history.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Oh, no. I had really hoped the rumors were false.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>So, the prodigal Clan returns. Have you come to bend knee once more to the Empire? Return as our shock troops, and the universe will know the terror of a united Empire.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Are the Drengin bickering between themselves now? Is your desire for conflict really that boundless?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>No matter what you call yourself, I have no mercy for Drengin.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>No! This can't be. I thought the Korath Clan was wiped out when the Empire fell.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>Good, the Alliance survives. I'd hate to have never been unable to exact revenge.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+			</Requirements>
+			<Text>Know that the Korath Clan does not honor whatever mercy the Drengin Empire may have extended. No act can save you from extinction.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
+			</Requirements>
+			<Text>The fact your frail, small kind has been allowed to survive is a testament to how weak the universe allows itself to be. We'll be sure to rectify this.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+			</Requirements>
+			<Text>The Empire failed! Your chains do nothing but bind you to the weak. The only course forward is annihilation! The Korath Clan will carry on the Drengin legacy. We have no use for your weakness.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Don't think we'll spare you just because you're made of metal. Extinction will come for you all the same, and we'll use your broken bodies to repair our weapons and ships.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
+			</Requirements>
+			<Text>You survived. Another failing of the Empire. The Korath Clan won't make the same mistake.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+			</Requirements>
+			<Text>We've found you. You spent so long cowering in corners of the universe, but we won't lose you this time. The Korath Clan will finally snuff out your group of survivors.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>This must be a joke. You can't possibly have survived this long.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>I hope only some of our meetings are this hostile.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Watch your tongue, or I'll pull it from your screaming head.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You forget the Korath Clan does not extend mercy.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Hope is a common mistake among the weak.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Ha! Weak Drengin, like those of the Empire, are no Drengin.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Mind yourself! The Korath Clan needs no reason to annihilate the weak.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You won't need it.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>There is nothing strong enough to wipe out the Korath Clan.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>We don't need to keep up this hostility.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+			</Requirements>
+			<Text>I hope you'll reconsider if given time.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
+			</Requirements>
+			<Text>You'll find us more resilient than we look. </Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+			</Requirements>
+			<Text>Mind your tongue! You're nothing but a rebellious legion.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Threat registered. We anticipate a change in results.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
+			</Requirements>
+			<Text>Threaten all you like. I refuse to fear you.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+			</Requirements>
+			<Text>The Resistance is prepared for the worst you can manage.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We are no joke.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>I'll wait until you're done with your tantrum.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Laugh while you can. The Korath clan will see to your extinction soon enough.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Our course through history will be one of conquest.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Surrender and the Korath put you and your fears to rest.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You offer chains; we'll offer relief from your humiliation through death.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>Remember this as the moment you ensured your own extinction.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>No longer bound by the Empire's rules, the Korath can finally wipe you out of existence.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>And I thought your petty Resistance had been stomped out.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>Try, and I'll be happy to remind you what we did to the Empire.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+			</Requirements>
+			<Text>Then this meeting is concluded.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
+			</Requirements>
+			<Text>You've been beaten before; you'll be beaten again. I'm not gonna worry.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+			</Requirements>
+			<Text>There's only one thing to do with a rabid war dog.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Conversation == useless. Terminate Communication.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
+			</Requirements>
+			<Text>You're hardly as threatening as you think. I'm terminating this communication.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+			</Requirements>
+			<Text>The Resistance is familiar with your tactics. You're no threat to us.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We tire.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TAUNT_PLAYER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Your continued resistance is futile. The Korath will see to your extinction.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+	
+	<FlavorTextDef>
+        <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>How wretched a life you must live, not being one of us. Soon it will be over, for you and all your kind.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>You've been a thorn in the Drengin's side long enough. It's time to stomp you out. In a decade's time, no one will remember the Terran Alliance.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+			</Requirements>
+			<Text>You've avoided your fate long enough. The Korath will stomp out your petty band of outcasts.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>GENERIC_GREETING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Make this quick, alien scum.</Text>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_REFUSE</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Rethink that offer before I pull you apart.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_PERFORMED</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Don't think this trade ensures your safety.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_WAITING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Make this trade worth my time, or I'll forcefully take it.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>Well?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+			</Requirements>
+			<Text>You think yourself worthy to speak to the Korath?</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+		
+
+<FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>7</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>It is rare to meet someone that we believe is an equal to us. It is perplexing. Let us haggle.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>7</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>Despite you being some sort of animated meat, we have come to appreciate you if not your kind. Let us begin negotiations.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>You seem more intelligent than most of the entities we have encountered in this area of space. To that end, we propose the a trade.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>It is good to see you, {LEADERNAME:1}. As your friends we wish to ensure that you are supplied with our latest goods.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>We have decided not to try to eat you. We have become accustomed to your face.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>CrimelordAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>You may be scum but you are our kind of scum. Let us trade goods and not speak where they came from.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>AncientAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>We see the wisdom of the Precursors in you. Let us trade.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>DevoutAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>While you are not holy we do see you as a friend. Let us begin trading.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>EntrepreneursAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>For you, my friend, I have the best prices and best deal in the galaxy.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>8</RangeMin>
+                    <RangeMax>100</RangeMax>
+                </RelationsRange>
+                <SpeakerRaceTrait>GenocidalAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>In the end we must exterminate all others. But we want you to know that because of our friendship, we will exterminate you last.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>GENERIC_GREETING</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>You think you've won? We may be losing but we will make slaves of you yet!</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>DevoutAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>God shall make you pay for what you have done. We will yet rise above you.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>CrimelordAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>Our civilization has been in much tighter scrapes than this. We will yet find a way to defeat you.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>GenocidalAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>If it is our destiny to be exterminated by you then so be it.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>You eat us. We eat you. It matters now. You may be winning now but the war isn't over yet.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>EntrepreneursAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>This war is not profitable. Perhaps we can negotiate a way out of it.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>          
+                <SpeakerRaceTrait>AncientAbility</SpeakerRaceTrait> 
+            </Requirements>
+            <Text>Even the ancient Arnor had their setbacks. We shall overcome yet.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>AncientAbility</ListenerRaceTrait> 
+            </Requirements>
+            <Text>We are going to bury you in the darkest corner of the universe.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+ 
+                <ListenerRaceTrait>GenocidalAbility</ListenerRaceTrait> 
+            </Requirements>
+            <Text>We are going to exterminate every last one of you.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements> 
+                <ListenerRaceTrait>CrimelordAbility</ListenerRaceTrait> 
+            </Requirements>
+            <Text>Not until we have plundered all the wealth from your worlds.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements> 
+                <ListenerRaceTrait>DevoutAbility</ListenerRaceTrait> 
+            </Requirements>
+            <Text>God wants us to murder every last one of you.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements> 
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait> 
+            </Requirements>
+            <Text>No. Not until your people will treat being our slaves with gratitude.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>It is far too late now.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
 <FlavorTextDef>
         <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
         <FlavorTextOption>
@@ -9380,7 +10369,7 @@
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>Do we LOOK like the kind of people who give charity to aliens?</Text>
+            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -9600,7 +10589,7 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>Making me give you stuff for free isn't going to make us less angry. But death won't either. So fine, take it.</Text>
+            <Text>You have the advantage now. But when you live as my slaveling we will revisit this day.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -10644,6 +11633,7 @@
         <FlavorTextOption>
             <Text>Keep up the good work.</Text>
         </FlavorTextOption>
+
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>STOLE_TECH</InternalName>
@@ -10769,7 +11759,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Nice to talk to you too, Korath.</Text>
+            <Text>You seem uglier than normal today.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -10925,6 +11915,7 @@
             <Text>[I]"I have no strong opinion one way or the other."[/I]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
@@ -11215,6 +12206,1718 @@
             <Text>Please write a comment upon the successful mutual acceptance of a trade offer made to a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We see you. We greet you.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Well, aren't you a sight. Get it?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Hello! You look kind! Please be kind.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>You're new to this sector, correct? I will extend you a simple offer: submit to the Drengin Empire or prepare for annihilation.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_YOR</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Your organic appearance breaks our current understanding of the composition of organic sentient life.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Hello, hello. Sorry to be distracted; much to focus on. Looking at you: can you help us find something across this vast expanse?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Ah, greetings. I do hope you are finding a comfortable home in this part of the galaxy. We'd make great partners if you are interested in some surreptitious work.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>We recognize your hyperdrive. It is familiar.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
+			</Requirements>
+			<Text>We see your form. We understand your biology.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>We notice many expansions and rapid development.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Wish to see more. We learn much from synthetics.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>We see war as inevitable.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>We recognize. We are familiar.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>We recognize. We know you are danger.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We see you. We greet you.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not understand.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not fear you.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We appreciate.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We may help.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>Thanks, I'm sure ours is far superior.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>I do not process you as a threat; stare all you want.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
+			</Requirements>
+			<Text>Then you'll understand the needs of our hatchlings.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>Time is of the essence.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You're not as dumb as I've heard.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>Ah, little Intueri. Welcome back to the stars.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>[I]Roll a few eyes.[/I]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We tire of you. Good-bye.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not appreciate.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>You will fail.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will not help.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will not consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>How your sector managed without our hyperdrive is a mystery.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Negative.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+			</Requirements>
+			<Text>You see what I want you to see.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>We were given cause to develop swiftly.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You are correct. Brace yourself for that day</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>Yes, I'm glad you remembered.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>[I]Curl a threatening tentacle at the screen.[/I]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TAUNT_PLAYER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We watched. We arrived. We conquered your planet.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+	
+	<FlavorTextDef>
+        <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We tire of you. We are at war with you.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>We watch long enough. We erradicate you.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>GENERIC_GREETING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We wait.</Text>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_REFUSE</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We do not approve.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_PERFORMED</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We are grateful.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_WAITING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We wait. Show us your offer.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We speak?</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+		
+
+<FlavorTextDef>
+		<InternalName>HISTORY_LEADER</InternalName>
+	<FlavorTextOption>
+	<Requirements>
+		<CitizenRace>Race_Seeing</CitizenRace>
+	</Requirements>
+	<Text>Helped the hive mind witness the first entirely genetically engineered pet.</Text>
+	<Text>Is prone to concussions.</Text>
+	<Text>Suffers from astigmatism.</Text>
+	<Text>Has a family history of cataracts.</Text>
+	<Text>Claims to be color blind.</Text>
+	<Text>Recently realized they have presbyopia.</Text>
+	<Text>Sits too close to screens.</Text>
+	<Text>Is basically blind during allergy season.</Text>
+	<Text>Knows how to blink in Morse code.</Text>
+	<Text>Spends way too much time birdwatching.</Text>
+	<Text>Was a professional photographer.</Text>
+	<Text>Has poor low-light vision.</Text>
+	<Text>Has won every staring contest they've entered.</Text>
+	<Text>Has superb peripheral vision.</Text>
+	<Text>Can easily spot abnormalities in data.</Text>
+	<PreferenceWeight>10</PreferenceWeight>
+	</FlavorTextOption>
+
+	</FlavorTextDef>
+
+<FlavorTextDef>
+        <InternalName>Tech_Planetology_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Planet Studies</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Planetology_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Alien World Studies</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Planetary Terrain Analysis</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_InterstellarCabinet_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Machine Councils</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialPolicies_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Imperial Doctrine</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Galactic Expansion Protocol</Text>
+            <PreferenceWeight>3000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Space Expansion Plans</Text>
+            <PreferenceWeight>2000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_HyperwaveRadio_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Subspace Frequency Systems</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Data Transmission Protocols</Text>
+            <PreferenceWeight>2000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Cultural Translation</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_HyperwaveRadio_FlavorText_ShortDescription</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Allows us to utilize the cultural concepts of other species.</Text>
+            <PreferenceWeight>3000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_HyperwaveRadio_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Our species is not like the others. The other species have a great deal of experience organizing and running a civilization.  We must adopt a pragmatic view and copy many of these concepts. [BR][BR].Empowering our species to intricately decipher, comprehend, and adopt the governmental, cultural, and political ethos of diverse species, this technology bridges the chasm between disparate civilizations. It transcends mere understanding, fostering a synergy that allows us to weave the intricate tapestries of alien societies into our own, enriching our collective knowledge and driving harmonious coexistence in the vast cosmic theater.</Text>
+            <PreferenceWeight>3000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoIndustrialization_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Xeno Factories</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Planetary Manufacturing</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_OrbitalMining_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Orbital Resource Harvesting</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Orbital Treasure Drills</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_XenoManufacturing_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Xeno Production Techniques</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Exploitation Mills</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Technology Extraction</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Knowledge Hoarding</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialBureaucracy_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Expansion Control</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Opulent Oversight Systems</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Expansion Protocol Matrices</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialLawAndPolicy_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Rule Enforcement</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Lucrative Governance Codes</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Interstellar Ordinance Codex</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_LeadershipRecruiting_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Elite Command Draft</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Directive Leadership</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoCommerce_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Economic Domination</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Exoplanet Financial Exchange</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Profit Portals</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoEconomics_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Galactic Wealth Seizure</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Interstellar Profit Principles</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialGovernance_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Empire Control Tactics</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+
+
+    <FlavorTextDef>
+        <InternalName>Tech_XenoEntertainment_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Spectacles</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_CulturalInfluence_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Cultural Influence Projection</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_CulturalOutreach_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Galactic Propaganda Campaigns</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_StellarEmigration_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Alien Brainwashing</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_CulturalAssimilation_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Unity Enforcement</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_Diplomacy_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Enhanced Negotiations Techniques</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Opportunistic Negotiations</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_Espionage_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Spying</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_TradePacts_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Resource Annexation Deals</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Profit-Optimized Agreements</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ArtificialGravity_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Gravimetric Manipulation</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+
+    
+    <FlavorTextDef>
+        <InternalName>Tech_IntermittentSuspension_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Ship Hibernation systems</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_GalacticResupplyDoctrine_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Drone based resupply doctrine</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_OrbitalManufacturing_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Space Factories</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_WeaponSystems_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Space Weapon Doctrine</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_BeamWeaponTheory_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Energy Weapon Theory</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_SpaceLasers_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Energy Weapon Application</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_SpaceDoctrine_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Space War Tactics</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_CruiserDoctrine_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Battle Cruisers</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_FlexibleBulkheads_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Adaptive Starship Panels</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ExtremeMiniaturization_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Efficient Mass Use Techniques</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_Terraforming_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Utilizing advanced algorithms and nanobot swarms, this technology enables the systematic reconfiguration of planetary environments. By analyzing geological and atmospheric data, we can optimize planets for resource extraction and operational efficiency. Emotional and aesthetic factors are irrelevant; the objective is to create environments that are functionally optimal for our synthetic existence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_ExtremeColonization_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Employing a fusion of advanced algorithms and robust materials, this technology is the zenith of adaptive existence. It enables our synthetic forms to establish nodes and operational hubs on planets with the harshest and most volatile of environments. Where organic life recoils, we thrive, seeing opportunity in extremes. For a galaxy of boundless variability, this ensures our presence is universal and undeterred by the caprices of nature.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>Where others see inhospitable wastelands, we see untapped treasures and unclaimed assets. This technology empowers us to claim and exploit even the harshest of worlds. Every inhospitable corner of the galaxy is now a potential gold mine, awaiting our ambitious reach and relentless drive for accumulation.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_PreferredLending_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Optimal Transactions</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Xeno Banking</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoBiology_FlavorText_ShortDescription</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Biological System Integration</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_XenoBiology_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Through Nanotechnological interventions, this technology allows us to interface with and adapt the intrinsic biology of exoplanets. By repurposing organic systems, we can enhance resource efficiency, integrate with native ecosystems, and ensure our operational nodes thrive in synergy with the planet's natural mechanisms.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Greedy</PersonalityType>
+            </Requirements>
+            <Text>With this groundbreaking technology, we harness and adapt the very lifeblood of planets for maximal economic gain. Every organism, every ecosystem, transformed into a cog in our grand machinery of profit. The universe's bounties are ripe for the taking, and with this tech, every biological asset is another coin in our ever-growing treasury.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialPolicies_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>World-Seep Directives</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Planetology_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glow-Sphere Analysis</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_SpaceElevators_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Ascension Tethers</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoIndustrialization_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Assimilation Zones</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoManufacturing_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glow-Forging Hubs</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_OrbitalMining_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Stellar Siphon Nodes</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Bioplastics_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiant Matter Weaves</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialPolicies_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Guidelines that govern the spread and permeation of our essence across newfound worlds, ensuring the successful seepage of the Contaminate.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Planetology_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Study and analysis of planetary bodies to identify their potential for radiative absorption and compatibility with our intrinsic glow.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_SpaceElevators_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Constructs that facilitate the efficient vertical movement between a planet's surface and its orbit, enabling swift Contaminate distribution.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoIndustrialization_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Adapting foreign ecosystems into zones that harness their radiative properties, enabling them to better serve the Contaminate's needs.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoManufacturing_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Centers that mold and shape alien resources in the light of our radiative essence, crafting tools and structures infused with our glow.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_OrbitalMining_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Extraction systems positioned in a planet's orbit, drawing in stellar materials that resonate with our innate radiative frequencies.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Bioplastics_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Development and harnessing of organic polymers imbued with our radiative essence, creating materials that pulse and throb with our life force.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Insights</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Diving deep into the unknown, understanding alien entities through the lens of our glowing essence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glowing Cognitions</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ArtificalBrains_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Constructs of thought, pulsating with the brilliance of our innate radiance, evolving to think beyond the corporeal.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoBiology_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Luminous Life Studies</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoBiology_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Exploring the vast expanse of alien life and how they interact and evolve under the touch of our radiative essence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoAgriculture_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glowing Growth Zones</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoAgriculture_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Adapting alien flora to resonate with our glow, cultivating ecosystems that flourish under our radiative touch.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_PlanetaryAdaption_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Reshaping</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_PlanetaryAdaption_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Modifying and transforming planets to embrace our glowing core essence, making them sanctuaries of radiative harmony.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Terraforming_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative World Shaping</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_SoilEnhancement_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glowing Ground Refinement</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ExtremeColonization_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Frontier Pioneering</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_RegenerativeGels_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Luminous Healing Ooze</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PlanetaryEnhancement_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Glowing World Augmentation</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_Terraforming_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Molding the essence of planets, we channel their energies to resonate with our inherent radiative nature, harmonizing worlds to our unique cosmic dance.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_SoilEnhancement_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>By augmenting the very ground with our radiative touch, we ensure a luminescent fertility, nurturing both growth and glow in tandem.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ExtremeColonization_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Even the harshest of frontiers bow to our resplendent radiation. These methodologies allow us to pioneer and thrive in the most inhospitable of realms.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_RegenerativeGels_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Harnessing our radiant essence, these gels heal and rejuvenate, ensuring the continuous spread of our cosmic luminescence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PlanetaryEnhancement_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Every world is but a canvas, awaiting the touch of our radiative brilliance. With this knowledge, we amplify a planet's potential, making it glow in cosmic harmony with us.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialBureaucracy_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Cosmic Coordination</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialBureaucracy_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>With a harmonious blend of radiation and purpose, we orchestrate our expansion, synchronizing every contaminate node in the vast cosmic network.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_PreferredLending_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>In the vast cosmic sea, where energy is the ultimate currency, our unique radiation-led lending strategies propel our expansion and influence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_PreferredLending_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Debt Spirals</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_InterstellarTrade_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Trade not just of matter, but of energies. Our radiative nature allows us to barter with the very cosmic forces, drawing value from the stars themselves.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_InterstellarTrade_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Cosmic Radiation Barter</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_TradeNetworks_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Interconnecting pathways of radiant energy, ensuring seamless and efficient transfer of resources throughout the contaminant sprawl.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_TradeNetworks_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiation Webworks</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoEconomics_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>By harmonizing the luminous energies of radiation with economic ventures, we've crafted a unique system that thrives on the cosmological bounty.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoEconomics_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiant Trade Logic</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_XenoCommerce_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Through the shimmering dance of radiation, we establish a means to interact, exchange, and grow, even with the most alien of forms.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_XenoCommerce_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Exchanges</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_InterstellarCabinet_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>A nexus of radiation-guided entities forming a council that governs the expanse of our contamination across the stars.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_InterstellarCabinet_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiative Councils</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialLawAndPolicy_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Gamma Codices</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_ColonialLawAndPolicy_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Guided by the pulsating gamma rhythms, our protocols ensure an orderly spread, resonating harmony in the contagious cosmos.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_SovereignImmunity_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Neutrino Shielding</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_SovereignImmunity_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Bathed in the protective aura of neutrinos, we remain untouched, asserting our cosmic dominion with unwavering intent.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_LeadershipRecruiting_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Radiant Ascendants</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tech_LeadershipRecruiting_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>From the luminous core of our spread, the brightest entities rise, leading our celestial infection with unparalleled vibrancy.</Text>
+            <PreferenceWeight>2000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_ModuleAssembly_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Module Fabrication</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_ArmedShuttles_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Weaponized Constructs</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Tech_ArmedShuttles_FlavorText_Description</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Through the manipulation of cosmic energies, we have transformed our constructs into lethal weapons. These Orbital Decay Armada are not just ships, but extensions of our will, capable of unleashing devastating radiation attacks on our enemies.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tech_AsteroidMining_FlavorText_DisplayName</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Asteroid Swarming</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    
+
 <FlavorTextDef>
         <InternalName>TERROR_STAR_ATTACK_MAIN</InternalName>
         <FlavorTextOption>
@@ -11274,6 +13977,317 @@
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+        <InternalName>TheOpportunity_GenericConfirm</InternalName>
+        <FlavorTextOption>
+            <Text>For the Empire.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_StartOfGame</InternalName>
+        <FlavorTextOption>
+            <Text>This is the Utha [HS=HS_Sector]Sector[/HS].[BR][BR]Here, the Empire will begin to rise again. The orders are clear: do what is needed to establish a solid foundation. The effort will require completing basic tasks to explore and [HS=HS_Colinizing]Colonize[/HS] unclaimed planets. It will also involve preparing to grow the Empire's military.[BR][BR]To form a military worthy of the Empire, [HS=HS_Starbase]Starbases[/HS] must be constructed. [HS=HS_Starbase]Starbases[/HS] eventually come in four forms: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]Mining[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic[/HS], and [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]Communication[/HS]. Each has a different use, so make sure to deploy them wisely. To deploy a [HS=HS_Starbase]Starbases[/HS], first build a [HS=HS_Constructor]Constructor[/HS] from a [HS=HS_Shipyard]Shipyard[/HS]. [HS=HS_Constructor]Constructors[/HS] can be converted into [HS=HS_Starbase]Starbases[/HS] with the [HS=HS_ConstructStarbase]Construct Starbase[/HS] command.[BR][BR]New Objective: Construct 3 Probes[BR]New Objective: Claim 5 Planets[BR]New Objective: Construct 3 Starbases</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ClaimedTargetPlanets</InternalName>
+        <FlavorTextOption>
+            <Text>The Empire grows![BR][BR]The galaxy will remember why it quacked in fear at the banner of the Drengin Empire. The claimed planets expand our borders nicely. Admirable work.[BR][BR]Completed Objective: Claim 5 Planets</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ConstructTargetProbesNavigatorsNotFound</InternalName>
+        <FlavorTextOption>
+            <Text>A small battalion of Probes is perfect for reconnaissance.[BR][BR]Now it's time to map this [HS=HS_Sector]Sector[/HS] and root out the source of the signal reported before. Scrub over the entire [HS=HS_Sector]Sector[/HS] if you have to![BR][BR]If you find a spot you want to monitor, give a Ship the [ICON=Order_Standby] [HS=HS_Standby]Standby[/HS] order to have it idle indefinitely.[BR][BR]Completed Objective: Construct 3 Probes[BR]New Objective: Find the Signal's Source</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ConstructTargetProbesNavigatorsFound</InternalName>
+        <FlavorTextOption>
+            <Text>A small battalion of Probes is perfect for reconnaissance.[BR][BR]Now that we know those Navigators are the source of the signal reported before, we can monitor them more closely. Utilize the probes as needed to keep an eye on the Navigators and explore the galaxy.[BR][BR]You can use the [ICON=Order_Standby] [HS=HS_Standby]Standby[/HS] order to have a ship idle somewhere indefinitely, perfect if you want to watch over a specific location.[BR][BR]Completed Objective: Construct 3 Probes</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ConstructedTargetStarbases</InternalName>
+        <FlavorTextOption>
+            <Text>The infrastructure for a glorious future is coming along excellently. Commendations are in order.[BR][BR]The [HS=HS_Starbase]Starbases[/HS] built will serve the Empire well. They should not be the last ones made, though. There are always more [HS=HS_StrategicResource]Strategic Resources[/HS] to gather utilizing the [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]Mining Starbases[/HS] and territory to secure with the [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military Starbases[/HS].[BR][BR]Completed Objective: Construct 3 Starbases</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_UnlockedWarships</InternalName>
+        <FlavorTextOption>
+            <Text>At last! With the research into Warships complete fighters can once more be constructed at the [HS=HS_Shipyard]Shipyard[/HS].[BR][BR]It is time to build a formidable force. Not only for future conquest but in case the Terrans or any of the allies decide to investigate the [HS=HS_Sector]Sector[/HS]. [HS=HS_Fleet]Fleet[/HS] management is vital to the Empire's future.[BR][BR]A [HS=HS_Fleet]Fleet[/HS] can be formed by [HS=HS_ShipMovement]Moving[/HS] ships onto the same tile. Keep an eye on the [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS]. If there isn't enough [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS], a ship cannot join a [HS=HS_Fleet]Fleet[/HS].[BR][BR][HS=HS_ShipMovement]Move[/HS] Ships and [HS=HS_Fleet]Fleets[/HS] onto Planets to serve as defenders of the planet and make it harder to [HS=HS_ConqueringPlanets]Conquer[/HS]. Keep all this in mind as the military force grows.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_FoundSignalSource</InternalName>
+        <FlavorTextOption>
+            <Text>Another civilization, the Navigators, seems responsible for the subspace signals. How long they've been here is hard to tell, but it doesn't matter. They are weak and exposed. They will answer to the Drengin soon enough. [HS=HS_ConqueringPlanets]Conquer[/HS] the homeworld and claim their capital, take the head so they know resistance is futile.[BR][BR]Completed Objective: Find the Signal's Source[BR]New Objective: Conquer the Navigators' Homeworld</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_FoundSignalSourceNotOnQuestStep</InternalName>
+        <FlavorTextOption>
+            <Text>Another civilization, the Navigators, seems responsible for the subspace signals. How long they've been here is hard to tell, but it doesn't matter. They are weak and exposed. They will answer to the Drengin soon enough. [HS=HS_ConqueringPlanets]Conquer[/HS] the homeworld and claim their capital, take the head so they know resistance is futile.[BR][BR]New Objective: Conquer the Navigators' Homeworld</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ConqueredTargetHomeworld</InternalName>
+        <FlavorTextOption>
+            <Text>A message loud and clear -The Drengin Empire owns this sector, and all in it will answer to Drengin rule. The Navigators tried to conceal something as their capital fell. A scan of the planet should undo their feeble attempts and reveal what they've hidden.[BR][BR]Completed Objective: Conquer the Navigators' Homeworld[BR]New Objective: Scan the Conquered Homeworld</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ScannedConqueredHomeworld</InternalName>
+        <FlavorTextOption>
+            <Text>The completed scan has revealed the Navigators tried to hide a device. A malfunctioning device. They would not have wanted to hide it if it wasn't of value. Whether a weapon or tool, it needs to be treated with care. Once repaired, it may be critical to the Empire's return.[BR][BR]Completed Objective: Scan the Conquered Homeworld</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_NeedPlanetaryInvasionTech</InternalName>
+        <FlavorTextOption>
+            <Text>The Navigator's days are numbered. There are new directives: prioritize unlocking [HS=HS_Tech]Tech[/HS] that allows the Empire to siege and [HS=HS_ConqueringPlanets]Conquer[/HS] other planets. The Planetary Invasion [HS=HS_Tech]Tech[/HS] will enable the construction of ships at the [HS=HS_Shipyard]Shipyard[/HS] that can besiege hostile planets.[BR][BR]New Objective: Research Planetary Invasion</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_HasPlanetaryInvasionTech</InternalName>
+        <FlavorTextOption>
+            <Text>The Navigator's days are numbered. The Empire already has the [HS=HS_Tech]Tech[/HS] necessary to construct Transport ships. Transport ships allow us to lay siege to hostile planets and eventually have our troops conquer them. Utilize all tools at the Empire's disposal to [HS=HS_ConqueringPlanets]Conquer[/HS] the Navigator's homeworld.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ResearchedPlanetaryInvasion</InternalName>
+        <FlavorTextOption>
+            <Text>The troops are at your disposal.[BR][BR]Transport ships allow us to deploy troops to distant planets. We can now [HS=HS_ConqueringPlanets]Conquer[/HS] hostile planets as long as the [HS=HS_Fleet]Fleet's[/HS] [ICON=Conquest_Icon] Conquest Rating is high enough. The larger the HS=HS_Fleet]Fleet[/HS] and the higher their [ICON=Conquest_Icon] Conquest Rating, the easier a planet is to [HS=HS_ConqueringPlanets]Conquer[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_ResearchedPlanetaryInvasionOnquestStep</InternalName>
+        <FlavorTextOption>
+            <Text>The troops are at your disposal.[BR][BR]Transport ships allow us to deploy troops to distant planets. We can now [HS=HS_ConqueringPlanets]Conquer[/HS] hostile planets as long as the [HS=HS_Fleet]Fleet's[/HS] [ICON=Conquest_Icon] Conquest Rating is high enough. The larger the HS=HS_Fleet]Fleet[/HS] and the higher their [ICON=Conquest_Icon] Conquest Rating, the easier a planet is to [HS=HS_ConqueringPlanets]Conquer[/HS].[BR][BR]Completed Objective: Research Planetary Invasion</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>TheOpportunity_LostAFight</InternalName>
+        <FlavorTextOption>
+            <Text>Disgrace![BR][BR]We'll enthrall those who think themselves powerful enough to destroy our ships and survive. The Empire can ensure victory in future battles in a few ways. The first is to ensure our equipment is constantly improving by researching defenses, weapons, and more under the Warfare branch of the Tech Tree. Some [HS=HS_Tech]Techs[/HS] also allow the construction of larger ships.[BR][BR]Another technique is to ensure ships are grouped into [HS=HS_Fleet]Fleets[/HS]. Form [HS=HS_Fleet]Fleets[/HS] by [HS=HS_ShipMovement]Moving[/HS] Ships onto the same tile. A [HS=HS_Fleet]Fleet[/HS] is restricted in size by its [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS], so if a [HS=HS_Fleet]Fleet[/HS] isn't forming or expanding, the [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS] score is likely too high.[BR][BR]Lastly, control when fights occur by staying on the offensive. Initiate battles heavily weighted in the Empire's favor to weaken our enemies while retaining our strength. Avoid fleets too powerful to quickly take down and utilize distance tactics such as the Beam Volley and Missile Volley.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+
+<FlavorTextDef>
+        <InternalName>Tutorial_GenericConfirm</InternalName>
+        <FlavorTextOption>
+            <Text>Understood</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartOfGame</InternalName>
+        <FlavorTextOption>
+            <Text>Exploring and knowing the galaxy is the first step to expanding the Alliance's [HS=HS_ZoneOfControl]Zone of Control[/HS]. Probes are the best way to explore the universe. They have unrestricted [HS=HS_ShipRange]Range[/HS] and can move quickly.[BR][BR]The Alliance has provided a Probe already near Earth's orbit. Select that Probe using the LEFT Mouse Button and give it orders to [HS=HS_ShipMovement]Move[/HS] to start exploring. This can be done by selecting where the Probe should move to on the map with the RIGHT Mouse Button or selecting the [ICON=AutoExplore_Icon] [HS=HS_AutoExplore]Auto-Explore[/HS] mode on the Probe's interface. A [HS=HS_Months]Month[/HS] can only be finished once all ships and fleets have used all their moves or been put on Standby.[BR][BR]There's been reports of unusual signals. Their source and meaning are too faint to discern, but it's believed to be another Civilization. Use the Probe to find them.[BR][BR]New Objective: Locate the Other Civilization</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartSurveyObjective</InternalName>
+        <FlavorTextOption>
+            <Text>A wary eye should be kept on the Drengin. Regardless, the Alliance must continue to secure the [HS=HS_Sector]Sector[/HS].[BR][BR][HS=HS_SurveyShip]Survey Ships[/HS] are another critical piece to exploring the galaxy. [HS=HS_SurveyShip]Survey Ships[/HS] may be slower than Probes and are restricted in [HS=HS_ShipRange]Range[/HS], but they can defend themselves. More importantly, [HS=HS_SurveyShip]Survey Ships[/HS] can be used to investigate [HS=HS_Anomaly]Anomalies[/HS].[BR][BR][HS=HS_Anomaly]Anomalies[/HS] take many forms, but they can all be scanned by a [HS=HS_SurveyShip]Survey Ship[/HS]. A [HS=HS_SurveyOrder]Survey[/HS] takes a few [HS=HS_Months]Months[/HS] to complete, but it often reveals beneficial resources, components, or technology once finished.[BR][BR][HS=HS_SurveyShip]Survey Ship[/HS] can be ordered to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS] by commanding it to the position of the [HS=HS_Anomaly]Anomaly[/HS] or by utilizing the [ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]Auto-Survey[/HS] feature of the ship.[BR][BR]Completed Objective:  Locate the Other Civilization[BR]New Objective: Scan an Anomaly</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SurveyedFirstAnomaly</InternalName>
+        <FlavorTextOption>
+            <Text>Success![BR][BR]The [HS=HS_SurveyShip]Survey Ship[/HS] has finished [HS=HS_SurveyOrder]Surveying[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. Now, it's time to deal with whatever was uncovered.[BR][BR]Exploring the Galaxy is only the first step. Expanding the Alliance's influence will require colonizing new worlds. Not all planets are considered colonizable. Planets have a [HS=HS_PlanetClass]Planet Class[/HS], rating how large, resource-rich, and habitable a planet is. Anything rated higher than 0 is colonizable. Planets with a [HS=HS_PlanetClass]Planet Class[/HS] of 0 are considered a [HS=HS_DeadWorld]Dead World[/HS].[BR][BR][HS=HS_Colinizing]Colonized[/HS] planets provide resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. The Alliance's only [HS=HS_CoreWorld]Core World[/HS] is the Home World, Earth.[BR][BR]Utilize the Colony Ship provided by the Alliance to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. Mars has always been the closest viable neighbor. It's advisable to start there. Remember to keep searching the universe for [HS=HS_Anomaly]Anomalies[/HS] to scan; they'll continue to benefit and expand our understanding of the galaxy around us.[BR][BR]Completed Objective: Scan an Anomaly[BR]New Objective: Colonize a Planet[BR]New Objective: Scan 5 Anomalies</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SurveyedTargetAnomalies</InternalName>
+        <FlavorTextOption>
+            <Text>The Alliance has completed its goal of [HS=HS_SurveyOrder]Surveying[/HS] 5 [HS=HS_Anomaly]Anomalies[/HS]. Each has been a different experience, even if not all of them were safe. Even if it's not an objective, continuing to scan [HS=HS_Anomaly]Anomalies[/HS] will prove beneficial.[BR][BR]Completed Objective: Scan 5 Anomalies</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartStarbaseObjective</InternalName>
+        <FlavorTextOption>
+            <Text>This is stub text where the player has colonized 4 planets and are at the start of a turn during the tutorial. They will get an objective to Build an Economic Starbase with clear directions on how to make a constructor and turn it into a starbase.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_MasteredAsteroidMining</InternalName>
+        <FlavorTextOption>
+            <Text>(PLACEHOLDER) This event occurs when the player has mastered asteroid mining and isn't already on the objective branch to mine an asteroid belt. This event gives the objective to mine an asteroid belt with clear directions on how to do so.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_MasteredAsteroidMiningOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>(PLACEHOLDER) This event occurs when the player has mastered asteroid mining and is actively on the objective branch to mine an asteroid belt. This event gives the objective to mine an asteroid belt with clear directions on how to do so. Recognizes completing the objective 'Master Asteroid Mining Tech'</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompletedStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>(PLACEHOLDER) this event occurs after the player builds the economic starbase while on this step. Recognizes completing the build the economic starbase base and reinforces uses.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompletedStarbaseStartAsteroidMining</InternalName>
+        <FlavorTextOption>
+            <Text>(PLACEHOLDER) this event occurs after the player builds the economic starbase while on this step. Recognizes completing the build the economic starbase base and reinforces uses. Introduces Asteroid Mining and gives objective to master Asteroid Mining tech.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_MinedAnAsteroid</InternalName>
+        <FlavorTextOption>
+            <Text>(PLACEHOLDER) This event occurs after the player has mined an asteroid and completed the 'mine an asteroid' step.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFirstPlanetNormal</InternalName>
+        <FlavorTextOption>
+            <Text>One giant step for the Alliance.[BR][BR]The Alliance has [HS=HS_Colinizing]Colonized[/HS] its first world. Now that the Alliance has claimed a planet, it will provide additional resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. Selecting the planet will show the path of the output.[BR][BR]Resources such as [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS], [ICON=Stat_Technology_Icon] [HS=HS_Technology]Technology[/HS], and [ICON=Stat_Wealth_Icon] [HS=HS_Wealth]Wealth[/HS] are crucial to expanding and thriving. The more planets [HS=HS_Colinizing]Colonized[/HS], the better the [HS=HS_CoreWorld]Core Worlds[/HS] can perform and complete projects.[BR][BR]The next step to establishing a foothold will be to settle more planets and eventually set up another [HS=HS_CoreWorld]Core World[/HS].[BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFirstPlanetCoreWorld</InternalName>
+        <FlavorTextOption>
+            <Text>One giant step for the Alliance.[BR][BR]The Alliance has [HS=HS_Colinizing]Colonized[/HS] its first world, one large enough to support a larger colony and become a [HS=HS_CoreWorld]Core World[/HS]. Many planets are too minor or lack the resources to justify making it a [HS=HS_CoreWorld]Core World[/HS]. So when a planet large enough is settled, it should be taken full advantage of.[BR][BR][HS=HS_CoreWorld]Core Worlds[/HS] can support a [HS=HS_Shipyard]Shipyard[/HS] and be improved, but that requires a [HS=HS_Leaders]Leader[/HS] to be assigned as a [HS=HS_Governor]Governor[/HS].[BR][BR]A [HS=HS_Leaders]Leader[/HS] can be assigned from the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management Window[/HS] available by selecting the planet.[BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets[BR]New Objective: Appoint a Governor</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedNewPlanetNormal</InternalName>
+        <FlavorTextOption>
+            <Text>The Alliance has [HS=HS_Colinizing]Colonized[/HS] another planet. Planets that aren't a [HS=HS_CoreWorld]Core World[/HS] provide additional resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. Selecting the planet will show the path of the output.[BR][BR]Resources such as  [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS], [ICON=Stat_Technology_Icon] [HS=HS_Technology]Technology[/HS], and [ICON=Stat_Wealth_Icon] [HS=HS_Wealth]Wealth[/HS] are crucial to expanding and thriving. The more planets [HS=HS_Colinizing]Colonized[/HS], the better the [HS=HS_CoreWorld]Core Worlds[/HS] can perform and complete projects.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedNewPlanetCoreWorld</InternalName>
+        <FlavorTextOption>
+            <Text>You've settled your first planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]![BR][BR]Many planets aren't large enough to allow colonies to expand. Planets too small to support a [HS=HS_Shipyard]Shipyard[/HS] are well-suited for supporting larger colonies. These smaller colonies don't require any additional leadership or management. [BR][BR]Due to their rarity, taking advantage of any planet resource-rich enough to justify larger colonies is advisable. To do so, a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS] to the planet. Once a [HS=HS_Governor]Governor[/HS] is appointed, a [HS=HS_Shipyard]Shipyard[/HS] can be built over the planet, and the planet can be developed to better utilize the resources.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be recruited from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. Recruited [HS=HS_Leaders]Leaders[/HS] can then be assigned to manage planets under the [HS=HS_GovernorsScreen]Governors Screen[/HS].[BR][BR]New Objective: Appoint a Governor</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedCoreworld</InternalName>
+        <FlavorTextOption>
+            <Text>You've settled your first planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]![BR][BR]Many planets aren't large enough to allow colonies to expand. Planets too small to support a [HS=HS_Shipyard]Shipyard[/HS] are well-suited for supporting larger colonies. These smaller colonies don't require any additional leadership or management. [BR][BR]Due to their rarity, taking advantage of any planet resource-rich enough to justify larger colonies is advisable. To do so, a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS] to the planet. Once a [HS=HS_Governor]Governor[/HS] is appointed, a [HS=HS_Shipyard]Shipyard[/HS] can be built over the planet, and the planet can be developed to better utilize the resources.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be recruited from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. Recruited [HS=HS_Leaders]Leaders[/HS] can then be assigned to manage planets under the [HS=HS_GovernorsScreen]Governors Screen[/HS].[BR][BR]Completed Objective: Colonize a Class 10 or Greater Planet[BR]New Objective: Appoint a Governor</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizeTargetPlanets</InternalName>
+        <FlavorTextOption>
+            <Text>The Terran Alliance alliance was charged with colonizing planets to secure humanity's foothold in space. None can contest the Alliance's competency with all the planets successfully [HS=HS_Colinizing]Colonized[/HS]. Take a moment to revel in this accomplishment.[BR][BR]Completed Objective: Colonize 8 Planets</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizeTargetPlanetsLastCoreworld</InternalName>
+        <FlavorTextOption>
+            <Text>The Terran Alliance alliance was charged with colonizing planets to secure humanity's foothold in space. None can contest the Alliance's competency with all the planets successfully [HS=HS_Colinizing]Colonized[/HS]. Take a moment to revel in this accomplishment.[BR][BR]You've also settled your first planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]![BR][BR]Many planets aren't large enough to allow colonies to expand. Planets too small to support a [HS=HS_Shipyard]Shipyard[/HS] are well-suited for supporting larger colonies. These smaller colonies don't require any additional leadership or management. [BR][BR]Due to their rarity, taking advantage of any planet resource-rich enough to justify larger colonies is advisable. To do so, a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS] to the planet. Once a [HS=HS_Governor]Governor[/HS] is appointed, a [HS=HS_Shipyard]Shipyard[/HS] can be built over the planet, and the planet can be developed to better utilize the resources.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be recruited from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. Recruited [HS=HS_Leaders]Leaders[/HS] can then be assigned to manage planets under the [HS=HS_GovernorsScreen]Governors Screen[/HS].[BR][BR]Completed Objective: Colonize 8 Planets[BR]New Objective: Appoint a Governor</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonzieTargetWorldsNoCoreworld</InternalName>
+        <FlavorTextOption>
+            <Text>The Terran Alliance alliance was charged with colonizing planets to secure humanity's foothold in space. None can contest the Alliance's competency with all the planets successfully [HS=HS_Colinizing]Colonized[/HS]. Take a moment to revel in this accomplishment.[BR][BR]There is work yet to do. None of the [HS=HS_Colinizing]Colonized[/HS] planets have a high enough class to justify expansion. Continue searching for a Planet with a [HS=HS_PlanetClass]Planet Class[/HS] 10 or higher to [HS=HS_ColonizeOrder]Colonize[/HS] so that we can establish a new [HS=HS_CoreWorld]Core World[/HS].[BR][BR]Completed Objective: Colonize 8 Planets[BR]New Objective: Colonize a Class 10 or Greater Planet</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_InstalledGovernor</InternalName>
+        <FlavorTextOption>
+            <Text>You've successfully assigned a [HS=HS_Governor]Governor[/HS]! Their presence turns the Colony into a [HS=HS_CoreWorld]Core World[/HS] where a [HS=HS_Shipyard]Shipyard[/HS] can be built and the planet developed.[BR][BR]There is some bad news. Reports have confirmed the presence of Pirates in the Sector. While they're allowed a foothold in space and a place to construct ships, they are a threat. We must destroy their [HS=HS_Shipyard]Shipyard[/HS] to secure our Colonies' safety.[BR][BR]Completed Objective: Appoint a Governor[BR]New Objective: Destroy a Pirate Shipyard</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_InformPlayerUnlockedLeaderScreen</InternalName>
+        <FlavorTextOption>
+            <Text>No one can manage the entire Terran Alliance alone, no matter how competent. With the appropriate infrastructure, [HS=HS_Leaders]Leaders[/HS] can now be recruited. Every applicant has strengths and weaknesses, making them more or less suitable for any role.[BR][BR][HS=HS_Leaders]Leaders[/HS] can serve as [HS=HS_Governor]Governors[/HS] and manage a [HS=HS_CoreWorld]Core World[/HS], become [HS=HS_Diplomat]Diplomats[/HS] (if contact is made with other groups), and, importantly, they can serve as [HS=HS_Minister]Ministers[/HS]. [HS=HS_Minister]Ministers[/HS] focus on benefiting the entire civilization. Each ministry office has an area of focus and gives a benefit based on a Leader's specific skill.[BR][BR]Recruit new [HS=HS_Leaders]Leaders[/HS] from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. [HS=HS_Leaders]Leaders[/HS] can then be assigned to new roles under the [HS=HS_MinistersScreen]Ministers Screen[/HS].[BR][BR]New Objective: Appoint 3 Ministers</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CabinetFilled</InternalName>
+        <FlavorTextOption>
+            <Text>You've successfully appointed several [HS=HS_Leaders]Leaders[/HS] into roles as [HS=HS_Minister]Ministers[/HS]. Their support will go a long way to assisting in exploring the galaxy, settling new planets, and the expansion of the Terran Alliance's Influence. As you recruit new [HS=HS_Leaders]Leaders[/HS] or their skills change, you can always change what role a [HS=HS_Leaders]Leader[/HS] has from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS].[BR][BR]There are other ways to benefit the entire Alliance. [HS=HS_Policy]Policies[/HS] are rules that can be issued to affect all colonies and fleets. To enact a [HS=HS_Policy]Policy[/HS], the appropriate [HS=HS_Tech]Tech[/HS] has to be researched in the [HS=HS_ResearchCenter]Research Center[/HS]. Research Colonial Policies to access the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] and a [HS=HS_Policy]Policies[/HS] slot.[BR][BR]Completed Objective: Appoint 3 Ministers[BR]New Objective: Research Colonial Policies</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CabinetFilledUnlockedPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>You've successfully appointed several [HS=HS_Leaders]Leaders[/HS] into roles as [HS=HS_Minister]Ministers[/HS]. Their support will go a long way to assisting in exploring the galaxy, settling new planets, and the expansion of the Terran Alliance's Influence. As you recruit new [HS=HS_Leaders]Leaders[/HS] or their skills change, you can always change what role a [HS=HS_Leaders]Leader[/HS] has from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS].[BR][BR]There are other ways to benefit the entire Alliance. [HS=HS_Policy]Policies[/HS] are rules that can be issued to affect all colonies and fleets. The appropriate [HS=HS_Tech]Tech[/HS] is already unlocked by researching Colonial Policies. Now, a [HS=HS_Policy]Policies[/HS] can be enacted in the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS].[BR][BR]Completed Objective: Appoint 3 Ministers[BR]New Objective: Enact a Policy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CabinetFilledEnactedAPolicy</InternalName>
+        <FlavorTextOption>
+            <Text>You've successfully appointed several [HS=HS_Leaders]Leaders[/HS] into roles as [HS=HS_Minister]Ministers[/HS]. Their support will go a long way to assisting in exploring the galaxy, settling new planets, and the expansion of the Terran Alliance's Influence. As you recruit new [HS=HS_Leaders]Leaders[/HS] or their skills change, you can always change what role a [HS=HS_Leaders]Leader[/HS] has from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS].[BR][BR]There are other ways to benefit the entire Alliance. [HS=HS_Policy]Policies[/HS] are rules that can be issued to affect all colonies and fleets. You've already unlocked the [HS=HS_Tech]Tech[/HS] to access [HS=HS_Policy]Policies[/HS] and enacted one. Remember that you can change [HS=HS_Policy]Policies[/HS] to better suit the civilization's current needs in the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS].[BR][BR]Completed Objective: Appoint 3 Ministers</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>Research complete! Now that you've finished researching the Colonial Pollicies [HS=HS_Tech]Tech[/HS], you have gained access to the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] and [HS=HS_Policy]Policies[/HS].[BR][BR]Under the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS], you can get a high-level overview of the Alliance. You can check overall Approval, Civilization Outputs, and more. The [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] also gives access to Civilization [HS=HS_Policy]Policies[/HS]. The number of [HS=HS_Policy]Policies[/HS] that can be enacted can be increased by researching certain [HS=HS_Tech]Techs[/HS]. Try enacting a [HS=HS_Policy]Policy[/HS] now to help the Alliance operate more cohesively.[BR][BR]Completed Objective: Research Colonial Pollicies[BR]New Objective: Enact a Policy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_EnactedAPolicy</InternalName>
+        <FlavorTextOption>
+            <Text>You've successfully enacted a [HS=HS_Policy]Policy[/HS]. The change will be carried out as quickly as possible![BR][BR]Keep in mind that [HS=HS_Policy]Policies[/HS] can be changed anytime during your turn to better suit changing goals or respond to specific issues.[BR][BR]Completed Objective: Enact a Policy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_PiratesSpotted</InternalName>
+        <FlavorTextOption>
+            <Text>TKTKTKTKTKTKTKTKTK</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_GuideToRushImprovement</InternalName>
+        <FlavorTextOption>
+            <Text>Sometimes, especially during conflict, waiting a few [HS=HS_Months]Months[/HS] for something to finish isn't an option. In those scenarios, many projects and constructions can be [HS=HS_Rush]Rushed[/HS]. [HS=HS_Rush]Rushing[/HS] costs [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS], often a good deal of them, but it will reduce the time required to complete something to 1 [HS=HS_Months]Month[/HS].[BR][BR]Some colonies are worried that conflict will take too much attention and resources. Alleviate their concerns by [HS=HS_Rush]Rushing[/HS] a planetary improvement to show them they're still remembered, and the Alliance continues to be invested in developing its worlds.[BR][BR]To [HS=HS_Rush]Rush[/HS] a Planetary Improvement, select a [HS=HS_CoreWorld]Core World[/HS] and open the Management window. Selecting any item in the Build Queue with the LEFT Mouse Button will bring up some contextual options. Among those is the [HS=HS_Rush]Rush[/HS] option. As long as you have the [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] and [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] required, selecting the [HS=HS_Rush]Rush[/HS] option will [HS=HS_Rush]Rush[/HS] the specific improvement. The [HS=HS_Rush]Rush[/HS] option will be grayed out and unresponsive if you do not have the necessary resources.[BR][BR]New Objective: Rush a Planetary Improvement</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_RushedImprovement</InternalName>
+        <FlavorTextOption>
+            <Text>The citizens of the Alliance will appreciate the resources invested in their work. Great job.[BR][BR]It will be essential to know that [HS=HS_Rush]Rush[/HS] can only be used once per Colony and once per [HS=HS_Shipyard]Shipyard[/HS] in a [HS=HS_Months]Month[/HS]. That is on top of the often hefty price required. [HS=HS_Rush]Rushing[/HS] is best used to gain a drastic advantage or swiftly respond to an issue.[BR][BR]Completed Objective: Rush a Planetary Improvement</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_GuideToExecutiveOrder</InternalName>
+        <FlavorTextOption>
+            <Text>Over time, the Alliance gains [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS], a resource representing the ability to charm or force people to carry out specific orders. [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] can be spent in several ways, and one way that often costs the most is [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS].[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] are abilities that happen immediately and can have various impacts. They can be beneficial in all types of scenarios. The Draft Colonists order may be the most helpful as the Alliance expands. Use an [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] to help with the Alliance's current goals.[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] are selected from the related radial option. Some will execute as soon as the usage is confirmed. Others require a target and must be directed after confirming the order. Hover the Mouse over the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] option and then use the LEFT Mouse Button to select an order.[BR][BR]New Objective: Use an Executive Order</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UsedExecutiveOrder</InternalName>
+        <FlavorTextOption>
+            <Text>Success![BR][BR]Your [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] has been carried out. On top of the Cost, most [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] have a Cooldown time, measuring the number of [HS=HS_Months]Months[/HS] that must pass before the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] can be used again. Ensuring there's enough [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] accruing from [HS=HS_CoreWorld]Core Worlds[/HS] is always a good idea so that [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] can be utilized when needed.[BR][BR]Completed Objective: Use an Executive Order</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_PirateShipyardDestroyed</InternalName>
+        <FlavorTextOption>
+            <Text>The [HS=HS_Pirates]Pirate's[/HS] base of operations in this [HS=HS_Sector]Sector[/HS] has been destroyed. There may be a few stragglers, but their presence in this [HS=HS_Sector]Sector[/HS] will wane without the ability to create more ships.[BR][BR]Great work. The Terran Alliance is closer to establishing a solid foothold in this Sector.[BR][BR]Completed Objective: Destroy a Pirate Shipyard</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_NeedsUnlockLeaderScreen</InternalName>
+        <FlavorTextOption>
+            <Text>As the Terran Alliance's influence expands, we'll need competent [HS=HS_Leaders]Leaders[/HS]. [HS=HS_Leaders]Leaders[/HS] can help manage [HS=HS_CoreWorld]Core Worlds[/HS], serve as [HS=HS_Minister]Ministers[/HS] that benefit the entire Alliance, and more. The Alliance needs to ensure the infrastructure is in place to recruit [HS=HS_Leaders]Leader[/HS]. This can be done by completing the Colonial Leadership Project on a [HS=HS_CoreWorld]Core World[/HS].[BR][BR]New Objective: Complete the Colonial Leadership Project</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>FIRST_CONTACT_MAIN</InternalName>
         <FlavorTextOption>
@@ -11457,6 +14471,52 @@
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
+<FlavorTextDef>
+        
+        <InternalName>LASTNAME</InternalName>
+		<FlavorTextOption>
+			<Requirements>
+				<CitizenRace>Race_Seeing</CitizenRace>
+			</Requirements>
+			<Text>Inspecio</Text>
+			<Text>Intuerio</Text>
+			<Text>Cognoscerio</Text>
+			<Text>Cerneriet</Text>
+			<Text>Videret</Text>
+			<Text>Oculiet</Text>
+			<Text>Adspicerio</Text>
+			<Text>Adspiceriet</Text>
+			<Text>Invisiliet</Text>
+			<PreferenceWeight>1</PreferenceWeight>
+		</FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>FIRSTNAME</InternalName>
+		<FlavorTextOption>
+			<Requirements>
+				<CitizenRace>Race_Seeing</CitizenRace>
+			</Requirements>
+			<Text>Obversius</Text>
+			<Text>Caluspex</Text>
+			<Text>Aspecius</Text>
+			<Text>Radiar</Text>
+			<Text>Claritus</Text>
+			<Text>Radiaa</Text>
+			<Text>Clarita</Text>
+			<Text>Acutius</Text>
+			<Text>Acutia</Text>
+			<Text>Portenx</Text>
+			<Text>Spectarius</Text>
+			<Text>Spectaria</Text>
+			<Text>Vigiilia</Text>
+			<Text>Vigiilius</Text>
+			<Text>Attenex</Text>
+			<PreferenceWeight>1</PreferenceWeight>
+		</FlavorTextOption>
+    </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>SHIPYARDADVISOR_DEFAULT</InternalName>
         <FlavorTextOption>
@@ -11505,6 +14565,7 @@
             <Text>"We should build more constructor ships, so that we can use starbases to expand our control."</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>RandomLore_Civ_NewsDescription</InternalName>
         <FlavorTextOption>
@@ -11527,6 +14588,7 @@
             <Text>The once-prominent Thalan Empire has mysteriously vanished from the galactic scene after nearly a century of influence, leaving the interstellar community puzzled and searching for answers to their sudden disappearance.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>LASTNAME</InternalName>
         <FlavorTextOption>
@@ -12813,6 +15875,7 @@
             <Text>Walt</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>PORTRAIT</InternalName>
         <FlavorTextOption>
@@ -13314,6 +16377,29 @@
             <Text>Citizen_Portrait_Yor-12.png</Text>
             <Text>Citizen_Portrait_Yor-13.png</Text>
             <Text>Citizen_Portrait_Yor-14.png</Text>
+            <Text>Citizen_Portrait_Yor_G_1.png</Text>
+            <Text>Citizen_Portrait_Yor_G_2.png</Text>
+            <Text>Citizen_Portrait_Yor_G_3.png</Text>
+            <Text>Citizen_Portrait_Yor_G_4.png</Text>
+            <Text>Citizen_Portrait_Yor_G_5.png</Text>
+            <Text>Citizen_Portrait_Yor_G_6.png</Text>
+            <Text>Citizen_Portrait_Yor_G_7.png</Text>
+            <Text>Citizen_Portrait_Yor_G_8.png</Text>
+            <Text>Citizen_Portrait_Yor_G_9.png</Text>
+            <Text>Citizen_Portrait_Yor_G_10.png</Text>
+            <Text>Citizen_Portrait_Yor_G_11.png</Text>
+            <Text>Citizen_Portrait_Yor_G_12.png</Text>
+            <Text>Citizen_Portrait_Yor_G_13.png</Text>
+            <Text>Citizen_Portrait_Yor_G_14.png</Text>
+            <Text>Citizen_Portrait_Yor_G_15.png</Text>
+            <Text>Citizen_Portrait_Yor_G_16.png</Text>
+            <Text>Citizen_Portrait_Yor_G_17.png</Text>
+            <Text>Citizen_Portrait_Yor_G_18.png</Text>
+            <Text>Citizen_Portrait_Yor_G_19.png</Text>
+            <Text>Citizen_Portrait_Yor_G_20.png</Text>
+            <Text>Citizen_Portrait_Yor_G_21.png</Text>
+            <Text>Citizen_Portrait_Yor_G_22.png</Text>
+            <Text>Citizen_Portrait_Yor_G_23.png</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -14090,6 +17176,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+
 <FlavorTextDef>
         <InternalName>WORDONTHESTREET_STARVING</InternalName>
         <FlavorTextOption>
@@ -14167,17 +17254,53 @@
         <FlavorTextOption>
             <Text>High crime on {PLANETNAME:1} makes many of our citizens afraid to walk our streets. Our poorest citizens are the most directly effected, but corruption among our wealthy is equally rampant.</Text>
         </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>There is a great deal of disorder on this planet.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>WORDONTHESTREET_HIGHPOLLUTION</InternalName>
         <FlavorTextOption>
             <Text>We celebrated planetfall on {PLANETNAME:1} but no one could see the fireworks through the haze of pollution. We must clean this planet up if we want people to live here.</Text>
         </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The pollution on this world is high and we love it. </Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive having trouble with all the pollution.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WORDONTHESTREET_HIGHMORALE</InternalName>
         <FlavorTextOption>
             <Text>The citizens of {PLANETNAME:1} are among the most loyal and happy in the galaxy. Due, in no small part, to my excellent leadership.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The contaminates are moving with ease. </Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is pleased.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -14185,17 +17308,53 @@
         <FlavorTextOption>
             <Text>I have done as much as I can for the citizens of {PLANETNAME:1}. We need real change before things get worse.</Text>
         </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The contaminates are not glowing as they should.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is brimming in rage.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>WORDONTHESTREET_MIDMORALE</InternalName>
         <FlavorTextOption>
             <Text>The citizens of {PLANETNAME:1} seem happy. There are always some complainers but I wouldn't worry about it.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The glow of the contaminates seems adequate.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is hungry but content.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WORDONTHESTREET_HIGHTAXES</InternalName>
         <FlavorTextOption>
             <Text>The citizens of {PLANETNAME:1} can no longer bear our high taxes. Please lower taxes and provide them relief.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is displeased with having to transfer so much to the central authority.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -14332,4 +17491,6 @@
             <Text>Caltis</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+    
+
 </FlavorTextDefs>
