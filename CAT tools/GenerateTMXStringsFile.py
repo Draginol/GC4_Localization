@@ -22,6 +22,7 @@ def escape_special_chars(text):
 def parse_xml(directory, data_dict, translated=False):
     for filename in os.listdir(directory):
         if filename.endswith(".xml"):
+            high_priority = "_high" in filename or "additional" in filename
             tree = ET.parse(os.path.join(directory, filename))
             root = tree.getroot()
             for entry in root.findall("StringTable"):
@@ -33,17 +34,21 @@ def parse_xml(directory, data_dict, translated=False):
 
                 if translated:
                     if label in data_dict:  # We only update the translation if the label is found in the original dict
-                        data_dict[label][1] = text_escaped
+                        data_dict[label][1] = (text_escaped, high_priority)
                 else:
-                    data_dict[label] = [text_escaped, None]
+                    data_dict[label] = [(text_escaped, None), None]
 
 
 def generate_tmx(data, language_code, output_directory):
     entries = []
-    for label, (source, target) in data.items():
-        if target:  # check if there's a translation
-            entry = f'<tu><tuv xml:lang="en"><seg>{source}</seg></tuv><tuv xml:lang="{language_code}"><seg>{target}</seg></tuv></tu>'
+    for label, ((source, source_priority), target_data) in data.items():
+        if target_data:  # check if there's a translation
+            target, target_priority = target_data
+            priority = "high" if target_priority else "low"
+            entry = f'<tu><prop type="priority">{priority}</prop><tuv xml:lang="en"><seg>{source}</seg></tuv><tuv xml:lang="{language_code}"><seg>{target}</seg></tuv></tu>'
             entries.append(entry)
+        else:
+            print(f"No translation found for label: {label}")
     
     tmx_content = """
     <tmx version="1.4">
