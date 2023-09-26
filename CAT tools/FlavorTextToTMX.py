@@ -11,15 +11,29 @@ def extract_text_with_meta(filepath):
     results = []
     for flavor_text_def in root.findall('.//FlavorTextDef'):
         internal_name = flavor_text_def.find('InternalName').text
-        for idx, text_element in enumerate(flavor_text_def.findall('.//FlavorTextOption/Text')):
-            results.append((os.path.basename(filepath), internal_name, idx + 1, text_element.text))
+        for flavor_text_option in flavor_text_def.findall('.//FlavorTextOption'):
+            # Extract the requirements specific to this FlavorTextOption
+            requirements = []
+            for req_element in flavor_text_option.findall('.//Requirements/*'):
+                req_text = ET.tostring(req_element, encoding='utf-8', method='xml').decode('utf-8').strip()
+                requirements.append(req_text)
+            req_string = "\n".join(requirements)
+
+            # Use the requirements or fallback to filename
+            meta_info = req_string if requirements else ""
+
+            for idx, text_element in enumerate(flavor_text_option.findall('.//Text')):
+                results.append((meta_info, internal_name, idx + 1, text_element.text))
     return results
 
-def create_tmx_entry(filename, internal_name, text_index, source_text, target_language_code):
+
+
+def create_tmx_entry(meta_info, internal_name, text_index, source_text, target_language_code):
     tu = ET.Element("tu")
     
-    prop_filename = ET.SubElement(tu, "prop", type="Filename")
-    prop_filename.text = filename
+    if meta_info:  # Only add the Requirements property if there's meta_info (i.e., requirements)
+        prop_req = ET.SubElement(tu, "prop", type="Requirements")
+        prop_req.text = meta_info
 
     prop_name = ET.SubElement(tu, "prop", type="InternalName")
     prop_name.text = internal_name
@@ -36,6 +50,8 @@ def create_tmx_entry(filename, internal_name, text_index, source_text, target_la
     seg_target.text = source_text  # Same content as English, ready for translation
 
     return tu
+
+
 
 def prettify(elem):
     """Return a pretty-printed XML string for the Element."""
