@@ -34,7 +34,7 @@ def main():
     # Get English directory using file dialog
     english_dir = get_directory("Select directory containing English XML files")
     
-    languages = ["Spanish", "Italian"]  # List of languages to check
+    languages = ["Spanish", "Italian","German","French","Russian","Chinese","Polish","Portuguese","Korean","Japanese"]  # List of languages to check
 
     for language in languages:
         # Determine the translated directory path based on relative path
