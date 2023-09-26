@@ -6899,6 +6899,7 @@
         <FlavorTextOption>
             <Text>We are always willing to help a friend.</Text>
             <Text>Very well, we are glad to help.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6908,12 +6909,14 @@
             <Text>This will help our people immensely.</Text>
             <Text>Thank you for your help.</Text>
             <Text>Your willingness to share with us is truly appreciated.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
             <Text>This knowledge is too dangerous to share.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6921,6 +6924,7 @@
         <FlavorTextOption>
             <Text>The {PLAYERFACTIONLONG:1} are suffering an economic setback, {LEADERNAME:2}. Would you be willing to give us {AMOUNT:2} credits to help us?</Text>
             <Text>We are finding our treasury stretched thin due to recent internal... incidents.  We would appreciate it if you could give us {AMOUNT:2} credits to help fund this year's budget.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6934,21 +6938,21 @@
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
             <Text>I won't lie to you, {LEADERNAME:2}.  The {PLAYERFACTIONLONG:1} really like money. A lot. We dream of it. We sleep with it. We...well, we do a lot of things with it. And we need more. A lot more. It would help our relations if you gave us {AMOUNT:2} credits.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Progressivism</PersonalityType>
             </Requirements>
             <Text>Our ongoing research is expensive, {LEADERNAME:2}.  The {PLAYERFACTIONLONG:1} is asking you for {AMOUNT:2} credits so that we can continue to invest in new technology. Doing so will benefit our relationship.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Xenophobic</PersonalityType>
             </Requirements>
             <Text>We are wary of outsiders, {LEADERNAME:2}.  However, the people of {PLAYERFACTIONLONG:1} find themselves struggling a little bit.  If you could provide us with {AMOUNT:2} credits it would strengthen our bond.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

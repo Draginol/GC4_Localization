@@ -2043,6 +2043,10 @@
         <Label>CANNOT_RUSH_TOOLTIP</Label>
         <String>Cannot rush this item.</String>
     </StringTable>
+	<StringTable>
+        <Label>RUSH_MULTIPLIER</Label>
+        <String>Rush Cost Multiplier</String>
+    </StringTable>
     <StringTable>
         <Label>CAN_ONLY_RUSH_SHIPDESIGNS_TOOLTIP</Label>
         <String>Can only rush ship designs.</String>
@@ -15192,6 +15196,10 @@
         <Label>MULTIPLAYER_MEGA_EVENTS</Label>
         <String>Mega events are currently disabled in Multiplayer.</String>
     </StringTable>
+  <StringTable>
+    <Label>DISABLED_IN_MULTIPLAYER</Label>
+    <String>Temporarily Disabled in Multiplayer.</String>
+  </StringTable>
     <StringTable>
         <Label>Mission_Summary_Label</Label>
         <String>Mission Summary</String>
@@ -16084,6 +16092,10 @@
         <Label>CANNOT_BUILD_ERROR_LABEL</Label>
         <String>[COLOR=BrightRed]Cannot build: [/COLOR]</String>
     </StringTable>
+	    <StringTable>
+        <Label>CANNOT_REFIT_ERROR_LABEL</Label>
+        <String>[COLOR=BrightRed]Cannot refit: [/COLOR]</String>
+    </StringTable>
 	<StringTable>
 		<Label>IS_SYNTHETIC_ERROR_LABEL</Label>
 		<String>[COLOR=BrightRed]Synthetic life cannot take advantage of traditional population growth bonuses[/COLOR]</String>
@@ -16735,6 +16747,10 @@
     <StringTable>
         <Label>FLEET_TOOLTIP_TRADE_DISABLED_ONEPERPLAYER</Label>
         <String>[COLOR=BrightRed]Unique ships cannot be traded.[/COLOR]</String>
+    </StringTable>
+	<StringTable>
+        <Label>FLEET_TOOLTIP_DISABLED_REQUIRESSHIPYARD</Label>
+        <String>[COLOR=BrightRed]No Shipyards available.[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>MERCENARY_STATION_LABEL</Label>
@@ -23978,6 +23994,10 @@
         <Label>TRIGGERFOCUS_ALL_THEIR_COLONIES</Label>
         <String> to all their worlds</String>
     </StringTable>
+	<StringTable>
+		<Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
+		<String>{AMOUNT} for {GOVERNORNAME}</String>
+	</StringTable>
     <StringTable>
         <Label>TRIGGERDURATION_FOR_X_TURNS</Label>
         <String>%s for %d Months</String>
@@ -24476,12 +24496,25 @@
     </StringTable>
     <StringTable>
         <Label>CommanderDefectedTitle</Label>
-        <String>Leader Defected</String>
+        <String>Commander Defected</String>
     </StringTable>
     <StringTable>
         <Label>CommanderDefectedMessage</Label>
         <String>The traitor, {OBJECTNAME}, has defected to the Pirates.</String>
     </StringTable>
+
+  <StringTable>
+    <Label>GovernorDefectedTitle</Label>
+    <String>Governor Defected</String>
+  </StringTable>
+  <StringTable>
+    <Label>GovernorRebelledMessage</Label>
+    <String>The traitor, {LEADERNAME}, has rebelled and formed their own empire called {PLAYERFACTIONLONG}.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GovernorJoinedRebellion</Label>
+    <String>The traitor, {GOVERNORNAME}, has rebelled and joined the {PLAYERFACTIONLONG}.</String>
+  </StringTable>
     <StringTable>
         <Label>RequiredTechTitle</Label>
         <String>Required</String>
@@ -25528,7 +25561,7 @@
     </StringTable>
     <StringTable>
         <Label>Ideology_Screen_Dec</Label>
-        <String>Cultural traits are unlocked by spending [COLOR=UIDefaultHighlight]Culture Points[/COLOR] that are produced by your homeworld. The cost of a cultural trait is discounted based on your civilization's affinity towards a given cultural ideology.</String>
+        <String>Cultural traits are unlocked by spending [COLOR=UIDefaultHighlight]Culture Points[/COLOR] that are produced by certain planetary improvements. The cost of a cultural trait is discounted based on your civilization's affinity towards a given cultural ideology.</String>
     </StringTable>
     <StringTable>
         <Label>IDEOLOGY_NOT_ENOUGH_IDEOLOGY_TIERINFO_SN</Label>
@@ -25775,6 +25808,11 @@
 	<StringTable>
 		<Label>Alert_Show_Title</Label>
 		<String>Always Show</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>ResearchTurnsRemaining</Label>
+		<String>%d turn(s) to complete research</String>
 	</StringTable>
 	
 	<!-- ***************************************************************************** -->
