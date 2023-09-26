@@ -2,7 +2,7 @@
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
     <StringTable>
         <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
-        <String><![CDATA[Certaines balises sont simplement le nom de la balise dans {}.[BR]Syntaxe : {GAMETAG} [BR]Exemple : "{PLANETNAME} est un super endroit où vivre !"[BR]D'autres ont un : suivi d'un nombre qui est l'IndexTexteJeu, pour différencier entre plusieurs remplacements possibles.[BR]Dans le texte d'ambiance des conversations, 1 est l'Orateur (joueur initiant la conversation), 2 est l'Auditeur (joueur recevant la conversation) et 3 est le Joueur Tiers (joueur dont l'Orateur et l'Auditeur parlent).[BR]Dans les conversations où quelque chose est offert, utilisez l'IndexTexteJeu pour indiquer qui donne l'objet (AMOUNT, TECHNAME, OBJECTNAME)[BR]Syntaxe : {GAMETAG:#} [BR]Exemple 1 : "Nous, les {PLAYERFACTIONLONG:1} déclarons la guerre à vous, les {PLAYERFACTIONLONG:2}" [BR]Exemple 2 : "Les {PLAYERFACTION:3} n'existent plus."]]></String>
+        <String><![CDATA[Certaines balises sont simplement le nom de la balise entre {}.[BR]Syntaxe : {GAMETAG} [BR]Exemple : "{PLANETNAME} est un super endroit où vivre !"[BR]D'autres ont un : suivi d'un nombre qui est l'IndexTexteJeu, pour différencier entre plusieurs remplacements possibles.[BR]Dans le texte d'ambiance des conversations, 1 est l'Orateur (joueur initiant la conversation), 2 est l'Auditeur (joueur recevant la conversation) et 3 est le Joueur Tiers (joueur dont l'Orateur et l'Auditeur parlent).[BR]Dans les conversations où quelque chose est offert, utilisez l'IndexTexteJeu pour indiquer qui donne l'objet (AMOUNT, TECHNAME, OBJECTNAME)[BR]Syntaxe : {GAMETAG:#} [BR]Exemple 1 : "Nous, les {PLAYERFACTIONLONG:1} déclarons la guerre à vous, les {PLAYERFACTIONLONG:2}" [BR]Exemple 2 : "Les {PLAYERFACTION:3} n'existent plus."]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
@@ -34,19 +34,19 @@
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
-        <String><![CDATA[Nom du dirigeant de la civilisation un joueur]]></String>
+        <String><![CDATA[Nom du dirigeant de la civilisation d'un joueur]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
-        <String><![CDATA[Tours avant achèvement un projet]]></String>
+        <String><![CDATA[Tours avant l'achèvement un projet]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
-        <String><![CDATA[Nom d&apos;un projet dans une file d&apos;attente (chantier astronaval ou planète)]]></String>
+        <String><![CDATA[Nom d'un projet dans une file d'attente (chantier astronaval ou planète)]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
-        <String><![CDATA[Utilisé pour la condition de victoire pour mettre fin au jeu]]></String>
+        <String><![CDATA[Utilisé pour la condition de victoire par laquelle le jeu à pris fin]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
@@ -62,11 +62,11 @@
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
-        <String><![CDATA[Nom d'une technologie offerte/demandée/demandée.]]></String>
+        <String><![CDATA[Nom d'une technologie offerte/exigée/demandée.]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
-        <String><![CDATA[Nom d'un objet offert/demandé/demandé]]></String>
+        <String><![CDATA[Nom d'un objet offert/exgigé/demandé]]></String>
     </StringTable>
     <StringTable>
         <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
