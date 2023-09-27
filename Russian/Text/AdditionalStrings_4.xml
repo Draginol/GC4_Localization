@@ -1,1320 +1,1200 @@
-
-<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd"><StringTable>
-        <Label>AddSiege_Name</Label>
-        <String>Add Shock Troopers</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSiege_Dec</Label>
-        <String>Install shock troopers on target ship to assist in conquering worlds.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>PlanetFertilityIncrease_Name</Label>
-        <String>Fertilize Planet</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetFertilityIncrease_Dec</Label>
-        <String>Increases fertility of target colony.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>GiveHope_Name</Label>
-        <String>Give Hope</String>
-    </StringTable>
-    <StringTable>
-        <Label>GiveHope_Dec</Label>
-        <String>Give a series of inspirational speeches to the target core world to incresae their approval.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Mitosis_Name</Label>
-        <String>Mitosis</String>
-    </StringTable>
-    <StringTable>
-        <Label>Mitosis_Dec</Label>
-        <String>Splits an Irradiated being into two creating resulting in a new one on target planet.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Swarm_Name</Label>
-        <String>Swarm</String>
-    </StringTable>
-    <StringTable>
-        <Label>Swarm_Dec</Label>
-        <String>For six months all members of our species that have the [HS=HS_Consuming]Consuming[/HS] will see their abilities doubled.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>PlanetVision_Name</Label>
-        <String>Planetary Clairvoyance</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetVision_Dec</Label>
-        <String>Greatly expand the sensor vision of the target world to see what is remotely near it. Effect begins one month later.</String>
-    </StringTable>
-
-<StringTable>
-    <Label>DEFAULT_REBEL_CIV_NAME</Label>
-    <String>Rebels</String>
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>AddSiege_Name</Label>
+    <String>Добавить Штурмовиков</String>
   </StringTable>
-
-<StringTable>
-		<Label>Hotspot_ZoneOfControlTitle</Label>
-		<String>Zone of Control</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ZoneOfControlDec</Label>
-		<String>The Zone of Control marks where a civilization's Influence extends to and is dominant. The Zone of Control is represented by shading the galaxy, the dominant Civilization's color. Multiple Civilizations may have Influence over a cell, but the Civilization with the highest Influence in the cell will be granted the cell.[BR][BR]Some actions are affected by the Zone of Control. Specific actions like mining asteroids can only be performed on objects within the Zone of Control. Other actions, like building Starbases, that can be performed outside the Zone of Control can not be performed in other Civilizations' Zone of Control.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TileTitle</Label>
-		<String>Tile</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TileDec</Label>
-		<String>The game space is divided into hexagonal Tiles. Distance is measured by the number of Tiles between locations. The grid of Tiles can be turned on and off in the Options Menu under Interface. Toggling Show Grid When Close and Show Grid When Far will set whether tiles are visible at certain zoom distances.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MonthsTitle</Label>
-		<String>Months</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MonthsDec</Label>
-		<String>Every game occurs in turns. A Month measures the amount of time between turns. A month passes after every Civilization has taken its turn.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MovesTitle</Label>
-		<String>[ICON=Moves_Icon] Moves</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MovesDec</Label>
-		<String>Every Ship and Fleet has a set amount of [ICON=Moves_Icon] Moves. [ICON=Moves_Icon] Moves are the number of [HS=HS_Tile]Tiles[/HS] the Ship or Fleet can traverse in a [HS=HS_Months]Month[/HS].[BR][BR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipTitle</Label>
-		<String>Ship</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipDec</Label>
-		<String>A ship is any individual mobile unit.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FleetTitle</Label>
-		<String>Fleet</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FleetDec</Label>
-		<String>A Fleet is a group of [HS=HS_Ship]Ships[/HS]. Fleets can be formed by  [HS=HS_ShipMovement]Moving[/HS] [HS=HS_Ship]Ships[/HS] onto the same [HS=HS_Tile]Tile[/HS]. How many [HS=HS_Ship]Ships[/HS] can be in a Fleet is determined by the current [HS=HS_Logistics]Logistics[/HS]. Each [HS=HS_Ship]Ship[/HS] has a [HS=HS_Logistics]Logistics[/HS] value and will add to the current Fleet's [HS=HS_Logistics]Logistics[/HS] score. If a [HS=HS_Ship]Ship[/HS] has a higher [HS=HS_Logistics]Logistics[/HS] score than the Fleet can incorporate, it will be unable to join the Fleet.[BR][BR]Utilizing Fleets is vital to survival. Groups of [HS=HS_Ship]Ships[/HS] do better in combat than individual [HS=HS_Ship]Ships[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipMovementTitle</Label>
-		<String>Ship Movement</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipMovementDec</Label>
-		<String>Individual [HS=HS_Ship]Ships[/HS] and [HS=HS_Fleet]Fleets[/HS] can be moved around the galaxy by selecting the [HS=HS_Ship]Ship[/HS] or [HS=HS_Fleet]Fleet[/HS] with the LEFT Mouse Button and then designating a [HS=HS_Tile]Tile[/HS] to move to with the RIGHT Mouse Button.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetTypeTitle</Label>
-		<String>Planet Type</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetTypeDec</Label>
-		<String>Planet Type is the classification of a planet's biome and general environment. Different Planet Types often have different terrains in different amounts, determining what resources the planet can provide.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetClassTitle</Label>
-		<String>Planet Class</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetClassDec</Label>
-		<String>Planet Class is a measurement of the habitable space of a planet. Any planet with a Planet Class of 1 or greater can be [HS=HS_Colinizing]Colonized[/HS]. The higher the Planet Class, the more space there is for development. Planets with a higher Planet Class generally provide more resources than planets of a lower Planet Class of the identical [HS=HS_PlanetType]Planet Type[/HS].[BR][BR]Planets with a Planet Class of 0 are considered a [HS=HS_DeadWorld]Dead World[/HS] and can not be colonized.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_DeadWorldTitle</Label>
-		<String>Dead World</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_DeadWorldDec</Label>
-		<String>A Dead World is any planet with a [HS=HS_PlanetClass]Planet Class[/HS] of 0. Dead Worlds can not be colonized.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ColinizingTitle</Label>
-		<String>Colonizing</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ColinizingDec</Label>
-		<String>Colonizing new worlds is essential to expand a Civilization's [HS=HS_ZoneOfControl]Zone of Control[/HS] and gaining access to more resources. Planets can only be [HS=HS_ColonizeOrder]Colonized[/HS] if there is no claim to the planet. Once a Planet is Colonized, it is claimed by the Colonizing Civilization. [BR][BR]A Planet must have a [HS=HS_PlanetClass]Planet Class[/HS] 1 or greater to be Colonized. Planets with a Planet Class of 0 are considered a [HS=HS_DeadWorld]Dead World[/HS] and can not be colonized.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ColonizeOrderTitle</Label>
-		<String>Colonize Order</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ColonizeOrderDec</Label>
-		<String>Colony Ships can be used to [HS=HS_Colinizing]Colonize[/HS] new worlds. To [HS=HS_Colinizing]Colonize[/HS] a planet, first, select the [HS=HS_Ship]Ship[/HS] with the LEFT Mouse Button. With the appropriate [HS=HS_Ship]Ship[/HS] selected, order the [HS=HS_Ship]Ship[/HS] to [HS=HS_ShipMovement]Move[/HS] to a planet with a [HS=HS_PlanetClass]Planet Class[/HS] of 1 or greater with the RIGHT Mouse Button. It may take several [HS=HS_Months]Months[/HS], but once the Colony Ship reaches the planet, it will colonize it tktkif abletktk.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SurveyOrderTitle</Label>
-		<String>Survey Order</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SurveyOrderDec</Label>
-		<String>The galaxy is often filled with [HS=HS_Anomaly]Anomalies[/HS] that can be Surveyed by a [HS=HS_SurveyShip]Survey Ship[/HS]. To order a [HS=HS_Ship]Ship[/HS] to Survey an [HS=HS_Anomaly]Anomaly[/HS], begin by selecting the [HS=HS_SurveyShip]Survey Ship[/HS] with the LEFT Mouse Button. Then order the [HS=HS_Ship]Ship[/HS] to [HS=HS_ShipMovement]Move[/HS] to the [HS=HS_Anomaly]Anomaly[/HS] location. Once the [HS=HS_Ship]Ship[/HS] arrives at its destination, it will begin to Survey the [HS=HS_Anomaly]Anomaly[/HS]. Surveying takes several [HS=HS_Months]Months[/HS].[BR][BR]A ship that is moved, attacked, or otherwise interrupted will lose all progress, and the Survey will need to start from the start.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AttackOrderTitle</Label>
-		<String>Attack Order</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AttackOrderDec</Label>
-		<String>There are many threats in the galaxy, and often offensive actions must be taken. [HS=HS_Ship]Ships[/HS] and [HS=HS_Fleet]Fleets[/HS] that have weapons can Attack other entities. To order an Attack, select the [HS=HS_Ship]Ship[/HS] or [HS=HS_Fleet]Fleet[/HS] with the LEFT Mouse Button. Then order the [HS=HS_Ship]Ship[/HS] or [HS=HS_Fleet]Fleet[/HS] to [HS=HS_ShipMovement]Move[/HS] to the target's location with the RIGHT Mouse Button. Once the destination is reached, combat will begin.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoExploreTitle</Label>
-		<String>[ICON=AutoExplore_Icon] Auto-Explore</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoExploreDec</Label>
-		<String>[ICON=AutoExplore_Icon] Auto-Explore is an option that will set [HS=HS_Ship]Ships[/HS] to move without direct orders. [HS=HS_Ship]Ships[/HS] in [ICON=AutoExplore_Icon] Auto-Explore will move to destinations that are currently unknown and uncharted.[BR][BR]If the entire galaxy is explored and there are no uncharted [HS=HS_Tile]Tiles[/HS], the [ICON=AutoExplore_Icon] Auto-Explore option will become unavailable.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoSurveyTitle</Label>
-		<String>[ICON=AutoSurvey_Icon] Auto-Survey</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoSurveyDec</Label>
-		<String>[ICON=AutoSurvey_Icon] Auto-Survey is only available to [HS=HS_Ship]Ships[/HS] with Survey Modules. A [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode will move without direct orders, trying to locate [HS=HS_Anomaly]Anomalies[/HS]. When a [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode is near an [HS=HS_Anomaly ]Anomaly[/HS], it will [HS=HS_SurveyOrder]Survey[/HS] the [HS=HS_Anomaly ]Anomaly[/HS] without direct orders.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoColonizeTitle</Label>
-		<String>[ICON=AutoColonize_Icon] Auto-Colonize</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoColonizeDec</Label>
-		<String>[ICON=AutoColonize_Icon] Auto-Colonize is only available to ships that can [HS=HS_Colinizing]Colonize[/HS] a planet. A [HS=HS_Ship]Ship[/HS] in [ICON=AutoColonize_Icon] Auto-Colonize mode will move without direct orders, trying to locate planets with a [HS=HS_PlanetClass]Planet Class[/HS] of 1 or greater. When a planet is found, the [HS=HS_Ship]Ship[/HS] will [HS=HS_Colinizing]Colonize[/HS] the planet without direct orders.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoMineTitle</Label>
-		<String>[ICON=AutoMine_Icon] Auto-Mine</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoMineDec</Label>
-		<String>[ICON=AutoMine_Icon] Auto-Mine is an option for Asteroid Mining ships. A [HS=HS_Ship]Ship[/HS]  in [ICON=AutoMine_Icon] Auto-Mine will move without direct orders to try and find Asteroids within the [HS=HS_ZoneOfControl]Zone of Control[/HS] to mine.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SectorTitle</Label>
-		<String>Sector</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SectorDec</Label>
-		<String>A Sector is an area of the Galaxy where Stars Systems are grouped together and can be traversed without specialized [HS=HS_Tech]Tech[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_LeaderMenuTitle</Label>
-		<String>[ICON=Menu_Leader_Icon] Leaders Menu</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_LeaderMenuDec</Label>
-		<String>The [ICON=Menu_Leader_Icon] Leaders Menu is where [HS=HS_Leaders]Leaders[/HS] can be recruited and managed. Under the [ICON=Menu_Leader_Icon] Leaders Menu, there are screens for [HS=HS_RecruitmentScreen]Recruitment[/HS], [HS=HS_MinistersScreen]Ministers[/HS], [HS=HS_GovernorsScreen]Governors[/HS], [HS=HS_DiplomatsScreen]Diplomats[/HS], [HS=HS_CommandersScreen]Commanders[/HS], and [HS=HS_FactionsScreen]Factions[/HS].[BR][BR]Access the [ICON=Menu_Leader_Icon] Leaders Menu by selecting the icon on the Radial Menu with the LEFT Mouse Button.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_RecruitmentScreenTitle</Label>
-		<String>Recruitment Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_RecruitmentScreenDec</Label>
-		<String>The Recruitment Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. Potential [HS=HS_Leaders]Leaders[/HS] will appear under the Recruitment Screen, where they can be assessed and hired. </String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MinistersScreenTitle</Label>
-		<String>Ministers Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MinistersScreenDec</Label>
-		<String>The Ministers Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. Minister Offices provide specific benefits to the whole Civilization based on the stats of the installed [HS=HS_Leaders]Leaders[/HS]. Minister Offices without a [HS=HS_Leaders]Leader[/HS] assigned provide no benefits. Hovering the Mouse over an office will provide specific information about the office and its benefits.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be assigned, unassigned, and reassigned at any point during your turn.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_GovernorsScreenTitle</Label>
-		<String>Governors Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_GovernorsScreenDec</Label>
-		<String>The Governors Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. The Governors Screen briefly overviews every colonized planet with a [HS=HS_PlanetClass]Planet Class[/HS] of 10 or greater. If there is a [HS=HS_Leaders]Leader[/HS] assigned to the planet, the planet is a [HS=HS_CoreWorld]Core World[/HS].[BR][BR][HS=HS_Leaders]Leaders[/HS] can be assigned, unassigned, and reassigned at any point during your turn.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_DiplomatsScreenTitle</Label>
-		<String>Diplomats Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_DiplomatsScreenDec</Label>
-		<String>The Diplomats Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. The Diplomat Screen briefly overviews our relationship with all other known Civilizations. [HS=HS_Leaders]Leader[/HS] can be assigned as [HS=HS_Diplomat]Diplomats[/HS] to affect your relationship with other Civilizations.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be assigned, unassigned, and reassigned at any point during your turn.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CommandersScreenTitle</Label>
-		<String>Commanders Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CommandersScreenDec</Label>
-		<String>The Commanders Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. The Commanders Screen displays all Command Ships available to the Civilization. Command Ships can be deployed by assigning a [HS=HS_Leaders]Leader[/HS] to the ship.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FactionsScreenTitle</Label>
-		<String>Factions Screen</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FactionsScreenDec</Label>
-		<String>The Factions Screen can be accessed through the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. Factions are groups within a Civilization that affect specific stats and resources. Assigning a [HS=HS_Leaders]Leader[/HS] to a Faction causes the effects to change. More than one [HS=HS_Leaders]Leader[/HS] can be assigned to a faction.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be assigned, unassigned, and reassigned at any point during your turn.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CivilizationMenuTitle</Label>
-		<String>Civilization Menu</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CivilizationMenuDec</Label>
-		<String>The [ICON=Menu_CivilizationMenu_Icon] Civilization Menu provides an overview of your entire Civilization and a few tools to manage your Civilization on a larger scale. In the [ICON=Menu_CivilizationMenu_Icon] Civilization Menu, the [HS=HS_Taxes]Tax Rate[/HS] and [HS=HS_Policy]Policies[/HS] can be set.[BR][BR]Access the [ICON=Menu_CivilizationMenu_Icon] Civilization Menu by selecting the icon on the Radial Menu with the LEFT Mouse Button.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SupportingColoniesTitle</Label>
-		<String>Supporting Colonies</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SupportingColoniesDec</Label>
-		<String> A Supporting Colony is any [HS=HS_Colinizing]Colonized[/HS] planet that isn't a [HS=HS_CoreWorld]Core World[/HS]. A Supporting Colony sends resources to the nearest [HS=HS_CoreWorld]Core World[/HS] as Input, increasing the [HS=HS_CoreWorld]Core World's[/HS] Planetary Input to improve the planet's Output.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MineralsTitle</Label>
-		<String>[ICON=Stat_Minerals_Icon] Mineral</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MineralsDec</Label>
-		<String> Minerals are the raw materials available to a [HS=HS_CoreWorld]Core World[/HS]. Minerals are an Input that affects [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS]. The more Minerals a planet has as Input, the higher its [HS=HS_Manufacturing]Manufacturing[/HS] rating.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TechnologyTitle</Label>
-		<String>[ICON=Stat_Technology_Icon] Technology</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TechnologyDec</Label>
-		<String>[ICON=Stat_Technology_Icon] Technology measures intellectual development available to a [HS=HS_CoreWorld]Core World[/HS]. [ICON=Stat_Technology_Icon] Technology is an Input that affects [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS]. The more [ICON=Stat_Technology_Icon] Technology a planet has as Input, the higher its [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] rating.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FarmingTitle</Label>
-		<String>[ICON=Stat_Fertility_Icon] Farming</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FarmingDec</Label>
-		<String>[ICON=Stat_Fertility_Icon] Farming measures the resources agriculture produces available to a [HS=HS_CoreWorld]Core World[/HS]. [ICON=Stat_Fertility_Icon] Farming is an Input that affects [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS]. The more [ICON=Stat_Fertility_Icon] Farming a planet has as Input, the more [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS] the [HS=HS_CoreWorld]Core World[/HS] produces.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CultureTitle</Label>
-		<String>[ICON=Stat_PlanetInfluence_Icon] Culture</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CultureDec</Label>
-		<String>[ICON=Stat_PlanetInfluence_Icon] Culture measures the social significance available to a [HS=HS_CoreWorld]Core World[/HS]. [ICON=Stat_PlanetInfluence_Icon] Culture is an Input that affects [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS]. The more [ICON=Stat_PlanetInfluence_Icon] Culture a planet has as Input, the higher its [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS] rating.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_WealthTitle</Label>
-		<String>[ICON=Stat_Wealth_Icon] Wealth</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_WealthDec</Label>
-		<String>[ICON=Stat_Wealth_Icon] Wealth is the rare and precious materials available to a [HS=HS_CoreWorld]Core World[/HS]. [ICON=Stat_Wealth_Icon] Wealth is an Input that affects [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS]. The more [ICON=Stat_Wealth_Icon] Wealth a planet has as Input, the more [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS] it produces.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ResearchCenterTitle</Label>
-		<String>Research Center</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ResearchCenterDec</Label>
-		<String>The Research Center is a menu that provides an overview of [HS=HS_Tech]Techs[/HS] being researched and allows you to change what [HS=HS_Tech]Tech[/HS] is being researched at any time during your turn. The rate at which [HS=HS_Tech]Tech[/HS] is researched is measured in [HS=HS_Months]Month[/HS] and determined by your Civilizaton's [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS]. At the start of a turn, if a [HS=HS_Tech]Tech[/HS] is completed being Researched, you'll gain access to the Unlocks and have to designate a new [HS=HS_Tech]Tech[/HS] to research.[BR][BR]Select a [HS=HS_Tech]Tech[/HS] to research with the LEFT Mouse Button. The currently [HS=HS_Tech]Tech[/HS] being researched is always displayed in the bottom central panel.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TechTitle</Label>
-		<String>Tech</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TechDec</Label>
-		<String>A Tech is an option at the [HS=HS_ResearchCenter]Research Center[/HS] that, when Researched, will provide distinct Unlocks that can be new [HS=HS_Ship]Ships[/HS], [HS=HS_Improvement]Improvements[/HS], [HS=HS_ExecutiveOrders]Executive Orders[/HS] and more.[BR][BR]Learn more about what a Tech unlocks by hovering the Mouse over the Tech in the [HS=HS_ResearchCenter]Research Center[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PiratesTitle</Label>
-		<String>Pirates</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PiratesDec</Label>
-		<String>Pirates are rogue [HS=HS_Ship]Ships[/HS], [HS=HS_Shipyard]Shipyard[/HS], and planets. By default, Pirates are hostile to all other groups and Civilizations. They can and will engage ships in combat, especially if they think they'll win the fight.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipyardTitle</Label>
-		<String>Shipyard</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipyardDec</Label>
-		<String>A Shipyard is where new [HS=HS_Ship]Ships[/HS] can be constructed. Shipyards require a [HS=HS_CoreWorld]Core World[/HS] to operate and can only be built from [HS=HS_CoreWorld]Core Worlds[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_RushTitle</Label>
-		<String>Rush</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_RushDec</Label>
-		<String>The Rush option allows you to spend [ICON=Stat_Credits_Icon][HS=HS_Credit]Credits[/HS] and [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] to reduce the time to complete a construction to 1 [HS=HS_Months]Month[/HS]. A Rushed construction always moves to the front of the Queue. The Rush option can only be used once per turn on each [HS=HS_CoreWorld]Core World[/HS] and [HS=HS_Shipyard]Shipyard[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetManagementTitle</Label>
-		<String>[ICON=Menu_PlanetManagement_Icon] Planet Management Window</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetManagementDec</Label>
-		<String>The [ICON=Menu_PlanetManagement_Icon]  Planet Management Window is where you can manage your [HS=HS_CoreWorld]Core Worlds[/HS]. You can get detailed breakdowns of the planet's Input and Output along with the status of the planet. You can also construct and deconstruct [HS=HS_Improvement]Improvements[/HS] along with managing Projects.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AdjacencyTitle</Label>
-		<String>Adjacency Bonus</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AdjacencyDec</Label>
-		<String>The Adjacency Bonus applies to [HS=HS_Improvement]Improvements[/HS] built next to each other. To maximize efficiency, it's best to construct similar [HS=HS_Improvement]Improvements[/HS] in adjacent tiles to boost their bonus.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ConstructStarbaseTitle</Label>
-		<String>[ICON=Order_ConstructStarbase] Construct Starbase</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ConstructStarbaseDec</Label>
-		<String>The Construct Starbase order can be given to [HS=HS_Constructor]Constructor[/HS]. This will consume the [HS=HS_Constructor]Constructor[/HS] and create a [HS=HS_Starbase]Starbase[/HS] of a chosen type. [HS=HS_Starbase]Starbases[/HS] can not be constructed in another player's [HS=HS_ZoneOfControl]Zone of Control[/HS] or within 3 [HS=HS_Tile]Tiles[/HS] of another [HS=HS_Starbase]Starbase[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_StarbaseTitle</Label>
-		<String>Starbases</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_StarbaseDec</Label>
-		<String>A Starbase is a specialized immobile construction that can serve a variety of roles, depending on where and how it is built. To build a Starbase, produce a [HS=HS_Constructor]Constructor[/HS] from a [HS=HS_Shipyard]Shipyard[/HS]. A Constructor can then be given the [HS=HS_ConstructStarbase]Construct Starbase[/HS] command to create a Starbase at its current location.[BR][BR]There are four types of Starbases: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]Mining[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic[/HS], and [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]Communication[/HS]. The types available when using the [HS=HS_ConstructStarbase]Construct Starbase [/HS] depends on the resources within the [HS=HS_Constructor]Constructor's[/HS] area of effect.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MilitaryStarbaseTitle</Label>
-		<String>[ICON=Icon_MiltaryStarbase] Military Starbase</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MilitaryStarbaseDec</Label>
-		<String>Dedicates Starbase to protecting your Civilization and its assets</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MiningStarbaseTitle</Label>
-		<String>[ICON=Icon_MiningStarbase] Mining Starbase</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MiningStarbaseDec</Label>
-		<String>Dedicates Starbase to mining nearby [HS=HS_StrategicResource]Strategic Resources[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CommunicationsStarbaseTitle</Label>
-		<String>[ICON=Icon_CommunicationsStarbase] Communications Starbase</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CommunicationsStarbaseDec</Label>
-		<String>Dedicates Starbase to extending your cultural Influence and assets.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_EconomicsStarbaseTitle</Label>
-		<String>[ICON=Icon_EconomicsStarbase] Economics Starbase</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_EconomicsStarbaseDec</Label>
-		<String>Dedicates Starbase to building up the economy of your Core Worlds.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ConqueringPlanetsTitle</Label>
-		<String>[ICON=Conquest_Icon] Conquering Planets</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ConqueringPlanetsDec</Label>
-		<String>All colonized planets have a [ICON=Conquest_Icon] Planetary Conquest rating. This represents how defended a planet is and how much military might it will take to overcome its defenses. [HS=HS_Fleet]Fleets[/HS] have a Conquest Rating, representing how equipped they are to besiege a planet. Some ships, like Transport ships, are better equipped to Conquer planets than others.[BR][BR]To initiate a siege, issue a [HS=HS_ShipMovement]Move[/HS] command to a [HS=HS_Fleet]Fleet[/HS] with the target being the Planet to conquer. When the [HS=HS_Fleet]Fleet[/HS] reaches the Planet, it will initiate a siege if its [ICON=Conquest_Icon] Conquest Rating is high enough to overcome the Planet's [ICON=Conquest_Icon] Conquest Rating.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_StandbyTitle</Label>
-		<String>[ICON=Order_Standby] Standby</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_StandbyDec</Label>
-		<String>The Standby order can be used to have a ship idle indefinitely. Unlike other orders that have scenarios where a ship stops idling, ships in Standby will not leave Standby mode until ordered to do so.</String>
-	</StringTable>
-	
-	
-
-	<StringTable>
-		<Label>Hotspot_Biology</Label>
-		<String>Biology</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_BiologyDec</Label>
-		<String>Biologies are special traits that affect how a civilization colonizes and grows.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CulturalAffinity</Label>
-		<String>Cultural Affinity</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CulturalAffinityDec</Label>
-		<String>Determines what culture tree a civilization starts with discounts towards.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_Behaviors</Label>
-		<String>Behaviors</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_BehaviorsDec</Label>
-		<String>Determines how this civilization will be played when controlled by AI.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_Citizens</Label>
-		<String>Citizens</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CitizensDec</Label>
-		<String>Citizens make up the population of your core worlds, they can be specialized to modify a planet's outputs or are required for building certain ship classes.</String>
-	</StringTable>
-
-   
-<StringTable>
-		<Label>Trait_SelfGovernance_Dec_TK</Label>
-		<String>[I]The smallest minority is the individual. You cannot deny the individual and claim to defend minorities.[/I][BR][BR][COLOR=UIDefaultHighlight]Governors will never rebel[/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Purges_Dec_TK</Label>
-		<String>[I]Your state maintains power through fear, eliminating perceived threats to its control.[/I][BR][BR]  [COLOR=UIDefaultHighlight]Unlocks Orbital Gulag [BR][BR] Unlocks ability to Purge citizens[/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Prestige_Dec_TK</Label>
-		<String>[I]The famous will show you what a culture values. While others worship the vapid and beautiful or the bright and curious, we revere the strong.[/I][BR][BR][COLOR=UIDefaultHighlight]Prestige victory progress +25% [/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Censorship_Dec_TK</Label>
-		<String>[I]The power of censorship lies in its sinister ability to manipulate minds, suppress dissent, and control the narrative.[/I][BR][BR][COLOR=UIDefaultHighlight]Foreign influence on our worlds reduced by 50%[/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Collaboration_Name_TK</Label>
-		<String>Collaboration</String>
-	</StringTable>
-	<StringTable>
-		<Label>Trait_Collaboration_Dec_TK</Label>
-		<String>[I]Scientific collaboration is the cornerstone of innovation, propelling us towards a future built on shared knowledge and collective discovery.[/I][BR][BR][COLOR=UIDefaultHighlight]Unlocks Hyperion Braintrust Improvement[/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Trustworthy_Dec_TK</Label>
-		<String>[I]Trustworthiness is not merely a personal virtue; it is the cornerstone of lasting connections and the backbone of a cohesive community.[/I][BR][BR][COLOR=UIDefaultHighlight]Unlocks Nebulon Monetary Trust Improvement[/COLOR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Trait_Peacefulness_Dec_TK</Label>
-		<String>[I]It is the steadfast commitment to peace that brings hope to the civilizations who cherish its values.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 Diplomatic buff with every civilization for our peacefulness[/COLOR]</String>
-	</StringTable>
-	<StringTable>
-		<Label>Trait_Peacefulness_Diplo_Dec_TK</Label>
-		<String>Your peacefulness</String>
-	</StringTable>
-
-<StringTable>
-		<Label>OfficerSchool_Name_TK</Label>
-		<String>Officer Training School</String>
-	</StringTable>
-	<StringTable>
-		<Label>OfficerSchool_ShortDec_TK</Label>
-		<String>A place for our best and brightest to train and be molded into officers.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>WarInstitution_Name_TK</Label>
-		<String>Institution Of War</String>
-	</StringTable>
-	<StringTable>
-		<Label>WarInstitution_ShortDec_TK</Label>
-		<String>The minutia of every fleet battle in recorded history is studied in the halls of this space station.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>ConquestCenter_Name_TK</Label>
-		<String>Conquest Center</String>
-	</StringTable>
-	<StringTable>
-		<Label>ConquestCenter_ShortDec_TK</Label>
-		<String>This spacestation serves as the strategic hub where our brightest strategists study the art of invasions.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>TacticalCollege_Name_TK</Label>
-		<String>Tactical College</String>
-	</StringTable>
-	<StringTable>
-		<Label>TacticalCollege_ShortDec_TK</Label>
-		<String>This spacestation provides comprehensive training in strategies for space-based combat.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>TacticalInstruction_Name_TK</Label>
-		<String>Tactical Instruction</String>
-	</StringTable>
-	<StringTable>
-		<Label>TacticalInstruction_ShortDec_TK</Label>
-		<String>Provides in-depth training on the tactics and strategies specific to commanding larger ship classes in space combat.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>LogisticsArray_Name_TK</Label>
-		<String>Logistics Array</String>
-	</StringTable>
-	<StringTable>
-		<Label>LogisticsArray_ShortDec_TK</Label>
-		<String>This logistics array spacestation provides extensive training in state control and management of vast interstellar empires.</String>
-	</StringTable>
-
-    
-<StringTable>
-        <Label>NetworkNexus_Name</Label>
-        <String>Network Nexus</String>
-    </StringTable>
-    <StringTable>
-        <Label>NetworkNexus_ShortDec</Label>
-        <String>Central hub for bio-electric research communication.</String>
-    </StringTable>
-    
-
-    <StringTable>
-        <Label>IrradiatedFoundry_Name</Label>
-        <String>Irradiated Foundry</String>
-    </StringTable>
-    <StringTable>
-        <Label>IrradiatedFoundry_ShortDec</Label>
-        <String>Radiation-fueled production hub that grows based on surrounding districts.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ContagionSource_Name</Label>
-        <String>Contagion Source</String>
-    </StringTable>
-    <StringTable>
-        <Label>ContagionSource_ShortDec</Label>
-        <String>Propagation center for cosmic infection increases mitosis rate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Golgi_Name</Label>
-        <String>Golgi</String>
-    </StringTable>
-    <StringTable>
-        <Label>Golgi_ShortDec</Label>
-        <String>Central hub for cellular processing and distant vision..</String>
-    </StringTable>
-    <StringTable>
-        <Label>Incubator_Name</Label>
-        <String>Amoebic Incubator</String>
-    </StringTable>
-    <StringTable>
-        <Label>Incubator_ShortDec</Label>
-        <String>Site for accelerated growth and fission.</String>
-    </StringTable>
-    <StringTable>
-        <Label>KnowledgeMeld_Name</Label>
-        <String>Knowledge Melding Hub</String>
-    </StringTable>
-    <StringTable>
-        <Label>KnowledgeMeld_ShortDec</Label>
-        <String>Convergence point for compelled shared understanding.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>HiveWorkerTraining_Name</Label>
-        <String>Work Instruction Chamber</String>
-    </StringTable>
-    <StringTable>
-        <Label>HiveWorkerTraining_ShortDec</Label>
-        <String>A facility to elevate [HS=HS_Consuming]Consuming[/HS] population [HS=HS_Diligence]Diligence[/HS] by 50%%. Effect increases as it levels up.</String>
-    </StringTable>
-    <StringTable>
-        <Label>BrainBugs_Name</Label>
-        <String>Cerebral Chamber</String>
-    </StringTable>
-    <StringTable>
-        <Label>BrainBugs_ShortDec</Label>
-        <String>Epicenter for increasing [HS=HS_Consuming]Consuming[/HS] population [HS=HS_Intelligence]Intelligence[/HS] by 50%%. Effect increases as it levels up.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>SocialBugs_Name</Label>
-        <String>Harmonious Antennae</String>
-    </StringTable>
-    <StringTable>
-        <Label>SocialBugs_ShortDec</Label>
-        <String>Enhancing [HS=HS_Consuming]Consuming[/HS]unity by increasing [HS=HS_Social]Social[/HS] skills by 50%%. Effect increases as it levels up..</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Hatchery_Name</Label>
-        <String>Hatchery</String>
-    </StringTable>
-    <StringTable>
-        <Label>Hatchery_ShortDec</Label>
-        <String>Birthplace of the next generation [HS=HS_Consuming]Consuming[/HS] citizens. Greatly increases growth.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>WorkHive_Name</Label>
-        <String>Work Hive</String>
-    </StringTable>
-    <StringTable>
-        <Label>WorkHive_ShortDec</Label>
-        <String>Productive hub for the worker caste of [HS=HS_Consuming]Consuming[/HS] by increasing their [HS=HS_Diligence]Diligence[/HS].</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>MotherHive_Name</Label>
-        <String>Mother Hive</String>
-    </StringTable>
-    <StringTable>
-        <Label>MotherHive_ShortDec</Label>
-        <String>Central hub for [HS=HS_Consuming]Consuming[/HS] species on this world. Increases the stats of all creatures with the [HS=HS_Consuming]Consuming[/HS] trait.</String>
-    </StringTable>
-    
-
-
- <StringTable>
-		<Label>ExterminatorsAbility_Name</Label>
-		<String>[ICON=Stat_Militant_Icon] Exterminators</String>
-	</StringTable>
-	<StringTable>
-		<Label>ExterminatorsAbility_ShortName</Label>
-		<String>Exterminators</String>
-	</StringTable>
-	<StringTable>
-		<Label>ExterminatorsAbility_Dec</Label>
-		<String>Transport ships are replaced with planet killing Spore Ships.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>GenocidalAbility_Name</Label>
-		<String>[ICON=Paranoid_Icon] Genocidal</String>
-	</StringTable>
-	<StringTable>
-		<Label>GenocidalAbilityShortName</Label>
-		<String>Genocidal</String>
-	</StringTable>
-	<StringTable>
-		<Label>GenocidalAbility_Dec</Label>
-		<String>Massive advantage in conquering planets due to not caring in the least about collateral damage. [BR][BR]Can convert other species unfortunate enough to end up on their planets into living neural network batteries.</String>
-	</StringTable>
-<StringTable>
-		<Label>MasterTech_StarshipRefits_Name</Label>
-		<String>Starship Refits</String>
-	</StringTable>
-	<StringTable>
-		<Label>MasterTech_StarshipRefits_ShortDec</Label>
-		<String>Allows ships to be upgraded with the best equipment.</String>
-	</StringTable>
-	<StringTable>
-		<Label>MasterTech_StarshipRefits_Dec</Label>
-		<String>When it comes to upgrading existing ships, there is no simple solution. Engineers must solve the problem of getting components out to ships in space and then devise safe methods to replace old weapons and armor with the latest and greatest technology.</String>
-	</StringTable>
-    <StringTable>
+  <StringTable>
+    <Label>AddSiege_Dec</Label>
+    <String>Установите штурмовиков на целевой корабль для помощи в завоевании миров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetFertilityIncrease_Name</Label>
+    <String>Удобрить Планету</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetFertilityIncrease_Dec</Label>
+    <String>Увеличивает плодородие целевой колонии.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GiveHope_Name</Label>
+    <String>Дай Надежду</String>
+  </StringTable>
+  <StringTable>
+    <Label>GiveHope_Dec</Label>
+    <String>Проведите серию вдохновляющих речей для целевого основного мира, чтобы увеличить их одобрение.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Mitosis_Name</Label>
+    <String>Митоз</String>
+  </StringTable>
+  <StringTable>
+    <Label>Mitosis_Dec</Label>
+    <String>Разделяет облученное существо на два, создавая новое на целевой планете.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Swarm_Name</Label>
+    <String>Рой</String>
+  </StringTable>
+  <StringTable>
+    <Label>Swarm_Dec</Label>
+    <String>В течение шести месяцев все представители нашего вида, обладающие [HS=HS_Consuming]Поглощением[/HS], увидят удвоение своих способностей.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetVision_Name</Label>
+    <String>Планетарное Ясновидение</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetVision_Dec</Label>
+    <String>Значительно расширяет датчик видения целевого мира, чтобы видеть, что находится недалеко от него. Эффект начинается через месяц.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DEFAULT_REBEL_CIV_NAME</Label>
+    <String>Бунтари</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ZoneOfControlTitle</Label>
+    <String>Зона Контроля</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ZoneOfControlDec</Label>
+    <String>Зона Контроля обозначает, до каких пределов распространяется и где доминирует влияние цивилизации. Зона Контроля представлена ​​затенением галактики цветом доминирующей Цивилизации. Несколько Цивилизаций могут оказывать влияние на клетку, но Цивилизация с наибольшим влиянием в клетке получит эту клетку.[BR][BR]Некоторые действия затрагивают Зону Контроля. Конкретные действия, такие как добыча астероидов, могут быть выполнены только на объектах внутри Зоны Контроля. Другие действия, такие как строительство звездных баз, которые могут быть выполнены за пределами Зоны Контроля, не могут быть выполнены в Зоне Контроля других Цивилизаций.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TileTitle</Label>
+    <String>Плитка</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TileDec</Label>
+    <String>Игровое пространство разделено на шестиугольные Плитки. Расстояние измеряется количеством Плиток между местами. Сетка из Плиток может быть включена или выключена в Меню Опций в разделе Интерфейс. Переключение пунктов Показать Сетку Когда Близко и Показать Сетку Когда Далеко определит, видны ли плитки на определенных уровнях масштабирования.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MonthsTitle</Label>
+    <String>Месяцы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MonthsDec</Label>
+    <String>Каждая игра проходит по ходам. Месяц измеряет количество времени между ходами. Месяц проходит после того, как каждая цивилизация сделала свой ход.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MovesTitle</Label>
+    <String>[ICON=Moves_Icon] Ходы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MovesDec</Label>
+    <String>У каждого корабля и флота есть определенное количество [ICON=Moves_Icon] ходов. [ICON=Moves_Icon] Ходы - это количество [HS=HS_Tile]плиток[/HS], которые корабль или флот могут преодолеть за [HS=HS_Months]месяц[/HS].[BR][BR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipTitle</Label>
+    <String>Корабль</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipDec</Label>
+    <String>Корабль - это любая отдельная подвижная единица.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FleetTitle</Label>
+    <String>Флот</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FleetDec</Label>
+    <String>Флот - это группа [HS=HS_Ship]Кораблей[/HS]. Флоты могут формироваться путем [HS=HS_ShipMovement]Перемещения[/HS] [HS=HS_Ship]Кораблей[/HS] на одну [HS=HS_Tile]Плитку[/HS]. Сколько [HS=HS_Ship]Кораблей[/HS] может быть в Флоте определяется текущей [HS=HS_Logistics]Логистикой[/HS]. У каждого [HS=HS_Ship]Корабля[/HS] есть значение [HS=HS_Logistics]Логистики[/HS], которое добавляется к текущему показателю [HS=HS_Logistics]Логистики[/HS] Флота. Если у [HS=HS_Ship]Корабля[/HS] показатель [HS=HS_Logistics]Логистики[/HS] выше, чем может включить Флот, он не сможет присоединиться к Флоту.[BR][BR]Использование Флотов жизненно важно для выживания. Группы [HS=HS_Ship]Кораблей[/HS] лучше справляются в бою, чем отдельные [HS=HS_Ship]Корабли[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipMovementTitle</Label>
+    <String>Движение корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipMovementDec</Label>
+    <String>Отдельные [HS=HS_Ship]Корабли[/HS] и [HS=HS_Fleet]Флоты[/HS] можно перемещать по галактике, выбрав [HS=HS_Ship]Корабль[/HS] или [HS=HS_Fleet]Флот[/HS] левой кнопкой мыши, а затем назначив [HS=HS_Tile]Плитку[/HS], к которой следует переместиться, правой кнопкой мыши.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetTypeTitle</Label>
+    <String>Тип Планеты</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetTypeDec</Label>
+    <String>Тип планеты - это классификация биома и общей среды планеты. Разные типы планет часто имеют разные ландшафты в разных количествах, что определяет, какие ресурсы может предоставить планета.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetClassTitle</Label>
+    <String>Класс планеты</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetClassDec</Label>
+    <String>Класс планеты - это мера обитаемого пространства планеты. Любая планета с классом 1 или выше может быть [HS=HS_Colinizing]колонизирована[/HS]. Чем выше класс планеты, тем больше пространства для развития. Планеты с более высоким классом обычно предоставляют больше ресурсов, чем планеты с более низким классом идентичного [HS=HS_PlanetType]типа планеты[/HS].[BR][BR]Планеты с классом 0 считаются [HS=HS_DeadWorld]мертвыми мирами[/HS] и не могут быть колонизированы.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DeadWorldTitle</Label>
+    <String>Мёртвый Мир</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DeadWorldDec</Label>
+    <String>Мертвый мир - это любая планета с [HS=HS_PlanetClass]классом планеты[/HS] равным 0. Мертвые миры не могут быть колонизированы.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColinizingTitle</Label>
+    <String>Колонизация</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColinizingDec</Label>
+    <String>Колонизация новых миров необходима для расширения [HS=HS_ZoneOfControl]Зоны контроля[/HS] цивилизации и получения доступа к большему количеству ресурсов. Планеты могут быть [HS=HS_ColonizeOrder]колонизированы[/HS] только в случае отсутствия на них претензий. Как только планета колонизирована, она становится собственностью колонизирующей цивилизации. [BR][BR]Для колонизации планета должна иметь [HS=HS_PlanetClass]Класс планеты[/HS] 1 или выше. Планеты с классом 0 считаются [HS=HS_DeadWorld]мертвыми мирами[/HS] и не могут быть колонизированы.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColonizeOrderTitle</Label>
+    <String>Приказ Колонизации</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColonizeOrderDec</Label>
+    <String>Корабли-колонисты могут быть использованы для [HS=HS_Colinizing]колонизации[/HS] новых миров. Чтобы [HS=HS_Colinizing]колонизировать[/HS] планету, сначала выберите [HS=HS_Ship]Корабль[/HS] левой кнопкой мыши. С выбранным подходящим [HS=HS_Ship]Кораблем[/HS], отдайте приказ [HS=HS_Ship]Кораблю[/HS] [HS=HS_ShipMovement]Переместиться[/HS] к планете с [HS=HS_PlanetClass]Классом Планеты[/HS] 1 или выше правой кнопкой мыши. Это может занять несколько [HS=HS_Months]месяцев[/HS], но как только корабль-колонист достигнет планеты, он колонизирует ее, если это возможно.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SurveyOrderTitle</Label>
+    <String>Приказ об Обследовании</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SurveyOrderDec</Label>
+    <String>Галактика часто наполнена [HS=HS_Anomaly]Аномалиями[/HS], которые могут быть Исследованы [HS=HS_SurveyShip]Кораблем-Исследователем[/HS]. Чтобы отдать приказ [HS=HS_Ship]Кораблю[/HS] Исследовать [HS=HS_Anomaly]Аномалию[/HS], начните с выбора [HS=HS_SurveyShip]Корабля-Исследователя[/HS] левой кнопкой мыши. Затем отдайте приказ [HS=HS_Ship]Кораблю[/HS] [HS=HS_ShipMovement]Переместиться[/HS] к местоположению [HS=HS_Anomaly]Аномалии[/HS]. Как только [HS=HS_Ship]Корабль[/HS] прибывает к месту назначения, он начнет Исследование [HS=HS_Anomaly]Аномалии[/HS]. Исследование занимает несколько [HS=HS_Months]Месяцев[/HS].[BR][BR]Корабль, который перемещается, подвергается атаке или каким-либо другим образом прерывается, потеряет весь прогресс, и Исследование придется начинать сначала.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AttackOrderTitle</Label>
+    <String>Приказ Атаковать</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AttackOrderDec</Label>
+    <String>В галактике много угроз, и часто необходимы агрессивные действия. [HS=HS_Ship]Корабли[/HS] и [HS=HS_Fleet]Флоты[/HS], оснащенные оружием, могут Атаковать другие объекты. Чтобы отдать приказ на Атаку, выберите [HS=HS_Ship]Корабль[/HS] или [HS=HS_Fleet]Флот[/HS] ЛЕВОЙ кнопкой мыши. Затем отдайте приказ [HS=HS_Ship]Кораблю[/HS] или [HS=HS_Fleet]Флоту[/HS] [HS=HS_ShipMovement]Переместиться[/HS] к местоположению цели ПРАВОЙ кнопкой мыши. Как только пункт назначения будет достигнут, начнется бой.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoExploreTitle</Label>
+    <String>[ICON=AutoExplore_Icon] Авто-Исследование</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoExploreDec</Label>
+    <String>[ICON=AutoExplore_Icon] Авто-Исследование - это опция, которая настроит [HS=HS_Ship]Корабли[/HS] на движение без прямых указаний. [HS=HS_Ship]Корабли[/HS] в [ICON=AutoExplore_Icon] Авто-Исследовании будут двигаться к назначениям, которые в настоящее время неизвестны и не зарегистрированы.[BR][BR]Если вся галактика исследована и нет неоткрытых [HS=HS_Tile]Тайлов[/HS], опция [ICON=AutoExplore_Icon] Авто-Исследование станет недоступной.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoSurveyTitle</Label>
+    <String>[ICON=AutoSurvey_Icon] Авто-Обследование</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoSurveyDec</Label>
+    <String>[ICON=AutoSurvey_Icon] Авто-Обследование доступно только для [HS=HS_Ship]Судов[/HS] с модулями обследования. [HS=HS_Ship]Судно[/HS] в режиме [ICON=AutoSurvey_Icon] Авто-Обследования будет двигаться без прямых указаний, пытаясь обнаружить [HS=HS_Anomaly]Аномалии[/HS]. Когда [HS=HS_Ship]Судно[/HS] в режиме [ICON=AutoSurvey_Icon] Авто-Обследования окажется рядом с [HS=HS_Anomaly ]Аномалией[/HS], оно будет [HS=HS_SurveyOrder]Обследовать[/HS] [HS=HS_Anomaly ]Аномалию[/HS] без прямых указаний.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoColonizeTitle</Label>
+    <String>[ICON=AutoColonize_Icon] Авто-колонизация</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoColonizeDec</Label>
+    <String>[ICON=AutoColonize_Icon] Авто-колонизация доступна только кораблям, которые могут [HS=HS_Colinizing]колонизировать[/HS] планету. [HS=HS_Ship]Корабль[/HS] в режиме [ICON=AutoColonize_Icon] авто-колонизации будет двигаться без прямых приказов, пытаясь найти планеты с [HS=HS_PlanetClass]классом планеты[/HS] 1 или выше. Когда планета найдена, [HS=HS_Ship]корабль[/HS] будет [HS=HS_Colinizing]колонизировать[/HS] планету без прямых приказов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoMineTitle</Label>
+    <String>[ICON=AutoMine_Icon] Авто-шахта</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoMineDec</Label>
+    <String>[ICON=AutoMine_Icon] Авто-шахта - это опция для кораблей, занимающихся добычей астероидов. [HS=HS_Ship]Корабль[/HS] в [ICON=AutoMine_Icon] Авто-шахте будет двигаться без прямых указаний, чтобы попытаться найти астероиды в пределах [HS=HS_ZoneOfControl]Зоны контроля[/HS] для добычи.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SectorTitle</Label>
+    <String>Сектор</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SectorDec</Label>
+    <String>Сектор - это область Галактики, где звездные системы сгруппированы вместе и могут быть пройдены без специализированной [HS=HS_Tech]Технологии[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_LeaderMenuTitle</Label>
+    <String>[ICON=Menu_Leader_Icon] Меню Лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_LeaderMenuDec</Label>
+    <String>Меню [ICON=Menu_Leader_Icon] Лидеры - это место, где можно набирать и управлять [HS=HS_Leaders]Лидерами[/HS]. В меню [ICON=Menu_Leader_Icon] Лидеры есть экраны для [HS=HS_RecruitmentScreen]Набора[/HS], [HS=HS_MinistersScreen]Министров[/HS], [HS=HS_GovernorsScreen]Губернаторов[/HS], [HS=HS_DiplomatsScreen]Дипломатов[/HS], [HS=HS_CommandersScreen]Командиров[/HS] и [HS=HS_FactionsScreen]Фракций[/HS].[BR][BR]Доступ к меню [ICON=Menu_Leader_Icon] Лидеры можно получить, выбрав значок в радиальном меню левой кнопкой мыши.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RecruitmentScreenTitle</Label>
+    <String>Экран Набора</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RecruitmentScreenDec</Label>
+    <String>Экран Набора можно открыть через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидеров[/HS]. Потенциальные [HS=HS_Leaders]Лидеры[/HS] появятся на Экране Набора, где их можно оценить и нанять.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MinistersScreenTitle</Label>
+    <String>Экран Министров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MinistersScreenDec</Label>
+    <String>Экран Министров можно открыть через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидеров[/HS]. Министерства предоставляют специфические преимущества всей Цивилизации на основе статистики установленных [HS=HS_Leaders]Лидеров[/HS]. Министерства без назначенного [HS=HS_Leaders]Лидера[/HS] не дают преимуществ. Наведение мыши на офис предоставит специфическую информацию об офисе и его преимуществах.[BR][BR][HS=HS_Leaders]Лидеры[/HS] могут быть назначены, освобождены от должности и переназначены в любой момент вашего хода.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_GovernorsScreenTitle</Label>
+    <String>Экран Губернаторов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_GovernorsScreenDec</Label>
+    <String>Экран Губернатора доступен через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидеров[/HS]. Экран Губернатора кратко обзорит каждую колонизированную планету с [HS=HS_PlanetClass]Классом Планеты[/HS] 10 или больше. Если к планете назначен [HS=HS_Leaders]Лидер[/HS], планета является [HS=HS_CoreWorld]Центральным Миром[/HS].[BR][BR][HS=HS_Leaders]Лидеры[/HS] могут быть назначены, сняты с должности и переназначены в любой момент вашего хода.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DiplomatsScreenTitle</Label>
+    <String>Экран Дипломатов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DiplomatsScreenDec</Label>
+    <String>Экран Дипломатов доступен через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидеров[/HS]. Экран Дипломата кратко дает обзор нашего отношения со всеми известными Цивилизациями. [HS=HS_Leaders]Лидер[/HS] может быть назначен в качестве [HS=HS_Diplomat]Дипломатов[/HS], чтобы влиять на ваше отношение с другими Цивилизациями.[BR][BR][HS=HS_Leaders]Лидеры[/HS] могут быть назначены, сняты с должности и переназначены в любой момент вашего хода.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommandersScreenTitle</Label>
+    <String>Экран Командира</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommandersScreenDec</Label>
+    <String>Экран Командиров можно открыть через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидеров[/HS]. Экран Командиров отображает все Доступные Командные Корабли цивилизации. Командные корабли могут быть развернуты путем назначения [HS=HS_Leaders]Лидера[/HS] на корабль.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FactionsScreenTitle</Label>
+    <String>Экран Фракций</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FactionsScreenDec</Label>
+    <String>Экран Фракций можно открыть через [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Меню Лидера[/HS]. Фракции - это группы внутри цивилизации, которые влияют на определенные статистики и ресурсы. Назначение [HS=HS_Leaders]Лидера[/HS] на Фракцию меняет эффекты. Более одного [HS=HS_Leaders]Лидера[/HS] можно назначить на фракцию.[BR][BR][HS=HS_Leaders]Лидеров[/HS] можно назначить, снять с должности и переназначить в любой момент вашего хода.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CivilizationMenuTitle</Label>
+    <String>Меню Цивилизации</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CivilizationMenuDec</Label>
+    <String>Меню [ICON=Menu_CivilizationMenu_Icon] Цивилизация дает обзор всей вашей Цивилизации и несколько инструментов для управления вашей Цивилизацией в более крупных масштабах. В меню [ICON=Menu_CivilizationMenu_Icon] Цивилизация, можно установить [HS=HS_Taxes]Ставку Налога[/HS] и [HS=HS_Policy]Политики[/HS].[BR][BR]Доступ к меню [ICON=Menu_CivilizationMenu_Icon] Цивилизация можно получить, выбрав иконку в Радиальном меню с помощью ЛЕВОЙ кнопки мыши.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SupportingColoniesTitle</Label>
+    <String>Поддержка Колоний</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SupportingColoniesDec</Label>
+    <String>Поддерживающей колонией является любая [HS=HS_Colinizing]колонизированная[/HS] планета, которая не является [HS=HS_CoreWorld]центральным миром[/HS]. Поддерживающая колония отправляет ресурсы ближайшему [HS=HS_CoreWorld]центральному миру[/HS] в качестве ввода, увеличивая планетарный ввод [HS=HS_CoreWorld]центрального мира[/HS], чтобы улучшить выходные данные планеты.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MineralsTitle</Label>
+    <String>[ICON=Stat_Minerals_Icon] Минерал</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MineralsDec</Label>
+    <String>Минералы являются сырьевыми материалами, доступными для [HS=HS_CoreWorld]Центрального Мира[/HS]. Минералы - это Вход, который влияет на [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Производство[/HS]. Чем больше Минералов в качестве Входа у планеты, тем выше ее рейтинг [HS=HS_Manufacturing]Производство[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechnologyTitle</Label>
+    <String>[ICON=Stat_Technology_Icon] Технология</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechnologyDec</Label>
+    <String>[ICON=Stat_Technology_Icon] Технологии отражают доступный интеллектуальный потенциал [HS=HS_CoreWorld]Центрального Мира[/HS]. [ICON=Stat_Technology_Icon] Технологии - это Входной параметр, влияющий на [ICON=Stat_Research_Icon] [HS=HS_Research]Исследования[/HS]. Чем больше [ICON=Stat_Technology_Icon] Технологий имеет планета в качестве Входного параметра, тем выше ее [ICON=Stat_Research_Icon] [HS=HS_Research]Рейтинг Исследований[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FarmingTitle</Label>
+    <String>[ICON=Stat_Fertility_Icon] Фермерство</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FarmingDec</Label>
+    <String>[ICON=Stat_Fertility_Icon] Сельское хозяйство измеряет ресурсы, производимые сельским хозяйством, доступные [HS=HS_CoreWorld]Центральному Миру[/HS]. [ICON=Stat_Fertility_Icon] Сельское хозяйство - это входной параметр, который влияет на [ICON=Stat_Food_Icon] [HS=HS_Food]Продовольствие[/HS]. Чем больше [ICON=Stat_Fertility_Icon] Сельского хозяйства имеет планета как вход, тем больше [ICON=Stat_Food_Icon] [HS=HS_Food]Продовольствия[/HS] производит [HS=HS_CoreWorld]Центральный Мир[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CultureTitle</Label>
+    <String>[ICON=Stat_PlanetInfluence_Icon] Культура</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CultureDec</Label>
+    <String>[ICON=Stat_PlanetInfluence_Icon] Культура отражает социальную значимость, доступную для [HS=HS_CoreWorld]Центрального Мира[/HS]. [ICON=Stat_PlanetInfluence_Icon] Культура является входным параметром, влияющим на [ICON=Stat_Influence_Icon] [HS=HS_Influence]Влияние[/HS]. Чем больше [ICON=Stat_PlanetInfluence_Icon] Культуры имеет планета в качестве входного параметра, тем выше ее [ICON=Stat_Influence_Icon] [HS=HS_Influence]Рейтинг Влияния[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_WealthTitle</Label>
+    <String>[ICON=Stat_Wealth_Icon] Богатство</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_WealthDec</Label>
+    <String>[ICON=Stat_Wealth_Icon] Богатство - это редкие и ценные материалы, доступные [HS=HS_CoreWorld]Центральному Миру[/HS]. [ICON=Stat_Wealth_Icon] Богатство является входным параметром, влияющим на [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Доход[/HS]. Чем больше [ICON=Stat_Wealth_Icon] Богатства планета имеет в качестве входного параметра, тем больше [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Дохода[/HS] она производит.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ResearchCenterTitle</Label>
+    <String>Центр Исследований</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ResearchCenterDec</Label>
+    <String>Исследовательский центр - это меню, которое предоставляет обзор [HS=HS_Tech]Технологий[/HS], исследуемых в данный момент, и позволяет вам менять исследуемую [HS=HS_Tech]Технологию[/HS] в любое время вашего хода. Скорость исследования [HS=HS_Tech]Технологии[/HS] измеряется в [HS=HS_Months]Месяце[/HS] и определяется [ICON=Stat_Research_Icon] [HS=HS_Research]Исследованиями[/HS] вашей Цивилизации. В начале хода, если [HS=HS_Tech]Технология[/HS] исследована, вы получите доступ к Разблокировкам и должны будете назначить новую [HS=HS_Tech]Технологию[/HS] для исследования.[BR][BR]Выберите [HS=HS_Tech]Технологию[/HS] для исследования с помощью ЛЕВОЙ кнопки мыши. Текущая исследуемая [HS=HS_Tech]Технология[/HS] всегда отображается в центральной нижней панели.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechTitle</Label>
+    <String>Технологии</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechDec</Label>
+    <String>Технология - это опция в [HS=HS_ResearchCenter]Научном центре[/HS], которая при исследовании предоставит уникальные Разблокировки, которые могут быть новыми [HS=HS_Ship]Кораблями[/HS], [HS=HS_Improvement]Улучшениями[/HS], [HS=HS_ExecutiveOrders]Исполнительными приказами[/HS] и многим другим.[BR][BR]Узнайте больше о том, что разблокирует Технология, наведя курсор мыши на Технологию в [HS=HS_ResearchCenter]Научном центре[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PiratesTitle</Label>
+    <String>Пираты</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PiratesDec</Label>
+    <String>Пираты - это беспредельные [HS=HS_Ship]Корабли[/HS], [HS=HS_Shipyard]Верфи[/HS] и планеты. По умолчанию, Пираты враждебны ко всем остальным группам и Цивилизациям. Они могут и будут вступать в бой с кораблями, особенно если думают, что выиграют битву.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipyardTitle</Label>
+    <String>Верфь</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipyardDec</Label>
+    <String>Верфь - это место, где можно строить новые [HS=HS_Ship]корабли[/HS]. Для работы верфи требуется [HS=HS_CoreWorld]Центральный мир[/HS] и она может быть построена только на [HS=HS_CoreWorld]Центральных мирах[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RushTitle</Label>
+    <String>Спешка</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RushDec</Label>
+    <String>Опция Rush позволяет вам потратить [ICON=Stat_Credits_Icon][HS=HS_Credit]Кредиты[/HS] и [ICON=Stat_Control_Icon] [HS=HS_Control]Управление[/HS] для сокращения времени строительства до 1 [HS=HS_Months]Месяца[/HS]. Строительство с применением Rush всегда перемещается в начало очереди. Опцию Rush можно использовать только один раз за ход на каждой [HS=HS_CoreWorld]Центральной планете[/HS] и [HS=HS_Shipyard]Верфи[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetManagementTitle</Label>
+    <String>[ICON=Menu_PlanetManagement_Icon] Окно Управления Планетой</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetManagementDec</Label>
+    <String>Окно [ICON=Menu_PlanetManagement_Icon] Управления Планетами - это место, где вы можете управлять своими [HS=HS_CoreWorld]Центральными Мирами[/HS]. Вы можете получить подробное разбиение входных и выходных данных планеты, а также узнать статус планеты. Вы также можете строить и разрушать [HS=HS_Improvement]Улучшения[/HS], а также управлять Проектами.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AdjacencyTitle</Label>
+    <String>Бонус Смежности</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AdjacencyDec</Label>
+    <String>Бонус Смежности применяется к [HS=HS_Improvement]Улучшениям[/HS], построенным рядом друг с другом. Для максимизации эффективности лучше всего строить похожие [HS=HS_Improvement]Улучшения[/HS] на соседних клетках, чтобы увеличить их бонус.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConstructStarbaseTitle</Label>
+    <String>[ICON=Order_ConstructStarbase] Строительство космической базы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConstructStarbaseDec</Label>
+    <String>Приказ Строительство космической базы может быть дан [HS=HS_Constructor]Строителю[/HS]. Это приведет к использованию [HS=HS_Constructor]Строителя[/HS] и созданию [HS=HS_Starbase]Космической базы[/HS] выбранного типа. [HS=HS_Starbase]Космические базы[/HS] не могут быть построены в чужой [HS=HS_ZoneOfControl]Зоне Контроля[/HS] или в пределах 3 [HS=HS_Tile]Плиток[/HS] от другой [HS=HS_Starbase]Космической базы[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StarbaseTitle</Label>
+    <String>Звездные базы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StarbaseDec</Label>
+    <String>Звездная база - это специализированное неподвижное строение, которое может выполнять различные функции в зависимости от места и способа его постройки. Чтобы построить звездную базу, произведите [HS=HS_Constructor]Конструктор[/HS] на [HS=HS_Shipyard]Верфи[/HS]. Затем конструктору можно дать команду [HS=HS_ConstructStarbase]Построить Звездную Базу[/HS] чтобы создать звездную базу в его текущем местоположении.[BR][BR]Существует четыре типа Звездных Баз: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Военная[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]Добывающая[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Экономическая[/HS], и [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]Коммуникационная[/HS]. Доступные типы при использовании команды [HS=HS_ConstructStarbase]Построить Звездную Базу[/HS] зависят от ресурсов в зоне действия [HS=HS_Constructor]Конструктора[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MilitaryStarbaseTitle</Label>
+    <String>[ICON=Icon_MilitaryStarbase] Военная космическая база</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MilitaryStarbaseDec</Label>
+    <String>Посвящает Звездную базу защите вашей Цивилизации и ее ресурсов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MiningStarbaseTitle</Label>
+    <String>[ICON=Icon_MiningStarbase] Горнодобывающая космическая база</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MiningStarbaseDec</Label>
+    <String>Посвящает Звездную базу добыче близлежащих [HS=HS_StrategicResource]стратегических ресурсов[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommunicationsStarbaseTitle</Label>
+    <String>[ICON=Icon_CommunicationsStarbase] Коммуникационная Космическая База</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommunicationsStarbaseDec</Label>
+    <String>Посвящает Звездную базу расширению вашего культурного Влияния и активов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_EconomicsStarbaseTitle</Label>
+    <String>[ICON=Icon_EconomicsStarbase] Экономическая Космическая База</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_EconomicsStarbaseDec</Label>
+    <String>Посвящает Звездную базу развитию экономики ваших Центральных миров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConqueringPlanetsTitle</Label>
+    <String>[ICON=Conquest_Icon] Завоевание планет</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConqueringPlanetsDec</Label>
+    <String>Все колонизированные планеты имеют рейтинг [ICON=Conquest_Icon] Планетарного Завоевания. Это отражает степень защищенности планеты и количество военной силы, которое потребуется, чтобы преодолеть ее оборону. [HS=HS_Fleet]Флоты[/HS] имеют Рейтинг Завоевания, показывающий, насколько они подготовлены для осады планеты. Некоторые корабли, например, транспортные, лучше приспособлены для завоевания планет, чем другие.[BR][BR]Чтобы начать осаду, отдайте команду [HS=HS_ShipMovement]Перемещение[/HS] [HS=HS_Fleet]Флоту[/HS] с целью завоевания Планеты. Когда [HS=HS_Fleet]Флот[/HS] доберется до Планеты, он начнет осаду, если его рейтинг [ICON=Conquest_Icon] Завоевания достаточно высок, чтобы преодолеть рейтинг [ICON=Conquest_Icon] Завоевания Планеты.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StandbyTitle</Label>
+    <String>[ICON=Order_Standby] В режиме ожидания</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StandbyDec</Label>
+    <String>Команда "Ожидание" может быть использована для бесконечного простоя корабля. В отличие от других команд, при которых сценарии предполагают прекращение простоя, корабли в режиме "Ожидание" не выйдут из него, пока не получат соответствующую команду.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_Biology</Label>
+    <String>Биология</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_BiologyDec</Label>
+    <String>Биологии - это особые черты, влияющие на то, как цивилизация колонизирует и развивается.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CulturalAffinity</Label>
+    <String>Культурная Близость</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CulturalAffinityDec</Label>
+    <String>Определяет, к какому культурному дереву цивилизация имеет начальные скидки.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_Behaviors</Label>
+    <String>Поведения</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_BehaviorsDec</Label>
+    <String>Определяет, как будет играться эта цивилизация под управлением AI.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_Citizens</Label>
+    <String>Граждане</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CitizensDec</Label>
+    <String>Граждане составляют население ваших основных миров, они могут специализироваться для изменения выходных данных планеты или требуются для строительства определенных классов кораблей.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_SelfGovernance_Dec_TK</Label>
+    <String>[I]Самым малым меньшинством является индивид. Вы не можете отрицать индивида и утверждать, что защищаете меньшинства.[/I][BR][BR][COLOR=UIDefaultHighlight]Губернаторы никогда не восстанут[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Purges_Dec_TK</Label>
+    <String>[I]Ваше государство поддерживает власть через страх, устраняя воспринимаемые угрозы своему контролю.[/I][BR][BR] [COLOR=UIDefaultHighlight]Открывает Орбитальный Гулаг [BR][BR] Дает возможность Чистки граждан[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Prestige_Dec_TK</Label>
+    <String>[I]Знаменитые люди покажут вам, что ценит культура. Пока другие обожают пустых и красивых или ярких и любознательных, мы чтим сильных.[/I][BR][BR][COLOR=UIDefaultHighlight]Прогресс к победе за престиж +25% [/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Censorship_Dec_TK</Label>
+    <String>[I]Сила цензуры заключается в её зловещей способности манипулировать сознанием, подавлять несогласие и контролировать повествование.[/I][BR][BR][COLOR=UIDefaultHighlight]Иностранный влияние на наши миры снижено на 50%[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Collaboration_Name_TK</Label>
+    <String>Сотрудничество</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Collaboration_Dec_TK</Label>
+    <String>[I]Научное сотрудничество - краеугольный камень инноваций, который толкает нас к будущему, построенному на общих знаниях и коллективном открытии.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Гиперионский мозговой доверие"[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Trustworthy_Dec_TK</Label>
+    <String>[I]Достоверность - это не просто личная добродетель; это краеугольный камень прочных связей и основа сплоченного сообщества.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Доверительная монетарная система Небулона"[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Peacefulness_Dec_TK</Label>
+    <String>[I]Непоколебимое стремление к миру приносит надежду цивилизациям, которые ценят его принципы.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 к дипломатическому бонусу с каждой цивилизацией за наш миролюбие[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Trait_Peacefulness_Diplo_Dec_TK</Label>
+    <String>Ваше миролюбие</String>
+  </StringTable>
+  <StringTable>
+    <Label>OfficerSchool_Name_TK</Label>
+    <String>Школа_Подготовки_Офицеров_TK</String>
+  </StringTable>
+  <StringTable>
+    <Label>OfficerSchool_ShortDec_TK</Label>
+    <String>Место, где наши лучшие и самые талантливые обучаются и становятся офицерами.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarInstitution_Name_TK</Label>
+    <String>Институт Войны</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarInstitution_ShortDec_TK</Label>
+    <String>Детали каждого флотского сражения в зафиксированной истории изучаются в залах этой космической станции.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ConquestCenter_Name_TK</Label>
+    <String>Центр Завоеваний</String>
+  </StringTable>
+  <StringTable>
+    <Label>ConquestCenter_ShortDec_TK</Label>
+    <String>Эта космическая станция служит стратегическим центром, где наши лучшие стратеги изучают искусство вторжений.</String>
+  </StringTable>
+  <StringTable>
+    <Label>TacticalCollege_Name_TK</Label>
+    <String>Тактический Колледж</String>
+  </StringTable>
+  <StringTable>
+    <Label>TacticalCollege_ShortDec_TK</Label>
+    <String>Эта космическая станция предлагает всестороннюю подготовку в стратегиях космического боя.</String>
+  </StringTable>
+  <StringTable>
+    <Label>TacticalInstruction_Name_TK</Label>
+    <String>Тактическая Инструкция</String>
+  </StringTable>
+  <StringTable>
+    <Label>TacticalInstruction_ShortDec_TK</Label>
+    <String>Предоставляет подробное обучение тактике и стратегиям, специфическим для командования большими классами кораблей в космическом бою.</String>
+  </StringTable>
+  <StringTable>
+    <Label>LogisticsArray_Name_TK</Label>
+    <String>Логистическая Сетка</String>
+  </StringTable>
+  <StringTable>
+    <Label>LogisticsArray_ShortDec_TK</Label>
+    <String>Эта космическая станция с логистическим массивом предлагает обширное обучение управлению и контролю огромных межзвездных империй.</String>
+  </StringTable>
+  <StringTable>
+    <Label>NetworkNexus_Name</Label>
+    <String>Сетевой Узел</String>
+  </StringTable>
+  <StringTable>
+    <Label>NetworkNexus_ShortDec</Label>
+    <String>Центральный узел для биоэлектрической научной связи.</String>
+  </StringTable>
+  <StringTable>
+    <Label>IrradiatedFoundry_Name</Label>
+    <String>Облученная Литейная</String>
+  </StringTable>
+  <StringTable>
+    <Label>IrradiatedFoundry_ShortDec</Label>
+    <String>Производственный центр, питающийся радиацией и растущий на основе окружающих районов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ContagionSource_Name</Label>
+    <String>Источник Заражения</String>
+  </StringTable>
+  <StringTable>
+    <Label>ContagionSource_ShortDec</Label>
+    <String>Центр распространения космической инфекции увеличивает скорость митоза.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Golgi_Name</Label>
+    <String>Гольджи</String>
+  </StringTable>
+  <StringTable>
+    <Label>Golgi_ShortDec</Label>
+    <String>Центральный узел для клеточной обработки и дальнего зрения..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Incubator_Name</Label>
+    <String>Инкубатор Амебы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Incubator_ShortDec</Label>
+    <String>Место для ускоренного роста и деления.</String>
+  </StringTable>
+  <StringTable>
+    <Label>KnowledgeMeld_Name</Label>
+    <String>Узел Слияния Знаний</String>
+  </StringTable>
+  <StringTable>
+    <Label>KnowledgeMeld_ShortDec</Label>
+    <String>Точка сближения для вынужденного общего понимания.</String>
+  </StringTable>
+  <StringTable>
+    <Label>HiveWorkerTraining_Name</Label>
+    <String>Камера Инструктажа Работы</String>
+  </StringTable>
+  <StringTable>
+    <Label>HiveWorkerTraining_ShortDec</Label>
+    <String>Объект для увеличения [HS=HS_Consuming]потребления[/HS] населения [HS=HS_Diligence]Усердием[/HS] на 50%%. Эффект усиливается с повышением уровня.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BrainBugs_Name</Label>
+    <String>Церебральная Камера</String>
+  </StringTable>
+  <StringTable>
+    <Label>BrainBugs_ShortDec</Label>
+    <String>Эпицентр увеличения [HS=HS_Consuming]Потребляющего[/HS] населения [HS=HS_Intelligence]Интеллекта[/HS] на 50%%. Эффект усиливается с каждым уровнем.</String>
+  </StringTable>
+  <StringTable>
+    <Label>SocialBugs_Name</Label>
+    <String>Гармоничные Антенны</String>
+  </StringTable>
+  <StringTable>
+    <Label>SocialBugs_ShortDec</Label>
+    <String>Улучшение [HS=HS_Consuming]единства[/HS] за счет увеличения [HS=HS_Social]социальных[/HS] навыков на 50%%. Эффект усиливается с каждым уровнем.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hatchery_Name</Label>
+    <String>Инкубатор</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hatchery_ShortDec</Label>
+    <String>Место рождения следующего поколения [HS=HS_Consuming]потребляющих[/HS] граждан. Сильно увеличивает рост.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WorkHive_Name</Label>
+    <String>Рабочий Улей</String>
+  </StringTable>
+  <StringTable>
+    <Label>WorkHive_ShortDec</Label>
+    <String>Производственный узел для рабочего каста [HS=HS_Consuming]Потребляющих[/HS], повышающий их [HS=HS_Diligence]Прилежность[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>MotherHive_Name</Label>
+    <String>Материнский Улей</String>
+  </StringTable>
+  <StringTable>
+    <Label>MotherHive_ShortDec</Label>
+    <String>Центральный узел для [HS=HS_Consuming]Потребляющих[/HS] видов на этой планете. Увеличивает характеристики всех существ с [HS=HS_Consuming]Потребляющим[/HS] свойством.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExterminatorsAbility_Name</Label>
+    <String>[ICON=Stat_Militant_Icon] Истребители</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExterminatorsAbility_ShortName</Label>
+    <String>Экстерминаторы</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExterminatorsAbility_Dec</Label>
+    <String>Транспортные корабли заменяются на планетоубийственные Споровые Корабли.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GenocidalAbility_Name</Label>
+    <String>[ICON=Paranoid_Icon] Геноцидный</String>
+  </StringTable>
+  <StringTable>
+    <Label>GenocidalAbilityShortName</Label>
+    <String>Геноцидный</String>
+  </StringTable>
+  <StringTable>
+    <Label>GenocidalAbility_Dec</Label>
+    <String>Огромное преимущество в завоевании планет за счет полного безразличия к побочным потерям. [BR][BR]Может превращать другие виды, несчастливо оказавшиеся на их планетах, в живые нейросетевые батареи.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MasterTech_StarshipRefits_Name</Label>
+    <String>Переоснащение Звездолётов</String>
+  </StringTable>
+  <StringTable>
+    <Label>MasterTech_StarshipRefits_ShortDec</Label>
+    <String>Позволяет модернизировать корабли лучшим оборудованием.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MasterTech_StarshipRefits_Dec</Label>
+    <String>Когда речь идет об модернизации существующих кораблей, простого решения нет. Инженерам приходится решать проблему доставки компонентов к кораблям в космосе, а затем разрабатывать безопасные методы замены старого оружия и брони на самые последние и современные технологии.</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_Name</Label>
-    <String>Technological Assimilation</String>
-</StringTable>
-<StringTable>
+    <String>Технологическая Ассимиляция</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_ShortDec</Label>
-    <String>Allows us to use alien technologies as our own.</String>
-</StringTable>
-<StringTable>
+    <String>Позволяет нам использовать чужие технологии как свои.</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_Dec</Label>
-    <String>The other civilizations in this galaxy have a wide variety of technologies and concepts that are alien to us.  We must adapt and make use of these.  [BR][BR]Within the intricate tapestry of interstellar entities, a new paradigm emerges: the amalgamation of technology. It's not about mere acquisition but about seamless integration. [BR][BR]Technological Assimilation operates on the principle that true power doesn't rest in suppressing or destroying the knowledge of the subdued but in embracing and elevating it. By assimilating the technological advancements of various civilizations into one's own, a society can leapfrog stages of development and position itself at the vanguard of innovation. [BR][BR]It's a pragmatic approach, transforming potential adversaries into unwitting allies. Civilizations that once posed threats could now be reservoirs of knowledge, waiting to be tapped. The ability to decipher, understand, and then incorporate different technological languages into one's own is a testament to both the adaptability and vision of a ruling entity. [BR][BR]However, this journey isn't devoid of challenges. It demands an intricate understanding of alien frameworks, vast repositories to store knowledge, and the flexibility to modify one's own societal structures. Yet, the rewards far outweigh the risks, paving the path for a civilization's ascendancy to unprecedented technological heights. [BR][BR]In pursuing Technological Assimilation, an empire not only augments its own capabilities but also ensures its legacy as a beacon of knowledge, innovation, and progress in the galactic annals.</String>
-</StringTable>
-
-<StringTable>
+    <String>Другие цивилизации в этой галактике обладают широким спектром технологий и концепций, которые нам чужды. Мы должны адаптироваться и использовать их. [BR][BR]Внутри сложного узора межзвездных сущностей появляется новая парадигма: слияние технологий. Речь идет не просто о приобретении, но об их бесшовной интеграции. [BR][BR]Технологическая ассимиляция работает на принципе, что истинная сила не заключается в подавлении или уничтожении знаний подчиненных, но в их принятии и повышении. Поглощая технологические достижения различных цивилизаций в свою, общество может перепрыгнуть стадии развития и занять позиции на передовой инноваций. [BR][BR]Это прагматичный подход, превращающий потенциальных противников в невольных союзников. Цивилизации, которые когда-то представляли угрозу, теперь могут быть резервуарами знаний, готовыми к использованию. Способность расшифровывать, понимать и затем включать разные технологические языки в свой собственный - это свидетельство адаптивности и видения правящего субъекта. [BR][BR]Однако, этот путь не лишен трудностей. Он требует слож</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_Hatcheries_Name</Label>
-    <String>Hatcheries</String>
-</StringTable>
-<StringTable>
+    <String>Инкубатории</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_Hatcheries_ShortDec</Label>
-    <String>Optimized birthplaces for our future swarm.</String>
-</StringTable>
-<StringTable>
+    <String>Оптимизированные места рождения для нашего будущего роя.</String>
+  </StringTable>
+  <StringTable>
     <Label>MasterTech_Hatcheries_Dec</Label>
-    <String>The intricate lifecycle of our species requires dedicated spaces where the next generation can be nurtured, protected, and prepared for the challenges of the cosmos. [BR][BR]Hatcheries are not mere breeding grounds. They are crucibles of evolution, innovation, and communal effort. Every hatchery pulsates with the rhythm of countless lives, waiting to be ushered into our vast collective. [BR][BR]This technological advancement goes beyond mere architecture or biology. It taps into the very essence of our species' resilience and adaptability. By refining and enhancing our hatcheries, we not only increase the strength and numbers of our swarm, but we also imbue each new individual with the knowledge and capabilities gleaned from countless generations before. [BR][BR]But the journey to perfect our hatcheries is laden with challenges. It requires a deep understanding of our biology, a commitment to protect each egg from potential threats, and the foresight to prepare each newborn for a universe filled with unknowns. [BR][BR]In pursuing the Hatcheries Advancement, we are not only ensuring the future of our species but also echoing our timeless values and unwavering dedication to the swarm. With each hatchery, we are sowing the seeds of our legacy, ensuring that our song resonates throughout the galaxy, now and forever.</String>
-</StringTable>
-
-
-
-<StringTable>
-		<Label>Quest_BluffingPirate_Name</Label>
-		<String>Bluffing Pirate</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Dec</Label>
-		<String>
+    <String>Сложный жизненный цикл нашего вида требует специальных пространств, где следующее поколение может быть выращено, защищено и подготовлено к испытаниям космоса. [BR][BR]Питомники - это не просто места разведения. Это тигли эволюции, инноваций и совместных усилий. Каждый питомник пульсирует в ритме бесчисленных жизней, ожидающих вступление в наш обширный коллектив. [BR][BR]Этот технологический прогресс выходит за рамки простой архитектуры или биологии. Он проникает в самую сущность нашего вида, его стойкости и приспособляемости. Улучшая и совершенствуя наши питомники, мы не только увеличиваем силу и численность нашего роя, но и наделяем каждую новую особь знаниями и способностями, извлеченными из бесчисленных предыдущих поколений. [BR][BR]Но путь к совершенствованию наших питомников полон препятствий. Он требует глубокого понимания нашей биологии, обязательства защищать каждое яйцо от потенциальных угроз и предвидения, чтобы подготовить каждого новорожденного к вселенной, полной неизвестностей. [BR][BR]Преследуя улучшение Питомников, мы не только обеспечиваем будущее нашего ви</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Name</Label>
+    <String>Обманывающий Пират</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Dec</Label>
+    <String>
 			Your survey ship approaches a peculiar signal it picked up orginating from a space junk field. When the ship finally locates the object emitting the signal and approaches,  a voice comes on over the ships intercom.
 
 			"Behold! You are trapped in the clutches of Captain Starbeard, *bark-bark* ...and me first mate Nebula, the greatest pirates in the galaxy!  Surrender your credits now, lest ye face the wrath of me flagship The Cosmos Dread and her intrepid fleet"
 
 			Upon further scanning, "The Cosmos Dread" appears to be little more than a mining vessal manned by 2 life forms. Dozens of communications signals from "ships" are detected, but scans indicate there is nothing but space junk.
 		</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Liberty_Bonus_Name</Label>
-		<String>What do ye say you join our ranks, oh fearsome Starbeard?</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Liberty_Bonus_Dec</Label>
-		<String>Gain a leader</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Equality_Bonus_Name</Label>
-		<String>Offer a "privateer" mission for The Cosmos Dread and her crew.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Equality_Bonus_Dec</Label>
-		<String>Awarded The Cosmos Dread</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Authority_Bonus_Name</Label>
-		<String>We dont negotiate with pirates.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BluffingPirate_Authority_Bonus_Dec</Label>
-		<String>Spawn a pirate ship</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Name</Label>
-		<String>Galactic Conservation</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Dec</Label>
-		<String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Liberty_Bonus_Name</Label>
+    <String>Что скажешь о том, чтобы присоединиться к нашим рядам, о страшный Звезднобород?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Liberty_Bonus_Dec</Label>
+    <String>Получить лидера</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Equality_Bonus_Name</Label>
+    <String>Предложить миссию "корсар" для The Cosmos Dread и её команды.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Equality_Bonus_Dec</Label>
+    <String>Награда Вселенная Ужаса</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Authority_Bonus_Name</Label>
+    <String>Мы не ведем переговоры с пиратами.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BluffingPirate_Authority_Bonus_Dec</Label>
+    <String>Создать корабль пирата</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Name</Label>
+    <String>Галактическая Консервация</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Dec</Label>
+    <String>
 			The Intergalactic Wildlife Conservancy (IWC) would like to collect specimens from around the galaxy for study. Specifically, their hope is to gather creatures suited to living in many different kinds of enviornments to better understand the biodiversity and adaptability throughout the cosmos. They agree the best place to gather new data is from uncolonized terrestrial planets.
 
 			The IWC is offering a grant to aid them in their study. It includes a free colony ship full of explorers and scientists ready to be sent off to study.
 		</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
-		<String>We are glad to accept the grant and aid the IWC in their efforts.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Liberty_Bonus_Dec</Label>
-		<String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
+    <String>Мы рады принять грант и помочь IWC в их усилиях.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Liberty_Bonus_Dec</Label>
+    <String>
 			Start A Mission
 			Free Colony Ship
 		</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Liberty_QuestDescription</Label>
-		<String>The IWC has asked for us to colonize terrestrial planets so that they may study the wildlife throughout the galaxy.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Liberty_ObjectiveDisplayName1</Label>
-		<String>Colonize three Terrestrial worlds {VALUE}/{AMOUNT}</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Equality_Bonus_Name</Label>
-		<String>Ignore the IWC.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_Equality_Bonus_Dec</Label>
-		<String>No Effect</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_End_Name</Label>
-		<String>Galactic Conservation</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_End_Dec</Label>
-		<String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Liberty_QuestDescription</Label>
+    <String>МКВ просит нас колонизировать наземные планеты, чтобы они могли изучать дикую природу по всей галактике.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Liberty_ObjectiveDisplayName1</Label>
+    <String>Колонизируйте три земные мира {VALUE}/{AMOUNT}</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Equality_Bonus_Name</Label>
+    <String>Проигнорируйте IWC.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_Equality_Bonus_Dec</Label>
+    <String>Без эффекта</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_End_Name</Label>
+    <String>Галактическая Консервация</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_End_Dec</Label>
+    <String>
 			The Intergalactic Wildlife Conservency (IWC) is pleased to report the success of the galactic conservation program. Our presence on these planets will allow us to learn more about the natural edens of the galaxy and the creatures that inhabit them.
 
 			With the success of the progam the IWC has commissioned "The Arc". A ship full of live specimens from around the galaxy. It is intended to be a flying ecology lab, restoring ecosystems throughout the galaxy. The Arc has been entrusted to us, for our support of the IWC's conservation efforts.
 		</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
-		<String>We will make great use of The Arc.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_GalacticConservation_End_Liberty_Bonus_Dec</Label>
-		<String>Awarded The Arc</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_ExpandReach_Name</Label>
-		<String>Expand Our Reach</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_Dec</Label>
-		<String>The leadership council believes we need to rapidly expand our civilization's reach to more planets. They are concerned we do not have enough colonies to sustain our population growth and resource needs.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_Liberty_Bonus_Name</Label>
-		<String>Establish new colonies</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_Liberty_Bonus_Dec</Label>
-		<String> Start Mission +3 Colony Ships </String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_Liberty_QuestDescription</Label>
-		<String>We must establish more colonies as directed by the leadership council.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_Liberty_ObjectiveDisplayName1</Label>
-		<String>Establish 3 new colonies</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_End_Name</Label>
-		<String>Reach Expanded</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_End_Dec</Label>
-		<String>We have successfully established three new colonies, expanding the reach of our civilization. This will provide the resources and population growth the leadership council desired.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_End_Liberty_Bonus_Name</Label>
-		<String>New worlds within reach</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandReach_End_Liberty_Bonus_Dec</Label>
-		<String>Increased growth on all core worlds</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_ExpandTrade_Name</Label>
-		<String>Expand Trade</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_Dec</Label>
-		<String>The leadership council believes we need to expand our trade network with other civilizations. This will allow us to exchange resources and technology more efficiently.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_Liberty_Bonus_Name</Label>
-		<String>Establish new trade routes</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_Liberty_Bonus_Dec</Label>
-		<String> Start Mission +3 Trade Ships </String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_Liberty_QuestDescription</Label>
-		<String>We must establish more trade routes with other civilizations as requested by the council.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_Liberty_ObjectiveDisplayName1</Label>
-		<String>Establish 3 new trade routes</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_End_Name</Label>
-		<String>Trade Expanded</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_End_Dec</Label>
-		<String>We have created several new trade routes, greatly improving our exchange of resources and technology with other civilizations.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_End_Liberty_Bonus_Name</Label>
-		<String>Increased trade efficiency</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandTrade_End_Liberty_Bonus_Dec</Label>
-		<String>+15% trade route output for 25 turns</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Name</Label>
-		<String>Expand Influence</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Dec</Label>
-		<String>Our civilization has grown stagnant and isolated. The leadership council believes we must take bold action to expand our influence among the stars. By constructing new starbases in strategic systems, we can project our power and make valuable contacts with independent colonies and alien civilizations.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Liberty_Bonus_Name</Label>
-		<String>Build new starbases</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Liberty_Bonus_Dec</Label>
-		<String> Start Mission +3 Constructors </String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Liberty_QuestDescription</Label>
-		<String>We must construct more starbases to expand our civilization's influence and reach.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_Liberty_ObjectiveDisplayName1</Label>
-		<String>Build 3 new starbases</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_End_Name</Label>
-		<String>Influence Expanded</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_End_Dec</Label>
-		<String>Our new starbases mark our growing influence and reach in the galaxy.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_End_Liberty_Bonus_Name</Label>
-		<String>Projecting power</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_ExpandInfluence_End_Liberty_Bonus_Dec</Label>
-		<String>+5 influence per turn</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Name</Label>
-		<String>Recruit Leaders</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Dec</Label>
-		<String>Our civilization has expanded rapidly, leaving us short on qualified leaders to govern our colonies and fleets. The leadership council has issued a request for us to recruit and train more leaders to properly manage our growing empire.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Liberty_Bonus_Name</Label>
-		<String>Recruit new leaders</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Liberty_Bonus_Dec</Label>
-		<String> Start Mission </String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Liberty_QuestDescription</Label>
-		<String>We must recruit and train new leaders to govern our expanding civilization.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_Liberty_ObjectiveDisplayName1</Label>
-		<String>Recruit 3 new leaders</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_End_Name</Label>
-		<String>Leaders Recruited</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_End_Dec</Label>
-		<String>We have successfully recruited and trained new leaders to manage our colonies, fleets, and other affairs.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_End_Liberty_Bonus_Name</Label>
-		<String>Strong leadership</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_RecruitLeaders_End_Liberty_Bonus_Dec</Label>
-		<String>+2 to all leaders stats</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Quest_BuildShipyard_Name</Label>
-		<String>Build Shipyard</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_Dec</Label>
-		<String>The leadership council has identified {PLANETNAME} as a strategically valuable system for starship construction. They have requested that we build a new shipyard in orbit around {PLANETNAME} to expand our production capabilities.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_Liberty_Bonus_Name</Label>
-		<String>Construct shipyard</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_Liberty_Bonus_Dec</Label>
-		<String> Start Mission +300 Credits </String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_Liberty_QuestDescription</Label>
-		<String>We must build a new shipyard in orbit around {PLANETNAME} as desired by the council.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_Liberty_ObjectiveDisplayName1</Label>
-		<String>Build 1 shipyard at {PLANETNAME}</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_End_Name</Label>
-		<String>{PLANETNAME} Shipyard</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_End_Dec</Label>
-		<String>The new shipyard at {PLANETNAME} will greatly expand our starship construction capabilities for the region.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_End_Liberty_Bonus_Name</Label>
-		<String>Expanded production</String>
-	</StringTable>
-	<StringTable>
-		<Label>Quest_BuildShipyard_End_Liberty_Bonus_Dec</Label>
-		<String>+15% shipbuilding</String>
-	</StringTable>
-
-<StringTable>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
+    <String>Мы сможем эффективно использовать Арку.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_GalacticConservation_End_Liberty_Bonus_Dec</Label>
+    <String>Награда Звездный Дуга</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Name</Label>
+    <String>Расширить наши границы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Dec</Label>
+    <String>Совет руководителей считает, что нам нужно быстро расширить влияние нашей цивилизации на большее количество планет. Их беспокоит, что у нас недостаточно колоний для поддержания роста населения и удовлетворения потребностей в ресурсах.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Liberty_Bonus_Name</Label>
+    <String>Установить новые колонии</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Liberty_Bonus_Dec</Label>
+    <String>Начать Миссию +3 Колониальных Корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Liberty_QuestDescription</Label>
+    <String>Нам необходимо основать больше колоний по указанию руководящего совета.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_Liberty_ObjectiveDisplayName1</Label>
+    <String>Установите 3 новые колонии</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_End_Name</Label>
+    <String>Расширение Достигнуто</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_End_Dec</Label>
+    <String>Мы успешно основали три новые колонии, расширив зону влияния нашей цивилизации. Это обеспечит ресурсы и рост населения, которые требовал совет лидеров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_End_Liberty_Bonus_Name</Label>
+    <String>Новые миры на расстоянии руки</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandReach_End_Liberty_Bonus_Dec</Label>
+    <String>Увеличенный рост на всех основных мирах</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Name</Label>
+    <String>Расширить Торговлю</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Dec</Label>
+    <String>Совет лидеров считает, что нам нужно расширить нашу торговую сеть с другими цивилизациями. Это позволит нам обмениваться ресурсами и технологиями более эффективно.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Liberty_Bonus_Name</Label>
+    <String>Установите новые торговые маршруты</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Liberty_Bonus_Dec</Label>
+    <String>Начать Миссию +3 Торговых Корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Liberty_QuestDescription</Label>
+    <String>Нам необходимо установить больше торговых маршрутов с другими цивилизациями, как требует совет.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_Liberty_ObjectiveDisplayName1</Label>
+    <String>Установите 3 новых торговых маршрута</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_End_Name</Label>
+    <String>Торговля Расширена</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_End_Dec</Label>
+    <String>Мы создали несколько новых торговых маршрутов, значительно улучшив наш обмен ресурсами и технологией с другими цивилизациями.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_End_Liberty_Bonus_Name</Label>
+    <String>Увеличена торговая эффективность</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandTrade_End_Liberty_Bonus_Dec</Label>
+    <String>+15% к выходу торгового маршрута на 25 ходов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Name</Label>
+    <String>Расширить Влияние</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Dec</Label>
+    <String>Наша цивилизация стала статичной и изолированной. Совет руководителей считает, что мы должны предпринять смелые действия, чтобы расширить наше влияние среди звезд. Строительством новых звездных баз в стратегических системах, мы можем продемонстрировать нашу силу и установить ценные контакты с независимыми колониями и инопланетными цивилизациями.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Liberty_Bonus_Name</Label>
+    <String>Строительство новых звездных баз</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Liberty_Bonus_Dec</Label>
+    <String>Начать Миссию +3 Строителя</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Liberty_QuestDescription</Label>
+    <String>Нам необходимо построить больше космических баз, чтобы расширить влияние и охват нашей цивилизации.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_Liberty_ObjectiveDisplayName1</Label>
+    <String>Постройте 3 новые звездные базы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_End_Name</Label>
+    <String>Влияние Расширено</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_End_Dec</Label>
+    <String>Наши новые звездные базы отмечают рост нашего влияния и расширение присутствия в галактике.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_End_Liberty_Bonus_Name</Label>
+    <String>Проявление власти</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_ExpandInfluence_End_Liberty_Bonus_Dec</Label>
+    <String>+5 к влиянию за ход</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Name</Label>
+    <String>Вербовка Лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Dec</Label>
+    <String>Наша цивилизация быстро расширяется, и у нас не хватает квалифицированных лидеров для управления нашими колониями и флотами. Совет лидеров выдал запрос на набор и обучение большего количества лидеров для должного управления нашей растущей империей.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Liberty_Bonus_Name</Label>
+    <String>Вербовка новых лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Liberty_Bonus_Dec</Label>
+    <String>Начать Миссию</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Liberty_QuestDescription</Label>
+    <String>Нам необходимо набирать и обучать новых лидеров для управления нашей расширяющейся цивилизацией.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_Liberty_ObjectiveDisplayName1</Label>
+    <String>Вербовка 3 новых лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_End_Name</Label>
+    <String>Лидеры Наняты</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_End_Dec</Label>
+    <String>Мы успешно набрали и обучили новых лидеров для управления нашими колониями, флотами и другими делами.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_End_Liberty_Bonus_Name</Label>
+    <String>Сильное лидерство</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_RecruitLeaders_End_Liberty_Bonus_Dec</Label>
+    <String>+2 ко всем статистикам лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Name</Label>
+    <String>Построить верфь</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Dec</Label>
+    <String>Совет руководителей определил {PLANETNAME} как стратегически ценную систему для строительства звездолетов. Они запросили, чтобы мы построили новую верфь на орбите вокруг {PLANETNAME}, чтобы расширить наши производственные возможности.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Liberty_Bonus_Name</Label>
+    <String>Строительство верфи</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Liberty_Bonus_Dec</Label>
+    <String>Начать миссию +300 кредитов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Liberty_QuestDescription</Label>
+    <String>Нам нужно построить новую верфь на орбите вокруг {PLANETNAME}, как требует совет.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_Liberty_ObjectiveDisplayName1</Label>
+    <String>Постройте 1 верфь на {PLANETNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_End_Name</Label>
+    <String>Верфь {PLANETNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_End_Dec</Label>
+    <String>Новая верфь на {PLANETNAME} значительно увеличит наши возможности по строительству звездолетов в этом регионе.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_End_Liberty_Bonus_Name</Label>
+    <String>Расширенное производство</String>
+  </StringTable>
+  <StringTable>
+    <Label>Quest_BuildShipyard_End_Liberty_Bonus_Dec</Label>
+    <String>+15% к строительству кораблей</String>
+  </StringTable>
+  <StringTable>
     <Label>SporeShip_Name</Label>
-    <String>Spore Ship</String>
+    <String>Споровый Корабль</String>
   </StringTable>
   <StringTable>
     <Label>SporeShip_Dec</Label>
-    <String>Carries deadly spores to wipe out the entire population of a world, and the colonists to re-colonize it.</String>
+    <String>Перевозит смертоносные споры для уничтожения всего населения мира и колонистов для его повторного колонизирования.</String>
   </StringTable>
-    <StringTable>
+  <StringTable>
     <Label>SporeModule_Name</Label>
-    <String>Spore Module</String>
+    <String>Модуль Спора</String>
   </StringTable>
   <StringTable>
     <Label>SporeModule_Dec</Label>
-    <String>During invasion, kills the entire population of the world.</String>
+    <String>Во время вторжения, уничтожает всё население мира.</String>
   </StringTable>
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ClaimFivePlanets_Name</Label>
-        <String>Claim 5 Planets</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ClaimFivePlanets_Dec</Label>
-        <String>Planets can be claimed through [HS=HS_Colinizing]Colonization[/HS] unless they're already inhabited. In that case, they can be [HS=HS_ConqueringPlanets]Conquered[/HS].</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ConstructThreeProbes_Name</Label>
-        <String>Construct 3 Probes</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ConstructThreeProbes_Dec</Label>
-        <String>Construct 3 Probes from the [HS=HS_Shipyard]Shipyard[/HS]. Probes are necessary to explore the uncharted [HS=HS_Sector]Sector[/HS] and find the source of whatever signal was detected before.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Name</Label>
-        <String>Construct 3 Starbases</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Dec</Label>
-        <String>[HS=HS_Starbase]Starbases[/HS] are essential to supporting the Empire. They are required to gather the [HS=HS_StrategicResource]Strategic Resources[/HS] necessary to construct particular types of starships and weaponry.[BR][BR]Produce [HS=HS_Constructor]Constructors[/HS] from the [HS=HS_Shipyard]Shipyard[/HS] and then use their [HS=HS_ConstructStarbase]Construct Starbase[/HS] command.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Name</Label>
-        <String>Research Planetary Invasion</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Dec</Label>
-        <String>Research the Planetary Invasion [HS=HS_Tech]Tech[/HS] in the [HS=HS_ResearchCenter]Research Center[/HS]. The [HS=HS_Tech]Tech[/HS] is needed to construct Transport ships that allow us to besiege and [HS=HS_ConqueringPlanets]Conquer[/HS] hostile planets.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Campaign_Tutorail_UseProbe</Label>
-        <String>Locate the Other Civilization</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UseProbe_Dec</Label>
-        <String>Give orders to the Probe until all its [ICON=Moves_Icon] [HS=HS_Moves]Moves[/HS] have been utilized. Select the Probe and use it to explore the galaxy.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_SurveyFirstAnomaly</Label>
-        <String>Scan an Anomaly</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_SurveyFirstAnomaly_Dec</Label>
-        <String>Utilize the [HS=HS_SurveyShip]Survey Ship[/HS] to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. [HS=HS_SurveyOrder]Surveying[/HS] an [HS=HS_Anomaly]Anomaly[/HS] takes several [HS=HS_Months]Months[/HS] of uninterrupted work. If the [HS=HS_SurveyShip]Survey Ship[/HS] is moved or given different orders, it will lose all progress toward uncovering the [HS=HS_Anomaly]Anomaly[/HS].[BR][BR]Select that [HS=HS_SurveyShip]Survey Ship[/HS] using the LEFT Mouse Button and give it orders to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. This can be done by setting an [HS=HS_Anomaly]Anomaly[/HS] as the ship's destination with the RIGHT Mouse Button.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_SurveyTargetAnomalies</Label>
-        <String>Scan 5 Anomalies</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_SurveyTargetAnomalies_Dec</Label>
-        <String>Utilize the [HS=HS_SurveyShip]Survey Ship[/HS] to [HS=HS_SurveyOrder]Survey[/HS] several [HS=HS_Anomaly]Anomalies[/HS]. Plenty of unknown items are in space -left behind intentionally or unintentionally. Mastering the stars will require us to discover and address many [HS=HS_Anomaly]Anomalies[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_ColonizeFirstPlanet</Label>
-        <String>Colonize a Planet</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_ColonizeFirstPlanet_Dec</Label>
-        <String>Utilize the Colony Ship to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. Mars is a near-perfect candidate. Mars can provide beneficial resources and is close to the Alliance's Home World.[BR][BR]Select that Colony Ship using the LEFT Mouse Button and give it orders to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. This can be done by setting a colonizable Planet as the ship's destination with the RIGHT Mouse Button.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UnlockPolicyScreen</Label>
-        <String>Research Colonial Pollicies</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
-        <String>Access the [HS=HS_ResearchCenter]Research Center[/HS] and ensure the current [HS=HS_Tech]Tech[/HS] being researched is Colonial Pollicies. How many [HS=HS_Months]Months[/HS] the [HS=HS_Tech]Tech[/HS] takes to research is determined by the Research rating across all [HS=HS_CoreWorld]Core Worlds[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_EnactAPolicy</Label>
-        <String>Enact a Policy</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_EnactAPolicy_Dec</Label>
-        <String>[HS=HS_Policy]Policies[/HS] are a way to affect every Colony and fleet in a civilization. Enact a [HS=HS_Policy]Policy[/HS] under the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] to help accomplish goals. [HS=HS_Policy]Policies[/HS] can be changed anytime during your turn to better suit changing circumstances.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_RushPlanetaryImprovement</Label>
-        <String>Rush a Planetary Improvement</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_RushPlanetaryImprovement_Dec</Label>
-        <String>To [HS=HS_Rush]Rush[/HS] a Planetary Improvement, select a [HS=HS_CoreWorld]Core World[/HS] and open the Management window. Selecting any item in the Build Queue with the LEFT Mouse Button will bring up some contextual options. Among those is the [HS=HS_Rush]Rush[/HS] option. As long as you have the [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] and [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] required, selecting the [HS=HS_Rush]Rush[/HS] option will [HS=HS_Rush]Rush[/HS] the specific improvement. The [HS=HS_Rush]Rush[/HS] option will be grayed out and unresponsive if you do not have the necessary resources.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UseExecutiveOrder</Label>
-        <String>Use an Executive Order</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UseExecutiveOrder_Dec</Label>
-        <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders [/HS] are selected from the related radial option. Some will execute as soon as the usage is confirmed. Others require a target and must be directed after confirming the order. Hover the Mouse over the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] option and then use the LEFT Mouse Button to select an order.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_MineAnAsteroid</Label>
-        <String>Mine an Asteroid</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_MineAnAsteroid_Dec</Label>
-        <String>(PLACEHOLDER) Brief description of the objective to mine an asteroid.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_BuildEconomicStarbase</Label>
-        <String>Build an Economic Starbase</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_BuildEconomicStarbase_Dec</Label>
-        <String>(PLACEHOLDER) Brief description of the objective to build an economic starbase.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UnlockAsteroidMining</Label>
-        <String>Unlock Asteroid Mining</String>
-    </StringTable>
-    <StringTable>
-        <Label>Campaign_Tutorail_UnlockAsteroidMining_Dec</Label>
-        <String>(PLACEHOLDER) Brief description of the objective to mastering the Asteroid Mining tech.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>RUSH_MULTIPLIER</Label>
-        <String>Rush Cost Multiplier</String>
-    </StringTable>
-    <StringTable>
-        <Label>NetIncomeLABEL</Label>
-        <String>Net Monthly Income</String>
-    </StringTable>
-    <StringTable>
-		<Label>TURNS_TO_UPGRADE_EXPLANATION_TOOLTIP</Label>
-		<String>The number of Months it will take to complete upgrades to this ship.[BR][BR]Value is determined by the distance to the nearest Shipyard. The closer a ship is to a Shipyard, the fewer Months it takes to complete.[BR][BR]This ship is %u tiles away from the nearest Shipyard {OBJECTNAME}.</String>
-	</StringTable>
-    <StringTable>
-        <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZEN_FG_INFOTEXT_GENERATED</Label>
-        <String>Pick the image you feel best suits your leader:</String>
-    </StringTable>
-    <StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ClaimFivePlanets_Name</Label>
+    <String>Захватите 5 планет</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ClaimFivePlanets_Dec</Label>
+    <String>Планеты могут быть заняты через [HS=HS_Colinizing]Колонизацию[/HS], если они уже не населены. В этом случае, они могут быть [HS=HS_ConqueringPlanets]Захвачены[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ConstructThreeProbes_Name</Label>
+    <String>Создайте 3 Пробы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ConstructThreeProbes_Dec</Label>
+    <String>Соберите 3 зондов на [HS=HS_Shipyard]Верфи[/HS]. Зонды необходимы для исследования неизведанного [HS=HS_Sector]Сектора[/HS] и поиска источника сигнала, обнаруженного ранее.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Name</Label>
+    <String>Постройте 3 космические базы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Dec</Label>
+    <String>[HS=HS_Starbase]Звездные базы[/HS] необходимы для поддержки Империи. Они требуются для сбора [HS=HS_StrategicResource]стратегических ресурсов[/HS], необходимых для строительства определенных типов звездолетов и оружия.[BR][BR]Производите [HS=HS_Constructor]Конструкторы[/HS] на [HS=HS_Shipyard]Звездном верфи[/HS] и затем используйте их команду [HS=HS_ConstructStarbase]Построить звездную базу[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Name</Label>
+    <String>Исследование Планетарного Вторжения</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Dec</Label>
+    <String>Исследуйте [HS=HS_Tech]Технологию[/HS] Планетарного Вторжения в [HS=HS_ResearchCenter]Научном Центре[/HS]. Эта [HS=HS_Tech]Технология[/HS] необходима для строительства транспортных кораблей, которые позволят нам осаждать и [HS=HS_ConqueringPlanets]Завоевывать[/HS] враждебные планеты.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UseProbe</Label>
+    <String>Найдите другую цивилизацию</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UseProbe_Dec</Label>
+    <String>Отдавайте приказы Пробнику до тех пор, пока не будут использованы все его [ICON=Moves_Icon] [HS=HS_Moves]Ходы[/HS]. Выберите Пробник и используйте его для исследования галактики.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_SurveyFirstAnomaly</Label>
+    <String>Сканировать Аномалию</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_SurveyFirstAnomaly_Dec</Label>
+    <String>Используйте [HS=HS_SurveyShip]Корабль-Исследователь[/HS] для [HS=HS_SurveyOrder]Исследования[/HS] [HS=HS_Anomaly]Аномалии[/HS]. [HS=HS_SurveyOrder]Исследование[/HS] [HS=HS_Anomaly]Аномалии[/HS] занимает несколько [HS=HS_Months]Месяцев[/HS] непрерывной работы. Если [HS=HS_SurveyShip]Корабль-Исследователь[/HS] перемещается или получает другие приказы, он потеряет все прогресс в раскрытии [HS=HS_Anomaly]Аномалии[/HS].[BR][BR]Выберите [HS=HS_SurveyShip]Корабль-Исследователь[/HS] с помощью ЛЕВОЙ кнопки мыши и дайте ему приказ на [HS=HS_SurveyOrder]Исследование[/HS] [HS=HS_Anomaly]Аномалии[/HS]. Это можно сделать, установив [HS=HS_Anomaly]Аномалию[/HS] как пункт назначения корабля с помощью ПРАВОЙ кнопки мыши.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_SurveyTargetAnomalies</Label>
+    <String>Сканируйте 5 Аномалий</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_SurveyTargetAnomalies_Dec</Label>
+    <String>Используйте [HS=HS_SurveyShip]Судно для Съемки[/HS], чтобы [HS=HS_SurveyOrder]Обследовать[/HS] несколько [HS=HS_Anomaly]Аномалий[/HS]. В космосе множество неизвестных предметов, оставленных намеренно или случайно. Освоение звезд потребует от нас обнаружения и решения многих [HS=HS_Anomaly]Аномалий[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_ColonizeFirstPlanet</Label>
+    <String>Колонизируйте планету</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_ColonizeFirstPlanet_Dec</Label>
+    <String>Используйте Колониальный Корабль для [HS=HS_ColonizeOrder]Колонизации[/HS] планеты. Марс - почти идеальный кандидат. Марс может предоставить полезные ресурсы и находится недалеко от Родного Мира Альянса.[BR][BR]Выберите этот Колониальный Корабль, используя ЛЕВУЮ кнопку мыши, и отдайте ему приказ [HS=HS_ColonizeOrder]Колонизировать[/HS] планету. Это можно сделать, установив колонизируемую планету как пункт назначения корабля с помощью ПРАВОЙ кнопки мыши.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UnlockPolicyScreen</Label>
+    <String>Исследуйте колониальные политики</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
+    <String>Получите доступ к [HS=HS_ResearchCenter]Научному Центру[/HS] и убедитесь, что текущий [HS=HS_Tech]Тех[/HS] исследования - это Колониальные Политики. Количество [HS=HS_Months]Месяцев[/HS], которое требуется [HS=HS_Tech]Тех[/HS] для исследования, определяется рейтингом исследований по всем [HS=HS_CoreWorld]Центральным Мирам[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_EnactAPolicy</Label>
+    <String>Применить Политику</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_EnactAPolicy_Dec</Label>
+    <String>[HS=HS_Policy]Политики[/HS] - это способ повлиять на каждую колонию и флот в цивилизации. Вводите [HS=HS_Policy]Политику[/HS] в [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Меню Цивилизации[/HS] для достижения целей. [HS=HS_Policy]Политики[/HS] можно изменять в любое время вашего хода, чтобы лучше подходить к меняющимся обстоятельствам.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_RushPlanetaryImprovement</Label>
+    <String>Ускорьте Планетарное Улучшение</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_RushPlanetaryImprovement_Dec</Label>
+    <String>Для того чтобы [HS=HS_Rush]Ускорить[/HS] Улучшение Планеты, выберите [HS=HS_CoreWorld]Центральный Мир[/HS] и откройте окно Управления. Выбор любого элемента в очереди строительства с помощью ЛЕВОЙ кнопки мыши приведет к появлению контекстных опций. Среди них есть опция [HS=HS_Rush]Ускорения[/HS]. Пока у вас есть необходимые [ICON=Stat_Control_Icon] [HS=HS_Control]Управление[/HS] и [ICON=Stat_Credits_Icon] [HS=HS_Credit]Кредиты[/HS], выбор опции [HS=HS_Rush]Ускорения[/HS] приведет к [HS=HS_Rush]Ускорению[/HS] конкретного улучшения. Опция [HS=HS_Rush]Ускорения[/HS] будет выглядеть затемненной и не будет реагировать, если у вас не хватает необходимых ресурсов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UseExecutiveOrder</Label>
+    <String>Используйте Исполнительный приказ</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UseExecutiveOrder_Dec</Label>
+    <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Исполнительные приказы[/HS] выбираются из соответствующего радиального меню. Некоторые из них выполняются сразу после подтверждения использования. Другие требуют цели и должны быть направлены после подтверждения приказа. Наведите курсор мыши на опцию [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Исполнительный приказ[/HS] и затем используйте ЛЕВУЮ кнопку мыши, чтобы выбрать приказ.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_MineAnAsteroid</Label>
+    <String>Добывайте астероид</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_MineAnAsteroid_Dec</Label>
+    <String>(PLACEHOLDER) Краткое описание задачи по добыче астероида.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_BuildEconomicStarbase</Label>
+    <String>Постройте Экономическую Космическую Базу</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_BuildEconomicStarbase_Dec</Label>
+    <String>(PLACEHOLDER) Краткое описание задачи по строительству экономической космической базы.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UnlockAsteroidMining</Label>
+    <String>Открыть добычу астероидов</String>
+  </StringTable>
+  <StringTable>
+    <Label>Campaign_Tutorail_UnlockAsteroidMining_Dec</Label>
+    <String>(PLACEHOLDER) Краткое описание цели освоения технологии добычи астероидов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>RUSH_MULTIPLIER</Label>
+    <String>Множитель Стоимости Рывка</String>
+  </StringTable>
+  <StringTable>
+    <Label>NetIncomeLABEL</Label>
+    <String>Чистый месячный доход</String>
+  </StringTable>
+  <StringTable>
+    <Label>TURNS_TO_UPGRADE_EXPLANATION_TOOLTIP</Label>
+    <String>Количество месяцев, необходимых для завершения модернизации этого корабля.[BR][BR]Значение определяется расстоянием до ближайшего Судостроительного завода. Чем ближе корабль к Судостроительному заводу, тем меньше месяцев требуется для завершения.[BR][BR]Этот корабль находится в %u клетках от ближайшего Судостроительного завода {OBJECTNAME}.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZEN_FG_INFOTEXT_GENERATED</Label>
+    <String>Выберите изображение, которое, по вашему мнению, лучше всего подходит вашему лидеру:</String>
+  </StringTable>
+  <StringTable>
     <Label>DISABLED_IN_MULTIPLAYER</Label>
-    <String>Temporarily Disabled in Multiplayer.</String>
+    <String>Временно отключено в многопользовательском режиме.</String>
   </StringTable>
-    <StringTable>
-        <Label>CANNOT_REFIT_ERROR_LABEL</Label>
-        <String>[COLOR=BrightRed]Cannot refit: [/COLOR]</String>
-    </StringTable>
-	<StringTable>
-        <Label>FLEET_TOOLTIP_DISABLED_REQUIRESSHIPYARD</Label>
-        <String>[COLOR=BrightRed]No Shipyards available.[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-		<Label>MasterTech_StarshipRefits_TriggerDesc</Label>
-		<String>Ship Refitting Available</String>
-	</StringTable>
-    <StringTable>
-		<Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
-		<String>{AMOUNT} for {GOVERNORNAME}</String>
-	</StringTable>
-    <StringTable>
+  <StringTable>
+    <Label>CANNOT_REFIT_ERROR_LABEL</Label>
+    <String>[COLOR=BrightRed]Переоснащение невозможно: [/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FLEET_TOOLTIP_DISABLED_REQUIRESSHIPYARD</Label>
+    <String>[COLOR=BrightRed]Доки для кораблей отсутствуют.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>MasterTech_StarshipRefits_TriggerDesc</Label>
+    <String>Доступна Модернизация Корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
+    <String>{AMOUNT} для {GOVERNORNAME}</String>
+  </StringTable>
+  <StringTable>
     <Label>GovernorDefectedTitle</Label>
-    <String>Governor Defected</String>
+    <String>Губернатор Дезертировал</String>
   </StringTable>
   <StringTable>
     <Label>GovernorRebelledMessage</Label>
-    <String>The traitor, {LEADERNAME}, has rebelled and formed their own empire called {PLAYERFACTIONLONG}.</String>
+    <String>Предатель, {LEADERNAME}, восстал и создал свою собственную империю под названием {PLAYERFACTIONLONG}.</String>
   </StringTable>
   <StringTable>
     <Label>GovernorJoinedRebellion</Label>
-    <String>The traitor, {GOVERNORNAME}, has rebelled and joined the {PLAYERFACTIONLONG}.</String>
+    <String>Предатель, {GOVERNORNAME}, восстал и присоединился к {PLAYERFACTIONLONG}.</String>
   </StringTable>
-    <StringTable>
-      <Label>Supernova_Generating_Citizen_Images</Label>
-      <String>Searching for matching citizen images...</String>
-    </StringTable>
-    <StringTable>
-		<Label>ResearchTurnsRemaining</Label>
-		<String>%d turn(s) to complete research</String>
-	</StringTable>
-    </StringTableList>
+  <StringTable>
+    <Label>Supernova_Generating_Citizen_Images</Label>
+    <String>Поиск совпадающих изображений граждан...</String>
+  </StringTable>
+  <StringTable>
+    <Label>ResearchTurnsRemaining</Label>
+    <String>%d ход(а/ов) до завершения исследования</String>
+  </StringTable>
+</StringTableList>
