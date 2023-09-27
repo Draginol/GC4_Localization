@@ -18,9 +18,8 @@ class TMXTranslator:
             self.settings.setValue("openai_key", openai_key)
         openai.api_key = openai_key
 
-    def translate_with_openai(self, label_name, text, target_language):
-        prompt = (f"In the context of a sci-fi game and given the label '{label_name}', "
-                  f"translate this English string, without using more words and respecting formatting codes into {target_language}: {text}")
+    def translate_with_openai(self, text, target_language):
+        prompt = (f"In the context of a sci-fi game translate this English string, without using more words and respecting formatting codes into {target_language}: {text}")
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[{"role": "user", "content": prompt}],
@@ -40,25 +39,28 @@ class TMXTranslator:
         print(f"Processing {total_tus} translation units (TUs)...")
 
         for idx, tu in enumerate(root.findall('.//tu'), start=1):
-            filename_prop = tu.find("./prop[@type='Filename']")
-            if filename_prop is None or "flavortext" not in filename_prop.text.lower():
-                continue
-            
-            print(f"Checking TU {idx}/{total_tus} from file: {filename_prop.text}")
 
             english_seg = tu.find("./tuv[@{http://www.w3.org/XML/1998/namespace}lang='EN']/seg")
             if english_seg is None:
                 continue
 
-            target_seg = tu.find("./tuv[@{http://www.w3.org/XML/1998/namespace}lang!='EN']/seg")
-            if target_seg is None:
+            # Ignore if the english segment text looks like a filename with extension
+            if '.' in english_seg.text and english_seg.text.rsplit('.', 1)[1].isalpha():
                 continue
+
+            non_english_tuv = tu.find("./tuv[@{http://www.w3.org/XML/1998/namespace}lang!='EN']")
+            if non_english_tuv is None:
+                continue
+
+            target_language = non_english_tuv.get("{http://www.w3.org/XML/1998/namespace}lang")
+            target_seg = non_english_tuv.find('seg')
 
             # Detect the language of the target segment
             detected_language = detect(target_seg.text)
-            if detected_language == "en":  # If the target segment is detected as English
-                print(f"Translating: {target_seg.text}")
-                translated_text = self.translate_with_openai(filename_prop.text, english_seg.text, 'FR')
+
+            if detected_language != target_language:  # If the target segment is detected as NOT the target language
+                translated_text = self.translate_with_openai(english_seg.text, target_language)
+                print(f"Translating: {target_seg.text} \n\n to {translated_text} \n\n")
                 target_seg.text = translated_text
                 counter += 1
 
@@ -69,6 +71,7 @@ class TMXTranslator:
         # Final save after all translations
         print(f"Final save after processing all translations. Total translations made: {counter}")
         tree.write(tmx_path, encoding="utf-8", xml_declaration=True)
+
 
     def run(self):
         root = tk.Tk()
