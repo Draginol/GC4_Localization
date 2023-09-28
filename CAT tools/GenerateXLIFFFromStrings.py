@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import tkinter as tk
 from tkinter import filedialog, simpledialog
 from xml.dom.minidom import parseString
+import json
 
 def select_directory(title):
     root = tk.Tk()
@@ -43,27 +44,43 @@ def parse_xml(directory, data_dict, translated=False):
                     # Storing the filename and priority as part of the source data
                     data_dict[label] = [(text_escaped, filename, high_priority), None]
 
+
+
 def generate_xliff(data, language_code, output_directory):
-    entries = []
-    trans_unit_id = 1
+    trans_units = []
+
     for label, ((source, filename, source_priority), target_data) in data.items():
         if target_data:  # check if there's a translation
             target, target_priority = target_data
-            entry = f'<trans-unit id="{trans_unit_id}" resname="{label}" extradata="filename:{filename};priority:{source_priority}"><source>{source}</source><target>{target}</target></trans-unit>'
-            entries.append(entry)
-            trans_unit_id += 1
+            
+            # Metadata as string without escaped characters
+            metadata = 'highpriority = {}'.format(str(source_priority).lower())
+            
+            trans_unit = '<trans-unit id="{}">'.format(label)  # Using label as id
+            trans_unit += '<source>{}</source>'.format(source)
+            trans_unit += '<target>{}</target>'.format(target)
+            
+            # Adding context-group for source file
+            trans_unit += '<context-group purpose="location">'
+            trans_unit += '<context context-type="sourcefile">{}</context>'.format(filename)
+            trans_unit += '</context-group>'
+            
+            trans_unit += '<note>{}</note>'.format(metadata)
+            trans_unit += '</trans-unit>'
+            
+            trans_units.append(trans_unit)
         else:
             print(f"No translation found for label: {label}")
     
-    xliff_content = f"""
+    xliff_content = """
     <xliff version="1.2">
-        <file original="GCStrings" source-language="en" target-language="{language_code}" datatype="plaintext">
+        <file original="GCStrings" source-language="en" target-language="{}" datatype="plaintext">
             <body>
-                {"".join(entries)}
+                {}
             </body>
         </file>
     </xliff>
-    """
+    """.format(language_code, ''.join(trans_units))
 
     # Pretty print using minidom
     pretty_xml = parseString(xliff_content).toprettyxml(indent="  ")
@@ -71,10 +88,13 @@ def generate_xliff(data, language_code, output_directory):
     with open(os.path.join(output_directory, f"GCStrings_{language_code}.xliff"), 'w', encoding='utf-8') as f:
         f.write(pretty_xml)
 
+
+
+
 if __name__ == "__main__":
     source_directory = select_directory("Select the source English strings XML directory")
     translated_directory = select_directory("Select the translated XML strings directory")
-    output_directory = select_directory("Select the output directory for the TMX file")
+    output_directory = select_directory("Select the output directory for the XLIFF file")
     language_code = select_language_code()
 
     data_dict = {}
