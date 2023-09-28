@@ -19,9 +19,14 @@ def escape_special_chars(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 def parse_xml(directory, data_dict, translated=False):
+    high_priority_keywords = [
+        "Ability", "Advisor", "Artifact", "Diplomatic", "FactionText", "UIText", 
+        "Race", "PLanet", "Korath", "Improvement", "HotSpot", "GameText", "GameTerm"
+    ]
+    
     for filename in os.listdir(directory):
         if filename.endswith(".xml"):
-            high_priority = "_high" in filename or "additional" in filename
+            high_priority = any(keyword in filename for keyword in high_priority_keywords)
             tree = ET.parse(os.path.join(directory, filename))
             root = tree.getroot()
             for entry in root.findall("StringTable"):
@@ -35,8 +40,8 @@ def parse_xml(directory, data_dict, translated=False):
                     if label in data_dict:  # We only update the translation if the label is found in the original dict
                         data_dict[label][1] = (text_escaped, high_priority)
                 else:
-                    # Storing the filename as part of the source data
-                    data_dict[label] = [(text_escaped, filename, None), None]
+                    # Storing the filename and priority as part of the source data
+                    data_dict[label] = [(text_escaped, filename, high_priority), None]
 
 def generate_xliff(data, language_code, output_directory):
     entries = []
@@ -44,7 +49,7 @@ def generate_xliff(data, language_code, output_directory):
     for label, ((source, filename, source_priority), target_data) in data.items():
         if target_data:  # check if there's a translation
             target, target_priority = target_data
-            entry = f'<trans-unit id="{trans_unit_id}" resname="{label}" extradata="filename:{filename}"><source>{source}</source><target>{target}</target></trans-unit>'
+            entry = f'<trans-unit id="{trans_unit_id}" resname="{label}" extradata="filename:{filename};priority:{source_priority}"><source>{source}</source><target>{target}</target></trans-unit>'
             entries.append(entry)
             trans_unit_id += 1
         else:
@@ -75,5 +80,5 @@ if __name__ == "__main__":
     data_dict = {}
     parse_xml(source_directory, data_dict)
     parse_xml(translated_directory, data_dict, translated=True)
-    generate_xliff(data_dict, language_code, output_directory)  # updated function name
+    generate_xliff(data_dict, language_code, output_directory)
     print(f"XLIFF file generated as GCStrings_{language_code}.xliff in the selected output directory.")
