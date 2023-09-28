@@ -44,51 +44,63 @@ def parse_xml(directory, data_dict, translated=False):
                     # Storing the filename and priority as part of the source data
                     data_dict[label] = [(text_escaped, filename, high_priority), None]
 
-
-
 def generate_xliff(data, language_code, output_directory):
-    trans_units = []
-
-    for label, ((source, filename, source_priority), target_data) in data.items():
-        if target_data:  # check if there's a translation
-            target, target_priority = target_data
-            
-            # Metadata as string without escaped characters
-            metadata = 'highpriority = {}'.format(str(source_priority).lower())
-            
-            trans_unit = '<trans-unit id="{}">'.format(label)  # Using label as id
-            trans_unit += '<source>{}</source>'.format(source)
-            trans_unit += '<target>{}</target>'.format(target)
-            
-            # Adding context-group for source file
-            trans_unit += '<context-group purpose="location">'
-            trans_unit += '<context context-type="sourcefile">{}</context>'.format(filename)
-            trans_unit += '</context-group>'
-            
-            trans_unit += '<note>{}</note>'.format(metadata)
-            trans_unit += '</trans-unit>'
-            
-            trans_units.append(trans_unit)
-        else:
-            print(f"No translation found for label: {label}")
+    grouped_by_file = {}
     
-    xliff_content = """
-    <xliff version="1.2">
-        <file original="GCStrings" source-language="en" target-language="{}" datatype="plaintext">
+    # Organizing the data by filename
+    for label, ((source, filename, source_priority), target_data) in data.items():
+        if filename not in grouped_by_file:
+            grouped_by_file[filename] = []
+        grouped_by_file[filename].append((label, source, target_data, source_priority))
+
+    all_files_content = []
+
+    # Creating XLIFF content for each filename
+    for filename, entries in grouped_by_file.items():
+        trans_units = []
+        for label, source, target_data, source_priority in entries:
+            if target_data:  # check if there's a translation
+                target, target_priority = target_data
+
+                # Metadata as string without escaped characters
+                metadata = 'highpriority = {}'.format(str(source_priority).lower())
+
+                trans_unit = '<trans-unit id="{}">'.format(label)  # Using label as id
+                trans_unit += '<source>{}</source>'.format(source)
+                trans_unit += '<target>{}</target>'.format(target)
+
+                # Adding context-group for source file
+                trans_unit += '<context-group purpose="location">'
+                trans_unit += '<context context-type="sourcefile">{}</context>'.format(filename)
+                trans_unit += '</context-group>'
+
+                trans_unit += '<note>{}</note>'.format(metadata)
+                trans_unit += '</trans-unit>'
+
+                trans_units.append(trans_unit)
+            else:
+                print(f"No translation found for label: {label}")
+        
+        file_content = """
+        <file original="{}" source-language="en" target-language="{}" datatype="plaintext">
             <body>
                 {}
             </body>
         </file>
+        """.format(filename, language_code, ''.join(trans_units))
+        all_files_content.append(file_content)
+
+    xliff_content = """
+    <xliff version="1.2">
+        {}
     </xliff>
-    """.format(language_code, ''.join(trans_units))
+    """.format(''.join(all_files_content))
 
     # Pretty print using minidom
     pretty_xml = parseString(xliff_content).toprettyxml(indent="  ")
 
     with open(os.path.join(output_directory, f"GCStrings_{language_code}.xliff"), 'w', encoding='utf-8') as f:
         f.write(pretty_xml)
-
-
 
 
 if __name__ == "__main__":
