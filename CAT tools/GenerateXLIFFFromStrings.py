@@ -4,7 +4,6 @@ import tkinter as tk
 from tkinter import filedialog, simpledialog
 from xml.dom.minidom import parseString
 
-
 def select_directory(title):
     root = tk.Tk()
     root.withdraw()
@@ -36,16 +35,16 @@ def parse_xml(directory, data_dict, translated=False):
                     if label in data_dict:  # We only update the translation if the label is found in the original dict
                         data_dict[label][1] = (text_escaped, high_priority)
                 else:
-                    data_dict[label] = [(text_escaped, None), None]
-
+                    # Storing the filename as part of the source data
+                    data_dict[label] = [(text_escaped, filename, None), None]
 
 def generate_xliff(data, language_code, output_directory):
     entries = []
     trans_unit_id = 1
-    for label, ((source, source_priority), target_data) in data.items():
+    for label, ((source, filename, source_priority), target_data) in data.items():
         if target_data:  # check if there's a translation
             target, target_priority = target_data
-            entry = f'<trans-unit id="{trans_unit_id}" resname="{label}"><source>{source}</source><target>{target}</target></trans-unit>'
+            entry = f'<trans-unit id="{trans_unit_id}" resname="{label}" extradata="filename:{filename}"><source>{source}</source><target>{target}</target></trans-unit>'
             entries.append(entry)
             trans_unit_id += 1
         else:
@@ -66,8 +65,6 @@ def generate_xliff(data, language_code, output_directory):
 
     with open(os.path.join(output_directory, f"GCStrings_{language_code}.xliff"), 'w', encoding='utf-8') as f:
         f.write(pretty_xml)
-
-
 
 if __name__ == "__main__":
     source_directory = select_directory("Select the source English strings XML directory")
