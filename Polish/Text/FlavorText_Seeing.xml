@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We see you. We greet you.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Well, aren&apos;t you a sight. Get it?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Hello! You look kind! Please be kind.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>You&apos;re new to this sector, correct? I will extend you a simple offer: submit to the Drengin Empire or prepare for annihilation.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_YOR</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Your organic appearance breaks our current understanding of the composition of organic sentient life.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Hello, hello. Sorry to be distracted; much to focus on. Looking at you: can you help us find something across this vast expanse?</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>Ah, greetings. I do hope you are finding a comfortable home in this part of the galaxy. We&apos;d make great partners if you are interested in some surreptitious work.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>We recognize your hyperdrive. It is familiar.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
+			</Requirements>
+			<Text>We see your form. We understand your biology.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>We notice many expansions and rapid development.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Wish to see more. We learn much from synthetics.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>We see war as inevitable.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>We recognize. We are familiar.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>We recognize. We know you are danger.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We see you. We greet you.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not understand.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not fear you.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We appreciate.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We may help.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>Thanks, I&apos;m sure ours is far superior.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>I do not process you as a threat; stare all you want.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
+			</Requirements>
+			<Text>Then you&apos;ll understand the needs of our hatchlings.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>Time is of the essence.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You&apos;re not as dumb as I&apos;ve heard.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>Ah, little Intueri. Welcome back to the stars.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>[I]Przewróć oczami.[/I]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We tire of you. Good-bye.</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We do not appreciate.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>You will fail.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will not help.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+				<ListenerFaction>FACTION_SEEING</ListenerFaction>
+			</Requirements>
+			<Text>We will not consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
+			</Requirements>
+			<Text>How your sector managed without our hyperdrive is a mystery.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_YOR</ListenerFaction>
+			</Requirements>
+			<Text>Negative.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+			</Requirements>
+			<Text>You see what I want you to see.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MANTI</ListenerFaction>
+			</Requirements>
+			<Text>We were given cause to develop swiftly.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_KORATH</ListenerFaction>
+			</Requirements>
+			<Text>You are correct. Brace yourself for that day</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_MOTH</ListenerFaction>
+			</Requirements>
+			<Text>Yes, I&apos;m glad you remembered.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>[I]Zwiń groźną mackę na ekranie.[/I]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TAUNT_PLAYER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We watched. We arrived. We conquered your planet.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+	
+	<FlavorTextDef>
+        <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>Mamy was dość. Jesteśmy z wami w stanie wojny.[BR][BR][COLOR=UIDefaultHighlight](Jesteśmy w stanie wojny)[/COLOR]</Text>
+		</FlavorTextOption>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+			</Requirements>
+			<Text>Obserwujemy was wystarczająco długo. Zlikwidujemy was.[BR][BR][COLOR=UIDefaultHighlight](Jesteśmy w stanie wojny)[/COLOR]</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>GENERIC_GREETING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We wait.</Text>
+		</FlavorTextOption>
+		
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_REFUSE</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We do not approve.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_PERFORMED</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We are grateful.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>TRADE_OFFER_WAITING</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We wait. Show us your offer.</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We consider.</Text>
+			<PreferenceWeight>50</PreferenceWeight>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+
+	<FlavorTextDef>
+		<InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
+
+		<FlavorTextOption>
+			<Requirements>
+				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+			</Requirements>
+			<Text>We speak?</Text>
+		</FlavorTextOption>
+
+	</FlavorTextDef>
+		
+</FlavorTextDefs>

@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
-<FlavorTextDefs
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
 
   <FlavorTextDef>
     <InternalName>FIRST_CONTACT_MAIN</InternalName>
@@ -12,7 +10,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are pleased to meet you, {PLAYERFACTION:2}]]></Text>
+      <Text><![CDATA[<![CDATA[Cieszymy się, że możemy Cię poznać, {PLAYERFACTION:2}]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -21,7 +19,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTION:1} look forward to learning more about the {PLAYERFACTION:2}]]></Text>
+      <Text><![CDATA[<![CDATA[Strona {PLAYERFACTION:1} z niecierpliwością czeka, aby dowiedzieć się więcej o {PLAYERFACTION:2}]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -34,7 +32,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[You are one in a galaxy of many {LEADERNAME:2}, tread carefully.]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteś jednym z wielu w galaktyce {LEADERNAME:2}, stąpaj ostrożnie.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
   </FlavorTextDef>
@@ -45,7 +43,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Likewise {LEADERNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Podobnie {LEADERNAME:1}.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
   </FlavorTextDef>
@@ -59,7 +57,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Pleased to meet you, too.]]></Text>
+      <Text><![CDATA[<![CDATA[Ciebie również miło poznać.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -67,7 +65,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[As we look forward to learning more about you.]]></Text>
+      <Text><![CDATA[<![CDATA[Z niecierpliwością czekamy, aby dowiedzieć się o Tobie więcej.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -82,7 +80,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[We shall see how pleased we are to meet you after we've gotten to know you.]]></Text>
+      <Text><![CDATA[<![CDATA[Zobaczymy, jak bardzo będziemy zadowoleni, gdy już cię poznamy.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -90,7 +88,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[I'm sure that you'll love us as you get to know us.]]></Text>
+      <Text><![CDATA[<![CDATA[Jestem pewien, że pokochasz nas, gdy nas poznasz.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -106,7 +104,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[We are open to trade. [COLOR=UIDefaultHighlight](Opens Trade)[/COLOR]. ]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteśmy otwarci na handel. [COLOR=UIDefaultHighlight](Otwiera handel)[/COLOR]. ]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -120,7 +118,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Prepare yourselves for war!]]></Text>
+      <Text><![CDATA[<![CDATA[Przygotujcie się na wojnę!]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -129,7 +127,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Are you prepared for war, {PLAYERFACTION:2}?]]></Text>
+      <Text><![CDATA[<![CDATA[Czy jesteś przygotowany na wojnę, {PLAYERFACTION:2}?]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -144,7 +142,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Bring it! We shall crush you like vermin.]]></Text>
+      <Text><![CDATA[<![CDATA[Dawajcie! Zmiażdżymy was jak robactwo.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -152,7 +150,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Oh, we are prepared. You shall rue this day!]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteśmy przygotowani. Będziecie żałować tego dnia!]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -167,7 +165,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Too bad we couldn't work things out.]]></Text>
+      <Text><![CDATA[<![CDATA[Szkoda, że nie mogliśmy się dogadać.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -175,7 +173,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[We regret that you felt war to be the necessary option, but we shall see who is better prepared.]]></Text>
+      <Text><![CDATA[<![CDATA[Żałujemy, że uznaliście wojnę za konieczną opcję, ale zobaczymy, kto będzie lepiej przygotowany.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
    
@@ -190,7 +188,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Let us end this war and make amends.]]></Text>
+      <Text><![CDATA[<![CDATA[Zakończmy tę wojnę i zadośćuczyńmy.]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -199,7 +197,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Let us end this war.]]></Text>
+      <Text><![CDATA[<![CDATA[Zakończmy tę wojnę.]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -213,7 +211,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Sure.]]></Text>
+      <Text><![CDATA[<![CDATA[Oczywiście.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -221,7 +219,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Sounds good.]]></Text>
+      <Text><![CDATA[<![CDATA[Brzmi dobrze.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -234,7 +232,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Awesome.]]></Text>
+      <Text><![CDATA[<![CDATA[Niesamowite.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -242,7 +240,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Great.]]></Text>
+      <Text><![CDATA[<![CDATA[Świetnie.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -256,7 +254,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[No. Just no.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie. Po prostu nie.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -264,7 +262,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Nope.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -277,7 +275,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[You are making a mistake.]]></Text>
+      <Text><![CDATA[<![CDATA[Popełniasz błąd.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -285,7 +283,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Fine. Be that way.]]></Text>
+      <Text><![CDATA[<![CDATA[Dobrze. Bądź taki.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -299,7 +297,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We demand that you give us {AMOUNT:2} credits.]]></Text>
+      <Text><![CDATA[<![CDATA[Żądamy, abyś dał nam kredyty {AMOUNT:2} .]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -311,7 +309,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:2} will give you what you want, for now.]]></Text>
+      <Text><![CDATA[<![CDATA[ {PLAYERFACTIONLONG:2} da ci to, czego chcesz, na razie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -321,14 +319,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTION:2} will not be pushed around.]]></Text>
+      <Text><![CDATA[<![CDATA[Strona {PLAYERFACTION:2} nie będzie popychana.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I regret this, but not as much as you will.]]></Text>
+      <Text><![CDATA[<![CDATA[Żałuję tego, ale nie tak bardzo jak ty.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -339,28 +337,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Pay us {AMOUNT:2} credits per day and congratulate yourself for living another day.]]></Text>
+      <Text><![CDATA[<![CDATA[Zapłać nam {AMOUNT:2} kredytów dziennie i pogratuluj sobie przeżycia kolejnego dnia.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You're a jerk, {LEADERNAME:1}, but we will comply with this request, for now.]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteś palantem, {LEADERNAME:1}, ale na razie spełnimy tę prośbę.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You're a jerk, {LEADERNAME:1} and we won't put up with this.]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteś palantem, {LEADERNAME:1} i nie będziemy tego tolerować.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I'm sorry to hear that. But not as sorry as you will be.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi to słyszeć. Ale nie tak bardzo jak tobie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -371,28 +369,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Give us information about {TECHNAME:2}, and maybe it'll help our relations.]]></Text>
+      <Text><![CDATA[<![CDATA[Podaj nam informacje o {TECHNAME:2}, a może to pomoże naszym relacjom.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[In the hope of maintaining good relations, the {PLAYERFACTIONLONG:2} will give you what you want, for now.]]></Text>
+      <Text><![CDATA[<![CDATA[W nadziei na utrzymanie dobrych stosunków, {PLAYERFACTIONLONG:2} da ci to, czego chcesz, na razie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[It's cute how you think that we'll just hand over our knowledge of {TECHNAME:2}. Do your own homework.]]></Text>
+      <Text><![CDATA[<![CDATA[To urocze, jak myślisz, że po prostu przekażemy naszą wiedzę na temat {TECHNAME:2}. Odrób własną pracę domową.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I'm sorry to hear that. But not as sorry as you will be.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi to słyszeć. Ale nie tak bardzo jak tobie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -403,28 +401,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Would you consider helping us out with a gift of {AMOUNT:2} credits?]]></Text>
+      <Text><![CDATA[<![CDATA[Czy rozważyłbyś wsparcie nas prezentem w postaci kredytów {AMOUNT:2} ?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Of course. May we continue to work together for the benefit of both of our empires.]]></Text>
+      <Text><![CDATA[<![CDATA[Oczywiście. Obyśmy nadal współpracowali dla dobra obu naszych imperiów.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Thank you, your support is greatly appreciated!]]></Text>
+      <Text><![CDATA[<![CDATA[Dziękujemy, wasze wsparcie jest bardzo cenne!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I am sorry, but the {PLAYERFACTIONLONG:2} cannot help you at this time.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi, ale {PLAYERFACTIONLONG:2} nie może Ci w tej chwili pomóc.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -435,28 +433,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Would you consider a gift of the knowledge of {TECHNAME:2} to help us out?]]></Text>
+      <Text><![CDATA[<![CDATA[Czy rozważyłbyś podarowanie nam wiedzy o {TECHNAME:2} , aby nam pomóc?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Of course. May we continue to work together for the benefit of both of our empires.]]></Text>
+      <Text><![CDATA[<![CDATA[Oczywiście. Obyśmy nadal współpracowali dla dobra obu naszych imperiów.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Your assistance is greatly appreciated! Thank you!]]></Text>
+      <Text><![CDATA[<![CDATA[Twoja pomoc jest bardzo mile widziana! Dziękujemy!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I am sorry, but the {PLAYERFACTIONLONG:2} cannot help you with your request at this time.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi, ale {PLAYERFACTIONLONG:2} nie może w tej chwili pomóc w spełnieniu Twojej prośby.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -467,28 +465,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. Please, {LEADERNAME:2} help us out by giving us {AMOUNT:2} credits.]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteśmy atakowani przez {PLAYERFACTIONLONG:3}. Proszę, {LEADERNAME:2} pomóż nam, dając nam {AMOUNT:2} kredytów.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I agree.]]></Text>
+      <Text><![CDATA[<![CDATA[Zgadzam się.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We appreciate your help.]]></Text>
+      <Text><![CDATA[<![CDATA[Doceniamy twoją pomoc.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:2} cannot help you at this time.]]></Text>
+      <Text><![CDATA[<![CDATA[Strona {PLAYERFACTIONLONG:2} nie może Ci w tej chwili pomóc.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -499,28 +497,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. We could use your help, {LEADERNAME:2}. Would you provide us with {TECHNAME:2}?]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteśmy atakowani przez {PLAYERFACTIONLONG:3}. Przydałaby nam się twoja pomoc, {LEADERNAME:2}. Czy mógłbyś dostarczyć nam {TECHNAME:2}?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I agree.]]></Text>
+      <Text><![CDATA[<![CDATA[Zgadzam się.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Thank you for sharing your technology.]]></Text>
+      <Text><![CDATA[<![CDATA[Dziękujemy za udostępnienie technologii.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:2} has its own problems. No.]]></Text>
+      <Text><![CDATA[<![CDATA[Strona {PLAYERFACTIONLONG:2} ma swoje własne problemy. Nie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -531,28 +529,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. The situation is dire, {LEADERNAME:2}. Only if you declare war on the {PLAYERFACTIONLONG:3} can we hope to survive.]]></Text>
+      <Text><![CDATA[<![CDATA[Jesteśmy atakowani przez {PLAYERFACTIONLONG:3}. Sytuacja jest tragiczna, {LEADERNAME:2}. Tylko jeśli wypowiesz wojnę {PLAYERFACTIONLONG:3} , możemy mieć nadzieję na przetrwanie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Very well. We will declare war on them.]]></Text>
+      <Text><![CDATA[<![CDATA[Bardzo dobrze. Wypowiemy im wojnę.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Your aid is appreciated.]]></Text>
+      <Text><![CDATA[<![CDATA[Twoja pomoc jest mile widziana.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:2} cannot delcare war on the {PLAYERFACTIONLONG:3} at this time.]]></Text>
+      <Text><![CDATA[<![CDATA[W tej chwili {PLAYERFACTIONLONG:2} nie może wypowiedzieć wojny {PLAYERFACTIONLONG:3} .]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -564,28 +562,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:3} are dangerous, and we would appreciate aid in being rid of them. Would you accept {AMOUNT:1} credits to do this for us?]]></Text>
+      <Text><![CDATA[<![CDATA[ {PLAYERFACTIONLONG:3} są niebezpieczne i bylibyśmy wdzięczni za pomoc w pozbyciu się ich. Czy zaakceptujesz kredyty {AMOUNT:1} , aby zrobić to dla nas?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We will declare war on the {PLAYERFACTIONLONG:3}. ]]></Text>
+      <Text><![CDATA[<![CDATA[Wypowiemy wojnę stronie {PLAYERFACTIONLONG:3}. ]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I knew we could count on you. Thank you!]]></Text>
+      <Text><![CDATA[<![CDATA[Wiedziałem, że możemy na ciebie liczyć. Dziękujemy!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I'm sorry, but the {PLAYERFACTIONLONG:2} just cannot take on this burden right now.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi, ale {PLAYERFACTIONLONG:2} po prostu nie może teraz udźwignąć tego ciężaru.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -596,28 +594,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Declare war on the {PLAYERFACTIONLONG:3} and we will provide {AMOUNT:1} credits to remove any concern of expense.]]></Text>
+      <Text><![CDATA[<![CDATA[Wypowiedz wojnę {PLAYERFACTIONLONG:3} , a my zapewnimy kredyty {AMOUNT:1} , aby wyeliminować wszelkie obawy związane z wydatkami.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We will declare war on the {PLAYERFACTIONLONG:3}. May we continue to work together for the benefit of both of our empires.]]></Text>
+      <Text><![CDATA[<![CDATA[Wypowiemy wojnę {PLAYERFACTIONLONG:3}. Obyśmy nadal współpracowali dla dobra obu naszych imperiów.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We are not interested in being mercenaries for your benefit, {LEADERNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie jesteśmy zainteresowani byciem najemnikami dla twojej korzyści, {LEADERNAME:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You will be forced to take a side soon enough, then you will wish you had taken our generous offer.]]></Text>
+      <Text><![CDATA[<![CDATA[Wkrótce zostaniesz zmuszony do opowiedzenia się po którejś ze stron, a wtedy pożałujesz, że nie skorzystałeś z naszej hojnej oferty.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -628,28 +626,28 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:3} are dangerous and we would appreciate aid in being rid of them. Declare war on them, and we will give you the knowledge of {TECHNAME:1} to aid in your fight.]]></Text>
+      <Text><![CDATA[<![CDATA[ {PLAYERFACTIONLONG:3} są niebezpieczni i będziemy wdzięczni za pomoc w pozbyciu się ich. Wypowiedz im wojnę, a my przekażemy ci wiedzę {TECHNAME:1} , która pomoże ci w walce.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We will declare war on the {PLAYERFACTIONLONG:3}. ]]></Text>
+      <Text><![CDATA[<![CDATA[Wypowiemy wojnę stronie {PLAYERFACTIONLONG:3}. ]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I knew we could count on you. Thank you!]]></Text>
+      <Text><![CDATA[<![CDATA[Wiedziałem, że możemy na ciebie liczyć. Dziękujemy!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I'm sorry, but the {PLAYERFACTIONLONG:2} just cannot take on this burden right now.]]></Text>
+      <Text><![CDATA[<![CDATA[Przykro mi, ale {PLAYERFACTIONLONG:2} po prostu nie może teraz udźwignąć tego ciężaru.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -660,14 +658,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:1} would like to mark our friendship with a gift of {AMOUNT:1} credits.]]></Text>
+      <Text><![CDATA[<![CDATA[Serwis {PLAYERFACTIONLONG:1} chciałby uczcić naszą przyjaźń prezentem w postaci kredytów {AMOUNT:1} .]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Thank you for this gift.]]></Text>
+      <Text><![CDATA[<![CDATA[Dziękujemy za ten prezent.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -678,14 +676,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:1} would like to mark our friendship with a gift of knowledge of {TECHNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Portal {PLAYERFACTIONLONG:1} chciałby uczcić naszą przyjaźń prezentem w postaci wiedzy na temat {TECHNAME:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Thank you for this gift.]]></Text>
+      <Text><![CDATA[<![CDATA[Dziękujemy za ten prezent.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -696,14 +694,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:3} have been destroyed.]]></Text>
+      <Text><![CDATA[<![CDATA[Strona {PLAYERFACTIONLONG:3} została zniszczona.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Understood.]]></Text>
+      <Text><![CDATA[<![CDATA[Zrozumiałem.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -714,35 +712,35 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Your starbase {OBJECTNAME} is a direct threat to our interests. We demand that you remove it at once.]]></Text>
+      <Text><![CDATA[<![CDATA[Wasza baza gwiezdna {OBJECTNAME} stanowi bezpośrednie zagrożenie dla naszych interesów. Żądamy, abyście ją natychmiast usunęli.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Fine, we will destroy it immediately.]]></Text>
+      <Text><![CDATA[<![CDATA[Dobrze, zniszczymy go natychmiast.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Excellent, you have the appreciation of the {PLAYERFACTIONLONG:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Świetnie, masz uznanie {PLAYERFACTIONLONG:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[No, the starbase is staying right where it is.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie, baza gwiezdna pozostanie tam, gdzie jest.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You understand that this throws your intentions into question, {LEADERNAME:2}.]]></Text>
+      <Text><![CDATA[<![CDATA[Rozumiesz, że to poddaje w wątpliwość twoje intencje, {LEADERNAME:2}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -754,35 +752,35 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[I want your starbase {OBJECTNAME}. If you don't give it to us, we will take it from you by force.]]></Text>
+      <Text><![CDATA[<![CDATA[Chcę waszą bazę gwiezdną {OBJECTNAME}. Jeśli nam jej nie dacie, odbierzemy ją wam siłą.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Calm yourself. We will remove it.]]></Text>
+      <Text><![CDATA[<![CDATA[Uspokój się. Usuniemy go.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You made the right choice.]]></Text>
+      <Text><![CDATA[<![CDATA[Dokonałeś właściwego wyboru.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[No, thanks.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie, dziękuję.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Then war it is.]]></Text>
+      <Text><![CDATA[<![CDATA[A więc wojna.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -793,35 +791,35 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We want your starbase {OBJECTNAME}, it has an ascension gate. We'll give you {AMOUNT:1} for it.]]></Text>
+      <Text><![CDATA[<![CDATA[Chcemy twoją bazę gwiezdną {OBJECTNAME}, ma bramę wniebowstąpienia. Damy wam za nią {AMOUNT:1} .]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Okay.]]></Text>
+      <Text><![CDATA[<![CDATA[Dobrze.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Excellent, you have the appreciation of the {PLAYERFACTIONLONG:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Świetnie, masz uznanie {PLAYERFACTIONLONG:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[No.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[We won't give up on this, {LEADERNAME:2}.]]></Text>
+      <Text><![CDATA[<![CDATA[Nie poddamy się, {LEADERNAME:2}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
   <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END)-->
@@ -834,7 +832,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, we see you building up forces outside our doorstep. You should stop it.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
@@ -846,7 +844,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, we see you building up forces outside our doorstep. You should stop it.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -858,7 +856,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, we see you building up forces outside our doorstep. You should stop it.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -870,7 +868,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2} Even though we like you, we don't like the military build up that we're seeing.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2} Mimo że cię lubimy, nie podoba nam się rozbudowa sił zbrojnych, której jesteśmy świadkami.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -883,7 +881,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
 
     <FlavorTextOption>
-      <Text><![CDATA[Nothing to see here...]]></Text>
+      <Text><![CDATA[<![CDATA[Nie ma tu nic do oglądania...]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
@@ -894,7 +892,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Why don't you stop me?]]></Text>
+      <Text><![CDATA[<![CDATA[Dlaczego mnie nie powstrzymasz?]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -905,7 +903,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Nothing to see here...]]></Text>
+      <Text><![CDATA[<![CDATA[Nie ma tu nic do oglądania...]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -916,7 +914,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[You need to trust us, friend.]]></Text>
+      <Text><![CDATA[<![CDATA[Musisz nam zaufać, przyjacielu.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -927,7 +925,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
 
     <FlavorTextOption>
-      <Text><![CDATA[We'll just see about this.]]></Text>
+      <Text><![CDATA[<![CDATA[To się dopiero okaże.]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
@@ -938,7 +936,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[We'll just see about this.]]></Text>
+      <Text><![CDATA[<![CDATA[To się dopiero okaże.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -949,7 +947,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[We'll be watching you.]]></Text>
+      <Text><![CDATA[<![CDATA[Będziemy cię obserwować.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -960,7 +958,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[I hope, for your sake, that our trust isn't misplaced.]]></Text>
+      <Text><![CDATA[<![CDATA[Dla twojego dobra mam nadzieję, że nasze zaufanie nie jest nadużywane.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -972,7 +970,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We should warn you, {LEADERNAME:2}, the {PLAYERFACTIONLONG:3} have built up a powerful military. Be wary of them.]]></Text>
+      <Text><![CDATA[<![CDATA[Powinniśmy cię ostrzec, {LEADERNAME:2}, {PLAYERFACTIONLONG:3} zbudowali potężną armię. Uważaj na nich.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -982,7 +980,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Thanks for the warning. We'll be careful.]]></Text>
+      <Text><![CDATA[<![CDATA[Dzięki za ostrzeżenie. Będziemy ostrożni.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -992,7 +990,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Always.]]></Text>
+      <Text><![CDATA[<![CDATA[Zawsze.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1002,7 +1000,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[It looks like you're having a bit of trouble with the {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Please accept this {OBJECTNAME:1} from us to help with your war effort.]]></Text>
+      <Text><![CDATA[<![CDATA[Wygląda na to, że masz problemy z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Przyjmij od nas ten {OBJECTNAME:1} , aby pomóc w wysiłkach wojennych.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1012,7 +1010,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Your help comes at a perfect time. Thank you.]]></Text>
+      <Text><![CDATA[<![CDATA[Twoja pomoc przychodzi w idealnym momencie. Dziękuję.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1022,7 +1020,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We always help our friends.]]></Text>
+      <Text><![CDATA[<![CDATA[Zawsze pomagamy naszym przyjaciołom.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1032,7 +1030,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{LEADERNAME:2}, you win. We surrender and will turn over all of our remaining assets into your hands.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:2}wygrywacie. Poddajemy się i przekazujemy wszystkie nasze pozostałe aktywa w twoje ręce.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1042,7 +1040,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[I'm glad you saw reason.]]></Text>
+      <Text><![CDATA[<![CDATA[Cieszę się, że dostrzegłeś rozsądek.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1052,7 +1050,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We may be finished, {LEADERNAME:2}, but you're a fool if you think we'll hand our people over to your custody. All of our remaining assets will be turned over to our friends the {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[Może i jesteśmy skończeni, {LEADERNAME:2}, ale jesteś głupcem, jeśli myślisz, że oddamy naszych ludzi pod twoją opiekę. Wszystkie nasze pozostałe aktywa zostaną przekazane naszym przyjaciołom z {PLAYERFACTIONLONG:3}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1062,7 +1060,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Do as you wish, though it will make little difference in the end.]]></Text>
+      <Text><![CDATA[<![CDATA[Rób, co chcesz, choć w ostatecznym rozrachunku nie będzie to miało większego znaczenia.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1072,7 +1070,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We have no choice, {LEADERNAME:2}, we have to surrender to the {PLAYERFACTIONLONG:3}. You've been good to us in the past so it is our wish to give you the remainder of our empire. Use our resources to strike back at the {PLAYERFACTIONLONG:3}!]]></Text>
+      <Text><![CDATA[<![CDATA[Nie mamy wyboru, {LEADERNAME:2}, musimy poddać się {PLAYERFACTIONLONG:3}. Byliście dla nas dobrzy w przeszłości, więc chcemy oddać wam resztę naszego imperium. Wykorzystajcie nasze zasoby, by uderzyć na {PLAYERFACTIONLONG:3}!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1082,7 +1080,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Thanks.]]></Text>
+      <Text><![CDATA[<![CDATA[Dzięki.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1095,10 +1093,10 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text>{LEADERNAME:1}: Very well, let's trade.</Text>
-      <Text>{LEADERNAME:1}: This is acceptable.</Text>
-      <Text>{LEADERNAME:1}: Agreed.</Text>
-      <Text>{LEADERNAME:1}: This works.</Text>
+      <Text>{LEADERNAME:1}: Bardzo dobrze, przejdźmy do handlu.</Text>
+      <Text>{LEADERNAME:1}: Jest to dopuszczalne.</Text>
+      <Text>{LEADERNAME:1}: Zgoda.</Text>
+      <Text>{LEADERNAME:1}: To działa.</Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 
@@ -1111,10 +1109,10 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text>{LEADERNAME:1}: This offer is not acceptable.</Text>
-      <Text>{LEADERNAME:1}: No.</Text>
-      <Text>{LEADERNAME:1}: This won't work for me</Text>
-      <Text>{LEADERNAME:1}: We need more.</Text>
+      <Text>{LEADERNAME:1}: Ta oferta jest nie do przyjęcia.</Text>
+      <Text>{LEADERNAME:1}: Nie.</Text>
+      <Text>{LEADERNAME:1}: To nie będzie działać dla mnie</Text>
+      <Text>{LEADERNAME:1}: Potrzebujemy więcej.</Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 
@@ -1128,8 +1126,8 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text>{LEADERNAME:1}: I'm glad we could come to an agreement.</Text>
-      <Text>{LEADERNAME:1}: This was a good day.</Text>
+      <Text>{LEADERNAME:1}: Cieszę się, że doszliśmy do porozumienia.</Text>
+      <Text>{LEADERNAME:1}: To był dobry dzień.</Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 

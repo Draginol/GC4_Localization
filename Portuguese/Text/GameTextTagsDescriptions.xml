@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<StringTableList
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
   <StringTable>
     <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
-    <String>Some tags are simply the name of the tag in {}.
-            Syntax: {GAMETAG} 
-            Example: {PLANETNAME} is a great place to live!
-            Others have a : followed by a number which is the GameTextIndex, to differentiate between multiple possible replacements.
-            In conversation flavor text, 1 is the Speaker (player initiating the conversation), 2 is the Listener (player receiving the conversation) and 3 is the Third Party Player (player the Speaker and Listener are conversing about).
-            In conversations where something is being offered, use the GameTextIndex to indicate who is giving the item (AMOUNT, TECHNAME, OBJECTNAME)
-            Syntax: {GAMETAG:#} 
-            Example 1: We, the {PLAYERFACTIONLONG:1} declare war on you, the {PLAYERFACTIONLONG:2}
-            Example 2: The {PLAYERFACTION:3} are no more.</String>
+    <String>Algumas tags são simplesmente o nome da tag em {}.[BR]Sintaxe: {GAMETAG} [BR]Exemplo: "{PLANETNAME} é um ótimo lugar para viver!"[BR]Outras têm um : seguido por um número que é o ÍndiceDeTextoDoJogo, para diferenciar entre várias substituições possíveis.[BR]No texto de sabor da conversa, 1 é o Falante (jogador iniciando a conversa), 2 é o Ouvinte (jogador recebendo a conversa) e 3 é o Jogador Terceiro (jogador sobre o qual o Falante e o Ouvinte estão conversando).[BR]Em conversas onde algo está sendo oferecido, use o ÍndiceDeTextoDoJogo para indicar quem está dando o item (QUANTIDADE, NOMEDATECNOLOGIA, NOMEDOOBJETO)[BR]Sintaxe: {GAMETAG:#} [BR]Exemplo 1: "Nós, os {PLAYERFACTIONLONG:1} declaramos guerra a você, os {PLAYERFACTIONLONG:2}"[BR]Exemplo 2: "Os {PLAYERFACTION:3} não existem mais."</String>
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>

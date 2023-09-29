@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import filedialog, simpledialog
 from PyQt5.QtCore import QSettings
 from langdetect import detect
+import langid
 
 class TMXTranslator:
     def __init__(self):
@@ -55,10 +56,10 @@ class TMXTranslator:
             target_language = non_english_tuv.get("{http://www.w3.org/XML/1998/namespace}lang")
             target_seg = non_english_tuv.find('seg')
 
-            # Detect the language of the target segment
-            detected_language = detect(target_seg.text)
+            # Detect the language of the target segment using langid
+            detected_language, _ = langid.classify(target_seg.text)
 
-            if detected_language != target_language:  # If the target segment is detected as NOT the target language
+            if detected_language.lower() == "en":
                 translated_text = self.translate_with_openai(english_seg.text, target_language)
                 print(f"Translating: {target_seg.text} \n\n to {translated_text} \n\n")
                 target_seg.text = translated_text
