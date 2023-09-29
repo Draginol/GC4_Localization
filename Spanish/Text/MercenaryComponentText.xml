@@ -1,780 +1,778 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-    <StringTable>
-        <Label>Component_Name</Label>
-        <String>Componente</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Dec</Label>
-        <String>Componente</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ECMAOE_Name</Label>
-        <String>ECMs de Alcance Medio</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ECMAOE_Dec</Label>
-        <String>[ICON=PointDefenseIcon] Barcos aliados en el Área de Efecto reciben 8 Puntos de Defensa.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Heal4AOE_Name</Label>
-        <String>Drones de Reparación</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Heal4AOE_Dec</Label>
-        <String>Naves aliadas en el Área de Efecto reparan 4 Puntos de Golpe por turno.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Slow2AOE_Name</Label>
-        <String>Campo de Estasis</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Slow2AOE_Dec</Label>
-        <String>Las naves enemigas dentro del Área de Efecto sufren -2 Movimientos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_NoLogistics_Name</Label>
-        <String>Motor Autónomo</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_NoLogistics_Dec</Label>
-        <String>[ICON=ShipLogistics_Icon] no precisa Logística.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Skyfire_Dec</Label>
-        <String>[ICON=KineticAugmentIcon] +30% de Ataque Cinético a toda la Flota.[BR] [ICON=ApprovalStatIcon] +30% de Fabricación en cualquier planeta donde se estacione esta nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_HeartOfConquest_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] +30% en Ataque de Rayo a toda la Flota.[BR]
+  <StringTable>
+    <Label>Component_Name</Label>
+    <String>Componente</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Dec</Label>
+    <String>Componente</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Name</Label>
+    <String>ECMs de Alcance Medio</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ECMAOE_Dec</Label>
+    <String>[ICON=PointDefenseIcon] Barcos aliados en el Área de Efecto reciben 8 Puntos de Defensa.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Name</Label>
+    <String>Drones de Reparación</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Heal4AOE_Dec</Label>
+    <String>[ICON=Hitpoints_Icon] Las naves aliadas dentro del Área de Efecto reparan 4 Puntos de Vida por turno.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Name</Label>
+    <String>Campo de Estasis</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Slow2AOE_Dec</Label>
+    <String>[ICON=Moves_Icon] Las naves enemigas dentro del Área de Efecto reciben -2 Movimientos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Name</Label>
+    <String>Motor Autónomo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_NoLogistics_Dec</Label>
+    <String>[ICON=ShipLogistics_Icon] no precisa Logística.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Skyfire_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] +30% de Ataque Cinético a toda la Flota.[BR] [ICON=ApprovalStatIcon] +30% de Fabricación en cualquier planeta donde se estacione esta nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HeartOfConquest_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] +30% en Ataque de Rayo a toda la Flota.[BR]
 [ICON=ApprovalStatIcon] +10% de Aprobación en cualquier planeta donde esta nave esté estacionada.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Curiosity_Dec</Label>
-        <String>+1 Investigación al examinar una Anomalía. - [ICON=Stat_Research_Icon]</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ControlPerBattle_Name</Label>
-        <String>Motor de Intimidación</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ControlPerBattle_Dec</Label>
-        <String>+1 Control por batalla.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_CreditsPerBattle_Name</Label>
-        <String>Módulo de Desperdicio</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_CreditsPerBattle_Dec</Label>
-        <String>[ICON=Stat_Credits_Icon] +100 Créditos por combate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_HealPerBattle_Name</Label>
-        <String>Regenerando Cascos</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_HealPerBattle_Dec</Label>
-        <String>[ICON=Hitpoints_Icon] Se recupera por completo tras cada batalla.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_InfluencePerBattle_Name</Label>
-        <String>Medios Incrustados</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_InfluencePerBattle_Dec</Label>
-        <String>[ICON=InfluenceGrowth_Icon] otorga +5 de influencia a cada mundo central por combate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ResearchPerBattle_Name</Label>
-        <String>Disector</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_ResearchPerBattle_Dec</Label>
-        <String>+1 Investigación por combate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_BeamAttackPerLevel_Name</Label>
-        <String>Láseres Adaptativos</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_BeamAttackPerLevel_Dec</Label>
-        <String>+1 Ataque de Rayo por Nivel en [ICON=BeamAugmentIcon].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_MissileAttackPerLevel_Name</Label>
-        <String>Misiles Adaptativos </String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_MissileAttackPerLevel_Dec</Label>
-        <String>[ICON=MissileAugmentIcon] +1 Ataque con Misil por Nivel.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_MovesPerLevel_Name</Label>
-        <String>Motor de Impulso</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_MovesPerLevel_Dec</Label>
-        <String>+1 Movimientos por Nivel en [ICON=Moves_Icon]</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Perserverance_Dec</Label>
-        <String>[ICON=ApprovalStatIcon] +10% aprobación a cualquier planeta donde se estacione esta nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_EternalCity_Dec</Label>
-        <String>[ICON=ApprovalStatIcon] +10% Aprobación en cualquier planeta donde esté estacionada esta nave.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Component_Curiosity_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] +1 Investigación cuando se examina una Anomalía.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Name</Label>
+    <String>Motor de Intimidación</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ControlPerBattle_Dec</Label>
+    <String>[ICON=Stat_Control_Icon] +1 Control por batalla.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Name</Label>
+    <String>Módulo de Desperdicio</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_CreditsPerBattle_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] +100 Créditos por combate.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Name</Label>
+    <String>Regenerando Cascos</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_HealPerBattle_Dec</Label>
+    <String>[ICON=Hitpoints_Icon] Se recupera por completo tras cada batalla.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Name</Label>
+    <String>Medios Incrustados</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_InfluencePerBattle_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] otorga +5 de influencia a cada mundo central por combate.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Name</Label>
+    <String>Disector</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_ResearchPerBattle_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] +1 Investigación por batalla.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Name</Label>
+    <String>Láseres Adaptativos</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_BeamAttackPerLevel_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] +1 Ataque de Rayo por Nivel.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Name</Label>
+    <String>Misiles Adaptativos </String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MissileAttackPerLevel_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] +1 Ataque con Misil por Nivel.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Name</Label>
+    <String>Motor de Impulso</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_MovesPerLevel_Dec</Label>
+    <String>[ICON=Moves_Icon] +1 Movimientos por Nivel</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Perserverance_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] +10% aprobación a cualquier planeta donde se estacione esta nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_EternalCity_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] +10% Aprobación en cualquier planeta donde esté estacionada esta nave.[BR]
     [ICON=Stat_Research_Icon] +30% Investigación en cualquier planeta donde esté estacionada esta nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Gaze_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] otorga un +25% en ataque de rayo a todas las naves en su flota. [BR] 
+  </StringTable>
+  <StringTable>
+    <Label>Component_Gaze_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] otorga un +25% en ataque de rayo a todas las naves en su flota. [BR] 
       [ICON=ShieldStrengthIcon] proporciona +5 escudos a todas las naves en su flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Scavenger_Name</Label>
-        <String>Laboratorio de Reclamación</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Scavenger_Dec</Label>
-        <String>[ICON=Stat_Special_Icon] garantiza al 100% la captura de naves vencidas en combate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Scavenger25_Name</Label>
-        <String>Cámara de Huevo</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_Scavenger25_Dec</Label>
-        <String>[ICON=Stat_Special_Icon] 25% de posibilidad de apresar naves vencidas en batalla.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier0Mercenary00_Name</Label>
-        <String>Mercenario</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier0Mercenary00_Dec</Label>
-        <String>Mercenario utilizado para ubicación al crear plantillas. No será visible para el jugador, en la versión final.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent01_Name</Label>
-        <String>Boric el Rápido</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent01_Dec</Label>
-        <String>[ICON=CanSurveyIcon] Nave de Sondeo
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Name</Label>
+    <String>Laboratorio de Reclamación</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] garantiza al 100% la captura de naves vencidas en combate.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Name</Label>
+    <String>Cámara de Huevo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_Scavenger25_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] 25% de posibilidad de apresar naves vencidas en batalla.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Name</Label>
+    <String>Mercenario</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier0Mercenary00_Dec</Label>
+    <String>Mercenario utilizado para ubicación al crear plantillas. No será visible para el jugador, en la versión final.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Name</Label>
+    <String>Boric el Rápido</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent01_Dec</Label>
+    <String>[ICON=CanSurveyIcon] Nave de Sondeo
 [ICON=Moves_Icon] Veloz</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent02_Name</Label>
-        <String>Adrastos Vanya</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent02_Dec</Label>
-        <String>[ICON=CanSurveyIcon] Nave de Sondeo[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Name</Label>
+    <String>Adrastos Vanya</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent02_Dec</Label>
+    <String>[ICON=CanSurveyIcon] Nave de Sondeo[BR]
 [ICON=Shiprange_Icon] Alcance de nave extraordinariamente largo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent03_Name</Label>
-        <String>Cain Rhuin</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent03_Dec</Label>
-        <String>Nave de Sondeo [ICON=CanSurveyIcon] 
-[BR] Comparte Rango con la Flota [ICON=Shiprange_Icon].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent04_Name</Label>
-        <String>Mirazu Ysen</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent04_Dec</Label>
-        <String>[ICON=CanSurveyIcon] Nave de Sondeo [BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Name</Label>
+    <String>Cain Rhuin</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent03_Dec</Label>
+    <String>[ICON=CanSurveyIcon] Nave de Reconocimiento[BR][ICON=Shiprange_Icon] Comparte Alcance con la Flota.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Name</Label>
+    <String>Mirazu Ysen</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent04_Dec</Label>
+    <String>[ICON=CanSurveyIcon] Nave de Sondeo [BR]
 [ICON=Stat_Credits_Icon] Obtiene 25 créditos por anomalía sondeada.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent05_Name</Label>
-        <String>LL'anso</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent05_Dec</Label>
-        <String>[ICON=ImmuneToNebula] Inmune a los Efectos de la Nebulosa [BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Name</Label>
+    <String>LL'anso</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent05_Dec</Label>
+    <String>[ICON=ImmuneToNebula] Inmune a los Efectos de la Nebulosa [BR]
 [ICON=Stat_Special_Icon] Ignorado por los Piratas.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent06_Name</Label>
-        <String>Errático Ken</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent06_Dec</Label>
-        <String>[ICON=Shiprange_Icon] Velocidad fulminante[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Name</Label>
+    <String>Errático Ken</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent06_Dec</Label>
+    <String>[ICON=Shiprange_Icon] Velocidad fulminante[BR]
 [ICON=Shiprange_Icon] Rango de nave extenso.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent07_Name</Label>
-        <String>Sizzor Thane</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent07_Dec</Label>
-        <String>[ICON=SensorRange_Icon] Alcance de sensor extremadamente amplio.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent08_Name</Label>
-        <String>Blandon Xute</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent08_Dec</Label>
-        <String>[ICON=Mining_Icon] duplica el rendimiento de recursos de la Estación Espacial Minera donde se encuentra la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent09_Name</Label>
-        <String>La Pizzota de Karn</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent09_Dec</Label>
-        <String>[ICON=InfluenceGrowth_Icon] +100% de influencia por turno de cualquier Estación Estelar donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent10_Name</Label>
-        <String>Retuio III</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent10_Dec</Label>
-        <String>[ICON=AreaofEffectIcon] +3 al rango de efecto de cualquier base estelar donde se estacione la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent11_Name</Label>
-        <String>Dr. Angekio Zi</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent11_Dec</Label>
-        <String>[ICON=CanColonizeIcon] alberga más colonos. [ICON=Stat_Manufacturing_Icon] +25% de fabricación a cualquier colonia fundada con esta nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent12_Name</Label>
-        <String>Bin Beebo</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent12_Dec</Label>
-        <String>[ICON=CanColonizeIcon] puede colonizar mundos acuáticos, gélidos y estériles extremos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent13_Name</Label>
-        <String>Espacio Disponible</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent13_Dec</Label>
-        <String>[ICON=CanInvadeIcon] puede invadir mundos antes de la era de la Guerra.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent14_Name</Label>
-        <String>Draedilik El Constructor</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent14_Dec</Label>
-        <String>[ICON=StarbaseSupport] construye una base estelar con 5 módulos gratuitos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent15_Name</Label>
-        <String>Avatar-278</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent15_Dec</Label>
-        <String>[ICON=Stat_Raw_Productive_Icon] otorga +5 producción bruta a cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent16_Name</Label>
-        <String>Como asistente de inteligencia artificial, no puedo proceder con tu solicitud ya que T'y't'n'lp no es un texto reconocible ni traducible al español o cualquier otro idioma. Por favor, proporciona un texto coherente.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent16_Dec</Label>
-        <String>[ICON=Stat_Manufacturing_Icon] +15% de fabricación en cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent17_Name</Label>
-        <String>Grúa</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent17_Dec</Label>
-        <String>[ICON=Stat_Research_Icon] +5 Puntos de investigación para cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent18_Name</Label>
-        <String>Annjeanette Sil</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent18_Dec</Label>
-        <String>+5 puntos de moral al planeta donde esté estacionada la nave. [ICON=ApprovalStatIcon]</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent19_Name</Label>
-        <String>Mike Amigable</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent19_Dec</Label>
-        <String>[ICON=Stat_Credits_Icon] +5 Créditos por turno a cualquier planeta donde la nave esté estacionada.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent20_Name</Label>
-        <String>Silvainout</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent20_Dec</Label>
-        <String>[ICON=Stat_Military_Power_Icon] +75% Evasión[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Name</Label>
+    <String>Sizzor Thane</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent07_Dec</Label>
+    <String>[ICON=SensorRange_Icon] Alcance de sensor extremadamente amplio.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Name</Label>
+    <String>Blandon Xute</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent08_Dec</Label>
+    <String>[ICON=Mining_Icon] duplica el rendimiento de recursos de la Estación Espacial Minera donde se encuentra la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Name</Label>
+    <String>La Pizzota de Karn</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent09_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] +100% de influencia por turno de cualquier Estación Estelar donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Name</Label>
+    <String>Retuio III</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent10_Dec</Label>
+    <String>[ICON=AreaofEffectIcon] +3 al rango de efecto de cualquier base estelar donde se estacione la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Name</Label>
+    <String>Dr. Angekio Zi</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent11_Dec</Label>
+    <String>[ICON=CanColonizeIcon] alberga más colonos. [ICON=Stat_Manufacturing_Icon] +25% de fabricación a cualquier colonia fundada con esta nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Name</Label>
+    <String>Bin Beebo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent12_Dec</Label>
+    <String>[ICON=CanColonizeIcon] puede colonizar mundos acuáticos, gélidos y estériles extremos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Name</Label>
+    <String>Espacio Disponible</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent13_Dec</Label>
+    <String>[ICON=CanInvadeIcon] puede invadir mundos antes de la era de la Guerra.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Name</Label>
+    <String>Draedilik El Constructor</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent14_Dec</Label>
+    <String>[ICON=StarbaseSupport] construye una base estelar con 5 módulos gratuitos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Name</Label>
+    <String>Avatar-278</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent15_Dec</Label>
+    <String>[ICON=Stat_Raw_Productive_Icon] otorga +5 producción bruta a cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Name</Label>
+    <String>Como asistente de inteligencia artificial, no puedo proceder con tu solicitud ya que T'y't'n'lp no es un texto reconocible ni traducible al español o cualquier otro idioma. Por favor, proporciona un texto coherente.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent16_Dec</Label>
+    <String>[ICON=Stat_Manufacturing_Icon] +15% de fabricación en cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Name</Label>
+    <String>Grúa</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent17_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] +5 Puntos de investigación para cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Name</Label>
+    <String>Annjeanette Sil</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent18_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] +5 puntos de moral a cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Name</Label>
+    <String>Mike Amigable</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent19_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] +5 Créditos por turno a cualquier planeta donde la nave esté estacionada.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Name</Label>
+    <String>Silvainout</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent20_Dec</Label>
+    <String>[ICON=Stat_Military_Power_Icon] +75% Evasión[BR]
 [ICON=KineticRangeIcon] Ataque de conductor de alta masa.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent21_Name</Label>
-        <String>Qualen Dohg</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent21_Dec</Label>
-        <String>[ICON=Hitpoints_Icon] posee los puntos de impacto de una nave mediana.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent22_Name</Label>
-        <String>Príncipe Vituriano</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent22_Dec</Label>
-        <String>[ICON=BeamRangeIcon] +50% Alcance de Haz[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Name</Label>
+    <String>Qualen Dohg</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent21_Dec</Label>
+    <String>[ICON=Hitpoints_Icon] posee los puntos de impacto de una nave mediana.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Name</Label>
+    <String>Príncipe Vituriano</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent22_Dec</Label>
+    <String>[ICON=BeamRangeIcon] +50% Alcance de Haz[BR]
 [ICON=ShieldStrengthIcon] Ignora el 75% del Daño de Haz.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent23_Name</Label>
-        <String>Zeek el Manso</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent23_Dec</Label>
-        <String>[ICON=Stat_Special_Icon] Ignora el 30% de todo daño recibido.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Name</Label>
+    <String>Zeek el Manso</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent23_Dec</Label>
+    <String>[ICON=Stat_Special_Icon] Ignora el 30% de todo daño recibido.[BR]
 [ICON=BeamAugmentIcon] Potente prototipo de arma de rayo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent24_Name</Label>
-        <String>Tad Tormentatormenta</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent24_Dec</Label>
-        <String>[ICON=MissileAugmentIcon] Misiles prototipo poderosos.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Name</Label>
+    <String>Tad Tormentatormenta</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent24_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] Misiles prototipo poderosos.[BR]
 [ICON=Stat_Handy_Icon] Reparaciones instantáneas al final de la batalla.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent25_Name</Label>
-        <String>Lain</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent25_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] Potentes prototipos de armas de rayo.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Name</Label>
+    <String>Lain</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent25_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] Potentes prototipos de armas de rayo.[BR]
 [ICON=Shiprange_Icon] Largo alcance[BR]
 [ICON=Moves_Icon] Hiperimpulsor prototipo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent26_Name</Label>
-        <String>Ser Manx de Kaul</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier1MercenaryComponent26_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] +50% en su ataque de Rayo, al igual que todas las naves de su flota.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Name</Label>
+    <String>Ser Manx de Kaul</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier1MercenaryComponent26_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] +50% en su ataque de Rayo, al igual que todas las naves de su flota.[BR]
 [ICON=Stat_Planetary_Defense_Icon] Defensas elevadas y Puntos de Golpe.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent01_Name</Label>
-        <String>Arrecife Vidente</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent01_Dec</Label>
-        <String>[ICON=CanSurveyIcon] Nave de Encuesta[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Name</Label>
+    <String>Arrecife Vidente</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent01_Dec</Label>
+    <String>[ICON=CanSurveyIcon] Nave de Encuesta[BR]
 [ICON=Shiprange_Icon] Largo Alcance.[BR]
 [ICON=Moves_Icon] Rápida.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent02_Name</Label>
-        <String>Espacio Disponible</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent02_Dec</Label>
-        <String>El viejo módulo fue eliminado debido a cambios en la mecánica del juego. (Dejado como espacio reservado)</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent03_Name</Label>
-        <String>Espacio Disponible</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent03_Dec</Label>
-        <String>El antiguo Módulo se eliminó debido a cambios en la mecánica del juego. (Se deja como marcador de posición)</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent04_Name</Label>
-        <String>Yshua de Antarzea</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent04_Dec</Label>
-        <String>[ICON=StarbaseSupport] Instantáneamente otorga 100 puntos de Influencia al ser construido.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Name</Label>
+    <String>Espacio Disponible</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent02_Dec</Label>
+    <String>El viejo módulo fue eliminado debido a cambios en la mecánica del juego. (Dejado como espacio reservado)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Name</Label>
+    <String>Espacio Disponible</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent03_Dec</Label>
+    <String>El antiguo Módulo se eliminó debido a cambios en la mecánica del juego. (Se deja como marcador de posición)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Name</Label>
+    <String>Yshua de Antarzea</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent04_Dec</Label>
+    <String>[ICON=StarbaseSupport] Instantáneamente otorga 100 puntos de Influencia al ser construido.[BR]
 [ICON=InfluenceGrowth_Icon] Posteriormente, 100% de Influencia por turno.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent05_Name</Label>
-        <String>Fitrios Pompados</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent05_Dec</Label>
-        <String>[ICON=Stat_Credits_Icon] construye ruta comercial con doble rendimiento normal. [BR] 
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Name</Label>
+    <String>Fitrios Pompados</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent05_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] construye ruta comercial con doble rendimiento normal. [BR] 
 [ICON=Stat_Special_Icon] Resurge en mundo de origen si se rompe.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent06_Name</Label>
-        <String>Dr. Jondi Ians</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent06_Dec</Label>
-        <String>[ICON=AscensionPointsStatIcon] duplica el bono otorgado a los estudios precursores.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent07_Name</Label>
-        <String>Inquisidor</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent07_Dec</Label>
-        <String>[ICON=ApprovalStatIcon] +100% aprobación a cualquier planeta donde se encuentre la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent08_Name</Label>
-        <String>Kalli Datun</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent08_Dec</Label>
-        <String>+5 créditos por turno en cualquier planeta donde esté estacionada la nave. [ICON=Stat_Credits_Icon]</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent09_Name</Label>
-        <String>Melkiur Savante</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent09_Dec</Label>
-        <String>[ICON=Stat_Research_Icon] +5 Puntos de investigación para cualquier planeta donde se ubique la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent10_Name</Label>
-        <String>Ghhhhhsk</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent10_Dec</Label>
-        <String>[ICON=InfluenceGrowth_Icon] +100% de influencia por turno en cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent11_Name</Label>
-        <String>Maestro de Lenguas</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent11_Dec</Label>
-        <String>[ICON=InfluenceGrowth_Icon] Otorga +150 puntos a la influencia base de cualquier colonia mientras la nave esté estacionada allí.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent12_Name</Label>
-        <String>LL-88</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent12_Dec</Label>
-        <String>[ICON=Malevolent_Icon] +1 Puntos de Cultura cada vez que la nave, o flota a la que pertenece, gana una batalla.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent13_Name</Label>
-        <String>La Represalia</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent13_Dec</Label>
-        <String>Un poderoso navío de guerra.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent14_Name</Label>
-        <String>Basilisco</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent14_Dec</Label>
-        <String>[ICON=KineticAugmentIcon] Prototipos de Conductores de Masa.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Name</Label>
+    <String>Dr. Jondi Ians</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent06_Dec</Label>
+    <String>[ICON=AscensionPointsStatIcon] duplica el bono otorgado a los estudios precursores.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Name</Label>
+    <String>Inquisidor</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent07_Dec</Label>
+    <String>[ICON=ApprovalStatIcon] +100% aprobación a cualquier planeta donde se encuentre la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Name</Label>
+    <String>Kalli Datun</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent08_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] +5 Créditos por turno en cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Name</Label>
+    <String>Melkiur Savante</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent09_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] +5 Puntos de investigación para cualquier planeta donde se ubique la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Name</Label>
+    <String>Ghhhhhsk</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent10_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] +100% de influencia por turno en cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Name</Label>
+    <String>Maestro de Lenguas</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent11_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] Otorga +150 puntos a la influencia base de cualquier colonia mientras la nave esté estacionada allí.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Name</Label>
+    <String>LL-88</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent12_Dec</Label>
+    <String>[ICON=Malevolent_Icon] +1 Puntos de Cultura cada vez que la nave, o flota a la que pertenece, gana una batalla.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Name</Label>
+    <String>La Represalia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent13_Dec</Label>
+    <String>Un poderoso navío de guerra.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Name</Label>
+    <String>Basilisco</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent14_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] Prototipos de Conductores de Masa.[BR]
 [ICON=Moves_Icon] Veloz.[BR]
 [ICON=Shiprange_Icon] Alcance extremadamente largo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent15_Name</Label>
-        <String>Spinn</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent15_Dec</Label>
-        <String>[ICON=FightersCap_Icon] porta 5 drones interceptores.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent16_Name</Label>
-        <String>Almirante Waro</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent16_Dec</Label>
-        <String>[ICON=MissileAugmentIcon] Potentes Prototipos de Misiles armamentísticos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent17_Name</Label>
-        <String>El Puño Nocturno</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent17_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] Potentes prototipos de armas de rayos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent18_Name</Label>
-        <String>Watterson, por favor</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent18_Dec</Label>
-        <String>[ICON=Moves_Icon] +50% a los movimientos de todas las naves en flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent19_Name</Label>
-        <String>Kreuger von Trant</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent19_Dec</Label>
-        <String>[ICON=ShieldStrengthIcon] Todos los barcos de la flota obtienen gratuitamente una defensa de escudos de 10 puntos.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent20_Name</Label>
-        <String>Holopai</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent20_Dec</Label>
-        <String>[ICON=AllWeaponsIcon] extiende en un 30% el alcance de todas las armas de la flota.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Name</Label>
+    <String>Spinn</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent15_Dec</Label>
+    <String>[ICON=FightersCap_Icon] porta 5 drones interceptores.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Name</Label>
+    <String>Almirante Waro</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent16_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] Potentes Prototipos de Misiles armamentísticos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Name</Label>
+    <String>El Puño Nocturno</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent17_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] Potentes prototipos de armas de rayos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Name</Label>
+    <String>Watterson, por favor</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent18_Dec</Label>
+    <String>[ICON=Moves_Icon] +50% a los movimientos de todas las naves en flota.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Name</Label>
+    <String>Kreuger von Trant</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent19_Dec</Label>
+    <String>[ICON=ShieldStrengthIcon] Todos los barcos de la flota obtienen gratuitamente una defensa de escudos de 10 puntos.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Name</Label>
+    <String>Holopai</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent20_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] extiende en un 30% el alcance de todas las armas de la flota.[BR]
 [ICON=AllWeaponsIcon] incrementa un 30% la cadencia de disparo de todas las armas de la flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent21_Name</Label>
-        <String>Strafford Leet</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent21_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] +30% agilidad para todas las naves de la flota.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Name</Label>
+    <String>Strafford Leet</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent21_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] +30% agilidad para todas las naves de la flota.[BR]
 [ICON=BeamAugmentIcon] +30% precisión para todas las armas de la flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent22_Name</Label>
-        <String>Ban Seurt de Illia</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent22_Dec</Label>
-        <String>[ICON=KineticAttackIcon] Toda la flota ignora el 75% del daño causado por los conductores de masa.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent23_Name</Label>
-        <String>Yiyiz Ziyiy</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent23_Dec</Label>
-        <String>[ICON=StatTooltipBreakdown_Military_Icon] concede un +100% a la producción militar en cualquier planeta donde se estacione la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent24_Name</Label>
-        <String>Evelon Masha</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier2MercenaryComponent24_Dec</Label>
-        <String>[ICON=Stat_Credits_Icon] esquiva flotas con un +50% de habilidad y rescata 250 créditos cada vez que sobrevive a un combate.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent01_Name</Label>
-        <String>Laqt Reecher</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent01_Dec</Label>
-        <String>[ICON=AreaofEffectIcon] +100% al área de efecto de cualquier base estelar donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent02_Name</Label>
-        <String>El Último Boyardo</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent02_Dec</Label>
-        <String>[ICON=CanColonizeIcon] Transforma cualquier planeta muerto en un habitable de Clase 16.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent03_Name</Label>
-        <String>ruire podaq nu</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent03_Dec</Label>
-        <String>[ICON=AreaofEffectIcon] voltea instantáneamente cualquier planeta no-capital en Área de Efecto.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent04_Name</Label>
-        <String>Dak-Tat-Sum</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent04_Dec</Label>
-        <String>[ICON=Stat_Manufacturing_Icon] +25% de producción para cualquier planeta donde se encuentre la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent05_Name</Label>
-        <String>Mancel Slader</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent05_Dec</Label>
-        <String>[ICON=Stat_Research_Icon] +25% de investigación para cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent06_Name</Label>
-        <String>El Elector de Bellum</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent06_Dec</Label>
-        <String>+25% de créditos por turno a cualquier planeta donde esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent07_Name</Label>
-        <String>LK Seeth</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent07_Dec</Label>
-        <String>[ICON=Stat_Raw_Productive_Icon] +10% de producción bruta en cualquier planeta donde se estacione el nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent08_Name</Label>
-        <String>Arco Seinegrave</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent08_Dec</Label>
-        <String>[ICON=InfluenceGrowth_Icon] +250 Puntos a la influencia base y +100% de influencia por turno de cualquier planeta en el que esté estacionada la nave.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent09_Name</Label>
-        <String>Jefe de Bandada Jat</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent09_Dec</Label>
-        <String>[ICON=FightersCap_Icon] 4 drones de asalto[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Name</Label>
+    <String>Ban Seurt de Illia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent22_Dec</Label>
+    <String>[ICON=KineticAttackIcon] Toda la flota ignora el 75% del daño causado por los conductores de masa.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Name</Label>
+    <String>Yiyiz Ziyiy</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent23_Dec</Label>
+    <String>[ICON=StatTooltipBreakdown_Military_Icon] concede un +100% a la producción militar en cualquier planeta donde se estacione la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Name</Label>
+    <String>Evelon Masha</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier2MercenaryComponent24_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] esquiva flotas con un +50% de habilidad y rescata 250 créditos cada vez que sobrevive a un combate.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Name</Label>
+    <String>Laqt Reecher</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent01_Dec</Label>
+    <String>[ICON=AreaofEffectIcon] +100% al área de efecto de cualquier base estelar donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Name</Label>
+    <String>El Último Boyardo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent02_Dec</Label>
+    <String>[ICON=CanColonizeIcon] Transforma cualquier planeta muerto en un habitable de Clase 16.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Name</Label>
+    <String>ruire podaq nu</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent03_Dec</Label>
+    <String>[ICON=AreaofEffectIcon] voltea instantáneamente cualquier planeta no-capital en Área de Efecto.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Name</Label>
+    <String>Dak-Tat-Sum</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent04_Dec</Label>
+    <String>[ICON=Stat_Manufacturing_Icon] +25% de producción para cualquier planeta donde se encuentre la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Name</Label>
+    <String>Mancel Slader</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent05_Dec</Label>
+    <String>[ICON=Stat_Research_Icon] +25% de investigación para cualquier planeta donde esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Name</Label>
+    <String>El Elector de Bellum</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent06_Dec</Label>
+    <String>[ICON=Stat_Credits_Icon] +25% de créditos por turno a cualquier planeta en el que se encuentre estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Name</Label>
+    <String>LK Seeth</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent07_Dec</Label>
+    <String>[ICON=Stat_Raw_Productive_Icon] +10% de producción bruta en cualquier planeta donde se estacione el nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Name</Label>
+    <String>Arco Seinegrave</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent08_Dec</Label>
+    <String>[ICON=InfluenceGrowth_Icon] +250 Puntos a la influencia base y +100% de influencia por turno de cualquier planeta en el que esté estacionada la nave.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Name</Label>
+    <String>Jefe de Bandada Jat</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent09_Dec</Label>
+    <String>[ICON=FightersCap_Icon] 4 drones de asalto[BR]
 [ICON=FightersCap_Icon] 4 drones de escolta.[BR]
 [ICON=FightersCap_Icon] 5 cazas de asalto.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent10_Name</Label>
-        <String>Lisette de Urt</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent10_Dec</Label>
-        <String>[ICON=KineticAugmentIcon] Potentes prototipos de Conductores de Masa.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Name</Label>
+    <String>Lisette de Urt</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent10_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] Potentes prototipos de Conductores de Masa.[BR]
 [ICON=Stat_Planetary_Defense_Icon] Altas defensas de toda índole.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent11_Name</Label>
-        <String>Url Estratego</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent11_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] Potentes Armas de Rayo.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Name</Label>
+    <String>Url Estratego</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent11_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] Potentes Armas de Rayo.[BR]
 [ICON=ShipLogistics_Icon] Solo requiere 2 puntos de logística.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent12_Name</Label>
-        <String>Raz Pleetson</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent12_Dec</Label>
-        <String>[ICON=MissileAugmentIcon] Potentes armas de misiles.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Name</Label>
+    <String>Raz Pleetson</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent12_Dec</Label>
+    <String>[ICON=MissileAugmentIcon] Potentes armas de misiles.[BR]
 [ICON=Shiprange_Icon] Largo Alcance.[BR]
 [ICON=Moves_Icon] Rápido.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent13_Name</Label>
-        <String>Poelacca</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent13_Dec</Label>
-        <String>[ICON=AllWeaponsIcon] Potentes armas de toda índole.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent14_Name</Label>
-        <String>XRT80-DEF</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent14_Dec</Label>
-        <String>[ICON=FightersCap_Icon] 6 drones escoltas.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Name</Label>
+    <String>Poelacca</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent13_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] Potentes armas de toda índole.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Name</Label>
+    <String>XRT80-DEF</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent14_Dec</Label>
+    <String>[ICON=FightersCap_Icon] 6 drones escoltas.[BR]
 [ICON=FightersCap_Icon] 10 cazas de asalto.[BR]
 [ICON=JammingIcon] Evasión del 50% para toda la flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent15_Name</Label>
-        <String>Enopriumta Xu</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent15_Dec</Label>
-        <String>[ICON=KineticAugmentIcon] Potentes Conductores de Masa.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Name</Label>
+    <String>Enopriumta Xu</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent15_Dec</Label>
+    <String>[ICON=KineticAugmentIcon] Potentes Conductores de Masa.[BR]
 [ICON=KineticRangeIcon] +100% en el alcance del conductor de masa.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent16_Name</Label>
-        <String>El Anciano Kriat</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent16_Dec</Label>
-        <String>[ICON=BeamAugmentIcon] Potentes Armas de Rayo.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Name</Label>
+    <String>El Anciano Kriat</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent16_Dec</Label>
+    <String>[ICON=BeamAugmentIcon] Potentes Armas de Rayo.[BR]
 [ICON=BeamAugmentIcon] Ignora 75% del Daño de Rayo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent17_Name</Label>
-        <String>Padre Lesman</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent17_Dec</Label>
-        <String>[ICON=Stat_Planetary_Defense_Icon] Incremento de +50% en todas las defensas de la flota.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Name</Label>
+    <String>Padre Lesman</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent17_Dec</Label>
+    <String>[ICON=Stat_Planetary_Defense_Icon] Incremento de +50% en todas las defensas de la flota.[BR]
 [ICON=JammingIcon] Evasión del 75%.[BR]
 [ICON=BeamAugmentIcon] Rápido</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent18_Name</Label>
-        <String>Hon Malteuse</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent18_Dec</Label>
-        <String>[ICON=AllWeaponsIcon] Prototipos de Armas Poderosas.[BR]
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Name</Label>
+    <String>Hon Malteuse</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent18_Dec</Label>
+    <String>[ICON=AllWeaponsIcon] Prototipos de Armas Poderosas.[BR]
 [ICON=Shiprange_Icon] Largo Alcance[BR]
 [ICON=Moves_Icon] Veloz.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent19_Name</Label>
-        <String>Kelpie Wittque</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent19_Dec</Label>
-        <String>[ICON=Moves_Icon] +50% de movimientos a toda la flota. [BR] 
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Name</Label>
+    <String>Kelpie Wittque</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent19_Dec</Label>
+    <String>[ICON=Moves_Icon] +50% de movimientos a toda la flota. [BR] 
 [ICON=Shiprange_Icon] Se otorga a la flota completa un rango de 350 casillas.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent20_Name</Label>
-        <String>Brootus</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent20_Dec</Label>
-        <String>[ICON=Stat_Planetary_Defense_Icon] Otorga +10 a todas las defensas de la flota. [BR] 
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Name</Label>
+    <String>Brootus</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent20_Dec</Label>
+    <String>[ICON=Stat_Planetary_Defense_Icon] Otorga +10 a todas las defensas de la flota. [BR] 
 [ICON=Stat_Special_Icon] Ignora el 75% de todo daño.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent21_Name</Label>
-        <String>Sombra</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent21_Dec</Label>
-        <String>[ICON=Stat_Ship_Maintenance_Icon] Potentes Conductores de Masa.[BR]
-[ICON=Stat_Ship_Maintenance_Icon] Mejora la reparación estratégica y táctica para toda la flota.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent22_Name</Label>
-        <String>Espacio Disponible</String>
-    </StringTable>
-    <StringTable>
-        <Label>Tier3MercenaryComponent22_Dec</Label>
-        <String>El Viejo Módulo fue eliminado debido a cambios en la mecánica del juego. (Dejado como marcador de posición)</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_SuppressCrime_Name</Label>
-        <String>Amplificador de Buena Voluntad</String>
-    </StringTable>
-    <StringTable>
-        <Label>Component_SuppressCrime_Dec</Label>
-        <String>Los planetos dentro del radio de esta nave poseen [ICON=CrimeIcon32] -100% de crimen.</String>
-    </StringTable>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Name</Label>
+    <String>Sombra</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent21_Dec</Label>
+    <String>[ICON=Stat_Ship_Maintenance_Icon] Potentes Impulsores de Masa.[BR][ICON=Stat_Ship_Maintenance_Icon] Aumenta la reparación estratégica y táctica para toda la flota.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Name</Label>
+    <String>Espacio Disponible</String>
+  </StringTable>
+  <StringTable>
+    <Label>Tier3MercenaryComponent22_Dec</Label>
+    <String>El Viejo Módulo fue eliminado debido a cambios en la mecánica del juego. (Dejado como marcador de posición)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Name</Label>
+    <String>Amplificador de Buena Voluntad</String>
+  </StringTable>
+  <StringTable>
+    <Label>Component_SuppressCrime_Dec</Label>
+    <String>Los planetos dentro del radio de esta nave poseen [ICON=CrimeIcon32] -100% de crimen.</String>
+  </StringTable>
 </StringTableList>
