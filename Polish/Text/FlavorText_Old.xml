@@ -1,0 +1,1587 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- 1.5 Diplomacy additions. -->
+    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>We are very grateful. We will not forget your generosity.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>We are sorry, but we cannot vindicate assisting you at this time. Perhaps if we had closer relations we could find the funds... but as things stand, we think we are better off keeping our assets to ourselves.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>ParanoidAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>This must be some kind of trick. Go away!</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>That is unfortunate, maybe next time.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Bardzo Wam dziękujemy, jesteśmy bardzo wdzięczni za wsparcie. Hojność {PLAYERFACTIONLONG:2} zostanie zapamiętana przez {PLAYERFACTIONLONG:1} na długie lata.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>You&apos;re welcome, we only hope this will bring our civilizations closer together in the future.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>We have no interest in being in your debt for anything. If you would like to assist us, stay out of our way.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Musisz zbadać Universal Translator)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Sorry you feel that way.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- End 1.5 Diplomacy additions. -->
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(you need to research Universal Translator in order to trade)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>I have a trade proposal for you.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(you cannot trade with someone you are in a war with)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>(you cannot trade with someone you are in a war with)</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(you cannot talk with someone you are in a war with)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>(you cannot talk with someone you are in a war with)</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_CONVERSATION</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(you need to research Universal Translator in order to converse)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>I would like to speak to you about something.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_MORE_OPTIONS</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(you need to research Universal Translator in order to converse)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>I have something else in mind...</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_DONE</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>GO AWAY, YOU DON&apos;T MAKE SENSE</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Goodbye.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Sarah's temp stuff -->
+    <!-- Conversation: DemandCredits -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>Pozdrowienia, {LEADERNAME:2}. Jako cywilizacja żyjąca w cieniu {PLAYERFACTIONLONG:1}, byłoby właściwe, gdybyś dostarczył nam kredyty {AMOUNT:2} jako wyraz szacunku.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>{LEADERNAME:2}nadszedł czas, abyście przyznali się do potęgi {PLAYERFACTIONLONG:1}. Żądamy kredytów {AMOUNT:2} od waszej żałosnej cywilizacji.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+            </Requirements>
+            <Text>Potraktuj to jako dziesięcinę z kredytów {AMOUNT:2} za twoje oddanie naszej sprawie.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+            </Requirements>
+            <Text>Wydatki rosną i będziemy potrzebować od Ciebie dodatkowych {AMOUNT:2} kredytów.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Bardzo dobrze, {PLAYERFACTIONLONG:2} da ci to, czego chcesz, na razie.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>Our race has an infinite memory. We will not forget this veiled threat.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>TimeTravelersAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Your civilization forced us to pay before. We paid. But it did not end well for you.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>You have the advantage now. But when you live as my slaveling we will revisit this day.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>You have the advantage now. But when you live as my slaveling we will revisit this day.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTION:2} nie da się przepchnąć... a wielkość twojej potęgi jest wątpliwa.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+            </Requirements>
+            <Text> {PLAYERFACTION:2} nie boją się ciebie.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Piss off.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SneakyAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>You&apos;re bluffing</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>I&apos;m going to bet you&apos;re not serious.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>You&apos;re going to regret this.</Text>
+            <Text>A dangerous mistake.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandCreditsPerTurn -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Jako cywilizacja o wielkiej potędze, {PLAYERFACTIONLONG:1} powinna otrzymywać daninę od {PLAYERFACTIONLONG:2}... powiedzmy w wysokości {AMOUNT:2} kredytów miesięcznie?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Na razie {PLAYERFACTIONLONG:2} zastosuje się do tej prośby.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Wielka moc? Nie bądź śmieszny; ruszaj w drogę, {LEADERNAME:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Wrong answer. I&apos;m sure you&apos;ll see the consequences of your mistake soon enough.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandTech -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Pomimo naszej ogromnej siły w porównaniu z {PLAYERFACTIONLONG:2}, widzimy, że macie wiedzę, której nam wciąż brakuje. Przekaż nam informacje na temat {TECHNAME:2}, a być może pominiemy pokusę wykorzystania waszej względnej słabości.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Bardzo dobrze, {PLAYERFACTIONLONG:2} da ci to, czego chcesz, na razie.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTIONLONG:2} nie da się przepchnąć... a wielkość twojej potęgi jest wątpliwa.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>You&apos;re going to regret this.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestCredits help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Jesteśmy atakowani przez {PLAYERFACTIONLONG:3}. Proszę, {LEADERNAME:2}, pomóż nam, dając nam {AMOUNT:2} kredytów.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>I agree. We will help.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>We appreciate your help.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Strona {PLAYERFACTIONLONG:2} ma swoje własne problemy. Nie.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestTech help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Nasza obrona jest atakowana przez {PLAYERFACTIONLONG:3}i desperacko potrzebujemy twojej pomocy, {LEADERNAME:2}. Czy możesz dostarczyć nam {TECHNAME:2}?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Very well.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Jesteśmy głęboko wdzięczni za Twoją hojność i szybkie działanie, {LEADERNAME:2}. Wasza gotowość do podzielenia się z nami {TECHNAME:2} w potrzebie jest naprawdę doceniana.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Strona {PLAYERFACTIONLONG:2} ma swoje własne problemy. Nie.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestTech help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTIONLONG:3} rozpoczął atak przeciwko nam, a nasza sytuacja jest krytyczna, {LEADERNAME:2}. Naszą jedyną nadzieją na przetrwanie jest wypowiedzenie wojny {PLAYERFACTIONLONG:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Rozumiemy powagę waszej sytuacji i jesteśmy z wami. Wypowiemy wojnę {PLAYERFACTIONLONG:3} i połączymy siły, aby zapewnić wam przetrwanie. Razem stawimy czoła temu zagrożeniu i wyjdziemy z niego zwycięsko.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Wasze wsparcie w tej tragicznej sytuacji jest nieocenione, {LEADERNAME:2}. Jesteśmy naprawdę wdzięczni za Twoje zaangażowanie w walkę z {PLAYERFACTIONLONG:3}. Razem zwyciężymy.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Sorry, no..</Text>
+            <Text>No.</Text>
+            <Text>No way.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+    <!-- Default: a request, happy if they oblige -->
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Jako członkowie {PLAYERFACTIONLONG:1}, błagamy was o pomoc w naszym konflikcie ze zdradzieckimi {PLAYERFACTIONLONG:3}. W podziękowaniu za waszą współpracę proponujemy hojną nagrodę w postaci {AMOUNT:1} kredytów. Czy zjednoczysz się z nami w tym przedsięwzięciu?</Text>
+            <Text>My, przedstawiciele {PLAYERFACTIONLONG:1}, zwracamy się do Ciebie z prośbą o pomoc w walce z {PLAYERFACTIONLONG:3}. Twoje wsparcie będzie nieocenione i obiecujemy {AMOUNT:1} kredytów jako rekompensatę za Twoje usługi. Czy staniesz z nami?</Text>
+            <Text>W imieniu {PLAYERFACTIONLONG:1}błagamy cię, abyś użyczył nam swojej siły przeciwko potężnym {PLAYERFACTIONLONG:3}. Zobowiązujemy się nagrodzić twoje męstwo kredytami {AMOUNT:1} , jeśli zgodzisz się stanąć po naszej stronie. Czy dołączysz do nas w tej bitwie?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Wypowiemy wojnę {PLAYERFACTIONLONG:3} dla dobra obu naszych cywilizacji.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>I knew we could count on you. Thank you!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>No.</Text>
+            <Text>We can&apos;t go to war at this time.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Jestem pewien, że zgadzasz się, że {PLAYERFACTIONLONG:3} to zaraza tej galaktyki. Weźcie na siebie odpowiedzialność i wypowiedzcie im wojnę; zapewnimy kredyty {AMOUNT:1} , aby pozbyć się wszelkich obaw związanych z kosztami.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Wypowiemy wojnę {PLAYERFACTIONLONG:3}. Stoimy razem.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Nie jesteśmy zainteresowani byciem najemnikami dla twojej korzyści, {LEADERNAME:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>You will be forced to take a side soon enough, then you will wish you had taken our generous offer.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: PayTechForDeclareWarOnOther -->
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTIONLONG:1} przychodzi do ciebie z szansą: {PLAYERFACTIONLONG:3} stanowią zagrożenie. Uważamy, że działanie wyprzedzające jest najlepszą drogą, aby zapobiec ich przytłaczającemu zagrożeniu.[BR][BR]Jednak obecnie nie jesteśmy w stanie sobie z nimi poradzić. Dlatego, jeśli wypowiesz im wojnę, damy ci wiedzę {TECHNAME:1} , aby pomóc w walce.</Text>
+            <Text> {PLAYERFACTIONLONG:1} przynosi ofertę: {PLAYERFACTIONLONG:3} stają się prawdziwym problemem. Uważamy, że podjęcie działań teraz jest najlepszym sposobem, aby zapobiec ich poważnemu zagrożeniu.[BR][BR]Pomimo naszych obecnych ograniczeń, jeśli wypowiesz im wojnę, zapewnimy technologię {TECHNAME:1} , aby wesprzeć twoje wysiłki w konflikcie.</Text>
+            <Text> {PLAYERFACTIONLONG:1} proponuje porozumienie: {PLAYERFACTIONLONG:3} stanowią poważne zagrożenie. Uważamy, że należy działać, zanim staną się przytłaczającą siłą.[BR][BR]Chociaż nie możemy działać teraz, jeśli rozpoczniesz wojnę przeciwko nim, damy ci dostęp do wiedzy {TECHNAME:1} , aby pomóc ci w walce.</Text>
+            <Text>Strona {PLAYERFACTIONLONG:1} zawiera propozycję: {PLAYERFACTIONLONG:3} stanowią poważne zagrożenie. Uważamy, że podjęcie środków zapobiegawczych teraz jest najlepszym sposobem na zneutralizowanie ich niebezpieczeństwa.[BR][BR]Obecnie brakuje nam zasobów do działania. Niemniej jednak, jeśli poprowadzisz szarżę i wypowiesz im wojnę, zapewnimy najnowocześniejszą technologię {TECHNAME:1} , aby pomóc ci w bitwie.</Text>
+            <Text> {PLAYERFACTIONLONG:1} oferuje rozwiązanie: {PLAYERFACTIONLONG:3} stają się poważnym problemem. Wierzymy, że podjęcie działań teraz jest najlepszą drogą do powstrzymania ich przed byciem zagrożeniem.[BR][BR]Pomimo naszych obecnych ograniczeń, jeśli rozpoczniesz wojnę przeciwko nim, zaoferujemy ci zaawansowaną wiedzę {TECHNAME:1} , aby wesprzeć twoje wysiłki.</Text>
+            <Text>Strona {PLAYERFACTIONLONG:1} stanowi szansę: {PLAYERFACTIONLONG:3} to rosnące zagrożenie. Uważamy, że ważne jest, aby podjąć środki zapobiegawcze, zanim staną się nie do powstrzymania.[BR][BR]W tej chwili nie jesteśmy w stanie działać. Jeśli jednak wypowiesz im wojnę, damy ci dostęp do technologii {TECHNAME:1} , aby pomóc w konflikcie.</Text>
+            <Text>Strona {PLAYERFACTIONLONG:1} ma plan: {PLAYERFACTIONLONG:3} stanowią realne zagrożenie. Uważamy, że podjęcie działań teraz jest najlepszym sposobem na zneutralizowanie zagrożenia, jakie stanowią.[BR][BR]Chociaż nie możemy działać w tej chwili, jeśli rozpoczniesz wojnę przeciwko nim, damy ci wiedzę {TECHNAME:1} , aby wesprzeć twoją walkę.</Text>
+            <Text> {PLAYERFACTIONLONG:1} proponuje umowę: {PLAYERFACTIONLONG:3} to poważny problem. Uważamy, że najlepiej jest podjąć środki zapobiegawcze, zanim staną się poważnym zagrożeniem.[BR][BR]Biorąc pod uwagę nasze obecne ograniczenia, jeśli wypowiesz im wojnę, zapewnimy najnowocześniejszą technologię {TECHNAME:1} , aby wspomóc twoje wysiłki w bitwie.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Wypowiemy wojnę {PLAYERFACTIONLONG:3} i będziemy współpracować dla dobra naszych cywilizacji.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>I knew we could count on you. Thank you!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>We cannot take the risk of going to war at this time.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: GiveCredits -->
+    <FlavorTextDef>
+        <InternalName>GIVE_CREDITS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Serwis {PLAYERFACTIONLONG:1} chciałby uczcić naszą przyjaźń prezentem w postaci kredytów {AMOUNT:1} .</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Thank you for this gift.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: GiveTech -->
+    <FlavorTextDef>
+        <InternalName>GIVE_TECH_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Portal {PLAYERFACTIONLONG:1} chciałby uczcić naszą przyjaźń prezentem w postaci wiedzy na temat {TECHNAME:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Thank you for this gift.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: OnPlayerDead -->
+    <FlavorTextDef>
+        <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Strona {PLAYERFACTIONLONG:3} została zniszczona.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Understood.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandStarbaseRemoval -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Wasza baza gwiezdna {OBJECTNAME} stanowi bezpośrednie zagrożenie dla naszych interesów. Żądamy, abyście ją natychmiast usunęli.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Fine, we will destroy it immediately.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Świetnie, masz uznanie {PLAYERFACTIONLONG:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>No, the starbase is staying right where it is.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Rozumiesz, że to poddaje w wątpliwość twoje intencje, {LEADERNAME:2}.</Text>
+            <Text>To budzi wątpliwości co do twoich motywów, {LEADERNAME:2}.</Text>
+            <Text>To poddaje w wątpliwość twoje prawdziwe intencje, {LEADERNAME:2}.</Text>
+            <Text>To budzi podejrzenia co do twojego celu, {LEADERNAME:2}.</Text>
+            <Text>To rzuca cień na twoje motywy, {LEADERNAME:2}.</Text>
+            <Text>Dzięki temu twoje intencje znajdą się w centrum uwagi, {LEADERNAME:2}.</Text>
+            <Text>To podważa wiarygodność twoich motywów, {LEADERNAME:2}.</Text>
+            <Text>To poddaje twoje intencje kontroli, {LEADERNAME:2}.</Text>
+            <Text>To rodzi pytania o autentyczność twoich motywów, {LEADERNAME:2}.</Text>
+            <Text>To poddaje w wątpliwość twój cel, {LEADERNAME:2}.</Text>
+            <Text>To podważa szczerość twoich intencji, {LEADERNAME:2}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- DemandAscensionStarbase -->
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Chcę waszą bazę gwiezdną {OBJECTNAME}. Jeśli nam jej nie dacie, odbierzemy ją wam siłą.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Calm yourself. We will remove it.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>You made the right choice.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>No, thanks.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Then war it is.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Chcemy twoją bazę gwiezdną {OBJECTNAME}, ma kryształ wniebowstąpienia. Damy wam za niego {AMOUNT:1} .</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Okay.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Świetnie, masz uznanie {PLAYERFACTIONLONG:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>No.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Nie poddamy się, {LEADERNAME:2}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
+    <FlavorTextDef>
+        <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
+        <FlavorTextOption>
+            <Text>It&apos;s time to end this war. Would you accept these terms?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_INIT_TRADE_TECHBUY_INTRO</InternalName>
+        <FlavorTextOption>
+            <Text>Strona {PLAYERFACTIONLONG:2} posiada wiedzę, którą jesteśmy zainteresowani. Czy przyjęlibyście ją w zamian?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Get off my lawn -->
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2}widzimy, jak budujecie siły za naszymi drzwiami. Powinniście to powstrzymać.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2} Mimo że cię lubimy, nie podoba nam się rozbudowa sił zbrojnych, której jesteśmy świadkami.</Text>
+            <Text>{PLAYERFACTIONLONG:2}doceniamy was, ale zwiększona obecność wojska jest dla nas niepokojąca.</Text>
+            <Text>{PLAYERFACTIONLONG:2}cenimy sobie nasze relacje z wami, ale rozbudowa sił zbrojnych jest dla nas niepokojąca.</Text>
+            <Text>{PLAYERFACTIONLONG:2}mamy z wami pozytywne relacje, ale ostatnia ekspansja militarna jest dla nas niepokojąca.</Text>
+            <Text>{PLAYERFACTIONLONG:2}cieszymy się naszą przyjaźnią, ale rosnąca obecność wojskowa jest dla nas źródłem niepokoju.</Text>
+            <Text>{PLAYERFACTIONLONG:2}darzymy was sympatią, ale zwiększone gromadzenie wojsk jest dla nas powodem do niepokoju.</Text>
+            <Text>{PLAYERFACTIONLONG:2}doceniamy nasz sojusz, ale wzrost aktywności wojskowej jest dla nas niepokojący.</Text>
+            <Text>{PLAYERFACTIONLONG:2}cenimy nasze partnerstwo, ale rosnąca obecność wojskowa jest dla nas źródłem niepokoju.</Text>
+            <Text>{PLAYERFACTIONLONG:2}mamy z wami dobre stosunki, ale niepokoi nas wzmożona ekspansja wojskowa.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Nothing to see here...</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Why don&apos;t you stop me?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Nothing to see here...</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>You need to trust us, friend.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>We&apos;ll observe carefully.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>We&apos;ll observe carefully.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>We&apos;ll be watching you.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>I hope, for your sake, that our trust isn&apos;t misplaced.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Powinniśmy cię ostrzec, {LEADERNAME:2}, {PLAYERFACTIONLONG:3} zbudowali potężną armię. Uważaj na nich.</Text>
+            <Text>Zaleca się ostrożność, {LEADERNAME:2}. {PLAYERFACTIONLONG:3} dysponują potężnymi siłami militarnymi. Uważaj na ich możliwości.</Text>
+            <Text>Słowo ostrzeżenia, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} ma silną obecność wojskową. Zachowaj ostrożność.</Text>
+            <Text>Uważaj, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} dysponuje potężnym wojskiem. Zachowaj ostrożność w kontaktach z nimi.</Text>
+            <Text>Uważaj, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} dysponuje potężną bazą wojskową. Pamiętaj o tym w kontaktach z nimi.</Text>
+            <Text>Bądź ostrożny, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} ma znaczącą obecność wojskową. Uważaj na ich siłę i możliwości.</Text>
+            <Text>Doradca, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} dysponuje potężną siłą militarną. Miej to na uwadze w kontaktach z nimi.</Text>
+            <Text>Uwaga, {LEADERNAME:2}. Na stronie {PLAYERFACTIONLONG:3} znajduje się silna baza wojskowa. Zachowaj ostrożność w kontaktach z nimi.</Text>
+            <Text>Ostrzeżenie, {LEADERNAME:2}. Strona {PLAYERFACTIONLONG:3} posiada silną obecność wojskową. Postępuj ostrożnie i pamiętaj o ich sile.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Thanks for the warning. We&apos;ll be careful.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Always.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Wygląda na to, że masz problemy z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Przyjmij od nas ten {OBJECTNAME:1} , aby pomóc w wysiłkach wojennych.</Text>
+            <Text>Wygląda na to, że masz trudności z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Pozwól nam zaoferować to {OBJECTNAME:1} jako gest wsparcia dla twojego konfliktu.</Text>
+            <Text>Zauważyliśmy waszą walkę z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Przyjmijcie od nas ten {OBJECTNAME:1} jako znak naszego wsparcia dla waszych wysiłków wojennych.</Text>
+            <Text>Wygląda na to, że {PLAYERFACTIONLONG:3} sprawia ci kłopoty, {LEADERNAME:2}. Chcielibyśmy przedstawić Ci tę stronę {OBJECTNAME:1} , aby pomóc Ci w walce z nimi.</Text>
+            <Text>Widzimy, że masz trudności z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Pozwólcie, że przekażemy wam tę stronę {OBJECTNAME:1} jako wyraz naszego wsparcia dla waszych wysiłków wojennych.</Text>
+            <Text>Wasz konflikt z {PLAYERFACTIONLONG:3} nie pozostał niezauważony, {LEADERNAME:2}. Oferujemy wam tę stronę {OBJECTNAME:1} jako symbol naszego wsparcia dla waszych wysiłków wojennych.</Text>
+            <Text>Jesteśmy świadomi waszej walki z {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Przyjmijcie ten {OBJECTNAME:1} jako znak naszego zaangażowania we wspieranie waszych wysiłków wojennych.</Text>
+            <Text>Wygląda na to, że {PLAYERFACTIONLONG:3} sprawiają wam kłopoty, {LEADERNAME:2}. Pozwólcie, że udostępnimy wam tę stronę {OBJECTNAME:1} jako dowód naszego wsparcia dla waszej walki z nimi.</Text>
+            <Text>Rozumiemy, że stoicie w obliczu wyzwań ze strony {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Przyjmijcie od nas ten {OBJECTNAME:1} jako symbol naszego wsparcia dla waszych wysiłków wojennych.</Text>
+            <Text>Wygląda na to, że {PLAYERFACTIONLONG:3} okazują się trudne, {LEADERNAME:2}. Chcielibyśmy zaoferować wam tę stronę {OBJECTNAME:1} jako wyraz naszego poparcia dla waszego konfliktu z nimi.</Text>
+            <Text>Wasza walka z {PLAYERFACTIONLONG:3} nie pozostała niezauważona, {LEADERNAME:2}. Przyjmijcie od nas ten {OBJECTNAME:1} jako znak naszego zaangażowania we wspieranie waszych wysiłków wojennych.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Your help comes at a perfect time. Thank you.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>We always help our friends.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>{LEADERNAME:2}wygrywacie. Poddajemy się i przekazujemy wszystkie nasze pozostałe aktywa w twoje ręce.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>I&apos;m glad you saw reason.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Może i jesteśmy skończeni, {LEADERNAME:2}, ale jesteś głupcem, jeśli myślisz, że oddamy naszych ludzi pod twoją opiekę. Wszystkie nasze pozostałe aktywa zostaną przekazane naszym przyjaciołom z {PLAYERFACTIONLONG:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>Do as you wish, though it will make little difference in the end.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Nie mamy wyboru, {LEADERNAME:2}, musimy poddać się {PLAYERFACTIONLONG:3}. Byliście dla nas dobrzy w przeszłości, więc chcemy oddać wam resztki naszej cywilizacji. Wykorzystajcie nasze zasoby, by zaatakować {PLAYERFACTIONLONG:3}!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>Thanks.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Now that you&apos;ve colonized a planet, demonstrate that you won&apos;t be stuck there. Build a shipyard.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Dobra, [I]chyba[/I]...</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>How the heck am I supposed to do that?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_COUNTERRESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>I&apos;m sure this will clarify things for you.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Finally. Time to build a constructor ship so you can start to expand.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Alright...</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>You&apos;re so good at following instructions. Build a starbase with that constructor... and you know what? Put it wherever you want, as a treat.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>My, you certainly are demanding...</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>You monster.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>No regrets, Drengi forever.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Masz tam ładną planetę, tę {OBJECTNAME}. Może ją oddacie? Zapłacimy {AMOUNT:1}, oczywiście... nie jesteśmy złodziejami. Ale odmówcie i koniec z dyplomacją.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Gulp, fine.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>How about no?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Oh man, you done goofed now.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Sure I did.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_TESTING_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Rejoice, for your test is successful.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_TESTING_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Huzzah.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We tend to weigh the profitability of the trade route over the ideological choices of that civilization.</Text>
+            <Text>In our dealings with other civilizations, the profitability of the trade route holds a higher significance than their ideological stance.</Text>
+            <Text>The financial success of our trade endeavors takes precedence over any cultural or moral differences.</Text>
+            <Text>The practicality of a profitable trade route takes priority over the beliefs of the civilizations involved.</Text>
+            <Text>In our approach to trade, the economic benefits are given priority over any ideological considerations.</Text>
+            <Text>We prioritize the success of the trade route over any conflicting beliefs with the civilizations we interact with.</Text>
+            <Text>Financial stability in trade supersedes any disparities in ideology with the civilizations we do business with.</Text>
+            <Text>Our focus in trade is primarily on the profitability of the route, rather than the beliefs of the civilizations involved.</Text>
+            <Text>The success of the trade is of greater importance to us than any differing ideologies of the civilizations we engage with.</Text>
+            <Text>We prioritize the economic outcome of the trade route over any ideological differences with the civilizations involved.</Text>
+            <Text>Our trade dealings place a greater emphasis on financial success over any ideological contrasts with the civilizations we interact with.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>STANDARD_RESPONSE</ResponseTo>
+            </Requirements>
+            <Text>End Communication</Text>
+            <PreferenceWeight>910</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Big talk from a puny power.</Text>
+            <Text>Are you looking for us to destroy you?</Text>
+            <Text>You are really tempting fate.</Text>
+            <PreferenceWeight>910</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>I will ignore those words this time.</Text>
+            <Text>You may live to regret your insolence.</Text>
+            <Text>An unfortunate attitude.</Text>
+            <PreferenceWeight>332</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Shouldn&apos;t you be oiling yourself or something?</Text>
+            <Text>For a space robot, you have a lot of attitude.</Text>
+            <Text>Shouldn&apos;t you be making me some toast right about now?</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We will correspond with whomever we so choose.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Their money is as good as anyone else&apos;s.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>From our perspective, you are all equally worthy to be our slaves.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>XenophobicAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We think all of you are pretty gross.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We have little interest in the dogmas of organics.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_OPENBORDERS_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We are glad to hear that.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_ATWAR_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We shall resist you!</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>We are machines. Your boasts are irrelevant.</Text>
+            <PreferenceWeight>80</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_TECHVICTORYWORRY_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>I&apos;m sorry, but we must continue our quest for ultimate knowledge.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>I think any would-be enemy would discover that we are tougher than we look.</Text>
+            <Text>You may find that it would be a fatal mistake to attack us.</Text>
+            <Text>You will soon realize that we are stronger than we appear.</Text>
+            <Text>Underestimating us would be a costly mistake.</Text>
+            <Text>Our resilience is not to be underestimated.</Text>
+            <Text>Attacking us would prove to be a fatal error.</Text>
+            <Text>We may seem fragile, but in reality, we are a formidable force.</Text>
+            <Text>Any attempt to attack us would result in dire consequences.</Text>
+            <Text>Our strength is not easily noticeable, but it should not be underestimated.</Text>
+            <Text>Any hostile action towards us would result in devastating consequences.</Text>
+            <Text>You will find that we are more robust than we seem.</Text>
+            <Text>Making the mistake of attacking us would be a serious misstep.</Text>
+            <Text>We may look weak, but we are far from it.</Text>
+            <Text>Any hostile intent towards us would be met with severe consequences.</Text>
+            <Text>We possess a hidden strength that should not be overlooked.</Text>
+            <Text>You will soon learn that attacking us would be a grave error.</Text>
+            <Text>Our appearance may be deceiving, but our resolve is not.</Text>
+            <Text>Any attempt to harm us would result in disastrous consequences.</Text>
+            <Text>Don&apos;t let our appearance fool you, we are a formidable force.</Text>
+            <Text>Attacking us would be a fatal mistake.</Text>
+            <Text>Our toughness is not immediately noticeable, but it should not be underestimated.</Text>
+            <Text>Any hostile actions towards us would result in dire consequences.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_ASCENSIONVICTORYWORRY_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>According to the pamphlets, ascension means hanging out with lions and lambs and tables of fruit.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Ah, that. Well, everyone knows that ginger and chocolate are the most powerful things in the universe.</Text>
+            <Text>We cannot help that people are interested in the wonderful products of MetaAppleDisneyGooglePlus.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_YOR</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>You biologics need to be educated on the superiority of machines.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Well, to be honest, I had hoped you wouldn&apos;t notice...</Text>
+            <Text>I understand. It&apos;s just that our culture is so wonderful.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>You clearly have never tasted chocolate.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Huh?</Text>
+            <Text>I have no idea what was just said.</Text>
+            <PreferenceWeight>4</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_YOR_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>This is a PG rated discussion. In other words, probably best not to explore the details.</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We shall see.</Text>
+            <Text>Acknowledged.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Acknowledged.</Text>
+            <Text>Understood.</Text>
+            <Text>We will take what you have said under advisement.</Text>
+            <Text>We understand.</Text>
+            <Text>We will take your message under advisement.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- End Game text -->
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
+        <FlavorTextOption>
+            <Text>Through your creative use of guns, ships and ships with guns, you have put your boot on the galaxy&apos;s neck. All of your enemies have been crushed, their planets beaten into submission, and their citizens made to wave your flag. It wasn&apos;t pretty, but it never had to be, did it?</Text>
+        </FlavorTextOption>
+        <!-- <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
+    </FlavorTextOption> -->
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
+        <FlavorTextOption>
+            <Text>Your culture has spread across the entire galaxy. Aliens everywhere are seeking to emulate the ways of your people, adding or removing limbs as necessary to better fit their vision of the perfect life you lead. Who needs to conquer the bodies when you already own their hearts and minds?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_RESEARCH</InternalName>
+        <FlavorTextOption>
+            <Text>Using your powerful brains, your culture has unlocked the secrets of not only this universe, but the one beyond. Let the simpletons of the galaxy squabble over the dust and fragments of rock they squat upon. For your people, something far greater beckons.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ASCENSION</InternalName>
+        <FlavorTextOption>
+            <Text>Your study of the ways of the Precursors is complete, and your people will soon be indistinguishable from the Precursors themselves. Having mastered their technology and way of thinking, your people are about to set out on a journey that the lesser minds of this galaxy cannot even begin to comprehend.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ASCENSION_DEFEAT</InternalName>
+        <FlavorTextOption>
+            <Text>Another race has followed the path of the Precursors and ascended. Though our destruction is not immediate, you have led us to become evolutionary obsolete. Our spaceships and lasers have little meaning to a race beyond mortality, to whom time and space are children&apos;s toys. To them, we aren&apos;t even truly sentient, we are dust blowing around the galaxy, ignored or destroyed as their whims dictate.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ALLIANCE</InternalName>
+        <FlavorTextOption>
+            <Text>And with the stroke of a pen, peace was finally at hand. A peace that would last, for it had been laid on a foundation of mutual trust and respect. With their minds and resources no longer wasted on the unending thirst of war, a new golden age of prosperity soon descends upon your people and its allies.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_TURNLIMIT</InternalName>
+        <FlavorTextOption>
+            <Text>For years, your people fought and struggled on the galactic stage with your ambitious and conniving neighbors. Although no single race ever gained a decisive edge, when the conflict turned into a war of attrition, it was your people who ultimately ended in the best position.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_PRESTIGE</InternalName>
+        <FlavorTextOption>
+            <Text>For years, your people fought and struggled on the galactic stage with your ambitious and conniving neighbors. Although no single race ever gained a decisive edge, when the conflict turned into a war of attrition, it was your people who ultimately ended in the best position.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_UNITEDPLANETS</InternalName>
+        <FlavorTextOption>
+            <Text>You shouldn&apos;t be seeing this.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_DEFEAT</InternalName>
+        <FlavorTextOption>
+            <Text>And with that, your civilization collapsed. For a time, your people lived on, scattered around the galaxy as refugees and hermits. But your species&apos; power never returned. Will your people be remembered in museums and textbooks, or wiped from the memories of all beings? You&apos;ll never know. It&apos;s not up to you to say anymore.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_RETIRED</InternalName>
+        <FlavorTextOption>
+            <Text>Building a galaxy spanning civilization takes a long time, and not everyone has the patience for it. Will your people understand that you did the best you could, or will they curse you for abandoning them while aliens devour their bones? Don&apos;t let it keep you up at night (you should let it keep you up at night).</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_CREDITS</InternalName>
+        <FlavorTextOption>
+            <Text>Nasz dyplomata {OBJECTNAME} ukradł kredyty {AMOUNT:2} od {PLAYERFACTION:3}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>UNIT_STOLE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Nasz Diplomat {OBJECTNAME} ukradł technologię {TECHNAME:2} z {PLAYERFACTION:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>UNIT_STOLE_TECH_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Keep up the good work.</Text>
+        </FlavorTextOption>
+<!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Ukradliśmy technologię {TECHNAME:2} z {PLAYERFACTION:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH_FAIL</InternalName>
+        <FlavorTextOption>
+            <Text>Nasze kosmiczne oko spojrzało na {PLAYERFACTION:3}. Chociaż nie zaobserwowano żadnych nowych technologii, zebraliśmy pewne spostrzeżenia na temat metod badawczych innych niż nasze własne. [BR][BR][COLOR=UIDefaultHighlight][ICON=Stat_Research_Icon] +30 Badania[/COLOR]
+			</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Excellent.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC</InternalName>
+        <FlavorTextOption>
+            <Text>Fill Description</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>What foul pollutant of a creature crosses my screen?</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>It&apos;s nice to meet you and your kind, Korath.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Mind your manners, Korath. You won&apos;t intimidate anyone here.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_GREETING</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Make this quick, alien scum.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DECLARE_WAR_MAIN</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>How wretched a life you must live, not being one of us. Soon it will be over, for you and all your kind.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>You&apos;ve proven your strength, alien. Enough with this fighting. Let us tend to our wounds.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_CREATED_TRADE_OFFER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Look, alien. An offer and a gift. You&apos;d be a fool not to accept.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TRADE_OFFER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>We accept your offer, alien.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>The galaxy is awash in filthy aliens. It&apos;s sickening.</Text>
+            <Text>Do you ever tire of the sounds your hideous face makes? I do.</Text>
+            <Text>Don&apos;t waste my time our yours with idle chatter. But mostly don&apos;t waste mine.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>You seem uglier than normal today.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>You seem uglier than normal today.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- FROM INTRIGUE -->
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_LOSE</InternalName>
+        <FlavorTextOption>
+            <Text>Za 5 miesięcy odbędą się wybory. Sondażownie donoszą, że prawdopodobnie [COLOR=UIDefaultHighlight]przegramy przez osunięcie się[/COLOR]ziemi.[BR][BR]Wybory wymagają, abyśmy uważnie obserwowali nasz wskaźnik poparcia. Wyborcy nie dadzą się łatwo zwieść krótkoterminowym działaniom i wezmą pod uwagę swoje morale w dłuższym okresie. Wszystkie rzeczy, które zwiększają poparcie, pomogą nam wygrać wybory, takie jak obniżenie stawki podatkowej i budowanie ulepszeń zatwierdzających. Możemy też rozważyć formy rządów, które nie przeprowadzają wyborów. Jeśli przegramy wybory, przejdziemy do [COLOR=UIDefaultHighlight]rządu koalicyjnego[/COLOR] , który ograniczy naszą władzę. W tym blokuje naszą zdolność do wypowiadania wojny.
+      </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_LOW</InternalName>
+        <FlavorTextOption>
+            <Text>Za 5 miesięcy odbędą się wybory. Ankieterzy twierdzą, że prawdopodobnie [COLOR=UIDefaultHighlight]przegramy, ale będzie blisko[/COLOR]. Powinniśmy skupić się na podnoszeniu morale.[BR][BR]Wybory wymagają, abyśmy uważnie obserwowali nasz wskaźnik poparcia. Wyborcy nie dadzą się łatwo zwieść krótkoterminowym działaniom i będą rozważać swoje morale w dłuższym okresie. Wszystkie rzeczy, które zwiększają poparcie, pomogą nam wygrać wybory, takie jak obniżenie stawki podatkowej i budowanie ulepszeń zatwierdzających. Możemy też rozważyć formy rządów, które nie przeprowadzają wyborów. Jeśli przegramy wybory, przejdziemy do [COLOR=UIDefaultHighlight]rządu koalicyjnego[/COLOR] , który ograniczy naszą władzę. W tym blokuje naszą zdolność do wypowiadania wojny.
+      </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_HIGH</InternalName>
+        <FlavorTextOption>
+            <Text>Za 5 miesięcy odbędą się wybory. Ankieterzy twierdzą, że prawdopodobnie wygramy, [COLOR=UIDefaultHighlight]ale będzie blisko[/COLOR]. Nie możemy dopuścić do spadku morale.[BR][BR]Wybory wymagają, abyśmy uważnie obserwowali nasze notowania. Wyborcy nie dadzą się łatwo zwieść krótkoterminowym działaniom i wezmą pod uwagę swoje morale w dłuższym okresie. Wszystkie rzeczy, które zwiększają poparcie, pomogą nam wygrać wybory, takie jak obniżenie stawki podatkowej i budowanie ulepszeń zatwierdzających. Możemy też rozważyć formy rządów, które nie przeprowadzają wyborów. Jeśli przegramy wybory, przejdziemy do [COLOR=UIDefaultHighlight]rządu koalicyjnego[/COLOR] , który ograniczy naszą władzę. W tym blokuje naszą zdolność do wypowiadania wojny.
+      </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_WIN</InternalName>
+        <FlavorTextOption>
+            <Text>Za 5 miesięcy odbędą się wybory. Sondażownie donoszą, że prawdopodobnie wygramy [COLOR=UIDefaultHighlight]przez osunięcie się ziemi[/COLOR].[BR][BR]Wybory wymagają, abyśmy uważnie obserwowali nasz wskaźnik poparcia. Wyborcy nie dadzą się łatwo zwieść krótkoterminowym działaniom i wezmą pod uwagę swoje morale w dłuższym okresie. Wszystkie rzeczy, które zwiększają poparcie, pomogą nam wygrać wybory, takie jak obniżenie stawki podatkowej i budowanie ulepszeń zatwierdzających. Możemy też rozważyć formy rządów, które nie przeprowadzają wyborów. Jeśli przegramy wybory, przejdziemy do [COLOR=UIDefaultHighlight]rządu koalicyjnego[/COLOR] , który ograniczy naszą władzę. W tym blokuje naszą zdolność do wypowiadania wojny.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_ECONOMY</InternalName>
+        <FlavorTextOption>
+            <Text>Przyjrzyjmy się naszym opcjom ekonomicznym. [COLOR=UIDefaultHighlight](Otwiera ekran ekonomiczny)[/COLOR]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Przyjrzyjmy się naszym opcjom rządowym. [COLOR=UIDefaultHighlight](Otwiera ekran Rząd)[/COLOR]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Give me a moment.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING</InternalName>
+        <FlavorTextOption>
+            <Text>Nasz rząd jest niewystarczający dla potrzeb naszej rosnącej cywilizacji. Nowe kolonie narzekają, że rząd służy tylko ojczystej planecie, a decyzje na naszych światach są coraz bardziej opóźniane przez coraz głębsze poziomy biurokracji.[BR][BR]Rządy są skuteczne tylko w zarządzaniu określoną liczbą światów. Po przekroczeniu tego [COLOR=UIDefaultHighlight]limitu kol[/COLOR] onii będziemy ponosić karę morale za każdą kolonię, którą kontrolujemy powyżej tego limitu.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Przyjrzyjmy się naszym opcjom rządowym. [COLOR=UIDefaultHighlight](Otwiera ekran Rząd)[/COLOR]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Give me a moment.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Nasz rząd jest niewystarczający dla potrzeb rozwijającej się cywilizacji. Nowe kolonie narzekają, że rząd służy tylko ojczystej planecie, a decyzje na naszych światach są coraz bardziej opóźniane przez biurokrację.[BR][BR]Rządy są skuteczne tylko w zarządzaniu określoną liczbą światów. Po przekroczeniu [COLOR=UIDefaultHighlight]limitu kol[/COLOR] onii otrzymujemy karę morale za każdą kolonię powyżej tego limitu. Niestety nie odkryliśmy żadnych rządów, które zwiększałyby nasz limit kolonii. Powinniśmy odkryć technologie pozwalające na bardziej zaawansowane formy rządów, poprzez badania lub handel z innymi cywilizacjami.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Przyjrzyjmy się naszym opcjom badawczym. [COLOR=UIDefaultHighlight](Otwiera ekran Badania)[/COLOR]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Give me a moment.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSE_FIRST_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Now that we have expanded beyond our homeworld, the colonists are crying out for structure. It is time for us to choose a form of government that is ready to handle a galactic civilization.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_GO_NOW</InternalName>
+        <FlavorTextOption>
+            <Text>Świetnie, zaczynajmy! [COLOR=UIDefaultHighlight](Otwiera ekran rządu)[/COLOR]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Give me a moment.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>LEADER_OPINION_OF_PLAYER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <NoMin>true</NoMin>
+                        <RangeMax>30</RangeMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]&quot;Twoja niekompetencja przeszła do legendy&quot;[/I]</Text>
+            <Text>[I]&quot;Prowadzisz naszą cywilizację do ruiny&quot;[/I]</Text>
+            <Text>[I]&quot;Przetrwamy pomimo twojego miernego przywództwa&quot;[/I]</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <RangeMin>70</RangeMin>
+                        <NoMax>true</NoMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]&quot;Nasza cywilizacja kwitnie dzięki twoim rządom&quot;[/I]</Text>
+            <Text>[I]&quot;Masz moje wieczne wsparcie&quot;[/I]</Text>
+            <Text>[I]&quot;Służę ci z honorem&quot;[/I]</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <RangeMin>30</RangeMin>
+                        <RangeMax>70</RangeMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]&quot;Jesteś kompetentnym, ale nie wyjątkowym władcą&quot;[/I]</Text>
+            <Text>[I]&quot;Jesteś zdolnym zarządcą naszej cywilizacji, ale powinniśmy aspirować do czegoś więcej&quot;[/I]</Text>
+            <Text>[I]&quot;Nie mam zdecydowanej opinii na ten temat&quot;[/I]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>

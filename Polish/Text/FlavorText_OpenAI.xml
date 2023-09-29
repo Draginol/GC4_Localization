@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- OpenAI Conversation Pretexts -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTIONLONG:1} to frakcja rządzona przez {LEADERNAME:1}. Mają cechy osobowości {PLAYERTRAITS:1}. {PLAYERFACTIONLONG:2} to frakcja rządzona przez {LEADERNAME:2}. Mają cechy osobowości {PLAYERTRAITS:2}. Opisano ich w następujący sposób: {PLAYERFACTIONDESCRIPTION:2}. Są rywalami różnych gatunków i planet macierzystych w wewnątrzgalaktycznym konflikcie o dominację.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text> {PLAYERFACTIONLONG:1} to frakcja rządzona przez {LEADERNAME:1}. Mają cechy osobowości {PLAYERTRAITS:1}. {PLAYERFACTIONLONG:2} to frakcja rządzona przez {LEADERNAME:2}. Mają cechy osobowości {PLAYERTRAITS:2}. Opisano ich w następujący sposób: {PLAYERFACTIONDESCRIPTION:2}. Są rywalami różnych gatunków i światów macierzystych w wewnątrzgalaktycznym konflikcie o dominację. Wcześniej {LEADERNAME:1} powiedział {LEADERNAME:2}co następuje: {PREVIOUSCONV:0} </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} jest jedną z wielu frakcji ziemskich i pozaziemskich, które rywalizują w galaktycznym wyścigu o dominację w kosmosie. Są one opisane w następujący sposób: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PREVIOUSCONV:0} jest jedną z wielu frakcji ziemskich i pozaziemskich, które rywalizują w galaktycznym wyścigu o dominację w kosmosie. Są one opisane w następujący sposób: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_LEADER_NAME_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PREVIOUSCONV:0} jest jedną z wielu frakcji ziemskich i pozaziemskich, które rywalizują w galaktycznym wyścigu o dominację w kosmosie. Są one opisane w następujący sposób: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} jest jedną z wielu frakcji ziemskich i pozaziemskich, które rywalizują w galaktycznym wyścigu o dominację w kosmosie. Są one opisane w następujący sposób: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} jest jedną z wielu frakcji ziemskich i pozaziemskich, które rywalizują w galaktycznym wyścigu o dominację w kosmosie. Są one opisane w następujący sposób: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- OpenAI Prompts -->
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} do wykorzystania w grze strategicznej. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 100 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_GENERAL_MAIN_SHARED_TRADE_ROUTE_PROMPT</InternalName>
+        <MaxTokens>400</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Frakcje dzielą ze sobą ważne szlaki handlowe, więc należy wspomnieć o wzajemnych korzyściach z handlu. Odpowiedz w mniej niż 100 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą deklarację wojny w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Nie używaj ponownie żadnych słów z opisów cech osobowości. Odpowiedz w mniej niż 10 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_MAJOR_CIV_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2} głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. {LEADERNAME:1} Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 50 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_GENERIC_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do innego lidera głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. {LEADERNAME:1} Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 50 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>INTRODUCTION_PROMPT</InternalName>
+        <MaxTokens>400</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2} głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 100 słowach. Uwzględnij przeformułowanie następujących kwestii: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_PEACEFUL_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą odpowiedź do innej frakcji w pierwszej osobie jako odpowiedź na pierwsze wprowadzenie do wykorzystania w strategicznej grze wideo. Odpowiadamy cywilizacji, która określa się jako {PLAYERFACTIONDESCRIPTION:1}. Bądź przyjazny, ale uznaj ich unikalne cechy. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 10 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_NEUTRAL_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą odpowiedź na pierwsze wprowadzenie do strategicznej gry wideo. Odpowiadamy cywilizacji, która opisuje się jako {PLAYERFACTIONDESCRIPTION:1}. Bądź trochę agresywny i zabawny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 15 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_TRADE_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą odpowiedź w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} jako odpowiedź na pierwsze wprowadzenie do wykorzystania w strategicznej grze wideo. Użyj neutralnego i niezobowiązującego tonu. Wskaż, że rozmówca jest otwarty na wymianę. Bądź kreatywny w sposób, w jaki zrobiłby to ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1} . Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 25 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą odpowiedź w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} jako odpowiedź na wypowiedzenie wojny {PLAYERFACTION:1} do wykorzystania w strategicznej grze wideo. Użyj agresywnego tonu. Bądź kreatywny w sposób, w jaki zrobiłby to ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1} . Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 10 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzłą odpowiedź w pierwszej osobie od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} jako odpowiedź na wypowiedzenie wojny {PLAYERFACTION:1} do wykorzystania w strategicznej grze wideo. Użyj rozczarowanego tonu. Bądź kreatywny w sposób, w jaki zrobiłby to ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1} . Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 10 słowach. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>INTRODUCTION_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na wprowadzenie w pierwszej osobie od {LEADERNAME:2} do {LEADERNAME:1} głosem {LEADERNAME:2} do wykorzystania w strategicznej grze wideo. Bądź kreatywny i napisz w sposób, w jaki opisałby siebie ktoś {PLAYERFACTIONDESCRIPTION:1} . Nie używaj ponownie żadnych słów w opisach cech osobowości. Nie używaj imienia przywódcy ani nazwy frakcji. Odpowiedz w maksymalnie 16 słowach. Uwzględnij przeformułowanie następujących elementów: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_GREETING_PROMPT</InternalName>
+        <MaxTokens>300</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wstęp do rozmowy w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2} głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1} , więc upewnij się, że bierzesz to pod uwagę. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 75 słowach. Uwzględnij przeformułowanie następujących elementów: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OPTIONS_MAIN_TEXT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz słowną kolejkę do zmiany tematu rozmowy w pierwszej osobie z {LEADERNAME:1} na {LEADERNAME:2} głosem {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. Bądź kreatywny w sposób, w jaki zrobiłby to ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1} . Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 25 słowach. Uwzględnij przeformułowanie następujących elementów: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DECLARE_WAR_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz deklarację wojny w pierwszej osobie od {LEADERNAME:2} do {LEADERNAME:1} głosem {LEADERNAME:2} do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Spraw, by wypowiedzenie wojny uwzględniało sposób, w jaki się opisują, ale pamiętaj, że są bardzo źli. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 25 słowach. Uwzględnij przeformułowanie następujących elementów: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na ofertę handlową w pierwszej osobie od {LEADERNAME:2} do {LEADERNAME:1} głosem {LEADERNAME:1} do wykorzystania w grze strategicznej. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Nie używaj imienia lidera ani nazwy frakcji. Odpowiedz w 10 słowach lub mniej. Rozpocznij odpowiedź od {LEADERNAME:1} , a następnie dwukropka. Zamieść powtórzenie poniższego zdania: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz oryginalną i interesującą nazwę imperium dla frakcji obecnie nazywanej {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Nie używaj słów galaktyka, dominacja ani siła. Odpowiedz w 2-3 słowach. Nie przekraczaj 3 słów!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_SHORT_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Wymyśl krótszą wersję nazwy {PREVIOUSCONV:0} dla frakcji w turowej grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz w 2 lub mniej słowach.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Wymyśl imię dla przywódcy frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz od 2 do 4 słów.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Wymyśl nazwę dla ojczystego świata frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Opisali siebie jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w 1-3 słowach.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
+        <MaxTokens>50</MaxTokens>
+        <FlavorTextOption>
+            <Text>Wymyśl znak wywoławczy marynarki wojennej lub statku kosmicznego dla frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Odpowiedź powinna być akronimem lub skrótem i składać się z dokładnie 2 lub 3 wielkich liter, po których następuje kropka. Nie używaj pełnych słów. Na przykład H.M.S. Inny przykład U.S.S. Odpowiedź nie może przekraczać 6 liter łącznie z kropkami. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz krótki opis frakcji o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w mniej niż 30 słowach.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz opis frakcji o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Nie używaj bezpośrednio nazw cech. Napisz to w stylu wybitnego autora science fiction. Ogranicz się do trzech zdań. Dodaj znaki powrotu karetki, aby podzielić tekst na czytelne akapity.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz opis mocnych i słabych stron frakcji o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Pisz w stylu hard sci-fi. Nie używaj bezpośrednio nazw cech. Ogranicz się do dwóch zdań. Dodaj znaki powrotu karetki, aby podzielić tekst na czytelne akapity.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_MOTTO_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz motto dla frakcji o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w mniej niż 45 znakach.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wstęp do rozmowy rozpoczętej przez cywilizację o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Uwzględnij przeformułowanie następujących elementów: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Dołącz przeformułowanie następującego: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Jest to cywilizacja, która opisuje się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Dołącz przeformułowanie następującego: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz wstęp do rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Dołącz przeformułowanie następującego: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. TO JA MÓWIĘ V3. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiadaj w mniej niż 15 słowach i powinny one odnosić się do tego, jak się opisują. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Dołącz przeformułowanie następującego: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. TO JA MÓWIĘ V4. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 30 słowach i przekaż, jak zwięźle się opisują. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Dołącz przeformułowanie następującego: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzły, jednozdaniowy, akceptujący komentarz w pierwszej osobie do oferty handlowej złożonej nam przez inną frakcję o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Ich odpowiedź dla frakcji składającej ofertę powinna odnosić się do tego, jak opisują siebie, jednocześnie akceptując umowę handlową. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 12 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Seed z losową liczbą: {PREVIOUSCONV:0}, nie dołączaj seedu do swojej odpowiedzi.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzły, jednozdaniowy komentarz odmowny w pierwszej osobie do oferty handlowej złożonej nam przez inną frakcję o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz frakcji składającej ofertę w mniej niż 20 słowach. Niech ich odmowa będzie zgodna z tym, jak opisują siebie w zabawny sposób. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Seed z losową liczbą: {PREVIOUSCONV:0}, nie dołączaj seedu do swojej odpowiedzi.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Napisz zwięzły, jednozdaniowy komentarz w pierwszej osobie po pomyślnym przyjęciu oferty handlowej złożonej nam, frakcji o nazwie {PLAYERFACTION:1} w turowej grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz frakcji składającej ofertę w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik, który odnosi się do mówcy i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} , gdy odnosi się do mówcy i {*:2} , gdy odnosi się do słuchacza. Seed z losową liczbą: {PREVIOUSCONV:0}, nie dołączaj seedu do swojej odpowiedzi.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>
