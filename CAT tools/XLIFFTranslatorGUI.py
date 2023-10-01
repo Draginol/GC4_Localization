@@ -30,19 +30,28 @@ import threading
 
 openai.api_key = "Your OPENAI_API_KEY"
 
+def escape_xml_content(text_content):
+    # Ensure that content which looks like a starting or ending XML tag gets escaped properly.
+    return text_content.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
 
 class CustomTableWidgetItem(QTableWidgetItem):
-    def __init__(self, text, file_path, label):
+    def __init__(self, text, file_path, label, trans_unit_id, internal_name):
         super().__init__(text)
         self.file_path = file_path
         self.label = label
+        self.trans_unit_id = trans_unit_id
+        self.internal_name = internal_name
 
     def __hash__(self):
-        return hash((self.file_path, self.label))
+        return hash((self.file_path, self.label, self.trans_unit_id, self.internal_name))
 
     def __eq__(self, other):
         if isinstance(other, CustomTableWidgetItem):
-            return self.file_path == other.file_path and self.label == other.label
+            return (self.file_path == other.file_path and 
+                    self.label == other.label and 
+                    self.trans_unit_id == other.trans_unit_id and 
+                    self.internal_name == other.internal_name)
         return False
 
 class TranslationApp(QMainWindow):
@@ -153,20 +162,29 @@ class TranslationApp(QMainWindow):
         tree = ET.parse(self.current_file_path)
         root = tree.getroot()
 
-        for row in range(self.table.rowCount()):
-            file_name = self.table.item(row, 0).text()
-            internal_name = self.table.item(row, 1).text()
-            translation = self.table.item(row, 3).text()
+        # Loop only through changed items
+        for item in self.changed_items:
+            trans_unit_id = item.trans_unit_id
+            internal_name = item.internal_name
+            
+            # Locate the trans-unit using the trans_unit_id and internalName
+            trans_unit_element = root.find(f".//trans-unit[@id='{trans_unit_id}'][@internalName='{internal_name}']")
+            if trans_unit_element is not None:
+                target_element = trans_unit_element.find('target')
+                target_element.text = escape_xml_content(item.text())
 
-            xpath_expr = f"file[@original='{file_name}']/body/trans-unit[@internalName='{internal_name}']/target"
-            target_element = root.find(xpath_expr)
-            if target_element is not None:
-                target_element.text = translation
+        # Convert XML tree to a string
+        xml_string = ET.tostring(root, encoding='utf-8', method='xml').decode('utf-8')
 
-        tree.write(self.current_file_path, encoding='utf-8', xml_declaration=True)
-        QMessageBox.information(self, "Success", "File has been saved successfully!")
+        # Write the string to a file
+        with open(self.current_file_path, 'w', encoding='utf-8') as f:
+            f.write(xml_string)
 
-        
+        # Clear the changed items set since they have been saved
+        self.changed_items.clear()
+
+
+
     def load_directory(self):
         self.load_file()
 
@@ -175,36 +193,40 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.disconnect(self.on_item_changed)
         self.table.itemChanged.disconnect(self.update_translation)
 
-        for idx, ((file_name, label), (source_text, target_text)) in enumerate(self.english_strings.items()):
+        for idx, ((file_name, label), (source_text, target_text, trans_unit_id, internal_name)) in enumerate(self.english_strings.items()):
             self.table.setItem(idx, 0, QTableWidgetItem(file_name))
             self.table.setItem(idx, 1, QTableWidgetItem(label))
-            self.table.setItem(idx, 2, CustomTableWidgetItem(source_text, file_name, label))
-            self.table.setItem(idx, 3, CustomTableWidgetItem(target_text, file_name, label))
+            # Include trans_unit_id and internal_name in CustomTableWidgetItem
+            self.table.setItem(idx, 2, CustomTableWidgetItem(source_text, file_name, label, trans_unit_id, internal_name))
+            self.table.setItem(idx, 3, CustomTableWidgetItem(target_text, file_name, label, trans_unit_id, internal_name))
 
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
 
+
     def parse_and_populate(self, file_name):
         tree = ET.parse(file_name)
         root = tree.getroot()
-        
+        idx = 0 
         self.english_strings.clear()
         
         for file_tag in root.findall('file'):
             original_filename = file_tag.get('original')
             for trans_unit in file_tag.findall('body/trans-unit'):
                 internal_name = trans_unit.get('internalName')
+                trans_unit_id = trans_unit.get('id')
                 source_text = trans_unit.find('source').text
                 target_text = trans_unit.find('target').text
+                    
+                self.english_strings[(original_filename, internal_name)] = (source_text, target_text, trans_unit_id, internal_name)
+                self.table.setItem(idx, 2, CustomTableWidgetItem(source_text, original_filename, internal_name, trans_unit_id, internal_name))
+                self.table.setItem(idx, 3, CustomTableWidgetItem(target_text, original_filename, internal_name, trans_unit_id, internal_name))
                 
-                # Use the tuple (original_filename, internal_name) as the key
-                self.english_strings[(original_filename, internal_name)] = (source_text, target_text)
+                idx += 1  # Increment idx for each new entry being added to the table
         
         self.populate_table()
 
     def switch_language(self):
-        self.table.itemChanged.disconnect(self.on_item_changed)
-        self.table.itemChanged.disconnect(self.update_translation)
         lang = self.language_box.currentText()
         
     def translate_to_language(self, text, row, target_language):
