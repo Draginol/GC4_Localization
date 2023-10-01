@@ -52,9 +52,6 @@ class CustomTableWidgetItem(QTableWidgetItem):
             return self.file_path == other.file_path and self.label == other.label
         return False
 
-
-
-
 class TranslationApp(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -88,8 +85,6 @@ class TranslationApp(QMainWindow):
         openai_key_action.triggered.connect(self.set_openai_key)
         file_menu.addAction(openai_key_action)
 
-        
-
         self.language_box = QComboBox(self)
         self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
         self.language_box.addItems(self.languages)
@@ -101,7 +96,6 @@ class TranslationApp(QMainWindow):
         self.table.setSortingEnabled(True)
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
-
 
         self.translate_button = QPushButton("Translate (OpenAI)", self)
         self.translate_button.clicked.connect(self.perform_translation)
@@ -212,8 +206,6 @@ class TranslationApp(QMainWindow):
             with open(file_name, 'w', encoding='utf-8') as file:
                 file.write(tmx_content)
 
-
-
     def update_translation(self, item):
         # Checking if the modified item is from the Translation column
 
@@ -230,8 +222,6 @@ class TranslationApp(QMainWindow):
                 if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
                     self.table.item(row, 4).setText(new_translation)
 
-    
-    
     # Function to update the main table and memory view based on changes in the translation memory table
     def update_main_from_memory(self, item):
         # Checking if the modified item is from the Translation column of the memory table
@@ -379,8 +369,6 @@ class TranslationApp(QMainWindow):
 
             self.populate_table()
 
-
-
     def populate_table(self):
         self.table.setRowCount(len(self.english_strings))
         self.table.itemChanged.disconnect(self.on_item_changed)
@@ -427,13 +415,13 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and given the label '{label_name}', translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
 
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=100,
                 n=1,
                 stop=None,
                 temperature=0.7,
