@@ -10,31 +10,30 @@ def load_xliff_data(xliff_path):
     root = tree.getroot()
 
     entries = {}
-    order = []
-
-    name_counter = {}  # This dictionary will help track the count of trans-units with the same internalName
 
     for trans_unit in root.findall(".//trans-unit"):
         internal_name = trans_unit.attrib["internalName"]
 
-        # Update the count for the current internalName
-        if internal_name in name_counter:
-            name_counter[internal_name] += 1
-        else:
-            name_counter[internal_name] = 1
-
-        count = name_counter[internal_name]  # Use the current count for this internalName
-
+        # Parse the requirements string into the same format as we did for the flavor text xml.
         note_element = trans_unit.find("note")
         requirements = note_element.text if note_element is not None else ""
+        req_list = sorted(requirements.split(";"))
+        req_string = ";".join(req_list)
 
-        key = (internal_name, count, requirements)
+        
+        # Since the requirements are semi-colon separated, we will split and sort them to ensure consistency.
+        req_list = sorted(requirements.split(";"))
+        req_string = ";".join(req_list)
+
+        # Create the lookup key
+        key = (internal_name, req_string)
+
         if key not in entries:
             entries[key] = []
-        entries[key].append(trans_unit.find("target"))
-        order.append(key)
 
-    return entries, root, order
+        entries[key].append(trans_unit.find("target"))
+
+    return entries, root
 
 
 def update_xliff_from_xml(directory, xliff_entries):
@@ -46,29 +45,28 @@ def update_xliff_from_xml(directory, xliff_entries):
 
             for flavor_text_def in root.findall('.//FlavorTextDef'):
                 internal_name = flavor_text_def.find('InternalName').text
+                flavor_text_options = flavor_text_def.findall('.//FlavorTextOption')
 
-                idx = 0  # Initialize index to 0 for each new FlavorTextDef
+                for flavor_text_option in flavor_text_options:
+                    # Extract requirements
+                    requirements = flavor_text_option.findall('.//Requirements/*')
+                    req_dict = {}
+                    for requirement in requirements:
+                        req_dict[requirement.tag] = requirement.text
+                    req_list = [f"{k}={v}" for k, v in sorted(req_dict.items())]
+                    req_string = ";".join(req_list)
 
-                for flavor_text_option in flavor_text_def.findall('.//FlavorTextOption'):
-                    requirements = []
-                    for req_element in flavor_text_option.findall('.//Requirements/*'):
-                        req_text = f"{req_element.tag}={req_element.text}"
-                        requirements.append(req_text)
-                    req_string = ";".join(requirements)
+                    # Extract all text elements
+                    text_elements = flavor_text_option.findall('.//Text')
 
-                    for text_element in flavor_text_option.findall('.//Text'):
-                        translated_text = text_element.text
-
-                        lookup_key = (internal_name, idx + 1, req_string if requirements else "")
-                        target_elements = xliff_entries.get(lookup_key)
-
-                        if target_elements:
-                            for target_element in target_elements:
-                                target_element.text = translated_text
+                    # For each text element, fetch the target and update it
+                    key = (internal_name, req_string)
+                    targets = xliff_entries.get(key, [])
+                    for idx, text_element in enumerate(text_elements):
+                        if idx < len(targets):
+                            targets[idx].text = text_element.text
                         else:
-                            print(f"No match found for key: {lookup_key}")
-
-                        idx += 1  # Increment index for every Text element
+                            print(f"No match found for key: {key} at index {idx}")
 
 
 def prettify_xml(elem):
@@ -79,6 +77,9 @@ def prettify_xml(elem):
     pretty_str = reparsed.toprettyxml(indent="  ")
     return '\n'.join([line for line in pretty_str.split('\n') if line.strip()])
 
+def sanitize_requirements(req_string):
+    requirements = [req.strip() for req in req_string.split(';') if req.strip()]
+    return ";".join(sorted(requirements))
 
 
 def main():
@@ -95,8 +96,9 @@ def main():
         print("Directory selection was canceled.")
         return
 
-    xliff_entries, xliff_root, order = load_xliff_data(xliff_path)
+    xliff_entries, xliff_root = load_xliff_data(xliff_path)
     update_xliff_from_xml(directory, xliff_entries)
+
     
     # Save the updated XLIFF data using xliff_root
     with open(xliff_path, 'w', encoding="utf-8") as f:
