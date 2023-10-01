@@ -47,7 +47,9 @@ def update_xliff_from_xml(directory, xliff_entries):
             for flavor_text_def in root.findall('.//FlavorTextDef'):
                 internal_name = flavor_text_def.find('InternalName').text
 
-                for idx, flavor_text_option in enumerate(flavor_text_def.findall('.//FlavorTextOption')):
+                idx = 0  # Initialize index to 0 for each new FlavorTextDef
+
+                for flavor_text_option in flavor_text_def.findall('.//FlavorTextOption'):
                     requirements = []
                     for req_element in flavor_text_option.findall('.//Requirements/*'):
                         req_text = f"{req_element.tag}={req_element.text}"
@@ -57,7 +59,7 @@ def update_xliff_from_xml(directory, xliff_entries):
                     for text_element in flavor_text_option.findall('.//Text'):
                         translated_text = text_element.text
 
-                        lookup_key = (internal_name, idx+1, req_string if requirements else "")
+                        lookup_key = (internal_name, idx + 1, req_string if requirements else "")
                         target_elements = xliff_entries.get(lookup_key)
 
                         if target_elements:
@@ -65,6 +67,9 @@ def update_xliff_from_xml(directory, xliff_entries):
                                 target_element.text = translated_text
                         else:
                             print(f"No match found for key: {lookup_key}")
+
+                        idx += 1  # Increment index for every Text element
+
 
 def prettify_xml(elem):
     """Return a pretty-printed XML string for the Element without excessive newlines."""
