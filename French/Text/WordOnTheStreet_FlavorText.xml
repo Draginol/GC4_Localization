@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_STARVING</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} sont affamés. Nous avons désespérément besoin de plus d'agriculteurs ou de coloniser des mondes fertiles pour nourrir notre empire.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_OVERCROWDED</InternalName>
+        <FlavorTextOption>
+            <Text>La population de {PLANETNAME:1} explose. Certains se plaignent de la surpopulation, mais c'est simplement le résultat de notre monde incroyable.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_POPULATIONCAP</InternalName>
+        <FlavorTextOption>
+            <Text>Il y a une crise du logement sur {PLANETNAME:1}. Nous devons construire des Quartiers Résidentiels ou transporter les gens vers d'autres mondes.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_LOWRESISTANCE</InternalName>
+        <FlavorTextOption>
+            <Text>{PLANETNAME:1} fait l'envie de nos alliés et ennemis. Mais sans défenses, comment pouvons-nous le protéger?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_PROTESTING</InternalName>
+        <FlavorTextOption>
+            <Text>J'ai tout fait, mais les citoyens de {PLANETNAME:1} sont en révolte. Nous avons besoin du soutien de notre gouvernement pour apaiser leurs inquiétudes.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_PLANETNOTDEFENDED</InternalName>
+        <FlavorTextOption>
+            <Text>Sans aucun vaisseau en orbite autour de {PLANETNAME:1}, comment espérons-nous le protéger contre les attaques?</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_HIGHALIENCULTURE</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} ont adopté le mode de vie {PLAYERFACTION:2} . Peu ressentent un lien avec le {PLAYERFACTIONLONG:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_INDEBT</InternalName>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTIONLONG:1} doit limiter ses dépenses. Les habitants de {PLANETNAME:1} accumulent déjà des provisions.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NEEDWEALTHIMPROVEMENT</InternalName>
+        <FlavorTextOption>
+            <Text>{PLANETNAME:1} est rempli d'opportunités économiques. Nous devrions construire plus d'améliorations de richesse ici pour en profiter.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NEEDENTREPRENEUR</InternalName>
+        <FlavorTextOption>
+            <Text>{PLANETNAME:1} regorge de ressources économiques, mais nous n'avons pas d'entrepreneurs ici pour en profiter.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NEEDRESEARCHIMPROVEMENT</InternalName>
+        <FlavorTextOption>
+            <Text>{PLANETNAME:1} est rempli de merveilles technologiques. Nous devrions construire davantage d'améliorations de recherche ici pour en tirer parti.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NEEDSCIENTIST</InternalName>
+        <FlavorTextOption>
+            <Text>Sans aucun scientifique, les merveilles technologiques de {PLANETNAME:1} sont gaspillées.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_HIGHCRIME</InternalName>
+        <FlavorTextOption>
+            <Text>La criminalité élevée sur {PLANETNAME:1} rend bon nombre de nos citoyens effrayés à l'idée de parcourir nos rues. Nos citoyens les plus pauvres sont les plus directement touchés, mais la corruption parmi nos riches est tout aussi répandue.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>There is a great deal of disorder on this planet.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_HIGHPOLLUTION</InternalName>
+        <FlavorTextOption>
+            <Text>Nous avons fêté l'atterrissage sur {PLANETNAME:1} , mais personne ne pouvait voir les feux d'artifice à travers la brume de pollution. Nous devons nettoyer cette planète si nous voulons que les gens y vivent.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The pollution on this world is high and we love it. </Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive having trouble with all the pollution.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption> 
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_HIGHMORALE</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} font partie des plus loyaux et heureux de la galaxie. Ceci est dû, en grande partie, à mon excellente direction.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The contaminates are moving with ease. </Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is pleased.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_LOWMORALE</InternalName>
+        <FlavorTextOption>
+            <Text>J'ai fait tout ce que je pouvais pour les citoyens de {PLANETNAME:1}. Nous avons besoin d'un vrai changement avant que les choses ne s'aggravent.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The contaminates are not glowing as they should.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is brimming in rage.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_MIDMORALE</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} semblent heureux. Il y a toujours quelques râleurs, mais je ne m'en inquiéterais pas.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The glow of the contaminates seems adequate.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is hungry but content.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_HIGHTAXES</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} ne supportent plus nos taxes élevées. Veuillez baisser les taxes et leur offrir un soulagement.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>The hive is displeased with having to transfer so much to the central authority.</Text>
+            <PreferenceWeight>5000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_POLICESTATE</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} nous demandent de mettre en place la politique de l'État policier. Et ceux qui ne la réclament pas sont probablement des criminels inutiles.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_YOUAREJUSTANUMBER</InternalName>
+        <FlavorTextOption>
+            <Text>Une tendance dangereuse d'expression personnelle et de non-conformité s'est enracinée sur {PLANETNAME:1}. Nous devrions mettre en place la politique Tu N'es Qu'un Numéro et ramener les gens à leur travail répétitif utile.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_GUNRIGHTS</InternalName>
+        <FlavorTextOption>
+            <Text>La liberté est essentielle pour les habitants de {PLANETNAME:1}. Nous devrions mettre en place la politique du Marché d'Armes et permettre à nos citoyens d'acheter et de vendre toutes les armes qu'ils désirent.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_UNIVERSALHEALTHCRE</InternalName>
+        <FlavorTextOption>
+            <Text>Les citoyens de {PLANETNAME:1} ne peuvent pas recevoir des soins médicaux adéquats. Nous devrions mettre en place la politique de Soins de Santé Universels et leur montrer que notre gouvernement sert ses citoyens, et non l'inverse.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NEEDSHIPYARD</InternalName>
+        <FlavorTextOption>
+            <Text>{PLANETNAME:1} a besoin d'un chantier naval !</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- ********************************************************************************************************************************************** -->
+    <!-- *********** -->
+    <!-- ** Names ** -->
+    <!-- *********** -->
+    <FlavorTextDef>
+        <InternalName>WORDONTHESTREET_NAMES</InternalName>
+        <FlavorTextOption>
+            <Text>Angéla</Text>
+            <Text>Brad</Text>
+            <Text>Debbie</Text>
+            <Text>Cari</Text>
+            <Text>Raul</Text>
+            <Text>Hermie</Text>
+            <Text>Kim</Text>
+            <Text>Larry</Text>
+            <Text>Harry</Text>
+            <Text>Jesse</Text>
+            <Text>Jimmy</Text>
+            <Text>Jennifer</Text>
+            <Text>Paul</Text>
+            <Text>Pat</Text>
+            <Text>Scott</Text>
+            <Text>Suzy</Text>
+            <Text>Alberto</Text>
+            <Text>Samantha</Text>
+            <Text>Peter</Text>
+            <Text>A.J.</Text>
+            <Text>George</Text>
+            <Text>Andrew</Text>
+            <Text>Derek</Text>
+            <Text>Eddie</Text>
+            <Text>Sandie</Text>
+            <Text>Edward</Text>
+            <Text>Eddie</Text>
+            <Text>Eric</Text>
+            <Text>Akash</Text>
+            <Text>Teddy</Text>
+            <Text>James</Text>
+            <Text>Alex</Text>
+            <Text>Akil</Text>
+            <Text>Jim</Text>
+            <Text>Chauncy</Text>
+            <Text>Edwardo</Text>
+            <Text>Timmy</Text>
+            <Text>Lisa</Text>
+            <Text>Zack</Text>
+            <Text>Kelly</Text>
+            <Text>Wayne</Text>
+            <Text>Ryan</Text>
+            <Text>Maddison</Text>
+            <Text>Garth</Text>
+            <Text>Leo</Text>
+            <Text>Robert</Text>
+            <Text>Alan</Text>
+            <Text>Kathy</Text>
+            <Text>Jodi</Text>
+            <Text>Michael</Text>
+            <Text>Brian</Text>
+            <Text>Kris</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+            </Requirements>
+            <Text>Dathbar</Text>
+            <Text>Igrath</Text>
+            <Text>Moorthon</Text>
+            <Text>Quinthor</Text>
+            <Text>Umorth</Text>
+            <Text>Egbar</Text>
+            <Text>Otath</Text>
+            <Text>Petunar</Text>
+            <Text>Daisor</Text>
+            <Text>Melithor</Text>
+            <Text>Dracor</Text>
+            <Text>Kibath</Text>
+            <Text>Randoth</Text>
+            <Text>Rrah</Text>
+            <Text>Yuigrah</Text>
+            <Text>Grendon</Text>
+            <Text>Dinrog</Text>
+            <Text>Mitheon</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_ALTARIAN</ListenerFaction>
+            </Requirements>
+            <Text>Epano</Text>
+            <Text>Altos</Text>
+            <Text>Umis</Text>
+            <Text>Raltos</Text>
+            <Text>Iltas</Text>
+            <Text>Civis</Text>
+            <Text>Atmos</Text>
+            <Text>Arlemis</Text>
+            <Text>Ergos</Text>
+            <Text>Caltis</Text>
+            <Text>Eltos</Text>
+            <Text>Caltos</Text>
+            <Text>Arlemos</Text>
+            <Text>Altis</Text>
+            <Text>Caltis</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- ********************************************************************************************************************************************** -->
+</FlavorTextDefs>
