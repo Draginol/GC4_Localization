@@ -1,3 +1,5 @@
+## Creates a new XLIFF file from the FlavorText XML files in the specified directory
+
 
 import os
 import xml.etree.ElementTree as ET
