@@ -1,0 +1,610 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- Created with the Flavor Text Editor -->
+    <!-- FlavorText_General.xml -->
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Necesitas investigar el Traductor Universal.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
+                <ListenerHasUniversalTranslator>true</ListenerHasUniversalTranslator>
+                <RelationsRange>
+                    <RangeMax>-1</RangeMax>
+                </RelationsRange>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
+                <RevisitedTopicBarrierCount>2</RevisitedTopicBarrierCount>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>Sospechas bien, pronto anidaremos nuestros huevos en tu carne.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Habéis nombrado a Arnor y Dread Lords como Precursoras. Fuimos los primeros en descubrir los flujos subspace que unen galaxias. No inventamos tecnología, simplemente los descubrimos. Son un fenómeno natural, quizás alcanzan hasta otras galaxias.</Text>
+            <Text>Existen anomalías mucho más extrañas en el universo que las corrientes de subespacio. Por ejemplo, existen portales dimensionales que viajan entre universos completamente distintos.[BR][BR]
+Una vez nos encontramos con una especie de otro universo conocida como los Arilou, quienes provenían de un universo con su propia historia legendaria.</Text>
+            <Text>Mucho después de que los Precursores desaparecieran, nos conformamos con simplemente explorar el universo para encontrar la próxima gran maravilla.[BR][BR]
+Desafortunadamente, hay cosas mucho peores en el universo que la especie a la que te refieres como los Señores del Terror. [BR][BR]
+Los antiguos creadores, conocidos como los Mithrilar, habían experimentado con muchos tipos de creaciones antes de hacer a los Precursores y no todas esas cosas se han ido y algunas, me temo decir, están ahora despertadas.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Long ago, on our world, there were five other sentient species. I suppose you could call them 'Sapient' but who am I to play games with semantics. In any case, we were the only ones to survive.
+
+</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Para nosotros, el interés propio es la moralidad suprema. Si tu supervivencia nos conviene, seremos tu amigo más fiel. Pero si tu muerte nos beneficia, prepárate para morir.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Nuestra civilización, olvidada por la historia, inventó los portales estelares. Durante doscientos mil años, invertimos trillones en su vasta red. Gracias a ellos, las naves podían cruzar el Hiperespacio nivel 2, recortando un viaje de diez años luz a poco más de tres años. La tecnología del Hiperimpulsor superó nuestros esfuerzos, pero durante milenios, esta galaxia fue nuestra.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Las otras civilizaciones no han comprendido que el universo, finito y limitado, es inalcanzable en su mayoría. Sin duda, solo podremos alcanzar nuestra galaxia.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Nuestro mundo, bautizado 'Elemental' por los Precursores en su apogeo. [BR][BR]
+La primera guerra por interpósita persona entre las facciones Precursoras, Dred'nir y Elas'nir, se libró en nuestro planeta antes de que otras especies galácticas alcanzaran su forma actual, incluyendo a los humanos.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_YOR</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Quizás no exterminemos tu raza pronto, pero el ajuste de cuentas será inevitable. Hemos calculado: el vasto vacío conocido como Bootes es el fruto de miles de millones de años de construcción de esferas Dyson, ocultando la luz de incontables galaxias. La civilización en el corazón de ese vacío ya ha experimentado su singularidad.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Antaño, nuestra civilización era un paraíso acuático y pacífico, preindustrial. Luego, llegaron los Drengin.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Conscientes del viaje espacial durante siglos, no podíamos ignorarlo con invasores celestiales raptando a nuestros hijos. Fue nuestra fortuna cuando una de sus naves fracasó en escapar de nuestro planeta y descubrimos sus secretos.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>No buscamos aniquilar a los Yor solo por usurpar nuestro mundo. A pesar de ciertos informes, no somos los creadores de los Yor. Los Precursores nos ordenaron su creación, pero la chispa vital que poseen no es nuestra obra.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>En una galaxia tan diversa, es fácil estereotipar civilizaciones por sus rasgos más evidentes. 
+Nos tildan de avariciosos, pero no es así. Nuestra ideología es la oportunidad. Al comerciar, mejoramos el universo tanto para nuestros clientes como para nosotros.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>No exploramos por gusto, sino por necesidad. Algo está succionando la vida de todos los mundos, de ahí los planetas muertos, que no siempre lo estuvieron.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Anhelamos reencontrarnos con la Tierra. Aunque la Tierra fue prisionera tras un escudo Precursor durante años, nuestra flota quedó atrapada en un universo de bolsillo creado por los Precursores. En ese universo vimos cosas inolvidables. No solo el Orbe de Draginol, la denominada arma Bane, emergió de ese universo con nosotros.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ONYX_HIVE</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Una galaxia bien informada es pacífica. Si anhelas conocer a otros, búscanos.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Pese a tener la capacidad de aplastar a cualquier especie, evitamos la violencia directa. Solo en nuestro mundo originario, hoy perdido, podemos reproducirnos. Vivimos mucho, pero no somos inmortales ni indestructibles.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>STANDARD_RESPONSE</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+                <RevisitedTopicBarrierCount>1</RevisitedTopicBarrierCount>
+            </Requirements>
+            <Text>Se malinterpreta que EL CAMINO es una religión de fe. No lo es. 
+Somos una congregación de especies que han tenido un contacto físico y directo con un ser de gloria inmensa, cuyo plan sublime para el universo nos obliga a sumar a otros en esta sagrada causa.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>5</RangeMin>
+                    <RangeMax>8</RangeMax>
+                </RelationsRange>
+                <RevisitedTopicBarrierCount>2</RevisitedTopicBarrierCount>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Se aproxima el tiempo para que las civilizaciones afines nos unamos y aniquilemos a quienes se opongan.</Text>
+            <Text>Pronto, {LEADERNAME:2}, la galaxia se unirá de una forma u otra.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>Nos complace tu camino ideológico hasta ahora. La benevolencia es la senda del justo.</Text>
+            <Text>Resistir la tentación del mal no siempre es fácil. Pero nos ayudará a todos a construir una galaxia mejor.</Text>
+            <Text>El universo ya es suficientemente oscuro sin que lo oscurezcas más, {LÍDERNOMBRE:2}. Estamos complacidos con la ruta que has tomado hasta ahora.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>SameCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Merciless</PersonalityType>
+            </Requirements>
+            <Text>Nos impresionas, {LEADERNAME:2}. Tu comprensión de que los débiles son presa de los fuertes te ha ganado nuestro respeto.</Text>
+            <Text>¿Es más bondadoso permitir que los débiles continúen sufriendo en su estado de existencia? ¿O terminar con su dolor exterminándolos? Según tus acciones, {LEADERNAME:2}, parecería que estás de acuerdo con nosotros. Los débiles deben ser exterminados.</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+                <ListenerRaceTrait>SiliconBasedAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>¿Qué se supone que eres? ¿Una especie de gusano petrificado?</Text>
+            <Text>Es difícil creer que una forma de vida basada en silicio evolucionó naturalmente. ¿Estás seguro de que eres natural?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Aggressive</PersonalityType>
+                <ListenerRaceTrait>AmphibiousAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Los {PLAYERFACTION:2} debieron permanecer en las alcantarillas de su mundo, {LEADERNAME:2}. En el espacio el agua escasea.</Text>
+            <Text>El vacío del espacio no es lugar para alguien como tú, {LEADERNAME:2}. Deberías volver a los océanos de tu planeta natal.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>CommonEnemy</RequiredDiplomacyFlag>
+                <PersonalityType>Cruel</PersonalityType>
+            </Requirements>
+            <Text>¡El {PLAYERFACTION:2} y {PLAYERFACTION:1} unirán fuerzas! Con ansias, aguardamos el tormento de nuestros enemigos y sus mascotas.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>CommonEnemy</RequiredDiplomacyFlag>
+                <PersonalityType>Diplomatic</PersonalityType>
+            </Requirements>
+            <Text>Lamentamos vivir una era de guerra galáctica. Pero con tu lucha contra nuestro enemigo común, confiamos en la victoria.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>TradeWithOpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>Teme a tu socio, {LEADERNAME:2}. Nuestro pueblo no tolera la maldad.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>YouAreWarMonger</RequiredDiplomacyFlag>
+                <PersonalityType>Peaceful</PersonalityType>
+            </Requirements>
+            <Text>La ventaja obtenida al declarar guerra temprano te costará mucho más en buena voluntad, {LEADERNAME:2}.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TAUNTING_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>-3</RangeMax>
+                </RelationsRange>
+                <RequiredDiplomacyFlag>OpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>Vuestra civilización me enferma. Vuestra maldad y amoralidad difundida en el universo nos hace soñar con vuestra caída.</Text>
+            <Text>Tu maligna civilización finalmente sufrirá el destino de todas las civilizaciones que carecen de un código moral.</Text>
+            <Text>Nos entristece que vuestra civilización siga existiendo. Anhelamos el día en que vuestra especie se extinga del universo.</Text>
+            <Text>Vuestra civilización ha elegido un lamentable camino ético. Solo podemos esperar que con el tiempo, sufráis el destino de todos los imperios malvados.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TAUNTING_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>-3</RangeMax>
+                </RelationsRange>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>OpposingCulture</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>¿Crees que tu poder impresiona? Tu civilización florece solo por tomar siempre el camino fácil y rápido.</Text>
+            <Text>A pesar de tu poder, seguimos viéndote como inferiores debido a tus elecciones morales.</Text>
+            <Text>La corrupción en el corazón de vuestra civilización os ha otorgado un beneficio temporal de poder. Pero eventualmente, vuestra civilización se derrumbará y nosotros estaremos allí para reírnos.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>WarWithAlly</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Estás en guerra con nuestro aliado, {LEADERNAME:2}. Busca la paz o sufre las consecuencias.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+            </Requirements>
+            <Text>Nuestro pueblo admira tu inmenso poder, {LEADERNAME:2}.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_YOR_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+                <ListenerRaceTrait>CarbonBasedLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>¿Cómo funciona este trozo de carne animado con el que converso? No puedo creerlo.</Text>
+            <Text>Solo quiero entender. ¿Comunicas empujando aire a través de un pedazo de carne ubicado en un orificio al que llamas "boca"?</Text>
+            <Text>Continuamos asombrados de que ustedes, criaturas, existan. Básicamente son un saco de baba. ¿Cómo fueron incluso creados?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>¿En serio? ¿Vas a intentar descaradamente incitar a nuestro pueblo a rebelarse justo frente a nosotros?</Text>
+            <Text>Si no dejas de intentar subyugar culturalmente a mi pueblo, nos veremos obligados a declarar la guerra.</Text>
+            <Text>Tus estaciones de comunicación estelares están esparciendo tu fea cultura demasiado cerca de nuestros mundos. Elimínalas.</Text>
+            <Text>No apreciamos que sus bases estelares de comunicación estén tan cerca de nuestros planetas.</Text>
+            <Text>Tu base estelar de comunicación está tan cerca de nuestros mundos que estamos captando tu entretenimiento molesto..</Text>
+            <PreferenceWeight>40</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Mi hija vino y me contó sobre las increíbles costumbres de su gente. Le pregunté cómo se había enterado y fue entonces cuando descubrí que tienen una base estelar cultural dentro de nuestra área de influencia! Deshazte de ella..</Text>
+            <Text>¿Realmente crees que puedes dominar culturalmente a los humanos? ¡Tenemos chocolate!</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Tu vil cultura nos ofende. Retira tus ridículas estaciones estelares de nuestra esfera de influencia inmediatamente.</Text>
+            <Text>Tu cultura no es rival para el Chili Fuego Toriano..</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Nuestra gente ha resistido a Titanes, Reyes Hechiceros y Encantadoras Caídas. Nos resistiremos a tu deplorable cultura.</Text>
+            <Text>Nuestro mundo es literalmente mágico. ¿Realmente crees que querrán unirse a ti?</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Deja de intentar lavar el cerebro a nuestra gente para que siga tu vil cultura de inmediato..</Text>
+            <Text>Nuestra gente es profundamente espiritual. No vamos a seguir tolerando tus ataques culturales contra nosotros.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_YOR</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Estás desperdiciando tu tiempo. Nuestra gente no puede ser culturalmente asimilada.</Text>
+            <Text>Como no biológicos, no necesitamos de tu cultura. Somos inmunes a ella. Nuestros mundos nunca se rebelarán.</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>CULTURE_FLIP_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>No nos interesa tu cultura. ¿Creías que no notaríamos tu base estelar justo al lado de nuestros planetas?</Text>
+            <Text>Ya tuvimos que huir de un mundo, no pretendemos ser subyugados a una cultura alienígena. Retira tus bases estelares..</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>TradeWithOpposingCulture</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Ten cuidado con quién comercias. Si quieres ser nuestro amigo, no comercies con aquellos que tienen ideologías despreciables.</Text>
+            <Text>Deberías saber que estás comerciando con una civilización cuya cultura representa todo lo que rechazamos.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_OPENBORDERS_GENERAL</ResponseTag>
+            <Requirements>
+                <RequiredDiplomacyFlag>OpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are getting a lot of reports from our people regarding the ease of working with your people. 
+    
+    The open borders treaty that exists between our peoples has greatly improved commerce and relations between our citizens and yours.</Text>
+            <Text>El tratado de fronteras abiertas ha facilitado mucho la navegación en este sector. Gracias.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_ATWAR_GENERAL</ResponseTag>
+            <Requirements>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+                <RequiredDiplomacyFlag>StrongerMilitary</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Pronto, tus mundos serán nuestros..</Text>
+            <Text>Si te rindes ahora, mostraremos misericordia.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>2</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Tus planetas están listos para la conquista. Incluso ahora, mis asesores militares me instan a tomar medidas.</Text>
+            <Text>Tu ejército es tan débil que es un milagro que aún no te hayan conquistado.</Text>
+            <PreferenceWeight>70</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>CloseToInfluenceFlip</RequiredDiplomacyFlag>
+                <SpeakerRaceTrait>EntrepreneursAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Por mucho que amemos el capitalismo, no apreciamos que intentes incitar a nuestra gente a unirse a ti intencionalmente. Retira tus bases estelares, o si no...</Text>
+            <PreferenceWeight>200</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>TradeRoute</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Nuestro comercio mutuo sigue fortaleciendo nuestra relación.</Text>
+            <Text>Estamos descubriendo que nuestra relación comercial está construyendo un sentido de confianza entre nuestra gente.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>0</RangeMin>
+                    <RangeMax>1</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>SharedBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Nuestras fronteras compartidas están irritando a mis asesores. Asegúrate de permanecer en tu lado.</Text>
+            <Text>Admitimos que no respetamos tus fronteras. ¿Quizás es hora de un tratado de fronteras abiertas?.</Text>
+            <Text>Existe tensión debido a nuestras fronteras cercanas. Un tratado de fronteras abiertas aliviaría esto.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>StarbaseInZOCWithoutOpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Deberías saber que nuestro ejército está bastante molesto con tu base estelar. Deberías negociar un tratado de fronteras abiertas con nosotros.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>ShipInZOCWithoutOpenBorders</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Aunque no planeamos atacar a tus naves que infringen, ten en cuenta que nos causan algo de consternación. Si deseas viajar a través de nuestra zona de influencia, negocia un tratado de fronteras abiertas..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>MilitaryShipNearMyPlanet</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Tenemos preocupaciones sobre tus naves armadas viajando cerca de nuestros mundos sin un tratado de fronteras abiertas.</Text>
+            <Text>Si quieres mantener buenas relaciones con nosotros, entonces no envíes naves armadas a nuestro espacio sin un tratado de fronteras abiertas.</Text>
+            <Text>No apreciamos que naves militares viajen a nuestro espacio sin un tratado.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RelativeStrength>SpeakerMuchStronger</RelativeStrength>
+                <RequiredDiplomacyFlag>ConquestVictoryGoal</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Nuestro objetivo final es conquistar la galaxia. Cuando finalmente te consumamos, queremos que sepas que no fue personal.</Text>
+            <Text>Nuestra gente desea la conquista galáctica..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RequiredDiplomacyFlag>ColonizedWithinZOC</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Colonizaste un planeta dentro de nuestra zona de influencia. No necesariamente iremos a la guerra por eso, pero no te sorprendas si la gente de ese mundo finalmente decide unirse a nosotros.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>¿Cuál es exactamente tu plan a largo plazo? Mis asesores militares me dicen que tu civilización estaría más segura bajo nuestro mando, dada tu falta de poder militar.</Text>
+            <Text>¿Ha considerado entregarnos sus mundos? Su gente estaría mucho más segura bajo nuestra protección..</Text>
+            <Text>Tu falta de poder militar te convierte en un objetivo fácil para los aspirantes a conquistadores.</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Aggressive</PersonalityType>
+            </Requirements>
+            <Text>Tus mundos... tan mal defendidos. Tan propicios para la conquista..</Text>
+            <Text>Agradecemos tu pacifismo. Hará que tu conquista eventual sea mucho más fácil.</Text>
+            <Text>No tienes idea de lo afortunado que eres de que estemos ocupados con otras cosas. Tu patético ejército y mundos ricos nos están llamando. ¿Entiendes?</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Spiritual</PersonalityType>
+            </Requirements>
+            <Text>Tu gente nos llama para aprender la manera correcta de vivir.</Text>
+            <Text>Hay tanta blasfemia en tus mundos. Pronto podría ser el momento de traer un orden moral adecuado a ellos.</Text>
+            <Text>Tu pueblo clama por redención de sus pecados. Podríamos ser el instrumento de su salvación..</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <ResponseTag>TALK_EASYTARGET_GENERAL</ResponseTag>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-99</RangeMin>
+                    <RangeMax>0</RangeMax>
+                </RelationsRange>
+                <RelationsStateOrList>Foreign</RelationsStateOrList>
+                <RelationsStateOrList>Enemy</RelationsStateOrList>
+                <RequiredDiplomacyFlag>EasyTarget</RequiredDiplomacyFlag>
+                <PersonalityType>Cruel</PersonalityType>
+            </Requirements>
+            <Text>Tus mundos están llenos de seres listos para ser devorados. Sois como ganado esperando ser sacrificado.</Text>
+            <Text>Tus planetas son tan tentadores para nosotros. Nuestras tropas de choque pueden ser un poco sádicas, pero con el tiempo, sospecho que llegarás a apreciarlas.</Text>
+            <Text>Tus planetas están listos para ser tomados. Tradicionalmente, desollamos a nuestras víctimas vivas, pero si deseas entregarnos tus mundos voluntariamente, lo haremos... bueno, seamos serios. Aún te desollaremos vivo..</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>
