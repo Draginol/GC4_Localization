@@ -1,7 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    
-    
+    <!-- Created with the Flavor Text Editor -->
+    <!-- FlavorText.xml -->
     <FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
@@ -18,7 +18,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Mostra al schermo alcuni oggetti preziosi.[/I] [COLOR=UIDefaultHighlight](Avvia Scambio)[/COLOR]</Text>
+            <Text>Tendi una pietra di un colore quasi incomprensibile. (Apre il Commercio)</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -79,13 +79,13 @@
     <FlavorTextDef>
         <InternalName>ASCENSION_WARNING_RESPONSE_DIPLOMACY</InternalName>
         <FlavorTextOption>
-            <Text>Rivediamo lo stato della vittoria. [COLOR=UIDefaultHighlight](Apre lo schermo della vittoria)[/COLOR]</Text>
+            <Text>Rivediamo lo stato della vittoria. [COLOR=UIDefaultHighlight](Schermo della Vittoria si apre)[/COLOR]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>ASCENSION_WARNING_RESPONSE_WAIT</InternalName>
         <FlavorTextOption>
-            <Text>Concedimi un istante.</Text>
+            <Text>Concedimi un attimo.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -132,7 +132,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
             </Requirements>
-            <Text>Piacere di conoscerti, auspico un felice inizio per la nostra relazione.</Text>
+            <Text>Un piacere conoscerti. Spero iniziamo bene questa relazione.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -150,7 +150,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>Salve, extraterrestre, speriamo non troppo malvagio. Siamo la Fratellanza Mimot, lieti di vederti. Non siamo gustosi.</Text>
+            <Text>Salve, alieno sperabilmente non troppo malvagio. Noi, fraternità Mimot, ci rallegriamo nel vederti, non siamo deliziosi.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -168,19 +168,19 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Vediamo speranza nei tuoi occhi in questo incontro. Passerà.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-            </Requirements>
-            <Text>La vita che conosci è finita. Presto, sarai nostro schiavo.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-            </Requirements>
             <Text>Un nuovo essere. Che gioia! Ancora senza timore. Il fuoco nei tuoi occhi. Cambierà così velocemente.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>Your life, as you know it, is now over.  Soon, you will be our slaves.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>A new being. What a delight! No fear yet. The fire still in your eyes. Oh how fast that will change.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -259,6 +259,30 @@
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
             <Text>Saluti, {PLAYERFACTION:2}. Il compito principale di {LEADERNAME:1} è di cancellarti dalla galassia... E grazie per l'Hyperdrive, semplificherà la tua caccia.</Text>
+            <Text>Finalmente incontriamo la {PLAYERFACTION:2}. Sono {LEADERNAME:1}. Siamo potenti e sarebbe saggio rispettare la nostra potenza.</Text>
+            <Text>Ah, la famosa {PLAYERFACTION:2}. Saluti da {LEADERNAME:1}. Abbiamo sentito parlare della vostra specie. Vediamo se le voci corrispondono alla realtà.</Text>
+            <Text>Le stelle si allineano, e finalmente incrociamo i percorsi con il {PLAYERFACTION:2}. Sono {LEADERNAME:1}. Lascia che i nostri futuri si intreccino in armonia o rovina.</Text>
+            <Text>Oh, i {PLAYERFACTION:2}! Finalmente, un volto dietro al nome. E che volto! Io sono {LEADERNAME:1}. Fai i tuoi affari e stai fuori dal nostro territorio.</Text>
+            <Text>La {PLAYERFACTION:2} ha attraversato il vuoto per affrontarci. Io sono {LEADERNAME:1}. Le nostre spore si sono diffuse ampiamente, e il vostro è un nuovo profumo per noi.</Text>
+            <Text>Gli sguardi da tutta la galassia cadono sulla {PLAYERFACTION:2}. Questo è {LEADERNAME:1}. I nostri tentacoli si estendono lontano; intrecciatevi con noi saggiamente.</Text>
+            <Text>I venti cosmici sussurravano della {PLAYERFACTION:2}. Eccoti qui. Io sono {LEADERNAME:1}. Le nostre canzoni vibrano attraverso gli ammassi stellari; ascolta la nostra melodia o affronta la dissonanza.</Text>
+            <Text>Attraverso l'immenso nero, emerge la {PLAYERFACTION:2}. Io, {LEADERNAME:1}, ho atteso per eoni. I nostri nuclei pulsano di energia; allineati con noi o rischia l'eruzione.</Text>
+            <Text>Il vuoto luccicante rivela la {PLAYERFACTION:2}. Sono conosciuto come {LEADERNAME:1}. Le nostre squame ci hanno protetto dalle tempeste cosmiche; avvicinati con cautela per non sentire il nostro morso.</Text>
+            <Text>Lo spazio si curva, e il {PLAYERFACTION:2} si materializza. Saluta {LEADERNAME:1}. Le nostre menti attraversano le dimensioni; connettiti con grazia o affronta la nostra disconnessione.</Text>
+            <Text>Le stelle svelano il {PLAYERFACTION:2}. Testimonia {LEADERNAME:1}. Le nostre ali oscurano i soli; vola con noi o precipita nell'abisso.</Text>
+            <Text>Le onde galattiche annunciano la {PLAYERFACTION:2}. Ti trovi di fronte a {LEADERNAME:1}. Le nostre radici bevono dai pozzi cosmici; nutri il nostro legame o appassisci nel vuoto.</Text>
+            <Text>L'etere trema, i {PLAYERFACTION:2} si avvicinano. Póngiti davanti a {LEADERNAME:1}. Le nostre fauci bramano nuove esperienze; nutri la nostra curiosità o sarai consumato.</Text>
+            <Text>I corpi celesti si allineano, mostrandoci la {PLAYERFACTION:2}. Inchinatevi a {LEADERNAME:1}. I nostri occhi vedono regni sconosciuti; osserva con noi o sarai accecato dalla nostra potenza.</Text>
+            <Text>Siamo l'illustre {PLAYERFACTION:1}. Conosceteci e sentite il peso delle galassie nel nostro sguardo. Io sono {LEADERNAME:1}, custode delle stelle.</Text>
+            <Text>La vasta distesa ha sussurrato storie di {PLAYERFACTION:2}. Ora, sotto gli occhi vigili di {LEADERNAME:1}, vediamo se i sussurri erano veri.</Text>
+            <Text>Davanti a te si erge {LEADERNAME:1} dell'ineguagliabile {PLAYERFACTION:1}. La nostra ombra si estende attraverso le costellazioni. Sfidaci, e sentirai la nostra ira cosmica.</Text>
+            <Text>La {PLAYERFACTION:2} osa calpestare dove camminano le leggende. Con {LEADERNAME:1} come nostro faro, decidiamo se sarai un alleato o un'altra nota a margine nella nostra storia.</Text>
+            <Text>Ecco la maestosità della {PLAYERFACTION:1}, sotto la guida di {LEADERNAME:1}. Le stesse nebulose si fermano per onorare la nostra grandezza. Lo farai anche tu?</Text>
+            <Text>Il battito dell'universo si sincronizza con la {PLAYERFACTION:1}. Io, {LEADERNAME:1}, porto il ritmo. Abbina il nostro tempo o sarai perduto nel caos cosmico.</Text>
+            <Text>Dai buchi neri alle supernove, nulla brilla più di {PLAYERFACTION:1}. Mentre {LEADERNAME:1} si trova davanti a te, rifletti - sarai un faro con noi o meramente un barlume?</Text>
+            <Text>Galassie sono sorte e cadute, ma la {PLAYERFACTION:1} rimane, costante ed eterna. Io sono {LEADERNAME:1}. Sfida la nostra eternità a tuo rischio e pericolo.</Text>
+            <Text>Il cosmico arazzo intreccia racconti di {PLAYERFACTION:2}. Sotto lo sguardo vigile di {LEADERNAME:1}, vedremo se i tuoi fili rafforzano o ingarbugliano la narrazione.</Text>         
+            <Text>Cicli infiniti, innumerevoli civiltà, ma nessuna come {PLAYERFACTION:1}. Guidati da {LEADERNAME:1}, siamo il faro nel vuoto cosmico. Naviga verso di noi, o rischia l'abisso.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1422,7 +1446,7 @@
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>Quando ha imparato la tua progenie deforme a usare un comunicatore? Ne avete bisogno? Da quando le razze senzienti trattano con malattie ingigantite?</Text>
+            <Text>When did your malformed ilk learn to construct and use a communicator? Have you any need of it? Since when did sentient races make deals with oversized diseases?</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -1438,7 +1462,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>La tua efficienza e resilienza sono evidenti. Non amiamo gli sforzi distruttivi, aspiriamo alla pace. (Mantieni la mente serena...)</Text>
+            <Text>La vostra efficacia e resilienza sono evidenti. Rifiutiamo la distruzione, aspirando alla pace.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -1558,7 +1582,7 @@
         <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
         <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
       </Requirements>
-      <Text>La vostra efficacia e resilienza sono evidenti. Rifiutiamo la distruzione, aspirando alla pace.</Text>
+      <Text>Your efficiency and resilience are clear to us. We have no love for efforts of destruction, though, and hope for peace.</Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
     <FlavorTextOption>
@@ -1602,10 +1626,10 @@
                     <RangeMax>99</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Lieti di incontrarti, {LEADERNAME:1}. Cooperiamo per un futuro migliore.</Text>
-            <Text>Credo che possiamo lavorare insieme.</Text>
-            <Text>Vi salutiamo con una speranza per il futuro.</Text>
-            <Text>Speriamo di poter costruire un rapporto reciprocamente vantaggioso.</Text>
+            <Text>{LEADERNAME:1}, te ne pentirai.</Text>
+            <Text>Stiamo per distruggerti.</Text>
+            <Text>Non ci sarà mai pace tra noi.</Text>
+            <Text>Catalogheremo la tua storia dopo che ti avremo cancellato.</Text>
             <PreferenceWeight>5</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -1615,10 +1639,10 @@
                     <RangeMax>-2</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{LEADERNAME:1}, te ne pentirai.</Text>
+            <Text>Te ne pentirai, {LEADERNAME:1}.</Text>
             <Text>Stiamo per distruggerti.</Text>
             <Text>Non ci sarà mai pace tra noi.</Text>
-            <Text>Catalogheremo la tua storia dopo che ti avremo cancellato.</Text>
+            <Text>Catalogheremo la vostra storia dopo che vi avremo eliminato.</Text>
             <PreferenceWeight>5</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2358,7 +2382,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
             </Requirements>
-            <Text>Le nostre ragioni, sono nostre.</Text>
+            <Text>Le nostre ragioni sono personali.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2838,7 +2862,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>Cerchiamo di diffondere gentilezza a chi incontriamo.</Text>
+            <Text>We strive to extend kindness to all we meet.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2974,7 +2998,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>La tua ingenuità e astuzia si scontrano costantemente. Mi stupisci sempre.</Text>
+            <Text>La sincerità che percepisco nella tua mente è rara.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2990,7 +3014,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>Cerchiamo di diffondere gentilezza a chi incontriamo.</Text>
+            <Text>We strive to extend kindness to all we meet.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3086,7 +3110,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>La sincerità che percepisco nella tua mente è rara.</Text>
+            <Text>Rara è la sincerità che percepisco nella tua mente.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3725,7 +3749,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_FESTRON</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo poca esperienza con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3741,7 +3765,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_MIMOT</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo poca esperienza con forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3749,7 +3773,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_XELOXI</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa esperienza con forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3757,7 +3781,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_ARCEAN</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa familiarità con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3765,7 +3789,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa esperienza con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3773,7 +3797,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_ALTARIAN</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa dimestichezza con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3781,7 +3805,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_YOR</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa familiarità con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3789,7 +3813,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_TORIAN</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa esperienza con forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3797,7 +3821,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_MANTI</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa esperienza con forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3805,7 +3829,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_KRYNN</ListenerFaction>
             </Requirements>
-            <Text>Abbiamo scarsa dimestichezza con le forme di vita sintetiche.</Text>
+            <Text>Possediamo scarsa esperienza con forme di vita sintetiche.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3909,7 +3933,7 @@
                 <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
                 <ListenerFaction>FACTION_YOR</ListenerFaction>
             </Requirements>
-            <Text>Le tue parole non ci dicono nulla.</Text>
+            <Text>Le tue parole non significano nulla per noi.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3949,7 +3973,7 @@
                 <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
                 <ListenerFaction>FACTION_YOR</ListenerFaction>
             </Requirements>
-            <Text>Le tue parole non ci toccano.</Text>
+            <Text>Le tue parole non significano nulla per noi.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4029,7 +4053,7 @@
                 <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
                 <ListenerFaction>FACTION_FESTRON</ListenerFaction>
             </Requirements>
-            <Text>Le tue parole non ci toccano.</Text>
+            <Text>Le tue parole non significano nulla per noi.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4237,7 +4261,7 @@
                 <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>So benissimo.</Text>
+            <Text>Ricorda solo, mentre ti sviluppi, chi ti ha elevato per primo.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4381,7 +4405,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Fai un respiro prima di svenire. Sei lontano dall'essere una minaccia per noi.</Text>
+            <Text>Cerca di non lasciare che la tua paura urla così forte nella tua testa.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4389,7 +4413,7 @@
                 <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Ricorda solo, mentre ti sviluppi, chi ti ha elevato per primo.</Text>
+            <Text>Just remember, as you develop, who elevated you first.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4493,7 +4517,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>Cerca di non lasciare che la tua paura urla così forte nella tua testa.</Text>
+            <Text>Try not to let your fear scream so loudly in your head.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4731,7 +4755,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>Semplicemente attenderemo il tuo assalto, l'errore è già stato commesso. (Siamo in guerra)</Text>
+            <Text>Ho scrutato nell'anima tua e del tuo popolo. Non posso più ignorare le vostre tendenze contro il Dominio Luxar. Siamo in guerra.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -4749,7 +4773,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>Ho scrutato nell'anima tua e del tuo popolo. Non posso più ignorare le vostre tendenze contro il Dominio Luxar. Siamo in guerra.</Text>
+            <Text>Ho scrutato nella mente tua e del tuo popolo. Non posso più ignorare le tue inclinazioni contro gli interessi del Dominio Luxar.[BR][BR][COLOR=UIDefaultHighlight](Siamo in guerra)[/COLOR]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -4852,7 +4876,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>La creatura si agita, scagliando qualcosa contro lo schermo, con sguardo fiero. (Siamo in guerra)</Text>
+            <Text>La forma di vita contorcente lancia qualcosa contro lo schermo, mantenendo un'occhiata intensa.[BR][BR][COLOR=UIDefaultHighlight](Siamo in guerra)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -5282,7 +5306,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. (È necessario ricercare il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5310,7 +5334,7 @@
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Very well.</Text>
+            <Text>Molto bene.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -5319,7 +5343,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Studia il Traduttore Universale! Gahr flab tou metina!</Text>
+            <Text>Studia il Traduttore Universale, Gahr flab tou metina!</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5369,7 +5393,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Enoreset in carasal, usa risorse con saggezza, {LEADERNAME:2}. Rihec {PLAYERRACE:2}, una questione di nome. [BR](Esplora il Traduttore Universale).</Text>
+            <Text>Enoreset, carasal e sanas confondono nel loro ge tek. {LEADERNAME:2}. Rihec, {PLAYERRACE:2}'s, un mistero ancora da decifrare?![BR] (Studiare il Traduttore Universale è necessario)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5631,7 +5655,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Enoreset rir nonostante carasal, utilizza ge tek seg sanas, {LEADERNAME:2}. Rihec {PLAYERRACE:2}, per quale motivo dieno ces nomi?! [BR] (Ricerca necessaria: Traduttore Universale)</Text>
+            <Text>Enoreset nel carasal, usa precauzioni, {LEADERNAME:2}. {PLAYERRACE:2}'s mistero, un enigma inespresso?! [BR](Studia il Traduttore Universale)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5645,7 +5669,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Enoreset, nel suo labirinto di carezze e sussurri, {LEADERNAME:2}. Rihec, chi sei nel profondo dell'universo di {PLAYERRACE:2}? [BR](Studia il Traduttore Universale).</Text>
+            <Text>Enoreset nel carasal, usa precauzioni, {LEADERNAME:2}. {PLAYERRACE:2}'s mistero, un enigma inespresso?! [BR](Studia il Traduttore Universale)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5695,8 +5719,8 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Text>Benissimo, scambiamo.</Text>
-            <Text>Questo è accettabile.</Text>
-            <Text>Agreed.</Text>
+            <Text>Brindiamo al successo della tua negoziazione.</Text>
+            <Text>Concordo.</Text>
             <Text>Questo funziona.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5815,19 +5839,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>Questa offerta mi rattrista.</Text>
+            <Text>Quest'offerta non mi aggrada.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>Quest'offerta non mi aggrada.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
-            </Requirements>
-            <Text>Intollerabile.</Text>
+            <Text>I don't like this offer.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5837,21 +5855,27 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>Se non fosse per questo schermo, ti avrei già ucciso per questa offerta.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-            </Requirements>
-            <Text>Dovrei svuotarti per aver proposto ciò.</Text>
+            <Text>Una scusa patetica per un'offerta.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
             <Text>La tua offerta è spregevole.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>I should gut you for suggesting this proposal.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>Your offer is contemptible.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5885,7 +5909,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Studia il Traduttore Universale!</Text>
+            <Text>Inibisci l'opilide, bo somufat nunor pietà oril! (Devi studiare il Traduttore Universale)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5943,13 +5967,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>È accettabile.</Text>
+            <Text>Brindiamo al successo della tua negoziazione.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>Brindiamo al successo della tua negoziazione.</Text>
+            <Text>Brindiamo a te per una negoziazione di successo.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5961,19 +5985,19 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Vivi. Per ora.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-            </Requirements>
-            <Text>È appena accettabile, ma il tempo mi manca.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-            </Requirements>
             <Text>Funzionerà, per ora.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>Questo è appena accettabile ma non ho più tempo da sprecare.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+            </Requirements>
+            <Text>Questo funzionerà per noi. Per ora.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6038,7 +6062,7 @@
             <Text>Cosa hai in mente?</Text>
             <Text>Sono interessato a vedere la tua proposta.</Text>
             <Text>Vediamo cosa proponi.</Text>
-            <Text>Present your proposal.</Text>
+            <Text>Presenta la tua proposta.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6072,8 +6096,8 @@
     <FlavorTextDef>
         <InternalName>PLAYER_INITIATED_TRADE_OFFER_HEADER</InternalName>
         <FlavorTextOption>
-            <Text>Desideriamo barattare questo con te.</Text>
-            <Text>Hai alcune cose che desideriamo e noi abbiamo alcune cose che pensiamo ti piaceranno.</Text>
+            <Text>Siamo interessati a scambiare questo con te.</Text>
+            <Text>Hai alcune cose che desideriamo e abbiamo alcune cose che pensiamo ti piaceranno.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6085,25 +6109,25 @@
             <Requirements>
                 <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
             </Requirements>
-            <Text>Un'offerta vantaggiosa per entrambi, preymeat.</Text>
+            <Text>Abbiamo un'offerta vantaggiosa per te, preymeat.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
             </Requirements>
-            <Text>Desideri condividere saggezza? Noi bramiamo ricambiare.</Text>
+            <Text>Desideri condividere saggezza con noi? Noi desideriamo condividerla con te.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>Abbiamo ciò che desideri e tu possiedi ciò che aneliamo. Che gioia!</Text>
+            <Text>Possediamo ciò che desideri e tu ciò che aneliamo. Che giornata felice!</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>Offerta di scambio, extraterrestre. Ci favorisce enormemente. Serve altro?</Text>
+            <Text>Alieno, abbiamo un'offerta di scambio per te, enormemente vantaggiosa per noi. Serve aggiungere altro?</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6115,17 +6139,17 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>Solitamente estraiamo ciò che desideriamo da vermi patetici come te. Ma adesso eccoci qui, a offrire qualcosa in cambio. Sorprendente.</Text>
-            <Text>La tua patetica esistenza ha in qualche modo attirato la nostra attenzione. Che intrigante. Parliamo di scambi, non credi?</Text>
+            <Text>Solitamente ci prendiamo ciò che vogliamo da vermi patetici come te. Ora, stranamente, offriamo qualcosa in cambio.</Text>
+            <Text>La tua esistenza patetica ha in qualche modo attirato la nostra attenzione. Che intrigante. Parliamo di commercio, non ti pare?</Text>
             <Text>Ci diverte momentaneamente abbassarci al vostro livello. Considerate questo scambio un raro atto di misericordia.</Text>
             <Text>Non è frequente che ci abbassiamo a barattare con i subordinati. Dovresti considerare questo un grande onore, creatura di carne.</Text>
-            <Text>Sentendoci generosi oggi. Ti offriamo un commercio, un'opportunità per strisciare fuori dal fango. Afferralo prima che cambi idea.</Text>
+            <Text>Oggi ci sentiamo generosi. Vi offriamo un commercio, un'opportunità per strisciare fuori dal fango. Afferratela prima che cambiassimo idea.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
             </Requirements>
-            <Text>Vogliamo condividere la nostra saggezza Altariana. Richiediamo solo una banalità in cambio.</Text>
+            <Text>Vorremmo donarvi la nostra sapiente saggezza Altariana, chiediamo solo una sciocchezza in cambio.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6137,13 +6161,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>Ecco uno scambio che proponiamo, alieno. È un'offerta buona, giusta e vera.</Text>
+            <Text>Here is an exchange we propose, alien. It is a good one, fair and true.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
             </Requirements>
-            <Text>Siamo diffidenti, anche di te. Chiediamo questo scambio con prudenza.</Text>
+            <Text>Siamo diffidenti verso gli altri. Anche di te. Richiediamo questo scambio con termini prudenti.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6155,37 +6179,37 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
             </Requirements>
-            <Text>Hai molto da apprendere, alieno, di ciò che abbiamo dimenticato. Ma non questa saggezza che ora desideriamo scambiare.</Text>
+            <Text>Abbiamo dimenticato più di quanto imparerai mai, alieno. Ma non dimentichiamo la saggezza che ora desideriamo scambiare con te.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
             </Requirements>
-            <Text>Abbiamo un'offerta commerciale per te. Semplice e comprensibile, senza dubbi.</Text>
+            <Text>Abbiamo un'offerta di scambio per te. Semplice e comprensibile, non dovresti avere dubbi.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
             </Requirements>
-            <Text>Offriamo poco liberamente, ma le condizioni odierne rasentano la generosità.</Text>
+            <Text>Nulla condividiamo liberamente, ma le condizioni odierne sono quasi tali.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ONYX_HIVE</SpeakerFaction>
             </Requirements>
-            <Text>Avete tesori desiderati, sciolti. Scambiamoli.</Text>
+            <Text>Hai molte cose interessanti, estraneo. Scambiamole.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
             </Requirements>
-            <Text>Siete astuti, per essere animali. Desideriamo commerciare con voi.</Text>
+            <Text>Siete astuti, per animali. Vogliamo commerciare con voi.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>Ricorda, possiamo leggere i tuoi pensieri. Tratta con noi in modo giusto.</Text>
+            <Text>Ricorda, possiamo leggere la tua mente. Tratta con noi in modo leale.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6226,7 +6250,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>Siamo entusiasti di proporti quest'offerta. Le nostre branchie brulicano di gioia. O forse di batteri.</Text>
+            <Text>Ecco uno scambio che proponiamo, alieno. È una proposta buona, equa e vera.</Text>
             <Text>Stiamo scoppiando di anticipazione! O è la pressione di essere così in profondità. No, è decisamente l'anticipazione!</Text>
             <Text>Vi offriamo le perle della nostra saggezza e commercio, racchiuse in ostriche di amicizia. Non chiedete solo da dove vengono le ostriche.</Text>
             <Text>Benvenuto nel nostro oceano di possibilità. Speriamo non ti dispiaccia se ci immergiamo subito nelle trattative. O se improvvisamente iniziamo a cantare. È la stagione degli amori, vedi. Probabilmente non avevi bisogno di saperlo.</Text>
@@ -6301,7 +6325,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>Ecco uno scambio che proponiamo, alieno. È una proposta buona, equa e vera.</Text>
+            <Text>Here is an exchange we propose, alien. It is a good one, fair and true.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6416,7 +6440,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Gar lutzo bagh!</Text>
+            <Text>Il messaggio contorto e caotico è assolutamente indecifrabile, l'unico suono proveniente dalla comunicazione è un rumore di sottofondo simile a un borbottio basso.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6436,7 +6460,7 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Text>Addio.</Text>
-            <Text>Farewell.</Text>
+            <Text>Addio.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6485,7 +6509,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6606,7 +6630,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga sul Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6619,7 +6643,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Esplora il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6632,7 +6656,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. (È necessario studiare il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6645,7 +6669,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, omoric sab re tibu metini.[BR](Ricerca il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6658,7 +6682,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. (È necessario ricercare il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6671,7 +6695,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Studia il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6684,7 +6708,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir, yacasus cerin, omoric sab: metini ero tibu. [BR](Studia il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6697,7 +6721,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Studiate il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6710,7 +6734,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir, yacasus cerin; omoric, metini tibu. Indaga su Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6723,7 +6747,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir Yacasus cerin, Omoric sab ero metini tibu.[BR](Studia il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6736,7 +6760,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6749,7 +6773,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Esplora il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6775,7 +6799,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Studia il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6788,7 +6812,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Devi approfondire il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6801,7 +6825,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Studia il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6814,7 +6838,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Richiede ricerca sul Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6827,11 +6851,11 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir, yacasus cerin, omoric sab; ero re metini tibu.[BR](Studia il Traduttore Universale)".</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>La tua generosità resta indimenticabile, siamo grati.</Text>
+            <Text>Siamo molto grati. Non dimenticheremo la tua generosità.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6840,11 +6864,11 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Studiare il Traduttore Universale, Ranom lesitir yacasus cerin, metini tibu nell'omoric ero re sab.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Siamo dispiaciuti, ma non possiamo giustificare un aiuto ora. Forse con relazioni più strette... ma per ora, conserviamo i nostri beni.</Text>
+            <Text>Ci dispiace, ma non possiamo giustificare di assisterti in questo momento. Forse se avessimo rapporti più stretti, potremmo trovare i fondi... ma così com'è ora, pensiamo sia meglio mantenere i nostri beni per noi stessi.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6873,6 +6897,7 @@
         <FlavorTextOption>
             <Text>Sempre pronti a soccorrere un amico.</Text>
             <Text>Molto bene, siamo lieti di aiutare.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6882,12 +6907,14 @@
             <Text>Questo aiuterà enormemente il nostro popolo.</Text>
             <Text>Grazie per il tuo aiuto.</Text>
             <Text>La vostra disponibilità a condividere con noi è sinceramente apprezzata.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
             <Text>È un sapere troppo pericoloso da divulgare.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6895,6 +6922,7 @@
         <FlavorTextOption>
             <Text>Gli {PLAYERFACTIONLONG:1} patiscono un declino economico, {LEADERNAME:2}. Potresti concederci {AMOUNT:2} crediti in soccorso?</Text>
             <Text>Stiamo riscontrando che il nostro tesoro è al limite a causa di recenti... incidenti interni. Apprezzeremmo se poteste fornirci {AMOUNT:2} crediti per aiutare a finanziare il bilancio di quest'anno.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6908,21 +6936,21 @@
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
             <Text>Non nascondo, {LEADERNAME:2}, l'attrazione della {PLAYERFACTIONLONG:1} per il denaro. Il nostro sogno, il nostro riposo, le nostre azioni... tutto ruota attorno ad esso. Abbiamo bisogno di più, molto di più. L'apporto di {AMOUNT:2} crediti potrebbe migliorare i nostri rapporti.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Progressivism</PersonalityType>
             </Requirements>
             <Text>La nostra ricerca in corso è costosa, {LEADERNAME:2}. Il {PLAYERFACTIONLONG:1} richiede {AMOUNT:2} crediti per proseguire gli investimenti in nuove tecnologie, arricchendo così il nostro rapporto.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Xenophobic</PersonalityType>
             </Requirements>
             <Text>Siamo diffidenti verso gli estranei, {LEADERNAME:2}. Eppure, a {PLAYERFACTIONLONG:1} si avverte una certa fatica. Se potessi fornirci {AMOUNT:2} crediti, rafforzeresti il nostro legame.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
+            <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6935,7 +6963,7 @@
         <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
             <Text>Apprezziamo il tuo aiuto.</Text>
-            <Text>Thank you.</Text>
+            <Text>Grazie.</Text>
             <Text>Non dimenticheremo questo atto di generosità.</Text>
         </FlavorTextOption>
     </FlavorTextDef>

@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    
+    <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
@@ -19,14 +19,14 @@
         <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1}, tra le fazioni terrestri ed extraterrestri in competizione per il dominio spaziale, si distingue così: {PLAYERFACTIONDESCRIPTION:1}. Le sue caratteristiche: {PLAYERTRAITS:1}.</Text>
+            <Text>{PLAYERFACTION:1}, tra le fazioni terrestri ed extraterrestri in competizione per la supremazia spaziale, si distingue così: {PLAYERFACTIONDESCRIPTION:1}, con caratteristiche peculiari: {PLAYERTRAITS:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0}, tra le fazioni terrestri ed extraterrestri in competizione per dominare lo spazio, si distingue così: {PLAYERFACTIONDESCRIPTION:1}, con queste peculiarità: {PLAYERTRAITS:1}.</Text>
+            <Text>{PREVIOUSCONV:0}, tra le fazioni terrestri ed extraterrestri rivali in una corsa galattica per la dominazione spaziale, si distingue: {PLAYERFACTIONDESCRIPTION:1}. Caratteristiche salienti: {PLAYERTRAITS:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -40,7 +40,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1}, tra entità terrestri ed extraterrestri rivali in una corsa galattica per il dominio spaziale, si distingue così: {PLAYERFACTIONDESCRIPTION:1}. Le sue peculiarità sono: {PLAYERTRAITS:1}.</Text>
+            <Text>{PLAYERFACTION:1}, tra le fazioni terrestri ed extraterrestri in competizione per la supremazia spaziale, si distingue così: {PLAYERFACTIONDESCRIPTION:1}, con caratteristiche peculiari: {PLAYERTRAITS:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -50,7 +50,7 @@
             <Text>{PLAYERFACTION:1}, tra le fazioni terrestri ed extraterrestri in competizione per la supremazia spaziale, si distingue così: {PLAYERFACTIONDESCRIPTION:1}, con caratteristiche peculiari: {PLAYERTRAITS:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- OpenAI Prompts -->
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
@@ -154,7 +154,6 @@
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
             <Text>Prego, redigi una dichiarazione di guerra da {LEADERNAME:2} a {LEADERNAME:1}, in prima persona e nel tono di {LEADERNAME:2}, per un videogioco strategico. Sii creativo. Si descrivono come {PLAYERFACTIONDESCRIPTION:1}. Tieni conto di come si descrivono, ma ricorda che sono molto arrabbiati. Non riutilizzare alcuna parola nelle descrizioni dei tratti della personalità. Rispondi in meno di 25 parole. Includi una riformulazione di: {ORIGINALTEXT:0}" 
-
 "Da {LEADERNAME:2}, noto come {PLAYERFACTIONDESCRIPTION:1}, dichiaro guerra a {LEADERNAME:1}. Furioso, ricordo: {ORIGINALTEXT:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -242,7 +241,7 @@
             <Text>Rispondi creativamente all'inizio di una conversazione della fazione {PLAYERFACTION:1} in un gioco di strategia fantascientifico. Rispetta {*:1} e {*:2}. Parafraresa {PREVIOUSCONV:0}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
@@ -264,7 +263,7 @@
             <Text>In risposta alla fazione {PLAYERFACTION:1}, senza nominare tratti, rielabora {PREVIOUSCONV:0}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>

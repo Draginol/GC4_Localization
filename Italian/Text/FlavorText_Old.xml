@@ -1,18 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    
-    
+    <!-- 1.5 Diplomacy additions. -->
+    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
     <FlavorTextDef>
         <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
         <FlavorTextOption>
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu." - richiede indagine sul Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>La tua generosità non sarà dimenticata, ne siamo grati.</Text>
+            <Text>Siamo molto grati. Non dimenticheremo la tua generosità.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -21,25 +21,25 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Dispiace, ma non possiamo giustificare il sostegno ora. Forse con relazioni più strette... ma attualmente, ci conviene conservare i nostri beni.</Text>
+            <Text>Ci dispiace, ma non possiamo giustificare di assisterti in questo momento. Forse se avessimo rapporti più stretti, potremmo trovare i fondi... ma così com'è ora, pensiamo sia meglio mantenere i nostri beni per noi stessi.</Text>
             <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>Sembreremo forse di quelli che donano in carità agli alieni?</Text>
-            <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
             <Text>Hai davvero richiesto denaro a una civiltà schiavista?</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Hai seriamente chiesto soldi a una civiltà che pratica la schiavitù?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -56,7 +56,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom, yacasus, cerin, omoric; tibu metini. [BR] (Studia il Traduttore Universale)</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -69,7 +69,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -82,7 +82,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu. Indaga il Traduttore Universale.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -95,7 +95,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, omoric sab ero metini tibu. Scruta l'Universal Translator.</Text>
+            <Text>Studia il Traduttore Universale, nel caos intricato di Ranom lesitir yacasus cerin.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -115,7 +115,7 @@
             <Text>Peccato per il tuo sentire.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- End 1.5 Diplomacy additions. -->
     <FlavorTextDef>
         <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
         <FlavorTextOption>
@@ -137,7 +137,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>(Non si può mercanteggiare con un nemico in guerra)</Text>
+            <Text>(Non si può commerciare in guerra)</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -151,7 +151,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>(Non puoi dialogare con un nemico in guerra)</Text>
+            <Text>Non si può dialogare con un nemico in guerra.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -165,7 +165,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Studia il Traduttore Universale per dialogare.</Text>
+            <Text>Studia il Traduttore Universale per conversare.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -200,8 +200,8 @@
             <Text>Addio.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- Sarah's temp stuff -->
+    <!-- Conversation: DemandCredits -->
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITS_MAIN</InternalName>
         <FlavorTextOption>
@@ -231,7 +231,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Ebbene, il {PLAYERFACTIONLONG:2} ti concederà ciò che desideri, per ora.</Text>
+            <Text>Ebbene, il {PLAYERFACTIONLONG:2} ti concederà il tuo desiderio, per ora.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -252,14 +252,14 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>Non attenuerà la nostra rabbia offrirti qualcosa gratuitamente, né la morte. Prendila, allora.</Text>
+            <Text>Ora hai il sopravvento. Ma rivivremo questo giorno quando sarai mio schiavo.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>Ora hai il sopravvento. Ma rivivremo questo giorno quando sarai mio schiavo.</Text>
+            <Text>You have the advantage now. But when you live as my slaveling we will revisit this day.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -301,11 +301,11 @@
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Rimpiangerai.</Text>
+            <Text>Te ne pentirai.</Text>
             <Text>A dangerous mistake.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandCreditsPerTurn -->
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
         <FlavorTextOption>
@@ -330,7 +330,7 @@
             <Text>Risposta errata. Le conseguenze del tuo errore si manifesteranno presto.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandTech -->
     <FlavorTextDef>
         <InternalName>DEMAND_TECH_MAIN</InternalName>
         <FlavorTextOption>
@@ -355,7 +355,7 @@
             <Text>Te ne pentirai.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestCredits help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -378,10 +378,10 @@
     <FlavorTextDef>
         <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>La {PLAYERFACTIONLONG:2} porta i suoi guai. No.</Text>
+            <Text>Il {PLAYERFACTIONLONG:2} ha i suoi guai. No.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestTech help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -391,7 +391,7 @@
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Bene.</Text>
+            <Text>Molto bene.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -406,7 +406,7 @@
             <Text>Il {PLAYERFACTIONLONG:2} ha i suoi guai. No.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestTech help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -433,8 +433,8 @@
             <Text>No way.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+    <!-- Default: a request, happy if they oblige -->
     <FlavorTextDef>
         <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
@@ -462,7 +462,7 @@
             <Text>Non possiamo andare in guerra in questo momento.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
     <FlavorTextDef>
         <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
         <FlavorTextOption>
@@ -487,7 +487,7 @@
             <Text>Presto dovrai scegliere, desidererai aver accettato la nostra generosa offerta.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: PayTechForDeclareWarOnOther -->
     <FlavorTextDef>
         <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
@@ -519,7 +519,7 @@
             <Text>Non possiamo osare la guerra ora.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: GiveCredits -->
     <FlavorTextDef>
         <InternalName>GIVE_CREDITS_MAIN</InternalName>
         <FlavorTextOption>
@@ -529,10 +529,10 @@
     <FlavorTextDef>
         <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Grazie, dono ricevuto.</Text>
+            <Text>Grazie, un dono apprezzato.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: GiveTech -->
     <FlavorTextDef>
         <InternalName>GIVE_TECH_MAIN</InternalName>
         <FlavorTextOption>
@@ -545,7 +545,7 @@
             <Text>Grazie, un dono apprezzato.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: OnPlayerDead -->
     <FlavorTextDef>
         <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
         <FlavorTextOption>
@@ -555,10 +555,10 @@
     <FlavorTextDef>
         <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
         <FlavorTextOption>
-            <Text>Compreso.</Text>
+            <Text>Capito.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandStarbaseRemoval -->
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
         <FlavorTextOption>
@@ -574,7 +574,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Eccellente, apprezzi la {PLAYERFACTIONLONG:1}.</Text>
+            <Text>Eccellente, hai l'apprezzamento del {PLAYERFACTIONLONG:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -599,8 +599,8 @@
             <Text>Questa mette in discussione l'autenticità delle tue intenzioni, {LEADERNAME:2}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- DemandAscensionStarbase -->
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
     <FlavorTextDef>
         <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
         <FlavorTextOption>
@@ -661,7 +661,7 @@
             <Text>Non ci arrenderemo, {LEADERNAME:2}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
     <FlavorTextDef>
         <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
         <FlavorTextOption>
@@ -674,11 +674,11 @@
             <Text>La {PLAYERFACTIONLONG:2} detiene sapienza di nostro interesse. Accetteresti questo scambio?</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Get off my lawn -->
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>{PLAYERFACTIONLONG:2}, notiamo la tua forza crescente alle nostre porte. Fermati.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, noi ti apprezziamo, ma l'aumento della presenza militare ci preoccupa.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -688,7 +688,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, notiamo l'accumulo di forze al nostro confine. Cessate.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, noi ti apprezziamo, ma l'aumento della presenza militare ci preoccupa.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -698,7 +698,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, notiamo le tue forze in crescita alla nostra soglia. Smettila.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, noi ti apprezziamo, ma l'aumento della presenza militare ci preoccupa.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -708,8 +708,6 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2} Nonostante la stima che ti portiamo, non vediamo di buon occhio l'armamento militare.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, noi ti apprezziamo, ma l'aumento della presenza militare ci preoccupa.</Text>
             <Text>{PLAYERFACTIONLONG:2}, apprezziamo la nostra relazione con te, ma l'incremento militare ci preoccupa.</Text>
             <Text>{PLAYERFACTIONLONG:2}, abbiamo un rapporto positivo con voi, ma l'ultima espansione militare ci preoccupa.</Text>
             <Text>{PLAYERFACTIONLONG:2}, apprezziamo la nostra amicizia, ma l'aumento della presenza militare è per noi fonte di inquietudine.</Text>
@@ -717,13 +715,15 @@
             <Text>{PLAYERFACTIONLONG:2}, apprezziamo la nostra alleanza, ma l'aumento dell'attività militare ci preoccupa.</Text>
             <Text>{PLAYERFACTIONLONG:2}, apprezziamo la nostra collaborazione, ma l'aumento della presenza militare ci preoccupa.</Text>
             <Text>{PLAYERFACTIONLONG:2}, abbiamo un buon rapporto con voi, ma l'espansione militare intensificata ci preoccupa.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, apprezziamo la nostra partnership, ma la crescente presenza militare è per noi fonte di allarme.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, abbiamo un buon rapporto con voi, ma l'intensificazione dell'espansione militare ci preoccupa.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Niente da osservare...</Text>
+            <Text>Nothing to see here...</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -733,7 +733,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Perché non mi arresti?</Text>
+            <Text>Devi fidarti, amico.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -743,7 +743,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Nulla da osservare qui...</Text>
+            <Text>Nothing to see here...</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -753,14 +753,14 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Devi fidarti, amico.</Text>
+            <Text>You need to trust us, friend.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Osserveremo attentamente.</Text>
+            <Text>Speriamo che la nostra fiducia non sia mal riposta.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -770,7 +770,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Osserveremo con attenzione.</Text>
+            <Text>Speriamo che la nostra fiducia non sia mal riposta.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -780,7 +780,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Ti avremo d'occhio.</Text>
+            <Text>We'll be watching you.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -790,7 +790,7 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Speriamo che la nostra fiducia non sia mal riposta.</Text>
+            <Text>I hope, for your sake, that our trust isn't misplaced.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1204,20 +1204,25 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Text>Riconosciuto.</Text>
-            <Text>Understood.</Text>
+            <Text>Capito.</Text>
             <Text>Prenderemo in considerazione quello che hai detto.</Text>
-            <Text>We understand.</Text>
+            <Text>Capiamo.</Text>
             <Text>Prenderemo in considerazione il tuo messaggio.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- End Game text -->
     <FlavorTextDef>
         <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
         <FlavorTextOption>
             <Text>Con l'uso creativo di armi e navi armate, hai soffocato la galassia. Nemici schiacciati, pianeti sottomessi e cittadini costretti ad alzare la tua bandiera. Non era bello, ma non doveva esserlo, vero?</Text>
         </FlavorTextOption>
-        
+        <!-- <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
+    </FlavorTextOption> -->
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
@@ -1252,7 +1257,7 @@
     <FlavorTextDef>
         <InternalName>END_GAME_PARAGRAPH_TURNLIMIT</InternalName>
         <FlavorTextOption>
-            <Text>Per anni, il vostro popolo ha combattuto su scala galattica contro vicini ambiziosi e intriganti. Nonostante nessuna razza avesse un vantaggio decisivo, alla fine, nel logorante conflitto, il vostro popolo è emerso in posizione di forza.</Text>
+            <Text>Per anni, il vostro popolo ha combattuto in un'arena galattica contro vicini ambiziosi e insidiosi. Nonostante nessuna razza abbia mai ottenuto un vantaggio decisivo, nel conflitto di logoramento, il vostro popolo ha finito nella posizione migliore.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1296,6 +1301,7 @@
         <FlavorTextOption>
             <Text>Persisti nell'opera lodevole.</Text>
         </FlavorTextOption>
+<!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>STOLE_TECH</InternalName>
@@ -1327,7 +1333,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Che abominevole intruso invade il mio schermo?</Text>
+            <Text>What foul pollutant of a creature crosses my screen?</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1357,7 +1363,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Rapidamente, estraneo rifiuto.</Text>
+            <Text>Make this quick, alien scum.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1368,7 +1374,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Miserabile esistenza la tua, non appartenendo a noi. Presto finirà, per te e per i tuoi simili.</Text>
+            <Text>How wretched a life you must live, not being one of us. Soon it will be over, for you and all your kind.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1421,18 +1427,18 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Piacere di parlarti, Korath.</Text>
+            <Text>Oggi sembri di aspetto più greve del solito.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Oggi sembri di aspetto più greve del solito.</Text>
+            <Text>You seem uglier than normal today.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- FROM INTRIGUE -->
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_LOSE</InternalName>
         <FlavorTextOption>
@@ -1466,7 +1472,7 @@
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_RESPONSE_GOVERNMENT</InternalName>
         <FlavorTextOption>
-            <Text>Riesaminiamo le opzioni governative. [COLOR=UIDefaultHighlight](Schermo Governo aperto)[/COLOR]</Text>
+            <Text>Rivediamo le nostre opzioni di governo. [COLOR=UIDefaultHighlight] (Apre schermo del governo) [/COLOR]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1509,7 +1515,7 @@ Superato il [COLOR=UIDefaultHighlight]Limite Colonia[/COLOR], l'efficacia govern
     <FlavorTextDef>
         <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT</InternalName>
         <FlavorTextOption>
-            <Text>Concedimi un istante.</Text>
+            <Text>Concedimi un attimo.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1542,9 +1548,9 @@ Superato il [COLOR=UIDefaultHighlight]Limite Colonia[/COLOR], l'efficacia govern
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>La tua incompetenza è leggendaria.</Text>
-            <Text>"Stai guidando la nostra civiltà alla rovina."</Text>
-            <Text>"Sopravviviamo nonostante la tua leadership mediocre."</Text>
+            <Text>Sei un governante capace, ma non eccezionale.</Text>
+            <Text>"Sei un abile custode della nostra civiltà, ma dovremmo aspirare a di più."</Text>
+            <Text>"Non ho un'opinione forte in un senso o nell'altro."</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1556,9 +1562,9 @@ Superato il [COLOR=UIDefaultHighlight]Limite Colonia[/COLOR], l'efficacia govern
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>La nostra civiltà prospera grazie al tuo dominio.</Text>
+            <Text>[I]"Our civilization flourishes because of your rule."[/I]</Text>
             <Text>[I]"You have my eternal support."[/I]</Text>
-            <Text>"Ti servo con onore."</Text>
+            <Text>[I]"I serve you with honor."[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1570,9 +1576,9 @@ Superato il [COLOR=UIDefaultHighlight]Limite Colonia[/COLOR], l'efficacia govern
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>Sei un governante capace, ma non eccezionale.</Text>
-            <Text>"Sei un abile custode della nostra civiltà, ma dovremmo aspirare a di più."</Text>
-            <Text>"Non ho un'opinione forte in un senso o nell'altro."</Text>
+            <Text>[I]"You are a competent, but not exceptional, ruler."[/I]</Text>
+            <Text>[I]"You are an able steward of our civilization, but we should aspire for more."[/I]</Text>
+            <Text>[I]"I have no strong opinion one way or the other."[/I]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
