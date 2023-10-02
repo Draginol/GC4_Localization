@@ -183,8 +183,6 @@ class TranslationApp(QMainWindow):
         # Clear the changed items set since they have been saved
         self.changed_items.clear()
 
-
-
     def load_directory(self):
         self.load_file()
 
@@ -193,7 +191,7 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.disconnect(self.on_item_changed)
         self.table.itemChanged.disconnect(self.update_translation)
 
-        for idx, ((file_name, label), (source_text, target_text, trans_unit_id, internal_name)) in enumerate(self.english_strings.items()):
+        for idx, ((file_name, label, _), (source_text, target_text, trans_unit_id, internal_name)) in enumerate(self.english_strings.items()):
             self.table.setItem(idx, 0, QTableWidgetItem(file_name))
             self.table.setItem(idx, 1, QTableWidgetItem(label))
             # Include trans_unit_id and internal_name in CustomTableWidgetItem
@@ -207,9 +205,9 @@ class TranslationApp(QMainWindow):
     def parse_and_populate(self, file_name):
         tree = ET.parse(file_name)
         root = tree.getroot()
-        idx = 0 
+        idx = 0  # Start the index from 0
         self.english_strings.clear()
-        
+
         for file_tag in root.findall('file'):
             original_filename = file_tag.get('original')
             for trans_unit in file_tag.findall('body/trans-unit'):
@@ -217,20 +215,22 @@ class TranslationApp(QMainWindow):
                 trans_unit_id = trans_unit.get('id')
                 source_text = trans_unit.find('source').text
                 target_text = trans_unit.find('target').text
-                    
-                self.english_strings[(original_filename, internal_name)] = (source_text, target_text, trans_unit_id, internal_name)
+
+                self.english_strings[(original_filename, internal_name, trans_unit_id)] = (source_text, target_text, trans_unit_id, internal_name)
+
                 self.table.setItem(idx, 2, CustomTableWidgetItem(source_text, original_filename, internal_name, trans_unit_id, internal_name))
                 self.table.setItem(idx, 3, CustomTableWidgetItem(target_text, original_filename, internal_name, trans_unit_id, internal_name))
-                
+
                 idx += 1  # Increment idx for each new entry being added to the table
-        
+
         self.populate_table()
+
 
     def switch_language(self):
         lang = self.language_box.currentText()
         
     def translate_to_language(self, text, row, target_language):
-        label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
+        label_item = self.table.item(row, 1)  # Assuming the Label column is at index 2
         label_name = label_item.text()
         prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
 
@@ -263,7 +263,7 @@ class TranslationApp(QMainWindow):
 
         def translate_row(row): 
             print(f"Translating row {row} in thread {threading.current_thread().name}")
-            english_text_item = self.table.item(row, 3)
+            english_text_item = self.table.item(row, 2)
             english_text = english_text_item.text()
             target_language = self.language_box.currentText()
             translated_text = self.translate_to_language(english_text, row, target_language)
@@ -274,7 +274,7 @@ class TranslationApp(QMainWindow):
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=4) as executor:
+            with ThreadPoolExecutor(max_workers=48) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 3)
                     if not translation_item:
