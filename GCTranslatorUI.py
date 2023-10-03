@@ -271,7 +271,7 @@ class TranslationApp(QMainWindow):
 
             for subdir, _, files in os.walk(directory):
                 for file in files:
-                    if file.endswith(".xml"):
+                    if file.lower().endswith(".xml"):
                         file_path = os.path.join(subdir, file)
                         file_name = os.path.basename(file_path)
                         tree = ET.parse(file_path)
@@ -390,7 +390,7 @@ class TranslationApp(QMainWindow):
             self.save_translations()
             translation_counter += len(chunk)
 
-        self.translate_button.setText("Translate via OpenAI")
+        self.translate_button.setText("Translate")
         if total_rows > 4:
             progress.close()
 
