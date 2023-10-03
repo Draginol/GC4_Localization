@@ -6,7 +6,7 @@ def install_module(module_name):
     subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
 
 # List of modules to check
-required_modules = ["PyQt5", "openai","lxml"]
+required_modules = ["PyQt5", "openai","lxml","langid"]
 
 for module in required_modules:
     try:
@@ -17,6 +17,8 @@ for module in required_modules:
 import re
 import os
 import openai
+import langid
+
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
                              QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QListWidget)
 from PyQt5.QtCore import QSettings
@@ -53,6 +55,11 @@ class CustomTableWidgetItem(QTableWidgetItem):
         return False
 
 class TranslationApp(QMainWindow):
+
+    def detect_language(self, text):
+        lang, _ = langid.classify(text)
+        return lang
+
     def __init__(self):
         super().__init__()
 
@@ -91,8 +98,8 @@ class TranslationApp(QMainWindow):
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
         self.table = QTableWidget(self)
-        self.table.setColumnCount(5)
-        self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation'])
+        self.table.setColumnCount(6)
+        self.table.setHorizontalHeaderLabels(['File Name', 'Translated File Name', 'Label', 'English', 'Translation', 'DetectedLang'])
         self.table.setSortingEnabled(True)
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
@@ -381,6 +388,11 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 2, QTableWidgetItem(label))
             self.table.setItem(idx, 3, QTableWidgetItem(string))
             self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
+            
+            # Detect language for the translation and set it in the DetectedLang column
+            detected_language = self.detect_language(string)
+            self.table.setItem(idx, 5, QTableWidgetItem(detected_language))
+
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
 
@@ -467,6 +479,14 @@ class TranslationApp(QMainWindow):
                         self.table.setItem(row, 4, translation_item)
 
                     translation_item.setText(translated_text)
+
+                    # Detecting the language of the translated text and populating 'DetectedLang' column
+                    detected_lang = self.detect_language(translated_text)
+                    detected_lang_item = self.table.item(row, 5)  # Assuming 'DetectedLang' is at index 5
+                    if not detected_lang_item:
+                        detected_lang_item = QTableWidgetItem()
+                        self.table.setItem(row, 5, detected_lang_item)
+                    detected_lang_item.setText(detected_lang)
 
                     self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
                     if total_rows > 4:
