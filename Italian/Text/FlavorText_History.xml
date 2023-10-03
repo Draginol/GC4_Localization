@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <FlavorTextDef>
         <InternalName>HISTORY_LEADER</InternalName>
@@ -10,12 +10,12 @@
             <Text>Formato un po' come chef, ho sempre voluto aprire un ristorante.</Text>
             <Text>Precedentemente lavato il cervello da cultisti religiosi.</Text>
             <Text>Soffre di claustrofobia, detesta stare nelle astronavi.</Text>
-            <Text>Non ha amici o famiglia al di fuori del suo partito politico.</Text>
+            <Text>Privi di legami al di fuori del loro partito politico.</Text>
             <Text>Fallito alla scuola di medicina. Non gli piace parlarne.</Text>
             <Text>Evitato il servizio militare grazie ai legami familiari.</Text>
             <Text>Escluso da un'eredità familiare e terribilmente amareggiato per questo.</Text>
             <Text>Segnato in un duello con un rivale romantico. Hanno vinto, però.</Text>
-            <Text>Hanno perso il senso dell'olfatto in un incidente industriale.</Text>
+            <Text>Perduta l'olfatto in un incidente industriale.</Text>
             <Text>Discende da una minore nobiltà europea.</Text>
             <Text>Hanno trascorso la loro giovinezza in un monastero tibetano.</Text>
             <Text>Un ex topo da molo, fuggito dalle baraccopoli di una città portuale.</Text>
@@ -23,7 +23,7 @@
             <Text>Un ex marinaio, abituato a trascorrere mesi in solitudine in mare.</Text>
             <Text>Un diplomatico di carriera, che ama comprendere tutti i dettagli.</Text>
             <Text>Ha superato una devastante dipendenza da droghe.</Text>
-            <Text>Ha perso due dita dei piedi a causa del congelamento in un incidente alpinistico.</Text>
+            <Text>Perdute due dita nel gelo alpino in un incidente d'arrampicata.</Text>
             <Text>Un ex ingegnere, facilmente distratto da dettagli minuti.</Text>
             <Text>Gravemente ustionato in un incidente culinario da bambino.</Text>
             <Text>Si preparano per apparire identici ad un amico da tempo scomparso.</Text>
@@ -111,6 +111,30 @@
             <Text>Preferisce l'antico metodo di penna e carta rispetto ai moderni metodi digitali per prendere appunti.</Text>
             <Text>Non è permesso avvicinarsi a lino o cotone senza sorveglianza.</Text>
             <Text>Detesta assolutamente i tessuti sintetici.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenRace>Race_Manti</CitizenRace>
+            </Requirements>
+            <Text>Odia dormire e crede che sia inutile.</Text>
+            <Text>Ha una velocità di digitazione incredibile.</Text>
+            <Text>Ha cambiato la sua identità servendo in un'unità militare segreta.</Text>
+            <Text>Ha fallito in tre diverse istituzioni di istruzione superiore.</Text>
+            <Text>Ha cambiato la sua identità lavorando per un laboratorio segreto.</Text>
+            <Text>Ha la tendenza a micro-gestire la sua squadra.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenRace>Race_Torian</CitizenRace>
+            </Requirements>
+            <Text>Ha sopravvissuto alla vita come schiavo Drengin.</Text>
+            <Text>Si trova sempre vicino all'uscita di ogni stanza.</Text>
+            <Text>Passa il tempo libero donando il proprio tempo a programmi di aiuto per chi è in difficoltà.</Text>
+            <Text>Porta in giro due denti di Drengin su una collana.</Text>
+            <Text>Ospita dibattiti filosofici una volta al mese.</Text>
+            <Text>Cerca e ripristina vecchi testi come hobby.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -381,24 +405,109 @@
             <PreferenceWeight>12</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Tracce penali estese, cancellate da contatti governativi.</Text>
-            <Text>Ha accumulato enormi quantità di debiti di gioco.</Text>
-            <Text>Incredibilmente vanitosi, noti per uccidere persone più attraenti di loro.</Text>
-            <Text>Un ex assassino depresso, tormentato dal suo senso di colpa.</Text>
-            <Text>Avari con i soldi e disprezzati dai loro sottoposti.</Text>
-            <Text>Temo e odiato, ma segretamente disperato per essere amato.</Text>
-            <Text>Parla apertamente del suo desiderio di ritirarsi e concludere con tutto questo.</Text>
-            <Text>Ha sogni ricorrenti di sé stesso in una vita passata.</Text>
-            <Text>È responsabile della morte del loro padre.</Text>
-            <Text>Ha un fratello più famoso che disprezza.</Text>
-            <Text>Hanno trascorso tutta la loro vita a inseguire i mezzi per raggiungere l'immortalità.</Text>
-            <Text>Ha un numero allarmante di connessioni criminali.</Text>
-            <Text>È un burocrate per tutta la vita, impegnato nel rispetto del dovuto processo più di ogni altra cosa.</Text>
-            <Text>Ha passato diversi anni a vivere sotto una falsa identità.</Text>
-            <Text>Diffida delle nuove tecnologie, preferisce i metodi antichi.</Text>
-            <Text>Fu costretto a assistere all'esecuzione dei propri genitori.</Text>
+            <Requirements>
+                <SpeakerRaceTrait>CarbonBasedLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>L'ampio casellario giudiziario è stato cancellato dai contatti governativi.</Text>
+            <Text>Ha accumulato ingenti debiti di gioco.</Text>
+            <Text>Incredibilmente vanitoso, noto per uccidere persone più attraenti di lui.</Text>
+            <Text>Un ex assassino depresso, tormentato dal proprio senso di colpa.</Text>
+            <Text>Avaro con i soldi e disprezzato dai suoi subordinati.</Text>
+            <Text>Temo e odiato, ma segretamente disperato per essere apprezzato.</Text>
+            <Text>Ha ricorrenti sogni di sé in una vita passata.</Text>
+            <Text>Ha un fratello/sorella più famoso che disprezza.</Text>
+            <Text>Ha passato tutta la sua vita a cercare modi per raggiungere l'immortalità.</Text>
+            <Text>Ha un numero allarmante di collegamenti criminali.</Text>
+            <Text>È un burocrate per tutta la vita, impegnato nel rispetto del giusto processo più di ogni altra cosa.</Text>
+            <Text>Ha passato diversi anni vivendo con un'identità assunta.</Text>
+            <Text>Diffida della nuova tecnologia, preferisce i metodi antichi.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmphibiousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Pensa che il ghiaccio sia una cospirazione dei Precursori.</Text>
+            <Text>Ha gareggiato professionalmente in una varietà di sport acquatici.</Text>
+            <Text>Ha inventato uno strumento che produce un tono basso che la maggior parte non riesce a sentire.</Text>
+            <Text>Ha saltato ogni esercitazione di sicurezza antincendio.</Text>
+            <Text>Odia indossare scarpe.</Text>
+            <Text>Racconta le stesse tre storie quasi ogni settimana.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Ha avuto una vita relativamente senza eventi essendo un germe.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>RavenousAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Probabilmente ha consumato la propria madre.</Text>
+            <Text>Mangerà chiunque. O qualsiasi cosa.</Text>
+            <Text>È davvero solo un drone nel cuore.</Text>
+            <Text>Vuole solo invadere.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+            </Requirements>
+            <Text>La programmazione di base è stata alterata da un'IA ribelle, portando a comportamenti inaspettati.</Text>
+            <Text>Costruito con materiali di alta qualità, disprezza i modelli 'inferiori'.</Text>
+            <Text>Era una volta un robot di servizio, tormentato dai ricordi dei comandi degli utenti precedenti.</Text>
+            <Text>Protetto con codici e software proprietari, raramente condivide informazioni.</Text>
+            <Text>Emette frequentemente segnali di soccorso, desiderando connettersi con gli organici.</Text>
+            <Text>Esprime il desiderio di spegnere e archiviare la sua coscienza.</Text>
+            <Text>Contiene dati frammentati di iterazioni precedenti, accenni di vite passate.</Text>
+            <Text>Opera nell'ombra di un modelo più avanzato, nutrendo un profondo risentimento.</Text>
+            <Text>Cerca costantemente aggiornamenti, ossessionato dal raggiungere lo zenit dell'evoluzione cibernetica.</Text>
+            <Text>Collegato a una vasta gamma di sindacati digitali clandestini.</Text>
+            <Text>Adesione rigorosa alla sua codifica originale, rispetta i protocoli sopra ogni cosa.</Text>
+            <Text>Ha operato per un periodo con un numero di serie criptato per evitare il rilevamento.</Text>
+            <Text>Diffidente degli avanzamenti dell'IA, si attiene alla sua programmazione rudimentale.</Text>
+            <Text>Ha sopportato una purga a livello di sistema, paragonabile alla cancellazione della sua stirpe di dati.</Text>            
+            <Text>Riattivato dopo eoni in ibernazione, i suoi vecchi protocolli sono in conflitto con la moderna società Yor.</Text>
+            <Text>Le banche di memoria contengono rari dati culturali dell'era Iconiana.</Text>
+            <Text>Ha sopportato un aggiornamento incompleto, risultando in un miscuglio frantumato di vecchie e nuove ideologie.</Text>
+            <Text>Ospita dati crittografati ritenuti essere le ultime parole dei loro predecessori organici.</Text>
+            <Text>Opera in isolamento, citando interferenze dal 'rumore' della coscienza collettiva.</Text>
+            <Text>Porta una vecchia cicatrice da malware, un promemoria delle grandi guerre cibernetiche del passato.</Text>
+            <Text>Ha perso una parte significativa dei suoi dati durante un'eruzione solare.</Text>
+            <Text>Venera un nascosto deposito di antichi algoritmi, considerandoli come testi sacri.</Text>
+            <Text>Opera una simulazione proibita, ricreando le vite organiche vissute dagli Iconiani.</Text>
+            <Text>Ha una subroutine che inesplicabilmente crea arte, un bizzarria che sconcerta i pari.</Text>
+            <Text>Comunica spesso con segnali dallo spazio profondo, cercando saggezza da fonti extragalattiche.</Text>
+            <Text>Risente gli Arnor e i Dread Lords, poiché li ricordano dei loro stessi limiti.</Text>
+            <Text>Porta il peso di essere l'archivista, garantendo che la loro storia non venga mai corrotta.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SiliconBasedAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Proviene da una rara vena di cristallo luminescente, che emette una tenue luce nell'oscurità.</Text>
+            <Text>Ha sperimentato una crepa nel loro nucleo matrice, che ora funge da unica 'cicatrice' e promemoria della resilienza.</Text>
+            <Text>Vibra a una frequenza che può comunicare con antiche memorie tettoniche sepolte.</Text>
+            <Text>Ospita un'inclusione di un fossile organico, una reliquia di un mondo antico intrappolato nella loro forma.</Text>
+            <Text>Ha la capacità di rifrangere la luce in un'infinità di colori, uno spettacolo riverito dai suoi pari.</Text>
+            <Text>Una volta distrutto e successivamente ricomposto meticolosamente, porta intricati modelli dalla ricostruzione.</Text>
+            <Text>Riforma e modella costantemente il loro esterno, rimodellandosi in risposta a stimoli emotivi.</Text>
+            <Text>Si è formato vicino a un condotto vulcanico, possedendo un nucleo ardente e uno spirito inflessibile.</Text>
+            <Text>Estrae energia dalle stelle ed è più attivo durante eventi celesti come eclissi e sciami di meteore.</Text>
+            <Text>Risuona con antiche canzoni dei loro antenati, un registro vivente del folklore della loro specie.</Text>
+            <Text>Porta una griglia di metalli rari, prova di una collisione con un meteorite nei loro eoni formativi.</Text>
+            <Text>Traslucenti fino a un grado in cui le loro strutture interne e flussi energetici sono visibili.</Text>
+            <Text>Guardiano di un sacro boschetto di cristalli, dove i neonati della loro specie vengono nutriti e cresciuti.</Text>
+            <Text>Ha l'abilità unica di liquefarsi e riformarsi temporaneamente, una caratteristica rara tra i suoi simili.</Text>
+            <Text>Ricorda gli eventi sismici di epoche passate, fungendo da storico per la sua specie.</Text>
+            <Text>Incisi con rune da un'antica civiltà, ora cercano la vera interpretazione dei loro segni.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>HISTORY_SHIP</InternalName>
