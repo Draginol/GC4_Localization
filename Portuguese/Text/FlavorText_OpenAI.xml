@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- OpenAI Conversation Pretexts -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Os {PLAYERFACTIONLONG:1} são uma facção governada por {LEADERNAME:1}, possuindo traços de personalidade de {PLAYERTRAITS:1}. Os {PLAYERFACTIONLONG:2}, por sua vez, são uma facção liderada por {LEADERNAME:2}, com características de personalidade de {PLAYERTRAITS:2}. São descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:2}. Eles são rivais de várias espécies e mundos natais em um conflito intragaláctico pelo domínio.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Os {PLAYERFACTIONLONG:1} são uma facção governada por {LEADERNAME:1}. Eles possuem as características pessoais de {PLAYERTRAITS:1}. Os {PLAYERFACTIONLONG:2} são uma facção governada por {LEADERNAME:2}. Eles possuem as características pessoais de {PLAYERTRAITS:2}. Eles são descritos da seguinte maneira: {PLAYERFACTIONDESCRIPTION:2}. São rivais de várias espécies e mundos natais em um conflito intragaláctico pela supremacia. Anteriormente, {LEADERNAME:1} disse o seguinte a {LEADERNAME:2}: {PREVIOUSCONV:0}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} é uma entre várias facções terrestres e extraterrestres que disputam em escala galáctica pelo domínio do espaço. São descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Possuem as seguintes características: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PREVIOUSCONV:0} é uma das várias facções terrestres e extraterrestres que competem em uma corrida de escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles possuem as seguintes características: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_LEADER_NAME_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PREVIOUSCONV:0} é uma das várias facções terrestres e extraterrestres que competem em uma corrida de escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles possuem as seguintes características: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} é uma entre várias facções terrestres e extraterrestres que disputam em escala galáctica pelo domínio do espaço. São descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Possuem as seguintes características: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_PRETEXT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTION:1} é uma entre várias facções terrestres e extraterrestres que disputam em escala galáctica pelo domínio do espaço. São descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Possuem as seguintes características: {PLAYERTRAITS:1}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- OpenAI Prompts -->
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por gentileza, redija uma introdução em primeira pessoa de {LEADERNAME:1} para outra facção, na voz de {LEADERNAME:1}, para uso em um jogo de estratégia. Seja inovador. Não repita nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 100 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_GENERAL_MAIN_SHARED_TRADE_ROUTE_PROMPT</InternalName>
+        <MaxTokens>400</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, escreva uma introdução em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo. Não reutilize nenhuma palavra nas descrições das características de personalidade. As facções compartilham importantes rotas comerciais entre si, portanto o benefício mútuo do comércio deve ser mencionado. Responda em menos de 100 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, escreva uma declaração de guerra sucinta em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 10 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_MAJOR_CIV_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por gentileza, redija uma introdução em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2}, na voz de {LEADERNAME:1}, para uso em um jogo de estratégia de vídeo. {LEADERNAME:1} Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Seja criativo. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 50 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_GENERIC_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por gentileza, elabore uma introdução em primeira pessoa de {LEADERNAME:1} para outro líder na voz de {LEADERNAME:1} para uso em um jogo de estratégia. {LEADERNAME:1} Se descreve como {PLAYERFACTIONDESCRIPTION:1}. Seja criativo. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 50 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>INTRODUCTION_PROMPT</InternalName>
+        <MaxTokens>400</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma introdução em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de estratégia em vídeo. Seja criativo. Não reutilize nenhuma palavra nas descrições dos traços de personalidade. Responda em menos de 100 palavras. Inclua uma reformulação do seguinte: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_PEACEFUL_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, responda a outra facção em primeira pessoa como uma resposta a uma primeira introdução para uso em um jogo de estratégia de vídeo. Estamos respondendo a uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Seja amigável, mas reconheça suas características únicas. Não reutilize nenhuma palavra nas descrições dos traços de personalidade. Responda em menos de 10 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_NEUTRAL_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma resposta sucinta para uma primeira introdução para uso em um jogo de estratégia. Estamos respondendo a uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Seja um pouco agressivo e engraçado. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 15 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_FIRST_CONTACT_TRADE_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, escreva uma resposta sucinta em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} como uma resposta à primeira apresentação para uso em um jogo de estratégia. Use um tom neutro e não comprometedor. Indique que o falante está aberto ao comércio. Seja criativo e da maneira como alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1} faria. Não reutilize nenhuma palavra nas descrições das características de personalidade. Responda em menos de 25 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Em resposta à guerra declarada, {LEADERNAME:1} ataca! Prepare-se, {PLAYERFACTION:1}!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Num tom desapontado, como alguém que se autodenomina {PLAYERFACTIONDESCRIPTION:1}, respondo à declaração de guerra contra {PLAYERFACTION:1}: 'Lamentável, mas prevaleceremos.'</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>INTRODUCTION_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma resposta à introdução em primeira pessoa de {LEADERNAME:2} para {LEADERNAME:1} na voz de {LEADERNAME:2} para uso em um jogo de estratégia em vídeo. Seja criativo e à maneira de alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Não use o nome de nenhum líder ou facção. Responda em 16 palavras ou menos. Inclua uma reformulação do seguinte: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_GREETING_PROMPT</InternalName>
+        <MaxTokens>300</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma introdução para uma conversa em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2}, na voz de {LEADERNAME:1}, para uso em um jogo de estratégia. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}, então certifique-se de levar isso em consideração. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 75 palavras. Inclua uma reformulação do seguinte: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OPTIONS_MAIN_TEXT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, elabore uma sugestão verbal para mudar o tópico da conversa em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de estratégia em vídeo. Seja criativo e no estilo de alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 25 palavras. Inclua uma reformulação do seguinte: {ORIGINALTEXT:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DECLARE_WAR_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma declaração de guerra em primeira pessoa de ##LOCAL0## para ##LOCAL1##, na voz de ##LOCAL0## para uso em um jogo de estratégia. Seja criativo. Eles se descrevem como ##LOCAL3##. Leve em consideração como eles se descrevem, mas lembre-se que estão muito irritados. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 25 palavras. Inclua uma reformulação do seguinte: ##LOCAL4##.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>{LEADERNAME:1}: A oferta de comércio é apreciada, {LEADERNAME:2}. No entanto, preciso ponderar sobre sua proposta. Repetindo: {ORIGINALTEXT:0}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Escreva um nome original e interessante para um império de uma facção atualmente chamada {PLAYERFACTION:1} em um jogo de estratégia por turnos de ficção científica. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use nenhum nome de traço diretamente. Não use as palavras galáctico, dominação ou força. Responda entre 2 e 3 palavras. Não exceda 3 palavras!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_SHORT_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, crie uma versão mais curta do nome {PREVIOUSCONV:0} para uma facção em um jogo de estratégia em turnos de ficção científica. Seja criativo. Não use nomes de características diretamente. Responda em 2 palavras ou menos.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, crie um nome para o líder da facção {PREVIOUSCONV:0} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não utilize diretamente nomes de características. Responda entre 2 e 4 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, crie um nome para o planeta natal da facção {PREVIOUSCONV:0} em um jogo de estratégia em turno de ficção científica. Seja criativo. Não use diretamente nenhum nome de traço. Eles se descreveram como {PLAYERFACTIONDESCRIPTION:1}. Responda entre 1 e 3 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
+        <MaxTokens>50</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, crie um indicativo de chamada naval ou espacial para a facção {PREVIOUSCONV:0} em um jogo de estratégia de ficção científica por turnos. Seja criativo. A resposta deve ser uma sigla ou abreviação e consistir exatamente de 2 ou 3 letras maiúsculas, cada uma seguida por um ponto. Não inclua palavras completas. Por exemplo, H.M.S. Outro exemplo, U.S.S. A resposta não deve exceder 6 letras, incluindo pontos.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma descrição concisa de uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica baseado em turnos. Seja criativo. Eles se autodenominam {PLAYERFACTIONDESCRIPTION:1}. Responda em menos de 30 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, elabore uma descrição detalhada de uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não use nenhum nome de traço diretamente. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Responda em menos de 50 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, descreva em prosa as forças e fraquezas da facção denominada {PLAYERFACTION:1} num jogo de estratégia de ficção científica por turnos. Eles se autodenominam {PLAYERFACTIONDESCRIPTION:1}. Seja criativo, sem citar diretamente nenhum atributo. Responda em menos de 30 palavras.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FACTION_MOTTO_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Escreva um lema para a facção {PLAYERFACTION:1} em um jogo de estratégia de ficção científica. Seja criativo. Não use nomes de características diretamente. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Responda em menos de 45 caracteres.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, inicie uma conversa para uma civilização chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use nomes de características diretamente. Responda em menos de 20 palavras. Uma palavra do tipo {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra do tipo {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado do tipo {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Inclua uma reformulação da seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma resposta para um início de conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não use diretamente nenhum nome de traço. Responda em menos de 20 palavras. Uma palavra do formato {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra no formato {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado no formato {*} deve usar o formato {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Inclua uma reformulação do seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, desenvolva uma resposta a uma abertura de diálogo iniciada pela facção {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Eles são uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nomes de características. Responda em menos de 20 palavras. Uma palavra na forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra na forma {*:2} é uma marcação que se refere ao ouvinte e também deve ser considerada imutável. Qualquer texto gerado na forma {*} deve usar a forma {*:1} para se referir ao falante e {*:2} para se referir ao ouvinte. Inclua uma reformulação do seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, escreva uma abertura para uma conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente os nomes das características. Responda em menos de 20 palavras. Uma palavra na forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra na forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado na forma {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Inclua uma reformulação do seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, escreva uma resposta para uma abertura de conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica baseado em turnos. Seja criativo. SOU EU QUEM FALA V3. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nenhum nome de característica. Responda em menos de 15 palavras e deve se relacionar com a forma como eles se descrevem.\Uma palavra da forma {*:1} é uma marcação que se refere ao orador e deve ser considerada imutável. Uma palavra da forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado na forma {*} deve usar a forma {*:1} ao se referir ao orador e {*:2} ao se referir ao ouvinte. Inclua uma reformulação do seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
+        <MaxTokens>200</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, crie uma resposta para um início de conversa iniciado pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. SOU EU QUEM FALA V4. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use nenhum nome de traço diretamente. Responda em menos de 30 palavras e deve transmitir como eles se descrevem de forma sucinta. Uma palavra na forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra na forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado na forma {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Inclua uma reformulação do seguinte: {PREVIOUSCONV:0}</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, componha uma resposta de aceitação a uma oferta de comércio feita a uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica baseado em turnos. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. A resposta deles deve fazer referência a algo de como se descrevem, mas ainda aceitando o acordo comercial. Não use nomes de características diretamente. Responda em menos de 20 palavras. Uma palavra da forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra da forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado da forma {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Semente com número aleatório: {PREVIOUSCONV:0}, não inclua a semente em sua resposta.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, redija uma resposta de recusa a uma oferta de comércio feita a uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. {PLAYERFACTION:1} se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não use nenhum nome de características diretamente. Responda em menos de 20 palavras. Faça a recusa deles acompanhar de forma divertida a maneira como eles se descrevem. Uma palavra da forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra da forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado da forma {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Semente com número aleatório: {PREVIOUSCONV:0}, não inclua a semente em sua resposta.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
+        <MaxTokens>100</MaxTokens>
+        <FlavorTextOption>
+            <Text>Por favor, comente sobre a bem-sucedida aceitação mútua de uma oferta comercial feita à facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não use diretamente nomes de características. Responda em menos de 20 palavras. Uma palavra da forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra da forma {*:2} é uma marcação que se refere ao ouvinte e deve ser considerada imutável. Qualquer texto gerado na forma {*} deve usar a forma {*:1} ao se referir ao falante e {*:2} ao se referir ao ouvinte. Semente com número aleatório: {PREVIOUSCONV:0}, não inclua a semente na sua resposta.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>
