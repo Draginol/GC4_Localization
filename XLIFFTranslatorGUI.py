@@ -270,11 +270,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 10
+        CHUNK_SIZE = 24
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=48) as executor:
+            with ThreadPoolExecutor(max_workers=24) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 3)
                     if not translation_item:
