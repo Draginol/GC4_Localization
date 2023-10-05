@@ -122,7 +122,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FleetDec</Label>
-    <String>함대는 [HS=HS_Ship]선박들[/HS]의 집합입니다. 함대는 [HS=HS_ShipMovement]이동[/HS]하여 같은 [HS=HS_Tile]타일[/HS]에 [HS=HS_Ship]선박[/HS]들을 모으는 것으로 형성될 수 있습니다. 한 함대에 몇 대의 [HS=HS</String>
+    <String>함대는 [HS=HS_Ship]Ships[/HS]의 그룹입니다. 함대는 [HS=HS_ShipMovement]Moving[/HS] [HS=HS_Ship]Ships[/HS]를 같은 [HS=HS_Tile]Tile[/HS]로 이동시켜 형성할 수 있습니다. 함대에 포함될 수 있는 [HS=HS_Ship]Ships[/HS]의 수는 현재의 [HS=HS_Logistics]Logistics[/HS]에 의해 결정됩니다. 각 [HS=HS_Ship]Ship[/HS]에는 [HS=HS_Logistics]Logistics[/HS] 값이 있으며 현재 함대의 [HS=HS_Logistics]Logistics[/HS] 점수에 추가됩니다. 만약 [HS=HS_Ship]Ship[/HS]의 [HS=HS_Logistics]Logistics[/HS] 점수가 함대가 포함할 수 있는 것보다 높다면, 그것은 함대에 참여할 수 없게 됩니다.[BR][BR]함대를 활용하는 것은 생존에 매우 중요합니다. [HS=HS_Ship]Ships[/HS]의 그룹은 개별 [HS=HS_Ship]Ships[/HS]보다 전투에서 더 잘합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementTitle</Label>
@@ -130,7 +130,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementDec</Label>
-    <String>개별 [HS=HS_Ship]선박[/HS]과 [HS=HS_Fleet]함대[/HS]는 왼쪽 마우스 버튼으로 [HS=HS_Ship]선박[/HS] 또는 [HS=HS_Fleet]함대[/HS]를 선택한 다음 오른쪽 마우스 버튼으로 이동할 [HS=HS_Tile]타</String>
+    <String>개별 [HS=HS_Ship]Ships[/HS] 및 [HS=HS_Fleet]Fleets[/HS]는 왼쪽 마우스 버튼으로 [HS=HS_Ship]Ship[/HS] 또는 [HS=HS_Fleet]Fleet[/HS]을 선택한 다음 오른쪽 마우스 버튼으로 이동할 [HS=HS_Tile]Tile[/HS]을 지정함으로써 은하계를 이동할 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetTypeTitle</Label>
@@ -162,7 +162,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColinizingDec</Label>
-    <String>문명의 [HS=HS_ZoneOfControl]지배 영역[/HS]을 확장하고 더 많은 자원에 접근하기 위해서는 새로운 세계를 개척하는 것이 필수입니다. 행성은 행성에 대한 권리 주장이 없는 경우에만 [HS=HS_ColonizeOrder]개척[/</String>
+    <String>새로운 세계를 식민지화하는 것은 문명의 [HS=HS_ZoneOfControl]Zone of Control[/HS]을 확장하고 더 많은 자원에 접근하는 데 필수적입니다. 행성은 그 행성에 대한 권리 주장이 없을 경우에만 [HS=HS_ColonizeOrder]Colonized[/HS]될 수 있습니다. 행성이 식민지화되면, 그것은 식민지화하는 문명에 의해 주장됩니다.[BR][BR]행성은 [HS=HS_PlanetClass]Planet Class[/HS]가 1 이상이어야 식민지화될 수 있습니다. Planet Class가 0인 행성은 [HS=HS_DeadWorld]Dead World[/HS]로 간주되며 식민지화될 수 없습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderTitle</Label>
@@ -170,7 +170,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderDec</Label>
-    <String>식민지 선박은 새로운 세계를 [HS=HS_Colinizing]식민화[/HS]하는 데 사용할 수 있습니다. 행성을 [HS=HS_Colinizing]식민화[/HS]하려면 먼저 왼쪽 마우스 버튼으로 [HS=HS_Ship]선박[/HS]을 선택하</String>
+    <String>컬로니 함선은 새로운 세계를 [HS=HS_Colinizing]Colonize[/HS]하는 데 사용할 수 있습니다. 행성을 [HS=HS_Colinizing]Colonize[/HS]하려면 먼저 왼쪽 마우스 버튼으로 [HS=HS_Ship]Ship[/HS]을 선택하십시오. 적절한 [HS=HS_Ship]Ship[/HS]을 선택한 후, 오른쪽 마우스 버튼으로 [HS=HS_PlanetClass]Planet Class[/HS]가 1 이상인 행성으로 [HS=HS_ShipMovement]Move[/HS] 명령을 내립니다. 몇 [HS=HS_Months]Months[/HS]가 걸릴 수 있지만 컬로니 함선이 행성에 도착하면, tktkif abletktk 행성을 식민지화하게 됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SurveyOrderTitle</Label>
@@ -202,7 +202,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyDec</Label>
-    <String>[ICON=AutoSurvey_Icon] 자동-조사는 [HS=HS_Ship]선박[/HS]이 조사 모듈을 갖춘 경우에만 사용할 수 있습니다. [HS=HS_Ship]선박[/HS]이 [ICON=AutoSurvey_Icon] 자동-조사 모드에 있으면 직접적인 명령 없이 이동하며 [HS</String>
+    <String>[ICON=AutoSurvey_Icon] 자동-탐사는 조사 모듈이 있는 [HS=HS_Ship]Ships[/HS]에만 사용 가능합니다. [HS=HS_Ship]Ship[/HS]이 [ICON=AutoSurvey_Icon] 자동-탐사 모드에서는 직접 명령 없이 움직이며 [HS=HS_Anomaly]Anomalies[/HS]를 찾으려고 합니다. [ICON=AutoSurvey_Icon] 자동-탐사 모드에서 [HS=HS_Ship]Ship[/HS]이 [HS=HS_Anomaly ]Anomaly[/HS] 근처에 있을 때, 그것은 직접 명령 없이 [HS=HS_Anomaly ]Anomaly[/HS]를 [HS=HS_SurveyOrder]Survey[/HS]하게 됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeTitle</Label>
@@ -218,7 +218,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineDec</Label>
-    <String>[ICON=AutoMine_Icon] 자동-광산은 소행성 채굴선의 선택사항입니다. [HS=HS_Ship]선박[/HS]이 [ICON=AutoMine_Icon] 자동-광산에서는 직접적인 명령 없이 소행성을 찾아내어 [HS=HS_ZoneOfControl]</String>
+    <String>[ICON=AutoMine_Icon] 자동-채굴은 소행성 채굴 함선에 대한 옵션입니다. [HS=HS_Ship]Ship[/HS]이 [ICON=AutoMine_Icon] 자동-채굴 모드에서는 직접 명령 없이 [HS=HS_ZoneOfControl]Zone of Control[/HS] 내의 소행성을 찾아 채굴하려고 움직입니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SectorTitle</Label>
@@ -234,7 +234,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_LeaderMenuDec</Label>
-    <String>[ICON=Menu_Leader_Icon] 리더 메뉴는 [HS=HS_Leaders]리더들[/HS]을 모집하고 관리할 수 있는 곳입니다. [ICON=Menu_Leader_Icon] 리더 메뉴 아래에는 [HS=HS_RecruitmentScreen]모집[/HS], [HS=HS_MinistersScreen]장관들[/HS], [HS=</String>
+    <String>[ICON=Menu_Leader_Icon] 리더 메뉴는 [HS=HS_Leaders]Leaders[/HS]를 모집하고 관리할 수 있는 곳입니다. [ICON=Menu_Leader_Icon] 리더 메뉴 아래에는 [HS=HS_RecruitmentScreen]Recruitment[/HS], [HS=HS_MinistersScreen]Ministers[/HS], [HS=HS_GovernorsScreen]Governors[/HS], [HS=HS_DiplomatsScreen]Diplomats[/HS], [HS=HS_CommandersScreen]Commanders[/HS], 및 [HS=HS_FactionsScreen]Factions[/HS] 화면이 있습니다.[BR][BR]왼쪽 마우스 버튼으로 Radial Menu의 아이콘을 선택하여 [ICON=Menu_Leader_Icon] 리더 메뉴에 접근하십시오.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_RecruitmentScreenTitle</Label>
@@ -258,7 +258,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenDec</Label>
-    <String>[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]지도자 메뉴[/HS]를 통해 Governor Screen에 접근할 수 있습니다. Governor Screen은 [HS=HS_PlanetClass]행성 등급[/HS]이 10 이상인 모든 식민지 행성을 간략하게 개요합니다. 행성에 [HS=HS_</String>
+    <String>지사 화면은 [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]를 통해 접근할 수 있습니다. 지사 화면은 [HS=HS_PlanetClass]Planet Class[/HS]가 10 이상인 모든 식민지화된 행성에 대한 간략한 개요를 제공합니다. 행성에 [HS=HS_Leaders]Leader[/HS]가 할당되어 있다면, 그 행성은 [HS=HS_CoreWorld]Core World[/HS]입니다.[BR][BR][HS=HS_Leaders]Leaders[/HS]는 당신의 차례 중 언제든지 할당, 해제, 재할당 될 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_DiplomatsScreenTitle</Label>
