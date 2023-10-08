@@ -82,7 +82,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ZoneOfControlDec</Label>
-    <String>控制区域标记了一个文明的影响力扩展到何处并在何处占主导地位。控制区域通过给银河系染色来表示，颜色为占主导地位的文明的颜色。多个文明可能对一个单元有影响力，但在该单元中影响力最大的文</String>
+    <String>控制区域标记了一个文明的影响力能够延伸并主导的地方。通过为银河系上色来表示控制区域，颜色则为主导文明的颜色。多个文明可能对一个单元有影响力，但是在单元中拥有最高影响力的文明将被授予该单元。[BR][BR]一些行动受控制区域的影响。特定的行动，如开采小行星，只能在控制区域内的对象上执行。其他行动，如建造星际基地，可以在控制区域之外执行，但不能在其他文明的控制区域内执行。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileTitle</Label>
@@ -90,7 +90,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileDec</Label>
-    <String>游戏空间被划分为六边形的'Tiles'。距离由位置间的'Tiles'数量测量。您可以在界面下的选项菜单中打开或关闭'Tiles'的网格。切换“当靠近时显示网格”和“当远离时显示网格”将设定在特定缩放距离下</String>
+    <String>游戏空间被划分为六边形的瓦片。距离由位置之间的瓦片数量来衡量。在界面下的选项菜单中，可以开启或关闭瓦片网格。切换“靠近时显示网格”和“远离时显示网格”将设置在某些缩放距离时是否可见瓦片。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MonthsTitle</Label>
@@ -122,7 +122,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FleetDec</Label>
-    <String>舰队是一组[HS=HS_Ship]舰船[/HS]。通过[HS=HS_ShipMovement]移动[/HS][HS=HS_Ship]舰船[/HS]至同一[HS=HS_Tile]格子[/HS]，可以形成舰队。舰队中可以有多少[HS=HS_Ship]舰船[/HS]，取决于当前的</String>
+    <String>舰队是一组[HS=HS_Ship]舰船[/HS]。舰队可以通过[HS=HS_ShipMovement]移动[/HS][HS=HS_Ship]舰船[/HS]到同一[HS=HS_Tile]格子[/HS]来组成。一个舰队中能有多少[HS=HS_Ship]舰船[/HS]，取决于当前的[HS=HS_Logistics]物流[/HS]。每艘[HS=HS_Ship]舰船[/HS]都有一个[HS=HS_Logistics]物流[/HS]值，并会增加当前舰队的[HS=HS_Logistics]物流[/HS]分数。如果一艘[HS=HS_Ship]舰船[/HS]的[HS=HS_Logistics]物流[/HS]分数高于舰队能够融入的，它将无法加入舰队。[BR][BR]利用舰队对于生存至关重要。[HS=HS_Ship]舰船[/HS]的群体在战斗中比单独的[HS=HS_Ship]舰船[/HS]更优秀。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementTitle</Label>
@@ -130,7 +130,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementDec</Label>
-    <String>单个[HS=HS_Ship]飞船[/HS]和[HS=HS_Fleet]舰队[/HS]可以通过用左键选择[HS=HS_Ship]飞船[/HS]或[HS=HS_Fleet]舰队[/HS]，然后用右键指定一个[HS=HS_Tile]瓷砖[/HS]移动到银河系中的</String>
+    <String>单个[HS=HS_Ship]飞船[/HS]和[HS=HS_Fleet]舰队[/HS]可以通过用鼠标左键选择[HS=HS_Ship]飞船[/HS]或[HS=HS_Fleet]舰队[/HS]，然后用鼠标右键指定一个[HS=HS_Tile]瓦片[/HS]来在银河系中移动。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetTypeTitle</Label>
@@ -146,7 +146,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetClassDec</Label>
-    <String>星球等级是衡量星球可居住空间的一种指标。任何星球等级为1或更高的星球都可以被[HS=HS_Colinizing]殖民化[/HS]。星球等级越高，用于开发的空间就越多。相同[HS=HS_PlanetType]星球类型[/HS]的星球，星球</String>
+    <String>星球等级是衡量一个星球可居住空间的尺度。任何星球等级为1或更高的星球都可以[HS=HS_Colinizing]殖民化[/HS]。星球等级越高，可供发展的空间就越大。等级较高的星球通常比等级较低的同一[HS=HS_PlanetType]星球类型[/HS]提供更多的资源。[BR][BR]星球等级为0的星球被视为[HS=HS_DeadWorld]死亡世界[/HS]，不能被殖民化。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_DeadWorldTitle</Label>
@@ -162,7 +162,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColinizingDec</Label>
-    <String>殖民新的世界对于扩大文明的[HS=HS_ZoneOfControl]控制区域[/HS]并获取更多资源至关重要。只有没有人声称的行星才能被[HS=HS_ColonizeOrder]殖民[/HS]。一旦一个行星被殖民，它就被殖民的文明所宣</String>
+    <String>在科幻游戏中，"Hotspot_ColinizingDec"标签提供了一些信息，其内容为：开拓新的世界对于扩大文明的[HS=HS_ZoneOfControl]控制区域[/HS]和获取更多资源至关重要。只有没有对星球的索赔时，星球才能被[HS=HS_ColonizeOrder]殖民[/HS]。一旦星球被殖民，它就被殖民文明所拥有。[BR][BR]星球必须有[HS=HS_PlanetClass]星球级别[/HS] 1 或更高才能被殖民。星球级别为0的星球被视为[HS=HS_DeadWorld]死亡世界[/HS]，不能被殖民。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderTitle</Label>
@@ -170,7 +170,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderDec</Label>
-    <String>殖民船可以用来[HS=HS_Colinizing]殖民[/HS]新世界。要[HS=HS_Colinizing]殖民[/HS]一颗行星，首先，用左键选择[HS=HS_Ship]船[/HS]。选择适当的[HS=HS_Ship]船[/HS]后，命令[HS=HS_Ship]船[/</String>
+    <String>殖民船可以用于[HS=HS_Colinizing]殖民[/HS]新的世界。要[HS=HS_Colinizing]殖民[/HS]一颗星球，首先，用左键选择[HS=HS_Ship]飞船[/HS]。选择适当的[HS=HS_Ship]飞船[/HS]后，命令[HS=HS_Ship]飞船[/HS]用右键向[HS=HS_PlanetClass]星球等级[/HS]为1或更高的星球[HS=HS_ShipMovement]移动[/HS]。这可能需要几个[HS=HS_Months]月[/HS]，但一旦殖民船到达星球，它将进行殖民tktkif abletktk。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SurveyOrderTitle</Label>
@@ -178,7 +178,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_SurveyOrderDec</Label>
-    <String>银河系经常充满了[HS=HS_Anomaly]异常[/HS]，可以由[HS=HS_SurveyShip]勘测船[/HS]进行勘查。要命令一艘[HS=HS_Ship]船[/HS]去勘查一个[HS=HS_Anomaly]异常[/HS]，首先用左键选择[HS=HS_SurveyShip]</String>
+    <String>这个星系经常充满了[HS=HS_Anomaly]异常[/HS]，可以由一艘[HS=HS_SurveyShip]勘测船[/HS]进行勘测。要命令一艘[HS=HS_Ship]船[/HS]去勘测一处[HS=HS_Anomaly]异常[/HS]，首先使用鼠标左键选择[HS=HS_SurveyShip]勘测船[/HS]。然后命令[HS=HS_Ship]船[/HS]向[HS=HS_Anomaly]异常[/HS]地点[HS=HS_ShipMovement]移动[/HS]。一旦[HS=HS_Ship]船[/HS]到达目的地，它将开始勘测[HS=HS_Anomaly]异常[/HS]。勘测需要花费数个[HS=HS_Months]月[/HS]的时间。[BR][BR]一艘被移动、攻击或以其他方式中断的船只将会失去所有进度，勘测将需要从头开始。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AttackOrderTitle</Label>
@@ -186,7 +186,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AttackOrderDec</Label>
-    <String>银河系中存在许多威胁，经常需要采取攻击行动。装备了武器的[HS=HS_Ship]飞船[/HS]和[HS=HS_Fleet]舰队[/HS]可以攻击其他实体。要下达攻击指令，用左键选择[HS=HS_Ship]飞船[/HS]或</String>
+    <String>银河系中存在许多威胁，往往需要采取进攻行动。装备有武器的[HS=HS_Ship]船只[/HS]和[HS=HS_Fleet]舰队[/HS]可以攻击其他实体。要下达攻击命令，用鼠标左键选择[HS=HS_Ship]船只[/HS]或[HS=HS_Fleet]舰队[/HS]。然后用鼠标右键指示[HS=HS_Ship]船只[/HS]或[HS=HS_Fleet]舰队[/HS]向[HS=HS_ShipMovement]移动[/HS]到目标位置。一旦到达目的地，战斗将开始。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreTitle</Label>
@@ -194,7 +194,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreDec</Label>
-    <String>[ICON=AutoExplore_Icon] 自动探索是一项使[HS=HS_Ship]船只[/HS]不需直接命令即可移动的选项。处于[ICON=AutoExplore_Icon] 自动探索的[HS=HS_Ship]船只[/HS]将前往当前未知和未标记的目的地。[BR][BR]如果整个银</String>
+    <String>[ICON=AutoExplore_Icon] 自动探索是一个选项，它将设置[HS=HS_Ship]飞船[/HS]在没有直接指令的情况下移动。[HS=HS_Ship]飞船[/HS]在[ICON=AutoExplore_Icon] 自动探索中将移动到目前未知和未绘制的目的地。[BR][BR]如果整个银河系已经被探索，且没有未勘查的[HS=HS_Tile]图块[/HS]，那么[ICON=AutoExplore_Icon] 自动探索选项将变为不可用。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyTitle</Label>
@@ -202,7 +202,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyDec</Label>
-    <String>[ICON=AutoSurvey_Icon] 自动勘测只对装有勘测模块的[HS=HS_Ship]船只[/HS]开放。处于[ICON=AutoSurvey_Icon] 自动勘测模式的[HS=HS_Ship]船只[/HS]将无需直接指令就会移动，试图定位[HS=HS_Anomaly]异常</String>
+    <String>[ICON=AutoSurvey_Icon] 自动勘测只对装有勘测模块的[HS=HS_Ship]舰船[/HS]可用。处于[ICON=AutoSurvey_Icon] 自动勘测模式下的[HS=HS_Ship]舰船[/HS]会在无需直接命令的情况下移动，试图寻找[HS=HS_Anomaly]异常现象[/HS]。当处于[ICON=AutoSurvey_Icon] 自动勘测模式的[HS=HS_Ship]舰船[/HS]靠近[HS=HS_Anomaly ]异常现象[/HS]时，它将会在无需直接命令的情况下[HS=HS_SurveyOrder]进行勘测[/HS][HS=HS_Anomaly ]异常现象[/HS]。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeTitle</Label>
@@ -210,7 +210,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeDec</Label>
-    <String>[ICON=AutoColonize_Icon] 自动殖民只对可以[HS=HS_Colinizing]殖民[/HS]星球的船只可用。处于[ICON=AutoColonize_Icon] 自动殖民模式的[HS=HS_Ship]船只[/HS]将自行移动，试图寻找[HS=HS_PlanetClass]星球等级[/HS]为</String>
+    <String>[ICON=AutoColonize_Icon] 自动殖民只适用于可以[HS=HS_Colinizing]殖民[/HS]星球的船只。在[ICON=AutoColonize_Icon] 自动殖民模式下，[HS=HS_Ship]船只[/HS]将无需直接指令，尝试寻找[HS=HS_PlanetClass]星球等级[/HS]为1或更高的星球。当找到星球时，[HS=HS_Ship]船只[/HS]将无需直接指令进行[HS=HS_Colinizing]殖民[/HS]。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineTitle</Label>
@@ -218,7 +218,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineDec</Label>
-    <String>[ICON=AutoMine_Icon] 自动采矿是小行星采矿船的一个选项。一艘在 [ICON=AutoMine_Icon] 自动采矿模式下的[HS=HS_Ship]船[/HS] 将无需直接指令，试图在[HS=HS_ZoneOfControl]控制区域[/HS]内寻</String>
+    <String>[ICON=AutoMine_Icon] 自动采矿是小行星采矿船的一个选项。在[ICON=AutoMine_Icon]自动采矿模式下，[HS=HS_Ship]船只[/HS]会在没有直接指令的情况下移动，试图在[HS=HS_ZoneOfControl]控制区域[/HS]内寻找小行星进行采矿。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SectorTitle</Label>
@@ -250,7 +250,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MinistersScreenDec</Label>
-    <String>可以通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]访问部长屏幕。部长办公室根据安装的[HS=HS_Leaders]领导者[/HS]的统计数据为整个文明提供特定好处。没有分配[HS=HS_Leaders]领导者[/HS]的部长办公室不提供任何好处。将鼠标悬停在办公室上会提供关于办公室及其好处的具体信息。[BR][BR]在您的回合中的任何时候都可以分配，取消分配和重新分配[HS=HS_Leaders]领导者[/HS]。</String>
+    <String>可以通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]访问部长屏幕。部长办公室会根据已安装的[HS=HS_Leaders]领导者[/HS]的统计数据为整个文明提供特定的利益。没有分配[HS=HS_Leaders]领导者[/HS]的部长办公室不提供任何利益。将鼠标悬停在办公室上会提供关于办公室及其利益的具体信息。[BR][BR]在你的回合中，[HS=HS_Leaders]领导者[/HS]可以随时被分配、取消分配和重新分配。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenTitle</Label>
@@ -258,7 +258,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenDec</Label>
-    <String>可以通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]访问州长屏幕。州长屏幕简要概述了每一个已经殖民的星球，其[HS=HS_PlanetClass]星球类别[/HS]为10或更高。如果有一位[HS=HS_Leaders]领导者[/HS]被分配到这个星球，那么这个星球就是一个[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR][HS=HS_Leaders]领导者[/HS]可以在您的任何回合中被分配，取消分配，和重新分配。</String>
+    <String>您可以通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]来访问州长屏幕。州长屏幕简要概述了每个殖民星球，这些星球的[HS=HS_PlanetClass]星球等级[/HS]为10或更高。如果有[HS=HS_Leaders]领导者[/HS]被指派到该星球，那么该星球就是一个[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR][HS=HS_Leaders]领导者[/HS]可以在你的回合中的任何时候被指派，取消指派，并重新指派。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_DiplomatsScreenTitle</Label>
@@ -266,7 +266,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_DiplomatsScreenDec</Label>
-    <String>通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领袖菜单[/HS]可以访问外交官屏幕。外交官屏幕简要概述了我们与所有其他已知文明的关系。[HS=HS_Leaders]领袖[/HS]可以被指定为[HS=HS_Diplomat]外交官[/HS]，影响你与其他文明的关系。[BR][BR][HS=HS_Leaders]领袖[/HS]可以在你的任何回合时被指定、取消指定和重新指定。</String>
+    <String>通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]可以访问外交官屏幕。外交官屏幕简要概述了我们与所有其他已知文明的关系。[HS=HS_Leaders]领导者[/HS]可以被指派为[HS=HS_Diplomat]外交官[/HS]，以影响你与其他文明的关系。[BR][BR][HS=HS_Leaders]领导者[/HS]可以在你的任何回合中被指派、取消指派和重新指派。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CommandersScreenTitle</Label>
@@ -274,7 +274,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_CommandersScreenDec</Label>
-    <String>通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]可以访问指挥官屏幕。指挥官屏幕显示所有可供文明使用的指挥舰。通过为舰船分配一位[HS=HS_Leaders]领导者[/HS]，可以部署指挥舰。</String>
+    <String>通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]可以访问指挥官屏幕。指挥官屏幕显示文明可用的所有指挥舰。通过给舰船指派一名[HS=HS_Leaders]领导者[/HS]，可以部署指挥舰。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_FactionsScreenTitle</Label>
@@ -282,7 +282,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FactionsScreenDec</Label>
-    <String>您可以通过 [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领袖菜单[/HS]进入派系屏幕。派系是影响特定统计数据和资源的文明内部群体。将[HS=HS_Leaders]领袖[/HS]分配给派系会改变效果。一个派系可以分配多个[HS=HS_Leaders]领袖[/HS]。[BR][BR]在您的回合中，您可以在任何时候分配、取消分配和重新分配[HS=HS_Leaders]领袖[/HS]。</String>
+    <String>可以通过[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]访问势力屏幕。势力是文明中影响特定统计和资源的团体。将[HS=HS_Leaders]领导者[/HS]指派到一个势力会改变效果。一个势力可以分配多个[HS=HS_Leaders]领导者[/HS].[BR][BR]在你的回合中，可以随时分配、取消分配和重新分配[HS=HS_Leaders]领导者[/HS]。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CivilizationMenuTitle</Label>
@@ -346,7 +346,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ResearchCenterDec</Label>
-    <String>研究中心是一个菜单，提供了正在研究的[HS=HS_Tech]科技[/HS]概览，并允许你在回合进行时随时更改正在研究的[HS=HS_Tech]科技[/HS]。研究[HS=HS_Tech]科技[/HS]的速度以[HS=HS_Months]月[/HS]为单位衡量，并由你的文明的[ICON=Stat_Research_Icon][HS=HS_Research]研究[/HS]决定。在回合开始时，如果一个[HS=HS_Tech]科技[/HS]完成了研究，你将获得解锁并需要指定一个新的[HS=HS_Tech]科技[/HS]进行研究。[BR][BR]使用左键选择一个[HS=HS_Tech]科技[/HS]进行研究。当前正在研究的[HS=HS_Tech]科技[/HS]总是显示在底部中央面板。</String>
+    <String>研究中心是一个菜单，提供了正在研究的[HS=HS_Tech]科技[/HS]概览，并允许您在您的回合中的任何时候更改正在研究的[HS=HS_Tech]科技[/HS]。[HS=HS_Tech]科技[/HS]的研究速度以[HS=HS_Months]月[/HS]为单位测量，并由您的文明的[ICON=Stat_Research_Icon][HS=HS_Research]研究[/HS]决定。在一个回合开始时，如果一个[HS=HS_Tech]科技[/HS]完成了研究，您将获得解锁并需要指定一个新的[HS=HS_Tech]科技[/HS]进行研究。[BR][BR]用左键选择一个[HS=HS_Tech]科技[/HS]进行研究。当前正在研究的[HS=HS_Tech]科技[/HS]总是显示在底部中央面板。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechTitle</Label>
@@ -354,7 +354,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechDec</Label>
-    <String>科技是[HS=HS_ResearchCenter]研究中心[/HS]的一个选择，研究后，将提供独特的解锁，这些解锁可能是新的[HS=HS_Ship]船只[/HS]、[HS=HS_Improvement]改进[/HS]、[HS=HS_ExecutiveOrders]行政命令[/HS]等等。[BR][BR]将鼠标悬停在[HS=HS_ResearchCenter]研究中心[/HS]的科技上，了解更多关于科技解锁的信息。</String>
+    <String>科技是[HS=HS_ResearchCenter]研究中心[/HS]的一个选项，当研究后，将提供独特的解锁，可以是新的[HS=HS_Ship]舰船[/HS]、[HS=HS_Improvement]改进[/HS]、[HS=HS_ExecutiveOrders]执行命令[/HS]等等。[BR][BR]将鼠标悬停在[HS=HS_ResearchCenter]研究中心[/HS]中的科技上，可以了解更多关于科技解锁的信息。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PiratesTitle</Label>
@@ -378,7 +378,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_RushDec</Label>
-    <String>"Rush"选项允许你花费[ICON=Stat_Credits_Icon][HS=HS_Credit]积分[/HS]和[ICON=Stat_Control_Icon][HS=HS_Control]控制权[/HS]将建筑完成时间缩短到1[HS=HS_Months]个月[/HS]。紧急建设总是移至队列前部。每</String>
+    <String>"冲刺"选项允许您花费[ICON=Stat_Credits_Icon][HS=HS_Credit]信用点[/HS]和[ICON=Stat_Control_Icon][HS=HS_Control]控制[/HS]以将完成建筑的时间缩短到1个[HS=HS_Months]月[/HS]。被冲刺的建筑始终移动到队列的最前面。"冲刺"选项每轮只能在每一个[HS=HS_CoreWorld]核心世界[/HS]和[HS=HS_Shipyard]造船厂[/HS]使用一次。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetManagementTitle</Label>
@@ -702,7 +702,7 @@
   </StringTable>
   <StringTable>
     <Label>GenocidalAbility_Dec</Label>
-    <String>由于对附带损害毫不在意，因此在征服星球方面有巨大优势。[BR][BR]可以将不幸来到他们星球的其他物种转化为活体神经网络电池。</String>
+    <String>由于对附带损害毫不在意，因此在征服行星方面拥有巨大优势。[BR][BR]能将不幸落入其行星的其他物种转化为活体神经网络电池。</String>
   </StringTable>
   <StringTable>
     <Label>MasterTech_StarshipRefits_Name</Label>
@@ -750,7 +750,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_Hatcheries_Dec</Label>
-    <String>我们物种复杂的生命周期需要专门的空间来培养、保护和准备下一代面对宇宙的挑战。[BR][BR]孵化场不仅仅是繁殖地。它们是进化、创新和社区努力的熔炉。每个孵化场都跳动着无数生命的节奏，等待被引领进入我们庞大的集体。[BR][BR]这项技术进步超越了单纯的建筑或生物学。它触及到我们物种的恢复力和适应性的本质。通过改良和增强我们的孵化场，我们不仅增强了我们群体的力量和数量，而且还使每个新个体都获得了从无数代祖先那里获得的知识和能力。[BR][BR]但是，完善我们的孵化场的旅程充满了挑战。这需要深入理解我们的生物学，承诺保护每一个蛋免受潜在威胁，以及预见每一个新生儿面对充满未知的宇宙。[BR][BR]在追求孵化场的进步，我们不仅确保了我们物种的未来，也回应了我们永恒的价值观和对群体的坚定奉献。每个孵化场，我们都在播种我们的遗产的种子，确保我们的歌声在银河系中，现在和永远都能回荡。</String>
+    <String>我们物种复杂的生命周期需要专门的空间，以便下一代可以在其中被养育、保护，并为面对宇宙的挑战做好准备。[BR][BR]孵化场不仅仅是繁殖地。它们是进化、创新和共同努力的熔炉。每个孵化场都充满了无数等待被引入我们巨大集体的生命的节奏。[BR][BR]这项技术进步超越了单纯的建筑或生物学。它触及到我们物种韧性和适应性的本质。通过改良和增强我们的孵化场，我们不仅增加了我们群体的力量和数量，而且还将从无数代先辈中获得的知识和能力赋予每一个新个体。[BR][BR]但是，完善我们孵化场的旅程充满了挑战。它需要深入理解我们的生物学，承诺保</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Name</Label>
@@ -758,13 +758,11 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Dec</Label>
-    <String>
-			Your survey ship approaches a peculiar signal it picked up orginating from a space junk field. When the ship finally locates the object emitting the signal and approaches,  a voice comes on over the ships intercom.
+    <String>您的调查船正在接近一个奇特的信号，这个信号来自一个宇宙垃圾场。当船只最终定位到发出信号的物体并接近时，一段声音通过船舶的对讲机传来。
 
-			"Behold! You are trapped in the clutches of Captain Starbeard, *bark-bark* ...and me first mate Nebula, the greatest pirates in the galaxy!  Surrender your credits now, lest ye face the wrath of me flagship The Cosmos Dread and her intrepid fleet"
+"看哪！你们已经落入了星须船长的掌心，*汪汪*...以及我的第一副手，星云，我们是银河系最伟大的海盗！现在就交出你的积分，否则你将面临我旗舰宇宙恐惧号及其勇敢舰队的愤怒"
 
-			Upon further scanning, "The Cosmos Dread" appears to be little more than a mining vessal manned by 2 life forms. Dozens of communications signals from "ships" are detected, but scans indicate there is nothing but space junk.
-		</String>
+进行进一步扫描后，"宇宙恐惧号"似乎只不过是一艘由2种生命形态操作的采矿船。探测到数十个来自"船只"的通信信号，但扫描表明那里只有宇宙垃圾。</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Liberty_Bonus_Name</Label>
@@ -796,11 +794,9 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Dec</Label>
-    <String>
-			The Intergalactic Wildlife Conservancy (IWC) would like to collect specimens from around the galaxy for study. Specifically, their hope is to gather creatures suited to living in many different kinds of enviornments to better understand the biodiversity and adaptability throughout the cosmos. They agree the best place to gather new data is from uncolonized terrestrial planets.
+    <String>星际野生动物保护协会（IWC）希望从银河系各地收集样本进行研究。具体来说，他们希望收集适应生活在各种不同环境中的生物，以更好地理解整个宇宙的生物多样性和适应性。他们认为，从未被开发的陆地星球收集新数据是最好的地方。
 
-			The IWC is offering a grant to aid them in their study. It includes a free colony ship full of explorers and scientists ready to be sent off to study.
-		</String>
+IWC正在提供一项资助以帮助他们进行研究。包括一艘免费的殖民船，船上满载着准备出发进行研究的探索者和科学家。</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
@@ -835,11 +831,9 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Dec</Label>
-    <String>
-			The Intergalactic Wildlife Conservency (IWC) is pleased to report the success of the galactic conservation program. Our presence on these planets will allow us to learn more about the natural edens of the galaxy and the creatures that inhabit them.
+    <String>星际野生动物保护协会（IWC）很高兴地报告银河保护计划的成功。我们在这些星球上的存在将使我们能够更多地了解银河系的自然乐园和其中的生物。
 
-			With the success of the progam the IWC has commissioned "The Arc". A ship full of live specimens from around the galaxy. It is intended to be a flying ecology lab, restoring ecosystems throughout the galaxy. The Arc has been entrusted to us, for our support of the IWC's conservation efforts.
-		</String>
+随着计划的成功，IWC已经启动了“方舟”项目。这是一艘装满来自银河系各处的活体样本的飞船。它旨在成为一个飞行生态实验室，恢复整个银河系的生态系统。由于我们对IWC的保护努力的支持，“方舟”已被托付给我们。</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
