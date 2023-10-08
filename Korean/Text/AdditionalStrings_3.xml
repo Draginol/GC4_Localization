@@ -82,7 +82,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ZoneOfControlDec</Label>
-    <String>제어 영역은 문명의 영향력이 어디까지 미치고, 어디에서 지배력을 가지는지를 표시합니다. 제어 영역은 은하를 색칠함으로써, 지배하는 문명의 색상으로 나타냅니다. 여러 문명이 한 셀에</String>
+    <String>제어 영역은 문명의 영향력이 어디까지 뻗치고, 어디서 지배적인지를 표시합니다. 제어 영역은 은하를 색칠하여, 지배적인 문명의 색상으로 나타냅니다. 여러 문명이 한 셀에 영향력을 가질 수 있지만, 그 셀에서 가장 높은 영향력을 가진 문명이 그 셀을 부여받게 됩니다.[BR][BR]일부 행동들은 제어 영역에 의해 영향을 받습니다. 소행성 채굴과 같은 특정 행동들은 제어 영역 내의 객체에 대해서만 수행될 수 있습니다. 별 기지 건설과 같이 제어 영역 외부에서 수행할 수 있는 다른 행동들은 다른 문명의 제어 영역에서는 수행할 수 없습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileTitle</Label>
@@ -90,7 +90,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileDec</Label>
-    <String>게임 공간은 육각형 타일로 나누어져 있습니다. 거리는 위치 사이의 타일 수로 측정됩니다. 타일 그리드는 인터페이스 아래의 옵션 메뉴에서 켜고 끌 수 있습니다. 가까울 때 그리드 보이기와 멀 때 그리드 보이</String>
+    <String>게임 공간은 육각형 타일로 나누어져 있습니다. 거리는 위치 사이의 타일 수로 측정됩니다. 타일 그리드는 인터페이스 하의 옵션 메뉴에서 켜고 끌 수 있습니다. 가까울 때 그리드 보기와 멀 때 그리드 보기를 전환하면 특정 확대 거리에서 타일이 보이는지 설정할 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MonthsTitle</Label>
@@ -146,7 +146,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetClassDec</Label>
-    <String>행성 등급은 행성의 거주 가능 공간을 측정하는 것입니다. 행성 등급이 1 이상인 모든 행성은 [HS=HS_Colinizing]식민화[/HS]될 수 있습니다. 행성 등급이 높을수록 개발할 수 있는 공간이 더 많습니다. 동일한</String>
+    <String>행성 등급은 행성의 거주 가능 공간을 측정하는 것입니다. 행성 등급이 1 이상인 모든 행성은 [HS=HS_Colinizing]식민화[/HS]가 가능합니다. 행성 등급이 높을수록 개발할 수 있는 공간이 더 많습니다. 일반적으로 행성 등급이 높은 행성들은 동일한 [HS=HS_PlanetType]행성 유형[/HS]의 행성 등급이 낮은 행성들보다 더 많은 자원을 제공합니다.[BR][BR]행성 등급이 0인 행성은 [HS=HS_DeadWorld]죽은 세계[/HS]로 간주되며 식민화가 불가능합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_DeadWorldTitle</Label>
@@ -186,7 +186,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AttackOrderDec</Label>
-    <String>은하계에는 많은 위협이 있으며, 종종 공격적인 행동을 취해야 합니다. 무기를 보유한 [HS=HS_Ship]선박[/HS]과 [HS=HS_Fleet]함대[/HS]는 다른 개체를 공격할 수 있습니다. 공격을 지시하려면</String>
+    <String>은하계에는 많은 위협이 존재하며, 종종 공격적인 행동을 취해야 합니다. [HS=HS_Ship]선박[/HS]과 [HS=HS_Fleet]함대[/HS]는 무기를 갖추고 다른 개체를 공격할 수 있습니다. 공격을 지시하려면 왼쪽 마우스 버튼으로 [HS=HS_Ship]선박[/HS]이나 [HS=HS_Fleet]함대[/HS]를 선택하세요. 그런 다음 오른쪽 마우스 버튼으로 [HS=HS_Ship]선박[/HS] 또는 [HS=HS_Fleet]함대[/HS]에 [HS=HS_ShipMovement]이동[/HS] 명령을 내려 목표 위치로 이동하게 합니다. 목적지에 도착하면 전투가 시작됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreTitle</Label>
@@ -194,7 +194,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreDec</Label>
-    <String>[ICON=AutoExplore_Icon] 자동 탐사는 [HS=HS_Ship]선박들[/HS]이 직접적인 명령 없이 움직이도록 설정하는 옵션입니다. [HS=HS_Ship]선박들[/HS]은 [ICON=AutoExplore_Icon] 자동 탐사에서 현재 알려지지 않고 미지</String>
+    <String>[ICON=AutoExplore_Icon] 자동 탐사는 [HS=HS_Ship]선박[/HS]이 직접적인 명령 없이 이동하도록 설정하는 옵션입니다. [HS=HS_Ship]선박[/HS]은 [ICON=AutoExplore_Icon] 자동 탐사에서 현재 알려지지 않고 미지도의 목적지로 이동합니다.[BR][BR]만약 전체 은하계가 탐사되어 미지도의 [HS=HS_Tile]타일[/HS]이 없다면, [ICON=AutoExplore_Icon] 자동 탐사 옵션은 사용할 수 없게 됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyTitle</Label>
@@ -250,7 +250,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MinistersScreenDec</Label>
-    <String>[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]지도자 메뉴[/HS]를 통해 장관 화면에 접근할 수 있습니다. 장관 사무실은 설치된 [HS=HS_Leaders]지도자[/HS]의 통계에 기반하여 전체 문명에 특정 혜택을 제공</String>
+    <String>[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]리더 메뉴[/HS]를 통해 장관 화면에 접근할 수 있습니다. 장관 사무실은 설치된 [HS=HS_Leaders]리더[/HS]의 통계에 따라 전체 문명에 특정 이점을 제공합니다. [HS=HS_Leaders]리더[/HS]가 배정되지 않은 장관 사무실은 어떠한 혜택도 제공하지 않습니다. 마우스를 사무실 위에 올리면 사무실과 그 이점에 대한 특정 정보를 제공합니다.[BR][BR][HS=HS_Leaders]리더[/HS]는 차례 동안 언제든지 배정, 해제, 재배정 할 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenTitle</Label>
@@ -290,7 +290,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_CivilizationMenuDec</Label>
-    <String>[ICON=Menu_CivilizationMenu_Icon] 문명 메뉴는 전체 문명 개요와 문명을 대규모로 관리하기 위한 몇 가지 도구를 제공합니다. [ICON=Menu_CivilizationMenu_Icon] 문명 메뉴에서는 [HS=HS_Taxes]세율[/HS]과 [HS=HS_Policy]정책[/HS]을 설정</String>
+    <String>[ICON=Menu_CivilizationMenu_Icon] 문명 메뉴는 귀하의 전체 문명에 대한 개요와 귀하의 문명을 대규모로 관리하기 위한 몇 가지 도구를 제공합니다. [ICON=Menu_CivilizationMenu_Icon] 문명 메뉴에서는 [HS=HS_Taxes]세율[/HS]과 [HS=HS_Policy]정책[/HS]을 설정할 수 있습니다.[BR][BR]마우스 왼쪽 버튼으로 Radial 메뉴의 아이콘을 선택하여 [ICON=Menu_CivilizationMenu_Icon] 문명 메뉴에 접근하세요.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SupportingColoniesTitle</Label>
@@ -306,7 +306,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MineralsDec</Label>
-    <String>미네랄은 [HS=HS_CoreWorld]코어 월드[/HS]에서 사용 가능한 원자재입니다. 미네랄은 [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]제조[/HS]에 영향을 미치는 입력 요소입니다. 행성이 가지고 있는 미네랄 입력이 많을</String>
+    <String>미네랄은 [HS=HS_CoreWorld]코어 월드[/HS]에서 사용 가능한 원자재입니다. 미네랄은 [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]제조[/HS]에 영향을 주는 입력 요소입니다. 행성이 입력으로 갖는 미네랄이 많을수록 그 행성의 [HS=HS_Manufacturing]제조[/HS] 등급이 높아집니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechnologyTitle</Label>
@@ -314,7 +314,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechnologyDec</Label>
-    <String>[ICON=Stat_Technology_Icon] 기술은 [HS=HS_CoreWorld]코어 월드[/HS]에 사용 가능한 지적 개발을 측정합니다. [ICON=Stat_Technology_Icon] 기술은 [ICON=Stat_Research_Icon] [HS=HS_Research]연구[/HS]에 영향을 주는 입력입니다. 행</String>
+    <String>[ICON=Stat_Technology_Icon] 기술은 [HS=HS_CoreWorld]핵심 세계[/HS]에서 이용할 수 있는 지적 발전을 측정합니다. [ICON=Stat_Technology_Icon] 기술은 [ICON=Stat_Research_Icon] [HS=HS_Research]연구[/HS]에 영향을 미치는 입력입니다. 행성이 [ICON=Stat_Technology_Icon] 기술을 입력으로 가질수록 그 [ICON=Stat_Research_Icon] [HS=HS_Research]연구[/HS] 등급은 높아집니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_FarmingTitle</Label>
@@ -322,7 +322,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FarmingDec</Label>
-    <String>[ICON=Stat_Fertility_Icon] 농업은 [HS=HS_CoreWorld]핵심 세계[/HS]에 사용 가능한 농업 자원을 측정합니다. [ICON=Stat_Fertility_Icon] 농업은 [ICON=Stat_Food_Icon] [HS=HS_Food]식품[/HS]에 영향을 주는 입력입니다</String>
+    <String>[ICON=Stat_Fertility_Icon] 농업은 [HS=HS_CoreWorld]핵심 세계[/HS]에게 제공되는 농업 자원을 측정합니다. [ICON=Stat_Fertility_Icon] 농업은 [ICON=Stat_Food_Icon] [HS=HS_Food]식품[/HS]에 영향을 미치는 입력입니다. 행성이 [ICON=Stat_Fertility_Icon] 농업을 입력으로 가질수록, [HS=HS_CoreWorld]핵심 세계[/HS]는 더 많은 [ICON=Stat_Food_Icon] [HS=HS_Food]식품[/HS]을 생산합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CultureTitle</Label>
@@ -330,7 +330,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_CultureDec</Label>
-    <String>[ICON=Stat_PlanetInfluence_Icon] 문화는 [HS=HS_CoreWorld]핵심 세계[/HS]에 사용 가능한 사회적 중요도를 측정합니다. [ICON=Stat_PlanetInfluence_Icon] 문화는 [ICON=Stat_Influence_Icon] [HS=HS_Influence]영향력[/HS]에 영향을 주는 입력</String>
+    <String>[ICON=Stat_PlanetInfluence_Icon] 문화는 [HS=HS_CoreWorld]핵심 세계[/HS]에서 사용 가능한 사회적 중요성을 측정합니다. [ICON=Stat_PlanetInfluence_Icon] 문화는 [ICON=Stat_Influence_Icon] [HS=HS_Influence]영향력[/HS]에 영향을 미치는 입력입니다. 행성이 [ICON=Stat_PlanetInfluence_Icon] 문화를 입력으로 가질수록, 그 행성의 [ICON=Stat_Influence_Icon] [HS=HS_Influence]영향력[/HS] 등급이 높아집니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_WealthTitle</Label>
@@ -338,7 +338,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_WealthDec</Label>
-    <String>[ICON=Stat_Wealth_Icon] 부는 [HS=HS_CoreWorld]핵심 세계[/HS]에 이용 가능한 희귀하고 귀중한 자원입니다. [ICON=Stat_Wealth_Icon] 부는 [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]수입[/HS]에 영향을 미치</String>
+    <String>[ICON=Stat_Wealth_Icon] 부는 [HS=HS_CoreWorld]중심 세계[/HS]에 사용할 수 있는 희귀하고 귀중한 자원입니다. [ICON=Stat_Wealth_Icon] 부는 [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]수입[/HS]에 영향을 미치는 입력 값입니다. 행성이 [ICON=Stat_Wealth_Icon] 부를 더 많이 입력으로 가질수록, 더 많은 [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]수입[/HS]을 생산합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ResearchCenterTitle</Label>
@@ -346,7 +346,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ResearchCenterDec</Label>
-    <String>연구 센터는 연구 중인 [HS=HS_Tech]기술[/HS]에 대한 개요를 제공하고, 차례 동안 언제든지 연구 중인 [HS=HS_Tech]기술[/HS]을 변경할 수 있게 해주는 메뉴입니다. [HS=HS_Tech]기술[/HS]의 연구</String>
+    <String>연구 센터는 [HS=HS_Tech]기술[/HS]의 연구 현황을 제공하고, 사용자가 언제든지 연구 중인 [HS=HS_Tech]기술[/HS]을 변경할 수 있게 하는 메뉴입니다. [HS=HS_Tech]기술[/HS]의 연구 속도는 [HS=HS_Months]달[/HS]로 측정되며, 당신의 문명의 [ICON=Stat_Research_Icon] [HS=HS_Research]연구[/HS]에 의해 결정됩니다. 턴이 시작될 때, [HS=HS_Tech]기술[/HS]의 연구가 완료되면, 사용자는 해제 항목에 접근할 수 있고 새로운 [HS=HS_Tech]기술[/HS]을 연구하도록 지정해야 합니다.[BR][BR]왼쪽 마우스 버튼으로 [HS=HS_Tech]기술[/HS]을 선택하여 연구하십시오. 현재 연구 중인 [HS=HS_Tech]기술[/HS]은 항</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechTitle</Label>
@@ -354,7 +354,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechDec</Label>
-    <String>기술은 [HS=HS_ResearchCenter]연구 센터[/HS]에서 선택할 수 있는 옵션으로, 연구하면 새로운 [HS=HS_Ship]선박[/HS], [HS=HS_Improvement]개선 사항[/HS], [HS=HS_ExecutiveOrders]경영 명령[/HS] 등을 포함한 독특한</String>
+    <String>기술은 [HS=HS_ResearchCenter]연구 센터[/HS]에서 선택할 수 있는 옵션으로, 연구하면 새로운 [HS=HS_Ship]선박[/HS], [HS=HS_Improvement]개선사항[/HS], [HS=HS_ExecutiveOrders]행정명령[/HS] 등 새로운 잠금 해제를 제공합니다.[BR][BR][HS=HS_ResearchCenter]연구 센터[/HS]에서 마우스를 기술 위에 놓아 기술이 잠금 해제하는 것에 대해 자세히 알아보세요.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PiratesTitle</Label>
@@ -362,7 +362,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_PiratesDec</Label>
-    <String>해적들은 무법자 [HS=HS_Ship]선박[/HS], [HS=HS_Shipyard]조선소[/HS], 그리고 행성들입니다. 기본적으로, 해적들은 모든 다른 그룹들과 문명들에 대해 적대적입니다. 그들은 선박과 전투를 벌일 수 있으며,</String>
+    <String>해적들은 무법자 [HS=HS_Ship]선박들[/HS], [HS=HS_Shipyard]조선소[/HS], 그리고 행성들입니다. 기본적으로, 해적들은 모든 다른 그룹들과 문명들에게 적대적입니다. 그들은 선박들과 전투를 벌일 수 있으며, 특히 이길 것이라고 생각한다면 싸움을 벌일 것입니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipyardTitle</Label>
@@ -378,7 +378,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_RushDec</Label>
-    <String>Rush 옵션은 [ICON=Stat_Credits_Icon][HS=HS_Credit]크레딧[/HS]과 [ICON=Stat_Control_Icon] [HS=HS_Control]콘트롤[/HS]을 사용하여 건설 완료 시간을 1 [HS=HS_Months]개월[/HS]로 줄일 수 있습니다. Rush로 건설한 것은</String>
+    <String>Rush 옵션을 사용하면 [ICON=Stat_Credits_Icon][HS=HS_Credit]크레딧[/HS]과 [ICON=Stat_Control_Icon] [HS=HS_Control]컨트롤[/HS]을 사용하여 건설 완료 시간을 1 [HS=HS_Months]개월[/HS]로 줄일 수 있습니다. Rush로 건설한 것은 항상 대기열의 맨 앞으로 이동합니다. Rush 옵션은 각 [HS=HS_CoreWorld]핵심 세계[/HS]와 [HS=HS_Shipyard]조선소[/HS]에서 턴당 한 번만 사용할 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetManagementTitle</Label>
@@ -386,7 +386,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetManagementDec</Label>
-    <String>[ICON=Menu_PlanetManagement_Icon] 행성 관리 창에서는 [HS=HS_CoreWorld]중심 행성[/HS]을 관리할 수 있습니다. 행성의 입력과 출력에 대한 세부적인 분석과 행성의 상태를 확인할 수 있습니다. 또한 [HS=HS_Improvement]개선 사항[/HS]을</String>
+    <String>[ICON=Menu_PlanetManagement_Icon] 행성 관리 창에서는 [HS=HS_CoreWorld]핵심 행성[/HS]을 관리할 수 있습니다. 행성의 입력 및 출력에 대한 자세한 분석과 행성의 상태를 확인할 수 있습니다. 또한 [HS=HS_Improvement]개선 사항[/HS]을 건설하거나 해체하고 프로젝트를 관리할 수도 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AdjacencyTitle</Label>
@@ -394,7 +394,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AdjacencyDec</Label>
-    <String>인접 보너스는 서로 옆에 지어진 [HS=HS_Improvement]개선사항[/HS]에 적용됩니다. 효율성을 극대화하기 위해, 보너스를 높이기 위해 인접 타일에 유사한 [HS=HS_Improvement]개선사항[/HS]을 건</String>
+    <String>인접 보너스는 서로 옆에 지어진 [HS=HS_Improvement]개선사항[/HS]에 적용됩니다. 효율성을 극대화하기 위해, 같은 [HS=HS_Improvement]개선사항[/HS]을 인접 타일에 건설하여 그들의 보너스를 향상시키는 것이 가장 좋습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConstructStarbaseTitle</Label>
@@ -410,7 +410,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_StarbaseDec</Label>
-    <String>스타베이스는 위치와 구축 방식에 따라 다양한 역할을 수행할 수 있는 전문적인 고정 설비입니다. 스타베이스를 건설하려면 [HS=HS_Constructor]건설자[/HS]를 [HS=HS_Shipyard]조선소[/HS]에서 생산하십시오</String>
+    <String>스타베이스는 위치와 구축 방식에 따라 다양한 역할을 수행할 수 있는 전문적인 고정 건설물입니다. 스타베이스를 건설하려면, [HS=HS_Shipyard]조선소[/HS]에서 [HS=HS_Constructor]건설자[/HS]를 생산하십시오. 그런 다음 건설자에게 현재 위치에서 스타베이스를 생성하도록 [HS=HS_ConstructStarbase]스타베이스 건설[/HS] 명령을 내릴 수 있습니다.[BR][BR]스타베이스의 유형은 네 가지입니다: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]군사[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]광산[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]경제[/HS], 그리고 [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]통신[/HS]. [HS=HS_ConstructStar</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MilitaryStarbaseTitle</Label>
@@ -450,7 +450,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConqueringPlanetsDec</Label>
-    <String>모든 식민지화된 행성은 [ICON=Conquest_Icon] 행성 정복 등급을 가지고 있습니다. 이것은 행성이 얼마나 방어되어 있는지 그리고 그 방어를 극복하기 위해 얼마나 많은 군사력이 필요한지를 나타냅니다. [HS=HS_Fleet]Fleets[/HS]는 정복 등급을 가지고 있어, 얼마나 행성을 포위하기 위해 장비되어 있는지를 나타냅니다. 수송선과 같은 일부 함선은 다른 것들보다 행성을 정복하는데 더 잘 갖추어져 있습니다.[BR][BR]포위를 시작하려면, 정복하려는 행성을 대상으로 [HS=HS_Fleet]Fleet[/HS]에 [HS=HS_ShipMovement]Move[/HS] 명령을 내립니다. [HS=HS_Fleet]Fleet[/HS]가 행성에 도달하면, 그것의 [ICON=Conquest_Icon] 정복 등급이 행성의 [ICON=Conquest_Icon] 정복 등급을 극복하기에 충분할 경우 포위를 시작합니다.</String>
+    <String>모든 식민화된 행성은 [ICON=Conquest_Icon] 행성 정복 등급을 가지고 있습니다. 이는 행성이 얼마나 방어되어 있는지와 그 방어를 극복하는데 얼마나 많은 군사력이 필요한지를 나타냅니다. [HS=HS_Fleet]함대[/HS]는 정복 등급을 가지고 있어, 얼마나 행성을 포위하는 데 장비되어 있는지를 나타냅니다. 운송선과 같은 일부 선박은 다른 선박보다 행성을 정복하는 데 더 잘 장비되어 있습니다.[BR][BR]포위를 시작하려면, 정복할 행성을 목표로 [HS=HS_ShipMovement]이동[/HS] 명령을 [HS=HS_Fleet]함대[/HS]에 발행하십시오. [HS=HS_Fleet]함대[/HS]가 행성에 도달하면, 그 [ICON=Conquest_Icon] 정복 등급이</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyTitle</Label>
@@ -458,7 +458,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyDec</Label>
-    <String>대기 명령은 선박이 무기한으로 유휴 상태를 유지하도록 사용할 수 있습니다. 선박이 유휴 상태를 중단하는 시나리오가 있는 다른 명령과 달리, 대기 중인 선박은 명령을 받을 때까지 대기 모드를 떠나지 않</String>
+    <String>대기 명령은 함선이 무한정으로 유휴 상태를 유지하도록 사용할 수 있습니다. 함선이 유휴 상태를 멈추는 시나리오가 있는 다른 명령과 달리, 대기 상태의 함선은 명령이 내려질 때까지 대기 모드를 떠나지 않습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_Biology</Label>
@@ -506,7 +506,7 @@
   </StringTable>
   <StringTable>
     <Label>Trait_Censorship_Dec_TK</Label>
-    <String>[I]검열의 힘은 마음을 조작하고, 반대 의견을 억압하며, 담론을 통제하는 그것의 음흉한 능력에 있다.[/I][BR][BR][COLOR=UIDefaultHighlight]우리 세상에 대한 외부의 영향이 50% 감소하였습니다</String>
+    <String>[I]검열의 힘은 마음을 조작하고, 이의를 억누르며, 이야기를 통제하는 그 음흉한 능력에 있다.[/I][BR][BR][COLOR=UIDefaultHighlight]외부 세력이 우리 세계에 미치는 영향이 50% 감소하였습니다[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Collaboration_Name_TK</Label>
@@ -638,7 +638,7 @@
   </StringTable>
   <StringTable>
     <Label>HiveWorkerTraining_ShortDec</Label>
-    <String>[HS=HS_Consuming]소비[/HS] 인구의 [HS=HS_Diligence]근면성[/HS]을 50%% 높이는 시설. 레벨이 오를수록 효과가 증가합니다.</String>
+    <String>[HS=HS_Consuming]소비[/HS] 인구의 [HS=HS_Diligence]근면[/HS]을 50%% 상승시키는 시설. 레벨이 올라갈수록 효과가 증가합니다.</String>
   </StringTable>
   <StringTable>
     <Label>BrainBugs_Name</Label>
@@ -714,7 +714,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_StarshipRefits_Dec</Label>
-    <String>기존 선박의 업그레이드에 대해 간단한 해결책은 존재하지 않습니다. 엔지니어들은 우주선에 부품을 가져나가는 문제를 해결하고, 오래된 무기와 방어구를 최신 최고의 기술로 교체하기 위한 안전한 방법</String>
+    <String>기존 함선을 업그레이드하는 것에 있어서 간단한 해결책은 없습니다. 엔지니어들은 우주선에 부품을 배송하는 문제를 해결하고, 오래된 무기와 방어구를 최신의 최고 기술로 교체하는 안전한 방법을 고안해야 합니다.</String>
   </StringTable>
   <StringTable>
     <Label>MasterTech_ReallyLateStageCapitalism_Name</Label>
@@ -738,7 +738,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_Dec</Label>
-    <String>이 은하에는 우리에게 낯선 기술과 개념이 다양하게 존재하는 다른 문명들이 있습니다. 우리는 이들을 적응하고 활용해야 합니다. [BR][BR]별들 사이의 복잡한 직물 안에서 새로운 패러다임이 등장합니다</String>
+    <String>이 은하계에 있는 다른 문명들은 우리에게 외계인처럼 느껴지는 다양한 기술과 개념을 가지고 있습니다. 우리는 이것들을 적응하고 활용해야 합니다. [BR][BR]복잡한 별간의 엔티티의 테이프스트리 속에서 새로운 패러다임이 등장합니다: 기술의 통합. 이것은 단순히 획득하는 것이 아니라 완벽한 통합에 관한 것입니다. [BR][BR]기술 도입은 실제 힘은 지배된 자의 지식을 억압하거나 파괴하는 데 있지 않고, 받아들이고 승화시키는 데 있다는 원칙에 근거합니다. 다양한 문명들의 기술적 진보를 자신의 것으로 도입함으로써, 한 사회는 개발 단계를 뛰어넘고 혁</String>
   </StringTable>
   <StringTable>
     <Label>MasterTech_Hatcheries_Name</Label>
@@ -750,7 +750,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_Hatcheries_Dec</Label>
-    <String>우리 종의 복잡한 생명 주기는 다음 세대가 양육되고, 보호받고, 우주의 도전에 대비할 수 있는 전용 공간을 필요로 합니다. [BR][BR]부화장은 단순한 번식지가 아닙니다. 이들은 진화, 혁신, 그리고 공통</String>
+    <String>우리 종의 복잡한 생명주기는 다음 세대가 양육되고, 보호받고, 우주의 도전에 대비할 수 있는 전용 공간이 필요합니다. [BR][BR]부화장은 단순한 번식지가 아닙니다. 그들은 진화, 혁신, 그리고 공동체 노력의 용광로입니다. 모든 부화장은 무수히 많은 생명의 리듬으로 맥동하며, 우리의 거대한 집단으로 인도될 준비를 합니다. [BR][BR]이 기술적 발전은 단순한 건축이나 생물학을 넘어섭니다. 그것은 우리 종의 회복력과 적응성의 본질적인 부분에 접근합니다. 우리의 부화장을 정제하고 향상시킴으로써, 우리는 무리의 힘과 수를 늘리는 것뿐만 아니라, 각 새로운 개체</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Name</Label>
@@ -796,11 +796,9 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Dec</Label>
-    <String>
-			The Intergalactic Wildlife Conservancy (IWC) would like to collect specimens from around the galaxy for study. Specifically, their hope is to gather creatures suited to living in many different kinds of enviornments to better understand the biodiversity and adaptability throughout the cosmos. They agree the best place to gather new data is from uncolonized terrestrial planets.
+    <String>은하계 야생동물 보전회 (IWC)는 연구를 위해 은하계 전역에서 표본을 수집하고자 합니다. 구체적으로는, 다양한 종류의 환경에서 생활할 수 있는 생물들을 모아 우주 전체의 생물다양성과 적응성을 더 잘 이해하려는 것입니다. 그들은 미개척의 지구형 행성에서 새로운 데이터를 수집하는 것이 최선이라고 동의합니다.
 
-			The IWC is offering a grant to aid them in their study. It includes a free colony ship full of explorers and scientists ready to be sent off to study.
-		</String>
+			IWC는 그들의 연구를 돕기 위해 보조금을 제공하고 있습니다. 이에는 탐험가와 과학자들로 가득 찬 무료 식민지선이 포함되어 있어 연구를 위해 보내질 준비가 되어 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
@@ -808,10 +806,8 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Dec</Label>
-    <String>
-			Start A Mission
-			Free Colony Ship
-		</String>
+    <String>임무 시작
+			무료 콜로니 선박</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_QuestDescription</Label>
@@ -835,11 +831,9 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Dec</Label>
-    <String>
-			The Intergalactic Wildlife Conservency (IWC) is pleased to report the success of the galactic conservation program. Our presence on these planets will allow us to learn more about the natural edens of the galaxy and the creatures that inhabit them.
+    <String>우주생태보전협회(IWC)는 은하 보전 프로그램의 성공을 보고하게 되어 기쁩니다. 우리가 이 행성들에 있음으로써 은하계의 자연의 낙원과 그곳에 서식하는 생물들에 대해 더 알아갈 수 있게 될 것입니다.
 
-			With the success of the progam the IWC has commissioned "The Arc". A ship full of live specimens from around the galaxy. It is intended to be a flying ecology lab, restoring ecosystems throughout the galaxy. The Arc has been entrusted to us, for our support of the IWC's conservation efforts.
-		</String>
+프로그램의 성공으로 IWC는 "아크"를 위탁하였습니다. 이것은 은하계를 돌며 생태계를 복원하는 이동식 생태학 연구실로, 은하계 곳곳에서 모은 살아있는 표본들로 가득 차 있습니다. 아크는 우리가 IWC의 보전 노력을 지원한 덕분에 우리에게 맡겨졌습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
@@ -935,7 +929,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandInfluence_Dec</Label>
-    <String>우리 문명은 정체되고 고립되었습니다. 리더십 위원회는 별들 사이에서 우리의 영향력을 확장하기 위해 대담한 행동을 취해야 한다고 믿습니다. 전략적인 시스템에 새로운 별 기지를 건설함으로써,</String>
+    <String>우리 문명은 정체되고 고립되어 있습니다. 지도부 의회는 별들 사이에서 우리의 영향력을 확장하기 위해 대담한 행동을 취해야 한다고 믿습니다. 전략적인 체계에 새로운 별기지를 건설함으로써, 우리는 우리의 힘을 투사하고 독립된 식민지와 외계 문명과의 귀중한 연락을 맺을 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandInfluence_Liberty_Bonus_Name</Label>
@@ -975,7 +969,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Dec</Label>
-    <String>우리 문명은 빠르게 확장되어, 우리의 식민지와 함대를 관리할 자격있는 리더가 부족합니다. 리더십 위원회는 우리의 성장하는 제국을 제대로 관리하기 위해 더 많은 리더를 모집하고 훈련시</String>
+    <String>우리 문명이 빠르게 확장되어, 우리 식민지와 함대를 관리할 자격 있는 리더들이 부족해졌습니다. 리더십 회의는 우리가 더 많은 리더들을 모집하고 훈련하여 성장하는 제국을 적절히 관리하도록 요청하였습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Liberty_Bonus_Name</Label>
@@ -1015,7 +1009,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_Dec</Label>
-    <String>지도부 회의는 {PLANETNAME}을 별선 구축에 전략적으로 가치있는 시스템으로 파악했습니다. 그들은 우리의 생산 능력을 확장하기 위해 {PLANETNAME} 주변 궤도에 새로운 조선소를 건설하라는 요청을 하였</String>
+    <String>지도부 회의는 {PLANETNAME}를 별선 건설에 전략적으로 중요한 체계로 지정했습니다. 그들은 우리의 생산 능력을 확장하기 위해 {PLANETNAME} 주변 궤도에 새로운 조선소를 건설하도록 요청했습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_Liberty_Bonus_Name</Label>
@@ -1099,7 +1093,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Dec</Label>
-    <String>[HS=HS_Starbase]별 기지[/HS]는 제국을 지원하는 데 필수적입니다. 그것들은 특정 유형의 별선과 무기를 구축하는데 필요한 [HS=HS_StrategicResource]전략 자원[/HS]을 수집하는 데 필요합니다.[BR][BR][HS=HS_Shipyard]</String>
+    <String>[HS=HS_Starbase]스타베이스[/HS]는 제국을 지지하는 데 필수적입니다. 그들은 특정 유형의 별선과 무기를 건설하기 위해 필요한 [HS=HS_StrategicResource]전략 자원[/HS]을 수집하는 데 필요합니다.[BR][BR][HS=HS_Shipyard]조선소[/HS]에서 [HS=HS_Constructor]건설자[/HS]를 생산하고 그들의 [HS=HS_ConstructStarbase]스타베이스 건설[/HS] 명령을 사용하세요.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Name</Label>
@@ -1107,7 +1101,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Dec</Label>
-    <String>[HS=HS_ResearchCenter]연구 센터[/HS]에서 행성 침략 [HS=HS_Tech]기술[/HS]을 연구하세요. 이 [HS=HS_Tech]기술[/HS]은 우리가 적대적인 행성을 포위하고 [HS=HS_ConqueringPlanets]정복[/HS]할 수 있게 해주는</String>
+    <String>[HS=HS_ResearchCenter]연구 센터[/HS]에서 행성 침략에 대한 [HS=HS_Tech]기술[/HS]을 연구하십시오. 이 [HS=HS_Tech]기술[/HS]은 적대적인 행성을 포위하고 [HS=HS_ConqueringPlanets]정복[/HS]할 수 있는 운송선을 건설하는 데 필요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseProbe</Label>
@@ -1123,7 +1117,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyFirstAnomaly_Dec</Label>
-    <String>[HS=HS_SurveyShip]조사선[/HS]을 사용하여 [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하십시오. [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하는 데는 몇 [HS=HS_Months]개</String>
+    <String>[HS=HS_SurveyShip]조사선[/HS]을 사용하여 [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하십시오. [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하는 것은 몇 [HS=HS_Months]개월[/HS] 동안 중단 없이 작업해야 합니다. 만약 [HS=HS_SurveyShip]조사선[/HS]이 이동하거나 다른 명령을 받으면, [HS=HS_Anomaly]이상 현상[/HS]을 밝혀 내는 모든 진척이 손실됩니다.[BR][BR]왼쪽 마우스 버튼을 사용하여 [HS=HS_SurveyShip]조사선[/HS]을 선택하고 [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하도록 명령하십시오. 이는 오른쪽 마우스 버튼으로 [HS=HS_Anomaly]이상 현상[/HS]을</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyTargetAnomalies</Label>
@@ -1131,7 +1125,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyTargetAnomalies_Dec</Label>
-    <String>[HS=HS_SurveyShip]조사선[/HS]을 사용하여 여러 [HS=HS_Anomaly]이상 현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하십시오. 우주에는 의도적으로 또는 무의식적으로 남겨진 수많은 미지의 항목들이 있습니다. 별</String>
+    <String>[HS=HS_SurveyShip]조사선[/HS]을 사용하여 여러 [HS=HS_Anomaly]이상현상[/HS]을 [HS=HS_SurveyOrder]조사[/HS]하십시오. 우주에는 의도적으로나 무심코 남겨진 수많은 미지의 항목들이 존재합니다. 별들을 정복하려면 우리는 많은 [HS=HS_Anomaly]이상현상[/HS]을 발견하고 대응해야 합니다.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_ColonizeFirstPlanet</Label>
@@ -1139,7 +1133,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_ColonizeFirstPlanet_Dec</Label>
-    <String>식민지 선을 활용하여 [HS=HS_ColonizeOrder]행성을 식민화[/HS]하십시오. 화성은 거의 완벽한 후보입니다. 화성은 유익한 자원을 제공하고, 연합의 홈 월드와 가깝습니다.[BR][BR]왼쪽 마우스 버튼</String>
+    <String>식민지선을 이용하여 [HS=HS_ColonizeOrder]행성을 식민화[/HS]하세요. 화성은 거의 완벽한 후보입니다. 화성은 유익한 자원을 제공하고 연합의 본행성에 가깝습니다.[BR][BR]마우스 왼쪽 버튼을 사용하여 이 식민지선을 선택하고 행성을 [HS=HS_ColonizeOrder]식민화[/HS]하라는 명령을 내립니다. 이 작업은 마우스 오른쪽 버튼으로 식민화할 수 있는 행성을 선박의 목적지로 설정함으로써 수행할 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockPolicyScreen</Label>
@@ -1147,7 +1141,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
-    <String>[HS=HS_ResearchCenter]연구 센터[/HS]에 접근하고 현재 연구 중인 [HS=HS_Tech]기술[/HS]이 콜로니 정책인지 확인하십시오. [HS=HS_Tech]기술[/HS] 연구에 걸리는 [HS=HS_Months]개월 수[/HS]는</String>
+    <String>[HS=HS_ResearchCenter]연구 센터[/HS]에 접속하고 현재 연구 중인 [HS=HS_Tech]기술[/HS]이 콜로니 정책인지 확인하십시오. [HS=HS_Tech]기술[/HS] 연구에 소요되는 [HS=HS_Months]개월 수[/HS]는 모든 [HS=HS_CoreWorld]핵심 세계[/HS]의 연구 등급에 의해 결정됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy</Label>
@@ -1163,7 +1157,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_RushPlanetaryImprovement_Dec</Label>
-    <String>행성 개선을 [HS=HS_Rush]가속[/HS]하려면, [HS=HS_CoreWorld]중심 세계[/HS]를 선택하고 관리 창을 엽니다. 왼쪽 마우스 버튼으로 빌드 큐의 아무 항목을 선택하면 일부 상황에 맞는 옵션이 나타</String>
+    <String>행성 개선을 [HS=HS_Rush]급행[/HS]하려면, [HS=HS_CoreWorld]핵심 행성[/HS]을 선택하고 관리 창을 엽니다. 왼쪽 마우스 버튼으로 빌드 큐의 아무 항목이나 선택하면 일부 문맥에 따른 옵션이 표시됩니다. 그 중에는 [HS=HS_Rush]급행[/HS] 옵션이 있습니다. [ICON=Stat_Control_Icon] [HS=HS_Control]제어[/HS]와 [ICON=Stat_Credits_Icon] [HS=HS_Credit]크레딧[/HS]이 필요한 한 [HS=HS_Rush]급행[/HS] 옵션을 선택하면 특정 개선 사항을 [HS=HS_Rush]급행[/HS]할 수 있습니다. 필요한 자원이 없으면 [HS=HS_Rush]급행[/HS] 옵션은 회색으로 나타나고 반응하지 않습니다.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseExecutiveOrder</Label>
@@ -1211,7 +1205,7 @@
   </StringTable>
   <StringTable>
     <Label>TURNS_TO_UPGRADE_EXPLANATION_TOOLTIP</Label>
-    <String>이 함선을 업그레이드하는 데 걸리는 개월 수입니다.[BR][BR]값은 가장 가까운 조선소까지의 거리에 따라 결정됩니다. 함선이 조선소에 가까울수록 완성하는 데 필요한 개월 수가 줄어듭니다.[BR][BR]이 함</String>
+    <String>이 배를 업그레이드하는 데 걸리는 달의 수입니다.[BR][BR]값은 가장 가까운 조선소까지의 거리에 의해 결정됩니다. 배가 조선소에 가까울수록 완료하는 데 걸리는 달이 줄어듭니다.[BR][BR]이 배는 가장 가까운 조선소 {OBJECTNAME}까지 %u 타일 떨어져 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZEN_FG_INFOTEXT_GENERATED</Label>
@@ -1263,7 +1257,7 @@
   </StringTable>
   <StringTable>
     <Label>ResearchTurnsRemaining</Label>
-    <String>연구를 완료하기까지 %d 턴 남음</String>
+    <String>연구를 완료하기까지 %d 턴(들) 남았습니다</String>
   </StringTable>
   <StringTable>
     <Label>Alert_UI_Title</Label>
