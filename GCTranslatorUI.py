@@ -87,7 +87,7 @@ class TranslationApp(QMainWindow):
         file_menu.addAction(openai_key_action)
 
         self.language_box = QComboBox(self)
-        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
+        self.languages = ["English", "French", "German", "Greek","Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
         self.language_box.addItems(self.languages)
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
@@ -341,7 +341,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=1000,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -373,11 +373,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 10
+        CHUNK_SIZE = 32
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=4) as executor:
+            with ThreadPoolExecutor(max_workers=32) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:
