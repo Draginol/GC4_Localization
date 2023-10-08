@@ -98,6 +98,9 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
 
+        self.table.setWordWrap(True)
+
+
         self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
 
@@ -294,9 +297,13 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 2, QTableWidgetItem(label))
             self.table.setItem(idx, 3, QTableWidgetItem(string))
             self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
+        
+        # Resize rows to fit their content
+        for idx in range(self.table.rowCount()):
+            self.table.resizeRowToContents(idx)
+
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
-
 
     def switch_language(self):
         self.table.itemChanged.disconnect(self.on_item_changed)
@@ -334,7 +341,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=300,
                 n=1,
                 stop=None,
                 temperature=0.7,
