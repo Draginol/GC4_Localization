@@ -18,7 +18,7 @@ import re
 import os
 import openai
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
-                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QListWidget)
+                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QLineEdit)
 from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
@@ -98,6 +98,12 @@ class TranslationApp(QMainWindow):
         self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
 
+        self.search_box = QLineEdit(self)
+        self.search_box.setPlaceholderText("Search...")
+        self.search_box.textChanged.connect(self.filter_table)
+        layout.addWidget(self.search_box)
+
+
         layout.addWidget(self.language_box)
         layout.addWidget(self.table)
         layout.addWidget(self.translate_button)
@@ -116,6 +122,23 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
+    def filter_table(self):
+        search_text = self.search_box.text().lower()  # Get the input text in lowercase
+
+        # Loop through all rows in the table
+        for row in range(self.table.rowCount()):
+            row_matches = False
+            for col in range(self.table.columnCount()):
+                item = self.table.item(row, col)
+                if item and search_text in item.text().lower():
+                    row_matches = True
+                    break
+
+            # If row matches, show it; otherwise, hide it
+            self.table.setRowHidden(row, not row_matches)
+
+    
+    
     def load_file(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getOpenFileName(self, "Open XLIFF File", self.parent_directory, "XLIFF Files (*.xliff);;All Files (*)", options=options)
@@ -224,7 +247,6 @@ class TranslationApp(QMainWindow):
                 idx += 1  # Increment idx for each new entry being added to the table
 
         self.populate_table()
-
 
     def switch_language(self):
         lang = self.language_box.currentText()
