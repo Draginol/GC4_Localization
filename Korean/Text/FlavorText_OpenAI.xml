@@ -1,6 +1,13 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
+    <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>You are a skilled science fiction writer.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
@@ -19,14 +26,14 @@
         <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1}는 우주를 지배하려는 은하 규모의 경쟁에서 상호 경쟁하는 수많은 지구 및 외계 세력 중 하나입니다. 그들은 다음과 같이 묘사됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1}는 우주를 지배하기 위한 은하 척도 경쟁에서 경쟁하는 여러 지구 및 외계 세력 중 하나입니다. 그들은 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0}은 우주를 지배하려는 은하 규모의 경쟁에서 경쟁하는 수많은 지구 및 외계 세력 중 하나입니다. 그들은 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
+            <Text>{PREVIOUSCONV:0}는 우주를 지배하려는 은하 척도의 경쟁에서 서로 대립하는 수많은 지구 및 외계 세력 중 하나입니다. 그들은 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -40,7 +47,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1}은 우주를 지배하기 위한 은하 척도 경쟁에서 경쟁하는 수많은 지구와 외계 세력 중 하나입니다. 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특징을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1}는 우주를 지배하기 위한 은하 척도 경쟁에서 경쟁하는 여러 지구 및 외계 세력 중 하나입니다. 그들은 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 그들은 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

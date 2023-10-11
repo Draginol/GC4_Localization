@@ -18,7 +18,7 @@ import re
 import os
 import openai
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
-                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QListWidget)
+                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QLineEdit)
 from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
@@ -65,6 +65,12 @@ class TranslationApp(QMainWindow):
         menu_bar = self.menuBar()
         file_menu = menu_bar.addMenu("File")
 
+        self.search_bar = QLineEdit(self)
+        self.search_bar.setPlaceholderText("Search...")
+        self.search_bar.textChanged.connect(self.filter_table)
+        layout.addWidget(self.search_bar)
+
+
         # Load English Directory Action
         load_action = QAction("Load English Directory", self)
         load_action.triggered.connect(self.load_directory)
@@ -75,18 +81,13 @@ class TranslationApp(QMainWindow):
         save_action.triggered.connect(self.save_translations)
         file_menu.addAction(save_action)
 
-        # Adding Language Memory View action to File menu
-        self.language_memory_view_action = QAction("Language Memory View", self)
-        self.language_memory_view_action.triggered.connect(self.show_language_memory)
-        file_menu.addAction(self.language_memory_view_action)
-
         # Enter OpenAI Key Action
         openai_key_action = QAction("Enter OpenAI Key", self)
         openai_key_action.triggered.connect(self.set_openai_key)
         file_menu.addAction(openai_key_action)
 
         self.language_box = QComboBox(self)
-        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
+        self.languages = ["English", "French", "German", "Greek","Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
         self.language_box.addItems(self.languages)
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
@@ -97,7 +98,10 @@ class TranslationApp(QMainWindow):
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
 
-        self.translate_button = QPushButton("Translate (OpenAI)", self)
+        self.table.setWordWrap(True)
+
+
+        self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
 
         layout.addWidget(self.language_box)
@@ -122,89 +126,18 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
-    # Function to show unique English text entries along with their translations
-    def show_language_memory(self):
+    def filter_table(self, search_text):
+        # Hide rows that don't match the search text
+        for row in range(self.table.rowCount()):
+            match = False
+            for col in range(self.table.columnCount()):
+                item = self.table.item(row, col)
+                if item and search_text.lower() in item.text().lower():
+                    match = True
+                    break
+            # If no cell in the row matches, hide the row
+            self.table.setRowHidden(row, not match)
 
-        # Fetching all English entries and their translations from the table
-        english_entries = [self.table.item(row, 3).text() for row in range(self.table.rowCount()) if self.table.item(row, 3)]
-        translations = [self.table.item(row, 4).text() for row in range(self.table.rowCount()) if self.table.item(row, 4)]
-        
-        # Creating a dictionary with unique English entries as keys and their translations as values
-        english_translation_dict = dict(zip(english_entries, translations))
-
-        # Displaying the unique entries along with their translations in a new window
-        self.memory_window = QWidget()
-        self.memory_window.setWindowTitle("Language Memory View")
-        layout = QVBoxLayout(self.memory_window)
-        
-        # Creating a table widget with two columns
-        self.table_widget = QTableWidget()
-        self.table_widget.setColumnCount(2)
-        self.table_widget.setHorizontalHeaderLabels(['English', 'Translation'])
-        self.table_widget.setSortingEnabled(True)
-
-        # Add an "Export to TMX" button
-        export_to_tmx_button = QPushButton("Export to TMX")
-        export_to_tmx_button.clicked.connect(self.export_to_tmx)
-        layout.addWidget(export_to_tmx_button)
-
-
-        self.table_widget.itemChanged.connect(self.update_main_from_memory)
-        self.table.itemChanged.connect(self.update_translation)
-        
-        self.table_widget.itemChanged.disconnect(self.update_main_from_memory)
-        self.table.itemChanged.disconnect(self.update_translation)
-        
-        # Populating the table widget with data
-        for index, (english, translation) in enumerate(english_translation_dict.items()):
-            self.table_widget.insertRow(index)
-            self.table_widget.setItem(index, 0, QTableWidgetItem(english))
-            self.table_widget.setItem(index, 1, QTableWidgetItem(translation))
-        
-        layout.addWidget(self.table_widget)
-        self.memory_window.show()
-        # Connecting signal to detect changes in the translation memory table
-        self.table_widget.itemChanged.connect(self.update_main_from_memory)
-        self.table.itemChanged.connect(self.update_translation)
-        
-    def export_to_tmx(self):
-        # Fetch the selected language from the combo box
-        target_language_code = self.language_box.currentText()  # Assuming the combo box object's name is language_combobox
-        # Create the start and end of the basic TMX structure
-        tmx_start = '''<?xml version="1.0" encoding="UTF-8"?>
-    <tmx version="1.4">
-    <header creationtool="GCTranslatorUI" segtype="sentence" adminlang="en-us" srclang="EN" datatype="plaintext" o-tmf="GCTranslatorUI" creationdate="yyyymmddT00:00:00Z" nontrans="yes"/>
-    <body>
-    '''
-        tmx_end = '''
-    </body>
-    </tmx>
-    '''
-
-        # Extract the English text and its corresponding translation to create the TMX content
-        translation_units = []
-        for row in range(self.table_widget.rowCount()):
-            english_text = self.table_widget.item(row, 0).text()
-            translated_text = self.table_widget.item(row, 1).text()
-            translation_units.append('''
-        <tu>
-        <tuv xml:lang="EN">
-            <seg>''' + english_text + '''</seg>
-        </tuv>
-        <tuv xml:lang="''' + target_language_code + '''">  
-            <seg>''' + translated_text + '''</seg>
-        </tuv>
-        </tu>
-    ''')
-
-        tmx_content = tmx_start + "".join(translation_units) + tmx_end
-
-        # Save the TMX content to a file using a file dialog
-        options = QFileDialog.Options()
-        file_name, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()", "","TMX Files (*.tmx);;All Files (*)", options=options)
-        if file_name:
-            with open(file_name, 'w', encoding='utf-8') as file:
-                file.write(tmx_content)
 
     def update_translation(self, item):
         # Checking if the modified item is from the Translation column
@@ -221,23 +154,6 @@ class TranslationApp(QMainWindow):
             for row in range(self.table.rowCount()):
                 if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
                     self.table.item(row, 4).setText(new_translation)
-
-    # Function to update the main table and memory view based on changes in the translation memory table
-    def update_main_from_memory(self, item):
-        # Checking if the modified item is from the Translation column of the memory table
-        if item.column() == 1:
-            # Fetching the English string corresponding to the modified translation in the memory table
-            english_string = self.table_widget.item(item.row(), 0).text()
-            new_translation = item.text()
-
-            # Iterating over the main table and the memory table to find and update rows with the same English string
-            for row in range(self.table.rowCount()):
-                if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
-                    self.table.item(row, 4).setText(new_translation)
-            
-            for row in range(self.table_widget.rowCount()):
-                if self.table_widget.item(row, 0) and self.table_widget.item(row, 0).text() == english_string:
-                    self.table_widget.item(row, 1).setText(new_translation)
 
           
     def set_openai_key(self):
@@ -358,7 +274,7 @@ class TranslationApp(QMainWindow):
 
             for subdir, _, files in os.walk(directory):
                 for file in files:
-                    if file.endswith(".xml"):
+                    if file.lower().endswith(".xml"):
                         file_path = os.path.join(subdir, file)
                         file_name = os.path.basename(file_path)
                         tree = ET.parse(file_path)
@@ -381,9 +297,13 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 2, QTableWidgetItem(label))
             self.table.setItem(idx, 3, QTableWidgetItem(string))
             self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
+        
+        # Resize rows to fit their content
+        for idx in range(self.table.rowCount()):
+            self.table.resizeRowToContents(idx)
+
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
-
 
     def switch_language(self):
         self.table.itemChanged.disconnect(self.on_item_changed)
@@ -415,13 +335,13 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, without using more words and respecting formatting codes into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, succinctly translate this English string, respecting formatting codes into {target_language}: {text}"
 
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=100,
+                max_tokens=1000,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -453,11 +373,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 10
+        CHUNK_SIZE = 32
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=4) as executor:
+            with ThreadPoolExecutor(max_workers=32) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:
@@ -477,7 +397,7 @@ class TranslationApp(QMainWindow):
             self.save_translations()
             translation_counter += len(chunk)
 
-        self.translate_button.setText("Translate via OpenAI")
+        self.translate_button.setText("Translate")
         if total_rows > 4:
             progress.close()
 

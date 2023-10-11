@@ -11,9 +11,6 @@ def save_with_crlf(tree, filepath):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(xml_string)
 
-
-
-
 def load_xliff_data(xliff_path):
     tree = ET.parse(xliff_path)
     root = tree.getroot()
@@ -42,7 +39,6 @@ def update_xml_files_from_xliff(copied_files, dest_directory, xliff_data):
 
         save_with_crlf(tree, dest_filepath)  # Using the function to save with CRLF
 
-
 def main():
     tk_root = tk.Tk()
     tk_root.withdraw()
@@ -52,10 +48,9 @@ def main():
         print("XLIFF file selection was canceled.")
         return
 
-    src_directory = filedialog.askdirectory(title="Select the directory with the English flavor text XML files")
-    if not src_directory:
-        print("Source directory selection was canceled.")
-        return
+    # Derive the English directory path from the selected XLIFF file path
+    base_dir = os.path.dirname(xliff_path)
+    src_directory = os.path.join(base_dir, "../english/text")
 
     dest_directory = filedialog.askdirectory(title="Select the destination directory for translated flavor text XML")
     if not dest_directory:
