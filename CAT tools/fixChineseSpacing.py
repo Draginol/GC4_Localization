@@ -32,6 +32,8 @@ def process_file(filename):
 
     for string_elem in root.findall(".//String") + root.findall(".//Text"):
         text = string_elem.text
+        if text is None:
+            continue
         new_text = []
         count = 0
         
