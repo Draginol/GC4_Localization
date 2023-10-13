@@ -1,6 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    
-    
+    <!-- 1.5 Diplomacy additions. -->
+    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
     <FlavorTextDef>
         <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
         <FlavorTextOption>
@@ -11,7 +12,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>非常に感謝しています。あなたの寛大さを忘れ ません。。</Text>
+            <Text>非常に感謝しています。あなたの寛大さを忘れません。。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -24,21 +25,21 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>申し訳ありませんが、現時点ではあなたを支 援することを正当化す ることはできません。もし我々がより密接な関係を持 っていたなら、資金を見つけることが できるかもしれません...しかし現状では、我々自身の資産を保持する 方が良いと考えていま す。</Text>
+            <Text>申し訳ありませんが、現時点ではあなたを支援することを正当化することはできません。もし我々がより密接な関係を持っていたなら、資金を見つけることができるかもしれません...しかし現状では、我々自身の資産を保持する方が良いと考えています。</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>私たちは、エイリアンに慈善を施 すような人々に見えますか？</Text>
+            <Text>あなたは本気で奴隷制 を行う文明からお金を 求めましたか？</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>あなたは本気で奴隷制 を行う文明からお金を 求めましたか？</Text>
+            <Text>あなたは本気で奴隷制を行う文明からお金を求めましたか？</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -114,7 +115,7 @@
             <Text>それを感じて残念です..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- End 1.5 Diplomacy additions. -->
     <FlavorTextDef>
         <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
         <FlavorTextOption>
@@ -199,8 +200,8 @@
             <Text>さようなら。。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- Sarah's temp stuff -->
+    <!-- Conversation: DemandCredits -->
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITS_MAIN</InternalName>
         <FlavorTextOption>
@@ -251,14 +252,14 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>無料で物を渡すことで 私たちの怒りは和らぎ ません。しかし、死もそうではない。だから良い、それを取りなさい。</Text>
+            <Text>あなたが今は有利です。しかし、私の下僕として生きる とき、この日を再訪します。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>あなたが今は有利です。しかし、私の下僕として生きる とき、この日を再訪します。</Text>
+            <Text>あなたが今は有利です。しかし、私の下僕として生きるとき、この日を再訪します。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -304,7 +305,7 @@
             <Text>危険な間違い..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandCreditsPerTurn -->
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
         <FlavorTextOption>
@@ -329,7 +330,7 @@
             <Text>間違った答えです。あなたの過ちの結果は すぐに見えるでしょう。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandTech -->
     <FlavorTextDef>
         <InternalName>DEMAND_TECH_MAIN</InternalName>
         <FlavorTextOption>
@@ -354,7 +355,7 @@
             <Text>これを後悔することに なるよ..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestCredits help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -380,7 +381,7 @@
             <Text>{PLAYERFACTIONLONG:2}は自身の問題がありま す。いいえ...。もしファイル名ならば 英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestTech help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -405,7 +406,7 @@
             <Text>{PLAYERFACTIONLONG:2}は自身の問題がありま す。いいえ...。もしファイル名ならば 英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: RequestTech help me -->
     <FlavorTextDef>
         <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
         <FlavorTextOption>
@@ -432,8 +433,8 @@
             <Text>絶対に無理だ..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+    <!-- Default: a request, happy if they oblige -->
     <FlavorTextDef>
         <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
@@ -461,7 +462,7 @@
             <Text>この時点では、我々は戦争に行くことがで きません。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
     <FlavorTextDef>
         <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
         <FlavorTextOption>
@@ -486,7 +487,7 @@
             <Text>あなたは間もなく強制 的に側を選ばなければ ならなくなる、その時には私たちの寛 大な提案を受け入れた かったと思うでしょう。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: PayTechForDeclareWarOnOther -->
     <FlavorTextDef>
         <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
@@ -518,7 +519,7 @@
             <Text>この時点で戦争のリス クを負うことはできま せん。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: GiveCredits -->
     <FlavorTextDef>
         <InternalName>GIVE_CREDITS_MAIN</InternalName>
         <FlavorTextOption>
@@ -531,7 +532,7 @@
             <Text>この贈り物に感謝しま す。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: GiveTech -->
     <FlavorTextDef>
         <InternalName>GIVE_TECH_MAIN</InternalName>
         <FlavorTextOption>
@@ -544,7 +545,7 @@
             <Text>この贈り物に感謝しま す。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: OnPlayerDead -->
     <FlavorTextDef>
         <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
         <FlavorTextOption>
@@ -557,7 +558,7 @@
             <Text>了解しました.. ファイル名であれば、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Conversation: DemandStarbaseRemoval -->
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
         <FlavorTextOption>
@@ -598,8 +599,8 @@
             <Text>これはあなたの意図の 真正性を問い詰めます、{LEADERNAME:2}..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
-    
+    <!-- DemandAscensionStarbase -->
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
     <FlavorTextDef>
         <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
         <FlavorTextOption>
@@ -660,7 +661,7 @@
             <Text>これを諦めません、{LEADERNAME:2}..</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
     <FlavorTextDef>
         <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
         <FlavorTextOption>
@@ -673,11 +674,11 @@
             <Text>{PLAYERFACTIONLONG:2}は、私たちが興味を持って いる知識を持っていま す。これと引き換えに受け 入れていただけますか ？</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- Get off my lawn -->
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>{PLAYERFACTIONLONG:2}、私たちはあなたが我々のドアステップの外で 軍事力を増強している のを見ています。それを止めるべきです。</Text>
+            <Text>{PLAYERFACTIONLONG:2}、我々はあなたを評価してい ますが、増加する軍事力は我々にとって懸念事項です。</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -687,7 +688,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}、私たちはあなたが我々のドアステップの外で 軍事力を増強している のを見ています。それを止めるべきです。</Text>
+            <Text>{PLAYERFACTIONLONG:2}、我々はあなたを評価してい ますが、増加する軍事力は我々にとって懸念事項です。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -697,7 +698,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}、私たちはあなたが我々のドアステップの外で 軍事力を増強している のを見ています。それを止めるべきです。</Text>
+            <Text>{PLAYERFACTIONLONG:2}、我々はあなたを評価してい ますが、増加する軍事力は我々にとって懸念事項です。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -707,8 +708,6 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}我々はあなたが好きだが、見ている軍事増強は好 ましくない..</Text>
-            <Text>{PLAYERFACTIONLONG:2}、我々はあなたを評価してい ますが、増加する軍事力は我々にとって懸念事項です。</Text>
             <Text>{PLAYERFACTIONLONG:2}、我々はあなたとの関係を大 切に思っていますが、軍事的な増強は我々にとって懸念事項です。</Text>
             <Text>{PLAYERFACTIONLONG:2}、我々はあなたと良好な関係 を持っていますが、最近の軍事拡大が私た ちを悩ませています。</Text>
             <Text>{PLAYERFACTIONLONG:2}、私たちは友情を楽しん でいますが、増大する軍事力は私た ちに不安を感じさせま す..</Text>
@@ -716,13 +715,15 @@
             <Text>{PLAYERFACTIONLONG:2}、私たちは我々の同盟を尊重していま すが、軍事活動の増加は我々にとって不安を感じさ せます。</Text>
             <Text>{PLAYERFACTIONLONG:2}、私たちはパートナーシ ップを重視しています が、軍事的存在の増大は私 たちにとって警戒の源 です。</Text>
             <Text>{PLAYERFACTIONLONG:2}、我々はあなたと良好な関係 を築いていますが、増大する軍事力が我々にとって懸念事項です。</Text>
+            <Text>{PLAYERFACTIONLONG:2}、私たちはパートナーシップを重視していますが、軍事的存在の増大は私たちにとって警戒の源です。</Text>
+            <Text>{PLAYERFACTIONLONG:2}、我々はあなたと良好な関係を築いていますが、増大する軍事力が我々にとって懸念事項です。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>ここには何もありませ ん....[I]もしそれがファイル名 なら、英語をそのままコピー してください。</Text>
+            <Text>ここには何もありません....[I]もしそれがファイル名なら、英語をそのままコピーしてください。</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -732,7 +733,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>なぜ私を止めないので すか？</Text>
+            <Text>私たちを信じてくださ い、友よ。[I]私たちが軍事増強を警 告するのを受け入れて ください。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -742,7 +743,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>ここには何もありませ ん....[I]もしそれがファイル名 なら、英語をそのままコピー してください。</Text>
+            <Text>ここには何もありません....[I]もしそれがファイル名なら、英語をそのままコピーしてください。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -752,14 +753,14 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>私たちを信じてくださ い、友よ。[I]私たちが軍事増強を警 告するのを受け入れて ください。</Text>
+            <Text>私たちを信じてください、友よ。[I]私たちが軍事増強を警告するのを受け入れてください。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>慎重に観察します..それがファイル名の場 合は、英語をそのままコピー してください。</Text>
+            <Text>あなたのためにも、私たちの信頼が誤解さ れていないことを願っ ています。</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -769,7 +770,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>慎重に観察します..それがファイル名の場 合は、英語をそのままコピー してください。</Text>
+            <Text>あなたのためにも、私たちの信頼が誤解さ れていないことを願っ ています。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -779,7 +780,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>私たちはあなたを見て います..</Text>
+            <Text>私たちはあなたを見ています..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -789,7 +790,7 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>あなたのためにも、私たちの信頼が誤解さ れていないことを願っ ています。</Text>
+            <Text>あなたのためにも、私たちの信頼が誤解されていないことを願っています。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1210,13 +1211,18 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- End Game text -->
     <FlavorTextDef>
         <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
         <FlavorTextOption>
             <Text>あなたの創造的な銃、船、そして船に装備された 銃の使用により、あなたは銀河の首元に ブーツを押し付けまし た。あなたのすべての敵は 打ち砕かれ、その惑星は服従させら れ、その市民はあなたの旗 を振るようにされまし た。それはきれいなもので はありませんでしたが、そうである必要はあり ませんでしたね？</Text>
         </FlavorTextOption>
-        
+        <!-- <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
+    </FlavorTextOption> -->
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
@@ -1295,7 +1301,7 @@
         <FlavorTextOption>
             <Text>良い仕事を続けてくだ さい。</Text>
         </FlavorTextOption>
-
+<!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>STOLE_TECH</InternalName>
@@ -1327,7 +1333,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>何の不浄な汚染物生物 が私のスクリーンを横 切るのか？</Text>
+            <Text>何の不浄な汚染物生物が私のスクリーンを横切るのか？</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1368,7 +1374,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>あなたが我々の一部でないとは、なんと悲惨な生活を送 っているのでしょう。すぐにあなたとあなた の同類全員にとって終 わりが来ます。</Text>
+            <Text>あなたが我々の一部でないとは、なんと悲惨な生活を送っているのでしょう。すぐにあなたとあなたの同類全員にとって終わりが来ます。</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1421,40 +1427,40 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>あなたとも話すのは楽 しいです、Korath..</Text>
+            <Text>今日はいつもより醜く 見えますね..</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>今日はいつもより醜く 見えますね..</Text>
+            <Text>今日はいつもより醜く見えますね..</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!-- FROM INTRIGUE -->
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_LOSE</InternalName>
         <FlavorTextOption>
-            <Text>5ヶ月後に選挙が予定さ れています。世論調査員の報告によ ると、我々は[COLOR=UIDefaultHighlight]大差で敗北[/COLOR]する可能性が高いです。[BR][BR]選挙には我々の支持率を綿密に監視 する必要があります。有権者は短期的な措置 には簡単には動かされ ず、長期間にわたる自身の 士気を考慮します。税率を下げる、承認改善を建設するな ど、支持率を上げる全ての 事が我々の選挙勝利に</Text>
+            <Text>我々は5ヶ月後に選挙が予定されています。世論調査では、我々は[COLOR=UIDefaultHighlight]大差で負ける[/COLOR]可能性が高いと報告されています。[BR][BR]選挙では、我々は承認率を密に監視する必要があります。投票者は短期的な対策には簡単には揺らがず、長期的な士気を考慮します。承認率を上げる全てのことが、税率の引き下げや承認の改善を建設するなど、我々が選挙に勝つのに役立ちます。または、選挙を行わない政府形態を考慮することもできます。選挙に負けると、我々は[COLOR=UIDefaultHighlight]連立政府[/COLOR]に陥り、我々の力は制限されます。これには、戦争を宣言する能力をブロックすることも含まれます。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_LOW</InternalName>
         <FlavorTextOption>
-            <Text>我々は5ヶ月後に選挙が予定さ れています。調査員の報告によれば、[COLOR=UIDefaultHighlight]敗北する可能性が高い が、それは接戦になる[/COLOR]とのことです。我々は士気の向上に注力す べきです。[BR][BR]選挙は我々が承認評価を密接に監 視することを求めます。有権者は短期的な措置 によって簡単に揺さぶ られることはありませ んし、長期間にわたる士気を 考慮するでしょう。承認の向上に</Text>
+            <Text>5ヶ月後に選挙が予定されています。世論調査では、我々が[COLOR=UIDefaultHighlight]負ける可能性が高いが、僅差[/COLOR]であると報告されています。士気を高めることに集中するべきです。[BR][BR]選挙では、我々自身の支持率を密接に監視する必要があります。有権者は短期的な措置には簡単に動かされず、長期的な士気を考慮するでしょう。支持率を高める全ての要素が、税率の引き下げや支持改善の建設のような選挙勝利に役立ちます。または、選挙を行わない政府形態を考慮することもできます。選挙に負けると、我々は[COLOR=UIDefaultHighlight]連立政府[/COLOR]に陥り、権力が制限されます。戦争を宣言する能力をブロックすることも含まれます。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_HIGH</InternalName>
         <FlavorTextOption>
-            <Text>5ヶ月後に選挙が予定さ れています。世論調査では、私たちは[COLOR=UIDefaultHighlight]勝つ可能性が高いが、接戦になる[/COLOR]と報じられています。士気を落とすことはで きません。[BR][BR]選挙では、我々自身の支持率を密に監 視する必要があります。有権者は短期的な手段 によって簡単に動かさ れず、長期間にわたる士気を 考慮するでしょう。支持率を上げる全ての 事柄が、税率を下げることや支 持改善</Text>
+            <Text>我々は5ヶ月後に選挙を予定しています。世論調査員は、我々が[COLOR=UIDefaultHighlight]勝つ可能性が高いが、僅差になる[/COLOR]と報告しています。士気を落としてはならない。[BR][BR]選挙は我々が承認評価を密接に監視することを要求します。有権者は短期間の対策に容易に動かされず、長期間にわたる自身の士気を考慮します。承認を上げる全ての事が、税率を下げたり承認改善を建設したりといった選挙勝利に役立ちます。または、選挙を行わない政府形態を考慮することもできます。選挙に負ければ、我々の権力を制限する[COLOR=UIDefaultHighlight]連立政府[/COLOR]に陥るでしょう。これには、戦争を宣言する能力をブロックすることも含まれます。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>ELECTION_WARNING_WIN</InternalName>
         <FlavorTextOption>
-            <Text>5ヶ月後に選挙が予定さ れています。世論調査員の報告によ れば、我々は[COLOR=UIDefaultHighlight]圧勝[/COLOR]する可能性が高いです。[BR][BR]選挙では、我々の支持率を密に監視す る必要があります。有権者は短期的な措置 には簡単には動かされ ず、長期的な士気を考慮し ます。税率の引き下げや、支持率向上のための施 策など、支持率を上げる全ての 事が選挙の勝利に寄与 します。また、選挙を</Text>
+            <Text>我々は5ヶ月後に選挙予定です。調査員の報告によると、我々は[COLOR=UIDefaultHighlight]圧勝する可能性が高い[/COLOR]です。[BR][BR]選挙では我々の承認率を密接に監視する必要があります。投票者は短期的な措置には容易に動かされず、長期間にわたる士気を考慮します。納税率の引き下げや承認向上の施策など、承認率を上げるすべてのことが我々の選挙勝利に貢献します。また、選挙を行わない政府形態を検討することもできます。選挙に負けると、我々は[COLOR=UIDefaultHighlight]連立政府[/COLOR]に陥り、権力が制限されます。これには、戦争を宣言する能力をブロックすることも含まれます。もしファイル名なら、英語をそのままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1496,7 +1502,7 @@
     <FlavorTextDef>
         <InternalName>COLONY_LIMIT_WARNING_TECH</InternalName>
         <FlavorTextOption>
-            <Text>私たちの文明が成長し ているニーズに対して、私たちの政府は不十分 です。新たな植民地では、政府は本星だけを支え ており、私たちの世界全体の決 定が官僚制度によりま すます遅れていると不 平が出ています。[BR][BR]政府は、一定数の世界を管理す るのにのみ効果的です。この[COLOR=UIDefaultHighlight]植民地制限[/COLOR]を超えると、私たちには制限を超え た各植民地に対する士 気のペナルティが課せ られます。残念ながら、私</Text>
+            <Text>私たちの文明が拡大するニーズに対して、私たちの政府は不十分です。新しいコロニーは、政府が本星だけをサービスし、私たちの世界全体での決定が官僚制度によりますます遅れていると不平を言っています。[BR][BR]政府は、一定数の世界の管理にしか効果的ではありません。この[COLOR=UIDefaultHighlight]コロニー制限[/COLOR]を超えると、この制限を超える各コロニーに対して士気ペナルティを受けます。残念ながら、私たちのコロニー制限を増やす政府をまだ発見していません。より進んだ形の政府を可能にする技術を、研究または他の文明との取引により発見すべきです。もしファイル名であれば、英語をそのままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1541,9 +1547,9 @@
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>[I]「あなたの無能さは伝説 のものだ。」[/I]</Text>
-            <Text>[I]「あなたは私たちの文明 を破滅に導いている。」[/I]</Text>
-            <Text>[I]「あなたの平凡なリーダ ーシップにもかかわら ず、我々は生き残ります。」[/I]</Text>
+            <Text>[I]「あなたは有能な、しかし優れてはいない、支配者です。」[/I]</Text>
+            <Text>[I]「あなたは我々の文明の有能な管理者 ですが、もっと高みを目指すべ きです。」[/I]</Text>
+            <Text>[I]「私はどちらにも強い意 見はありません。」[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1555,9 +1561,9 @@
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>[I]「あなたの統治のおかげ で、我々の文明は繁栄していま す。」[/I]</Text>
-            <Text>[I]「あなたには永遠の支持 を誓います。」[/I]</Text>
-            <Text>[I]「私は名誉を持ってあな たに仕えます。」[/I]</Text>
+            <Text>[I]「あなたの統治のおかげで、我々の文明は繁栄しています。」[/I]</Text>
+            <Text>[I]「あなたには永遠の支持を誓います。」[/I]</Text>
+            <Text>[I]「私は名誉を持ってあなたに仕えます。」[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1570,8 +1576,8 @@
                 </StatRange>
             </Requirements>
             <Text>[I]「あなたは有能な、しかし優れてはいない、支配者です。」[/I]</Text>
-            <Text>[I]「あなたは我々の文明の有能な管理者 ですが、もっと高みを目指すべ きです。」[/I]</Text>
-            <Text>[I]「私はどちらにも強い意 見はありません。」[/I]</Text>
+            <Text>[I]「あなたは我々の文明の有能な管理者ですが、もっと高みを目指すべきです。」[/I]</Text>
+            <Text>[I]「私はどちらにも強い意見はありません。」[/I]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
