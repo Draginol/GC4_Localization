@@ -1,856 +1,759 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<StringTableList
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-    <StringTable>
-        <Label>Event_AncientArtifact_Name</Label>
-        <String>Ancient Artifact</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Dec</Label>
-        <String>Our explorers have discovered an ancient artifact of unknown origin. Some believe it holds the key to unlocking advanced technology, while others argue that it is a relic of our ancestors and should be preserved.[BR][BR]What should we do with this artifact?</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Opportunity_Bonus_Name</Label>
-        <String>Study the artifact for technological advancements.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Tradition_Bonus_Name</Label>
-        <String>Preserve the artifact as a symbol of our heritage.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Name</Label>
-        <String>Space Creature Migration</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Dec</Label>
-        <String>A massive migration of strange space creatures are migrating through our territory. They are creating havoc in their wake.  There is a great deal of political pressure on us to eliminate these creatures but we have heard you have a fondness for these kinds of things.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Compassion_Name</Label>
-        <String>Protect the creatures</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Compassion_Dec</Label>
-        <String>We will protect the space creatures and ensure their safe passage, earning the goodwill of other compassionate factions.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigrationCompassion_String1</Label>
-        <String>You protected the space whales</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Pragmatism_Name</Label>
-        <String>I have a better idea, we'll slaughter these creatures and extract new knowledge from them.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_SpaceWhaleMigration_Pragmatism_Dec</Label>
-        <String>These creatures won't suffer too much. Probably.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Name</Label>
-        <String>Technology Exchange</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Dec</Label>
-        <String>Our heroic explorers have come across a Precursor artifact left behind by the so-called Arnor.  We are not able to make sense of it.  It was suggested to us that you might be able to figure it out. We are willing to let you look at it provided that you share what you discover with us.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Cooperation_Bonus_Name</Label>
-        <String>Accept the exchange knowing that it will benefit them more.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Cooperation_Bonus_Dec</Label>
-        <String>By accepting the technology exchange, we gain +25 research units. However, they gained much more.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Cooperation_String1</Label>
-        <String>You accepted the technology exchange</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Cooperation_String2</Label>
-        <String>Your team will look at the artifact and suffer an acute case of butter fingers. -3 Relations with the {PLAYERFACTION:1} for 20 months. +25 Research for you. </String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Independence_Bonus_Name</Label>
-        <String>Agree to look at the artifact and then 'accidentally' destroy it.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Droppedit</Label>
-        <String>You purposely ruined our artifact.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Isolation_Bonus_Name</Label>
-        <String>We are too busy for this.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Isolation_Bonus_Dec</Label>
-        <String>By declining the technology exchange and isolating ourselves, we may strain diplomatic relations but can focus on our own path. -1 Relations with the {PLAYERFACTION:1} for 20 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_TechnologyExchange_Isolation_String1</Label>
-        <String>You declined to help us on the artifact.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Name</Label>
-        <String>Alternate Energy Source</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Desc</Label>
-        <String>Our civilization has recently discovered an alternate energy source, which we believe will revolutionize our industries. However, the energy source requires Elerium, a rare resource in our territory. We are requesting your help to develop this energy source. In return, we will share the benefits with your civilization.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Innovation_Name</Label>
-        <String>Provide Elerium for research even if we have to borrow some.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Innovation_Bonus</Label>
-        <String>Elerium Energy System</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Innovation_Dec</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 50 months.  </String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Tradition_Name</Label>
-        <String>We'd totally love to help with this project but we don't want to..</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Tradition_Dec</Label>
-        <String>-1 Relations with the {PLAYERFACTION:1} for 25 months.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Tradition_String1</Label>
-        <String>You didn't help us with the Elerium project.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AlternateEnergy_Innovation_String1</Label>
-        <String>You helped us with the Elerium project.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Name_5XA</Label>
-        <String>Refugees of disaster</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Dec_5XA</Label>
-        <String>Our home planet is suffering from a devastating natural disaster. Thousands of our people have been displaced and are seeking refuge. We ask for your assistance in this desperate time. Will you accept these refugees and help them find a new home?</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Compassion_Bonus_Name</Label>
-        <String>Accept the refugees.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Compassion_Bonus_Dec</Label>
-        <String>+1 to relations..</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeesCompassion_String1</Label>
-        <String>You accepted our refugees.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Cruelty_Bonus_Name</Label>
-        <String>I have a better idea. We will pick them up and put them to work as slaves.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_Refugees_Cruelty_Bonus_Dec</Label>
-        <String>Sell them off to one of your people for 300 credits. -2 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeesCruelty_String1</Label>
-        <String>You enslaved our refugees!</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Name</Label>
-        <String>Disputed Territory</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Dec</Label>
-        <String>Our territory contains a disputed region rich in resources. Unfortunately, a rival political faction on our world is also claiming it as their own. We are open to negotiation, but we need your support. If you back our claim, we will share the resources with you. However, if you remain neutral, we may not be able to maintain a friendly relationship.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Compassion_Bonus_Name</Label>
-        <String>Support their claim and share the resources hoping that the rival faction never gains power.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Compassion_Bonus_Dec</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 75 turns.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritoryCompassion_String1</Label>
-        <String>You supported my claim to the disputed territory</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Authority_Bonus_Name</Label>
-        <String>Remain neutral and let them handle the dispute.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritory_Authority_Bonus_Dec</Label>
-        <String>-2 Relations with the {PLAYERFACTION:1} for 25 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DisputedTerritoryAuthority_String1</Label>
-        <String>You remained neutral in the disputed territory</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Name</Label>
-        <String>Damaged Trade Ship</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Dec</Label>
-        <String>One of our freighters from homeworld has been damaged by an ion storm leaving it stranded in deep space near your territory. We would like some assistance.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Compassion_Bonus_Name</Label>
-        <String>Send assistance to the stranded ship.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Compassion_Bonus_Dec</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShipCompassion_String1</Label>
-        <String>You sent assistance to our stranded trade ship</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Authority_Bonus_Name</Label>
-        <String>Seize the opportunity to tax their cargo.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShip_Authority_Bonus_Dec</Label>
-        <String>+300 credits and -2 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_DamagedTradeShipAuthority_String1</Label>
-        <String>You seized our freighter.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Name_0X56CB</Label>
-        <String>The Dreadlord Artifact</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Dec_0X56CB</Label>
-        <String>We have come across some sort of device left behind by the Dread Lords.  We are not quite certain what it is and wanted to see if one of your researchers would be willing to review it.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Authority_Bonus_Name_0X56CB</Label>
-        <String>Take the artifact and activate it.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Authority_Bonus_Dec_0X56CB</Label>
-        <String>Unknown but -1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifactAuthority_String1_0X56CB</Label>
-        <String>You kept the ancient artifact for yourself</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Compassion_Bonus_Name_0X56CB</Label>
-        <String>Create a joint task force to study the artifact.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifact_Compassion_Bonus_Dec_0X56CB</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_AncientArtifactCompassion_String1_0X56CB</Label>
-        <String>The Artifact task force.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Name_0X56CD</Label>
-        <String>Failed Colonization Effort</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Dec_0X56CD</Label>
-        <String>Some of our people have decided to try to colonize worlds without our sanction. Their ship failed and the passengers are dead and the ship has drifted near your space.  We ask that you recover the ship for us. You can keep what you find on the ship.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Compassion_Bonus_Name_0X56CD</Label>
-        <String>Find and return the ship keeping the vast supply of goodies you find on the ship.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Compassion_Bonus_Dec_0X56CD</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Compassion_Bonus_Stat_0X56CD</Label>
-        <String>Refugee Ship Goodies</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisisCompassion_String1_0X56CD</Label>
-        <String>You returned our lost companions.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Cruelty_Bonus_Name_0X56CD</Label>
-        <String>I think we'll just take the ship and the items on board.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisisEvil_String1_0X56CD</Label>
-        <String>You stole our goods!</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_RefugeeCrisis_Evil_Bonus_Dec_0X56CD</Label>
-        <String>-1 Relations with the {PLAYERFACTION:1} for 50 months.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Name_0X47AE</Label>
-        <String>Enemy of the state</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Dec_0X47AE</Label>
-        <String>One of our esteemed generals has dared to stage a coup against me! We have successfully thwarted his treacherous plans, but he has managed to evade our forces and has taken refuge on your homeworld. It is of the utmost importance that you cooperate in delivering this traitor back to us.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Authority_Bonus_Name_0X47AE</Label>
-        <String>We will find and deliver the traitor</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Authority_Bonus_Dec_0X47AE</Label>
-        <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X57AE</Label>
-        <String>This really isn't our problem. He can do what he wants..</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X47AE</Label>
-        <String>We irritate {PLAYERFACTION:1} and the fugitive's actions are a pain for awhile. But his antics result in a comedy show.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitive_Calm_Bonus_Stat_0X47AE</Label>
-        <String>Amusing fugitive</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CoupFugitiveAuthority_String1_0X47AE</Label>
-        <String>You gave us the head of our traitor.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Name_0X47AB</Label>
-        <String>Invasive Species</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Dec_0X47AB</Label>
-        <String>We are getting reports of destruction due to pests that originated from your homeworld that are now on our world from imports. We demand you pay us 500 credits to cover the cost of repairing the environment.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Comp_Bonus_Name_0X47AB</Label>
-        <String>Compensate for the damages.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Cruel_Bonus_Name_0X47AB</Label>
-        <String>Not our problem.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Comp_Bonus_Dec_0X47AB</Label>
-        <String>Pay them what they want. We give them a Monsantium Deposit and we lose one.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Cruel_Bonus_Dec_0X47AB</Label>
-        <String>-1 Relations with the {PLAYERFACTION:1} for 50 months</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_InvasiveSpecies_Cruel_String1_0X47AB</Label>
-        <String>Your bugs are damaging our world.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Name_0X9A7BC</Label>
-        <String>Cultural Invasion</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Dec_0X9A7BC</Label>
-        <String>The relentless tide of your people's music and culture has inundated our worlds, permeating every corner of our society. Vibrant melodies and infectious rhythms echo through our streets, distracting our citizens and disrupting the harmony of our way of life. The colorful tapestry of your traditions and customs entwines with our own, threatening to unravel the very fabric of our civilization. We demand that you intervene and quell the storm.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Authority_Bonus_Name_0X9A7BC</Label>
-        <String>Impose strict cultural regulations.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Authority_Bonus_Dec_0X9A7BC</Label>
-        <String>We spend money and control but improve relations with the {PLAYERFACTION:1}. </String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasionAuthority_String1_0X9A7BC</Label>
-        <String>You tooks steps to preserve our culture.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Compassion_Bonus_Name_0X9A7BC</Label>
-        <String>Promote cultural exchange whereby we actively promote their culture with our people.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Compassion_Bonus_Dec_0X9A7BC</Label>
-        <String>Promote cultural exchange whereby we actively promote their culture with our people. This will lower our influence generation..</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Calm_Bonus_Name_0X9A7BC</Label>
-        <String>We'll license our music to native performers.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Calm_Bonus_Dec_0X9A7BC</Label>
-        <String>We improve people's moods on both sides.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Calm_Bonus_Stat_0X9A7BC</Label>
-        <String>Cultural Exchange Program</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasionCalm_String1_0X9A7BC</Label>
-        <String>Our people enjoy your music.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Event_CulturalInvasion_Compassion_Bonus_Stat_0X9A7BC</Label>
-        <String>Foreign Exchange Agreement</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Event_CultureExchange_Name_0X9A7BC</Label>
-        <String>Cultural Exchange Festival</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Dec_0X9A7BC</Label>
-        <String>We have a proposal for you. In the interest of peace we would like to hold a Cultural Exchange Festival. The are art, music, and traditions from both civilizations might promote understanding and unity.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Choice1_0X9A7BC</Label>
-        <String>Agree to the Festival</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Choice1_Dec_0X9A7BC</Label>
-        <String>We have decided to promote the event, expecting an influx of tourists and a boost in cultural appreciation. However, we will have to spend some control to manage the diverse crowd.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Choice2_0X9A7BC</Label>
-        <String>Decline the Proposal</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Choice2_Dec_0X9A7BC</Label>
-        <String>We have decided against the cultural festival. We prioritize our internal peace and stability. This decision, however, may not sit well with the {PLAYERFACTIONLONG:1}.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CultureExchange_Diplomatic_0X9A7BC</Label>
-        <String>You declined our festival proposal</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Name</Label>
-        <String>The Pilgrimage Proposal</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Dec</Label>
-        <String>Our people are very spiritual. There are areas within your sphere of influence that our people believe connect them to the ancient Mithilar. Would you allow them to pass through your territory? We would appreciate it.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Choice1_Name</Label>
-        <String>Allow the Pilgrimage.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Choice1_Dec</Label>
-        <String>Recognizing the spiritual significance and respecting their traditions, we have granted them permission for the pilgrimage. It will cost some control to ensure their safety.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Choice2_Name</Label>
-        <String>No. I don't think so.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_0x49B2_Choice2_Dec</Label>
-        <String>The last thing we need are a bunch of alien spies traveling through our space.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_GoodDiplomaticReason_0x49B2</Label>
-        <String>Grateful for Pilgrimage Approval</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CivPilgrimage_NegativeDiplomaticReason_0x49B2</Label>
-        <String>Disappointed by Pilgrimage Denial</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Name</Label>
-        <String>The Ghastly Request</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Dec</Label>
-        <String>We, the {PLAYERFACTIONLONG:1}, are approaching a significant period in our lifecycle — our sacred mating ritual.[BR][BR]For the ritual's success, we require sentients to feast upon. We would like you to provide these sentients. You can gather them from your prisons if that helps you justify it. But its importance to our kind cannot be overstated. Will you offer this gesture of goodwill?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Choice1_Name</Label>
-        <String>Fine. Round up some criminals to feed to them.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Choice1_Dec</Label>
-        <String>The choice will surely cause unrest among our people. But it will improve relations at least. For now.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Choice2_Name</Label>
-        <String>Absolutely not.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_0x15E9_Choice2_Dec</Label>
-        <String>They will be unhappy with this choice but our people will still respect you just as little tomorrow..</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_PositiveDiplomaticReason_0x15E9</Label>
-        <String>You supported our flesh festival</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_FeastProposal_NegativeDiplomaticReason_0x15E9</Label>
-        <String>You ruined our festival</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Name</Label>
-        <String>The Bloody Proposal</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Dec</Label>
-        <String>We, the {PLAYERFACTIONLONG:1}, have a long-standing tradition of games that test the true capabilities of one's physique and mental prowess. For warm up, your weak species would be well advised to provide some specimens for our warriors to practice on.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Choice1_Name</Label>
-        <String>Only if I get to watch.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Choice1_Dec</Label>
-        <String>Our people will likely be horrified by this decision, but it may prevent further conflict with the cruel {PLAYERFACTIONLONG:1}.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Choice2_Name</Label>
-        <String>Refuse their vile proposal</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_0x23F4_Choice2_Dec</Label>
-        <String>While our people will be relieved, this might further sour our relations with them.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_PositiveDiplomaticReason_0x23F4</Label>
-        <String>You know your place</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SportRequest_NegativeDiplomaticReason_0x23F4</Label>
-        <String>You have too much spine</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Name</Label>
-        <String>Deepwater Festival</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Dec</Label>
-        <String>The {PLAYERFACTIONLONG:1} cordially invites your people to join our Deepwater Festival, a celebration of our amphibious heritage. We request some of your best swimmers to experience the depth of our oceans. It's a unique, once-in-a-lifetime opportunity. But, we must admit, it comes with some risks. [BR][BR]Will you accept?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Choice1_Name</Label>
-        <String>We will send volunteers.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Choice1_Dec</Label>
-        <String>It's an opportunity for cultural exchange but also some risk if any of our swimmers die.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Choice2_Name</Label>
-        <String>This is too dangerous for us to participate in.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_0x3C4D_Choice2_Dec</Label>
-        <String>Even though we have some people who would jump at the chance to participate, the scandal if something went wrong would be a disaster.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_PositiveDiplomaticReason_0x3C4D</Label>
-        <String>You are good swimmers</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_SubmersionFestival_NegativeDiplomaticReason_0x3C4D</Label>
-        <String>You are cowardly</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Name</Label>
-        <String>Deep Water</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Dec</Label>
-        <String>Our people, the {PLAYERFACTIONLONG:1}, have a profound connection to water. We wish to explore the depths of your oceans, study its inhabitants, and understand its mysteries.[BR][BR]We assure you, our intentions are purely scientific. Would you permit us?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Choice1_Name</Label>
-        <String>This sounds great.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Choice1_Dec</Label>
-        <String>It's a step towards interstellar cooperation, but our coastal communities are particularly wary.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Choice2_Name</Label>
-        <String>No. Our worlds are not open for this.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_0x4F5A_Choice2_Dec</Label>
-        <String>We value our autonomy and the sentiments of our people. The seas remain ours alone.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_PositiveDiplomaticReason_0x4F5A</Label>
-        <String>You granted us ocean access</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_OceanExploration_NegativeDiplomaticReason_0x4F5A</Label>
-        <String>You denied us your oceans</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Name</Label>
-        <String>The Way</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Dec</Label>
-        <String>As you know the {PLAYERFACTIONLONG:1}, have been enlightened by The Way. We wish to bring you salvation by setting up shrines on your planets, teaching your people of our sacred beliefs. Embrace The Way and allow us to guide you to the true path. Do you accept?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Choice1_Name</Label>
-        <String>Very well. Set up your shrines.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Choice1_Dec</Label>
-        <String>This will reduce our cultural influence growth for a time.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Choice2_Name</Label>
-        <String>Our people are not interested.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_0x5A1B_Choice2_Dec</Label>
-        <String>They may not take this rejection lightly, but our influence remains undiminished.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_PositiveDiplomaticReason_0x5A1B</Label>
-        <String>You embraced The Way</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DevoutShrines_NegativeDiplomaticReason_0x5A1B</Label>
-        <String>You rejected The Way</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Name</Label>
-        <String>Dream Spies</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Dec</Label>
-        <String>We've been watching you. We know your people have been infiltrating the dreams of the {PLAYERFACTIONLONG:1}. We're not crazy. [BR][BR]We demand 10 units of Antimatter to build a device to shield our minds from your prying.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Name</Label>
-        <String>You can have the Antimatter but I doubt it will help.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Dec</Label>
-        <String>While the claims are baseless, this might be the way to keep the peace.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Name</Label>
-        <String>If you have to say you're not crazy...</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Dec</Label>
-        <String>They might be furious, but we won't be bullied based on delusions.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_PositiveDiplomaticReason_0x8C3D</Label>
-        <String>You're not spying on our dreams</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_DreamSpyingAccusation_NegativeDiplomaticReason_0x8C3D</Label>
-        <String>You are spying on our dreams</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Name</Label>
-        <String>Weapons of War</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Dec</Label>
-        <String>We, the {PLAYERFACTIONLONG:1}, have come across some... extra military hardware. We thought you might be interested. These arms will significantly bolster your weapons capabilities. However, remember, such deals remain between us. Do we have an agreement?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Name</Label>
-        <String>Better weapons on our ships? Yes. Yes please.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Dec</Label>
-        <String>These weapons will help but they will lower our overall diplomatic ability.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Name</Label>
-        <String>We must pass on this.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Dec</Label>
-        <String>We are not in the habit of installing strange weapons from foreign governments.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_PositiveDiplomaticReason_0xA12F</Label>
-        <String>You like our weapons</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_WarProfiteerDeal_NegativeDiplomaticReason_0xA12F</Label>
-        <String>You are dumb</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Name</Label>
-        <String>Special Offer</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Dec</Label>
-        <String>We, the {PLAYERFACTIONLONG:1}, have a limited time offer for you. A rare Harmony Crystal, known to enhance the wellbeing and productivity of colonies or something. All we ask for in return is a modest sum. </String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Choice1_Name</Label>
-        <String>Take the deal</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Choice1_Dec</Label>
-        <String>We can use this.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Choice2_Name</Label>
-        <String>We can't afford it right now.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_TraderDeal_0xC45D_Choice2_Dec</Label>
-        <String>Perhaps another time, when our coffers are more abundant.</String>
-    </StringTable>
-    
-
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Name</Label>
-        <String>Persuasion Workshop</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Dec</Label>
-        <String>Our traders have honed the art of persuasion through countless dealings across the galaxy. For a fee we'd be willing to share some of these trade secrets with you. This knowledge could greatly benefit your future negotiations. Interested?</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Choice1_Name</Label>
-        <String>Invest in the workshop</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Choice1_Dec</Label>
-        <String>The art of persuasion is a valuable skill. We accept. We can use persuassion when trading to get better deals.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Choice2_Name</Label>
-        <String>Decline the offer</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_PersuasionOffer_0xC45E_Choice2_Dec</Label>
-        <String>We will rely on our own methods of negotiation.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Name</Label>
-        <String>Crystal Resonance</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Dec</Label>
-        <String>The {PLAYERFACTION:1} have come to you with a proposal. We can detect harmonics that are beyond your imagination. We are willing to share knowledge on how to detect these harmonics which should aid your science but in return we want access to some of your worlds that have unique crystalline formations.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Choice1_Name</Label>
-        <String>Grant access.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Choice1_Dec</Label>
-        <String>The ancient knowledge of the universe is invaluable. We accept.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Choice2_Name</Label>
-        <String>No thank you.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Choice2_Dec</Label>
-        <String>Our resources are for our own use. We cannot grant access. This may insult them.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Event_CrystalResonance_0xC45F_Diplomacy</Label>
-        <String>You chose...poorly</String>
-    </StringTable>
-    
-    
-
-
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>Event_AncientArtifact_Name</Label>
+    <String>Ancient Artifact</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Dec</Label>
+    <String>Our explorers have discovered an ancient artifact of unknown origin. Some believe it holds the key to unlocking advanced technology, while others argue that it is a relic of our ancestors and should be preserved.[BR][BR]What should we do with this artifact?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Opportunity_Bonus_Name</Label>
+    <String>Study the artifact for technological advancements.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Tradition_Bonus_Name</Label>
+    <String>Preserve the artifact as a symbol of our heritage.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Name</Label>
+    <String>Space Creature Migration</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Dec</Label>
+    <String>A massive migration of strange space creatures are migrating through our territory. They are creating havoc in their wake.  There is a great deal of political pressure on us to eliminate these creatures but we have heard you have a fondness for these kinds of things.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Compassion_Name</Label>
+    <String>Protect the creatures</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Compassion_Dec</Label>
+    <String>We will protect the space creatures and ensure their safe passage, earning the goodwill of other compassionate factions.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigrationCompassion_String1</Label>
+    <String>You protected the space whales</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Pragmatism_Name</Label>
+    <String>I have a better idea, we'll slaughter these creatures and extract new knowledge from them.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SpaceWhaleMigration_Pragmatism_Dec</Label>
+    <String>These creatures won't suffer too much. Probably.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Name</Label>
+    <String>Technology Exchange</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Dec</Label>
+    <String>Our heroic explorers have come across a Precursor artifact left behind by the so-called Arnor.  We are not able to make sense of it.  It was suggested to us that you might be able to figure it out. We are willing to let you look at it provided that you share what you discover with us.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Cooperation_Bonus_Name</Label>
+    <String>Accept the exchange knowing that it will benefit them more.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Cooperation_Bonus_Dec</Label>
+    <String>By accepting the technology exchange, we gain +25 research units. However, they gained much more.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Cooperation_String1</Label>
+    <String>You accepted the technology exchange</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Cooperation_String2</Label>
+    <String>Your team will look at the artifact and suffer an acute case of butter fingers. -3 Relations with the {PLAYERFACTION:1} for 20 months. +25 Research for you. </String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Independence_Bonus_Name</Label>
+    <String>Agree to look at the artifact and then 'accidentally' destroy it.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Droppedit</Label>
+    <String>You purposely ruined our artifact.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Isolation_Bonus_Name</Label>
+    <String>We are too busy for this.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Isolation_Bonus_Dec</Label>
+    <String>By declining the technology exchange and isolating ourselves, we may strain diplomatic relations but can focus on our own path. -1 Relations with the {PLAYERFACTION:1} for 20 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TechnologyExchange_Isolation_String1</Label>
+    <String>You declined to help us on the artifact.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Name</Label>
+    <String>Alternate Energy Source</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Desc</Label>
+    <String>Our civilization has recently discovered an alternate energy source, which we believe will revolutionize our industries. However, the energy source requires Elerium, a rare resource in our territory. We are requesting your help to develop this energy source. In return, we will share the benefits with your civilization.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Innovation_Name</Label>
+    <String>Provide Elerium for research even if we have to borrow some.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Innovation_Bonus</Label>
+    <String>Elerium Energy System</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Innovation_Dec</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 50 months.  </String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Tradition_Name</Label>
+    <String>We'd totally love to help with this project but we don't want to..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Tradition_Dec</Label>
+    <String>-1 Relations with the {PLAYERFACTION:1} for 25 months.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Tradition_String1</Label>
+    <String>You didn't help us with the Elerium project.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AlternateEnergy_Innovation_String1</Label>
+    <String>You helped us with the Elerium project.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Name_5XA</Label>
+    <String>Refugees of disaster</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Dec_5XA</Label>
+    <String>Our home planet is suffering from a devastating natural disaster. Thousands of our people have been displaced and are seeking refuge. We ask for your assistance in this desperate time. Will you accept these refugees and help them find a new home?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Compassion_Bonus_Name</Label>
+    <String>Accept the refugees.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Compassion_Bonus_Dec</Label>
+    <String>+1 to relations..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeesCompassion_String1</Label>
+    <String>You accepted our refugees.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Cruelty_Bonus_Name</Label>
+    <String>I have a better idea. We will pick them up and put them to work as slaves.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_Refugees_Cruelty_Bonus_Dec</Label>
+    <String>Sell them off to one of your people for 300 credits. -2 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeesCruelty_String1</Label>
+    <String>You enslaved our refugees!</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Name</Label>
+    <String>Disputed Territory</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Dec</Label>
+    <String>Our territory contains a disputed region rich in resources. Unfortunately, a rival political faction on our world is also claiming it as their own. We are open to negotiation, but we need your support. If you back our claim, we will share the resources with you. However, if you remain neutral, we may not be able to maintain a friendly relationship.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Compassion_Bonus_Name</Label>
+    <String>Support their claim and share the resources hoping that the rival faction never gains power.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Compassion_Bonus_Dec</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 75 turns.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritoryCompassion_String1</Label>
+    <String>You supported my claim to the disputed territory</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Authority_Bonus_Name</Label>
+    <String>Remain neutral and let them handle the dispute.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritory_Authority_Bonus_Dec</Label>
+    <String>-2 Relations with the {PLAYERFACTION:1} for 25 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DisputedTerritoryAuthority_String1</Label>
+    <String>You remained neutral in the disputed territory</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Name</Label>
+    <String>Damaged Trade Ship</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Dec</Label>
+    <String>One of our freighters from homeworld has been damaged by an ion storm leaving it stranded in deep space near your territory. We would like some assistance.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Compassion_Bonus_Name</Label>
+    <String>Send assistance to the stranded ship.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Compassion_Bonus_Dec</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShipCompassion_String1</Label>
+    <String>You sent assistance to our stranded trade ship</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Authority_Bonus_Name</Label>
+    <String>Seize the opportunity to tax their cargo.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShip_Authority_Bonus_Dec</Label>
+    <String>+300 credits and -2 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DamagedTradeShipAuthority_String1</Label>
+    <String>You seized our freighter.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Name_0X56CB</Label>
+    <String>The Dreadlord Artifact</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Dec_0X56CB</Label>
+    <String>We have come across some sort of device left behind by the Dread Lords.  We are not quite certain what it is and wanted to see if one of your researchers would be willing to review it.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Authority_Bonus_Name_0X56CB</Label>
+    <String>Take the artifact and activate it.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Authority_Bonus_Dec_0X56CB</Label>
+    <String>Unknown but -1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifactAuthority_String1_0X56CB</Label>
+    <String>You kept the ancient artifact for yourself</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Compassion_Bonus_Name_0X56CB</Label>
+    <String>Create a joint task force to study the artifact.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifact_Compassion_Bonus_Dec_0X56CB</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_AncientArtifactCompassion_String1_0X56CB</Label>
+    <String>The Artifact task force.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Name_0X56CD</Label>
+    <String>Failed Colonization Effort</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Dec_0X56CD</Label>
+    <String>Some of our people have decided to try to colonize worlds without our sanction. Their ship failed and the passengers are dead and the ship has drifted near your space.  We ask that you recover the ship for us. You can keep what you find on the ship.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Compassion_Bonus_Name_0X56CD</Label>
+    <String>Find and return the ship keeping the vast supply of goodies you find on the ship.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Compassion_Bonus_Dec_0X56CD</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Compassion_Bonus_Stat_0X56CD</Label>
+    <String>Refugee Ship Goodies</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisisCompassion_String1_0X56CD</Label>
+    <String>You returned our lost companions.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Cruelty_Bonus_Name_0X56CD</Label>
+    <String>I think we'll just take the ship and the items on board.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisisEvil_String1_0X56CD</Label>
+    <String>You stole our goods!</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_RefugeeCrisis_Evil_Bonus_Dec_0X56CD</Label>
+    <String>-1 Relations with the {PLAYERFACTION:1} for 50 months.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Name_0X47AE</Label>
+    <String>Enemy of the state</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Dec_0X47AE</Label>
+    <String>One of our esteemed generals has dared to stage a coup against me! We have successfully thwarted his treacherous plans, but he has managed to evade our forces and has taken refuge on your homeworld. It is of the utmost importance that you cooperate in delivering this traitor back to us.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Authority_Bonus_Name_0X47AE</Label>
+    <String>We will find and deliver the traitor</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Authority_Bonus_Dec_0X47AE</Label>
+    <String>+1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X57AE</Label>
+    <String>This really isn't our problem. He can do what he wants..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X47AE</Label>
+    <String>We irritate {PLAYERFACTION:1} and the fugitive's actions are a pain for awhile. But his antics result in a comedy show.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitive_Calm_Bonus_Stat_0X47AE</Label>
+    <String>Amusing fugitive</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CoupFugitiveAuthority_String1_0X47AE</Label>
+    <String>You gave us the head of our traitor.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Name_0X47AB</Label>
+    <String>Invasive Species</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Dec_0X47AB</Label>
+    <String>We are getting reports of destruction due to pests that originated from your homeworld that are now on our world from imports. We demand you pay us 500 credits to cover the cost of repairing the environment.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Comp_Bonus_Name_0X47AB</Label>
+    <String>Compensate for the damages.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Cruel_Bonus_Name_0X47AB</Label>
+    <String>Not our problem.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Comp_Bonus_Dec_0X47AB</Label>
+    <String>Pay them what they want. We give them a Monsantium Deposit and we lose one.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Cruel_Bonus_Dec_0X47AB</Label>
+    <String>-1 Relations with the {PLAYERFACTION:1} for 50 months</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_InvasiveSpecies_Cruel_String1_0X47AB</Label>
+    <String>Your bugs are damaging our world.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Name_0X9A7BC</Label>
+    <String>Cultural Invasion</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Dec_0X9A7BC</Label>
+    <String>The relentless tide of your people's music and culture has inundated our worlds, permeating every corner of our society. Vibrant melodies and infectious rhythms echo through our streets, distracting our citizens and disrupting the harmony of our way of life. The colorful tapestry of your traditions and customs entwines with our own, threatening to unravel the very fabric of our civilization. We demand that you intervene and quell the storm.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Authority_Bonus_Name_0X9A7BC</Label>
+    <String>Impose strict cultural regulations.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Authority_Bonus_Dec_0X9A7BC</Label>
+    <String>We spend money and control but improve relations with the {PLAYERFACTION:1}. </String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasionAuthority_String1_0X9A7BC</Label>
+    <String>You tooks steps to preserve our culture.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Compassion_Bonus_Name_0X9A7BC</Label>
+    <String>Promote cultural exchange whereby we actively promote their culture with our people.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Compassion_Bonus_Dec_0X9A7BC</Label>
+    <String>Promote cultural exchange whereby we actively promote their culture with our people. This will lower our influence generation..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Calm_Bonus_Name_0X9A7BC</Label>
+    <String>We'll license our music to native performers.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Calm_Bonus_Dec_0X9A7BC</Label>
+    <String>We improve people's moods on both sides.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Calm_Bonus_Stat_0X9A7BC</Label>
+    <String>Cultural Exchange Program</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasionCalm_String1_0X9A7BC</Label>
+    <String>Our people enjoy your music.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CulturalInvasion_Compassion_Bonus_Stat_0X9A7BC</Label>
+    <String>Foreign Exchange Agreement</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Name_0X9A7BC</Label>
+    <String>Cultural Exchange Festival</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Dec_0X9A7BC</Label>
+    <String>We have a proposal for you. In the interest of peace we would like to hold a Cultural Exchange Festival. The are art, music, and traditions from both civilizations might promote understanding and unity.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Choice1_0X9A7BC</Label>
+    <String>Agree to the Festival</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Choice1_Dec_0X9A7BC</Label>
+    <String>We have decided to promote the event, expecting an influx of tourists and a boost in cultural appreciation. However, we will have to spend some control to manage the diverse crowd.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Choice2_0X9A7BC</Label>
+    <String>Decline the Proposal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Choice2_Dec_0X9A7BC</Label>
+    <String>We have decided against the cultural festival. We prioritize our internal peace and stability. This decision, however, may not sit well with the {PLAYERFACTIONLONG:1}.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CultureExchange_Diplomatic_0X9A7BC</Label>
+    <String>You declined our festival proposal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Name</Label>
+    <String>The Pilgrimage Proposal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Dec</Label>
+    <String>Our people are very spiritual. There are areas within your sphere of influence that our people believe connect them to the ancient Mithilar. Would you allow them to pass through your territory? We would appreciate it.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Choice1_Name</Label>
+    <String>Allow the Pilgrimage.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Choice1_Dec</Label>
+    <String>Αναγνωρίζοντας την πνευματική σημασία και σεβόμενοι τις παραδόσεις τους, τους έχουμε χορηγήσει άδεια για το προσκύνημα. Θα κοστίσει κάποιο έλεγχο για να διασφαλιστεί η ασφάλειά τους.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Choice2_Name</Label>
+    <String>Όχι. Δεν νομίζω..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_0x49B2_Choice2_Dec</Label>
+    <String>Το τελευταίο πράγμα που χρειαζόμαστε είναι μια ομάδα εξωγήινων κατασκόπων που ταξιδεύουν μέσα στο διάστημά μας..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_GoodDiplomaticReason_0x49B2</Label>
+    <String>Ευγνώμον για την Έγκριση της Προσκυνηματικής Εκδρομής.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CivPilgrimage_NegativeDiplomaticReason_0x49B2</Label>
+    <String>Απογοητευμένος από την Άρνηση Προσκυνήματος.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Name</Label>
+    <String>Το Τρομερό Αίτημα</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Dec</Label>
+    <String>We, the {PLAYERFACTIONLONG:1}, are approaching a significant period in our lifecycle — our sacred mating ritual.[BR][BR]For the ritual's success, we require sentients to feast upon. We would like you to provide these sentients. You can gather them from your prisons if that helps you justify it. But its importance to our kind cannot be overstated. Will you offer this gesture of goodwill?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Choice1_Name</Label>
+    <String>Fine. Round up some criminals to feed to them.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Choice1_Dec</Label>
+    <String>The choice will surely cause unrest among our people. But it will improve relations at least. For now.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Choice2_Name</Label>
+    <String>Absolutely not.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_0x15E9_Choice2_Dec</Label>
+    <String>They will be unhappy with this choice but our people will still respect you just as little tomorrow..</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_PositiveDiplomaticReason_0x15E9</Label>
+    <String>You supported our flesh festival</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_FeastProposal_NegativeDiplomaticReason_0x15E9</Label>
+    <String>You ruined our festival</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Name</Label>
+    <String>The Bloody Proposal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Dec</Label>
+    <String>We, the {PLAYERFACTIONLONG:1}, have a long-standing tradition of games that test the true capabilities of one's physique and mental prowess. For warm up, your weak species would be well advised to provide some specimens for our warriors to practice on.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Choice1_Name</Label>
+    <String>Only if I get to watch.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Choice1_Dec</Label>
+    <String>Our people will likely be horrified by this decision, but it may prevent further conflict with the cruel {PLAYERFACTIONLONG:1}.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Choice2_Name</Label>
+    <String>Refuse their vile proposal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_0x23F4_Choice2_Dec</Label>
+    <String>While our people will be relieved, this might further sour our relations with them.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_PositiveDiplomaticReason_0x23F4</Label>
+    <String>You know your place</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SportRequest_NegativeDiplomaticReason_0x23F4</Label>
+    <String>You have too much spine</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Name</Label>
+    <String>Deepwater Festival</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Dec</Label>
+    <String>The {PLAYERFACTIONLONG:1} cordially invites your people to join our Deepwater Festival, a celebration of our amphibious heritage. We request some of your best swimmers to experience the depth of our oceans. It's a unique, once-in-a-lifetime opportunity. But, we must admit, it comes with some risks. [BR][BR]Will you accept?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Choice1_Name</Label>
+    <String>We will send volunteers.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Choice1_Dec</Label>
+    <String>It's an opportunity for cultural exchange but also some risk if any of our swimmers die.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Choice2_Name</Label>
+    <String>This is too dangerous for us to participate in.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_0x3C4D_Choice2_Dec</Label>
+    <String>Even though we have some people who would jump at the chance to participate, the scandal if something went wrong would be a disaster.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_PositiveDiplomaticReason_0x3C4D</Label>
+    <String>You are good swimmers</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_SubmersionFestival_NegativeDiplomaticReason_0x3C4D</Label>
+    <String>You are cowardly</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Name</Label>
+    <String>Deep Water</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Dec</Label>
+    <String>Our people, the {PLAYERFACTIONLONG:1}, have a profound connection to water. We wish to explore the depths of your oceans, study its inhabitants, and understand its mysteries.[BR][BR]We assure you, our intentions are purely scientific. Would you permit us?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Choice1_Name</Label>
+    <String>This sounds great.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Choice1_Dec</Label>
+    <String>It's a step towards interstellar cooperation, but our coastal communities are particularly wary.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Choice2_Name</Label>
+    <String>No. Our worlds are not open for this.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_0x4F5A_Choice2_Dec</Label>
+    <String>We value our autonomy and the sentiments of our people. The seas remain ours alone.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_PositiveDiplomaticReason_0x4F5A</Label>
+    <String>You granted us ocean access</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_OceanExploration_NegativeDiplomaticReason_0x4F5A</Label>
+    <String>You denied us your oceans</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Name</Label>
+    <String>The Way</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Dec</Label>
+    <String>As you know the {PLAYERFACTIONLONG:1}, have been enlightened by The Way. We wish to bring you salvation by setting up shrines on your planets, teaching your people of our sacred beliefs. Embrace The Way and allow us to guide you to the true path. Do you accept?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Choice1_Name</Label>
+    <String>Very well. Set up your shrines.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Choice1_Dec</Label>
+    <String>This will reduce our cultural influence growth for a time.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Choice2_Name</Label>
+    <String>Our people are not interested.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_0x5A1B_Choice2_Dec</Label>
+    <String>They may not take this rejection lightly, but our influence remains undiminished.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_PositiveDiplomaticReason_0x5A1B</Label>
+    <String>You embraced The Way</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DevoutShrines_NegativeDiplomaticReason_0x5A1B</Label>
+    <String>You rejected The Way</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Name</Label>
+    <String>Dream Spies</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Dec</Label>
+    <String>We've been watching you. We know your people have been infiltrating the dreams of the {PLAYERFACTIONLONG:1}. We're not crazy. [BR][BR]We demand 10 units of Antimatter to build a device to shield our minds from your prying.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Name</Label>
+    <String>You can have the Antimatter but I doubt it will help.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Dec</Label>
+    <String>While the claims are baseless, this might be the way to keep the peace.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Name</Label>
+    <String>If you have to say you're not crazy...</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Dec</Label>
+    <String>They might be furious, but we won't be bullied based on delusions.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_PositiveDiplomaticReason_0x8C3D</Label>
+    <String>You're not spying on our dreams</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_DreamSpyingAccusation_NegativeDiplomaticReason_0x8C3D</Label>
+    <String>You are spying on our dreams</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Name</Label>
+    <String>Weapons of War</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Dec</Label>
+    <String>We, the {PLAYERFACTIONLONG:1}, have come across some... extra military hardware. We thought you might be interested. These arms will significantly bolster your weapons capabilities. However, remember, such deals remain between us. Do we have an agreement?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Name</Label>
+    <String>Better weapons on our ships? Yes. Yes please.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Dec</Label>
+    <String>These weapons will help but they will lower our overall diplomatic ability.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Name</Label>
+    <String>We must pass on this.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Dec</Label>
+    <String>We are not in the habit of installing strange weapons from foreign governments.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_PositiveDiplomaticReason_0xA12F</Label>
+    <String>You like our weapons</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_WarProfiteerDeal_NegativeDiplomaticReason_0xA12F</Label>
+    <String>You are dumb</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Name</Label>
+    <String>Special Offer</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Dec</Label>
+    <String>We, the {PLAYERFACTIONLONG:1}, have a limited time offer for you. A rare Harmony Crystal, known to enhance the wellbeing and productivity of colonies or something. All we ask for in return is a modest sum. </String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Choice1_Name</Label>
+    <String>Take the deal</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Choice1_Dec</Label>
+    <String>We can use this.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Choice2_Name</Label>
+    <String>We can't afford it right now.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_TraderDeal_0xC45D_Choice2_Dec</Label>
+    <String>Perhaps another time, when our coffers are more abundant.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Name</Label>
+    <String>Persuasion Workshop</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Dec</Label>
+    <String>Our traders have honed the art of persuasion through countless dealings across the galaxy. For a fee we'd be willing to share some of these trade secrets with you. This knowledge could greatly benefit your future negotiations. Interested?</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Choice1_Name</Label>
+    <String>Invest in the workshop</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Choice1_Dec</Label>
+    <String>The art of persuasion is a valuable skill. We accept. We can use persuassion when trading to get better deals.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Choice2_Name</Label>
+    <String>Decline the offer</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_PersuasionOffer_0xC45E_Choice2_Dec</Label>
+    <String>We will rely on our own methods of negotiation.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Name</Label>
+    <String>Crystal Resonance</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Dec</Label>
+    <String>The {PLAYERFACTION:1} have come to you with a proposal. We can detect harmonics that are beyond your imagination. We are willing to share knowledge on how to detect these harmonics which should aid your science but in return we want access to some of your worlds that have unique crystalline formations.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Choice1_Name</Label>
+    <String>Grant access.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Choice1_Dec</Label>
+    <String>The ancient knowledge of the universe is invaluable. We accept.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Choice2_Name</Label>
+    <String>No thank you.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Choice2_Dec</Label>
+    <String>Our resources are for our own use. We cannot grant access. This may insult them.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Event_CrystalResonance_0xC45F_Diplomacy</Label>
+    <String>You chose...poorly</String>
+  </StringTable>
 </StringTableList>
