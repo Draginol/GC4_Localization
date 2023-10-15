@@ -33,6 +33,10 @@ def parse_xml(directory, data_dict, translated=False):
             for entry in root.findall("StringTable"):
                 label = entry.find("Label").text
                 text = entry.find("String").text
+
+                if text is None:
+                    print(f"Warning: Empty text found for label: {label} in file: {filename}")
+                    continue
                 
                 # Escape the text to handle special characters.
                 text_escaped = escape_special_chars(text)
