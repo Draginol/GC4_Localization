@@ -68,6 +68,8 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>子 空间频率 系统</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -75,6 +77,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>数据传输 协议</Text>
             <PreferenceWeight>2000</PreferenceWeight>
@@ -82,6 +85,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
             </Requirements>
             <Text>文化 翻译</Text>
             <PreferenceWeight>5000</PreferenceWeight>
@@ -169,7 +173,16 @@
         <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
             <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            
+            <Text>辐射 洞察</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>技术 提取</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -177,6 +190,7 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>知识 囤积</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -750,16 +764,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>辐射 洞察</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+
     
     <FlavorTextDef>
         <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
@@ -771,6 +776,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
