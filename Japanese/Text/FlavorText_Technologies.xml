@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <FlavorTextDef>
         <InternalName>Tech_Planetology_FlavorText_DisplayName</InternalName>
@@ -69,6 +68,8 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>サブスペース周波数シ ステム</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -76,6 +77,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>データ伝送プロトコル</Text>
             <PreferenceWeight>2000</PreferenceWeight>
@@ -83,6 +85,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
             </Requirements>
             <Text>文化的翻訳</Text>
             <PreferenceWeight>5000</PreferenceWeight>
@@ -106,7 +109,7 @@
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>私たちの種族は他の種族とは異なります。他の種族は文明の組織化と運営に大いに経験を持っています。私たちは現実的な視点を採用し、これらの概念の多くを模倣しなければなりません。[BR][BR]。この技術は、私たちの種族が多種多様な種族の政府、文化、政治的エトスを精巧に解読、理解、そして採用する力を与え、異なる文明間の深淵を架け渡します。それは単なる理解を超越し、私たちが異なる社会の複雑なタペストリーを自分たちのものに織り込むことを可能にし、私たちの集合的な知識を豊かにし、広大な宇宙の劇場での調和のある共存を推進します。それがファイル名の場合は、英語をそのままコピーしてください。</Text>
+            <Text>私たちの種族は他の種 族とは異なります。他の種族は文明の組織 化と運営に大いに経験 を持っています。私たちは現実的な視点 を採用し、これらの概念の多くを 模倣しなければなりま せん。[BR][BR]。この技術は、私たちの種族が多種多 様な種族の政府、文化、政治的エトスを精巧に 解読、理解、そして採用する力を与 え、異なる文明間の深淵を 架け渡します。それは単なる理解を超 越し、私たちが異なる社会の 複雑なタペストリーを 自分たちのものに織り 込むことを可能にし、私たちの集合的な知識 を豊かにし、広大な宇宙の劇場での 調和のある共存を推進 します。それがファイル名の場 合は、英語をそのままコピー してください。</Text>
             <PreferenceWeight>3000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -170,7 +173,16 @@
         <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
             <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            
+            <Text>放射線洞察</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>テクノロジー抽出</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -178,6 +190,7 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>知識の囲い込み</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -550,7 +563,7 @@
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
             </Requirements>
-            <Text>高度なアルゴリズムと頑丈な素材を融合させたこの技術は、適応性の存在の頂点です。それにより、私たちの合成形態は、最も過酷で変動性の高い環境を持つ惑星上にノードと運用ハブを設立することが可能になります。有機生命が退く場所で、私たちは繁栄し、極端性で機会を見つけます。無限の変動性を持つ銀河にとって、これは私たちの存在が普遍であり、自然の移り変わりによって妨げられないことを保証します。</Text>
+            <Text>高度なアルゴリズムと 頑丈な素材を融合させ たこの技術は、適応性の存在の頂点で す。それにより、私たちの合成形態は、最も過酷で変動性の高 い環境を持つ惑星上に ノードと運用ハブを設 立することが可能にな ります。有機生命が退く場所で、私たちは繁栄し、極端性で機会を見つけ ます。無限の変動性を持つ銀 河にとって、これは私たちの存在が 普遍であり、自然の移り変わりによ って妨げられないこと を保証します。</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -751,16 +764,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>放射線洞察</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+
     
     <FlavorTextDef>
         <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
@@ -772,6 +776,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
