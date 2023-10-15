@@ -84,7 +84,7 @@ class TranslationApp(QMainWindow):
         file_menu.addAction(openai_key_action)
 
         self.language_box = QComboBox(self)
-        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
+        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese","Greek"]
         self.language_box.addItems(self.languages)
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
@@ -265,7 +265,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=1000,
                 n=1,
                 stop=None,
                 temperature=0.7,
