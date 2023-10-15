@@ -725,7 +725,7 @@
     </StringTable>
     <StringTable>
         <Label>StartNearAIPlayer</Label>
-        <String>Others in Sector</String>
+        <String>Not too close</String>
     </StringTable>
     <StringTable>
         <Label>DistancedFromOtherPlayers</Label>
@@ -1013,7 +1013,7 @@
     </StringTable>
     <StringTable>
         <Label>MODS_ONLINE</Label>
-        <String>Access our Mod Metaverse.</String>
+        <String>Mod Workshop</String>
     </StringTable>
     <StringTable>
         <Label>MOD_UPDATES_AVAILBLE</Label>
@@ -5660,6 +5660,10 @@
         <String>Enable Music</String>
     </StringTable>
     <StringTable>
+        <Label>VOEnabled</Label>
+        <String>Enable Voiceovers</String>
+    </StringTable>
+    <StringTable>
         <Label>TEAM_LABEL</Label>
         <String>Team</String>
     </StringTable>
@@ -5775,6 +5779,14 @@
         <Label>CANCELUPGRADEBUTTON</Label>
         <String>Cancel Upgrade</String>
     </StringTable>
+	<StringTable>
+		<Label>REFIT</Label>
+		<String>Refit</String>
+	</StringTable>
+	<StringTable>
+		<Label>CANCELREFIT</Label>
+		<String>Cancel Refit</String>
+	</StringTable>
     <StringTable>
         <Label>LEVEL_UPGRADE_CONFIRM</Label>
         <String>Install?</String>
@@ -14910,7 +14922,7 @@
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_UPGRADE_TEXT</Label>
-        <String>[B]Upgrade[/B][BR][COLOR=UIDefaultHot]Upgrade ships to refit them with the latest version of weapons, armor, and equipment.[/COLOR]</String>
+        <String>[B]Refit[/B][BR][COLOR=UIDefaultHot]Upgrade ships to refit them with the latest version of weapons, armor, and equipment.[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_DECOMMISSION_TEXT</Label>
@@ -25461,7 +25473,7 @@
     </StringTable>
     <StringTable>
         <Label>FIRST_UNHIDE_PLANETWND_Msg</Label>
-        <String>Greetings {LEADERNAME}![BR][BR]Welcome to {PLANETNAME}'s Planet Management Viewscreen! This screen provides an overview of the planet's economy and development potential.[BR][BR]The left side displays inputs, outputs, and resident representatives.[BR][BR]The middle section shows usable areas, or regions, which can be dedicated to specific district types.[BR][BR]The right side lists available district upgrades and unique improvements for the planet.[BR][BR]Select a region to improve it, boosting the planet's output in various areas:[BR][BR][HS=HS_Manufacturing]Manufacturing[/HS]: Speeds up ship construction and improvements.[BR][HS=HS_Research]Research[/HS]: Enhances technological progress.[BR][HS=HS_FinancialDistrict]Financial[/HS]: Increases income.[BR][HS=HS_Food]Agricultural[/HS]: Supports food export and feeding the population.[BR][HS=HS_HousingDistrict]Housing[/HS]: Expands maximum population capacity.[BR][HS=HS_RecreationalDistrict]Recreational[/HS]: Boosts morale and citizen productivity.[BR][BR]Manage your planet wisely for optimal growth and development.</String>
+        <String>Greetings {LEADERNAME}![BR][BR]Welcome to {PLANETNAME}'s Planet Management Viewscreen! This screen provides an overview of the planet's economy and development potential.[BR][BR]The left side displays inputs, outputs, and resident representatives.[BR][BR]The middle section shows usable areas, or regions, which can be dedicated to specific district types. [I]Select a hex region to choose a [COLOR=UIDefaultHot]District[/COLOR] to construct in that location.[/I] Districts improve the planet's output in various areas:[BR][BR][HS=HS_Manufacturing]Manufacturing[/HS]: Speeds up ship construction and improvements.[BR][HS=HS_Research]Research[/HS]: Enhances technological progress.[BR][HS=HS_FinancialDistrict]Financial[/HS]: Increases income.[BR][HS=HS_Food]Agricultural[/HS]: Supports food export and feeding the population.[BR][HS=HS_HousingDistrict]Housing[/HS]: Expands maximum population capacity.[BR][HS=HS_RecreationalDistrict]Recreational[/HS]: Boosts morale and citizen productivity.[BR][BR]The right side lists available district upgrades and unique improvements for the planet.[BR][BR]Manage your planet wisely for optimal growth and development.</String>
     </StringTable>
     <StringTable>
         <Label>FIRST_UNHIDE_UNITMANAGERWND_Title</Label>
@@ -25509,7 +25521,7 @@
     </StringTable>
     <StringTable>
         <Label>FIRST_UNHIDE_SHIPDESIGNERWND_Msg</Label>
-        <String>Greetings {LEADERNAME}![BR][BR]Welcome to the Ship Designer screen! This is where you can create custom ship designs for your civilization by selecting a class, choosing a hull, and equipping various components.[BR][BR][COLOR=UIDefaultHighlight]Choose a Ship Class[/COLOR]: Pick a class, such as Fighters, Battle Cruisers, Freighters, or Colony Ships. This will determine the available hull options.[BR][BR][COLOR=UIDefaultHighlight]Select a Hull[/COLOR]: Hull size corresponds to the class and determines how much you can fit onto the ship.[BR][BR]On the left side, you'll find two tabs:[BR][BR][COLOR=UIDefaultHighlight]Appearance[/COLOR]: Customize your ship's look with hull options and optional cosmetic pieces.[BR][BR][COLOR=UIDefaultHighlight]Equip[/COLOR]: Equip your ship with various components from five sub-tabs: Weapons, Defenses, Propulsion, Special Modules, and Support Modules for fleet assistance.[BR][BR]The middle of the screen displays the current design, with controls for display options at the bottom. On the right side, you'll see a summary of the selected design, including weapon types, defenses, maintenance costs, hitpoints, movement speed, sensor range, logistics, hull type, and construction cost (next to a hammer icon).[BR][BR]At the top right, the [COLOR=UIDefaultHighlight]Current Inventory[/COLOR] shows the ship's remaining space for components. Different components use varying amounts of inventory, and you'll need to manage space wisely.[BR][BR]When designing ships, be mindful of component costs and special resource requirements. Start with simpler designs and gradually explore more advanced options as you become familiar with the system.</String>
+        <String>Greetings {LEADERNAME}![BR][BR]Welcome to the Ship Designer screen! This is where you can create custom ship designs for your civilization by selecting a class, choosing a hull, and equipping various components.[BR][BR][COLOR=UIDefaultHighlight]Choose a Ship Class[/COLOR]: Pick a class, such as Fighters, Battle Cruisers, Freighters, or Colony Ships. This will determine the available hull options.[BR][BR][COLOR=UIDefaultHighlight]Select a Hull[/COLOR]: Hull size corresponds to the class and determines how much you can fit onto the ship.[BR][BR]On the left side, you'll find various categories of equipment. Equip your ship with various components from four sub-tabs: Weapons, Defenses, Propulsion, and Special Modules [BR][BR]The middle of the screen displays the current design, with information on how much space is left to add equipment.  In the upper middle you will see a small blueprint icon. This let's you go into the full visual design mode.  Over On the right side, you'll see a summary of the selected design, including weapon types, defenses, maintenance costs, hitpoints, movement speed, sensor range, logistics, hull type, and construction cost. Start with simpler designs and gradually explore more advanced options as you become familiar with the system.</String>
     </StringTable>
     <StringTable>
         <Label>IdeologyDiscountTooltip</Label>
@@ -25781,6 +25793,10 @@
 		<Label>Alert_Show_Title</Label>
 		<String>Always Show</String>
 	</StringTable>
+    <StringTable>
+        <Label>VO_Enabled</Label>
+        <String>Voiceovers</String>
+    </StringTable>
 
 	
 	<StringTable>
