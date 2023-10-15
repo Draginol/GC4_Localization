@@ -69,6 +69,8 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Systèmes de Fréquence de Sous-espace</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -76,6 +78,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Protocoles de Transmission de Données</Text>
             <PreferenceWeight>2000</PreferenceWeight>
@@ -83,6 +86,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Traduction Culturelle</Text>
             <PreferenceWeight>5000</PreferenceWeight>
@@ -170,7 +174,16 @@
         <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
             <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            
+            <Text>Aperçus Radiatifs</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Extraction de Technologie</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -178,6 +191,7 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Accumulation de Connaissances</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -751,16 +765,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>Aperçus Radiatifs</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+
     
     <FlavorTextDef>
         <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
@@ -772,6 +777,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
