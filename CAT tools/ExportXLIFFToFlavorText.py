@@ -36,7 +36,6 @@ def load_xliff_data(xliff_path):
     
     return xliff_dict
 
-
 def update_xml_files_from_xliff(copied_files, dest_directory, xliff_data):
     for filename in copied_files:
         dest_filepath = os.path.join(dest_directory, filename)
@@ -67,7 +66,6 @@ def update_xml_files_from_xliff(copied_files, dest_directory, xliff_data):
                             text_element.text = xliff_data[matching_keys[0]]['target']
 
         save_with_crlf(tree, dest_filepath)  # Using the function to save with CRLF
-
 
 def main():
     tk_root = tk.Tk()
