@@ -69,6 +69,8 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Sistemas de Frecuencia de Subespacio</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -76,6 +78,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Protocolos de Transmisión de Datos</Text>
             <PreferenceWeight>2000</PreferenceWeight>
@@ -83,6 +86,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Traducción Cultural</Text>
             <PreferenceWeight>5000</PreferenceWeight>
@@ -170,7 +174,16 @@
         <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
             <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            
+            <Text>Percepciones Radiativas</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Technology Extraction</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -178,6 +191,7 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Acumulación de Conocimiento</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -666,7 +680,7 @@
             <Requirements>
                 <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>Stellar Siphon Nodes</Text>
+            <Text>Nodos de Succión Estelar</Text>
             <PreferenceWeight>5000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -751,16 +765,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>Percepciones Radiativas</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+
     
     <FlavorTextDef>
         <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
@@ -772,6 +777,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>

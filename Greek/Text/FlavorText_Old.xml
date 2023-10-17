@@ -1,0 +1,1583 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+    <!-- 1.5 Diplomacy additions. -->
+    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Είμαστε πολύ ευγνώμονες. Δεν θα ξεχάσουμε τη γενναιοδωρία σας.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Λυπούμαστε, αλλά δεν μπορούμε να δικαιολογήσουμε τη βοήθειά σας αυτή τη στιγμή. Ίσως αν είχαμε πιο στενές σχέσεις να μπορούσαμε να βρούμε τα κεφάλαια ... αλλά όπως είναι τα πράγματα, πιστεύουμε ότι είμαστε καλύτερα να κρατήσουμε τα περιουσιακά στοιχεία μας για τον εαυτό μας.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Μοιάζουμε σαν το είδος των ανθρώπων που δίνει ελεημοσύνη σε εξωγήινους;</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Μήπως μόλις ζήτησες σοβαρά χρήματα από μια πολιτισμό που εφαρμόζει σκλαβιά;</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>ParanoidAbility</SpeakerRaceTrait>
+            </Requirements>
+            <Text>Αυτό πρέπει να είναι κάποιο είδος παγίδας. Φύγε!</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Είναι ατυχές, ίσως την επόμενη φορά..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Σας ευχαριστούμε πάρα πολύ, είμαστε πολύ ευγνώμονες για την υποστήριξη. Η γενναιοδωρία του {PLAYERFACTIONLONG:2} θα θυμάται σε όλο το {PLAYERFACTIONLONG:1} για τα επόμενα χρόνια.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Είστε ευπρόσδεκτοι, ελπίζουμε μόνο ότι αυτό θα φέρει τις πολιτισμούς μας πιο κοντά στο μέλλον.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Δεν έχουμε κανένα ενδιαφέρον να είμαστε υπό την χρέωσή σας για οτιδήποτε. Αν θέλετε να μας βοηθήσετε, μείνετε μακριά μας.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Τρέχοντας το lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Χρειάζεστε να ερευνήσετε τον Πανγαλαξιακό Μεταφραστή).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Λυπάμαι που νιώθετε έτσι..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- End 1.5 Diplomacy additions. -->
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(πρέπει να ερευνήσετε το Universal Translator για να εμπορευτείτε).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Έχω μια πρόταση εμπορίου για εσάς.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(δεν μπορείς να εμπορεύεσαι με κάποιον με τον οποίο βρίσκεσαι σε πόλεμο)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>(δεν μπορείς να εμπορεύεσαι με κάποιον με τον οποίο βρίσκεσαι σε πόλεμο)</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(δεν μπορείς να μιλήσεις με κάποιον με τον οποίο είσαι σε πόλεμο)</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>(δεν μπορείς να μιλήσεις με κάποιον με τον οποίο είσαι σε πόλεμο)</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_CONVERSATION</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(πρέπει να ερευνήσετε τον Παγκόσμιο Μεταφραστή για να μπορέσετε να συνομιλήσετε).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Θα ήθελα να μιλήσω μαζί σου για κάτι..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_MORE_OPTIONS</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>(πρέπει να ερευνήσετε τον Παγκόσμιο Μεταφραστή για να μπορέσετε να συνομιλήσετε).</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Έχω κάτι άλλο στο μυαλό μου....</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DIPLOMACY_WND_DONE</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>GARBLED_TEXT</ResponseTag>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>ΦΥΓΕ, ΔΕΝ ΕΧΕΙΣ ΛΟΓΙΚΗ.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Αντίο.. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Sarah's temp stuff -->
+    <!-- Conversation: DemandCredits -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <PersonalityType>Benevolent</PersonalityType>
+            </Requirements>
+            <Text>Χαιρετισμοί, {LEADERNAME:2}. Ως πολιτισμός που ζει στη σκιά της {PLAYERFACTIONLONG:1}, θα ήταν σωστό να μας παρέχετε {AMOUNT:2} credits ως ένδειξη σεβασμού.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>{LEADERNAME:2}, ήρθε η ώρα να παραδεχτείς την μεγαλειότητα της {PLAYERFACTIONLONG:1}. Απαιτούμε {AMOUNT:2} πιστώσεις από τον άθλιο πολιτισμό σου..</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+            </Requirements>
+            <Text>Θεώρησέ το δεκάτο {AMOUNT:2} πιστωτικών για την αφοσίωσή σου στον σκοπό μας.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+            </Requirements>
+            <Text>Οι δαπάνες αυξάνονται και θα χρειαστούμε επιπλέον {AMOUNT:2} πιστώσεις από εσάς.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Πολύ καλά, η {PLAYERFACTIONLONG:2} θα σας δώσει αυτό που θέλετε, για τώρα..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>Η φυλή μας έχει απεριόριστη μνήμη. Δεν θα ξεχάσουμε αυτή την κρυφή απειλή.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>TimeTravelersAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Ο πολιτισμός σας μας ανάγκασε να πληρώσουμε προηγουμένως. Πληρώσαμε. Αλλά δεν κατέληξε καλά για εσάς..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Το να με κάνεις να σου δίνω πράγματα δωρεάν δεν πρόκειται να μας κάνει λιγότερο θυμωμένους. Αλλά ούτε και ο θάνατος. Εντάξει λοιπόν, πάρε το..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Έχεις το προβάδισμα τώρα. Αλλά όταν ζεις ως δούλος μου, θα επανεξετάσουμε αυτή τη μέρα..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTION:2} δεν θα υποχωρήσουν... και το μέγεθος της ισχύος σου είναι αμφίβολο..</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+            </Requirements>
+            <Text>Οι {PLAYERFACTION:2} δεν σε φοβούνται..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Πήγαινε στο διάολο..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SneakyAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Κάνεις παπάδες.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Στοιχηματίζω ότι δεν είσαι σοβαρός..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Θα το μετανιώσεις αυτό..</Text>
+            <Text>Ένα επικίνδυνο λάθος..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandCreditsPerTurn -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Ως πολιτισμός μεγάλης δύναμης, είναι μόνο αρμόζον για τον/την {PLAYERFACTIONLONG:1} να λαμβάνει φόρο τιμής από τον/την {PLAYERFACTIONLONG:2}... ας πούμε στο ύψος των {AMOUNT:2} πιστωτικών ανά μήνα;</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:2} θα συμμορφωθούν με αυτό το αίτημα, για τώρα.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Μεγάλη εξουσία; Μην είσαι γελοίος· τράβα στο δρόμο, {LEADERNAME:1}.. Αν είναι όνομα αρχείου απλά αντέγραψε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Λάθος απάντηση. Είμαι σίγουρος ότι θα δεις τις συνέπειες του λάθους σου σύντομα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandTech -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Παρά την περίσσια δύναμη μας σε σύγκριση με το {PLAYERFACTIONLONG:2}, διαπιστώνουμε ότι έχετε γνώση που ακόμη μας λείπει. Δώστε μας πληροφορίες σχετικά με το {TECHNAME:2}, και ίσως αγνοήσουμε τον πειρασμό να εκμεταλλευτούμε τη σχετική σας αδυναμία.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Πολύ καλά, η {PLAYERFACTIONLONG:2} θα σας δώσει αυτό που θέλετε, για τώρα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:2} δεν θα υποχωρήσουν... και η έκταση της δύναμής σου είναι αμφίβολη..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Θα το μετανιώσεις αυτό..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestCredits help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Επιτίθενται σε εμάς οι {PLAYERFACTIONLONG:3}. Παρακαλώ, {LEADERNAME:2}, βοηθήστε μας δίνοντάς μας {AMOUNT:2} πιστώσεις.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Συμφωνώ. Θα βοηθήσουμε.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Εκτιμούμε τη βοήθειά σας..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:2} έχουν τα δικά τους προβλήματα. Όχι.. Αν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestTech help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Οι άμυνές μας δέχονται επίθεση από το {PLAYERFACTIONLONG:3}, και χρειαζόμαστε απεγνωσμένα τη βοήθειά σας, {LEADERNAME:2}. Θα μπορούσατε να μας προμηθεύσετε με {TECHNAME:2};</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Πολύ καλά.. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Είμαστε βαθιά ευγνώμονες για τη γενναιοδωρία και την ταχεία δράση σας, {LEADERNAME:2}. Η προθυμία σας να μοιραστείτε το {TECHNAME:2} μαζί μας στην ώρα της ανάγκης μας εκτιμάται πραγματικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:2} έχουν τα δικά τους προβλήματα. Όχι.. Αν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: RequestTech help me -->
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Το {PLAYERFACTIONLONG:3} έχει εξαπολύσει επίθεση εναντίον μας, και οι συνθήκες μας είναι κρίσιμες, {LEADERNAME:2}. Η μόνη μας ελπίδα για επιβίωση βρίσκεται στη δήλωσή σας του πολέμου εναντίον του {PLAYERFACTIONLONG:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Κατανοούμε τη σοβαρότητα της κατάστασής σου και στέκουμε δίπλα σου. Θα δηλώσουμε πόλεμο στο {PLAYERFACTIONLONG:3} και θα ενώσουμε τις δυνάμεις μας για να διασφαλίσουμε την επιβίωσή σου. Μαζί, θα αντιμετωπίσουμε αυτή την απειλή και θα εμφανιστούμε νικητές.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Η υποστήριξή σας σε αυτήν την δύσκολη κατάσταση είναι ανεκτίμητη, {LEADERNAME:2}. Είμαστε πραγματικά ευγνώμονες για την δέσμευσή σας να σταθείτε μαζί μας ενάντια στο {PLAYERFACTIONLONG:3}. Μαζί, θα επικρατήσουμε.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Συγγνώμη, όχι...</Text>
+            <Text>Όχι.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Με τίποτα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+    <!-- Default: a request, happy if they oblige -->
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Ως μέλη της {PLAYERFACTIONLONG:1}, σας επικαλούμαστε να μας βοηθήσετε στη διένεξη με την προδοτική {PLAYERFACTIONLONG:3}. Σε ευγνωμοσύνη για τη συνεργασία σας, προτείνουμε μια γενναιόδωρη αμοιβή {AMOUNT:1} πιστωτικών. Θα ενωθείτε μαζί μας σε αυτή την προσπάθεια;.</Text>
+            <Text>Εμείς, οι αντιπρόσωποι της {PLAYERFACTIONLONG:1}, σας προσεγγίζουμε με την αίτηση για την υποστήριξή σας στην αντιπαράθεση ενάντια στην {PLAYERFACTIONLONG:3}. Η στήριξή σας θα ήταν ανεκτίμητη, και υπόσχομαστε {AMOUNT:1} credits ως αποζημίωση για τις υπηρεσίες σας. Θα σταθείτε μαζί μας;.</Text>
+            <Text>Εκ μέρους της {PLAYERFACTIONLONG:1}, σας παρακαλούμε να μας δανείσετε τη δύναμή σας ενάντια στη φοβερή {PLAYERFACTIONLONG:3}. Υποσχόμαστε να ανταμείψουμε την ανδρεία σας με {AMOUNT:1} credits, αν συμφωνήσετε να σταθείτε δίπλα μας. Θα μας συντροφεύσετε σε αυτή τη μάχη;</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Θα δηλώσουμε πόλεμο στην {PLAYERFACTIONLONG:3} προς όφελος και των δύο των πολιτισμών μας.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Ήξερα ότι θα μπορούσαμε να βασιστούμε σε εσάς. Ευχαριστώ!.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Όχι.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Δεν μπορούμε να πάμε στον πόλεμο αυτή τη στιγμή.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Είμαι σίγουρος ότι συμφωνείτε ότι η {PLAYERFACTIONLONG:3} αποτελεί μια πληγή σε αυτό το γαλαξία. Αναλάβετε την ευθύνη σας και δηλώστε πόλεμο σε αυτούς· θα παράσχουμε {AMOUNT:1} πιστώσεις για να αφαιρέσουμε οποιαδήποτε ανησυχία για τα έξοδα.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Θα δηλώσουμε πόλεμο στους {PLAYERFACTIONLONG:3}. Στέκουμε μαζί..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν ενδιαφερόμαστε να γίνουμε μισθοφόροι για το όφελός σας, {LEADERNAME:1}..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Θα αναγκαστείτε να επιλέξετε μια πλευρά σύντομα, τότε θα ευχόσασταν να είχατε αποδεχτεί τη γενναιόδωρη προσφορά μας..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: PayTechForDeclareWarOnOther -->
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:1} σας προσφέρουν μια ευκαιρία: Οι {PLAYERFACTIONLONG:3} είναι μια απειλή. Πιστεύουμε ότι η προληπτική δράση είναι ο καλύτερος δρόμος για να τους εμποδίσουμε από το να γίνουν μια υπερβολική απειλή. [BR][BR]Ωστόσο, δεν είμαστε προς το παρόν σε θέση να αντιμετωπίσουμε αυτό. Επομένως, αν δηλώσετε πόλεμο σε αυτούς, θα σας δώσουμε τη γνώση του {TECHNAME:1} για να βοηθήσετε στον αγώνα σας.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} φέρνει μια πρόταση: Το {PLAYERFACTIONLONG:3} γίνεται ένα πραγματικό πρόβλημα. Πιστεύουμε ότι η δράση τώρα είναι ο καλύτερος τρόπος για να αποτρέψουμε την εξέλιξή τους σε μεγάλη απειλή.[BR][BR]Παρά τους τρέχοντες περιορισμούς μας, αν κηρύξετε πόλεμο σε αυτούς, θα παρέχουμε την τεχνολογία του {TECHNAME:1} για να υποστηρίξουμε τις προσπάθειές σας στη σύγκρουση.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} προτείνει μια συμφωνία: Το {PLAYERFACTIONLONG:3} αποτελεί σημαντικό κίνδυνο. Πιστεύουμε ότι είναι ζωτικής σημασίας να ενεργήσουμε πριν γίνουν μια ασυναγώνιστη δύναμη.[BR][BR]Αν και δεν μπορούμε να ενεργήσουμε αυτή τη στιγμή, αν εσείς ξεκινήσετε τον πόλεμο εναντίον τους, θα σας παραχωρήσουμε πρόσβαση στη γνώση του {TECHNAME:1} για να βοηθήσετε την μάχη σας.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} έρχεται με μια πρόταση: Το {PLAYERFACTIONLONG:3} αποτελεί σοβαρή απειλή. Θεωρούμε ότι η λήψη προληπτικών μέτρων τώρα είναι ο καλύτερος τρόπος για να αντιμετωπίσουμε τον κίνδυνό τους.[BR][BR]Προς το παρόν, μας λείπουν οι πόροι για να ενεργήσουμε. Ωστόσο, εάν εσείς πάρετε την πρωτοβουλία και δηλώσετε πόλεμο σε αυτούς, θα σας παρέχουμε την πρωτοποριακή τεχνολογία του {TECHNAME:1} για να σας βοηθήσουμε στη μάχη.</Text>
+            <Text>Οι {PLAYERFACTIONLONG:1} προσφέρουν μια λύση: Οι {PLAYERFACTIONLONG:3} αρχίζουν να αποτελούν μείζον θέμα ανησυχίας. Πιστεύουμε ότι η λήψη δράσης τώρα είναι ο καλύτερος δρόμος για να τους σταματήσουμε από το να αποτελέσουν απειλή.[BR][BR]Παρά τους τρέχοντες περιορισμούς μας, αν ξεκινήσετε τον πόλεμο εναντίον τους, θα σας προσφέρουμε την προηγμένη γνώση του {TECHNAME:1} για να υποστηρίξετε τις προσπάθειές σας.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} παρουσιάζει μια ευκαιρία: Το {PLAYERFACTIONLONG:3} είναι μια αυξανόμενη απειλή. Πιστεύουμε ότι είναι σημαντικό να λάβουμε προληπτικά μέτρα πριν γίνουν ακαταμάχητοι.[BR][BR]Αυτή τη στιγμή, δεν μπορούμε να ενεργήσουμε. Ωστόσο, αν δηλώσετε πόλεμο σε αυτούς, θα σας δώσουμε πρόσβαση στην τεχνολογία του {TECHNAME:1} για να βοηθήσετε στη σύγκρουση.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} έρχεται με ένα σχέδιο: Το {PLAYERFACTIONLONG:3} αποτελεί πραγματική απειλή. Πιστεύουμε ότι η λήψη δράσης τώρα είναι ο καλύτερος τρόπος για να αντιμετωπίσουμε την απειλή που αποτελούν.[BR][BR]Αν και δεν μπορούμε να ενεργήσουμε αυτήν τη στιγμή, αν ξεκινήσετε τον πόλεμο εναντίον τους, θα σας δώσουμε τη γνώση του {TECHNAME:1} για να υποστηρίξετε τη μάχη σας.</Text>
+            <Text>Το {PLAYERFACTIONLONG:1} προτείνει μια συμφωνία: Το {PLAYERFACTIONLONG:3} αποτελεί μια σοβαρή απειλή. Πιστεύουμε ότι είναι καλύτερο να λάβουμε προληπτικά μέτρα πριν γίνουν μια μεγάλη απειλή. [BR][BR]Δεδομένων των τρέχοντων περιορισμών μας, εάν κηρύξετε πόλεμο σε αυτούς, θα σας παρέχουμε την πρωτοποριακή τεχνολογία του {TECHNAME:1} για να υποστηρίξουμε τις προσπάθειές σας στη μάχη.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Θα δηλώσουμε πόλεμο στην {PLAYERFACTIONLONG:3} και θα συνεργαστούμε για το καλό των πολιτισμών μας.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Ήξερα ότι θα μπορούσαμε να βασιστούμε σε εσάς. Ευχαριστώ!.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν μπορούμε να αναλάβουμε τον κίνδυνο να πάμε σε πόλεμο αυτήν τη στιγμή.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: GiveCredits -->
+    <FlavorTextDef>
+        <InternalName>GIVE_CREDITS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Το {PLAYERFACTIONLONG:1} θα ήθελε να σημαδέψει τη φιλία μας με ένα δώρο {AMOUNT:1} πιστωτικών..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Σας ευχαριστώ για αυτό το δώρο.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: GiveTech -->
+    <FlavorTextDef>
+        <InternalName>GIVE_TECH_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:1} θα ήθελαν να σηματοδοτήσουν τη φιλία μας με ένα δώρο γνώσης της {TECHNAME:1}. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Σας ευχαριστώ για αυτό το δώρο.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: OnPlayerDead -->
+    <FlavorTextDef>
+        <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:3} έχουν καταστραφεί..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Κατανοητό.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Conversation: DemandStarbaseRemoval -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Η αστρική σας βάση {OBJECTNAME} αποτελεί άμεση απειλή για τα συμφέροντά μας. Απαιτούμε να την αφαιρέσετε αμέσως.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Εντάξει, θα το καταστρέψουμε αμέσως.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Εξαιρετικά, έχετε την εκτίμηση του {PLAYERFACTIONLONG:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Όχι, η αστρική βάση παραμένει ακριβώς όπου είναι.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Καταλαβαίνετε ότι αυτό αμφισβητεί τις προθέσεις σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό προκαλεί αμφιβολίες για τα κίνητρά σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό αμφισβητεί τις πραγματικές σας προθέσεις, {LEADERNAME:2}..</Text>
+            <Text>Αυτό προκαλεί υποψίες για τον σκοπό σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό προβάλλει μια σκιά στα κίνητρά σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό φέρνει τις προθέσεις σου στο προσκήνιο, {LEADERNAME:2}..</Text>
+            <Text>Αυτό αμφισβητεί την αξιοπιστία των κινήτρων σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό θέτει τις προθέσεις σας υπό εξέταση, {LEADERNAME:2}..</Text>
+            <Text>Αυτό θέτει ερωτήματα για την αυθεντικότητα των κινήτρων σας, {LEADERNAME:2}..</Text>
+            <Text>Αυτό θέτει τον σκοπό σου υπό αμφισβήτηση, {LEADERNAME:2}..</Text>
+            <Text>Αυτό αμφισβητεί την αυθεντικότητα των προθέσεών σας, {LEADERNAME:2}..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- DemandAscensionStarbase -->
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Θέλω την αστροβάση σου {OBJECTNAME}. Αν δεν τη μας τη δώσεις, θα την πάρουμε από εσένα με τη βία.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Να είσαι ήρεμος. Θα το αφαιρέσουμε.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Έκανες τη σωστή επιλογή..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Όχι, ευχαριστώ..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Τότε πόλεμος είναι..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Θέλουμε την αστρική σας βάση {OBJECTNAME}, έχει έναν κρύσταλλο ανύψωσης. Θα σας δώσουμε {AMOUNT:1} γι' αυτό..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Εντάξει.. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Εξαιρετικά, έχετε την εκτίμηση του {PLAYERFACTIONLONG:1}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+        <FlavorTextOption>
+            <Text>Όχι.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν θα το εγκαταλείψουμε αυτό, {LEADERNAME:2}..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
+    <FlavorTextDef>
+        <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
+        <FlavorTextOption>
+            <Text>Ήρθε η ώρα να τερματίσουμε αυτόν τον πόλεμο. Θα αποδεχόσουν αυτούς τους όρους;</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_INIT_TRADE_TECHBUY_INTRO</InternalName>
+        <FlavorTextOption>
+            <Text>Οι {PLAYERFACTIONLONG:2} έχουν γνώση που μας ενδιαφέρει. Θα το αποδεχόσασταν αυτό σε ανταλλαγή;.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- Get off my lawn -->
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>{PLAYERFACTIONLONG:2}, βλέπουμε να συγκεντρώνετε δυνάμεις έξω από το κατώφλι μας. Θα έπρεπε να το σταματήσετε..</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2}, βλέπουμε να συγκεντρώνετε δυνάμεις έξω από το κατώφλι μας. Θα έπρεπε να το σταματήσετε..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2}, βλέπουμε να συγκεντρώνετε δυνάμεις έξω από το κατώφλι μας. Θα έπρεπε να το σταματήσετε..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>{PLAYERFACTIONLONG:2} Παρόλο που μας αρέσεις, δεν μας αρέσει η στρατιωτική ενίσχυση που βλέπουμε..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, σας εκτιμούμε, αλλά η αυξημένη στρατιωτική παρουσία μας ανησυχεί..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, εκτιμούμε τη σχέση μας μαζί σας, αλλά η στρατιωτική συσσώρευση μας ανησυχεί..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, έχουμε θετικές σχέσεις μαζί σας, αλλά η πρόσφατη στρατιωτική επέκταση μας ανησυχεί.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, απολαμβάνουμε τη φιλία μας, αλλά η αυξανόμενη στρατιωτική παρουσία είναι πηγή ανησυχίας για εμάς..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, έχουμε μια συμπάθεια για εσάς, αλλά η αυξημένη στρατιωτική επιβαρυνση είναι ένας λόγος ανησυχίας για εμάς.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, εκτιμούμε την συμμαχία μας, αλλά η αύξηση της στρατιωτικής δραστηριότητας μας ανησυχεί..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, εκτιμούμε την συνεργασία μας, αλλά η αυξανόμενη στρατιωτική παρουσία αποτελεί πηγή ανησυχίας για εμάς.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, έχουμε καλές σχέσεις μαζί σας, αλλά η εντεινόμενη στρατιωτική επέκταση μας ανησυχεί..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν υπάρχει τίποτα να δείτε εδώ....</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Γιατί δεν με σταματάς;</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Δεν υπάρχει τίποτα να δείτε εδώ....</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Πρέπει να μας εμπιστεύεσαι, φίλε..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Θα παρατηρήσουμε προσεκτικά.. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <NoMin>true</NoMin>
+                    <RangeMax>-4</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Θα παρατηρήσουμε προσεκτικά.. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>-3</RangeMin>
+                    <RangeMax>3</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Θα σε παρακολουθούμε..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelationsRange>
+                    <RangeMin>4</RangeMin>
+                    <NoMax>true</NoMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Ελπίζω, για το καλό σου, ότι η εμπιστοσύνη μας δεν είναι παραπλανητική..</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Θα έπρεπε να σας προειδοποιήσουμε, {LEADERNAME:2}, οι {PLAYERFACTIONLONG:3} έχουν δημιουργήσει ένα ισχυρό στρατιωτικό σώμα. Να είστε επιφυλακτικοί απέναντί τους.</Text>
+            <Text>Προτείνεται προσοχή, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} διαθέτουν μια φοβερή στρατιωτική δύναμη. Να είσαι ενήμερος για τις δυνατότητές τους.</Text>
+            <Text>Μια προειδοποίηση, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν ισχυρή στρατιωτική παρουσία. Προχωρήστε με προσοχή.</Text>
+            <Text>Προσέξτε, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν ισχυρό στρατό. Να είστε προσεκτικοί στις σχέσεις σας με αυτούς.</Text>
+            <Text>Προσοχή, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν ένα ισχυρό στρατιωτικό συγκρότημα. Λάβετε υπόψη αυτό στις αλληλεπιδράσεις σας με αυτούς.</Text>
+            <Text>Να είσαι προσεκτικός, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν σημαντική στρατιωτική παρουσία. Προσέξτε τη δύναμη και τις ικανότητές τους.</Text>
+            <Text>Μια συμβουλή, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν μια εντυπωσιακή στρατιωτική δύναμη. Λάβετε αυτό υπόψη στις συναλλαγές σας μαζί τους.</Text>
+            <Text>Μια προειδοποίηση, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν ένα ισχυρό στρατιωτικό σχέδιο. Να είστε προσεκτικοί όταν έρχεστε σε επαφή με αυτούς.</Text>
+            <Text>Προειδοποίηση, {LEADERNAME:2}. Οι {PLAYERFACTIONLONG:3} έχουν ισχυρή στρατιωτική παρουσία. Προχωρήστε με προσοχή και έχετε κατά νου τη δύναμή τους.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Ευχαριστούμε για την προειδοποίηση. Θα είμαστε προσεκτικοί..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Πάντα.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Φαίνεται ότι αντιμετωπίζεις κάποιες δυσκολίες με τον {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Παρακαλώ δεχτείτε αυτό το {OBJECTNAME:1} από εμάς για να βοηθήσει στην πολεμική σας προσπάθεια.</Text>
+            <Text>Φαίνεται ότι αντιμετωπίζετε δυσκολίες με τον/την {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Επιτρέψτε μας να σας προσφέρουμε αυτόν/αυτήν τον/την {OBJECTNAME:1} ως ένδειξη υποστήριξης για τη σύγκρουσή σας.</Text>
+            <Text>Παρατηρήσαμε τον αγώνα σας ενάντια στην {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Παρακαλούμε πάρτε αυτό το {OBJECTNAME:1} από εμάς ως ένδειξη της υποστήριξής μας για την προσπάθεια του πολέμου σας.</Text>
+            <Text>Φαίνεται ότι οι {PLAYERFACTIONLONG:3} σας δημιουργούν προβλήματα, {LEADERNAME:2}. Θα θέλαμε να σας παρουσιάσουμε αυτό το {OBJECTNAME:1} για να σας βοηθήσει στη μάχη εναντίον τους.</Text>
+            <Text>Βλέπουμε ότι αντιμετωπίζετε δυσκολίες με το {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Επιτρέψτε μας να σας δώσουμε αυτό το {OBJECTNAME:1} σαν ένδειξη της υποστήριξής μας για τις προσπάθειες πολέμου σας.</Text>
+            <Text>Η σύγκρουσή σας με το {PLAYERFACTIONLONG:3} δεν έχει περάσει απαρατήρητη, {LEADERNAME:2}. Σας προσφέρουμε αυτό το {OBJECTNAME:1} ως σύμβολο της υποστήριξής μας για την προσπάθεια πολέμου σας.</Text>
+            <Text>Είμαστε ενήμεροι για την αντιπαράθεσή σας με το {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Παρακαλούμε δεχτείτε αυτό το {OBJECTNAME:1} ως ένδειξη της δέσμευσής μας να υποστηρίξουμε την προσπάθεια πολέμου σας..</Text>
+            <Text>Οι {PLAYERFACTIONLONG:3} φαίνεται να σας δημιουργούν προβλήματα, {LEADERNAME:2}. Επιτρέψτε μας να σας παρέχουμε αυτό το {OBJECTNAME:1} ως επίδειξη της υποστήριξής μας στον αγώνα σας εναντίον τους.</Text>
+            <Text>Καταλαβαίνουμε ότι αντιμετωπίζετε προκλήσεις από το {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Παρακαλούμε πάρτε αυτό το {OBJECTNAME:1} από εμάς ως σύμβολο της υποστήριξής μας για τις προσπάθειες πολέμου σας.</Text>
+            <Text>Φαίνεται ότι οι {PLAYERFACTIONLONG:3} αποδεικνύονται δύσκολοι, {LEADERNAME:2}. Θα θέλαμε να σας προσφέρουμε αυτό το {OBJECTNAME:1} ως ένδειξη της υποστήριξής μας για τη σύγκρουσή σας εναντίον τους.</Text>
+            <Text>Η μάχη σου με τους {PLAYERFACTIONLONG:3} δεν πέρασε απαρατήρητη, {LEADERNAME:2}. Παρακαλώ δεχτείτε αυτό το {OBJECTNAME:1} από εμάς ως ένδειξη της δέσμευσής μας να συμβάλουμε στην πολεμική σου προσπάθεια.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Text>Η βοήθειά σου έρχεται στην τέλεια στιγμή. Ευχαριστώ.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+        <FlavorTextOption>
+            <Text>Πάντα βοηθάμε τους φίλους μας.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>{LEADERNAME:2}, κερδίζεις. Παραδίδουμε και θα παραδώσουμε όλα τα εναπομείναντα περιουσιακά στοιχεία μας στα χέρια σου.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>Χαίρομαι που είδες το λόγο..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Ίσως να έχουμε τελειώσει, {LEADERNAME:2}, αλλά είσαι χαζός αν νομίζεις ότι θα παραδώσουμε τον λαό μας στην εποπτεία σου. Όλα τα υπόλοιπα περιουσιακά στοιχεία μας θα παραδοθούν στους φίλους μας, τους {PLAYERFACTIONLONG:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>Κάνε ό,τι επιθυμείς, αν και θα κάνει μικρή διαφορά στο τέλος..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν έχουμε άλλη επιλογή, {LEADERNAME:2}, πρέπει να παραδοθούμε στους {PLAYERFACTIONLONG:3}. Έχεις είναι καλός μαζί μας στο παρελθόν, γι' αυτό είναι η επιθυμία μας να σου δώσουμε τα υπόλοιπα του πολιτισμού μας. Χρησιμοποίησε τους πόρους μας για να χτυπήσεις πίσω τους {PLAYERFACTIONLONG:3}!</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+        <FlavorTextOption>
+            <Text>Ευχαριστώ.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Τώρα που έχεις αποικίσει έναν πλανήτη, δείξε ότι δεν θα εγκλωβιστείς εκεί. Χτίσε ένα ναυπηγείο.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Εντάξει, [I]φαντάζομαι[/I]....</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>Πώς στο καλό πρέπει να το κάνω αυτό;</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_COUNTERRESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>Είμαι σίγουρος ότι αυτό θα σας διευκρινίσει τα πράγματα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Επιτέλους. Ώρα να κατασκευάσεις ένα πλοίο κατασκευαστή για να μπορέσεις να αρχίσεις να επεκτείνεσαι..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Εντάξει.... Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Είσαι τόσο καλός στο να ακολουθείς οδηγίες. Χτίσε μια αστρική βάση με αυτόν τον κατασκευαστή... και ξέρεις τι; Τοποθέτησέ την όπου θέλεις, ως μια ανταμοιβή.. Αν είναι όνομα αρχείου απλά αντιγράφετε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Ω, πραγματικά είσαι απαιτητικός...</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Είσαι τέρας..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Καμία λύπη, Drengi για πάντα.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Αυτός είναι ένας ωραίος πλανήτης που έχεις εκεί, αυτός ο {OBJECTNAME}. Τι λες να τον παραδώσεις; Θα πληρώσουμε {AMOUNT:1}, φυσικά ... δεν είμαστε κλέφτες. Αλλά αν αρνηθείς, δεν θα υπάρχει πια διπλωματία για σένα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Καταπίνω, εντάξει.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE_2</InternalName>
+        <FlavorTextOption>
+            <Text>Τι λες για όχι;</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Ω άνθρωπε, τώρα έκανες την μαλακία..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Σίγουρα το έκανα..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_TESTING_MAIN</InternalName>
+        <FlavorTextOption>
+            <Text>Χαίρετε, γιατί η δοκιμή σας ήταν επιτυχής.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CAMPAIGN1_TESTING_RESPONSE</InternalName>
+        <FlavorTextOption>
+            <Text>Ζήτω..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Τείνουμε να αξιολογούμε την κερδοφορία της εμπορικής διαδρομής πάνω από τις ιδεολογικές επιλογές του εκείνης της πολιτισμού..</Text>
+            <Text>Στις συναλλαγές μας με άλλους πολιτισμούς, η κερδοφορία της εμπορικής διαδρομής κρατά μια υψηλότερη σημασία από την ιδεολογική τους θέση.</Text>
+            <Text>Η οικονομική επιτυχία των εμπορικών μας προσπαθειών έχει προτεραιότητα έναντι οποιασδήποτε πολιτιστικής ή ηθικής διαφοράς.</Text>
+            <Text>Η πρακτικότητα μιας κερδοφόρας εμπορικής διαδρομής έχει προτεραιότητα έναντι των πεποιθήσεων των εμπλεκόμενων πολιτισμών.</Text>
+            <Text>Στην προσέγγισή μας προς το εμπόριο, οι οικονομικά οφέλη έχουν προτεραιότητα έναντι οποιωνδήποτε ιδεολογικών επιλογών.</Text>
+            <Text>Προτεραιοτητοποιούμε την επιτυχία της εμπορικής διαδρομής έναντι οποιωνδήποτε αντιφατικών πεποιθήσεων με τους πολιτισμούς με τους οποίους αλληλεπιδρούμε.</Text>
+            <Text>Η οικονομική σταθερότητα στο εμπόριο υπερισχύει οποιασδήποτε ασυμφωνίας στην ιδεολογία με τους πολιτισμούς με τους οποίους κάνουμε επιχειρήσεις.</Text>
+            <Text>Η επικέντρωσή μας στο εμπόριο είναι κυρίως στην κερδοφορία της διαδρομής, παρά στις πεποιθήσεις των πολιτισμών που συμμετέχουν.</Text>
+            <Text>Η επιτυχία του εμπορίου είναι πιο σημαντική για εμάς από οποιεσδήποτε διαφορετικές ιδεολογίες των πολιτισμών με τους οποίους ασχολούμαστε.</Text>
+            <Text>Προτείνουμε το οικονομικό αποτέλεσμα της εμπορικής διαδρομής πάνω από οποιεσδήποτε ιδεολογικές διαφορές με τους πολιτισμούς που εμπλέκονται.</Text>
+            <Text>Οι εμπορικές μας συναλλαγές δίνουν μεγαλύτερη έμφαση στην οικονομική επιτυχία πάνω από οποιεσδήποτε ιδεολογικές αντιθέσεις με τους πολιτισμούς με τους οποίους συναλλάσσομαστε.</Text>
+            <PreferenceWeight>10</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>STANDARD_RESPONSE</ResponseTo>
+            </Requirements>
+            <Text>Τέλος Επικοινωνίας</Text>
+            <PreferenceWeight>910</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Μεγάλη κουβέντα από μια ασθενή δύναμη..</Text>
+            <Text>Ψάχνεις να σε καταστρέψουμε;</Text>
+            <Text>Πραγματικά δοκιμάζεις τη μοίρα..</Text>
+            <PreferenceWeight>910</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Θα αγνοήσω αυτές τις λέξεις αυτή τη φορά..</Text>
+            <Text>Μπορεί να ζήσεις για να μετανιώσεις την αυθάδειά σου..</Text>
+            <Text>Μια δυστυχής στάση..</Text>
+            <PreferenceWeight>332</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Δεν θα έπρεπε να λαδώνεις τον εαυτό σου ή κάτι τέτοιο;</Text>
+            <Text>Για ένα διαστημικό ρομπότ, έχεις πολύ στάση.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Δεν θα έπρεπε να μου φτιάχνεις λίγο τοστ αυτή τη στιγμή;</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Θα ανταποκριθούμε σε όποιον επιλέξουμε..</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Τα χρήματά τους είναι εξίσου καλά με αυτά οποιουδήποτε άλλου. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Από τη δική μας οπτική γωνία, είστε όλοι εξίσου άξιοι να γίνετε οι σκλάβοι μας.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>XenophobicAbility</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Νομίζουμε ότι όλοι σας είστε αρκετά αηδιαστικοί.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Έχουμε ελάχιστο ενδιαφέρον για τις δόγματα των οργανικών..</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_OPENBORDERS_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Χαίρεται να ακούμε αυτό..</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_ATWAR_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Θα σας αντισταθούμε!</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Είμαστε μηχανές. Οι κομπιασμοί σου είναι ασήμαντοι.</Text>
+            <PreferenceWeight>80</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_TECHVICTORYWORRY_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Λυπάμαι, αλλά πρέπει να συνεχίσουμε την αναζήτησή μας για την απόλυτη γνώση..</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Πιστεύω ότι οποιοσδήποτε εχθρός θα ανακαλύψει ότι είμαστε πιο σκληροί απ' ό,τι φαίνεται..</Text>
+            <Text>Μπορεί να ανακαλύψεις ότι θα ήταν μια μοιραία σφάλμα να μας επιτεθείς.</Text>
+            <Text>Θα συνειδητοποιήσεις σύντομα ότι είμαστε πιο δυνατοί απ' ό,τι φαίνεται.</Text>
+            <Text>Υποτιμώντας μας θα ήταν ένα ακριβό λάθος.</Text>
+            <Text>Η ανθεκτικότητά μας δεν πρέπει να υποτιμηθεί..</Text>
+            <Text>Η επίθεση εναντίον μας θα αποδειχθεί ως μοιραίο λάθος..</Text>
+            <Text>Μπορεί να φαινόμαστε ευάλωτοι, αλλά στην πραγματικότητα, είμαστε μια φοβερή δύναμη.</Text>
+            <Text>Οποιαδήποτε προσπάθεια να μας επιτεθείτε θα έχει σοβαρές συνέπειες.</Text>
+            <Text>Η δύναμή μας δεν είναι εύκολα αντιληπτή, αλλά δεν πρέπει να υποτιμάται.</Text>
+            <Text>Οποιαδήποτε εχθρική ενέργεια προς εμάς θα οδηγούσε σε καταστροφικές συνέπειες.</Text>
+            <Text>Θα διαπιστώσεις ότι είμαστε πιο ανθεκτικοί απ' ό,τι φαίνεται.</Text>
+            <Text>Το λάθος της επίθεσης εναντίον μας θα ήταν μια σοβαρή αστοχία.</Text>
+            <Text>Μπορεί να φαινόμαστε αδύναμοι, αλλά είμαστε μακριά από αυτό..</Text>
+            <Text>Οποιαδήποτε εχθρική πρόθεση προς εμάς θα αντιμετωπιζόταν με σοβαρές συνέπειες.. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Διαθέτουμε μια κρυμμένη δύναμη που δεν πρέπει να αγνοηθεί.</Text>
+            <Text>Θα μάθεις σύντομα ότι να μας επιτεθείς θα ήταν σοβαρό λάθος.</Text>
+            <Text>Η εμφάνισή μας μπορεί να είναι απατηλή, αλλά η αποφασιστικότητά μας δεν είναι.</Text>
+            <Text>Οποιαδήποτε προσπάθεια να μας βλάψει θα έχει καταστροφικές συνέπειες..</Text>
+            <Text>Μην αφήσεις την εμφάνισή μας να σε ξεγελάσει, είμαστε μια φοβερή δύναμη.</Text>
+            <Text>Επίθεση εναντίον μας θα ήταν μοιραίο λάθος..</Text>
+            <Text>Η αντοχή μας δεν είναι αμέσως αντιληπτή, αλλά δεν πρέπει να υποτιμάται.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Οποιεσδήποτε εχθρικές ενέργειες προς εμάς θα οδηγήσουν σε σοβαρές συνέπειες.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_ASCENSIONVICTORYWORRY_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Σύμφωνα με τα φυλλάδια, η ανάληψη σημαίνει να κάνεις παρέα με λιοντάρια και αρνιά και τραπέζια με φρούτα.. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>20</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Α, αυτό. Ε, όλοι ξέρουν ότι το τζίντζερ και η σοκολάτα είναι τα πιο ισχυρά πράγματα στο σύμπαν..</Text>
+            <Text>Δεν μπορούμε να βοηθήσουμε αν οι άνθρωποι ενδιαφέρονται για τα υπέροχα προϊόντα της MetaAppleDisneyGooglePlus.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerFaction>FACTION_YOR</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Εσείς οι βιολογικοί χρειάζεστε εκπαίδευση στην υπεροχή των μηχανών.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Ε, για να είμαι ειλικρινής, είχα ελπίσει ότι δεν θα το παρατηρούσες....</Text>
+            <Text>Καταλαβαίνω. Είναι απλά ότι ο πολιτισμός μας είναι τόσο υπέροχος..</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Προφανώς δεν έχεις ποτέ δοκιμάσει σοκολάτα..</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+            </Requirements>
+            <Text>Εε;</Text>
+            <Text>Δεν έχω ιδέα τι ειπώθηκε μόλις..</Text>
+            <PreferenceWeight>4</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ResponseTo>TALK_YOR_GENERAL</ResponseTo>
+            </Requirements>
+            <Text>Αυτή είναι μια συζήτηση βαθμολογίας PG. Με άλλα λόγια, καλύτερα να μην εξερευνήσετε τις λεπτομέρειες..</Text>
+            <PreferenceWeight>120</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Θα δούμε..</Text>
+            <Text>Αναγνωρίστηκε..</Text>
+            <PreferenceWeight>5</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Text>Αναγνωρίστηκε..</Text>
+            <Text>Κατανοητό.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Θα λάβουμε υπόψη αυτό που είπατε.</Text>
+            <Text>Καταλαβαίνουμε.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Θα λάβουμε υπόψη το μήνυμά σας.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- End Game text -->
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
+        <FlavorTextOption>
+            <Text>Μέσω της δημιουργικής σας χρήσης των όπλων, των πλοίων και των πλοίων με όπλα, έχετε βάλει το μποτάκι σας στον λαιμό του γαλαξία. Όλοι οι εχθροί σας έχουν καταστραφεί, οι πλανήτες τους έχουν υποταχθεί, και οι πολίτες τους έχουν αναγκαστεί να κυματίζουν τη σημαία σας. Δεν ήταν όμορφο, αλλά ποτέ δεν χρειαζόταν να είναι, έτσι δεν είναι;.</Text>
+        </FlavorTextOption>
+        <!-- <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
+    </FlavorTextOption> -->
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
+        <FlavorTextOption>
+            <Text>Ο πολιτισμός σας έχει διαδοθεί σε ολόκληρο το γαλαξία. Εξωγήινοι παντού προσπαθούν να μιμηθούν τους τρόπους του λαού σας, προσθέτοντας ή αφαιρώντας άκρα όπως είναι απαραίτητο για να ταιριάξουν καλύτερα στην εικόνα τους για την τέλεια ζωή που ηγείστε. Ποιος χρειάζεται να κατακτήσει τα σώματα όταν ήδη κατέχετε τις καρδιές και τα μυαλά τους;. Εάν είναι όνομα αρχείου απλά αντιγράφετε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_RESEARCH</InternalName>
+        <FlavorTextOption>
+            <Text>Χρησιμοποιώντας τα δυνατά σας μυαλά, ο πολιτισμός σας έχει αποκαλύψει τα μυστικά όχι μόνο αυτού του σύμπαντος, αλλά και του επόμενου. Αφήστε τους απλοϊκούς του γαλαξία να διαπληκτίζονται για τη σκόνη και τα συντρίμμια των βράχων που κατοικούν. Για τον λαό σας, κάτι πολύ μεγαλύτερο παραμονεύει.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ASCENSION</InternalName>
+        <FlavorTextOption>
+            <Text>Η μελέτη σας για τους τρόπους των Precursors είναι ολοκληρωμένη και το λαό σας θα γίνει σύντομα αδιακρίτος από τους ίδιους τους Precursors. Έχοντας κατανοήσει την τεχνολογία τους και τον τρόπο σκέψης τους, ο λαός σας πρόκειται να ξεκινήσει ένα ταξίδι που οι μικρότεροι νους αυτού του γαλαξία δεν μπορούν καν να αρχίσουν να κατανοήσουν..</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ASCENSION_DEFEAT</InternalName>
+        <FlavorTextOption>
+            <Text>Μια άλλη φυλή έχει ακολουθήσει την πορεία των Προπομπών και έχει αναγεννηθεί. Αν και η καταστροφή μας δεν είναι άμεση, μας οδήγησες να γίνουμε εξελικτικά παρωχημένοι. Τα διαστημόπλοια και τα λέιζερ μας έχουν λίγη σημασία για μια φυλή που ξεπερνά τη θνητότητα, για την οποία ο χρόνος και ο χώρος είναι παιχνίδια για παιδιά. Γι' αυτούς, δεν είμαστε καν πραγματικά νοημονούντες, είμαστε σκόνη που πετάει γύρω από τον γαλαξία, αγνοημένη ή καταστρεμμένη καθώς το κέφι τους ορίζει.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_ALLIANCE</InternalName>
+        <FlavorTextOption>
+            <Text>Και με τη χρήση ενός στυλό, η ειρήνη ήταν επιτέλους κοντά. Μια ειρήνη που θα διαρκούσε, καθώς είχε βασιστεί σε ένα θεμέλιο αμοιβαίας εμπιστοσύνης και σεβασμού. Με τα μυαλά και τους πόρους τους να μην χάνονται πλέον στην ατελείωτη δίψα του πολέμου, μια νέα χρυσή εποχή ευημερίας σύντομα κατεβαίνει στον λαό σας και στους συμμάχους του.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_TURNLIMIT</InternalName>
+        <FlavorTextOption>
+            <Text>Για χρόνια, ο λαός σας πάλεψε και αγωνίστηκε στη γαλαξιακή σκηνή με τους φιλόδοξους και συνωμοτικούς γείτονές σας. Παρόλο που καμία φυλή δεν κατάφερε ποτέ να αποκτήσει καθοριστικό πλεονέκτημα, όταν η σύγκρουση εξελίχθηκε σε πόλεμο κατανάλωσης, ήταν ο λαός σας που τελικά κατέληξε στην καλύτερη θέση.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_PRESTIGE</InternalName>
+        <FlavorTextOption>
+            <Text>Για χρόνια, ο λαός σας πάλεψε και αγωνίστηκε στη γαλαξιακή σκηνή με τους φιλόδοξους και συνωμοτικούς γείτονές σας. Παρόλο που καμία φυλή δεν κατάφερε ποτέ να αποκτήσει καθοριστικό πλεονέκτημα, όταν η σύγκρουση εξελίχθηκε σε πόλεμο κατανάλωσης, ήταν ο λαός σας που τελικά κατέληξε στην καλύτερη θέση.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_UNITEDPLANETS</InternalName>
+        <FlavorTextOption>
+            <Text>Δεν θα έπρεπε να βλέπετε αυτό.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_DEFEAT</InternalName>
+        <FlavorTextOption>
+            <Text>Και με αυτό, η πολιτισμός σας κατέρρευσε. Για κάποιο χρονικό διάστημα, ο λαός σας συνέχισε να ζει, διασκορπισμένος σε όλον τον γαλαξία ως πρόσφυγες και απομονωμένοι. Αλλά η δύναμη του είδους σας δεν επέστρεψε ποτέ. Θα θυμούνται οι άνθρωποί σας σε μουσεία και σε βιβλία ιστορίας, ή θα διαγραφούν από τη μνήμη όλων των όντων; Δεν θα το μάθετε ποτέ. Δεν είναι πια δική σας επιλογή να το πείτε.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>END_GAME_PARAGRAPH_RETIRED</InternalName>
+        <FlavorTextOption>
+            <Text>Η δημιουργία μιας πολιτισμού που εκτείνεται σε όλο το γαλαξία παίρνει πολύ χρόνο και όχι όλοι έχουν την υπομονή γι' αυτό. Θα καταλάβουν οι δικοί σου άνθρωποι ότι έκανες ό,τι καλύτερο μπορούσες, ή θα σε καταραστούν για το ότι τους εγκατέλειψες ενώ οι εξωγήινοι τρώνε τα οστά τους; Μην αφήσεις αυτό να σε κρατήσει ξύπνιο τη νύχτα (θα έπρεπε να σε κρατάει ξύπνιο τη νύχτα).. Αν είναι όνομα αρχείου απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_CREDITS</InternalName>
+        <FlavorTextOption>
+            <Text>Ο Διπλωμάτης μας {OBJECTNAME} έκλεψε {AMOUNT:2} credits από την {PLAYERFACTION:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>UNIT_STOLE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Ο Διπλωμάτης μας {OBJECTNAME} έκλεψε την τεχνολογία {TECHNAME:2} από το {PLAYERFACTION:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>UNIT_STOLE_TECH_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Συνέχισε την καλή δουλειά..</Text>
+        </FlavorTextOption>
+<!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Έχουμε κλέψει την τεχνολογία {TECHNAME:2} από τους {PLAYERFACTION:3}.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH_FAIL</InternalName>
+        <FlavorTextOption>
+            <Text>Το διάστημά μας έχει κοιτάξει το {PLAYERFACTION:3}. Αν και δεν παρατηρήθηκαν νέες τεχνολογίες, έχουμε συγκεντρώσει μερικές γνώσεις σχετικά με μεθόδους έρευνας διαφορετικές από τις δικές μας. [BR][BR][COLOR=UIDefaultHighlight][ICON=Stat_Research_Icon] +30 Έρευνα[/COLOR].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
+        <FlavorTextOption>
+            <Text>Εξαιρετικά.. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC</InternalName>
+        <FlavorTextOption>
+            <Text>Συμπληρώστε Περιγραφή.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Τι αποβράσματος τέρας διασχίζει την οθόνη μου;</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Είναι ωραίο να σας γνωρίζω εσάς και το είδος σας, Κόραθ.</Text>
+            <PreferenceWeight>1</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Πρόσεξε τις συμπεριφορές σου, Korath. Δεν θα εκφοβίσεις κανέναν εδώ.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERIC_GREETING</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Κάνε αυτό γρήγορα, αληθοφαγώδες εξωγήινο..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>DECLARE_WAR_MAIN</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Πόση άθλια ζωή πρέπει να ζεις, χωρίς να είσαι ένας από εμάς. Σύντομα θα τελειώσει, για εσένα και για όλους τους δικούς σου..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Έχεις αποδείξει την δύναμή σου, εξωγήινε. Αρκετά με αυτές τις μάχες. Ας προσέχουμε τις πληγές μας..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>AI_CREATED_TRADE_OFFER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Κοίτα, εξωγήινε. Μια προσφορά και ένα δώρο. Θα ήσουν χαζός να μην αποδεχτείς..</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>TRADE_OFFER_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Αποδεχόμαστε την προσφορά σας, εξωγήινε.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Ο γαλαξίας είναι γεμάτος από βρώμικα εξωγήινα. Είναι αηδιαστικό..</Text>
+            <Text>Σε κουράζουν ποτέ οι ήχοι που βγάζει το αποτρόπαιο πρόσωπό σου; Εμένα ναι.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>Μην σπαταλάς τον χρόνο μου ή τον δικό σου με άσκοπη κουβεντιά. Αλλά κυρίως, μην σπαταλάς τον δικό μου.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Χαίρομαι που μίλησα και με εσένα, Korath.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+            </Requirements>
+            <Text>Φαίνεσαι πιο άσχημος από το συνηθισμένο σήμερα.</Text>
+            <PreferenceWeight>50</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!-- FROM INTRIGUE -->
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_LOSE</InternalName>
+        <FlavorTextOption>
+            <Text>Έχουμε προγραμματισμένες εκλογές σε 5 μήνες. Οι δημοσκοπήσεις αναφέρουν ότι πιθανότατα θα [COLOR=UIDefaultHighlight]χάσουμε με μεγάλη διαφορά[/COLOR].[BR][BR]Οι εκλογές απαιτούν να παρακολουθούμε στενά την αξιολόγηση εγκρίσεως. Οι ψηφοφόροι δεν θα επηρεαστούν εύκολα από μέτρα βραχυπρόθεσμα και θα λάβουν υπόψη την ηθική τους κατάσταση πάνω από μακροχρόνια περίοδο. Όλα τα πράγματα που αυξάνουν την έγκριση θα μας βοηθήσουν να κερδίσουμε τις εκλογές, όπως το να μειώσουμε τον φορολογικό συντελεστή και την κατασκευή βελτιώσεων έγκρισης. Ή μπορούμε να σκεφτούμε μορφές κυβέρνησης που δεν διεξάγ</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_LOW</InternalName>
+        <FlavorTextOption>
+            <Text>Είμαστε προγραμματισμένοι για εκλογές σε 5 μήνες. Οι δημοσκόποι αναφέρουν ότι είναι πιθανό να [COLOR=UIDefaultHighlight]χάσουμε, αλλά θα είναι κοντά[/COLOR]. Θα πρέπει να επικεντρωθούμε στην αύξηση του ηθικού.[BR][BR]Οι εκλογές απαιτούν να παρακολουθούμε στενά την αποδοχή μας. Οι ψηφοφόροι δεν θα επηρεαστούν εύκολα από μέτρα βραχυπρόθεσμα και θα λάβουν υπόψη τους το ηθικό τους κατά τη διάρκεια μιας μακράς περιόδου. Όλα τα πράγματα που αυξάνουν την αποδοχή θα μας βοηθήσουν να κερδίσουμε εκλογές όπως τη μείωση του φορολογικού συντελεστή και την κατασκευή βελτιώσεων εγκρισης. Ή μπορούμε να εξετάσ</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_HIGH</InternalName>
+        <FlavorTextOption>
+            <Text>Έχουμε προγραμματισμένες εκλογές σε 5 μήνες. Οι δημοσκοπήσεις αναφέρουν ότι είναι πιθανό να [COLOR=UIDefaultHighlight]νικήσουμε, αλλά θα είναι στενό[/COLOR]. Δεν μπορούμε να επιτρέψουμε την πτώση του ηθικού.[BR][BR]Οι εκλογές απαιτούν να παρακολουθούμε στενά την αξιολόγησή μας. Οι ψηφοφόροι δεν θα επηρεαστούν εύκολα από μέτρα βραχυπρόθεσμα και θα λάβουν υπόψη τους το ηθικό τους κατά τη διάρκεια μιας μακράς περιόδου. Όλα τα πράγματα που αυξάνουν την έγκριση θα μας βοηθήσουν να κερδίσουμε εκλογές, όπως η μείωση του φορολογικού συντελεστή και η κατασκευή βελτιώσεων έγκρισης. Ή μπορούμε να εξετ</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_WIN</InternalName>
+        <FlavorTextOption>
+            <Text>Έχουμε προγραμματισμένες εκλογές σε 5 μήνες. Οι δημοσκοπήσεις αναφέρουν ότι είναι πιθανό να [COLOR=UIDefaultHighlight]κερδίσουμε με συντριπτική πλειοψηφία[/COLOR].[BR][BR]Οι εκλογές απαιτούν να παρακολουθούμε στενά την έγκρισή μας. Οι ψηφοφόροι δεν θα επηρεαστούν εύκολα από μέτρα βραχυπρόθεσμα και θα λάβουν υπόψη την ηθική τους μεγάλης διάρκειας. Όλα τα πράγματα που αυξάνουν την έγκριση θα μας βοηθήσουν να κερδίσουμε εκλογές όπως το να μειώνουμε τον φορολογικό συντελεστή και την κατασκευή βελτιώσεων έγκρισης. Ή μπορούμε να εξετάσουμε μορφές κυβέρνησης που δεν διεξάγουν εκλογές. Εάν χάσουμ</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_ECONOMY</InternalName>
+        <FlavorTextOption>
+            <Text>Ας εξετάσουμε τις Οικονομικές μας επιλογές. [COLOR=UIDefaultHighlight](Ανοίγει την Οθόνη Οικονομίας)[/COLOR]. Αν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Ας εξετάσουμε τις επιλογές της Κυβέρνησής μας. [COLOR=UIDefaultHighlight](Ανοίγει την οθόνη Κυβέρνησης)[/COLOR]. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>ELECTION_WARNING_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Δώσε μου μια στιγμή.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING</InternalName>
+        <FlavorTextOption>
+            <Text>Η κυβέρνησή μας είναι ανεπαρκής για τις ανάγκες του αυξανόμενου πολιτισμού μας. Οι νέες αποικίες διαμαρτύρονται ότι η κυβέρνηση εξυπηρετεί μόνο τον πλανήτη-γενέτειρα και οι αποφάσεις σε όλους τους πλανήτες μας καθίστανται ολοένα και πιο καθυστερημένες από βαθύτερα και βαθύτερα επίπεδα γραφειοκρατίας.[BR][BR]Οι κυβερνήσεις είναι αποτελεσματικές μόνο στη διαχείριση ενός συγκεκριμένου αριθμού πλανητών. Μετά την υπέρβαση αυτού του [COLOR=UIDefaultHighlight]Ορίου Αποικιών[/COLOR], θα υποστούμε ένα ποινή Ηθικού για κάθε Αποικία που ελέγχουμε πέραν αυτού του ορίου.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Ας εξετάσουμε τις επιλογές της Κυβέρνησής μας. [COLOR=UIDefaultHighlight](Ανοίγει την οθόνη Κυβέρνησης)[/COLOR]. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Δώσε μου μια στιγμή.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Η κυβέρνησή μας δεν επαρκεί για τις ανάγκες του αυξανόμενου πολιτισμού μας. Οι νέες αποικίες παραπονούνται ότι η κυβέρνηση εξυπηρετεί μόνο τον κόσμο της πατρίδας και οι αποφάσεις σε όλους τους κόσμους μας καθίστανται ολοένα και περισσότερο καθυστερημένες από τη γραφειοκρατία.[BR][BR]Οι κυβερνήσεις είναι αποτελεσματικές μόνο στη διαχείριση ενός συγκεκριμένου αριθμού κόσμων. Αφού υπερβεί αυτό το [COLOR=UIDefaultHighlight]Όριο Αποικιών[/COLOR], υφίσταμαι ένα ποινικό ηθικού για κάθε Αποικία πέρα από αυτό το όριο. Δυστυχώς δεν έχουμε ανακαλύψει καμία κυβέρνηση που να αυξάνει το Όριο Αποικι</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_TECH</InternalName>
+        <FlavorTextOption>
+            <Text>Ας εξετάσουμε τις επιλογές μας στην Έρευνα. [COLOR=UIDefaultHighlight](Ανοίγει την οθόνη Έρευνας)[/COLOR].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Δώσε μου μια στιγμή.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSE_FIRST_GOVERNMENT</InternalName>
+        <FlavorTextOption>
+            <Text>Τώρα που έχουμε επεκταθεί πέρα από τον πλανήτη μας, οι αποικιστές ζητούν δομή. Είναι καιρός να επιλέξουμε μια μορφή κυβέρνησης που είναι έτοιμη να διαχειριστεί μια γαλαξιακή πολιτισμό.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_GO_NOW</InternalName>
+        <FlavorTextOption>
+            <Text>Υπέροχα, ας ξεκινήσουμε! [COLOR=UIDefaultHighlight](Ανοίγει η οθόνη της Κυβέρνησης)[/COLOR]. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_WAIT</InternalName>
+        <FlavorTextOption>
+            <Text>Δώσε μου μια στιγμή.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>LEADER_OPINION_OF_PLAYER</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <NoMin>true</NoMin>
+                        <RangeMax>30</RangeMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]"Η ανικανότητά σου είναι ύλη μύθων."[/I]</Text>
+            <Text>[I]"Οδηγείς τον πολιτισμό μας στην καταστροφή."[/I]</Text>
+            <Text>[I]"Επιβιώνουμε παρά τη μέτρια ηγεσία σου."[/I]</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <RangeMin>70</RangeMin>
+                        <NoMax>true</NoMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]"Η πολιτισμός μας ανθεί εξαιτίας της κυριαρχίας σας."[/I]</Text>
+            <Text>[I]"Έχεις την αιώνια μου υποστήριξη."[/I]</Text>
+            <Text>[I]"Σε υπηρετώ με τιμή."[/I]</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <StatRange>
+                    <Stat>Loyalty</Stat>
+                    <Range>
+                        <RangeMin>30</RangeMin>
+                        <RangeMax>70</RangeMax>
+                    </Range>
+                </StatRange>
+            </Requirements>
+            <Text>[I]"Είσαι ένας ικανός, αλλά όχι εξαιρετικός, κυβερνήτης."[/I]</Text>
+            <Text>[I]"Είσαι ένας ικανός επιτηρητής του πολιτισμού μας, αλλά θα έπρεπε να επιδιώκουμε περισσότερα."[/I]</Text>
+            <Text>[I]"Δεν έχω ισχυρή γνώμη ούτε προς τη μία ούτε προς την άλλη πλευρά."[/I]</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+</FlavorTextDefs>

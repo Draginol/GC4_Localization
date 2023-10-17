@@ -87,7 +87,7 @@ class TranslationApp(QMainWindow):
         file_menu.addAction(openai_key_action)
 
         self.language_box = QComboBox(self)
-        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
+        self.languages = ["English", "French", "German", "Greek","Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
         self.language_box.addItems(self.languages)
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
@@ -97,6 +97,9 @@ class TranslationApp(QMainWindow):
         self.table.setSortingEnabled(True)
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
+
+        self.table.setWordWrap(True)
+
 
         self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
@@ -294,9 +297,13 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 2, QTableWidgetItem(label))
             self.table.setItem(idx, 3, QTableWidgetItem(string))
             self.table.setItem(idx, 4, CustomTableWidgetItem(string, file_path, label))  # Default to English for the translation
+        
+        # Resize rows to fit their content
+        for idx in range(self.table.rowCount()):
+            self.table.resizeRowToContents(idx)
+
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
-
 
     def switch_language(self):
         self.table.itemChanged.disconnect(self.on_item_changed)
@@ -328,13 +335,13 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, succinctly translate this English string, respecting formatting codes into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, respecting formatting codes into {target_language}: {text}."
 
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=1000,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -366,11 +373,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 10
+        CHUNK_SIZE = 1
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=4) as executor:
+            with ThreadPoolExecutor(max_workers=1) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:

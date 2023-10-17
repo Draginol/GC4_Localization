@@ -1,74 +1,75 @@
-﻿<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-    <StringTable>
-        <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
-        <String>Niektóre tagi są po prostu nazwą tagu w {}.[BR]Składnia: {GAMETAG} [BR]Przykład: &quot;{PLANETNAME} to świetne miejsce do życia!&quot;[BR]Inne mają :, po którym następuje liczba, która jest GameTextIndex, aby rozróżnić wiele możliwych zamienników.[BR]W tekście smakowym rozmowy, 1 to Mówca (gracz inicjujący rozmowę), 2 to Słuchacz (gracz odbierający rozmowę), a 3 to Gracz Trzeci (gracz, o którym rozmawiają Mówca i Słuchacz).[BR]W rozmowach, w których coś jest oferowane, użyj GameTextIndex, aby wskazać, kto daje przedmiot (AMOUNT, TECHNAME, OBJECTNAME)[BR]Składnia: {GAMETAG:#} [BR]Przykład 1: &quot;My, {PLAYERFACTIONLONG:1} wypowiadamy wojnę wam, {PLAYERFACTIONLONG:2}&quot;[BR]Przykład 2: &quot;Nie ma już {PLAYERFACTION:3} &quot;</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
-        <String>Krótka wersja nazwy cywilizacji gracza</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
-        <String>Nazwa cywilizacji gracza</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
-        <String>Długotrwały opis frakcji gracza</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
-        <String>Lista cech frakcji gracza</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_ORIGINALTEXT</Label>
-        <String>Oryginalny tekst z podstawieniami przed uruchomieniem post-processu</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_PREVIOUSCONV</Label>
-        <String>Tekst kontekstowy poprzedniej rozmowy z podstawieniami przed uruchomieniem post-process</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
-        <String>Nie jest już używane. Zamiast tego użyj PLAYERFACTION lub PLAYERFACTIONLONG</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
-        <String>Nazwa lidera cywilizacji gracza</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
-        <String>Rundy do ukończenia projektu</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
-        <String>Nazwa projektu w kolejce budowy (stocznia lub planeta)</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
-        <String>Używane do warunku zwycięstwa, którym zakończono grę</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
-        <String>Lista graczy, którzy spełnili warunek wygranej</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
-        <String>Nazwa omawianej planety</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
-        <String>Ilość czegoś, zazwyczaj kredytów oferowanych/żądanych/zamawianych</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
-        <String>Nazwa technologii, która jest oferowana/żądana/wymagana.</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
-        <String>Nazwa obiektu, który jest oferowany/żądany/proszony</String>
-    </StringTable>
-    <StringTable>
-        <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
-        <String>Nazwa pracownika, który jest omawiany</String>
-    </StringTable>
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
+    <String>Niektóre tagi to zwyczajnie nazwa tagu w „{}”.[BR]Składnia: {TAG_GRY} [BR]Przykład: „{PLANETNAME} to świetne miejsce do życia!”[BR]Inne mają znak „:”, po którym następuje liczba, którą jest GameTextIndex, co umożliwia rozróżnienie wielu możliwych zamienników.[BR]W tekstach rozmów dodatkowych 1 to mówca (gracz rozpoczynający rozmowę), 2 to słuchacz (odbiorca konwersacji), a 3 to gracz zewnętrzny (gracz, o którym rozmawiają mówca i słuchacz).[BR]W rozmowach, w których coś jest oferowane, użyj GameTextIndex, aby wskazać, kto daje przedmiot (ILOŚĆ, NAZWA_TECHNOLOGII, NAZWA_PREDMIOTU).[BR]Składnia: {TAG_GRY:liczba} [BR]Przykład 1: „My, {PLAYERFACTIONLONG:1}, wypowiadamy wam, {PLAYERFACTIONLONG:2}, wojnę”[BR]Przykład 2: „{PLAYERFACTION:3} już nie istnieje.”</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
+    <String>Krótka wersja nazwy cywilizacji gracza</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
+    <String>Nazwa cywilizacji gracza</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
+    <String>Długotrwały opis frakcji gracza</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
+    <String>Lista cech frakcji gracza</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_ORIGINALTEXT</Label>
+    <String>Oryginalny tekst dodatkowy z podstawieniami przed uruchomieniem przetwarzania końcowego</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_PREVIOUSCONV</Label>
+    <String>Poprzedni tekst rozmowy dodatkowej z podstawieniami przed uruchomieniem przetwarzania końcowego</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
+    <String>Nie jest już używany. Użyj zamiast niego PLAYERFACTION lub PLAYERFACTIONLONG</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
+    <String>Nazwa lidera cywilizacji gracza</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
+    <String>Rundy do ukończenia projektu</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
+    <String>Nazwa projektu w kolejce budowy (stocznia lub planeta)</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
+    <String>Używane dla warunku zwycięstwa, którym zakończono grę</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
+    <String>Lista graczy, którzy spełnili warunek wygranej</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
+    <String>Nazwa omawianej planety</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
+    <String>Ilość czegoś, zazwyczaj kredytów oferowanych/żądanych/wymaganych</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
+    <String>Nazwa technologii, która jest oferowana/żądana/wymagana.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
+    <String>Nazwa obiektu, który jest oferowany/żądany/wymagany</String>
+  </StringTable>
+  <StringTable>
+    <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
+    <String>Nazwa pracownika, który jest omawiany</String>
+  </StringTable>
 </StringTableList>

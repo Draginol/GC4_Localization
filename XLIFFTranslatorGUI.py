@@ -18,7 +18,7 @@ import re
 import os
 import openai
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout,
-                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QListWidget)
+                             QPushButton, QFileDialog, QComboBox, QWidget, QMessageBox,QInputDialog,QAction,QLineEdit)
 from PyQt5.QtCore import QSettings
 from PyQt5 import sip
 from PyQt5.QtWidgets import QProgressDialog
@@ -84,7 +84,7 @@ class TranslationApp(QMainWindow):
         file_menu.addAction(openai_key_action)
 
         self.language_box = QComboBox(self)
-        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese"]
+        self.languages = ["English", "French", "German", "Russian", "Spanish", "Italian", "Portuguese", "Polish", "Korean", "Japanese", "Chinese","Greek"]
         self.language_box.addItems(self.languages)
         self.language_box.currentIndexChanged.connect(self.switch_language)
 
@@ -94,9 +94,16 @@ class TranslationApp(QMainWindow):
         self.table.setSortingEnabled(True)
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
+        self.table.setWordWrap(True)
 
         self.translate_button = QPushButton("Translate", self)
         self.translate_button.clicked.connect(self.perform_translation)
+
+        self.search_box = QLineEdit(self)
+        self.search_box.setPlaceholderText("Search...")
+        self.search_box.textChanged.connect(self.filter_table)
+        layout.addWidget(self.search_box)
+
 
         layout.addWidget(self.language_box)
         layout.addWidget(self.table)
@@ -116,6 +123,23 @@ class TranslationApp(QMainWindow):
         if openai_key:
             openai.api_key = openai_key
 
+    def filter_table(self):
+        search_text = self.search_box.text().lower()  # Get the input text in lowercase
+
+        # Loop through all rows in the table
+        for row in range(self.table.rowCount()):
+            row_matches = False
+            for col in range(self.table.columnCount()):
+                item = self.table.item(row, col)
+                if item and search_text in item.text().lower():
+                    row_matches = True
+                    break
+
+            # If row matches, show it; otherwise, hide it
+            self.table.setRowHidden(row, not row_matches)
+
+    
+    
     def load_file(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getOpenFileName(self, "Open XLIFF File", self.parent_directory, "XLIFF Files (*.xliff);;All Files (*)", options=options)
@@ -198,6 +222,10 @@ class TranslationApp(QMainWindow):
             self.table.setItem(idx, 2, CustomTableWidgetItem(source_text, file_name, label, trans_unit_id, internal_name))
             self.table.setItem(idx, 3, CustomTableWidgetItem(target_text, file_name, label, trans_unit_id, internal_name))
 
+         # Resize rows to fit their content
+        for idx in range(self.table.rowCount()):
+            self.table.resizeRowToContents(idx)
+
         self.table.itemChanged.connect(self.on_item_changed)
         self.table.itemChanged.connect(self.update_translation)
 
@@ -225,20 +253,19 @@ class TranslationApp(QMainWindow):
 
         self.populate_table()
 
-
     def switch_language(self):
         lang = self.language_box.currentText()
         
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 1)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, without using more words and respecting formatting codes such as [I] into {target_language}: {text}. If it's a filename just copy the english over."
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, without using more words and respecting formatting codes such as [I] into {target_language}: {text}. "
 
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=100,
+                max_tokens=1000,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -270,11 +297,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 24
+        CHUNK_SIZE = 1
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=24) as executor:
+            with ThreadPoolExecutor(max_workers=1) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 3)
                     if not translation_item:
@@ -291,7 +318,7 @@ class TranslationApp(QMainWindow):
                     QApplication.processEvents()
 
             # Save translations after each chunk
-            if (translation_counter % 10) == 0:
+            if (translation_counter % 8) == 0:
                 self.save_to_file()
             translation_counter += len(chunk)
 
