@@ -265,7 +265,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=1000,
+                max_tokens=2000,
                 n=1,
                 stop=None,
                 temperature=0.7,
