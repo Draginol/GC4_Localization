@@ -25,7 +25,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>We are sorry, but we cannot vindicate assisting you at this time. Perhaps if we had closer relations we could find the funds... but as things stand, we think we are better off keeping our assets to ourselves.</Text>
+            <Text>Nous sommes désolés, mais nous ne pouvons justifier de vous aider en ce moment. Peut-être que si nous avions des relations plus proches, nous pourrions trouver les fonds... mais en l'état actuel des choses, nous pensons que nous sommes mieux en gardant nos actifs pour nous-mêmes.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -39,7 +39,7 @@
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
+            <Text>Venez-vous sérieusement de demander de l'argent à une civilisation qui pratique l'esclavage?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -151,11 +151,11 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>(Les belligérants ne peuvent communiquer)</Text>
+            <Text>(vous ne pouvez pas parler avec quelqu'un avec qui vous êtes en guerre).</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>(Les belligérants ne peuvent communiquer)</Text>
+            <Text>(vous ne pouvez pas parler avec quelqu'un avec qui vous êtes en guerre).</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -259,7 +259,7 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>You have the advantage now. But when you live as my slaveling we will revisit this day.</Text>
+            <Text>Vous avez l'avantage maintenant. Mais quand vous vivrez comme mon esclave, nous revisiterons ce jour..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -671,14 +671,14 @@
     <FlavorTextDef>
         <InternalName>AI_INIT_TRADE_TECHBUY_INTRO</InternalName>
         <FlavorTextOption>
-            <Text>Les {PLAYERFACTIONLONG:2} détiennent un savoir qui nous intéresse. Accepteriez-vous ceci en échange ?</Text>
+            <Text>La {PLAYERFACTIONLONG:2} a des connaissances qui nous intéressent. Accepteriez-vous cet échange ?</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- Get off my lawn -->
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>{PLAYERFACTIONLONG:2}, on vous apprécie, mais la présence militaire accrue nous inquiète.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous voyons vos forces se masser à notre porte. Vous devriez arrêter.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -688,7 +688,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, on vous apprécie, mais la présence militaire accrue nous inquiète.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous voyons vos forces se masser à notre porte. Vous devriez arrêter.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -698,7 +698,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, on vous apprécie, mais la présence militaire accrue nous inquiète.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous voyons vos forces se masser à notre porte. Vous devriez arrêter.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -708,22 +708,22 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre relation avec vous, mais l'accroissement militaire nous préoccupe.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, on a une relation positive avec vous, mais votre récente expansion militaire nous inquiète.</Text>
+            <Text>{PLAYERFACTIONLONG:2} Même si nous vous apprécions, nous n'aimons pas cette accumulation militaire que nous observons..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous vous apprécions, mais l'augmentation de la présence militaire nous préoccupe.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre relation avec vous, mais la montée militaire nous préoccupe..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous entretenons une relation positive avec vous, mais votre récente expansion militaire nous inquiète..</Text>
             <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre amitié, mais la présence militaire grandissante est une source de malaise pour nous.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, on vous apprécie beaucoup, mais l'accroissement de la présence militaire nous inquiète.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre alliance, mais l'accroissement de l'activité militaire nous inquiète.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre partenariat, mais la présence militaire grandissante nous inquiète.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, nous avons une bonne relation avec vous, mais l'expansion militaire accrue nous inquiète.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, nous avons une bonne relation avec vous, mais l'expansion militaire accrue nous inquiète.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, we have a good relationship with you, but the heightened military expansion is a worry to us.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous avons de l'affection pour vous, mais l'augmentation de l'armement militaire nous préoccupe..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre alliance, mais la montée de l'activité militaire nous inquiète..</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous apprécions notre partenariat, mais la présence militaire croissante est pour nous une source d'inquiétude.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, nous avons une bonne relation avec vous, mais l'expansion militaire accrue nous inquiète..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Vous devez nous faire confiance, l'ami.</Text>
+            <Text>Rien à voir ici....</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -733,7 +733,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Vous devez nous faire confiance, l'ami.</Text>
+            <Text>Pourquoi ne m'arrêtes-tu pas ?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -743,7 +743,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Vous devez nous faire confiance, l'ami.</Text>
+            <Text>Rien à voir ici....</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -753,14 +753,14 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>You need to trust us, friend.</Text>
+            <Text>Vous devez nous faire confiance, ami..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>J'espère, dans votre intérêt, que notre confiance n'est pas mal placée.</Text>
+            <Text>Nous observerons attentivement..</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -770,7 +770,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>J'espère, dans votre intérêt, que notre confiance n'est pas mal placée.</Text>
+            <Text>Nous observerons attentivement..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -780,7 +780,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>J'espère, dans votre intérêt, que notre confiance n'est pas mal placée.</Text>
+            <Text>Nous vous surveillerons..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -790,7 +790,7 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>I hope, for your sake, that our trust isn't misplaced.</Text>
+            <Text>J'espère, pour votre bien, que notre confiance n'est pas mal placée..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1550,9 +1550,9 @@
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>[I]'Tu es un dirigeant compétent, mais pas exceptionnel.'[/I]</Text>
-            <Text>[I]'Tu es un intendant compétent de notre civilisation, mais nous devrions aspirer à plus.'»[/I]</Text>
-            <Text>[I]'Je n'ai pas d'opinion tranchée dans un sens ou dans l'autre.'»[/I]</Text>
+            <Text>[I]"Votre incompétence est légendaire."[/I]</Text>
+            <Text>[I]"Vous menez notre civilisation à la ruine."[/I]</Text>
+            <Text>[I]"Nous survivons malgré votre leadership médiocre."[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1564,9 +1564,9 @@
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
+            <Text>[I]"Notre civilisation prospère grâce à votre règne."[/I]</Text>
+            <Text>[I]"Vous avez mon soutien éternel."[/I]</Text>
+            <Text>[I]"Je vous sers avec honneur."[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1578,9 +1578,9 @@
                     </Range>
                 </StatRange>
             </Requirements>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
-            <Text>[I]'Ton incompétence est digne des légendes.'[/I]</Text>
+            <Text>[I]"Vous êtes un dirigeant compétent, mais pas exceptionnel."[/I]</Text>
+            <Text>[I]"Vous êtes un intendant capable de notre civilisation, mais nous devrions aspirer à plus."[/I]</Text>
+            <Text>[I]"Je n'ai pas d'opinion tranchée dans un sens ou dans l'autre."[/I]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>

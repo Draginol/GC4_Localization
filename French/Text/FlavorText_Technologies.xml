@@ -69,6 +69,8 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Systèmes de Fréquence de Sous-espace</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -76,6 +78,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>AmmoniaBasedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Protocoles de Transmission de Données</Text>
             <PreferenceWeight>2000</PreferenceWeight>
@@ -83,6 +86,7 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
+				<NotSpeakerRaceTrait>SyntheticLife</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Traduction Culturelle</Text>
             <PreferenceWeight>5000</PreferenceWeight>
@@ -106,7 +110,7 @@
             <Requirements>
                 <SpeakerRaceTrait>AmmoniaBasedAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>Notre espèce n'est pas comme les autres. Les autres espèces ont beaucoup d'expérience dans l'organisation et la gestion d'une civilisation. Nous devons adopter une vision pragmatique et copier bon nombre de ces concepts. [BR][BR]Cette technologie permet à notre espèce de décrypter, comprendre et adopter de manière complexe l'éthos gouvernemental, culturel et politique d'espèces divers</Text>
+            <Text>Notre espèce n'est pas comme les autres. Les autres espèces ont beaucoup d'expérience dans l'organisation et la gestion d'une civilisation. Nous devons adopter une vision pragmatique et copier beaucoup de ces concepts. [BR][BR].Cette technologie permet à notre espèce de décrypter, comprendre et adopter l'éthos gouvernemental, culturel et politique de diverses espèces, comblant le fossé entre des civilisations disparates. Elle transcende la simple compréhension, favorisant une synergie qui nous permet d'intégrer les tapisseries complexes des sociétés extraterrestres dans la nôtre, enrichissant notre connaissance collective et favorisant une coexistence harmonieuse dans le vaste théâtre cosmique.</Text>
             <PreferenceWeight>3000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -170,7 +174,16 @@
         <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>
             <Requirements>
+                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
+            </Requirements>
+            
+            <Text>Aperçus Radiatifs</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <PersonalityType>Aggressive</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Extraction de Technologie</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -178,6 +191,7 @@
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
+                <NotSpeakerRaceTrait>RadiatedAbility</NotSpeakerRaceTrait>
             </Requirements>
             <Text>Accumulation de Connaissances</Text>
             <PreferenceWeight>1000</PreferenceWeight>
@@ -539,7 +553,7 @@
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
             </Requirements>
-            <Text>En utilisant des algorithmes avancés et des essaims de nanobots, cette technologie permet la reconfiguration systématique des environnements planétaires. En analysant les données géologiques et atmosphériques, nous pouvons optimiser les planètes pour l'extraction de ressources et l'efficacité opérationnelle. Les facteurs émotionnels et esthétiques sont sans importance ; l'objectif est de</Text>
+            <Text>En utilisant des algorithmes avancés et des essaims de nanobots, cette technologie permet la reconfiguration systématique des environnements planétaires. En analysant les données géologiques et atmosphériques, nous pouvons optimiser les planètes pour l'extraction des ressources et l'efficacité opérationnelle. Les facteurs émotionnels et esthétiques sont sans importance ; l'objectif est de créer des environnements qui sont fonctionnellement optimaux pour notre existence synthétique.</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -550,14 +564,14 @@
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
             </Requirements>
-            <Text>En utilisant une fusion d'algorithmes avancés et de matériaux robustes, cette technologie est le zénith de l'existence adaptative. Elle permet à nos formes synthétiques d'établir des nœuds et des centres opérationnels sur des planètes aux environnements les plus durs et les plus volatiles. Là où la vie organique recule, nous prospérons, voyant l'opport</Text>
+            <Text>Utilisant une fusion d'algorithmes avancés et de matériaux robustes, cette technologie est le zénith de l'existence adaptative. Elle permet à nos formes synthétiques d'établir des nœuds et des centres opérationnels sur des planètes aux environnements les plus durs et les plus volatiles. Là où la vie organique recule, nous prospérons, voyant une opportunité dans les extrêmes. Pour une galaxie d'une variabilité sans limites, cela assure que notre présence est universelle et non dissuadée par les caprices de la nature.</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
-            <Text>Là où d'autres voient des terres inhospitalières, nous voyons des trésors inexploités et des ressources non revendiquées. Cette technologie nous donne le pouvoir de revendiquer et d'exploiter même les mondes les plus durs. Chaque coin inhospitalier de la galaxie est maintenant une potentielle mine d'or, attendant notre portée ambitieuse et notre volonté incessante d'accumulation.</Text>
+            <Text>Là où d'autres voient des terres inhospitalières, nous voyons des trésors inexploités et des ressources inutilisées. Cette technologie nous permet de revendiquer et d'exploiter même les mondes les plus durs. Chaque coin inhospitalier de la galaxie est maintenant une mine d'or potentielle, attendant notre portée ambitieuse et notre volonté implacable d'accumulation.</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -596,14 +610,14 @@
             <Requirements>
                 <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
             </Requirements>
-            <Text>Grâce à des interventions nanotechnologiques, cette technologie nous permet d'interfacer et d'adapter la biologie intrinsèque des exoplanètes. En réaffectant les systèmes organiques, nous pouvons améliorer l'efficacité des ressources, nous intégrer aux écosystèmes natifs et garantir que nos nœuds opérationnels prospèrent en synergie avec les mécanismes</Text>
+            <Text>Grâce à des interventions nanotechnologiques, cette technologie nous permet d'interfacer et d'adapter la biologie intrinsèque des exoplanètes. En réaffectant les systèmes organiques, nous pouvons améliorer l'efficacité des ressources, nous intégrer aux écosystèmes indigènes, et garantir que nos nœuds opérationnels prospèrent en synergie avec les mécanismes naturels de la planète.</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <PersonalityType>Greedy</PersonalityType>
             </Requirements>
-            <Text>Avec cette technologie révolutionnaire, nous exploitons et adaptons le sang vital même des planètes pour un gain économique maximal. Chaque organisme, chaque écosystème, transformé en un engrenage dans notre grande machinerie de profit. Les richesses de l'univers sont prêtes à être récoltées, et avec cette technologie, chaque actif biologique est une autre pièce dans notre trésorerie en constante</Text>
+            <Text>Avec cette technologie révolutionnaire, nous exploitons et adaptons le flux vital même des planètes pour un gain économique maximal. Chaque organisme, chaque écosystème, transformé en un engrenage dans notre grande machinerie de profit. Les richesses de l'univers sont prêtes à être récoltées, et avec cette technologie, chaque atout biologique est une autre pièce dans notre trésorerie en constante expansion.</Text>
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -751,16 +765,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>Tech_XenoResearch_FlavorText_DisplayName</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>RadiatedAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>Aperçus Radiatifs</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+
     
     <FlavorTextDef>
         <InternalName>Tech_XenoResearch_FlavorText_Description</InternalName>
@@ -772,6 +777,7 @@
             <PreferenceWeight>1000</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
+    
     <FlavorTextDef>
         <InternalName>Tech_ArtificalBrains_FlavorText_DisplayName</InternalName>
         <FlavorTextOption>

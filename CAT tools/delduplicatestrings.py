@@ -1,3 +1,9 @@
+## Author: Frogboy
+## Version: 1.0
+## Purpose: Removes duplicate strings from XML files in a directory.
+##         The first occurrence of each duplicate string is removed.
+##         A list of duplicate strings is written to duplicates.txt.
+
 import os
 import xml.etree.ElementTree as ET
 from tkinter import Tk, filedialog

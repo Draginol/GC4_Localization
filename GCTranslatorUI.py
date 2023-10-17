@@ -335,7 +335,7 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, succinctly translate this English string, respecting formatting codes into {target_language}: {text}"
+        prompt = f"In the context of a sci-fi game and given the label '{label_name}' to provide a bit of information, translate this English string, respecting formatting codes into {target_language}: {text}."
 
         try:
             response = openai.ChatCompletion.create(
@@ -373,11 +373,11 @@ class TranslationApp(QMainWindow):
             return row, translated_text
 
         # Split the rows into chunks
-        CHUNK_SIZE = 32
+        CHUNK_SIZE = 1
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=32) as executor:
+            with ThreadPoolExecutor(max_workers=1) as executor:
                 for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
                     translation_item = self.table.item(row, 4)
                     if not translation_item:
