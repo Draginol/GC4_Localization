@@ -208,7 +208,7 @@
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>请 为 一个 名为{PLAYERFACTION:1}的 派别 在 科幻 回合制 策略 游戏 中写 一个 描述。不要 直接 使用 任何 特性 名称。以 杰出 的 科幻 作家 的 风格 来书 写。限制 为 三句。添加 回车 以 将 文本 分解 为 可读 的 段落。</Text>
+            <Text>请 为 一个 名为{PLAYERFACTION:1}的 派别 在 科幻 回合制 策略 游戏 中写 一个 描述。不要 直接 使用 任何 特性 名称。以 杰出 的 科幻 作家 的 风格 来书 写。限制 为 三句。添加 回车 以 将 文本 分解 为 可 读 的 段落。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -229,14 +229,14 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请 为 被 称为{PLAYERFACTION:1}的 文明 在 科幻 回合制 策略 游戏 中 开始 的 对话 写 一个 开场。发挥 创意。他们 形容 自己 为{PLAYERFACTIONDESCRIPTION:1}。不要 直接 使用 任何 特征 名称。请 在20字 以内 回复。\形 如{*:1}的 词 是 标记，代表 说话 者，应 被 视为 不可 更改。形 如{*:2}的 词 是 标记，代表 听者，应 被 视为 不可 更改。任何 生成 的 形如{*}的 文本 在 引用 说话 者 时 必须 使 用形 如{*:1}的 形式，在 引用 听者 时 必须 使用 形 如{*:2}的 形式。包括 以下内容 的 改述：{PREVIOUSCONV:0}</Text>
+            <Text>请 为 被 称为{PLAYERFACTION:1}的 文明 在 科幻 回合制 策略 游戏 中 开始 的 对话 写 一个 开场。发挥 创意。他们 形容 自己 为{PLAYERFACTIONDESCRIPTION:1}。不要 直接 使用 任何 特征 名称。请 在20字 以内 回复。\形 如{*:1}的 词 是 标记，代表 说话 者，应 被 视为 不可 更改。形 如{*:2}的 词 是 标记，代表 听者，应 被 视为 不可 更改。任何 生成 的 形 如{*}的 文本 在 引用 说话 者 时 必须 使 用形 如{*:1}的 形式，在 引用 听者 时 必须 使用 形 如{*:2}的 形式。包括 以下内容 的 改述：{PREVIOUSCONV:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请 回复 一个 由 派系{PLAYERFACTION:1}启动 的 科幻 回合制 策略 游戏 中 的 对话 开场。发挥 创造性，不 直接 使用 任何 特征 名称。回复 在20字 以内。形 如{*:1}的 词语 是 标记，指代 发言者，应 视为 不可 变。形 如{*:2}的 词语 是 标记，指代 听者，应 视为 不可 变。所有 生成 的 形如{*}的 文本，在 引用 发言者 时 必须 使用 形式 {*:1}，在 引用 听者 时 必须 使用 形式{*:2}。包括 以下内容 的 改述：{PREVIOUSCONV:0}。</Text>
+            <Text>请 回复 一个 由 派系{PLAYERFACTION:1}启动 的 科幻 回合制 策略 游戏 中 的 对话 开场。发挥 创造性，不 直接 使用 任何 特征 名称。回复 在20字 以内。形 如{*:1}的 词语 是 标记，指代 发言者，应 视为 不可 变。形 如{*:2}的 词语 是 标记，指代 听者，应 视为 不可 变。所有 生成 的 形 如{*}的 文本，在 引用 发言者 时 必须 使用 形式 {*:1}，在 引用 听者 时 必须 使用 形式{*:2}。包括 以下内容 的 改述：{PREVIOUSCONV:0}。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     
@@ -258,7 +258,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请 为 一个 由{PLAYERFACTION:1}派别 发起 的 科幻 回合制 策略 游 戏 对话 开场 写 一条 回应。请 发挥 创意。我 是 正在 对话 的 人V3。他们 自述 为{PLAYERFACTIONDESCRIPTION:1}。不要 直接 使用 任何 特性 名称。在15字 以内 回应，并且 要 与 他们 的 自述 有关。\一个 形 如{*:1}的 词 是 标记，指 的 是 发言者，应 视为 不可 改变。一个 形 如{*:2}的 词 是 标记，指 的 是 听者，应 视为 不可 改变。所有 生成 的 形如{*}的 文本 在 提到 发言者 时 必须 使 用形 如{*:1}，在 提到 听者 时 必须 使用 形 如{*:2}。请 包含 对 以下内容 的 改述：{PREVIOUSCONV:0}</Text>
+            <Text>请 为 一个 由{PLAYERFACTION:1}派别 发起 的 科幻 回合制 策略 游 戏 对话 开场 写 一条 回应。请 发挥 创意。我 是 正在 对话 的 人V3。他们 自述 为{PLAYERFACTIONDESCRIPTION:1}。不要 直接 使用 任何 特性 名称。在15字 以内 回应，并且 要 与 他们 的 自述 有关。\一个 形 如{*:1}的 词 是 标记，指 的 是 发言者，应 视为 不可 改变。一个 形 如{*:2}的 词 是 标记，指 的 是 听者，应 视为 不可 改变。所有 生成 的 形 如{*}的 文本 在 提到 发言者 时 必须 使 用形 如{*:1}，在 提到 听者 时 必须 使用 形 如{*:2}。请 包含 对 以下内容 的 改述：{PREVIOUSCONV:0}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     
@@ -280,14 +280,14 @@
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请以 第一人称 简洁 地 拒绝 另 一 派别 对 我们 的 交易 提议，我们 是 一个 名为{PLAYERFACTION:1}的 派别，这是 一个 科幻 回合制 策略 游戏 中。发挥 创造力，不 直接 使用 任何 特性 名称。以 不 超过20个 词 回应 提出 报价 的 派别。用 他们 自我 描述 的 方式 以 一种 有趣 的 方式 拒绝。形 如{*:1}的 词 是 标记 语言，表示 发言者，应 被 视为 不可 更改。形 如{*:2}的 词 是 标记 语言，表示 听者，应 被 视为 不可 更改。所有 生成 的 形如{*}的 文本 在 提到 发言人 时 必须 使 用形 如{*:1}的 形式，提到 听者 时 必须 使用 形 如{*:2}的 形式。以 随机数 作为 种子：{PREVIOUSCONV:0}，不要 在 你 的 回应 中 包含 种子。</Text>
+            <Text>请以 第一人称 简洁 地 拒绝 另 一 派别 对 我们 的 交易 提议，我们 是 一个 名为{PLAYERFACTION:1}的 派别，这是 一个 科幻 回合制 策略 游戏 中。发挥 创造力，不 直接 使用 任何 特性 名称。以 不 超过20个 词 回应 提出 报价 的 派别。用 他们 自我 描述 的 方式 以 一种 有趣 的 方式 拒绝。形 如{*:1}的 词 是 标记 语言，表示 发言者，应 被 视为 不可 更改。形 如{*:2}的 词 是 标记 语言，表示 听者，应 被 视为 不可 更改。所有 生成 的 形 如{*}的 文本 在 提到 发言人 时 必须 使 用形 如{*:1}的 形式，提到 听者 时 必须 使用 形 如{*:2}的 形式。以 随机数 作为 种子：{PREVIOUSCONV:0}，不要 在 你 的 回应 中 包含 种子。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请以 第一人称 简洁 地 评论 我们 ，名为{PLAYERFACTION:1}的 派别 在 一场 科幻 回合制 策略 游戏 中 成功 接受 交易 提议。展现 你 的 创造性，不 直接 使用 任何 特质 名。在20字 以内 回应 发起 交易 的 派别。形 如{*:1}的 词 是 标记，代表 说话 者，应 视为 不可 更改。形 如{*:2}的 词 是 标记，代表 听话者，应 视为 不可 更改。所有 生成 的 形如{*}的 文本，当 指称 说话 者 时 必须 使用 形 如 {*:1}，指称 听话者 时 必须 使用 形 如{*:2}。用 随机数{PREVIOUSCONV:0}进行 种子 填充，不要 在 你 的 回应 中 包含 种子。</Text>
+            <Text>请以 第一人称 简洁 地 评论 我们 ，名为{PLAYERFACTION:1}的 派别 在 一场 科幻 回合制 策略 游戏 中 成功 接受 交易 提议。展现 你 的 创造性，不 直接 使用 任何 特质 名。在20字 以内 回应 发起 交易 的 派别。形 如{*:1}的 词 是 标记，代表 说话 者，应 视为 不可 更改。形 如{*:2}的 词 是 标记，代表 听话者，应 视为 不可 更改。所有 生成 的 形 如{*}的 文本，当 指称 说话 者 时 必须 使用 形 如 {*:1}，指称 听话者 时 必须 使用 形 如{*:2}。用 随机数{PREVIOUSCONV:0}进行 种子 填充，不要 在 你 的 回应 中 包含 种子。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
