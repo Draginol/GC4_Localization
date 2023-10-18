@@ -1,507 +1,453 @@
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-
-	<StringTable>
-		<Label>Hotspot_ConquestTitle</Label>
-		<String>Zwycięstwo przez podbój</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ConquestDec</Label>
-		<String>Zwycięstwo przez podbój jest osiągane po zniszczeniu wszystkich innych, głównych cywilizacji.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_InfluenceTitle</Label>
-		<String>Zwycięstwo przez wpływ</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_InfluenceDec</Label>
-		<String>Zwycięstwo przez wpływ jest osiągane po objęciu większości galaktyki strefą kontroli i utrzymanie przez kilka miesięcy pokoju ze wszystkimi innymi, głównymi cywilizacjami.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AllianceTitle</Label>
-		<String>Zwycięstwo przez sojusz</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AllianceDec</Label>
-		<String>Zwycięstwo przez sojusz jest osiąganie przez sprzymierzenie się ze wszystkimi innymi, głównymi cywilizacjami.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PrestigeTitle</Label>
-		<String>Zwycięstwo przez prestiż</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PrestigeDec</Label>
-		<String>Zwycięstwo przez prestiż jest osiągane po osiągnięciu określonego [HS=HS_Prestige]prestiżu[/HS].[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ZoneOfControlTitle</Label>
-		<String>Strefa kontroli</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ZoneOfControlDec</Label>
-		<String>Strefa kontroli wyznacza obszar, w którym jest obecny i dominujący wpływ cywilizacji. Strefa kontroli w galaktyce jest oznaczona kolorem dominującej cywilizacji. Wiele cywilizacji może mieć wpływ na daną komórkę, ale zostanie ona przypisana do cywilizacji o najwyższym wpływie.[BR][BR]Niektóre działania zależą od strefy kontroli. Określone działania, takie jak wydobywanie surowców z asteroid, mogą być wykonywane tylko na obiektach znajdujących się w strefie kontroli. Innych działań, takich jak budowanie stacji kosmicznych, które mogą być wykonywane poza strefą kontroli, nie można wykonywać w strefie kontroli innych cywilizacji.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TileTitle</Label>
-		<String>Kafelek</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TileDec</Label>
-		<String>Przestrzeń gry jest podzielona na sześciokątne kafelki. Odległość jest mierzona liczbą kafelków między lokalizacjami. Siatkę kafelków można włączać i wyłączać w sekcji interfejsu dostępnej w menu opcji. Przełączanie opcji pokazania siatki po przybliżeniu lub oddaleniu określa, czy kafelki będą widoczne w wybranym przybliżeniu.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MonthsTitle</Label>
-		<String>Miesiące</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MonthsDec</Label>
-		<String>Każda gra odbywa się w turach. Miesiąc to ilość czasu między turami. Miesiąc mija po wykonaniu tury przez każdą cywilizację.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MovesTitle</Label>
-		<String>[ICON=Moves_Icon] Ruchy</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MovesDec</Label>
-		<String>Każdy statek i flota mają określoną liczbę [ICON=Moves_Icon] ruchów. [ICON=Moves_Icon] Ruchy to liczba [HS=HS_Tile]pól[/HS], które statek lub flota mogą przemierzyć w [HS=HS_Months]miesiącu[/HS].[BR][BR]</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipTitle</Label>
-		<String>Statek</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipDec</Label>
-		<String>Statek to każda pojedyncza, mobilna jednostka.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FleetTitle</Label>
-		<String>Flota</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FleetDec</Label>
-		<String>Flota to grupa [HS=HS_Ship]statków[/HS]. Floty mogą być tworzone przez [HS=HS_ShipMovement]przesuwanie[/HS] [HS=HS_Ship]statków[/HS] na ten sam [HS=HS_Tile]kafelek[/HS]. Liczba [HS=HS_Ship]statków[/HS], które mogą znajdować się w flocie, jest określana przez aktualną [HS=HS_Logistics]logistykę[/HS]. Każdy [HS=HS_Ship]statek[/HS] ma wartość [HS=HS_Logistics]logistyki[/HS], która zostanie dodana do aktualnej wartości [HS=HS_Logistics]logistyki[/HS] floty. Jeśli [HS=HS_Ship]statek[/HS] ma wyższy wynik [HS=HS_Logistics]logistyki[/HS] niż może zintegrować flota, nie będzie mógł do niej dołączyć.[BR][BR]Wykorzystanie flot jest kluczowe dla przetrwania. Grupy [HS=HS_Ship]statków[/HS] radzą sobie lepiej w walce niż pojedyncze [HS=HS_Ship]statki[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipMovementTitle</Label>
-		<String>Ruch statku</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipMovementDec</Label>
-		<String>Poszczególne [HS=HS_Ship]statki[/HS] oraz [HS=HS_Fleet]floty[/HS] można przemieszczać po galaktyce, wybierając [HS=HS_Ship]statek[/HS] lub [HS=HS_Fleet]flotę[/HS] za pomocą LEWEGO przycisku myszy, a następnie wskazując [HS=HS_Tile]pole[/HS], na które mają się przemieścić, za pomocą PRAWEGO przycisku myszy.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetTypeTitle</Label>
-		<String>Typ planety</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetTypeDec</Label>
-		<String>Typ planety to klasyfikacja biomu i ogólnego środowiska planety. Różne typy planet często mają różną zawartość terenu danego rodzaju, co decyduje o zasobach dostępnych na planecie.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetClassTitle</Label>
-		<String>Klasa planety</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetClassDec</Label>
-		<String>Klasa planety to wskaźnik przestrzeni mieszkalnej planety. Każda planeta o klasie planety 1 lub wyższej może zostać [HS=HS_Colinizing]skolonizowana[/HS]. Im wyższa klasa planety, tym więcej przestrzeni dostępnej do rozwoju. Planety o wyższej klasie planety zazwyczaj dostarczają więcej zasobów, niż planety o niższej klasie planety tego samego [HS=HS_PlanetType]typu planety[/HS].[BR][BR]Planety o klasie planety 0 są uważane za [HS=HS_DeadWorld]martwy świat[/HS] i nie mogą zostać skolonizowane.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_DeadWorldTitle</Label>
-		<String>Martwy świat</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_DeadWorldDec</Label>
-		<String>Martwą planetą jest każda planeta o [HS=HS_PlanetClass]klasie planety[/HS] równej 0. Martwych planet nie można skolonizować.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ColinizingTitle</Label>
-		<String>Kolonizacja</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ColinizingDec</Label>
-		<String>Kolonizacja nowych światów jest niezbędna do rozszerzenia [HS=HS_ZoneOfControl]strefy kontroli[/HS] cywilizacji i zyskania dostępu do większej ilości zasobów. Planety mogą być [HS=HS_ColonizeOrder]kolonizowane[/HS], gdy nie ma do nich prawa inna cywilizacja. Po kolonizacji cywilizacja zdobywa prawo do planety. [BR][BR]Aby planetę można było skolonizować, musi ona mieć [HS=HS_PlanetClass]klasę planety[/HS] 1 lub wyższą. Planety z klasą planety 0 są uważane za [HS=HS_DeadWorld]martwy świat[/HS] i nie mogą zostać skolonizowane.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ColonizeOrderTitle</Label>
-		<String>Rozkaz kolonizacji</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ColonizeOrderDec</Label>
-		<String>Statki kolonizacyjne mogą być używane do [HS=HS_Colinizing]kolonizacji[/HS] nowych światów. Aby [HS=HS_Colinizing]skolonizować[/HS] planetę, wybierz najpierw [HS=HS_Ship]statek[/HS] lewym przyciskiem myszy. Po wybraniu odpowiedniego [HS=HS_Ship]statku[/HS] wydaj prawym przyciskiem myszy [HS=HS_Ship]statkowi[/HS] rozkaz [HS=HS_ShipMovement]przemieszczenia[/HS] się do planety o [HS=HS_PlanetClass]klasie planety[/HS] 1 lub wyższej. Może to zająć kilka [HS=HS_Months]miesięcy[/HS], ale gdy statek kolonizacyjny dotrze na planetę, skolonizuje ją.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SurveyOrderTitle</Label>
-		<String>Rozkaz badania</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SurveyOrderDec</Label>
-		<String>W galaktyce można często znaleźć [HS=HS_Anomaly]anomalie[/HS], które może zbadać [HS=HS_SurveyShip]statek badawczy[/HS]. Aby rozkazać [HS=HS_Ship]statkowi[/HS] zbadanie [HS=HS_Anomaly]anomalii[/HS], zacznij od wybrania [HS=HS_SurveyShip]statku badawczego[/HS] lewym przyciskiem myszy. Następnie rozkaż [HS=HS_Ship]statkowi[/HS] [HS=HS_ShipMovement]przemieszczenie[/HS] się do lokalizacji [HS=HS_Anomaly]anomalii[/HS]. Gdy [HS=HS_Ship]statek[/HS] dotrze do celu, rozpocznie badanie [HS=HS_Anomaly]anomalii[/HS]. Badanie trwa kilka [HS=HS_Months]miesięcy[/HS].[BR][BR]Statek, który zostanie przemieszczony, zaatakowany lub jego praca zostanie w inny sposób zakłócona, utraci cały postęp i będzie musiał rozpocząć badanie od początku.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AttackOrderTitle</Label>
-		<String>Rozkaz ataku</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AttackOrderDec</Label>
-		<String>W galaktyce jest wiele zagrożeń i często trzeba wykonać działania ofensywne. [HS=HS_Ship]Statki[/HS] i [HS=HS_Fleet]floty[/HS] wyposażone w broń mogą atakować inne jednostki. Aby wydać rozkaz ataku, wybierz [HS=HS_Ship]statek[/HS] lub [HS=HS_Fleet]flotę[/HS] lewym przyciskiem myszy. Następnie, przy pomocy prawego przycisku myszy, rozkaż [HS=HS_Ship]statkowi[/HS] lub [HS=HS_Fleet]flocie[/HS] [HS=HS_ShipMovement]przemieścić się[/HS] do miejsca docelowego. Walka rozpocznie się po osiągnięciu celu.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoExploreTitle</Label>
-		<String>[ICON=AutoExplore_Icon] Automatyczna eksploracja</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoExploreDec</Label>
-		<String>[ICON=AutoExplore_Icon] Automatyczna eksploracja to opcja, która umożliwi [HS=HS_Ship]statkom[/HS] poruszanie się bez bezpośrednich rozkazów. [HS=HS_Ship]Statki[/HS] w [ICON=AutoExplore_Icon] trybie automatycznej eksploracji będą przemieszczać się do miejsc, które są aktualnie nieznane i nie zostały odkryte na mapie.[BR][BR]Jeśli cała galaktyka została zbadana i nie ma nieznanych [HS=HS_Tile]kafelków[/HS], opcja [ICON=AutoExplore_Icon] automatycznej eksploracji będzie niedostępna.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoSurveyTitle</Label>
-		<String>[ICON=AutoSurvey_Icon] Automatyczne badanie</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoSurveyDec</Label>
-		<String>[ICON=AutoSurvey_Icon] Automatyczne badanie jest dostępne tylko dla [HS=HS_Ship]statków[/HS] z modułami badawczymi. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] automatycznego badania przemieszcza się bez bezpośrednich rozkazów, szukając [HS=HS_Anomaly]anomalii[/HS]. Gdy [HS=HS_Ship]statek[/HS] w trybie [ICON=AutoSurvey_Icon] automatycznego badania znajdzie się w pobliżu [HS=HS_Anomaly ]anomalii[/HS], wykona [HS=HS_SurveyOrder]badanie[/HS] [HS=HS_Anomaly ]anomalii[/HS] bez bezpośredniego rozkazu.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoColonizeTitle</Label>
-		<String>[ICON=AutoColonize_Icon] Automatyczna kolonizacja</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoColonizeDec</Label>
-		<String>[ICON=AutoColonize_Icon] Automatyczna kolonizacja jest dostępna tylko dla statków, które mogą [HS=HS_Colinizing]kolonizować[/HS] planety. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoColonize_Icon] automatycznej kolonizacji przemieszcza się bez bezpośrednich rozkazów, szukając planet o [HS=HS_PlanetClass]klasie planety[/HS] 1 lub wyższej. Po znalezieniu takiej planety [HS=HS_Ship]statek[/HS] [HS=HS_Colinizing]skolonizuje[/HS] ją bez bezpośredniego rozkazu.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AutoMineTitle</Label>
-		<String>[ICON=AutoMine_Icon] Automatyczne wydobywanie</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AutoMineDec</Label>
-		<String>[ICON=AutoMine_Icon] Automatyczne wydobywanie to opcja statków służących do wydobywania zasobów asteroid. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoMine_Icon] automatycznego wydobywania przemieszcza się bez bezpośrednich rozkazów, szukając nadających się do rozpoczęcia wydobywania asteroid w [HS=HS_ZoneOfControl]strefie kontroli[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SectorTitle</Label>
-		<String>Sektor</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SectorDec</Label>
-		<String>Sektor to obszar galaktyki ze zgrupowanymi razem systemami gwiazd, przez który można się przemieszczać bez specjalnej [HS=HS_Tech]technologii[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_LeaderMenuTitle</Label>
-		<String>[ICON=Menu_Leader_Icon] Menu przywódców</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_LeaderMenuDec</Label>
-		<String>Menu [ICON=Menu_Leader_Icon] przywódców to miejsce, gdzie można rekrutować [HS=HS_Leaders]przywódców[/HS] i zarządzać nimi. W menu [ICON=Menu_Leader_Icon] przywódców znajdują się ekrany [HS=HS_RecruitmentScreen]rekrutacji[/HS], [HS=HS_MinistersScreen]Ministrów[/HS], [HS=HS_GovernorsScreen]Gubernatorów[/HS], [HS=HS_DiplomatsScreen]Dyplomatów[/HS], [HS=HS_CommandersScreen]Dowódców[/HS] oraz [HS=HS_FactionsScreen]Frakcji[/HS].[BR][BR]Wejdź do Menu [ICON=Menu_Leader_Icon] Liderów, wybierając ikonę w menu radialnym za pomocą LEWEGO przycisku myszy.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_RecruitmentScreenTitle</Label>
-		<String>Ekran rekrutacji</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_RecruitmentScreenDec</Label>
-		<String>Ekran rekrutacji można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Potencjalni [HS=HS_Leaders]przywódcy[/HS] pojawią się na ekranie rekrutacji, gdzie będzie można ich ocenić i zatrudnić.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MinistersScreenTitle</Label>
-		<String>Ekran ministrów</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MinistersScreenDec</Label>
-		<String>Ekran ministrów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Urzędy ministrów dostarczają określonych korzyści dla całej cywilizacji na podstawie statystyk mianowanych [HS=HS_Leaders]przywódców[/HS]. Urzędy ministrów bez przypisanego [HS=HS_Leaders]przywódcy[/HS] nie przynoszą żadnych korzyści. Wskazanie myszką urzędu dostarczy szczegółowych informacji o urzędzie i jego korzyściach.[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_GovernorsScreenTitle</Label>
-		<String>Ekran gubernatorów</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_GovernorsScreenDec</Label>
-		<String>Ekran gubernatorów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran gubernatorów krótko przedstawia każdą skolonizowaną planetę z [HS=HS_PlanetClass]klasą planety[/HS] 10 lub wyższą. Jeśli do planety jest przypisany [HS=HS_Leaders]przywódca[/HS], planeta ta jest [HS=HS_CoreWorld]światem Jądra[/HS].[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_DiplomatsScreenTitle</Label>
-		<String>Ekran dyplomatów</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_DiplomatsScreenDec</Label>
-		<String>Ekran dyplomatów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran dyplomatów krótko przedstawia relacje ze wszystkimi znanymi cywilizacjami. [HS=HS_Leaders]Przywódca[/HS] może zostać przypisany do [HS=HS_Diplomat]dyplomatów[/HS], aby wpłynąć na relacje z innymi cywilizacjami.[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CommandersScreenTitle</Label>
-		<String>Ekran dowódców</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CommandersScreenDec</Label>
-		<String>Ekran dowódców można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran dowódców wyświetla wszystkie statki dowodzenia dostępne dla cywilizacji. Statki dowodzenia można rozmieścić przez przypisanie [HS=HS_Leaders]przywódcy[/HS] do statku.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FactionsScreenTitle</Label>
-		<String>Ekran frakcji</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FactionsScreenDec</Label>
-		<String>Ekran frakcji można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Frakcje to grupy wewnątrz cywilizacji, które wpływają na konkretne statystyki i zasoby. Przypisanie [HS=HS_Leaders]przywódcy[/HS] do frakcji powoduje zmianę efektów. Do jednej frakcji może być przypisany więcej niż jeden [HS=HS_Leaders]przywódca[/HS].[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CivilizationMenuTitle</Label>
-		<String>Menu cywilizacji</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CivilizationMenuDec</Label>
-		<String>Menu cywilizacji [ICON=Menu_CivilizationMenu_Icon] zapewnia przegląd całej cywilizacji i kilka narzędzi do zarządzania nią na większą skalę. W menu cywilizacji [ICON=Menu_CivilizationMenu_Icon] można ustawić [HS=HS_Taxes]stawkę podatku[/HS] i [HS=HS_Policy]politykę[/HS].[BR][BR]Wejdź w menu cywilizacji [ICON=Menu_CivilizationMenu_Icon], wybierając LEWYM przyciskiem myszy ikonę w menu radialnym.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_SupportingColoniesTitle</Label>
-		<String>Kolonie wspierające</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_SupportingColoniesDec</Label>
-		<String>Kolonia wspierająca to każda [HS=HS_Colinizing]skolonizowana[/HS] planeta, która nie jest [HS=HS_CoreWorld]światem Jądra[/HS]. Kolonia wspierająca wysyła zasoby do najbliższego [HS=HS_CoreWorld]świata Jądra[/HS] jako swój wkład, zwiększając zasoby planetarne [HS=HS_CoreWorld]świata jądra[/HS] dla poprawy wydajności planety.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MineralsTitle</Label>
-		<String>[ICON=Stat_Minerals_Icon] Minerał</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MineralsDec</Label>
-		<String>Minerały to surowce dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. Minerały są zasobami wejściowymi, które wpływają na [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]wytwarzanie[/HS]. Im więcej minerałów ma planeta, tym wyższy jest jej wskaźnik [HS=HS_Manufacturing]wytwarzania[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TechnologyTitle</Label>
-		<String>[ICON=Stat_Technology_Icon] Technologia</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TechnologyDec</Label>
-		<String>[ICON=Stat_Technology_Icon] Technologia mierzy rozwój intelektualny dostępny dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Technology_Icon] Technologia to zasób wejściowy, który wpływa na [ICON=Stat_Research_Icon] [HS=HS_Research]badania[/HS]. Im więcej [ICON=Stat_Technology_Icon] Technologii ma planeta, tym wyższy jest jej wskaźnik [ICON=Stat_Research_Icon] [HS=HS_Research]badań[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_FarmingTitle</Label>
-		<String>[ICON=Stat_Fertility_Icon] Rolnictwo</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_FarmingDec</Label>
-		<String>[ICON=Stat_Fertility_Icon] Rolnictwo mierzy zasoby produkowane przez agrokulturę dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Fertility_Icon] Rolnictwo to zasób wejściowy, który wpływa na [ICON=Stat_Food_Icon] [HS=HS_Food]żywność[/HS]. Im więcej [ICON=Stat_Fertility_Icon] rolnictwa ma planeta, tym więcej [ICON=Stat_Food_Icon] [HS=HS_Food]żywności[/HS] produkuje [HS=HS_CoreWorld]świat Jądra[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CultureTitle</Label>
-		<String>[ICON=Stat_PlanetInfluence_Icon] Kultura</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CultureDec</Label>
-		<String>[ICON=Stat_PlanetInfluence_Icon] Kultura mierzy społeczną wagę dostępną dla [HS=HS_CoreWorld]świata jądra[/HS]. [ICON=Stat_PlanetInfluence_Icon] Kultura to zasób wejściowy, który zmienia wskaźnik [ICON=Stat_Influence_Icon] [HS=HS_Influence]wpływu[/HS]. Im więcej [ICON=Stat_PlanetInfluence_Icon] kultury ma planeta, tym wyższy jest jej wskaźnik [ICON=Stat_Influence_Icon] [HS=HS_Influence]wpływu[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_WealthTitle</Label>
-		<String>[ICON=Stat_Wealth_Icon] Bogactwo</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_WealthDec</Label>
-		<String>[ICON=Stat_Wealth_Icon] Bogactwo to rzadkie i cenne materiały dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Wealth_Icon] Bogactwo to zasób wejściowy wpływający na [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]dochód[/HS]. Im więcej [ICON=Stat_Wealth_Icon] bogactwa ma planeta, tym większy [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]dochód[/HS] wytwarza.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ResearchCenterTitle</Label>
-		<String>Centrum badawcze</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ResearchCenterDec</Label>
-		<String>Centrum badawcze to menu zawierające przegląd badanych [HS=HS_Tech]technologii[/HS], które umożliwia zmienienie w dowolnym momencie tury badanej [HS=HS_Tech]technologii[/HS]. Szybkość badania [HS=HS_Tech]technologii[/HS] jest mierzona w [HS=HS_Months]miesiącach[/HS] i określana przez wskaźnik [ICON=Stat_Research_Icon] [HS=HS_Research]badań[/HS] cywilizacji. Jeśli [HS=HS_Tech]technologia[/HS] zostanie ukończona na początku tury, zostanie odblokowana i będzie można wyznaczyć nową [HS=HS_Tech]technologię[/HS] do zbadania.[BR][BR]Wybierz [HS=HS_Tech]technologię[/HS] do badania za pomocą lewego przycisku myszy. Aktualnie badana [HS=HS_Tech]technologia[/HS] jest zawsze wyświetlana na dolnym, środkowym panelu.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_TechTitle</Label>
-		<String>Technologia</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_TechDec</Label>
-		<String>Technologia to opcja w [HS=HS_ResearchCenter]centrum badawczym[/HS], która po zakończeniu badań odblokuje nowe elementy, którymi mogą być nowe [HS=HS_Ship]Statkami[/HS], [HS=HS_Improvement]ulepszenia[/HS], [HS=HS_ExecutiveOrders]rozporządzenia wykonawcze[/HS] i inne.[BR][BR]Aby uzyskać więcej informacji na temat elementów odblokowywanych przez technologię, wskaż myszką pozycję technologii w [HS=HS_ResearchCenter]centrum badawczym[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PiratesTitle</Label>
-		<String>Piraci</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PiratesDec</Label>
-		<String>Piraci to zbuntowane [HS=HS_Ship]statki[/HS], [HS=HS_Shipyard]stocznie[/HS] i planety. Piraci są domyślnie wrodzy względem wszystkich innych grup i cywilizacji. Będą stawać do walki, zwłaszcza jeśli uważają, że wygrają bitwę.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ShipyardTitle</Label>
-		<String>Stocznia</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ShipyardDec</Label>
-		<String>Stocznia to miejsce, gdzie można budować nowe [HS=HS_Ship]statki[/HS]. Stocznie wymagają [HS=HS_CoreWorld]świata Jądra[/HS] do działania i mogą być budowane tylko w [HS=HS_CoreWorld]światach Jądra[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_RushTitle</Label>
-		<String>Przyspieszenie</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_RushDec</Label>
-		<String>Opcja przyspieszenia umożliwia wydanie [ICON=Stat_Credits_Icon][HS=HS_Credit]kredytów[/HS] i [ICON=Stat_Control_Icon] [HS=HS_Control]kontroli[/HS], aby skrócić czas realizacji budowy do 1 [HS=HS_Months]miesiąca[/HS]. Przyspieszona budowa zawsze przenosi się na początek kolejki. Opcja przyspieszenia może być używana tylko raz na turę w każdym [HS=HS_CoreWorld]świecie Jądra[/HS] i w każdej [HS=HS_Shipyard]stoczni[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_PlanetManagementTitle</Label>
-		<String>[ICON=Menu_PlanetManagement_Icon] Okno zarządzania planetą</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_PlanetManagementDec</Label>
-		<String>Okno [ICON=Menu_PlanetManagement_Icon] zarządzania planetą to miejsce, w którym możesz zarządzać swoimi [HS=HS_CoreWorld]światami Jądra[/HS]. Możesz uzyskać szczegółowy rozpis zasobów wejścia i wyjścia planety wraz z jej statusem. Możesz również budować i rozmontowywać [HS=HS_Improvement]ulepszenia[/HS] oraz zarządzać projektami.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_AdjacencyTitle</Label>
-		<String>Bonus sąsiedztwa</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_AdjacencyDec</Label>
-		<String>Bonus sąsiedztwa jest stosowany do zbudowanych obok siebie [HS=HS_Improvement]ulepszeń[/HS]. Aby zwiększyć wydajność, najlepiej jest budować podobne [HS=HS_Improvement]ulepszenia[/HS] na przyległych polach, co zwiększy ich bonus.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ConstructStarbaseTitle</Label>
-		<String>[ICON=Order_ConstructStarbase] Zbuduj bazę kosmiczną</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ConstructStarbaseDec</Label>
-		<String>Rozkaz budowy bazy kosmicznej można przekazać do [HS=HS_Constructor]konstruktora[/HS]. Zużyje to [HS=HS_Constructor]konstruktora[/HS] i zbuduje [HS=HS_Starbase]bazę kosmiczną[/HS] wybranego typu. [HS=HS_Starbase]Bazy kosmiczne[/HS] nie mogą być budowane w [HS=HS_ZoneOfControl]strefie kontroli[/HS] innego gracza lub w odległości 3 [HS=HS_Tile]kafelków[/HS] od innej [HS=HS_Starbase]bazy kosmicznej[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_StarbaseTitle</Label>
-		<String>Bazy kosmiczne</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_StarbaseDec</Label>
-		<String>Baza kosmiczna to wyspecjalizowana, nieruchoma konstrukcja, która może pełnić różne role, zależne od miejsca i sposobu jej budowy. Aby zbudować bazę kosmiczną, wyprodukuj [HS=HS_Constructor]konstruktora[/HS] w [HS=HS_Shipyard]stoczni[/HS]. Konstruktorowi można następnie wydać polecenie [HS=HS_ConstructStarbase]zbudowania bazy kosmicznej[/HS], aby stworzyć bazę kosmiczną w jego aktualnym miejscu.[BR][BR]Dostępne są cztery typy baz kosmicznych: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]wojskowa[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]górnicza[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]ekonomiczna[/HS] oraz [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]komunikacyjna[/HS]. Typy dostępne podczas wydania rozkazu [HS=HS_ConstructStarbase]zbudowania bazy kosmicznej[/HS] zależą od zasobów dostępnych w obszarze działania [HS=HS_Constructor]konstruktora[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MilitaryStarbaseTitle</Label>
-		<String>[ICON=Icon_MilitaryStarbase] Wojskowa baza kosmiczna</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MilitaryStarbaseDec</Label>
-		<String>Dedykuje bazę kosmiczną do ochrony cywilizacji i jej zasobów</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_MiningStarbaseTitle</Label>
-		<String>[ICON=Icon_MiningStarbase] Gwiezdna baza kosmiczna</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_MiningStarbaseDec</Label>
-		<String>Dedykuje bazę kosmiczną do wydobywania pobliskich, [HS=HS_StrategicResource]strategicznych zasobów[/HS].</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CommunicationsStarbaseTitle</Label>
-		<String>[ICON=Icon_CommunicationsStarbase] Komunikacyjna baza kosmiczna</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CommunicationsStarbaseDec</Label>
-		<String>Dedykuje bazę kosmiczną do szerzenia wpływu kulturowego i aktywów.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_EconomicsStarbaseTitle</Label>
-		<String>[ICON=Icon_EconomicsStarbase] Ekonomiczna baza kosmiczna</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_EconomicsStarbaseDec</Label>
-		<String>Dedykuje bazę kosmiczną do rozwoju gospodarczego światów Jądra.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_ConqueringPlanetsTitle</Label>
-		<String>[ICON=Conquest_Icon] Podbój planet</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_ConqueringPlanetsDec</Label>
-		<String>Wszystkie skolonizowane planety mają wskaźnik [ICON=Conquest_Icon] podboju planetarnego. Przedstawia on, jak dobrze broniona jest planeta i jak dużo siły militarnej potrzeba do przełamania obrony. [HS=HS_Fleet]Floty[/HS] mają ocenę podboju określającą, jak dobrze są przygotowane do oblegania planety. Niektóre statki, takie jak statki transportowe, są lepiej przystosowane do podboju planet niż inne.[BR][BR]Aby rozpocząć oblężenie, wydaj polecenie [HS=HS_ShipMovement]przemieszczenia[/HS] [HS=HS_Fleet]floty[/HS] do planety, którą chcesz podbić. Gdy [HS=HS_Fleet]flota[/HS] dotrze do planety, rozpocznie się oblężenie, o ile wskaźnik [ICON=Conquest_Icon] podboju floty będzie wystarczająco wysoki, aby pokonać wskaźnik [ICON=Conquest_Icon] podboju planety.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_StandbyTitle</Label>
-		<String>[ICON=Order_Standby] Gotowość</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_StandbyDec</Label>
-		<String>Rozkazu gotowości można używać, aby statek pozostał bezczynny do odwołania. W przeciwieństwie do innych rozkazów, które mają warunki przerywające bezczynność, statki w trybie gotowości nie opuszczą go, dopóki nie odbiorą odpowiedniego rozkazu.</String>
-	</StringTable>
-	<!--Adding text for future HotSpots after text lock 9.22.23-->
-	<!--Note: String labels have temporary _TK tag-->
-
-	<StringTable>
-		<Label>Hotspot_Biology</Label>
-		<String>Biologia</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_BiologyDec</Label>
-		<String>Biologia to specjalne cechy wpływające na sposób kolonizacji i rozwoju cywilizacji.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_CulturalAffinity</Label>
-		<String>Przynależność kulturowa</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CulturalAffinityDec</Label>
-		<String>Określa ścieżki rozwoju kultury, które są przystępniejsze dla danej cywilizacji.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_Behaviors</Label>
-		<String>Zachowania</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_BehaviorsDec</Label>
-		<String>Określa jak cywilizacja będzie grać, gdy będzie nią sterować SI.</String>
-	</StringTable>
-
-	<StringTable>
-		<Label>Hotspot_Citizens</Label>
-		<String>Obywatele</String>
-	</StringTable>
-	<StringTable>
-		<Label>Hotspot_CitizensDec</Label>
-		<String>Obywatele to populację światów Jądra, którzy mogą być wyspecjalizowani w celu modyfikacji wyników planety, a także niezbędni do budowy określonych klas statków.</String>
-	</StringTable>
-
-   
+  <StringTable>
+    <Label>Hotspot_ConquestTitle</Label>
+    <String>Zwycięstwo przez podbój</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConquestDec</Label>
+    <String>Zwycięstwo przez podbój jest osiągane po zniszczeniu wszystkich innych, głównych cywilizacji.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_InfluenceTitle</Label>
+    <String>Zwycięstwo przez wpływ</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_InfluenceDec</Label>
+    <String>Zwycięstwo przez wpływ jest osiągane po objęciu większości galaktyki strefą kontroli i utrzymanie przez kilka miesięcy pokoju ze wszystkimi innymi, głównymi cywilizacjami.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AllianceTitle</Label>
+    <String>Zwycięstwo przez sojusz</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AllianceDec</Label>
+    <String>Zwycięstwo przez sojusz jest osiąganie przez sprzymierzenie się ze wszystkimi innymi, głównymi cywilizacjami.[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PrestigeTitle</Label>
+    <String>Zwycięstwo przez prestiż</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PrestigeDec</Label>
+    <String>Zwycięstwo przez prestiż jest osiągane po osiągnięciu określonego [HS=HS_Prestige]prestiżu[/HS].[BR][BR]Sprawdź postęp zwycięstwa na ekranie statusu zwycięstwa dostępnym w menu pauzy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ZoneOfControlTitle</Label>
+    <String>Strefa kontroli</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ZoneOfControlDec</Label>
+    <String>Strefa kontroli wyznacza obszar, w którym jest obecny i dominujący wpływ cywilizacji. Strefa kontroli w galaktyce jest oznaczona kolorem dominującej cywilizacji. Wiele cywilizacji może mieć wpływ na daną komórkę, ale zostanie ona przypisana do cywilizacji o najwyższym wpływie.[BR][BR]Niektóre działania zależą od strefy kontroli. Określone działania, takie jak wydobywanie surowców z asteroid, mogą być wykonywane tylko na obiektach znajdujących się w strefie kontroli. Innych działań, takich jak budowanie stacji kosmicznych, które mogą być wykonywane poza strefą kontroli, nie można wykonywać w strefie kontroli innych cywilizacji.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TileTitle</Label>
+    <String>Kafelek</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TileDec</Label>
+    <String>Przestrzeń gry jest podzielona na sześciokątne kafelki. Odległość jest mierzona liczbą kafelków między lokalizacjami. Siatkę kafelków można włączać i wyłączać w sekcji interfejsu dostępnej w menu opcji. Przełączanie opcji pokazania siatki po przybliżeniu lub oddaleniu określa, czy kafelki będą widoczne w wybranym przybliżeniu.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MonthsTitle</Label>
+    <String>Miesiące</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MonthsDec</Label>
+    <String>Każda gra odbywa się w turach. Miesiąc to ilość czasu między turami. Miesiąc mija po wykonaniu tury przez każdą cywilizację.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MovesTitle</Label>
+    <String>[ICON=Moves_Icon] Ruchy</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MovesDec</Label>
+    <String>Każdy Statek i Flota mają określoną ilość [ICON=Moves_Icon] Ruchów. [ICON=Moves_Icon] Ruchy to liczba [HS=HS_Tile]Pól[/HS], które Statek lub Flota mogą przemierzyć w [HS=HS_Months]Miesiącu[/HS].[BR][BR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipTitle</Label>
+    <String>Statek</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipDec</Label>
+    <String>Statek to każda pojedyncza, mobilna jednostka.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FleetTitle</Label>
+    <String>Flota</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FleetDec</Label>
+    <String>Flota to grupa [HS=HS_Ship]Statków[/HS]. Floty mogą być formowane poprzez [HS=HS_ShipMovement]Przesuwanie[/HS] [HS=HS_Ship]Statków[/HS] na ten sam [HS=HS_Tile]Kafelek[/HS]. Ile [HS=HS_Ship]Statków[/HS] może być w Flocie jest determinowane przez obecne [HS=HS_Logistics]Logistyka[/HS]. Każdy [HS=HS_Ship]Statek[/HS] ma wartość [HS=HS_Logistics]Logistyki[/HS] i dodaje do obecnego wyniku [HS=HS_Logistics]Logistyki[/HS] Floty. Jeśli [HS=HS_Ship]Statek[/HS] ma wyższy wynik [HS=HS_Logistics]Logistyki[/HS] niż Flota może inkorporować, nie będzie mógł dołączyć do Floty.[BR][BR]Wykorzystanie Flot jest kluczowe dla przetrwania. Grupy [HS=HS_Ship]Statków[/HS] radzą sobie lepiej w walce niż pojedyncze [HS=HS_Ship]Statki[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipMovementTitle</Label>
+    <String>Ruch statku</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipMovementDec</Label>
+    <String>Poszczególne [HS=HS_Ship]statki[/HS] oraz [HS=HS_Fleet]floty[/HS] można przemieszczać po galaktyce, wybierając [HS=HS_Ship]statek[/HS] lub [HS=HS_Fleet]flotę[/HS] za pomocą LEWEGO przycisku myszy, a następnie wskazując [HS=HS_Tile]pole[/HS], na które mają się przemieścić, za pomocą PRAWEGO przycisku myszy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetTypeTitle</Label>
+    <String>Typ planety</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetTypeDec</Label>
+    <String>Typ planety to klasyfikacja biomu i ogólnego środowiska planety. Różne typy planet często mają różną zawartość terenu danego rodzaju, co decyduje o zasobach dostępnych na planecie.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetClassTitle</Label>
+    <String>Klasa planety</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetClassDec</Label>
+    <String>Klasa planety to wskaźnik przestrzeni mieszkalnej planety. Każda planeta o klasie planety 1 lub wyższej może zostać [HS=HS_Colinizing]skolonizowana[/HS]. Im wyższa klasa planety, tym więcej przestrzeni dostępnej do rozwoju. Planety o wyższej klasie planety zazwyczaj dostarczają więcej zasobów, niż planety o niższej klasie planety tego samego [HS=HS_PlanetType]typu planety[/HS].[BR][BR]Planety o klasie planety 0 są uważane za [HS=HS_DeadWorld]martwy świat[/HS] i nie mogą zostać skolonizowane.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DeadWorldTitle</Label>
+    <String>Martwy świat</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DeadWorldDec</Label>
+    <String>Martwą planetą jest każda planeta o [HS=HS_PlanetClass]klasie planety[/HS] równej 0. Martwych planet nie można skolonizować.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColinizingTitle</Label>
+    <String>Kolonizacja</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColinizingDec</Label>
+    <String>Kolonizacja nowych światów jest niezbędna do rozszerzenia [HS=HS_ZoneOfControl]strefy kontroli[/HS] cywilizacji i zyskania dostępu do większej ilości zasobów. Planety mogą być [HS=HS_ColonizeOrder]kolonizowane[/HS], gdy nie ma do nich prawa inna cywilizacja. Po kolonizacji cywilizacja zdobywa prawo do planety. [BR][BR]Aby planetę można było skolonizować, musi ona mieć [HS=HS_PlanetClass]klasę planety[/HS] 1 lub wyższą. Planety z klasą planety 0 są uważane za [HS=HS_DeadWorld]martwy świat[/HS] i nie mogą zostać skolonizowane.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColonizeOrderTitle</Label>
+    <String>Rozkaz kolonizacji</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ColonizeOrderDec</Label>
+    <String>Statki kolonizacyjne mogą być używane do [HS=HS_Colinizing]kolonizacji[/HS] nowych światów. Aby [HS=HS_Colinizing]skolonizować[/HS] planetę, wybierz najpierw [HS=HS_Ship]statek[/HS] lewym przyciskiem myszy. Po wybraniu odpowiedniego [HS=HS_Ship]statku[/HS] wydaj prawym przyciskiem myszy [HS=HS_Ship]statkowi[/HS] rozkaz [HS=HS_ShipMovement]przemieszczenia[/HS] się do planety o [HS=HS_PlanetClass]klasie planety[/HS] 1 lub wyższej. Może to zająć kilka [HS=HS_Months]miesięcy[/HS], ale gdy statek kolonizacyjny dotrze na planetę, skolonizuje ją.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SurveyOrderTitle</Label>
+    <String>Rozkaz badania</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SurveyOrderDec</Label>
+    <String>W galaktyce można często znaleźć [HS=HS_Anomaly]anomalie[/HS], które może zbadać [HS=HS_SurveyShip]statek badawczy[/HS]. Aby rozkazać [HS=HS_Ship]statkowi[/HS] zbadanie [HS=HS_Anomaly]anomalii[/HS], zacznij od wybrania [HS=HS_SurveyShip]statku badawczego[/HS] lewym przyciskiem myszy. Następnie rozkaż [HS=HS_Ship]statkowi[/HS] [HS=HS_ShipMovement]przemieszczenie[/HS] się do lokalizacji [HS=HS_Anomaly]anomalii[/HS]. Gdy [HS=HS_Ship]statek[/HS] dotrze do celu, rozpocznie badanie [HS=HS_Anomaly]anomalii[/HS]. Badanie trwa kilka [HS=HS_Months]miesięcy[/HS].[BR][BR]Statek, który zostanie przemieszczony, zaatakowany lub jego praca zostanie w inny sposób zakłócona, utraci cały postęp i będzie musiał rozpocząć badanie od początku.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AttackOrderTitle</Label>
+    <String>Rozkaz ataku</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AttackOrderDec</Label>
+    <String>W galaktyce jest wiele zagrożeń i często trzeba wykonać działania ofensywne. [HS=HS_Ship]Statki[/HS] i [HS=HS_Fleet]floty[/HS] wyposażone w broń mogą atakować inne jednostki. Aby wydać rozkaz ataku, wybierz [HS=HS_Ship]statek[/HS] lub [HS=HS_Fleet]flotę[/HS] lewym przyciskiem myszy. Następnie, przy pomocy prawego przycisku myszy, rozkaż [HS=HS_Ship]statkowi[/HS] lub [HS=HS_Fleet]flocie[/HS] [HS=HS_ShipMovement]przemieścić się[/HS] do miejsca docelowego. Walka rozpocznie się po osiągnięciu celu.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoExploreTitle</Label>
+    <String>[ICON=AutoExplore_Icon] Automatyczna eksploracja</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoExploreDec</Label>
+    <String>[ICON=AutoExplore_Icon] Automatyczna eksploracja to opcja, która umożliwi [HS=HS_Ship]statkom[/HS] poruszanie się bez bezpośrednich rozkazów. [HS=HS_Ship]Statki[/HS] w [ICON=AutoExplore_Icon] trybie automatycznej eksploracji będą przemieszczać się do miejsc, które są aktualnie nieznane i nie zostały odkryte na mapie.[BR][BR]Jeśli cała galaktyka została zbadana i nie ma nieznanych [HS=HS_Tile]kafelków[/HS], opcja [ICON=AutoExplore_Icon] automatycznej eksploracji będzie niedostępna.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoSurveyTitle</Label>
+    <String>[ICON=AutoSurvey_Icon] Automatyczne badanie</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoSurveyDec</Label>
+    <String>[ICON=AutoSurvey_Icon] Auto-Survey jest dostępny tylko dla [HS=HS_Ship]Statków[/HS] z modułami badawczymi. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey będzie poruszać się bez bezpośrednich rozkazów, próbując zlokalizować [HS=HS_Anomaly]Anomalie[/HS]. Gdy [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey znajduje się blisko [HS=HS_Anomaly ]Anomalii[/HS], rozpocznie [HS=HS_SurveyOrder]Badanie[/HS] [HS=HS_Anomaly]Anomalii[/HS] bez bezpośrednich rozkazów.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoColonizeTitle</Label>
+    <String>[ICON=AutoColonize_Icon] Automatyczna kolonizacja</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoColonizeDec</Label>
+    <String>[ICON=AutoColonize_Icon] Automatyczna kolonizacja jest dostępna tylko dla statków, które mogą [HS=HS_Colinizing]kolonizować[/HS] planety. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoColonize_Icon] automatycznej kolonizacji przemieszcza się bez bezpośrednich rozkazów, szukając planet o [HS=HS_PlanetClass]klasie planety[/HS] 1 lub wyższej. Po znalezieniu takiej planety [HS=HS_Ship]statek[/HS] [HS=HS_Colinizing]skolonizuje[/HS] ją bez bezpośredniego rozkazu.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoMineTitle</Label>
+    <String>[ICON=AutoMine_Icon] Auto-Kopalnia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AutoMineDec</Label>
+    <String>[ICON=AutoMine_Icon] Auto-Mine to opcja dla statków górniczych Asteroid. [HS=HS_Ship]Statek[/HS] w [ICON=AutoMine_Icon] Auto-Kopalnia porusza się bez bezpośrednich poleceń, próbując znaleźć asteroidy w [HS=HS_ZoneOfControl]Strefie Kontroli[/HS] do wydobycia.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SectorTitle</Label>
+    <String>Sektor</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SectorDec</Label>
+    <String>Sektor to obszar galaktyki ze zgrupowanymi razem systemami gwiazd, przez który można się przemieszczać bez specjalnej [HS=HS_Tech]technologii[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_LeaderMenuTitle</Label>
+    <String>[ICON=Menu_Leader_Icon] Menu przywódców</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_LeaderMenuDec</Label>
+    <String>Menu [ICON=Menu_Leader_Icon] przywódców to miejsce, gdzie można rekrutować [HS=HS_Leaders]przywódców[/HS] i zarządzać nimi. W menu [ICON=Menu_Leader_Icon] przywódców znajdują się ekrany [HS=HS_RecruitmentScreen]rekrutacji[/HS], [HS=HS_MinistersScreen]Ministrów[/HS], [HS=HS_GovernorsScreen]Gubernatorów[/HS], [HS=HS_DiplomatsScreen]Dyplomatów[/HS], [HS=HS_CommandersScreen]Dowódców[/HS] oraz [HS=HS_FactionsScreen]Frakcji[/HS].[BR][BR]Wejdź do Menu [ICON=Menu_Leader_Icon] Liderów, wybierając ikonę w menu radialnym za pomocą LEWEGO przycisku myszy.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RecruitmentScreenTitle</Label>
+    <String>Ekran rekrutacji</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RecruitmentScreenDec</Label>
+    <String>Ekran rekrutacji można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Potencjalni [HS=HS_Leaders]przywódcy[/HS] pojawią się na ekranie rekrutacji, gdzie będzie można ich ocenić i zatrudnić.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MinistersScreenTitle</Label>
+    <String>Ekran ministrów</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MinistersScreenDec</Label>
+    <String>Ekran ministrów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Urzędy ministrów dostarczają określonych korzyści dla całej cywilizacji na podstawie statystyk mianowanych [HS=HS_Leaders]przywódców[/HS]. Urzędy ministrów bez przypisanego [HS=HS_Leaders]przywódcy[/HS] nie przynoszą żadnych korzyści. Wskazanie myszką urzędu dostarczy szczegółowych informacji o urzędzie i jego korzyściach.[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_GovernorsScreenTitle</Label>
+    <String>Ekran gubernatorów</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_GovernorsScreenDec</Label>
+    <String>Ekran gubernatorów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran gubernatorów krótko przedstawia każdą skolonizowaną planetę z [HS=HS_PlanetClass]klasą planety[/HS] 10 lub wyższą. Jeśli do planety jest przypisany [HS=HS_Leaders]przywódca[/HS], planeta ta jest [HS=HS_CoreWorld]światem Jądra[/HS].[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DiplomatsScreenTitle</Label>
+    <String>Ekran dyplomatów</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_DiplomatsScreenDec</Label>
+    <String>Ekran dyplomatów można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran dyplomatów krótko przedstawia relacje ze wszystkimi znanymi cywilizacjami. [HS=HS_Leaders]Przywódca[/HS] może zostać przypisany do [HS=HS_Diplomat]dyplomatów[/HS], aby wpłynąć na relacje z innymi cywilizacjami.[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommandersScreenTitle</Label>
+    <String>Ekran dowódców</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommandersScreenDec</Label>
+    <String>Ekran dowódców można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Ekran dowódców wyświetla wszystkie statki dowodzenia dostępne dla cywilizacji. Statki dowodzenia można rozmieścić przez przypisanie [HS=HS_Leaders]przywódcy[/HS] do statku.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FactionsScreenTitle</Label>
+    <String>Ekran frakcji</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FactionsScreenDec</Label>
+    <String>Ekran frakcji można otworzyć w [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]menu przywódców[/HS]. Frakcje to grupy wewnątrz cywilizacji, które wpływają na konkretne statystyki i zasoby. Przypisanie [HS=HS_Leaders]przywódcy[/HS] do frakcji powoduje zmianę efektów. Do jednej frakcji może być przypisany więcej niż jeden [HS=HS_Leaders]przywódca[/HS].[BR][BR][HS=HS_Leaders]Przywódców[/HS] można przypisać, usunąć i ponownie przypisać w dowolnym momencie tury.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CivilizationMenuTitle</Label>
+    <String>Menu cywilizacji</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CivilizationMenuDec</Label>
+    <String>Menu cywilizacji [ICON=Menu_CivilizationMenu_Icon] zapewnia przegląd całej cywilizacji i kilka narzędzi do zarządzania nią na większą skalę. W menu cywilizacji [ICON=Menu_CivilizationMenu_Icon] można ustawić [HS=HS_Taxes]stawkę podatku[/HS] i [HS=HS_Policy]politykę[/HS].[BR][BR]Wejdź w menu cywilizacji [ICON=Menu_CivilizationMenu_Icon], wybierając LEWYM przyciskiem myszy ikonę w menu radialnym.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SupportingColoniesTitle</Label>
+    <String>Kolonie wspierające</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_SupportingColoniesDec</Label>
+    <String>Kolonia wspierająca to każda [HS=HS_Colinizing]skolonizowana[/HS] planeta, która nie jest [HS=HS_CoreWorld]światem Jądra[/HS]. Kolonia wspierająca wysyła zasoby do najbliższego [HS=HS_CoreWorld]świata Jądra[/HS] jako swój wkład, zwiększając zasoby planetarne [HS=HS_CoreWorld]świata jądra[/HS] dla poprawy wydajności planety.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MineralsTitle</Label>
+    <String>[ICON=Stat_Minerals_Icon] Minerał</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MineralsDec</Label>
+    <String>Minerały to surowce dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. Minerały są zasobami wejściowymi, które wpływają na [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]wytwarzanie[/HS]. Im więcej minerałów ma planeta, tym wyższy jest jej wskaźnik [HS=HS_Manufacturing]wytwarzania[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechnologyTitle</Label>
+    <String>[ICON=Stat_Technology_Icon] Technologia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechnologyDec</Label>
+    <String>[ICON=Stat_Technology_Icon] Technologia mierzy rozwój intelektualny dostępny dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Technology_Icon] Technologia to zasób wejściowy, który wpływa na [ICON=Stat_Research_Icon] [HS=HS_Research]badania[/HS]. Im więcej [ICON=Stat_Technology_Icon] Technologii ma planeta, tym wyższy jest jej wskaźnik [ICON=Stat_Research_Icon] [HS=HS_Research]badań[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FarmingTitle</Label>
+    <String>[ICON=Stat_Fertility_Icon] Rolnictwo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_FarmingDec</Label>
+    <String>[ICON=Stat_Fertility_Icon] Rolnictwo mierzy zasoby produkowane przez agrokulturę dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Fertility_Icon] Rolnictwo to zasób wejściowy, który wpływa na [ICON=Stat_Food_Icon] [HS=HS_Food]żywność[/HS]. Im więcej [ICON=Stat_Fertility_Icon] rolnictwa ma planeta, tym więcej [ICON=Stat_Food_Icon] [HS=HS_Food]żywności[/HS] produkuje [HS=HS_CoreWorld]świat Jądra[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CultureTitle</Label>
+    <String>[ICON=Stat_PlanetInfluence_Icon] Kultura</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CultureDec</Label>
+    <String>[ICON=Stat_PlanetInfluence_Icon] Kultura mierzy społeczną wagę dostępną dla [HS=HS_CoreWorld]świata jądra[/HS]. [ICON=Stat_PlanetInfluence_Icon] Kultura to zasób wejściowy, który zmienia wskaźnik [ICON=Stat_Influence_Icon] [HS=HS_Influence]wpływu[/HS]. Im więcej [ICON=Stat_PlanetInfluence_Icon] kultury ma planeta, tym wyższy jest jej wskaźnik [ICON=Stat_Influence_Icon] [HS=HS_Influence]wpływu[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_WealthTitle</Label>
+    <String>[ICON=Stat_Wealth_Icon] Bogactwo</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_WealthDec</Label>
+    <String>[ICON=Stat_Wealth_Icon] Bogactwo to rzadkie i cenne materiały dostępne dla [HS=HS_CoreWorld]świata Jądra[/HS]. [ICON=Stat_Wealth_Icon] Bogactwo to zasób wejściowy wpływający na [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]dochód[/HS]. Im więcej [ICON=Stat_Wealth_Icon] bogactwa ma planeta, tym większy [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]dochód[/HS] wytwarza.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ResearchCenterTitle</Label>
+    <String>Centrum badawcze</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ResearchCenterDec</Label>
+    <String>Centrum badawcze to menu zawierające przegląd badanych [HS=HS_Tech]technologii[/HS], które umożliwia zmienienie w dowolnym momencie tury badanej [HS=HS_Tech]technologii[/HS]. Szybkość badania [HS=HS_Tech]technologii[/HS] jest mierzona w [HS=HS_Months]miesiącach[/HS] i określana przez wskaźnik [ICON=Stat_Research_Icon] [HS=HS_Research]badań[/HS] cywilizacji. Jeśli [HS=HS_Tech]technologia[/HS] zostanie ukończona na początku tury, zostanie odblokowana i będzie można wyznaczyć nową [HS=HS_Tech]technologię[/HS] do zbadania.[BR][BR]Wybierz [HS=HS_Tech]technologię[/HS] do badania za pomocą lewego przycisku myszy. Aktualnie badana [HS=HS_Tech]technologia[/HS] jest zawsze wyświetlana na dolnym, środkowym panelu.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechTitle</Label>
+    <String>Technologia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_TechDec</Label>
+    <String>Technologia to opcja w [HS=HS_ResearchCenter]centrum badawczym[/HS], która po zakończeniu badań odblokuje nowe elementy, którymi mogą być nowe [HS=HS_Ship]Statkami[/HS], [HS=HS_Improvement]ulepszenia[/HS], [HS=HS_ExecutiveOrders]rozporządzenia wykonawcze[/HS] i inne.[BR][BR]Aby uzyskać więcej informacji na temat elementów odblokowywanych przez technologię, wskaż myszką pozycję technologii w [HS=HS_ResearchCenter]centrum badawczym[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PiratesTitle</Label>
+    <String>Piraci</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PiratesDec</Label>
+    <String>Piraci to zbuntowane [HS=HS_Ship]statki[/HS], [HS=HS_Shipyard]stocznie[/HS] i planety. Piraci są domyślnie wrodzy względem wszystkich innych grup i cywilizacji. Będą stawać do walki, zwłaszcza jeśli uważają, że wygrają bitwę.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipyardTitle</Label>
+    <String>Stocznia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ShipyardDec</Label>
+    <String>Stocznia to miejsce, gdzie można budować nowe [HS=HS_Ship]statki[/HS]. Stocznie wymagają [HS=HS_CoreWorld]świata Jądra[/HS] do działania i mogą być budowane tylko w [HS=HS_CoreWorld]światach Jądra[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RushTitle</Label>
+    <String>Przyspieszenie</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_RushDec</Label>
+    <String>Opcja przyspieszenia umożliwia wydanie [ICON=Stat_Credits_Icon][HS=HS_Credit]kredytów[/HS] i [ICON=Stat_Control_Icon] [HS=HS_Control]kontroli[/HS], aby skrócić czas realizacji budowy do 1 [HS=HS_Months]miesiąca[/HS]. Przyspieszona budowa zawsze przenosi się na początek kolejki. Opcja przyspieszenia może być używana tylko raz na turę w każdym [HS=HS_CoreWorld]świecie Jądra[/HS] i w każdej [HS=HS_Shipyard]stoczni[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetManagementTitle</Label>
+    <String>[ICON=Menu_PlanetManagement_Icon] Okno zarządzania planetą</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_PlanetManagementDec</Label>
+    <String>Okno [ICON=Menu_PlanetManagement_Icon] zarządzania planetą to miejsce, w którym możesz zarządzać swoimi [HS=HS_CoreWorld]światami Jądra[/HS]. Możesz uzyskać szczegółowy rozpis zasobów wejścia i wyjścia planety wraz z jej statusem. Możesz również budować i rozmontowywać [HS=HS_Improvement]ulepszenia[/HS] oraz zarządzać projektami.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AdjacencyTitle</Label>
+    <String>Bonus sąsiedztwa</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_AdjacencyDec</Label>
+    <String>Bonus sąsiedztwa jest stosowany do zbudowanych obok siebie [HS=HS_Improvement]ulepszeń[/HS]. Aby zwiększyć wydajność, najlepiej jest budować podobne [HS=HS_Improvement]ulepszenia[/HS] na przyległych polach, co zwiększy ich bonus.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConstructStarbaseTitle</Label>
+    <String>[ICON=Order_ConstructStarbase] Buduj bazę kosmiczną</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConstructStarbaseDec</Label>
+    <String>Rozkaz budowy bazy kosmicznej można przekazać do [HS=HS_Constructor]konstruktora[/HS]. Zużyje to [HS=HS_Constructor]konstruktora[/HS] i zbuduje [HS=HS_Starbase]bazę kosmiczną[/HS] wybranego typu. [HS=HS_Starbase]Bazy kosmiczne[/HS] nie mogą być budowane w [HS=HS_ZoneOfControl]strefie kontroli[/HS] innego gracza lub w odległości 3 [HS=HS_Tile]kafelków[/HS] od innej [HS=HS_Starbase]bazy kosmicznej[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StarbaseTitle</Label>
+    <String>Bazy kosmiczne</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StarbaseDec</Label>
+    <String>Baza gwiazd to wyspecjalizowana nieruchoma konstrukcja, która może pełnić różne role, w zależności od miejsca i sposobu jej budowy. Aby zbudować bazę gwiazd, wyprodukuj [HS=HS_Constructor]Konstruktora[/HS] z [HS=HS_Shipyard]Stoczni[/HS]. Następnie Konstruktorowi można dać polecenie [HS=HS_ConstructStarbase]Zbuduj Bazę Gwiazd[/HS], aby stworzyć Bazę Gwiazd w jego obecnym miejscu.[BR][BR]Istnieją cztery typy Baz Gwiazd: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Wojskowe[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]Górnicze[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Ekonomiczne[/HS] i [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]Komunikacyjne[/HS]. Dostępne typy przy użyciu polecenia [HS=HS_ConstructStarbase]Zbuduj Bazę Gwiazd[/HS] zależą od zasobów w zasięgu działania [HS=HS_Constructor]Konstruktora[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MilitaryStarbaseTitle</Label>
+    <String>[ICON=Icon_MilitaryStarbase] Wojskowa Baza Gwiazd</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MilitaryStarbaseDec</Label>
+    <String>Poświęca bazę kosmiczną na ochronę Twojej Cywilizacji i jej aktywów</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MiningStarbaseTitle</Label>
+    <String>[ICON=Icon_MiningStarbase] Gwiezdna Baza Górnicza</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_MiningStarbaseDec</Label>
+    <String>Dedykuje Starbase do wydobycia pobliskich [HS=HS_StrategicResource]Strategicznych Zasobów[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommunicationsStarbaseTitle</Label>
+    <String>[ICON=Icon_CommunicationsStarbase] Baza Komunikacyjna</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CommunicationsStarbaseDec</Label>
+    <String>Dedykuje Starbase do rozszerzania twojego kulturowego wpływu i zasobów.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_EconomicsStarbaseTitle</Label>
+    <String>[ICON=Icon_EconomicsStarbase] Ekonomia Bazy Gwiazdowej</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_EconomicsStarbaseDec</Label>
+    <String>Dedykuje Bazę Gwiezdną do rozwijania gospodarki Twoich Światów Centralnych.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConqueringPlanetsTitle</Label>
+    <String>[ICON=Conquest_Icon] Podbój Planet</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_ConqueringPlanetsDec</Label>
+    <String>Wszystkie skolonizowane planety mają wskaźnik [ICON=Conquest_Icon] podboju planetarnego. Przedstawia on, jak dobrze broniona jest planeta i jak dużo siły militarnej potrzeba do przełamania obrony. [HS=HS_Fleet]Floty[/HS] mają ocenę podboju określającą, jak dobrze są przygotowane do oblegania planety. Niektóre statki, takie jak statki transportowe, są lepiej przystosowane do podboju planet niż inne.[BR][BR]Aby rozpocząć oblężenie, wydaj polecenie [HS=HS_ShipMovement]przemieszczenia[/HS] [HS=HS_Fleet]floty[/HS] do planety, którą chcesz podbić. Gdy [HS=HS_Fleet]flota[/HS] dotrze do planety, rozpocznie się oblężenie, o ile wskaźnik [ICON=Conquest_Icon] podboju floty będzie wystarczająco wysoki, aby pokonać wskaźnik [ICON=Conquest_Icon] podboju planety.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StandbyTitle</Label>
+    <String>[ICON=Order_Standby] Gotowość</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_StandbyDec</Label>
+    <String>Rozkazu gotowości można używać, aby statek pozostał bezczynny do odwołania. W przeciwieństwie do innych rozkazów, które mają warunki przerywające bezczynność, statki w trybie gotowości nie opuszczą go, dopóki nie odbiorą odpowiedniego rozkazu.</String>
+  </StringTable>
+  <!--Adding text for future HotSpots after text lock 9.22.23-->
+  <!--Note: String labels have temporary _TK tag-->
+  <StringTable>
+    <Label>Hotspot_Biology</Label>
+    <String>Biologia</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_BiologyDec</Label>
+    <String>Biologia to specjalne cechy wpływające na sposób kolonizacji i rozwoju cywilizacji.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CulturalAffinity</Label>
+    <String>Przynależność kulturowa</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CulturalAffinityDec</Label>
+    <String>Określa ścieżki rozwoju kultury, które są przystępniejsze dla danej cywilizacji.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_Behaviors</Label>
+    <String>Zachowania</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_BehaviorsDec</Label>
+    <String>Określa jak cywilizacja będzie grać, gdy będzie nią sterować SI.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_Citizens</Label>
+    <String>Obywatele</String>
+  </StringTable>
+  <StringTable>
+    <Label>Hotspot_CitizensDec</Label>
+    <String>Obywatele to populację światów Jądra, którzy mogą być wyspecjalizowani w celu modyfikacji wyników planety, a także niezbędni do budowy określonych klas statków.</String>
+  </StringTable>
 </StringTableList>

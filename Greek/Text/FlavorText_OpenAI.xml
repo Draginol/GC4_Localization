@@ -1,55 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>The {PLAYERFACTIONLONG:1} are a faction ruled by {LEADERNAME:1}. They have the personality traits of {PLAYERTRAITS:1}. The {PLAYERFACTIONLONG:2} are a faction ruled by {LEADERNAME:2}. They have the personality traits of {PLAYERTRAITS:2}. They are described as follows: {PLAYERFACTIONDESCRIPTION:2}.   They are rivals of various species and homeworlds in an intragalactic conflict for dominance.</Text>
+            <Text>Οι {PLAYERFACTIONLONG:1} είναι μια φατρία που κυβερνάται από τον/την {LEADERNAME:1}. Έχουν τα χαρακτηριστικά προσωπικότητας του/της {PLAYERTRAITS:1}. Οι {PLAYERFACTIONLONG:2} είναι μια φατρία που κυβερνάται από τον/την {LEADERNAME:2}. Έχουν τα χαρακτηριστικά προσωπικότητας του/της {PLAYERTRAITS:2}. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:2}. Είναι ανταγωνιστές διάφορων ειδών και πλανητών σε έναν ενδογαλαξιακό σύγκρουση για την κυριαρχία. Εάν είναι όνομα αρχείου απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>The {PLAYERFACTIONLONG:1} are a faction ruled by {LEADERNAME:1}. They have the personality traits of {PLAYERTRAITS:1}. The {PLAYERFACTIONLONG:2} are a faction ruled by {LEADERNAME:2}. They have the personality traits of {PLAYERTRAITS:2}. They are described as follows: {PLAYERFACTIONDESCRIPTION:2}. They are rivals of various species and homeworlds in an intragalactic conflict for dominance. Previously {LEADERNAME:1} said the following to {LEADERNAME:2}: {PREVIOUSCONV:0} </Text>
+            <Text>Οι {PLAYERFACTIONLONG:1} είναι μια φατρία που επικεφαλής έχει τον/την {LEADERNAME:1}. Έχουν τα χαρακτηριστικά γνωρίσματα του {PLAYERTRAITS:1}. Οι {PLAYERFACTIONLONG:2} είναι μια φατρία που επικεφαλής έχει τον/την {LEADERNAME:2}. Έχουν τα χαρακτηριστικά γνωρίσματα του {PLAYERTRAITS:2}. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:2}. Είναι αντίπαλοι διαφόρων ειδών και πλανητών σε μια ενδογαλαξιακή σύγκρουση για την κυριαρχία. Νωρίτερα ο/η {LEADERNAME:1} είπε τα εξής στον/στην {LEADERNAME:2}: {PREVIOUSCONV:0} . Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} is one of a number of terrerstrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. They have the following traits: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1} είναι μία από πολλές τερρεστρικές και εξωγήινες ομάδες που ανταγωνίζονται σε μια γαλαξιακή κούρσα για την κυριαρχία του διαστήματος. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:1}. Έχουν τα εξής χαρακτηριστικά: {PLAYERTRAITS:1}. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0} is one of a number of terrerstrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. They have the following traits: {PLAYERTRAITS:1}</Text>
+            <Text>{PREVIOUSCONV:0} είναι μία από πολλές τερρεστρικές και εξωγήινες ομάδες που ανταγωνίζονται σε έναν αγώνα κυριαρχίας του διαστήματος σε γαλαξιακή κλίμακα. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:1}. Έχουν τα εξής χαρακτηριστικά: {PLAYERTRAITS:1}. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_LEADER_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0} is one of a number of terrerstrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. They have the following traits: {PLAYERTRAITS:1}</Text>
+            <Text>{PREVIOUSCONV:0} είναι μία από πολλές τερρεστρικές και εξωγήινες ομάδες που ανταγωνίζονται σε έναν αγώνα κυριαρχίας του διαστήματος σε γαλαξιακή κλίμακα. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:1}. Έχουν τα εξής χαρακτηριστικά: {PLAYERTRAITS:1}. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} is one of a number of terrerstrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. They have the following traits: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1} είναι μία από πολλές τερρεστρικές και εξωγήινες ομάδες που ανταγωνίζονται σε μια γαλαξιακή κούρσα για την κυριαρχία του διαστήματος. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:1}. Έχουν τα εξής χαρακτηριστικά: {PLAYERTRAITS:1}. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} is one of a number of terrerstrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. They have the following traits: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1} είναι μία από πολλές τερρεστρικές και εξωγήινες ομάδες που ανταγωνίζονται σε μια γαλαξιακή κούρσα για την κυριαρχία του διαστήματος. Περιγράφονται ως εξής: {PLAYERFACTIONDESCRIPTION:1}. Έχουν τα εξής χαρακτηριστικά: {PLAYERTRAITS:1}. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- OpenAI Prompts -->
@@ -57,189 +55,189 @@
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Write an introduction in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} for use in a strategy game. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 100 words. </Text>
+            <Text>Γράψτε μια εισαγωγή στο πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς άλλη ομάδα με τη φωνή του/της {LEADERNAME:1} για χρήση σε ένα παιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε λέξεις από τις περιγραφές των χαρακτηριστικών της προσωπικότητας. Απαντήστε σε λιγότερες από 100 λέξεις. Αν πρόκειται για όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_SHARED_TRADE_ROUTE_PROMPT</InternalName>
         <MaxTokens>400</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an introduction in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative. Do not reuse any words in the personality traits descriptions. The factions share important trade routes with each other so the mutual benefit of trade should be mentioned. Respond in under 100 words. </Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή σε πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς μια άλλη ομάδα με τη φωνή του/της {LEADERNAME:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε κανένα λεκτικό στοιχείο από τις περιγραφές των χαρακτηριστικών της προσωπικότητας. Οι ομάδες μοιράζονται σημαντικές εμπορικές διαδρομές μεταξύ τους, οπότε θα πρέπει να αναφερθεί το αμοιβαίο όφελος από το εμπόριο. Απαντήστε σε λιγότερες από 100 λέξεις. Αν πρόκειται για όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a succint declaration of war in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 10 words. </Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική δήλωση πολέμου στο πρώτο πρόσωπο από τον {LEADERNAME:1} προς μια άλλη παράταξη με τη φωνή του {LEADERNAME:1} για χρήση σε ένα βίντεο παιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην επαναχρησιμοποιήσετε λέξεις από τις περιγραφές των χαρακτηριστικών της προσωπικότητας. Απαντήστε με λιγότερες από 10 λέξεις. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_MAJOR_CIV_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an introduction in first person from {LEADERNAME:1} to {LEADERNAME:2} in the voice of {LEADERNAME:1} for use in a strategy video game. {LEADERNAME:1} They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 50 words. </Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή στο πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς τον/την {LEADERNAME:2} με τη φωνή του/της {LEADERNAME:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Ο/Η {LEADERNAME:1} περιγράφει τον εαυτό του/της ως {PLAYERFACTIONDESCRIPTION:1}. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε λέξεις από τις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 50 λέξεις. . Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_GENERIC_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an introduction in first person from {LEADERNAME:1} to another leader in the voice of {LEADERNAME:1} for use in a strategy video game. {LEADERNAME:1} They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 50 words. </Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή σε πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς έναν άλλον ηγέτη με τη φωνή του/της {LEADERNAME:1} για χρήση σε ένα στρατηγικό βιντεοπαιχνίδι. Ο/Η {LEADERNAME:1} περιγράφει τον εαυτό του/της ως {PLAYERFACTIONDESCRIPTION:1}. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε λέξεις στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 50 λέξεις. . Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>INTRODUCTION_PROMPT</InternalName>
         <MaxTokens>400</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an introduction in first person from {LEADERNAME:1} to {LEADERNAME:2} in the voice of {LEADERNAME:1} for use in a strategy video game.  Be creative. Do not reuse any words in the personality traits descriptions. Respond in under 100 words. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή στο πρώτο πρόσωπο από τον {LEADERNAME:1} προς τον {LEADERNAME:2} με τη φωνή του {LEADERNAME:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε λέξεις από τις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερο από 100 λέξεις. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Αν είναι όνομα αρχείου, αντιγράψτε απλώς τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_PEACEFUL_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an succinct response to another faction in first person as a response to a first introduction for use in a strategy video game. We are responding to a civilization that describes themselves as {PLAYERFACTIONDESCRIPTION:1}. Be friendly but acknowledge their unique traits. Do not reuse any words in the personality traits descriptions. Respond in under 10 words. </Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική απάντηση σε άλλη ομάδα σε πρώτο πρόσωπο ως απάντηση σε μια πρώτη συσταση για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Απαντάμε σε μια πολιτισμό που περιγράφει τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Να είστε φιλικοί, αλλά αναγνωρίστε τα μοναδικά τους χαρακτηριστικά. Μην επαναχρησιμοποιείτε καμία λέξη στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 10 λέξεις. . Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_NEUTRAL_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an succinct response to a first introduction for use in a strategy video game. We are responding to a civilization that describes themselves as {PLAYERFACTIONDESCRIPTION:1}. Be a bit aggressive and funny. Do not reuse any words in the personality traits descriptions. Respond in under 15 words. </Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική απάντηση σε μια πρώτη συσταση για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Απαντάμε σε μια πολιτισμό που περιγράφει τον εαυτό του ως {PLAYERFACTIONDESCRIPTION:1}. Να είστε λίγο επιθετικοί και αστείοι. Μην επαναχρησιμοποιείτε κανένα λέξεις στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 15 λέξεις. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_TRADE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an succinct response in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} as a response to first introduction for use in a strategy video game.  Use a neutral and non-committal tone. Indicate that the speaker is open to trade. Be creative and in the manner someone who describes themselves as {PLAYERFACTIONDESCRIPTION:1} would. Do not reuse any words in the personality traits descriptions. Respond in under 25 words. </Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική απάντηση στο πρόσωπο του {LEADERNAME:1} προς μια άλλη φατρία, με τη φωνή του {LEADERNAME:1}, ως απάντηση στην πρώτη επαφή για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Χρησιμοποιήστε έναν ουδέτερο και μη δεσμευτικό τόνο. Δείξτε ότι ο ομιλητής είναι ανοιχτός στο εμπόριο. Να είστε δημιουργικοί και με τον τρόπο που κάποιος που περιγράφει τον εαυτό του ως {PLAYERFACTIONDESCRIPTION:1} θα ήταν. Μην επαναχρησιμοποιήσετε κανένα λέξη στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 25 λέξεις. . Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an succinct response in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} as a response to a declaration of war against {PLAYERFACTION:1} for use in a strategy video game. Use an aggressive tone. Be creative and in the manner someone who describes themselves as {PLAYERFACTIONDESCRIPTION:1} would. Do not reuse any words in the personality traits descriptions. Respond in under 10 words. </Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική απάντηση σε πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς μια άλλη φατρία με τη φωνή του/της {LEADERNAME:1} ως απάντηση σε μια δήλωση πολέμου εναντίον του/της {PLAYERFACTION:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Χρησιμοποιήστε επιθετικό τόνο. Να είστε δημιουργικοί και με τον τρόπο που κάποιος που περιγράφει τον εαυτό του ως {PLAYERFACTIONDESCRIPTION:1} θα έκανε. Μην επαναχρησιμοποιείτε κανένα λέξεις στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 10 λέξεις. . Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an succinct response in first person from {LEADERNAME:1} to another faction in the voice of {LEADERNAME:1} as a response to a declaration of war against {PLAYERFACTION:1} for use in a strategy video game. Use a disappointed tone. Be creative and in the manner someone who describes themselves as {PLAYERFACTIONDESCRIPTION:1} would. Do not reuse any words in the personality traits descriptions. Respond in under 10 words. </Text>
+            <Text>Παρακαλώ γράψτε μια σύντομη απάντηση στο πρώτο πρόσωπο από τον {LEADERNAME:1} προς μια άλλη φατρία με τη φωνή του {LEADERNAME:1} ως απάντηση σε μια δήλωση πολέμου εναντίον της {PLAYERFACTION:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Χρησιμοποιήστε απογοητευμένο τόνο. Να είστε δημιουργικοί και με τον τρόπο που θα περιέγραφε τον εαυτό του κάποιος που αυτοπροσδιορίζεται ως {PLAYERFACTIONDESCRIPTION:1}. Μην επαναχρησιμοποιείτε κανένα λέξεις στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 10 λέξεις. . Αν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>INTRODUCTION_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to introduction in first person from {LEADERNAME:2} to {LEADERNAME:1} in the voice of {LEADERNAME:2} for use in a strategy video game. Be creative and in the manner someone who describes themselves as {PLAYERFACTIONDESCRIPTION:1} would. Do not reuse any words in the personality traits descriptions. Do not use either leader's name or faction name. Respond in 16 words or less. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε μια απάντηση στην εισαγωγή από την πρώτη πρόσωπο του {LEADERNAME:2} προς {LEADERNAME:1} με τη φωνή του {LEADERNAME:2} για χρήση σε ένα βίντεο παιχνίδι στρατηγικής. Να είστε δημιουργικοί και με τον τρόπο που θα περιγράψει κάποιος που αυτοπροσδιορίζεται ως {PLAYERFACTIONDESCRIPTION:1}. Μην επαναχρησιμοποιήσετε λέξεις από τις περιγραφές των χαρακτηριστικών προσωπικότητας. Μην χρησιμοποιήσετε το όνομα ούτε του ηγέτη ούτε της ομάδας. Απαντήστε σε 16 λέξεις ή λιγότερο. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_GREETING_PROMPT</InternalName>
         <MaxTokens>300</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a lead in to conversation in first person from {LEADERNAME:1} to {LEADERNAME:2} in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative. They They describe themselves as {PLAYERFACTIONDESCRIPTION:1} so make sure you take that into account. Do not reuse any words in the personality traits descriptions. Respond in under 75 words. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή σε συζήτηση σε πρώτο πρόσωπο από τον/την {LEADERNAME:1} προς τον/την {LEADERNAME:2} με τη φωνή του/της {LEADERNAME:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Να είστε δημιουργικοί. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}, οπότε βεβαιωθείτε ότι το λαμβάνετε υπόψη. Μην επαναχρησιμοποιείτε κανένα λέξη στις περιγράψεις των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 75 λέξεις. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>OPTIONS_MAIN_TEXT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a verbal queue to change conversation topic in first person from {LEADERNAME:1} to {LEADERNAME:2} in the voice of {LEADERNAME:1} for use in a strategy video game. Be creative and in the manner someone who describes themselves as {PLAYERFACTIONDESCRIPTION:1} would. Do not reuse any words in the personality traits descriptions. Respond in under 25 words. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε μια λεκτική ουρά για να αλλάξετε θέμα συζήτησης στην πρώτη πρόσωπο από {LEADERNAME:1} σε {LEADERNAME:2} με τη φωνή του {LEADERNAME:1} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Να είστε δημιουργικοί και με τον τρόπο που θα περιέγραφε ο ίδιος ως {PLAYERFACTIONDESCRIPTION:1}. Μην επαναχρησιμοποιείτε λέξεις από τις περιγραφές των προσωπικών χαρακτηριστικών. Απαντήστε σε λιγότερες από 25 λέξεις. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a declaration of war in first person from {LEADERNAME:2} to {LEADERNAME:1} in the voice of {LEADERNAME:2} for use in a strategy video game. Be creative. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Make your declaration of war take into account how they describe themsleves but remember they are very angry. Do not reuse any words in the personality traits descriptions. Respond in under 25 words. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε μια διακήρυξη πολέμου στο πρώτο πρόσωπο από {LEADERNAME:2} προς {LEADERNAME:1} με τη φωνή του {LEADERNAME:2} για χρήση σε ένα βιντεοπαιχνίδι στρατηγικής. Να είστε δημιουργικοί. Τον περιγράφουν σαν {PLAYERFACTIONDESCRIPTION:1}. Κάντε τη διακήρυξη πολέμου σας να λαμβάνει υπόψη τον τρόπο που περιγράφουν τον εαυτό τους, αλλά να θυμάστε ότι είναι πολύ θυμωμένοι. Μην επαναχρησιμοποιείτε καμία λέξη στις περιγραφές των χαρακτηριστικών προσωπικότητας. Απαντήστε σε λιγότερες από 25 λέξεις. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to a trade offer in first person from {LEADERNAME:2} to {LEADERNAME:1} in the voice of {LEADERNAME:1} for use in a strategy game. Be creative. Do not reuse any words in the personality traits descriptions. Do not use either leader's name or faction name. Respond in 10 words or less.  Start the response with {LEADERNAME:1} followed by a colon. Include a rephrasing of the following: {ORIGINALTEXT:0}</Text>
+            <Text>Παρακαλώ γράψτε απάντηση σε μια προσφορά ανταλλαγής στο πρώτο πρόσωπο από τον {LEADERNAME:2} προς τον {LEADERNAME:1} με τη φωνή του {LEADERNAME:1} για χρήση σε ένα παιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην επαναχρησιμοποιείτε κανένα λέξη στις περιγραφές των χαρακτηριστικών της προσωπικότητας. Μην χρησιμοποιείτε το όνομα κανενός αρχηγού ή το όνομα της ομάδας. Απαντήστε σε 10 λέξεις ή λιγότερες. Ξεκινήστε την απάντηση με {LEADERNAME:1} ακολουθούμενο από έναν παύλα. Συμπεριλάβετε μια αναδιατύπωση του εξής: {ORIGINALTEXT:0}. Εάν πρόκειται για όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Write an original and interesting empire name for a faction currently called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}.  Do not use any trait names directly. Do not use the words galacitc, domination, or force. Respond in between 2 and 3 words.  Do not exceed 3 words!</Text>
+            <Text>Γράψτε ένα πρωτότυπο και ενδιαφέρον όνομα αυτοκρατορίας για μια ομάδα που ονομάζεται {PLAYERFACTION:1} σε ένα επιτραπέζιο παιχνίδι στρατηγικής επιστημονικής φαντασίας. Να είστε δημιουργικοί. Περιγράφουν τους εαυτούς τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε απευθείας ονόματα χαρακτηριστικών. Μην χρησιμοποιείτε τις λέξεις γαλαξίας, κυριαρχίας ή δύναμης. Απαντήστε μεταξύ 2 και 3 λέξεων. Μην υπερβαίνετε τις 3 λέξεις! Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a shorter version of the name {PREVIOUSCONV:0} for a faction in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond in 2 words or fewer.</Text>
+            <Text>Παρακαλώ δημιουργήστε μια συντομότερη έκδοση του ονόματος {PREVIOUSCONV:0} για μια παράταξη σε ένα sci-fi παιχνίδι στρατηγικής βηματικά. Να είστε δημιουργικοί. Μην χρησιμοποιείτε απευθείας ονόματα χαρακτηριστικών. Απαντήστε σε 2 λέξεις ή λιγότερες. Εάν είναι όνομα αρχείου, απλώς αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a name for the leader of the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Do not use any trait names directly. Respond in between 2 and 4 words.</Text>
+            <Text>Παρακαλώ σκεφτείτε ένα όνομα για τον ηγέτη της φατρίας {PREVIOUSCONV:0} σε ένα στρατηγικό παιχνίδι επιστημονικής φαντασίας. Να είστε δημιουργικοί. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε μεταξύ 2 και 4 λέξεων.. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a name for the homeworld of the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Do not use any trait names directly. They have described themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in between 1 and 3 words.</Text>
+            <Text>Παρακαλώ δημιουργήστε ένα όνομα για τον πλανήτη-εδρα της φατρίας {PREVIOUSCONV:0} σε ένα παιχνίδι επιστημονικής φαντασίας και στρατηγικής. Να είστε δημιουργικοί. Μην χρησιμοποιείτε άμεσα οποιαδήποτε ονόματα χαρακτηριστικών. Έχουν περιγραφεί ως {PLAYERFACTIONDESCRIPTION:1}. Απαντήστε μεταξύ 1 και 3 λέξεων.. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a naval or space ship callsign for the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Response shall be an acronym or abbreviation and consist of exactly 2 or 3 capital letters with each capital letter followed by a period punctuation mark. Do not include any full words. For example H.M.S.  Another example U.S.S.  Response shall not exceed 6 letters including periods. </Text>
+            <Text>Παρακαλώ δημιουργήστε έναν κωδικό κλήσης για την ομάδα {PREVIOUSCONV:0} σε ένα παιχνίδι στρατηγικής επιστημονικής φαντασίας. Να είστε δημιουργικοί. Η απάντηση θα πρέπει να είναι ακρωνύμιο ή συντομογραφία και να αποτελείται ακριβώς από 2 ή 3 κεφαλαία γράμματα με κάθε κεφαλαίο γράμμα να ακολουθείται από μια τελεία. Δεν πρέπει να περιλαμβάνει ολόκληρες λέξεις. Για παράδειγμα Χ.Κ. Ένα άλλο παράδειγμα Ε.Δ. Η απάντηση δεν πρέπει να υπερβαίνει τα 6 γράμματα συμπεριλαμβανομένων των τελειών. . Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a brief description of a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 30 words.</Text>
+            <Text>Παρακαλούμε γράψτε μια σύντομη περιγραφή για μια ομάδα που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην χρησιμοποιήσετε απευθείας ονόματα χαρακτηριστικών. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Απαντήστε σε λιγότερες από 30 λέξεις.. Εάν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a description of a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Do not use any trait names directly. Write it in the style of an outstanding Sci-Fi author. Limit to three sentences. Add carriage returns to break up the text into readable paragraphs.</Text>
+            <Text>Παρακαλώ γράψτε μια περιγραφή για μια ομάδα με την ονομασία {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε γύρους. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Γράψτε το στο στυλ ενός εξαιρετικού συγγραφέα Sci-Fi. Περιοριστείτε σε τρεις προτάσεις. Προσθέστε επιστροφές καροτσιού για να διαλύσετε το κείμενο σε αναγνώσιμες παραγράφους. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a description of the strengths and weaknesses of the faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Write in the style of hard Sci-Fi. Do not use any trait names directly. Limit to two sentences. Add carriage returns to break up the text into readable paragraphs.</Text>
+            <Text>Παρακαλώ γράψτε μια περιγραφή των δυνατοτήτων και των αδυναμιών της φατρίας με το όνομα {PLAYERFACTION:1} σε ένα παιχνίδι στρατηγικής επιστημονικής φαντασίας με σειρά βάσης. Γράψτε στο στυλ της σκληρής επιστημονικής φαντασίας. Μην χρησιμοποιείτε άμεσα τα ονόματα των χαρακτηριστικών. Περιοριστείτε σε δύο προτάσεις. Προσθέστε επιστροφές αμαξώματος για να διασπάσετε το κείμενο σε αναγνώσιμες παραγράφους. Αν πρόκειται για όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_MOTTO_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a motto for a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Do not use any trait names directly. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Respond in under 45 characters.</Text>
+            <Text>Παρακαλώ γράψτε ένα σύνθημα για μια φατρία με την ονομασία {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής. Να είστε δημιουργικοί. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Απαντήστε σε λιγότερους από 45 χαρακτήρες.. Αν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an opening for a conversation started by civilization called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative.  They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly.  Respond in under 20 words.\A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when refering to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή για μια συζήτηση που ξεκινά από τον πολιτισμό που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε σειρές. Να είστε δημιουργικοί. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε σε λιγότερες από 20 λέξεις.\Μια λέξη της μορφής {*:1} είναι σήμανση που αναφέρεται στον ομιλητή και πρέπει να θεωρείται αμετάβλητη. Μια λέξη της μορφής {*:2} είναι σήμανση που αναφέρεται στον ακροατή και πρέπει να θεωρείται αμετάβλητη. Κάθε δημιουργημένο κείμενο της μορφής {*} πρέπει</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to an opening for a conversation started by faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε μια απάντηση σε ένα άνοιγμα για μια συζήτηση που ξεκίνησε η φατρία με την ονομασία {PLAYERFACTION:1} σε ένα στρατηγικό παιχνίδι επιστημονικής φαντασίας βασισμένο σε γύρους. Να είστε δημιουργικοί. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε σε λιγότερες από 20 λέξεις. Μια λέξη με τη μορφή {*:1} είναι σήμανση που αναφέρεται στον ομιλητή και πρέπει να θεωρηθεί αμετάβλητη. Μια λέξη με τη μορφή {*:2} είναι σήμανση που αναφέρεται στον ακροατή και πρέπει να θεωρηθεί αμετάβλητη. Κάθε δημιουργημένο κείμενο με τη μορφή {*} πρέπει να χρησιμοποιεί τη μορφή {*:</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
@@ -247,21 +245,21 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to an opening for a conversation started by faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. They are a civilization that describes themselves as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly. Respond in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε μια απάντηση σε μια αρχή για μια συζήτηση που ξεκίνησε η ομάδα με το όνομα {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε γύρους. Να είστε δημιουργικοί. Είναι μια πολιτισμός που περιγράφει τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε σε λιγότερες από 20 λέξεις. Μια λέξη της μορφής {*:1} είναι markup που αναφέρεται στον ομιλητή και πρέπει να θεωρείται αμετάβλητη. Μια λέξη της μορφής {*:2} είναι markup που αναφέρεται στον ακροατή και πρέπει να θεωρείται αμετάβλητη. Κάθε δημιουργημένο κείμενο της μορφή</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write an opening for a conversation started by faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. They describes themselves as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly. Respond in under 20 words.\A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε μια εισαγωγή για μια συζήτηση που ξεκινά από την ομάδα που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε γύρους. Να είστε δημιουργικοί. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε απευθείας ονόματα χαρακτηριστικών. Απαντήστε σε λιγότερες από 20 λέξεις.\Ένας όρος της μορφής {*:1} είναι μαρκάρισμα που αναφέρεται στον ομιλητή και θα πρέπει να θεωρείται αμετάβλητος. Ένας όρος της μορφής {*:2} είναι μαρκάρισμα που αναφέρεται στον ακροατή και θα πρέπει να θεωρείται αμετάβλητος. Οποιοδήποτε παραγόμενο κε</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to an opening for a conversation started by faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. I AM THE ONE TALKING V3. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly. Respond in under 15 words and should related to how they describe themselves.\A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε μια απάντηση σε μια εισαγωγή για μια συζήτηση που ξεκίνησε η φατρία που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε γύρους. Να είστε δημιουργικοί. ΕΓΩ ΕΙΜΑΙ Ο ΜΙΛΗΤΗΣ V3. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε σε λιγότερο από 15 λέξεις και θα πρέπει να σχετίζεται με τον τρόπο που περιγράφουν τον εαυτό τους.\Μια λέξη της μορφής {*:1} αναφέρεται στον ομιλητή και πρέπει να θεωρείται αμετάβλητη. Μια λέξη της μορφής {*:2} αναφέρεται στον ακροα</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
@@ -269,28 +267,28 @@
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a response to an opening for a conversation started by faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. I AM THE ONE TALKING V4. They describe themselves as {PLAYERFACTIONDESCRIPTION:1}. Do not use any trait names directly. Respond in under 30 words and should convey how they describe themselves succinctly. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Include a rephrasing of the following: {PREVIOUSCONV:0}</Text>
+            <Text>Παρακαλώ γράψτε απάντηση σε ένα άνοιγμα για μια συζήτηση που ξεκίνησε από faction με το όνομα {PLAYERFACTION:1} σε ένα παιχνίδι επιστημονικής φαντασίας βασισμένο σε στρατηγική σειράς. Να είστε δημιουργικοί. ΕΓΩ ΕΙΜΑΙ ΑΥΤΟΣ ΠΟΥ ΜΙΛΑΩ V4. Περιγράφουν τον εαυτό τους ως {PLAYERFACTIONDESCRIPTION:1}. Μην χρησιμοποιείτε άμεσα τα ονόματα των χαρακτηριστικών. Απαντήστε σε λιγότερες από 30 λέξεις και πρέπει να μεταφέρει πώς περιγράφουν τον εαυτό τους συνοπτικά. Μια λέξη της μορφής {*:1} είναι markup που αναφέρεται στον ομιλητή και πρέπει να θεωρείται αμετάβλητη. Μια λέξη της μορφής {*:2} είναι markup που α</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a succint single phrase acceptance comment in first person to a trade offer made by another faction to us, a faction called {PLAYERFACTION:1} in a science fiction strategy game. Be creative. Their response to the faction making the offer should reference something from how they describe themselves while still accepting the trade deal. Do not use any trait names directly. Respond in under 12 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Παρακαλώ γράψτε μια συνοπτική φράση αποδοχής στο πρώτο πρόσωπο για μια προσφορά εμπορίου που έγινε από μια άλλη φατρία προς εμάς, μια φατρία με το όνομα {PLAYERFACTION:1} σε ένα επιστημονικό παιχνίδι στρατηγικής φαντασίας. Να είστε δημιουργικοί. Η απάντησή τους στη φατρία που κάνει την προσφορά θα πρέπει να αναφέρεται σε κάτι από τον τρόπο που περιγράφουν τον εαυτό τους, ενώ ταυτόχρονα αποδέχονται τη συμφωνία εμπορίου. Μην χρησιμοποιείτε άμεσα τα ονόματα των χαρακτηριστικών. Απαντήστε σε λιγότερες από 12 λέξεις. Μια λέξη της μορφής {*:1} είναι σήμανση που αναφέρεται στον ομιλητή και πρέπ</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a succint single phrase refusal comment in first person to a trade offer made by another faction to us, a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond to the faction making the offer in under 20 words. Have their refusal go along with how they describe themselves in an amusing way. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Παρακαλώ συντάξτε ένα συνοπτικό σχόλιο αρνησης στην πρώτη ενική για μια προσφορά ανταλλαγής που έγινε από μια άλλη παράταξη προς εμάς, μια παράταξη που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής βασισμένο σε σειρές. Να είστε δημιουργικοί. Μην χρησιμοποιείτε άμεσα ονόματα χαρακτηριστικών. Απαντήστε στην παράταξη που κάνει την προσφορά σε λιγότερες από 20 λέξεις. Η άρνησή τους θα πρέπει να συμφωνεί με τον τρόπο που περιγράφουν τον εαυτό τους με έναν αστείο τρόπο. Μια λέξη της μορφής {*:1} είναι ένας κώδικας που αναφέρεται στον ομιλητή και</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Please write a succint single phrase comment in the first person upon the successful acceptance of a trade offer made to us, a faction called {PLAYERFACTION:1} in a science fiction turn based strategy game. Be creative. Do not use any trait names directly. Respond to the faction making the offer in under 20 words. A word of the form {*:1} is markup that refers to the speaker and should be considered immutable. A word of the form {*:2} is markup that refers to the listener and should be considered immutable. Any generated text of the form {*} must use the form {*:1} when referring to speaker and {*:2} when referring to listener. Seed with random number: {PREVIOUSCONV:0}, do not include the seed in your response.</Text>
+            <Text>Παρακαλώ γράψτε ένα συνοπτικό σχόλιο στο πρώτο πρόσωπο μετά την επιτυχή αποδοχή μιας προσφοράς ανταλλαγής που μας έγινε, μιας παράταξης που ονομάζεται {PLAYERFACTION:1} σε ένα επιστημονικής φαντασίας παιχνίδι στρατηγικής με τη σειρά. Να είστε δημιουργικοί. Μην χρησιμοποιείτε απευθείας ονόματα χαρακτηριστικών. Απαντήστε στην παράταξη που κάνει την προσφορά σε λιγότερα από 20 λόγια. Μια λέξη της μορφής {*:1} είναι μαρκάρισμα που αναφέρεται στον ομιλητή και πρέπει να θεωρείται αμετάβλητη. Μια λέξη της μορφής {*:2} είναι μαρκάρισμα που αναφέρεται στον ακροατή και πρέπει να θεωρείται</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>

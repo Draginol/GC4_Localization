@@ -2,59 +2,52 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
-      <InternalName>GENERIC_PERSONA</InternalName>
-      <MaxTokens>0</MaxTokens>
-      <FlavorTextOption>
-        <Text>You are a skilled science fiction writer.</Text>
-      </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>A {PLAYERFACTIONLONG:1} é uma facção governada por {LEADERNAME:1}. Eles possuem as características de personalidade de {PLAYERTRAITS:1}. A {PLAYERFACTIONLONG:2} é uma facção governada por {LEADERNAME:2}. Eles possuem as características de personalidade de {PLAYERTRAITS:2}. Eles são descritos da seguinte maneira: {PLAYERFACTIONDESCRIPTION:2}. E</Text>
+            <Text>{PLAYERFACTIONLONG:1} to frakcja rządzona przez {LEADERNAME:1}. Mają cechy osobowości {PLAYERTRAITS:1}. {PLAYERFACTIONLONG:2} to frakcja rządzona przez {LEADERNAME:2}. Mają cechy osobowości {PLAYERTRAITS:2}. Są opisywani następująco: {PLAYERFACTIONDESCRIPTION:2}. Są rywalami różnych gatunków i światów ojczystych w intragalaktycznym konflikcie o dominację. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>A {PLAYERFACTIONLONG:1} é uma facção governada por {LEADERNAME:1}. Eles têm as características de personalidade de {PLAYERTRAITS:1}. A {PLAYERFACTIONLONG:2} é uma facção governada por {LEADERNAME:2}. Eles têm as características de personalidade de {PLAYERTRAITS:2}. Eles são descritos da seguinte maneira: {PLAYERFACTIONDESCRIPTION:2}. Eles são</Text>
+            <Text>Frakcja {PLAYERFACTIONLONG:1} jest rządzona przez {LEADERNAME:1}. Mają cechy osobowości {PLAYERTRAITS:1}. Frakcja {PLAYERFACTIONLONG:2} jest rządzona przez {LEADERNAME:2}. Mają cechy osobowości {PLAYERTRAITS:2}. Opisuje się ich następująco: {PLAYERFACTIONDESCRIPTION:2}. Są rywalami różnych gatunków i ojczyzn w intragalaktycznym konflikcie o dominację. Wcześniej {LEADERNAME:1} powiedział następująco do {LEADERNAME:2}: {PREVIOUSCONV:0} . Jeżeli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} é uma das várias facções terrestres e extraterrestres que são rivais numa corrida em escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles têm as seguintes características: {PLAYERTRAITS:1}. Se for um nome de arquivo, basta copiar o inglês.</Text>
+            <Text>{PLAYERFACTION:1} to jedna z wielu frakcji naziemnych i pozaziemskich, które rywalizują w galaktycznej skali o dominację w przestrzeni kosmicznej. Są opisani następująco: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0} é uma entre várias facções terrestres e extraterrestres que são rivais em uma corrida em escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles possuem as seguintes características: {PLAYERTRAITS:1}. Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>{PREVIOUSCONV:0} jest jednym z wielu naziemnych i pozaziemskich frakcji, które rywalizują w wyścigu o dominację w kosmosie na skalę galaktyki. Są opisani następująco: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}. Jeśli to jest nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_LEADER_NAME_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0} é uma entre várias facções terrestres e extraterrestres que são rivais em uma corrida em escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles possuem as seguintes características: {PLAYERTRAITS:1}. Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>{PREVIOUSCONV:0} jest jednym z wielu naziemnych i pozaziemskich frakcji, które rywalizują w wyścigu o dominację w kosmosie na skalę galaktyki. Są opisani następująco: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}. Jeśli to jest nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} é uma das várias facções terrestres e extraterrestres que são rivais numa corrida em escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles têm as seguintes características: {PLAYERTRAITS:1}. Se for um nome de arquivo, basta copiar o inglês.</Text>
+            <Text>{PLAYERFACTION:1} to jedna z wielu frakcji naziemnych i pozaziemskich, które rywalizują w galaktycznej skali o dominację w przestrzeni kosmicznej. Są opisani następująco: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} é uma das várias facções terrestres e extraterrestres que são rivais numa corrida em escala galáctica para dominar o espaço. Eles são descritos da seguinte forma: {PLAYERFACTIONDESCRIPTION:1}. Eles têm as seguintes características: {PLAYERTRAITS:1}. Se for um nome de arquivo, basta copiar o inglês.</Text>
+            <Text>{PLAYERFACTION:1} to jedna z wielu frakcji naziemnych i pozaziemskich, które rywalizują w galaktycznej skali o dominację w przestrzeni kosmicznej. Są opisani następująco: {PLAYERFACTIONDESCRIPTION:1}. Posiadają następujące cechy: {PLAYERTRAITS:1}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- OpenAI Prompts -->
@@ -62,189 +55,189 @@
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Escreva uma introdução em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 100 palavras. . Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>Napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do innej frakcji w głosie {LEADERNAME:1} do wykorzystania w grze strategicznej. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech charakteru. Odpowiedz w mniej niż 100 słowach. Jeśli to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_SHARED_TRADE_ROUTE_PROMPT</InternalName>
         <MaxTokens>400</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma introdução em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo. Não reutilize nenhuma palavra nas descrições das características de personalidade. As facções compartilham rotas de comércio importantes entre si, portanto, o benefício mútuo do comércio deve ser mencionado.</Text>
+            <Text>Proszę napisz wprowadzenie z perspektywy {LEADERNAME:1} do innej frakcji z charakterem {LEADERNAME:1}, do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Nie korzystaj ponownie z żadnych słów z opisów cech charakteru. Frakcje dzielą ze sobą ważne szlaki handlowe, więc należy wspomnieć o wzajemnych korzyściach z handlu. Odpowiedz w mniej niż 100 słowach. Jeśli jest to nazwa pliku, skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma declaração concisa de guerra em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} para uso num jogo de estratégia. Seja criativo. Não reutilize palavras nas descrições de traços de personalidade. Responda em menos de 10 palavras. Se for um nome de arquivo, simplesmente copie o inglês.</Text>
+            <Text>Proszę napisać zwięzłe oświadczenie wojenne od {LEADERNAME:1} do innej frakcji, używając głosu {LEADERNAME:1} do wykorzystania w grze strategicznej. Bądź kreatywny. Nie powtarzaj żadnych słów z opisów cech charakteru. Odpowiedz w mniej niż 10 słowach. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_MAJOR_CIV_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma introdução em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de estratégia em vídeo. {LEADERNAME:1} Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Seja criativo. Não reutilize nenhuma palavra nas descrições das características de personalidade. Responda em menos de</Text>
+            <Text>Proszę napisać wprowadzenie w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2} w głosie {LEADERNAME:1} do użycia w strategicznej grze wideo. {LEADERNAME:1} Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech charakteru. Odpowiedz w mniej niż 50 słowach. . Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_WITH_GENERIC_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma introdução em primeira pessoa de {LEADERNAME:1} para outro líder na voz de {LEADERNAME:1} para uso em um jogo de estratégia em vídeo. {LEADERNAME:1} Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Seja criativo. Não reutilize nenhuma palavra nas descrições dos traços de personalidade. Responda em menos de 50 palavras</Text>
+            <Text>Proszę napisać wprowadzenie z perspektywy {LEADERNAME:1} do innego przywódcy w głosie {LEADERNAME:1} do wykorzystania w strategicznej grze wideo. {LEADERNAME:1} Opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1}. Bądź kreatywny. Nie używaj ponownie żadnych słów z opisu cech charakteru. Odpowiedz w mniej niż 50 słowach. Jeśli to jest nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>INTRODUCTION_PROMPT</InternalName>
         <MaxTokens>400</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma introdução em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de estratégia em vídeo. Seja criativo. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 100 palavras. Inclua uma reformulação do seguinte: {ORIGINALTEXT:0}. Se</Text>
+            <Text>Proszę napisz wprowadzenie w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2} w głosie {LEADERNAME:1} do użycia w strategicznej grze wideo. Bądź kreatywny. Nie używaj ponownie żadnych słów w opisach cech charakteru. Odpowiedz w mniej niż 100 słowach. Dołącz parafrazę następującego: {ORIGINALTEXT:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_PEACEFUL_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta sucinta a outra facção em primeira pessoa como resposta a uma primeira apresentação para uso em um jogo de estratégia. Estamos respondendo a uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Seja amigável, mas reconheça suas características únicas. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 10 palavras. .</Text>
+            <Text>Proszę napisać zwięzłą odpowiedź do innej frakcji w pierwszej osobie jako odpowiedź na pierwsze wprowadzenie do wykorzystania w grze strategicznej. Odpowiadamy na cywilizację, która opisuje się jako {PLAYERFACTIONDESCRIPTION:1}. Bądź przyjazny, ale zauważ ich unikalne cechy. Nie powtarzaj żadnych słów w opisach cech charakteru. Odpowiedz w mniej niż 10 słowach. . Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_NEUTRAL_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta sucinta para uma primeira introdução para uso em um jogo de estratégia. Estamos respondendo a uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Seja um pouco agressivo e engraçado. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Responda em menos de 15 palavras. . Se for um nome de arquivo, apenas copie o</Text>
+            <Text>Proszę napisać zwięzłą odpowiedź na pierwsze wprowadzenie do użytku w strategicznej grze wideo. Odpowiadamy cywilizacji, która opisuje się jako {PLAYERFACTIONDESCRIPTION:1}. Bądź trochę agresywny i śmieszny. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 15 słowach. Jeśli to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_TRADE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta sucinta na primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} como uma resposta à primeira introdução para uso em um jogo de estratégia. Use um tom neutro e não comprometedor. Indique que o falante está aberto ao comércio. Seja criativo e da maneira como alguém que se descreve como {PLAYERFACTIONDESCRIPTION:</Text>
+            <Text>Proszę napisać zwięzłą odpowiedź od {LEADERNAME:1} do innej frakcji, wypowiedzianą przez {LEADERNAME:1} jako reakcję na pierwsze wprowadzenie w strategii gry wideo. Użyj neutralnego i niezobowiązującego tonu. Wskaż, że mówca jest otwarty na handel. Bądź kreatywny i tak, jak ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1}, by to zrobił. Nie używaj ponownie żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 25 słowach. . Jeśli to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta sucinta em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} como resposta a uma declaração de guerra contra {PLAYERFACTION:1} para uso em um jogo de estratégia em vídeo. Use um tom agressivo. Seja criativo e da maneira que alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1} faria. Não</Text>
+            <Text>Proszę napisać zwięzłą odpowiedź z perspektywy {LEADERNAME:1} do innej frakcji w głosie {LEADERNAME:1} jako odpowiedź na deklarację wojny przeciwko {PLAYERFACTION:1} do wykorzystania w grze strategicznej. Użyj agresywnego tonu. Bądź kreatywny i zachowaj się jak osoba, która opisuje się jako {PLAYERFACTIONDESCRIPTION:1}. Nie powtarzaj żadnych słów z opisu cech charakteru. Odpowiedz w mniej niż 10 słowach. Jeśli to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta sucinta em primeira pessoa de {LEADERNAME:1} para outra facção na voz de {LEADERNAME:1} como resposta a uma declaração de guerra contra {PLAYERFACTION:1} para uso em um jogo de estratégia. Use um tom de decepção. Seja criativo e da maneira como alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1} faria. Não re</Text>
+            <Text>Proszę napisać zwięzłą odpowiedź od {LEADERNAME:1} do innej frakcji głosem {LEADERNAME:1} jako odpowiedź na deklarację wojny przeciwko {PLAYERFACTION:1} do użycia w grze strategicznej. Użyj tonu rozczarowania. Bądź kreatywny i w sposób, w jaki ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1}, by to zrobił. Nie powtarzaj żadnych słów w opisach cech osobowości. Odpowiedz w mniej niż 10 słowach. . Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>INTRODUCTION_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta à introdução na primeira pessoa de {LEADERNAME:2} para {LEADERNAME:1} na voz de {LEADERNAME:2} para uso em um jogo de estratégia. Seja criativo e no estilo de alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não reutilize nenhuma palavra nas descrições de traços de personalidade. Não use o nome de nenhum líder</Text>
+            <Text>Napisz odpowiedź na wprowadzenie z perspektywy {LEADERNAME:2} do {LEADERNAME:1} charakteryzującą {LEADERNAME:2} do użycia w strategicznej grze wideo. Bądź kreatywny, pisząc w sposób, w jaki ktoś, kto opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1}, by to zrobił. Nie powtarzaj żadnych słów z opisów cech charakteru. Nie używaj imienia żadnego z przywódców ani nazwy frakcji. Odpowiedz w 16 słowach lub mniej. Dołącz przetłumaczenie następującego: {ORIGINALTEXT:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_GREETING_PROMPT</InternalName>
         <MaxTokens>300</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma introdução para uma conversa em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de vídeo de estratégia. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}, então certifique-se de levar isso em consideração. Não reutilize palavras nas descrições de traços de personal</Text>
+            <Text>Proszę napisz wstęp do rozmowy w pierwszej osobie od {LEADERNAME:1} do {LEADERNAME:2}, używając głosu {LEADERNAME:1}, do wykorzystania w strategicznej grze wideo. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}, więc weź to pod uwagę. Nie powtarzaj żadnych słów z opisów cech charakteru. Odpowiedz w mniej niż 75 słowach. Dołącz przepisanie następującego: {ORIGINALTEXT:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>OPTIONS_MAIN_TEXT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, crie uma deixa verbal para mudar o tópico da conversa em primeira pessoa de {LEADERNAME:1} para {LEADERNAME:2} na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo e no estilo de alguém que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não reutilize palavras nas descrições de traços de personalidade.</Text>
+            <Text>Proszę napisać wskazówkę werbalną do zmiany tematu rozmowy z perspektywy {LEADERNAME:1} do {LEADERNAME:2} w głosie {LEADERNAME:1} do użycia w strategicznej grze wideo. Bądź kreatywny i zrób to w sposób, w jaki ktoś, kto opisuje się jako {PLAYERFACTIONDESCRIPTION:1}, zrobiłby to. Nie używaj ponownie żadnych słów z opisów cech charakteru. Odpowiedz w mniej niż 25 słowach. Dołącz parafrazowanie następującego: {ORIGINALTEXT:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma declaração de guerra em primeira pessoa de {LEADERNAME:2} para {LEADERNAME:1} na voz de {LEADERNAME:2} para uso em um jogo de estratégia de vídeo. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Faça a sua declaração de guerra levar em conta como eles se descrevem, mas lembre-se que</Text>
+            <Text>Proszę napisz deklarację wojny w pierwszej osobie od {LEADERNAME:2} do {LEADERNAME:1} głosem {LEADERNAME:2} do użycia w grze strategicznej. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Uwzględnij ten opis w deklaracji, ale pamiętaj, że są bardzo zagniewani. Nie powtarzaj żadnych słów z opisu cech charakteru. Odpowiedz w mniej niż 25 słowach. Dołącz parafrazę następującego: {ORIGINALTEXT:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta para uma oferta de troca na primeira pessoa de {LEADERNAME:2} para {LEADERNAME:1} na voz de {LEADERNAME:1} para uso em um jogo de estratégia. Seja criativo. Não reutilize qualquer palavra nas descrições dos traços de personalidade. Não use o nome de nenhum líder ou o nome da facção. Responda em 10 palavras ou menos. Come</Text>
+            <Text>Proszę napisać odpowiedź na propozycję handlu z perspektywy {LEADERNAME:2} do {LEADERNAME:1} w stylu {LEADERNAME:1} do użycia w grze strategicznej. Bądź kreatywny. Nie używaj słów z opisu cech charakteru. Nie używaj imienia ani nazwy frakcji żadnego z liderów. Odpowiedz w 10 słowach lub mniej. Zacznij odpowiedź od {LEADERNAME:1} po dwukropku. Dołącz przetłumaczenie: {ORIGINALTEXT:0}. Jeśli to nazwa pliku, skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Escreva um nome original e interessante para um império de uma facção atualmente chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica baseado em turnos. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nenhum nome de traço. Não use as palavras galáctico, dominação ou força. Responda entre</Text>
+            <Text>Napisz oryginalną i interesującą nazwę imperium dla frakcji obecnie nazywanej {PLAYERFACTION:1} w turowej strategii science fiction. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio żadnych nazw cech. Nie używaj słów galaktyka, dominacja, czy siła. Odpowiedz od 2 do 3 słowami. Nie przekraczaj 3 słów! Jeśli jest to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_SHORT_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, crie uma versão mais curta do nome {PREVIOUSCONV:0} para uma facção em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não use diretamente nenhum nome de característica. Responda em 2 palavras ou menos. Se for um nome de arquivo, simplesmente copie o inglês.</Text>
+            <Text>Proszę wymyślić krótszą wersję nazwy {PREVIOUSCONV:0} dla frakcji w science-fiction grze strategicznej turowej. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz w 2 słowach lub mniej. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, crie um nome para o líder da facção {PREVIOUSCONV:0} em um jogo de estratégia de ficção científica. Seja criativo. Não use diretamente nenhum nome de característica. Responda entre 2 e 4 palavras. Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>Proszę wymyślić nazwę dla lidera frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio żadnych nazw cech. Odpowiedz w 2 do 4 słowach. Jeśli to jest nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, crie um nome para o mundo natal da facção {PREVIOUSCONV:0} em um jogo de estratégia de ficção científica. Seja criativo. Não use diretamente nenhum nome de traço. Eles se descreveram como {PLAYERFACTIONDESCRIPTION:1}. Responda entre 1 e 3 palavras. Se for um nome de arquivo, basta copiar o inglês.</Text>
+            <Text>Proszę wymyślić nazwę dla świata rodzimego frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio żadnych nazw cech. Opisali siebie jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w 1 do 3 słowach. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, crie um indicativo naval ou de nave espacial para a facção {PREVIOUSCONV:0} em um jogo de estratégia de ficção científica. Seja criativo. A resposta deve ser uma sigla ou abreviação e consistir exatamente de 2 ou 3 letras maiúsculas, cada uma seguida por um ponto final. Não inclua palavras completas. Por exemplo H.M.S. Outro exemplo</Text>
+            <Text>Proszę wymyślić znak wywoławczy dla statku morskiego lub kosmicznego frakcji {PREVIOUSCONV:0} w grze strategicznej o tematyce science fiction. Bądź kreatywny. Odpowiedź powinna być skrótem i składać się dokładnie z 2 lub 3 dużych liter, po każdej z nich powinien znajdować się kropka. Nie dołączaj pełnych słów. Na przykład H.M.S. Kolejny przykład U.S.S. Odpowiedź nie powinna przekraczać 6 liter, włączając kropki. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma breve descrição de uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica. Seja criativo. Não use nomes de atributos diretamente. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Responda em menos de 30 palavras. Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>Proszę napisać krótki opis frakcji o nazwie {PLAYERFACTION:1} w strategii science fiction. Bądź kreatywny. Nie używaj bezpośrednio żadnych nazw cech. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w mniej niż 30 słowach. Jeśli to nazwa pliku, skopiuj po prostu angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_STARTUP_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma descrição para uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia em turnos de ficção científica. Não use diretamente nenhum nome de característica. Escreva no estilo de um autor destacado de Sci-Fi. Limite a três frases. Adicione retornos de carro para dividir o texto em parágrafos legíveis. Se for um nome de arquivo, apenas copie</Text>
+            <Text>Proszę napisać opis frakcji o nazwie {PLAYERFACTION:1} w strategii turowej osadzonej w świecie science fiction. Nie używaj bezpośrednio nazw cech. Napisz to na wzór wybitnego autora Sci-Fi. Ogranicz do trzech zdań. Dodaj znaki nowego wiersza, aby podzielić tekst na czytelne akapity. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_TRAITS_DESCRIPTION_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma descrição das forças e fraquezas da facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica baseado em turnos. Escreva no estilo de ficção científica hard. Não use diretamente nenhum nome de traço. Limite a duas frases. Adicione retornos de carro para dividir o texto em parágrafos legíveis. Se for um</Text>
+            <Text>Proszę napisz opis mocnych i słabych stron frakcji o nazwie {PLAYERFACTION:1} w strategii turowej w stylu science fiction. Pisząc, utrzymaj styl hard Sci-Fi. Nie używaj bezpośrednio nazw cech. Ogranicz do dwóch zdań. Dodaj znaki powrotu karetki, aby podzielić tekst na czytelne akapity. Jeśli to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_MOTTO_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva um lema para uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica. Seja criativo. Não use nomes de características diretamente. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Responda em menos de 45 caracteres. Se for um nome de arquivo, apenas copie o inglês.</Text>
+            <Text>Proszę napisz hasło dla frakcji o nazwie {PLAYERFACTION:1} w strategicznej grze science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Odpowiedz w mniej niż 45 znakach. Jeśli to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma abertura para uma conversa iniciada pela civilização chamada {PLAYERFACTION:1} num jogo de estratégia de ficção científica por turnos. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nomes de traços. Responda em menos de 20 palavras.\Uma palavra na forma {*:1} é uma marcação que se refere</Text>
+            <Text>Proszę napisać początek rozmowy rozpoczętej przez cywilizację o nazwie {PLAYERFACTION:1} w strategii turowej o tematyce science fiction. Bądź kreatywny. Opisują się jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach.\ Słowo w formie {*:1} to znacznik odnoszący się do mówiącego i powinno być traktowane jako niezmienne. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinno być traktowane jako niezmienne. Każdy generowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówiącego i formy {*:2} odnosząc się do słuchacza. Dołącz przepisanie następującego: {PREVIOUSCONV:0}. Jeśli jest to nazwa pliku, skopiuj po prostu angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta para uma abertura de conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia em turnos de ficção científica. Seja criativo. Não use diretamente nomes de características. Responda em menos de 20 palavras. Uma palavra na forma {*:1} é uma marcação que se refere ao falante e deve ser considerada imutável. Uma palavra na</Text>
+            <Text>Proszę napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinno być uznane za niezmienne. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinno być uznane za niezmienne. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówcy i {*:2} odnosząc się do słuchacza. Dołącz parafrazę następującego: {PREVIOUSCONV:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
@@ -252,21 +245,21 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta para uma abertura de conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia em turnos de ficção científica. Seja criativo. Eles são uma civilização que se descreve como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nenhum nome de característica. Responda em menos de 20 palavras. Uma palavra da forma {*:1}</Text>
+            <Text>Proszę napisać odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Są to cywilizacja, która opisuje siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinien być uznany za niezmienialny. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinien być uznany za niezmienialny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówcy i {*:2} odnosząc się do słuchacza. Dołącz przephrasowanie następującego: {PREVIOUSCONV:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma abertura para uma conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia em turnos de ficção científica. Seja criativo. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use diretamente nenhum nome de traço. Responda em menos de 20 palavras.\A palavra na forma {*:1} é uma marcação que se</Text>
+            <Text>Proszę napisz wstęp do rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w turowej strategii science fiction. Bądź kreatywny. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio żadnych nazw cech. Odpowiedz w mniej niż 20 słowach.\Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinno być traktowane jako niezmienne. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinno być traktowane jako niezmienne. Każdy generowany tekst w formie {*} musi używać formy {*:1} odnoszącej się do mówcy i {*:2} odnoszącej się do słuchacza. Dołącz przekształcenie następującego: {PREVIOUSCONV:0}. Jeśli jest to nazwa pliku, po prostu skopiuj angielski tekst.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta para uma abertura de conversa iniciada pela facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. SOU EU QUEM ESTÁ FALANDO V3. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não utilize diretamente os nomes dos traços. Responda em menos de 15 pal</Text>
+            <Text>Proszę napisz odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w strategicznej grze science fiction na przemiany. Bądź kreatywny. JA JESTEM TYM, KTO MÓWI V3. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio żadnych nazw cech. Odpowiedz w mniej niż 15 słowach i powinno to być związane z tym, jak się opisują.\Słowo w formie {*:1} to znacznik, który odnosi się do mówiącego i powinno być uważane za niezmienne. Słowo w formie {*:2} to znacznik, który odnosi się do słuchającego i powinno być uważane za niezmienne. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówiącego i {*:2} odnosząc się do słuchającego. Dołącz parafrazę następującego: {PREVIOUSCONV:0}. Jeśli jest to nazwa pliku, po prostu skopiuj ją z angielskiego.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
@@ -274,28 +267,28 @@
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva uma resposta a uma abertura de conversa iniciada pela facção chamada {PLAYERFACTION:1} num jogo de estratégia de ficção científica por turnos. Seja criativo. EU SOU O QUE ESTÁ FALANDO V4. Eles se descrevem como {PLAYERFACTIONDESCRIPTION:1}. Não use nenhum nome de traço diretamente. Responda em menos de 30 palavras</Text>
+            <Text>Proszę napisać odpowiedź na otwarcie rozmowy rozpoczętej przez frakcję o nazwie {PLAYERFACTION:1} w strategii turowej osadzonej w świecie science fiction. Bądź kreatywny. JESTEM TYM, KTÓRY MÓWI V4. Opisują siebie jako {PLAYERFACTIONDESCRIPTION:1}. Nie używaj bezpośrednio nazw cech. Odpowiedz w mniej niż 30 słowach i powinna ona skrótowo przekazać, jak opisują siebie. Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinno być uważane za niezmienne. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinno być uważane za niezmienne. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówcy i {*:2} odnosząc się do słuchacza. Dołącz przekształcenie następującego: {PREVIOUSCONV:0}. Jeśli to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva um comentário de aceitação sucinto e singular em primeira pessoa para uma oferta de comércio feita por outra facção a nós, uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica. Seja criativo. A resposta à facção que faz a oferta deve referenciar algo de como eles se descrevem enquanto ainda aceitam o acordo comercial. Não use nom</Text>
+            <Text>Proszę napisać zwięzły komentarz akceptacji w pierwszej osobie do oferty handlowej złożonej przez inną frakcję dla nas, frakcji o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Ich odpowiedź na frakcję składającą ofertę powinna odwoływać się do czegoś z ich opisu siebie, jednocześnie akceptując umowę handlową. Nie używaj bezpośrednio żadnych nazw cech. Odpowiedz w mniej niż 12 słowach. Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinien być uważany za niezmienialny. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinien być uważany za niezmienialny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnoszącej się do mówcy i formy {*:2} odnoszącej się do słuchacza. Zasiej losowym numerem: {PREVIOUSCONV:0}, nie dołączaj ziarna do swojej odpowiedzi. Jeśli jest to nazwa pliku, po prostu skopiuj angielski.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva um comentário sucinto de recusa em primeira pessoa a uma oferta de comércio feita por outra facção a nós, uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia por turnos de ficção científica. Seja criativo. Não use nenhum nome de traço diretamente. Responda à facção que faz a oferta em menos de 20 palavras. Faça com que sua</Text>
+            <Text>Proszę napisz zwięzły komentarz odrzucający w pierwszej osobie do oferty handlowej złożonej przez inną frakcję dla nas, frakcji o nazwie {PLAYERFACTION:1} w grze strategicznej science fiction. Bądź kreatywny. Nie używaj bezpośrednio żadnych nazw cech. Odpowiedz frakcji składającej ofertę w mniej niż 20 słowach. Niech ich odmowa pokrywa się z tym, jak sami się opisują w zabawny sposób. Słowo w formie {*:1} to znacznik, który odnosi się do mówiącego i powinien być uważany za niezmienny. Słowo w formie {*:2} to znacznik, który odnosi się do słuchacza i powinien być uważany za niezmienny. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} podczas odnoszenia się do mówiącego i {*:2} podczas odnoszenia się do słuchacza. Zasiej losowym numerem: {PREVIOUSCONV:0}, nie dołączaj nasienia do swojej odpowiedzi. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Por favor, escreva um comentário sucinto e único na primeira pessoa sobre a aceitação bem-sucedida de uma oferta de negociação feita a nós, uma facção chamada {PLAYERFACTION:1} em um jogo de estratégia de ficção científica por turnos. Seja criativo. Não use nenhum nome de característica diretamente. Responda à facção que faz a oferta em menos de 20 palavras. Uma</Text>
+            <Text>Proszę napisać zwięzły, jednozdaniowy komentarz w pierwszej osobie na temat pomyślnego zaakceptowania oferty handlowej złożonej nam, frakcji o nazwie {PLAYERFACTION:1} w strategii turowej osadzonej w świecie science fiction. Bądź kreatywny. Nie używaj bezpośrednio nazw cech. Odpowiedz frakcji składającej ofertę w mniej niż 20 słowach. Słowo w formie {*:1} to znacznik odnoszący się do mówcy i powinno być uważane za niezmienne. Słowo w formie {*:2} to znacznik odnoszący się do słuchacza i powinno być uważane za niezmienne. Każdy wygenerowany tekst w formie {*} musi używać formy {*:1} odnosząc się do mówcy i {*:2} odnosząc się do słuchacza. Zasiej losowym numerem: {PREVIOUSCONV:0}, nie uwzględniaj ziarna w swojej odpowiedzi.. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
