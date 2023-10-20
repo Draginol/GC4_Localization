@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
   <StringTable>
     <Label>Recapitalize_Name</Label>
@@ -81,7 +82,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ZoneOfControlDec</Label>
-    <String>控制区 标志 着 一个 文明 的 影响 力所及，以及 占据 主导地位 的 地区。控制区 以 星系 的 颜色 表示，即 主导 文明 的 颜色。多个 文明 都 可能 对 一个 单元格 有 影响力，但 在 该 单元格 中 影响力 最大 的 文明 将 被 授予 该 单元格。采矿 小行星 等 特定 行动 只能 在 控制 区内 的 物体 上 进行。其他 行动，如 建造 星际 基地，可以 在 控制区 外 进行，但 不能 在 其他 文明 的 控制 区内 进行。</String>
+    <String>控制区域标记了文明的影响力范围以及其主导地位。控制区域是通过给星系上色来表示，颜色为主导文明的颜色。多个文明可能对一个单元有影响力，但具有该单元最高影响力的文明将被授予该单元。[BR][BR]一些行动会受到控制区域的影响。特定的行动，如开采小行星，只能在控制区域内的物体上执行。而其他行动，如建造星际基地，虽然可以在控制区域外执行，但不能在其他文明的控制区域内执行。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileTitle</Label>
@@ -105,7 +106,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MovesDec</Label>
-    <String>每艘 飞船 和 舰队 都 有 一定 的 [ICON=Moves_Icon] 移动 次数。[ICON=Moves_Icon] 移动 次数 是 指 船舰 或 舰队 在 [HS=HS_Months] 月[/HS] 内 可以 穿越 的 [HS=HS_Tile] 地块[/HS] 的 数量[BR][BR]。</String>
+    <String>每艘 飞船 和 舰队 都 有 一定 的 [ICON=Moves_Icon] 移动 次数。[ICON=Moves_Icon] 移动 次数 是 指 船舰 或 舰队 在 [HS=HS_Months] 月[/HS] 内 可以 穿越 的 [HS=HS_Tile] 地块[/HS] 的 数量[BR][BR]</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipTitle</Label>
@@ -121,7 +122,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FleetDec</Label>
-    <String>舰队 是 一组 [HS=HS_Ship] 飞船[/HS]。舰队 可以 通过 [HS=HS_ShipMovement] 移动[/HS] [HS=HS_Ship]飞船[/HS] 到 同一 [HS=HS_Tile]地块[/HS] 上 组成。一个 舰队 中 可以 有 多少 艘[HS=HS_Ship]舰船[/HS]，由 当前 的[HS=HS_Logistics]后勤[/HS]决定。每艘 [HS=HS_Ship]飞船[/HS] 都 有 一个 [HS=HS_Logistics]后勤[/HS] 值，并会 增加 当前 舰队 的 [HS=HS_Logistics]后勤[/HS] 分数。如果 一艘[HS=HS_Ship]飞船[/HS]的[HS=HS_Logistics]后勤[/HS]值 高于 舰队 的[HS=HS_Logistics]后勤[/HS]值，它 将 无法 加入 舰队。成队 的 [HS=HS_Ship]飞船[/HS] 在 战斗 中 比 单个 [HS=HS_Ship]Ships[/HS] 表现 更好。</String>
+    <String>舰队是由多艘[HS=HS_Ship]飞船[/HS]组成的。可以通过[HS=HS_ShipMovement]移动[/HS][HS=HS_Ship]飞船[/HS]到同一个[HS=HS_Tile]格子[/HS]上来形成舰队。一支舰队能包含多少[HS=HS_Ship]飞船[/HS]由当前的[HS=HS_Logistics]物流[/HS]决定。每艘[HS=HS_Ship]飞船[/HS]都有一个[HS=HS_Logistics]物流[/HS]值，并会增加当前舰队的[HS=HS_Logistics]物流[/HS]分数。如果一艘[HS=HS_Ship]飞船[/HS]的[HS=HS_Logistics]物流[/HS]分数高于舰队可以容纳的，它将无法加入舰队。[BR][BR]利用舰队对于生存至关重要。[HS=HS_Ship]飞船[/HS]的组合在战斗中比单个[HS=HS_Ship]飞船[/HS]更有优势。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementTitle</Label>
@@ -129,7 +130,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementDec</Label>
-    <String>用 鼠标 左键 选择 [HS=HS_Ship]飞船[/HS] 或 [HS=HS_Fleet]舰队[/HS]，然后 用 鼠标 右键 指定 要 移动 到 的 [HS=HS_Tile]地块[/HS]，就 可以 在 银河系 中 移动 单个 [HS=HS_Ship]飞船[/HS] 和 [HS=HS_Fleet]舰队[/HS] 。</String>
+    <String>个别[HS=HS_Ship]飞船[/HS]和[HS=HS_Fleet]舰队[/HS]可以通过使用鼠标左键选择[HS=HS_Ship]飞船[/HS]或[HS=HS_Fleet]舰队[/HS]，然后用鼠标右键指定一个要移动到的[HS=HS_Tile]格子[/HS]，在银河系中移动。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetTypeTitle</Label>
@@ -169,7 +170,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderDec</Label>
-    <String>殖民 船 可以 用来[HS=HS_Colinizing]殖民[/HS]新世界。如 要[HS=HS_Colinizing]殖民[/HS]一个 星球，首先 用 鼠标 左键 选择[HS=HS_Ship]飞船[/HS]。选取 适当 的 [HS=HS_Ship]飞船[/HS] 后，用 鼠标 右键 命令 [HS=HS_Ship]飞船[/HS] [HS=HS_ShipMovement]移动[/HS] 到 [HS=HS_PlanetClass]行星 类别[/HS] 为1 或 以上 的 行星。这 可能 需要 几个[HS=HS_Months]月[/HS]的 时间，但 一旦 殖民 飞船 到达 该 星球，它 就 会 对 其 进行 殖民统治。</String>
+    <String>殖民船可以用来[HS=HS_Colinizing]殖民[/HS]新的世界。要[HS=HS_Colinizing]殖民[/HS]一颗行星，首先，用鼠标左键选择[HS=HS_Ship]船[/HS]。选择了适当的[HS=HS_Ship]船[/HS]后，用鼠标右键命令[HS=HS_Ship]船[/HS]向[HS=HS_PlanetClass]行星等级[/HS]为1或更高的行星[HS=HS_ShipMovement]移动[/HS]。虽然可能需要几个[HS=HS_Months]月[/HS]，但一旦殖民船到达行星，就会对其进行殖民。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SurveyOrderTitle</Label>
@@ -233,7 +234,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_LeaderMenuDec</Label>
-    <String>[ICON=Menu_Leader_Icon] 领导者 菜单 是 招募 和 管理[HS=HS_Leaders]领导者[/HS]的 地方。在 [ICON=Menu_Leader_Icon] 领导者 菜单 下，有[HS=HS_RecruitmentScreen]招募[/HS]、[HS=HS_MinistersScreen]部长[/HS]、[HS=HS_GovernorsScreen]总督[/HS]、[HS=HS_DiplomatsScreen]外交官[/HS]、[HS=HS_CommandersScreen]指挥官[/HS]和[HS=HS_FactionsScreen]派系[/HS]的 屏幕。[BR][BR]通过 点击 左键 选择 径向 菜单 上 的 图标 进入[ICON=Menu_Leader_Icon] 领导者 菜单。</String>
+    <String>[ICON=Menu_Leader_Icon] 领导者菜单是招募和管理[HS=HS_Leaders]领导者[/HS]的地方。在 [ICON=Menu_Leader_Icon] 领导者菜单下，有 [HS=HS_RecruitmentScreen]招募[/HS]、[HS=HS_MinistersScreen]部长[/HS]、[HS=HS_GovernorsScreen]州长[/HS]、[HS=HS_DiplomatsScreen]外交官[/HS]、[HS=HS_CommandersScreen]指挥官[/HS] 和 [HS=HS_FactionsScreen]派系[/HS] 的屏幕。[BR][BR]通过在径向菜单上选择图标并使用鼠标左键来访问 [ICON=Menu_Leader_Icon] 领导者菜单。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_RecruitmentScreenTitle</Label>
@@ -457,7 +458,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyDec</Label>
-    <String>“待机”命令 可 用于 使 飞船 无限期 地闲 置。与 其他 可能 使 飞船 停止 闲置 的 命令 不同，处于“待机”状态 的 飞船 不会 离开“待机”模式，除非 被 命令 这样 做。</String>
+    <String>"待机"命令可以使船只无限期地处于闲置状态。与其他命令不同，存在某些情况下船只停止闲置的情况，但在"待机"状态的船只将不会离开"待机"模式，除非接到命令。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_Biology</Label>
@@ -1114,7 +1115,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseProbe_Dec</Label>
-    <String>向 探测器 下达 指令，直到 所有 的[ICON=Moves_Icon] [HS=HS_Moves]移动[/HS]都 被 利用 完毕。选择 探测器 并 使用 它 来 探索 银 河系。</String>
+    <String>向探针下达命令，直到所有的[ICON=Moves_Icon] [HS=HS_Moves]移动[/HS]都被使用完毕。选择探针并使用它去探索星系。[BR][BR]使用鼠标左键选择，右键选择你想要发送的地方。[BR][BR][I]你可以在行星，船坞和星舰上双击，快速进入它们的管理菜单。[/I]</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyFirstAnomaly</Label>
