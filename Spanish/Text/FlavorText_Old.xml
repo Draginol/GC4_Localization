@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- 1.5 Diplomacy additions. -->
     <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
@@ -27,21 +25,21 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Lo sentimos, pero no podemos justificar ayudarlos en este momento. Talvez si nuestras relaciones fueran más cercanas podríamos hallar los fondos... pero como están las cosas, pensamos que estamos mejor manteniendo nuestros bienes para nuestro uso.</Text>
+            <Text>We are sorry, but we cannot vindicate assisting you at this time. Perhaps if we had closer relations we could find the funds... but as things stand, we think we are better off keeping our assets to ourselves.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>¿En serio acabas de pedirle dinero a una civilización que practica la esclavitud?</Text>
+            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
             </Requirements>
-            <Text>¿En serio acabas de pedirle dinero a una civilización que practica la esclavitud?</Text>
+            <Text>Did you just seriously ask for money from a civilization that practices slavery?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -62,7 +60,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Lo lamentamos, quizás en otra ocasión.</Text>
+            <Text>Lamentable, quizás en otra ocasión.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -254,7 +252,7 @@
             <Requirements>
                 <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
             </Requirements>
-            <Text>Haciéndonos darte cosas gratis no nos va a hacer enojar menos. Pero tampoco lo hará la muerte, así que vale, tómalo.</Text>
+            <Text>Tienes la ventaja ahora. Pero cuando vivas como mi esclavizuelo, volveremos a este día.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -323,7 +321,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>¿Gran poder? Ridículo; desaparece, {LEADERNAME:1}.</Text>
+            <Text>Gran poder? Ridículo; desaparece, {LEADERNAME:1}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -348,7 +346,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} no será manejado a tu antojo... Y la magnitud de tu poder es discutible.</Text>
+            <Text>El {PLAYERFACTIONLONG:2} no será manejado a antojo... y la magnitud de tu poder es discutible.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -380,7 +378,7 @@
     <FlavorTextDef>
         <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} tiene sus propios problemas. No.</Text>
+            <Text>El {PLAYERFACTIONLONG:2} posee sus propios males. No.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- Conversation: RequestTech help me -->
@@ -405,7 +403,7 @@
     <FlavorTextDef>
         <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} tiene sus propios problemas. No.</Text>
+            <Text>El {PLAYERFACTIONLONG:2} posee sus propios males. No.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- Conversation: RequestTech help me -->
@@ -430,7 +428,7 @@
     <FlavorTextDef>
         <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>Lo lamento, pero no.</Text>
+            <Text>Lo lamento, no..</Text>
             <Text>No.</Text>
             <Text>De ninguna manera.</Text>
         </FlavorTextOption>
@@ -570,7 +568,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Bien, la retiraremos al instante.</Text>
+            <Text>Bien, lo aniquilaremos al instante.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -582,7 +580,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>No, la base estelar permanece donde está.</Text>
+            <Text>No, la base estelar permanece inmóvil.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -606,13 +604,13 @@
     <FlavorTextDef>
         <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Ansío tu estación estelar {OBJECTNAME}. Si no la entregas, la arrancaremos por la fuerza.</Text>
+            <Text>Ansío tu estación estelar {OBJECTNAME}. Sin tu entrega, la arrancaremos con fuerza.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Cálmate. La quitaremos.</Text>
+            <Text>Cálmate. Lo quitaremos.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -725,7 +723,7 @@
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
         <FlavorTextOption>
-            <Text>Nada que ver aquí...</Text>
+            <Text>Nada que ver aquí....</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -735,7 +733,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Necesitas confiar en nosotros, amigo...</Text>
+            <Text>Necesitas confiar en nosotros, amigo..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -745,7 +743,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Nada que ver aquí...</Text>
+            <Text>Nada que ver aquí....</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -755,14 +753,14 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Necesitas confiar en nosotros, amigo...</Text>
+            <Text>Necesitas confiar en nosotros, amigo..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Espero, por tu bien, que nuestra confianza no esté mal situada.</Text>
+            <Text>Espero, por tu bien, que nuestra confianza no esté mal colocada..</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -772,7 +770,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Espero, por tu bien, que nuestra confianza no esté mal situada.</Text>
+            <Text>Espero, por tu bien, que nuestra confianza no esté mal colocada..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -782,7 +780,7 @@
                     <RangeMax>3</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Te estaremos vigilando.</Text>
+            <Text>Te estaremos vigilando..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -792,7 +790,7 @@
                     <NoMax>true</NoMax>
                 </RelationsRange>
             </Requirements>
-            <Text>Espero, por tu bien, que nuestra confianza no esté mal situada.</Text>
+            <Text>Espero, por tu bien, que nuestra confianza no esté mal colocada..</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -925,7 +923,7 @@
     <FlavorTextDef>
         <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Eres hábil siguiendo instrucciones. Construye una base estelar. Y... ¿sabes qué? Ubícala a tu gusto, como recompensa.</Text>
+            <Text>Eres hábil siguiendo instrucciones. Construye una base estelar... y ¿sabes qué? Ubícala a tu gusto, como recompensa.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -955,7 +953,7 @@
     <FlavorTextDef>
         <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE</InternalName>
         <FlavorTextOption>
-            <Text>[I]Tragando saliva[/I]... Bien.</Text>
+            <Text>Bien, engullo.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -985,7 +983,7 @@
     <FlavorTextDef>
         <InternalName>CAMPAIGN1_TESTING_RESPONSE</InternalName>
         <FlavorTextOption>
-            <Text>¡Hurra!</Text>
+            <Text>¡Hurra.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1030,7 +1028,7 @@
             </Requirements>
             <Text>Esta vez, haré caso omiso a esas palabras.</Text>
             <Text>Podrías vivir para lamentar tu insolencia.</Text>
-            <Text>Una actitud desafortunada.</Text>
+            <Text>An unfortunate attitude.</Text>
             <PreferenceWeight>332</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -1208,7 +1206,7 @@
             <Text>Aceptado.</Text>
             <Text>Entendido.</Text>
             <Text>Tomaremos en cuenta lo que has dicho.</Text>
-            <Text>Entendemos.</Text>
+            <Text>Entendemos..</Text>
             <Text>Tomaremos en cuenta tu mensaje.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
@@ -1223,7 +1221,7 @@
       <Requirements>
         <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
       </Requirements>
-      <Text>Por medio de las armas y de pura crueldad, {PLAYERFACTIONLONG:2} ha conseguido su justo lugar en la galaxia.</Text>
+      <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
     </FlavorTextOption> -->
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1314,13 +1312,13 @@
     <FlavorTextDef>
         <InternalName>STOLE_TECH_FAIL</InternalName>
         <FlavorTextOption>
-            <Text>Nuestro Ojo Cosmico ha contemplado a {PLAYERFACTION:3}. Aunque ninguna tecnología nueva fue observada, hemos ganado algunas ideas sobre métodos de investigación diferentes a los nuestros. [BR][BR][COLOR=UIDefaultHighlight][ICON=Stat_Research_Icon] +30 Investigación[/COLOR]</Text>
+            <Text>No hemos sustraído ninguna tecnología de {PLAYERFACTION:3}.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
         <FlavorTextOption>
-            <Text>Excelente.</Text>
+            <Text>Nosotros, triunfantes.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1376,7 +1374,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Qué vida miserable has de vivir, no siendo uno de los nuestros. Pronto terminará, para tí y toda tu raza.</Text>
+            <Text>How wretched a life you must live, not being one of us. Soon it will be over, for you and all your kind.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1386,7 +1384,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Has demostrado tu valía, extraño. Basta de lucha. Atendamos nuestras heridas.</Text>
+            <Text>Has demostrado tu valía, extraterrestre. Basta de lucha. Atendamos nuestras heridas.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1396,7 +1394,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Mira, extraño. Un ofrecimiento, un obsequio. Serías un necio al rechazarlo.</Text>
+            <Text>Mira, extraterrestre. Un ofrecimiento, un obsequio. Serías un necio al rechazarlo.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1407,7 +1405,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Aceptamos, extraño, tu propuesta.</Text>
+            <Text>Aceptamos, extraterrestre, tu propuesta.</Text>
             <PreferenceWeight>100</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -1417,7 +1415,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>La galaxia rebosa de alienígenas inmundos. Es nauseabundo.</Text>
+            <Text>La galaxia rebosa de extraterrestres inmundos. Es nauseabundo.</Text>
             <Text>¿Alguna vez te cansas de los sonidos que emite tu rostro horrendo? Yo sí.</Text>
             <Text>No malgastes mi tiempo ni el tuyo con charlas inútiles. Pero sobre todo, no desperdicies el mío.</Text>
             <PreferenceWeight>100</PreferenceWeight>
@@ -1564,7 +1562,7 @@
                 </StatRange>
             </Requirements>
             <Text>[I]"Nuestra civilización florece gracias a tu gobierno."[/I]</Text>
-            <Text>[I]Tienes mi apoyo eterno.[I/]</Text>
+            <Text>[Tienes mi apoyo eterno.]</Text>
             <Text>[I]"Te sirvo con honor."[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
