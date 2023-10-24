@@ -18,7 +18,7 @@
   </StringTable>
   <StringTable>
     <Label>SpawnFreighter_Name</Label>
-    <String>租用 商船</String>
+    <String>雇佣 商船</String>
   </StringTable>
   <StringTable>
     <Label>SpawnFreighter_Dec</Label>
@@ -26,7 +26,7 @@
   </StringTable>
   <StringTable>
     <Label>AddSiege_Name</Label>
-    <String>添加 冲击 部队</String>
+    <String>添加震荡部队</String>
   </StringTable>
   <StringTable>
     <Label>AddSiege_Dec</Label>
@@ -114,7 +114,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipDec</Label>
-    <String>飞船 是 任何 单独 的 移动装置。</String>
+    <String>一艘船是任何单独的移动单位。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_FleetTitle</Label>
@@ -122,7 +122,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FleetDec</Label>
-    <String>舰队是由多艘[HS=HS_Ship]飞船[/HS]组成的。可以通过[HS=HS_ShipMovement]移动[/HS][HS=HS_Ship]飞船[/HS]到同一个[HS=HS_Tile]格子[/HS]上来形成舰队。一支舰队能包含多少[HS=HS_Ship]飞船[/HS]由当前的[HS=HS_Logistics]物流[/HS]决定。每艘[HS=HS_Ship]飞船[/HS]都有一个[HS=HS_Logistics]物流[/HS]值，并会增加当前舰队的[HS=HS_Logistics]物流[/HS]分数。如果一艘[HS=HS_Ship]飞船[/HS]的[HS=HS_Logistics]物流[/HS]分数高于舰队可以容纳的，它将无法加入舰队。[BR][BR]利用舰队对于生存至关重要。[HS=HS_Ship]飞船[/HS]的组合在战斗中比单个[HS=HS_Ship]飞船[/HS]更有优势。</String>
+    <String>舰队是一组[HS=HS_Ship]飞船[/HS]。舰队可以通过[HS=HS_ShipMovement]移动[/HS] [HS=HS_Ship]飞船[/HS]到同一[HS=HS_Tile]瓦片[/HS]上来形成。一个舰队里可以有多少[HS=HS_Ship]飞船[/HS]取决于当前的[HS=HS_Logistics]物流[/HS]。每一艘[HS=HS_Ship]飞船[/HS]都有一个[HS=HS_Logistics]物流[/HS]值，并将增加当前舰队的[HS=HS_Logistics]物流[/HS]分数。如果一艘[HS=HS_Ship]飞船[/HS]的[HS=HS_Logistics]物流[/HS]分数高于舰队可以吸纳的，它将无法加入舰队。[BR][BR]利用舰队对于生存至关重要。[HS=HS_Ship]飞船[/HS]的群体在战斗中的表现优于单个[HS=HS_Ship]飞船[/HS]。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementTitle</Label>
@@ -154,7 +154,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_DeadWorldDec</Label>
-    <String>死寂 世界 是[HS=HS_PlanetClass]行星 等级[/HS]为 0 的 任何 行星。死寂 世界 不能 被 殖民。</String>
+    <String>一个死亡世界是指[HS=HS_PlanetClass]行星级别[/HS]为 0 的任何行星。死亡世界不能被殖民化。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColinizingTitle</Label>
@@ -162,7 +162,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColinizingDec</Label>
-    <String>殖民 新世界 对于 扩大 文明 的 [HS=HS_ZoneOfControl]控制区[/HS] 控制区[/HS]和 获取 更 多 资源 至关重要。行星 只有 在 没有 主权 要求 的 情 况下 才能 被[HS=HS_ColonizeOrder]殖民[/HS]。行星 一旦 被 殖民化，就 会 被 殖民 文明 认领。[BR][BR]行星 的[HS=HS_PlanetClass]行星 等级[/HS]必须 为 1 或 更 高，才能 被 殖民。行星 等级 为 0 的 行星 被 视为 [HS=HS_DeadWorld] 死寂 世界[/HS]，不能 被 殖民。</String>
+    <String>殖民新的世界对于扩大文明的[HS=HS_ZoneOfControl]控制区域[/HS]并获取更多资源至关重要。只有在没有对行星的索赔的情况下，行星才能被[HS=HS_ColonizeOrder]殖民[/HS]。一旦行星被殖民，它就被殖民文明认领。[BR][BR]一个行星必须有一个[HS=HS_PlanetClass]行星等级[/HS]1或更高才能被殖民。行星等级为0的行星被视为[HS=HS_DeadWorld]死亡世界[/HS]，不能被殖民。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderTitle</Label>
@@ -170,7 +170,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ColonizeOrderDec</Label>
-    <String>殖民船可以用来[HS=HS_Colinizing]殖民[/HS]新的世界。要[HS=HS_Colinizing]殖民[/HS]一颗行星，首先，用鼠标左键选择[HS=HS_Ship]船[/HS]。选择了适当的[HS=HS_Ship]船[/HS]后，用鼠标右键命令[HS=HS_Ship]船[/HS]向[HS=HS_PlanetClass]行星等级[/HS]为1或更高的行星[HS=HS_ShipMovement]移动[/HS]。虽然可能需要几个[HS=HS_Months]月[/HS]，但一旦殖民船到达行星，就会对其进行殖民。</String>
+    <String>殖民船可以用来[HS=HS_Colinizing]殖民[/HS]新的世界。要[HS=HS_Colinizing]殖民[/HS]一颗行星，首先，用左键选中[HS=HS_Ship]船[/HS]。选中适当的[HS=HS_Ship]船[/HS]后，用右键命令[HS=HS_Ship]船[/HS]向[HS=HS_PlanetClass]行星等级[/HS]为1或更高的行星[HS=HS_ShipMovement]移动[/HS]。这可能需要几个[HS=HS_Months]月[/HS]，但一旦殖民船到达行星，它会tktk如果能够tktk的话，就会对其进行殖民。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SurveyOrderTitle</Label>
@@ -190,19 +190,19 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreTitle</Label>
-    <String>[ICON=AutoExplore_Icon] 自动 探索</String>
+    <String>[ICON=AutoExplore_Icon] 自动探索</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreDec</Label>
-    <String>[ICON=AutoExplore_Icon] 自动 探索 是 一个 可以 设置 [HS=HS_Ship]飞船[/HS] 在 没有 直接 命令 的 情况 下 移动 的 选项。[ICON=AutoExplore_Icon]自动 探索 中 的[HS=HS_Ship]飞船[/HS]将 移动 到 当前 未知 和 未 探索 的 目的地。[BR][BR]如果 整个 星系 都 已 探索 完毕，并且 没有 未 探索 的[HS=HS_Tile]地块[/HS]，[ICON=AutoExplore_Icon]自动 探索 选项 将 不可 用。</String>
+    <String>[ICON=AutoExplore_Icon] 自动探索是一种选项，可以设置 [HS=HS_Ship]飞船[/HS] 无需直接指令即可移动。处于 [ICON=AutoExplore_Icon] 自动探索状态的 [HS=HS_Ship]飞船[/HS] 将前往目前未知且未测绘的目的地。[BR][BR]如果整个星系已被探索，且没有未测绘的 [HS=HS_Tile]图块[/HS]，那么 [ICON=AutoExplore_Icon] 自动探索选项将变得无法使用。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyTitle</Label>
-    <String>[ICON=AutoSurvey_Icon] 自动 调查</String>
+    <String>[ICON=AutoSurvey_Icon] 自动调查</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyDec</Label>
-    <String>[ICON=AutoSurvey_Icon] 自动 调查 仅 适用 于 具有 调查 模 块 的 [HS=HS_Ship]飞船[/HS]。自动 调查 模式 下 的[HS=HS_Ship]飞船[/HS][ICON=AutoSurvey_Icon]将 在 没有 直接 命令 的 情况 下移 动，试图 定位[HS=HS_Anomaly]异常[/HS]。当 自动 调查 模式 下 的[HS=HS_Ship]飞船[/HS] in [ICON=AutoSurvey_Icon]接近[HS=HS_Anomaly ]异常[/HS]时，它 将[HS=HS_SurveyOrder]调查[/HS][HS=HS_Anomaly ]异常[/HS]，无需 直接 命令。</String>
+    <String>[ICON=AutoSurvey_Icon] 自动调查仅适用于装有调查模块的 [HS=HS_Ship]船只[/HS]。处于 [ICON=AutoSurvey_Icon] 自动调查模式的 [HS=HS_Ship]船只[/HS] 会在没有直接命令的情况下移动，试图寻找 [HS=HS_Anomaly]异常[/HS]。当一个处于 [ICON=AutoSurvey_Icon] 自动调查模式的 [HS=HS_Ship]船只[/HS] 靠近 [HS=HS_Anomaly ]异常[/HS]时，它将在没有直接命令的情况下对 [HS=HS_Anomaly ]异常[/HS] 进行 [HS=HS_SurveyOrder]调查[/HS]。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeTitle</Label>
@@ -210,15 +210,15 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeDec</Label>
-    <String>[ICON=AutoColonize_Icon]自动 殖民 仅 适用 于 可以[HS=HS_Colinizing]殖民[/HS]行星 的 飞船。自动 殖民 模式 下 的 [HS=HS_Ship]飞船[/HS] [ICON=AutoColonize_Icon]将 在 没有 直接 命令 的 情况 下移 动，尝试 定位[HS=HS_PlanetClass]行星 等级[/HS]] 为 1 或 更 高 的 行星。当 发现 一颗 行星 时，[HS=HS_Ship]飞船[/HS]将 在 没有 直接 命令 的 情况 下[HS=HS_Colinizing]殖民[/HS]行星。</String>
+    <String>[ICON=AutoColonize_Icon] 自动殖民只适用于能够[HS=HS_Colinizing]殖民[/HS]星球的舰船。处于[ICON=AutoColonize_Icon] 自动殖民模式的[HS=HS_Ship]舰船[/HS]会在没有直接命令的情况下移动，试图寻找[HS=HS_PlanetClass]星球等级[/HS]为1 或更高的星球。当找到星球时，[HS=HS_Ship]舰船[/HS]将在没有直接命令的情况下[HS=HS_Colinizing]殖民[/HS]这个星球。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineTitle</Label>
-    <String>[ICON=AutoMine_Icon]自动 采矿</String>
+    <String>[ICON=AutoMine_Icon] 自动采矿</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineDec</Label>
-    <String>[ICON=AutoMine_Icon]自动 采矿 是 小行星 采矿 船 的 一 个 选项。处于 自动 采矿 下 的[HS=HS_Ship]飞船[/HS]将[ICON=AutoMine_Icon] 在 没有 直接 命令 的 情况 下 移动 ，试图 在[HS=HS_ZoneOfControl]控制区[/HS]内 找到 要 开采 的 小行星。</String>
+    <String>[ICON=AutoMine_Icon] 自动采矿是小行星采矿船的一个选项。[HS=HS_Ship]船只[/HS] 在 [ICON=AutoMine_Icon] 自动采矿 模式下，无需直接命令即可移动，试图在 [HS=HS_ZoneOfControl] 控制区域 [/HS] 内找到小行星进行采矿。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SectorTitle</Label>
@@ -226,11 +226,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_SectorDec</Label>
-    <String>一个 扇区 是 银河系 的 一个 区域 ，星系 系统 在 此 汇集，无需 专门 的[HS=HS_Tech]技术[/HS]即可 穿越。</String>
+    <String>一个扇区是银河系的一部分，其中星系系统被聚集在一起，而无需专门的 [HS=HS_Tech] 技术 [/HS] 就可以穿越。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_LeaderMenuTitle</Label>
-    <String>[ICON=Menu_Leader_Icon] 领导者菜单</String>
+    <String>[ICON=Menu_Leader_Icon] 领导者 菜单</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_LeaderMenuDec</Label>
@@ -298,23 +298,23 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_SupportingColoniesDec</Label>
-    <String>支援 殖民地 是 任何[HS=HS_Colinizing]被 殖民 的[/HS]星球，但 不是[HS=HS_CoreWorld]核心 世界[/HS]。支援 殖民地 将 资源 作为 输入 发 送到 最近 的[HS=HS_CoreWorld]核心 世界[/HS]，从而 增加[HS=HS_CoreWorld]核心 世界 的[/HS]行星 输入，以 改善 该 星球 的 产出。</String>
+    <String>支援殖民地是任何[HS=HS_Colinizing]被殖民的[/HS]行星，只要它不是[HS=HS_CoreWorld]核心世界[/HS]。支援殖民地会将资源作为输入发送到最近的[HS=HS_CoreWorld]核心世界[/HS]，以增加[HS=HS_CoreWorld]核心世界的[/HS]行星输入，从而提高行星的产出。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MineralsTitle</Label>
-    <String>[ICON=Stat_Minerals_Icon] 矿物</String>
+    <String>Hotspot [ICON=Stat_Minerals_Icon] 矿物</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MineralsDec</Label>
-    <String>矿物 是[HS=HS_CoreWorld]核心 世界[/HS]可用 的 原材料。矿物 是 影响[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]的 输入。一个 星球 作为 输入 的 矿物 越 多 ，其[HS=HS_Manufacturing]制造[/HS]评级 越高。</String>
+    <String>矿物是[HS=HS_CoreWorld]核心世界[/HS]可用的原材料。矿物是影响 [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]的输入因素。一个星球的矿物输入越多，其[HS=HS_Manufacturing]制造[/HS]等级就越高。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechnologyTitle</Label>
-    <String>[ICON=Stat_Technology_Icon] 科技</String>
+    <String>[ICON=Stat_Technology_Icon] 技术</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechnologyDec</Label>
-    <String>[ICON=Stat_Technology_Icon] 技术 测量 了[HS=HS_CoreWorld]核心 世界[/HS]可用 的 智力 发展。[ICON=Stat_Technology_Icon] 技术 是 影响[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]的 输入。一个 星球 作为 输入 的[ICON=Stat_Technology_Icon] 技术 越 多，其[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]评级 越高。</String>
+    <String>[ICON=Stat_Technology_Icon] 技术度量了一个[HS=HS_CoreWorld]核心世界[/HS]可利用的智力发展。 [ICON=Stat_Technology_Icon] 技术是影响 [ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS] 的输入。星球作为输入的 [ICON=Stat_Technology_Icon] 技术越多，其 [ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS] 评级越高。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_FarmingTitle</Label>
@@ -322,15 +322,15 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_FarmingDec</Label>
-    <String>[ICON=Stat_Fertility_Icon] 农业 衡量 的 是 农业 产出 的 资源 ，这些 资源 可 供[HS=HS_CoreWorld]核心 世界[/HS]使用。[ICON=Stat_Fertility_Icon] 农业 是 影响[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]的 输入 因素。一个 星球 的[ICON=Stat_Fertility_Icon] 农业 输入 越 多，[HS=HS_CoreWorld]核心 世界[/HS]生产 的[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]就 越 多。</String>
+    <String>[ICON=Stat_Fertility_Icon] 农业衡量了[HS=HS_CoreWorld]核心世界[/HS]可利用的农业生产资源。[ICON=Stat_Fertility_Icon] 农业是影响 [ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]的输入。星球的[ICON=Stat_Fertility_Icon] 农业输入越多，[HS=HS_CoreWorld]核心世界[/HS]生产的[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]就越多。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CultureTitle</Label>
-    <String>[ICON=Stat_PlanetInfluence_Icon] 文化热点</String>
+    <String>[ICON=Stat_PlanetInfluence_Icon] 文化</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CultureDec</Label>
-    <String>[ICON=Stat_PlanetInfluence_Icon] 文化 衡量 了 一个[HS=HS_CoreWorld]核心 世界[/HS]的 社会 意义。[ICON=Stat_PlanetInfluence_Icon] 文化 是 影响[ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]的 输入。一个 星球 作为 输入 的[ICON=Stat_PlanetInfluence_Icon]文化 越 多，其[ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]评级 越高。</String>
+    <String>[ICON=Stat_PlanetInfluence_Icon] 文化衡量一个[HS=HS_CoreWorld]核心世界[/HS]可获得的社会重要性。[ICON=Stat_PlanetInfluence_Icon] 文化是影响 [ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]的输入。一个星球的 [ICON=Stat_PlanetInfluence_Icon] 文化输入越多，其 [ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]等级就越高。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_WealthTitle</Label>
@@ -338,7 +338,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_WealthDec</Label>
-    <String>[ICON=Stat_Wealth_Icon] 财富 是[HS=HS_CoreWorld]核心 世界[/HS]可用 的 稀有 且 珍贵 的 物资。[ICON=Stat_Wealth_Icon] 财富 是 影响[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]的 输入。行星 作为 输入 拥有 的[ICON=Stat_Wealth_Icon] 财富 越 多，产生 的[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]也 越 多。</String>
+    <String>[ICON=Stat_Wealth_Icon] 财富是[HS=HS_CoreWorld]核心世界[/HS]可用的稀有而宝贵的材料。[ICON=Stat_Wealth_Icon] 财富是影响[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]的输入。一个星球作为输入的[ICON=Stat_Wealth_Icon] 财富越多，它产生的[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]就越多。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ResearchCenterTitle</Label>
@@ -354,7 +354,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechDec</Label>
-    <String>科技 是[HS=HS_ResearchCenter]研究 中心[/HS]的 一个 选择，研究 后，将 提供 独特 的 解锁，这些 解锁 可能 是 新 的[HS=HS_Ship]飞船[/HS]、[HS=HS_Improvement]改进[/HS]、[HS=HS_ExecutiveOrders]行政命令[/HS]等等。[BR][BR]将 鼠标悬停 在[HS=HS_ResearchCenter]研究 中心[/HS]的 科技 上，了解 更 多 关于 科技 解锁 的 信息 。</String>
+    <String>一项技术是[HS=HS_ResearchCenter]研究中心[/HS]的一个选项，当研究后，将提供独特的解锁，可以是新的[HS=HS_Ship]船只[/HS]，[HS=HS_Improvement]改进[/HS]，[HS=HS_ExecutiveOrders]行政命令[/HS]等等。[BR][BR]将鼠标悬停在[HS=HS_ResearchCenter]研究中心[/HS]的技术上，了解更多关于技术解锁的信息。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PiratesTitle</Label>
@@ -370,7 +370,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipyardDec</Label>
-    <String>造船厂 是 可以 建造 新 的[HS=HS_Ship]飞船[/HS]的 地方。造船厂 需要 一个[HS=HS_CoreWorld]核心 世界[/HS]才能 运作，且 只能 在[HS=HS_CoreWorld]核心 世界[/HS]中 建造。</String>
+    <String>一个造船厂是新的[HS=HS_Ship]飞船[/HS]可以被建造的地方。造船厂需要一个[HS=HS_CoreWorld]核心世界[/HS]才能运行，而且只能在[HS=HS_CoreWorld]核心世界[/HS]上建造。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_RushTitle</Label>
@@ -382,7 +382,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetManagementTitle</Label>
-    <String>[ICON=Menu_PlanetManagement_Icon] 行星管理窗口</String>
+    <String>[ICON=Menu_PlanetManagement_Icon] 行星 管理 窗口</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetManagementDec</Label>
@@ -390,7 +390,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AdjacencyTitle</Label>
-    <String>相邻 加成</String>
+    <String>邻近奖励</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AdjacencyDec</Label>
@@ -398,7 +398,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConstructStarbaseTitle</Label>
-    <String>[ICON=Order_ConstructStarbase] 建造星际基地</String>
+    <String>[ICON=Order_ConstructStarbase] 建造 星际基地</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConstructStarbaseDec</Label>
@@ -410,11 +410,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_StarbaseDec</Label>
-    <String>星基 是 一种 专门 的 不可 移动 建 筑，可以 根据 其 建造 的 位置 和 方式 ，发挥 各种 角色。如 要 建造 星基，需要 从 一个[HS=HS_Shipyard]船厂[/HS]生产 一个[HS=HS_Constructor]建造 者[/HS]。然后，可以 给 建造 者 发送[HS=HS_ConstructStarbase]建造 星基[/HS]的 指令，在 其 当前 位置 创建 星基。[BR][BR]有 四种 类型 的 星基：[ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]军事[/HS]，[ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]采矿[/HS]，[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]经济[/HS]，以及[ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]通信[/HS]。使用[HS=HS_ConstructStarbase]建造 星基[/HS]时 可用 的 类型 取决于[HS=HS_Constructor]建造 者[/HS]影响 区域 内 的 资源。</String>
+    <String>星基是一种专门的固定建筑，可以根据其建造的地点和方式发挥各种作用。要建造星基，需要从 [HS=HS_Shipyard]船坞[/HS] 生产一台 [HS=HS_Constructor]建造器[/HS]。然后，建造器可以被赋予 [HS=HS_ConstructStarbase]建造星基[/HS] 的命令在其当前位置创建一座星基。[BR][BR]有四种类型的星基：[ICON=Icon_MilitaryStarbase] [HS=HS_MilitaryStarbase]军事[/HS]，[ICON=Icon_MiningStarbase] [HS=HS_MininingStarbase]采矿[/HS]，[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]经济[/HS]，和 [ICON=Icon_MiningStarbase] [HS=HS_CommunicationsStarbase]通信[/HS]。使用 [HS=HS_ConstructStarbase]建造星基[/HS] 时可用的类型取决于 [HS=HS_Constructor]建造器[/HS] 影响区域内的资源。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MilitaryStarbaseTitle</Label>
-    <String>[ICON=Icon_MilitaryStarbase] 军事星际基地</String>
+    <String>[ICON=Icon_MilitaryStarbase] 军事 星 基地</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MilitaryStarbaseDec</Label>
@@ -422,7 +422,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MiningStarbaseTitle</Label>
-    <String>[ICON=Icon_MiningStarbase] 采矿星际基地</String>
+    <String>[ICON=Icon_MiningStarbase] 采矿 星际基地</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MiningStarbaseDec</Label>
@@ -430,7 +430,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_CommunicationsStarbaseTitle</Label>
-    <String>[ICON=Icon_CommunicationsStarbase] 通讯星基</String>
+    <String>[ICON=Icon_CommunicationsStarbase] 通讯 星基</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CommunicationsStarbaseDec</Label>
@@ -438,7 +438,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_EconomicsStarbaseTitle</Label>
-    <String>[ICON=Icon_EconomicsStarbase] 经济星基</String>
+    <String>[ICON=Icon_EconomicsStarbase] 经济 星基</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_EconomicsStarbaseDec</Label>
@@ -446,11 +446,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConqueringPlanetsTitle</Label>
-    <String>[ICON=Conquest_Icon] 征服行星</String>
+    <String>[ICON=Conquest_Icon] 征服 行星</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConqueringPlanetsDec</Label>
-    <String>所有 被 殖民 的 行星 都 有 一个[ICON=Conquest_Icon]星球 征服 评级。这 代表 了 一个 行星 的 防御 程度 和 需要 多少 军事力量 才能 克服 其 防御。[HS=HS_Fleet]舰队[/HS]有 一个 征服 评级，代表 它们 对 围攻 行星 的 装备 程 度。有些 飞船，如 运输船，比 其他 飞船 更 适合 征服 行星。[BR][BR]如 要 发起 围攻，向 目标 为 要 征服 的 行星 的[HS=HS_Fleet]舰队[/HS]发出[HS=HS_ShipMovement]移动[/HS]命令。当[HS=HS_Fleet]舰队[/HS]到达 行星 时，如果 其[ICON=Conquest_Icon]征服 评级 足够 高以 克服 行星 的 [ICON=Conquest_Icon]征服 评级，它 将 发起 围攻。</String>
+    <String>所有被殖民的星球都有一个[ICON=Conquest_Icon] 星球征服等级。这代表了一个星球的防御能力以及需要多少军事力量来克服其防御。[HS=HS_Fleet]舰队[/HS] 有一个征服等级，表示他们对围攻星球的装备程度。一些船只，如运输船，比其他船只更适合征服星球。[BR][BR]要发起围攻，向一个[HS=HS_Fleet]舰队[/HS] 发出[HS=HS_ShipMovement]移动[/HS] 命令，目标是要征服的星球。当[HS=HS_Fleet]舰队[/HS] 到达星球时，如果其[ICON=Conquest_Icon] 征服等级足够高以克服星球的[ICON=Conquest_Icon] 征服等级，它将发起围攻。</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyTitle</Label>
@@ -494,19 +494,19 @@
   </StringTable>
   <StringTable>
     <Label>Trait_SelfGovernance_Dec_TK</Label>
-    <String>[I]最小 的 少数 群体 就是 个体。您 不能 否认 个体 的 存在 并 声称 保护 少数 群体。[/I][BR][BR][COLOR=UIDefaultHighlight]统治者 永远 不会 叛变[/COLOR]</String>
+    <String>[I]最小的少数群体是个体。你不能否定个体并声称捍却少数群体的权益。[/I][BR][BR][COLOR=UIDefaultHighlight]州长永远不会反叛[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Purges_Dec_TK</Label>
-    <String>[I]您 的 国家 通过 恐惧 来 维持 权力 ，消除 对 其 控制 的 潜在 威胁。[/I][BR][BR]  [COLOR=UIDefaultHighlight]解锁 轨道 古拉格[BR][BR] 解锁 驱逐 公民 的 能力[/COLOR]</String>
+    <String>[I]你的国家通过恐惧来维持权力，消除对其控制的潜在威胁。[/I][BR][BR]  [COLOR=UIDefaultHighlight]解锁轨道古拉格[BR][BR] 解锁清洗公民的能力[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Prestige_Dec_TK</Label>
-    <String>[I]著名 的 人会 向 您 展示 一个 文化 所 重视 的 价值。虽然 其他人 崇拜 空洞 和 美丽 或 聪明 和 好奇 的 事物，我们 却 敬仰 强大 的 力量。[/I][BR][BR][COLOR=UIDefaultHighlight]声望 胜利 进度 +25% [/COLOR]</String>
+    <String>[I]著名的会告诉你一个文化所重视的。当其他人崇拜空洞美丽或聪明好奇的时候，我们尊崇强大的。[/I][BR][BR][COLOR=UIDefaultHighlight]声望胜利进度 +25% [/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Censorship_Dec_TK</Label>
-    <String>[I]审查 权力 的 魔力 在于 其 阴险 的 操控 思想、压制 异议 和 控制 叙事 的 能力。[/I][BR][BR][COLOR=UIDefaultHighlight]外国 对 我们 世界 的 影响 减少 了 50%[/COLOR]</String>
+    <String>[I]审查的力量在于其阴险的能力，可以操纵思想，压制异议，并控制叙述。[/I][BR][BR][COLOR=UIDefaultHighlight]我们世界上的外国影响力减少了 50%[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Collaboration_Name_TK</Label>
@@ -514,15 +514,15 @@
   </StringTable>
   <StringTable>
     <Label>Trait_Collaboration_Dec_TK</Label>
-    <String>[I]科学 合作 是 创新 的 基石，推动 我们 走向 一个 建立 在 共享 知识 和 集体 发现 的 未来。[/I][BR][BR][COLOR=UIDefaultHighlight]解锁 超 离子 智囊团 改进[/COLOR]</String>
+    <String>[I]科学合作是创新的基石，推动我们走向一个建立在共享知识和集体发现的未来。[/I][BR][BR][COLOR=UIDefaultHighlight]解锁 Hyperion Braintrust 改进[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Trustworthy_Dec_TK</Label>
-    <String>[I]诚信 不仅 是 个人 的 美德；它 是 持久 关系 的 基石，也 是 团结 社区 的 支柱。[/I][BR][BR][COLOR=UIDefaultHighlight]解锁 星云 货币 信任 改进[/COLOR]</String>
+    <String>[I]诚信不仅仅是个人品质；它是持久联系的基石，也是团结社区的支柱。[/I][BR][BR][COLOR=UIDefaultHighlight]解锁星雾货币信</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Peacefulness_Dec_TK</Label>
-    <String>[I]坚定 致力于 和平，为 珍视 其 价值 的 文明 带来 希望 。[/I][BR][BR][COLOR=UIDefaultHighlight]因为 我们 的 和平 态度，与 每个 文明 的 外交关系 都 会 增 加+3的 增益[/COLOR]</String>
+    <String>[I]坚定致力于和平，为珍视其价值的文明带来希望。[/I][BR][BR][COLOR=UIDefaultHighlight]+3 我们的和平使得每个文明都在外交上有所增益[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Peacefulness_Diplo_Dec_TK</Label>
@@ -542,7 +542,7 @@
   </StringTable>
   <StringTable>
     <Label>OfficerSchool_ShortDec_TK</Label>
-    <String>一个 让 我们 最 优秀 和 最 聪明 的 人 接受 培训 并 被 塑造成 军官 的 地方。</String>
+    <String>我们最优秀和最聪明的人在这里接受训练，被塑造成军官的地方。</String>
   </StringTable>
   <StringTable>
     <Label>WarInstitution_Name_TK</Label>
@@ -638,7 +638,7 @@
   </StringTable>
   <StringTable>
     <Label>HiveWorkerTraining_ShortDec</Label>
-    <String>一个 设施 用于 提升[HS=HS_Consuming]消费[/HS]人口 的[HS=HS_Diligence]勤奋[/HS]程度50%%。随着 等级 提升，效果 增强。</String>
+    <String>一种设施，用于提升[HS=HS_Consuming]消费[/HS]人口的[HS=HS_Diligence]勤奋[/HS]程度50%%。效果会随着等级的提升而增加。</String>
   </StringTable>
   <StringTable>
     <Label>BrainBugs_Name</Label>
@@ -758,13 +758,11 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Dec</Label>
-    <String>
-			你 的 勘测 飞船 正在 接近 一个 从 太空 垃圾场 接收 到 的 奇特 信号 。当 飞船 最终 找到 发出信号 的 物 体 并 靠近 时，飞船 对讲机 里 传来 一个 声音：
+    <String>您的勘查船接近了它从太空垃圾场发出的一个奇特信号。当船最终找到发出信号的物体并接近时，一段声音在船的对讲机上响起。
 
-			“听 好 喽！你们 被困 在 星 胡子 船长*汪汪*……还有 我 星云 大 副 的 魔掌 之中，我们 可是 银河系 中 最 伟大 的 海 盗！ 现在 就 交出 你们 的 点数，否则 你们 将 面临 我 的 旗舰 宇宙 之畏怖 和 她 无畏 舰队 的 怒火。”
+"看哪！你被星须船长和我第一副官星云，*汪汪*... 在银河系中最伟大的海盗们的掌心中！现在就投降你的信用点，否则你将面临我的旗舰宇宙恐惧号和她的勇敢舰队的愤怒"
 
-			进一步 扫描 发现，所谓 的“宇宙 之畏怖”似乎 只是 一艘 由 两个 生命体 驾 驶 的 采矿 船。而 探测 到 的 数十个 来自“舰队”的 通信 信号，则 只是 太空 垃圾。
-		</String>
+在进一步扫描后，"宇宙恐惧号"似乎只不过是一艘由2个生命体驾驶的采矿船。从"船只"检测到数十个通信信号，但扫描表明它们只不过是太空垃圾。</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Liberty_Bonus_Name</Label>
@@ -796,11 +794,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Dec</Label>
-    <String>
-			银河系 野生动物 保护 协会（IWC）希望 从 银河系 各地 收集 标本 进 行 研究。具体来说，他们 希望 收集 适合 在 多种不同 环境 中 生活 的 生物，以便 更好 地 了解 整个 宇宙 的 生 物 多样性 和 适应性。他们 一致 认为，收集 新 数据 的 最佳 地点 是 未殖 民 的 陆地 行星。
-
-			IWC会 提供 一笔 资产 来 协助 研究，其中 包括 一艘 满载 着 探险家 和 科学家，随时 准备 出发 进行 研究 的 免费 殖民 舰。
-		</String>
+    <String/>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
@@ -833,11 +827,9 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Dec</Label>
-    <String>
-			银河系 野生动物 保护 协会（IWC）很 高兴 地向 大家 汇报 银河系 保 护 计划 的 成功。我们 在 这些 星球 上 的 存在 将 使 我们 能够 更多地 了解 银河系 的 自然生态 以及 栖息 在 其中 的 生 物。
+    <String>星际野生动物保护协会 (IWC) 很高兴报告银河系保护计划的成功。我们在这些星球上的存在将使我们能够更多地了解银河系的自然乐园和其中的生物。
 
-			随着 计划 的 成功，银河系 野生动物 保护 协会 提出 了 建造 “方舟”。“方舟”是 一艘 装满 了 来自 银河系 各地 的 活体 标本 的 飞船，接下来 它 将 成为 一个 飞行 生态 实验室，用以 恢复 整个 银河系 的 生态系 统。因 我们 支持 银河系 野生动物 保 护 协会 的 保护 工作，“方舟”被 委托 给 了 我们。
-		</String>
+随着计划的成功，IWC 已经委托了 "方舟"。一艘装满来自银河系各地的活体样本的船。它旨在成为一个飞行生态实验室，恢复整个银河系的生态系统。方舟已经交给了我们，以表彰我们对 IWC 保护工作的支持。</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
@@ -925,7 +917,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandTrade_End_Liberty_Bonus_Dec</Label>
-    <String>25回合 内 贸易 路线 产出+15%</String>
+    <String>'25回合内贸易路线输出增加15%'</String>
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandInfluence_Name</Label>
@@ -965,7 +957,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandInfluence_End_Liberty_Bonus_Dec</Label>
-    <String>每 回合+5影响力</String>
+    <String>每回合增加5点影响力</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Name</Label>
@@ -981,7 +973,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Liberty_Bonus_Dec</Label>
-    <String>开始 任务</String>
+    <String>开始任务</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Liberty_QuestDescription</Label>
@@ -1005,7 +997,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_End_Liberty_Bonus_Dec</Label>
-    <String>所有 领导者 状态+2</String>
+    <String>所有领导者状态+2</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_Name</Label>
@@ -1033,7 +1025,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_End_Name</Label>
-    <String>{PLANETNAME} 造船厂</String>
+    <String>{PLANETNAME} 船厂</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_End_Dec</Label>
@@ -1045,7 +1037,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_End_Liberty_Bonus_Dec</Label>
-    <String>+15% 船只 建造</String>
+    <String>+15% 的船舍建设</String>
   </StringTable>
   <StringTable>
     <Label>SporeShip_Name</Label>
@@ -1069,11 +1061,11 @@
   </StringTable>
   <StringTable>
     <Label>RelativeEthicsModule_Dec</Label>
-    <String>影响 输出 提升50%</String>
+    <String>影响输出增加50%</String>
   </StringTable>
   <StringTable>
     <Label>RelativeEthicsModule_ShortDec</Label>
-    <String>影响 输出 提升50%</String>
+    <String>影响输出提升50%</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ClaimFivePlanets_Name</Label>
@@ -1097,7 +1089,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Dec</Label>
-    <String>[HS=HS_Starbase]星际 基地[/HS]对于 支持 帝国 是 必不可少 的。它们 被 要求 收集 用于 构建 特定 类型 的 星舰 和 武器 所 需 的[HS=HS_StrategicResource]战略 资源[/HS]。[BR][BR]从[HS=HS_Shipyard]造船厂[/HS]生产[HS=HS_Constructor]建造 者[/HS]，然后 使用 他们 的[HS=HS_ConstructStarbase]建造 星际 基地[/HS]命令。</String>
+    <String>[HS=HS_Starbase]星基[/HS] 对于支持帝国至关重要。它们是收集建造特定类型星舰和武器所需的 [HS=HS_StrategicResource]战略资源[/HS] 的必要设施。[BR][BR]从 [HS=HS_Shipyard]造船厂[/HS] 中生产 [HS=HS_Constructor]建造者[/HS]，然后使用他们的 [HS=HS_ConstructStarbase]建造星基[/HS] 命令。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Name</Label>
@@ -1145,7 +1137,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
-    <String>访问[HS=HS_ResearchCenter]研究 中心[/HS]并 确保 当前 研究 的[HS=HS_Tech]技术[/HS]是 殖民政策。[HS=HS_Tech]技术[/HS]的 研究所 需 的[HS=HS_Months]月份[/HS]由 所有[HS=HS_CoreWorld]核心 世界[/HS]的 研究 评级 决定。</String>
+    <String>访问 [HS=HS_ResearchCenter]研究中心[/HS] 并确保当前正在研究的 [HS=HS_Tech]技术[/HS] 是殖民政策。 [HS=HS_Tech]技术[/HS] 的研究时间由所有 [HS=HS_CoreWorld]核心世界[/HS] 的研究评级决定。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy</Label>
@@ -1153,7 +1145,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy_Dec</Label>
-    <String>[HS=HS_Policy]政策[/HS]是 影响 每个 殖民地 和 文明 内舰 队 的 一种 方式。在 [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明 菜单[/HS]下 实施 一项[HS=HS_Policy]政策[/HS]来 帮助 实现目标。在 你 的 回合 中，可以 随时 更改[HS=HS_Policy]政策[/HS]以 适应 不断 变化 的 环境。</String>
+    <String>[HS=HS_Policy]政策[/HS] 是影响文明中的每一个殖民地和舰队的方式。在 [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS] 下实施一项 [HS=HS_Policy]政策[/HS] 来帮助完成目标。您可以在您的回合中的任何时间改变 [HS=HS_Policy]政策[/HS] 以更好地适应变化的情况。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_RushPlanetaryImprovement</Label>
@@ -1169,7 +1161,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseExecutiveOrder_Dec</Label>
-    <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]是从相关的径向选项中选择的。一些会在确认使用后立即执行。其他需要一个目标，并且必须在确认命令后进行指导。将鼠标悬停在 [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]选项上，然后使用左键选择一个命令。</String>
+    <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS] 是从相关的径向选项中选择的。有些将在确认使用后立即执行。其他一些需要目标，并且必须在确认命令后指向。将鼠标悬停在 [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS] 选项上，然后使用左键选择一个命令。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_MineAnAsteroid</Label>
@@ -1177,7 +1169,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_MineAnAsteroid_Dec</Label>
-    <String>(PLACEHOLDER)简要 描述 开采 小行星 的 目标。</String>
+    <String>(占位符)关于开采小行星目标的简短描述。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_BuildEconomicStarbase</Label>
@@ -1185,7 +1177,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_BuildEconomicStarbase_Dec</Label>
-    <String>(PLACEHOLDER)简要 描述 建立 经济 星际 基地 的 目标。</String>
+    <String>(占位符) 建造经济星际基地目标的简要描述。</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockAsteroidMining</Label>
@@ -1193,7 +1185,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockAsteroidMining_Dec</Label>
-    <String>(PLACEHOLDER) 简要 描述 掌握 小行星 采矿 技术 的 目标。</String>
+    <String>(占位符) 对掌握小行星采矿技术的目标的简要描述。</String>
   </StringTable>
   <StringTable>
     <Label>PLAYER_READY_LABEL</Label>
@@ -1225,7 +1217,7 @@
   </StringTable>
   <StringTable>
     <Label>CANNOT_REFIT_ERROR_LABEL</Label>
-    <String>[COLOR=BrightRed]无法 改装：[/COLOR]</String>
+    <String>[COLOR=BrightRed]无法改装：[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>FLEET_TOOLTIP_DISABLED_REQUIRESSHIPYARD</Label>
@@ -1237,7 +1229,7 @@
   </StringTable>
   <StringTable>
     <Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
-    <String>为{GOVERNORNAME}的{AMOUNT}</String>
+    <String>为 {GOVERNORNAME} 的 {AMOUNT}</String>
   </StringTable>
   <StringTable>
     <Label>GovernorDefectedTitle</Label>
@@ -1261,7 +1253,7 @@
   </StringTable>
   <StringTable>
     <Label>ResearchTurnsRemaining</Label>
-    <String>完成 研究 还 需%d回合</String>
+    <String>研究完成还需%d回合</String>
   </StringTable>
   <StringTable>
     <Label>Alert_UI_Title</Label>
