@@ -1,5 +1,8 @@
 import sys
 import subprocess
+import time
+from concurrent.futures import ThreadPoolExecutor, TimeoutError, as_completed
+
 
 def install_module(module_name):
     """Install the given module using pip."""
@@ -155,7 +158,6 @@ class TranslationApp(QMainWindow):
                 if self.table.item(row, 3) and self.table.item(row, 3).text() == english_string:
                     self.table.item(row, 4).setText(new_translation)
 
-          
     def set_openai_key(self):
         # Open an input dialog to get the OpenAI key
         key, ok = QInputDialog.getText(self, 'OpenAI Key', 'Enter your OpenAI key:')
@@ -335,7 +337,7 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game whose string table needs to translated and given the stringtable entry label is '{label_name}'  translate this English string and respecting formatting codes into {target_language}: {text}"
+        prompt = f"In the context of a Sci-Fi video game, given the string table entry label '{label_name}' as context, translate the following text into {target_language}. Respect all formatting codes and do not include the label. Add spaces without breaking meaning if a phrase is long to ensure word wrapping is not broken. Text to translate: {text}"
 
         try:
             response = openai.ChatCompletion.create(
@@ -352,19 +354,17 @@ class TranslationApp(QMainWindow):
             return None
 
     def perform_translation(self):
-        translation_lock = threading.Lock()
         translation_counter = 0
         selected_rows = list(set(item.row() for item in self.table.selectedItems()))
         total_rows = len(selected_rows)
 
-        # Create a QProgressDialog
         if total_rows > 4:
             progress = QProgressDialog("Please Wait...", None, 0, total_rows, self)
             progress.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
             progress.setWindowModality(Qt.WindowModal)
             progress.show()
 
-        def translate_row(row): 
+        def translate_row(row):
             print(f"Translating row {row} in thread {threading.current_thread().name}")
             english_text_item = self.table.item(row, 3)
             english_text = english_text_item.text()
@@ -372,30 +372,37 @@ class TranslationApp(QMainWindow):
             translated_text = self.translate_to_language(english_text, row, target_language)
             return row, translated_text
 
-        # Split the rows into chunks
-        CHUNK_SIZE = 32
+        CHUNK_SIZE = 16
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=32) as executor:
-                for idx, (row, translated_text) in enumerate(executor.map(translate_row, chunk), start=translation_counter):
-                    translation_item = self.table.item(row, 4)
-                    if not translation_item:
-                        file_path = self.table.item(row, 0).text()
-                        label = self.table.item(row, 2).text()
-                        translation_item = CustomTableWidgetItem("", file_path, label)
-                        self.table.setItem(row, 4, translation_item)
+            with ThreadPoolExecutor(max_workers=16) as executor:
+                futures = {executor.submit(translate_row, row): row for row in chunk}
 
-                    translation_item.setText(translated_text)
+                for future in as_completed(futures):
+                    row = futures[future]
+                    try:
+                        row, translated_text = future.result(timeout=10)  # 10-second timeout for each task
+                        translation_item = self.table.item(row, 4)
+                        
+                        if not translation_item:
+                            file_path = self.table.item(row, 0).text()
+                            label = self.table.item(row, 2).text()
+                            translation_item = CustomTableWidgetItem("", file_path, label)
+                            self.table.setItem(row, 4, translation_item)
 
-                    self.translate_button.setText(f"Translating {idx + 1} of {total_rows} entries")
-                    if total_rows > 4:
-                        progress.setValue(idx + 1)
-                    QApplication.processEvents()
+                        translation_item.setText(translated_text)
+                        self.translate_button.setText(f"Translating {translation_counter + 1} of {total_rows} entries")
 
-            # Save translations after each chunk
+                        if total_rows > 4:
+                            progress.setValue(translation_counter + 1)
+                        QApplication.processEvents()
+                        translation_counter += 1
+
+                    except TimeoutError:
+                        print(f"Thread for row {row} timed out.")
+
             self.save_translations()
-            translation_counter += len(chunk)
 
         self.translate_button.setText("Translate")
         if total_rows > 4:
