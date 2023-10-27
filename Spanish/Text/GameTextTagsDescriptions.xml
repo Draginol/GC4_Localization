@@ -1,16 +1,8 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
   <StringTable>
     <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
-    <String>Algunas etiquetas son simplemente el nombre de la misma en {}.
-            Sintaxis: {GAMETAG}
-            Ejemplo: ¡{PLANETNAME} es un excelente lugar para vivir!
-            Otras llevan un : seguido de un número, que es el índice de texto del juego, para diferenciar entre posibles reemplazos múltiples.
-            En el texto de conversación, 1 es el Hablante (jugador que inicia la conversación), 2 es el Oyente (jugador que recibe la conversación) y 3 es el Tercer Jugador (sobre el que conversan el Hablante y el Oyente).
-            En conversaciones donde se ofrece algo, use el índice de texto del juego para indicar quién da el ítem (CANTIDAD, NOMBRETEC, NOMBREOBJETO)
-            Sintaxis: {GAMETAG:#}
-            Ejemplo 1: Nosotros, los {PLAYERFACTIONLONG:1}, declaramos la guerra a ustedes, los {PLAYERFACTIONLONG:2}
-            Ejemplo 2: Los {PLAYERFACTION:3} ya no existen.</String>
+    <String>Algunas etiquetas son simplemente el nombre de la etiqueta en {}.[BR]Sintaxis: {GAMETAG} [BR]Ejemplo: "{PLANETNAME} es un gran lugar para vivir!"[BR]Otras tienen un : seguido de un número que es el índice de texto del juego, para diferenciar entre múltiples posibles reemplazos.[BR]En el texto de sabor de conversación, 1 es el hablante (jugador que inicia la conversación), 2 es el oyente (jugador que recibe la conversación) y 3 es el jugador de la tercera parte (jugador sobre el que están conversando el hablante y el oyente).[BR]En conversaciones donde se ofrece algo, usa el índice de texto del juego para indicar quién está dando el objeto (CANTIDAD, NOMBRETECNICO, NOMBREOBJETO)[BR]Sintaxis: {GAMETAG:#} [BR]Ejemplo 1: "Nosotros, los {PLAYERFACTIONLONG:1} declaramos la guerra a usted, los {PLAYERFACTIONLONG:2}"[BR]Ejemplo 2: "Los {PLAYERFACTION:3} ya no existen."</String>
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
@@ -50,7 +42,7 @@
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
-    <String>Nombre de un proyecto en cola de construcción (astillero o planeta)</String>
+    <String>Nombre de un proyecto en una cola de construcción (astillero o planeta)</String>
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
@@ -66,7 +58,7 @@
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
-    <String>Cantidad de algo, normalmente créditos ofrecidos/solicitados</String>
+    <String>Cantidad de algo, generalmente créditos que se ofrecen/exigen/solicitan</String>
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
@@ -74,7 +66,7 @@
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
-    <String>Nombre del objeto solicitado/ofrecido/demandado</String>
+    <String>Nombre de un objeto que se ofrece/demanda/solicita</String>
   </StringTable>
   <StringTable>
     <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
