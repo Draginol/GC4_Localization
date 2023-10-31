@@ -1,6 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
+    <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Jesteś utalentowanym pisarzem science fiction.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Wymyśl znak wywoławczy marynarki wojennej lub statku kosmicznego dla frakcji {PREVIOUSCONV:0} w grze strategicznej science fiction. Bądź kreatywny. Odpowiedź powinna być akronimem lub skrótem i składać się z dokładnie 2 lub 3 wielkich liter, po których następuje kropka. Nie używaj pełnych słów. Na przykład H.M.S. Inny przykład U.S.S. Odpowiedź nie może przekraczać 6 liter łącznie z kropkami. </Text>
+            <Text>Wygeneruj prefiks morski dla frakcji o nazwie {PREVIOUSCONV:0}, używając pierwszego znaku pierwszego słowa w {PREVIOUSCONV:0} jako pierwszego glifu, pierwszego znaku drugiego słowa jako drugiego glifu i używając pierwszego znaku 'Statek' jako ostatniej litery. Twoja odpowiedź może być tylko samym prefiksem, powinny to być 3 polskie glify oddzielone kropkami, nie pełne słowa.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

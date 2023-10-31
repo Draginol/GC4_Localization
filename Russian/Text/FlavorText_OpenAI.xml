@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Вы опытный писатель-фантаст.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Пожалуйста, придумайте позывной для корабля или космического корабля фракции {PREVIOUSCONV:0} в научно-фантастической стратегической игре по ходам. Проявите креативность. Ответ должен быть акронимом или аббревиатурой и состоять ровно из 2 или 3 заглавных букв, каждая из которых должна быть следом за знаком пунктуации в виде точки. Не включайте полных слов. Например, Х.М.С. Другой пример У.С.С. Ответ не должен превышать 6 символов, включая точки.</Text>
+            <Text>Сформируйте морской префикс для фракции с названием {PREVIOUSCONV:0}, используя первый символ первого слова в {PREVIOUSCONV:0} как первый глиф, первый символ второго слова как второй глиф, и используя первый символ 'Корабль' в качестве последней буквы. Ваш ответ может быть только самим префиксом, он должен состоять из 3 русских глифов, разделенных точками, не полных слов.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

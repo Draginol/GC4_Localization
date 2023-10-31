@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Você é um hábil escritor de ficção científica.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Proszę wymyślić znak wywoławczy dla statku morskiego lub kosmicznego frakcji {PREVIOUSCONV:0} w grze strategicznej o tematyce science fiction. Bądź kreatywny. Odpowiedź powinna być skrótem i składać się dokładnie z 2 lub 3 dużych liter, po każdej z nich powinien znajdować się kropka. Nie dołączaj pełnych słów. Na przykład H.M.S. Kolejny przykład U.S.S. Odpowiedź nie powinna przekraczać 6 liter, włączając kropki. Jeśli jest to nazwa pliku, po prostu skopiuj angielską wersję.</Text>
+            <Text>Gere um prefixo naval para uma facção chamada {PREVIOUSCONV:0} usando o primeiro caractere da primeira palavra em {PREVIOUSCONV:0} como o primeiro glifo, o primeiro caractere da segunda palavra como o segundo glifo e usando o primeiro caractere de 'Navio' como a última letra. Sua resposta pode ser apenas o prefixo em si, deve ser 3 glifos portugueses separados por pontos, não palavras inteiras.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

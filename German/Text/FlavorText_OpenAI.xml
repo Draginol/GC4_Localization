@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Sie sind ein begabter Science-Fiction-Autor.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Überlege sich ein Rufzeichen für ein Marine- oder Raumschiff {PREVIOUSCONV:0} Fraktion in einem rundenbasierten Science-Fiction-Strategiespiel. Sei kreativ. Die Antwort muss ein Akronym oder eine Abkürzung sein und aus genau 2 oder 3 Großbuchstaben bestehen, wobei auf jeden Großbuchstaben ein Punkt als Satzzeichen folgt. Füge keine vollständigen Buchstaben ein. Zum Beispiel H.M.S. Ein weiteres Beispiel U.S.S. Die Antwort darf nicht mehr als 6 Buchstaben einschließlich Punkte enthalten. </Text>
+            <Text>Um einen Marine-Präfix für eine Fraktion namens {PREVIOUSCONV:0} zu generieren, verwenden Sie den ersten Buchstaben des ersten Wortes in {PREVIOUSCONV:0} als erstes Glyph, den ersten Buchstaben des zweiten Wortes als zweites Glyph und den ersten Buchstaben von 'Schiff' als letzten Buchstaben. Ihre Antwort kann nur der Präfix selbst sein, sollte 3 deutsche Glyphen getrennt durch Punkte sein, keine vollständigen Wörter.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

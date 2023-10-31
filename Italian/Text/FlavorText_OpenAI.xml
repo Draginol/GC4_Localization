@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Sei un abile scrittore di fantascienza.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Per favore, inventa un nominativo per una nave spaziale o navale per la fazione {PREVIOUSCONV:0} in un gioco di strategia di fantascienza. Sii creativo. La risposta deve essere un acronimo o abbreviazione e consistere esattamente di 2 o 3 lettere maiuscole, ciascuna seguita da un punto. Non includere parole intere. Ad esempio</Text>
+            <Text>Genera un prefisso navale per una fazione chiamata {PREVIOUSCONV:0} utilizzando il primo carattere della prima parola in {PREVIOUSCONV:0} come primo glifo, il primo carattere della seconda parola come secondo glifo e utilizzando il primo carattere di 'Nave' come ultima lettera. La tua risposta può essere solo il prefisso stesso, dovrebbe essere 3 glifi inglesi separati da punti, non parole intere.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

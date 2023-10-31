@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Eres un hábil escritor de ciencia ficción.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Crea un indicativo de barco naval o espacial para la facción {PREVIOUSCONV:0} en un juego de estrategia de ciencia ficción. Sea un acrónimo o abreviatura de 2 o 3 letras mayúsculas con un punto después de cada una. Ejemplo: H.M.S. ó U.S.S. Máximo 6 caracteres contando los puntos.</Text>
+            <Text>Genere un prefijo naval para una facción llamada {PREVIOUSCONV:0} utilizando el primer carácter de la primera palabra en {PREVIOUSCONV:0} como el primer glifo, el primer carácter de la segunda palabra como el segundo glifo, y utilizando el primer carácter de 'Nave' como la última letra. Su respuesta solo puede ser el prefijo en sí, debe ser 3 glifos en español separados por puntos, no palabras completas.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

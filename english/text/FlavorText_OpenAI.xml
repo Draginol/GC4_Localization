@@ -204,7 +204,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Please come up with a naval or space ship callsign for the {PREVIOUSCONV:0} faction in a science fiction strategy game. Be creative. Response shall be an acronym or abbreviation and consist of exactly 2 or 3 capital letters with each capital letter followed by a period punctuation mark. Do not include any full words. For example H.M.S.  Another example U.S.S.  Response shall not exceed 6 letters including periods. </Text>
+            <Text>Generate a naval prefix for a faction named {PREVIOUSCONV:0} by using the first character of the first word in {PREVIOUSCONV:0} as the first glyph, the first character of the second word as the second glyph, and using the first character of 'Ship' as the last letter. Your response can only be the prefix itself, should be 3 English glyphs separated by periods, not full words.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

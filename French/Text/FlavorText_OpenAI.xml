@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Vous êtes un écrivain de science-fiction qualifié.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Trouve un indicatif naval ou spatial pour la faction {PREVIOUSCONV:0} dans un jeu de stratégie au tour par tour de science-fiction. Sois créatif. La réponse doit être un acronyme ou une abréviation et se composer d'exactement 2 ou 3 lettres majuscules, chaque lettre majuscule étant suivie d'un point de ponctuation. Ne pas inclure de mots entiers. Par exemple H.M.S. Autre exemple U.S.S. La réponse ne doit pas dépasser 6 lettres, y compris les points. </Text>
+            <Text>Générer un préfixe naval pour une faction nommée {PREVIOUSCONV:0} en utilisant le premier caractère du premier mot dans {PREVIOUSCONV:0} comme le premier glyphe, le premier caractère du deuxième mot comme le deuxième glyphe, et en utilisant le premier caractère de 'Navire' comme dernière lettre. Votre réponse ne peut être que le préfixe lui-même, doit être 3 glyphes français séparés par des points, pas des mots entiers.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
