@@ -343,7 +343,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=2500,
+                max_tokens=250,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -354,9 +354,9 @@ class TranslationApp(QMainWindow):
             return None
 
     def perform_translation(self):
-        translation_counter = 0
         selected_rows = list(set(item.row() for item in self.table.selectedItems()))
         total_rows = len(selected_rows)
+        translation_counter = 0
 
         if total_rows > 4:
             progress = QProgressDialog("Please Wait...", None, 0, total_rows, self)
@@ -377,30 +377,25 @@ class TranslationApp(QMainWindow):
 
         for chunk in chunks:
             with ThreadPoolExecutor(max_workers=16) as executor:
-                futures = {executor.submit(translate_row, row): row for row in chunk}
+                results = list(executor.map(translate_row, chunk))
 
-                for future in as_completed(futures):
-                    row = futures[future]
-                    try:
-                        row, translated_text = future.result(timeout=10)  # 10-second timeout for each task
-                        translation_item = self.table.item(row, 4)
-                        
-                        if not translation_item:
-                            file_path = self.table.item(row, 0).text()
-                            label = self.table.item(row, 2).text()
-                            translation_item = CustomTableWidgetItem("", file_path, label)
-                            self.table.setItem(row, 4, translation_item)
+            for row, translated_text in results:
+                translation_item = self.table.item(row, 4)
+                
+                if not translation_item:
+                    file_path = self.table.item(row, 0).text()
+                    label = self.table.item(row, 2).text()
+                    translation_item = CustomTableWidgetItem("", file_path, label)
+                    self.table.setItem(row, 4, translation_item)
 
-                        translation_item.setText(translated_text)
-                        self.translate_button.setText(f"Translating {translation_counter + 1} of {total_rows} entries")
+                translation_item.setText(translated_text)
+                translation_counter += 1
+                self.translate_button.setText(f"Translating {translation_counter} of {total_rows} entries")
 
-                        if total_rows > 4:
-                            progress.setValue(translation_counter + 1)
-                        QApplication.processEvents()
-                        translation_counter += 1
+                if total_rows > 4:
+                    progress.setValue(translation_counter)
 
-                    except TimeoutError:
-                        print(f"Thread for row {row} timed out.")
+                QApplication.processEvents()
 
             self.save_translations()
 
