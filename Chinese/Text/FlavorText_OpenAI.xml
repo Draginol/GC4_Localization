@@ -5,7 +5,7 @@
       <InternalName>GENERIC_PERSONA</InternalName>
       <MaxTokens>0</MaxTokens>
       <FlavorTextOption>
-        <Text>您是中国著名的科幻作家。你只用中文回答。</Text>
+        <Text>You are a skilled science fiction writer.</Text>
       </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -188,21 +188,21 @@
         <InternalName>FACTION_LEADER_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>请为科幻战略游戏中{PREVIOUSCONV：0}派系的领导人建议一个名字。要有创意。不要直接使用任何功能名称。回答两到四个字，只回答领导者的名字。</Text>
+            <Text>请为科幻策略游戏中的{PREVIOUSCONV:0}派系领袖取个名字。发挥创意。请不要直接使用任何特性名称。答案应在2至4个字之间。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_HOMEWORLD_NAME_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>命名科幻战略游戏中{上一页：0}派系的母星。勇于创新。不要直接使用任何属性名称。他们称自己为{PLAYERFACTIONDESCRIPTION：1}。请用一三个字回答，只用母星的名字，而且只能用中文。</Text>
+            <Text>请为科幻策略游戏中{PREVIOUSCONV:0}派别的母星命名。请发挥创新。请勿直接使用任何特性名。他们将自己描述为{PLAYERFACTIONDESCRIPTION:1}。请用1至3个词回答。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>请为一个名为 {PREVIOUSCONV: 0} 的派系生成一个海军前缀。您的回复只能是前缀本身。您的回复应该是 2 或 3 个简体中文字形，而不是完整的单词。例如"''女王舰''''或"''美国舰''''或"''银河船''''</Text>
+            <Text>根据{PREVIOUSCONV:0}的上下文，为飞船提供一个简洁且有意义的汉字或两个字作为呼号。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
