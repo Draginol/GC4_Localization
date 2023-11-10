@@ -11,9 +11,90 @@
     <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartOfGame</InternalName>
-        
         <FlavorTextOption>
-            <Text>Welcome to Galactic Civilizations IV.  Today we will be reviewing the first steps humanity took after achieving Faster-Than-Light travel. Once United Earth decided to begin colonizing other planets, it created an organization called the Terran Alliance which would oversee the endeavor.  Its first mission was to explore space to scout for potential colonization candidates. [BR][BR]Exploring and knowing the galaxy is the first step to expanding the Alliance's [HS=HS_ZoneOfControl]Zone of Control[/HS]. Probes are the best way to explore the universe. They have unrestricted [HS=HS_ShipRange]Range[/HS] and can move quickly.[BR][BR][I]Your mission reports will appear on the LEFT side of the screen as orange icons. LEFT click on one to review.[/I][BR][BR]A deep space Probe has recently been launched near Earth's orbit. Select that Probe using the LEFT Mouse Button and give it orders to [HS=HS_ShipMovement]Move[/HS] to start exploring. This can be done by selecting where the Probe should move to on the map with the RIGHT Mouse Button or selecting the [ICON=AutoExplore_Icon] [HS=HS_AutoExplore]Auto-Explore[/HS] mode on the Probe's interface. A [HS=HS_Months]Month[/HS] can only be finished once all ships and fleets have used all their moves or been put on Standby.[BR][BR]There's been reports of unusual signals. Their source and meaning are too faint to discern, but it's believed to be another Civilization. Use the Probe to find them.[BR][BR]New Objective: Locate the Other Civilization</Text>
+            <Text>Welcome to the Alliance, Commander! The galaxy awaits.[BR][BR]The Alliance has provided a Probe in Earth's orbit so we can start exploring the [HS=HS_Sector]Sector[/HS]. Select that Probe using the LEFT Mouse Button and give orders to [HS=HS_ShipMovement]Move[/HS] by setting a destination to a specific [HS=HS_Tile]Tile[/HS] with the RIGHT Mouse Button.[BR][BR]There's been reports of unusual signals. Their source and meaning are too faint to discern, but it's believed to be another Civilization. Use the Probe to find them.[BR][BR]New Objective: Explore the Galaxy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedProbe</InternalName>
+        <FlavorTextOption>
+            <Text>Probe selected! The ship is ready to receive orders. Directing ships around the galaxy is vital to success. Give the Probe its first order to [HS=HS_ShipMovement]Move[/HS].[BR][BR]With the Probe selected, set a destination by clicking the RIGHT Mouse Button with the mouse over an unoccupied space. The Probe will then utilize the most direct route to that location by going from one [HS=HS_Tile]Tile[/HS] to another.[BR][BR]If you do not see the Grid, you can set Grid visibility in the Options Menu under Interface. You can also cycle through Grid visibility by pressing the G key.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteProbeMove</InternalName>
+        <FlavorTextOption>
+            <Text>Success![BR][BR]While exploring the [HS=HS_Sector]Sector[/HS], keep in mind all ships are limited to how far they can move in one [HS=HS_Months]Turn[/HS]. All Ships have a set amount of [ICON=Moves_Icon] [HS=HS_Moves]Moves[/HS] that represents how many [HS=HS_Tile]Tiles[/HS] they can traverse in one turn.[BR][BR]If you give an order that is further than a ship can move in a single [HS=HS_Months]Turn[/HS], it will continue to follow those orders over the number of [HS=HS_Months]Turns[/HS] necessary to reach the set location.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>Commander, The next thing that needs your attention is ensuring the [HS=HS_ResearchCenter]Research Center[/HS] has an active goal.[BR][BR]While there are multiple choices, focusing on [HS=HS_Tech]Techs[/HS] that enhance our exploration abilities such as Survey Missions is advised. Access the Research Center by selecting the Research Bar with the LEFT Mouse Button.[BR][BR]New Objective: Research Survey Missions</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenResearchScreenFirstTime</InternalName>
+        <FlavorTextOption>
+            <Text>Welcome to the [HS=HS_ResearchCenter]Research Center[/HS]. This is where you direct research efforts to unlock new [HS=HS_Tech]Techs[/HS]. Completing [HS=HS_Tech]Techs[/HS] is how you gain access to new ships, buildings, management elements, and more.[BR][BR]The screen has three sections—the Advisor Suggestions in the middle, the current [HS=HS_Tech]Tech[/HS] being researched is at the bottom and all [HS=HS_Tech]Techs[/HS] that can be researched listed in the panel on the right.[BR][BR]Selecting a [HS=HS_Tech]Tech[/HS] with the LEFT Mouse Button will set it as the current research target. Try setting a research target now. It's advised to start with Survey Missions.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnSetFirstResearchTarget</InternalName>
+        <FlavorTextOption>
+            <Text>Research target set![BR][BR]All [HS=HS_Tech]Techs[/HS] require an amount of [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS]. Every [HS=HS_Months]Turn[/HS] a set amount of [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] is generated and applied to the target [HS=HS_Tech]Tech[/HS].[BR][BR]Primarily, this concerns you regarding how long it will take to complete research. You can see the number of [HS=HS_Months]Turns[/HS] a [HS=HS_Tech]Tech[/HS] will take in its listing. The number of remaining [HS=HS_Months]Turns[/HS] is listed on the Research Bar.[BR][BR]Ways to increase the amount of [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] generated per [HS=HS_Months]Turn[/HS] will be covered as the Alliance expands.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>Research into Survey Missions complete, we've gained a [HS=HS_SurveyShip]Survey Ship[/HS].[BR][BR][HS=HS_SurveyShip]Survey Ships[/HS] will prove vital to exploring the galaxy. [HS=HS_SurveyShip]Survey Ships[/HS] have the module necessary to investigate [HS=HS_Anomaly]Anomalies[/HS].[BR][BR]An [HS=HS_Anomaly]Anomaly[/HS] is an object in space that's unclear, abandoned, or obtuse. Uncovering an [HS=HS_Anomaly]Anomaly[/HS] can prove beneficial but can also be dangerous. Survey an [HS=HS_Anomaly]Anomaly[/HS] using the new [HS=HS_SurveyShip]Survey Ship[/HS].[BR][BR]New Objective: Scan an Anomaly</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShipsOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>Research into Survey Missions complete, we've gained a [HS=HS_SurveyShip]Survey Ship[/HS].[BR][BR][HS=HS_SurveyShip]Survey Ships[/HS] will prove vital to exploring the galaxy. [HS=HS_SurveyShip]Survey Ships[/HS] have the module necessary to investigate [HS=HS_Anomaly]Anomalies[/HS].[BR][BR]An [HS=HS_Anomaly]Anomaly[/HS] is an object in space that's unclear, abandoned, or obtuse. Uncovering an [HS=HS_Anomaly]Anomaly[/HS] can prove beneficial but can also be dangerous. Survey an [HS=HS_Anomaly]Anomaly[/HS] using the new [HS=HS_SurveyShip]Survey Ship[/HS].[BR][BR]Completed Objective: Research Survey Missions[BR]New Objective: Scan an Anomaly</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>It's the start of a new [HS=HS_Months]Turn[/HS]. Another duty often requiring your attention is managing our [HS=HS_CoreWorld]Core Worlds[/HS]. A [HS=HS_CoreWorld]Core World[/HS] is any planet with a [HS=HS_Leaders]Leader[/HS] in charge. Right now, that's just our Homeworld, Earth. As the Alliance expands, we'll need to talk about [HS=HS_Leaders]Leaders[/HS] more and how to establish a  [HS=HS_CoreWorld]Core World[/HS], but for now, let's focus on Earth.[BR][BR]Access the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management Window[/HS] by selecting Earth with the LEFT Mouse Button and then pressing the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management[/HS] button.[BR][BR]New Objective: Build 2 Planetary Improvements</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>On this screen, you can see everything relevant to the planet. Right now, we're concerned with planning Improvements. Improvements can have several beneficial effects; the most common is how they affect Planetary Output. [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS], [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS], [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS], [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS], and [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS] all have their own impact on the Alliance. Improving the Output will have beneficial effects.[BR][BR]Try placing the Capital City Improvement for Earth on an open tile. You can do this by holding the LEFT Mouse Button on a unique Improvement from the right-hand panel and dragging it to a tile before releasing the LEFT Mouse Button.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_PlacedFirstPlanetaryImprovement</InternalName>
+        <FlavorTextOption>
+            <Text>Placement confirmed, Commander. As you place additional Improvements and Districts, it's important to know about [HS=HS_Adjacency]Adjacency Bonuses[/HS]. All Improvements and Districts have specific effects based on their level. You can increase the level by building something with an Adjacency bonus that applies to the bonuses an Improvement provides.[BR][BR]Another way to get more from your Improvements and increase their level is to build on top of Tiles with an existing benefit. Building similar structures close together on tiles that match their benefit will often yield the best results.[BR][BR]You can plan ahead by placing the plans for several Improvements or Districts at a time. The order construction will be complete is visible in the Build Queue, which you can rearrange as needed.[BR][BR]Plan some Districts by clicking on a tile with the LEFT Mouse Button and then selecting a District from the list of available options.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedPlanetaryImprovements</InternalName>
+        <FlavorTextOption>
+            <Text>Colonies report that another Planetary Improvement has been completed. It may only be a start, but every completed Improvement increases the Alliance's proficiency. We should remember to celebrate the small victories sometimes.[BR][BR]You'll need to continue to manage the [HS=HS_CoreWorld]Core Worlds[/HS]. If you don't like the location of an Improvement or District, you can use the Deconstruct order to clear the tile. Select the tile and then select the Destroy Improvement option.[BR][BR]Completed Objective: Build 2 Planetary Improvements</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnCompletedExplore</InternalName>
+        <FlavorTextOption>
+            <Text>Commander, having made contact with the Drengin, we can confirm they're the source of the mysterious signal.[BR][BR]We've no additional information on them. It's advisable to approach them carefully and keep diplomatic relations positive. We've had enough problems with the Pirates around this [HS=HS_Sector]Sector[/HS].[BR][BR]Even if we're not making it an active objective, we should continue to explore to help complete our other objectives.[BR][BR]Completed Objective: Explore the Sector</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedFirstTurnActions</InternalName>
+        <FlavorTextOption>
+            <Text>Commander, you can end your turn once you've addressed all outstanding issues.[BR][BR]There are only so many things that can be done in a Month, the measure of a [HS=HS_Months]Turn[/HS]. When all issues that need attention have been acknowledged or addressed, you can pass the [HS=HS_Months]Turn[/HS] and progress to the next month to start a new  [HS=HS_Months]Turn[/HS].[BR][BR]You can Pass the [HS=HS_Months]Turn[/HS] by pressing the Turn Button or by pressing the TAB key.[BR][BR]When you're ready, Pass the turn; there will be plenty more to address next [HS=HS_Months]Turn[/HS].</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!---->
@@ -24,9 +105,21 @@
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_SelectSurveyShip</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]Survey Ship[/HS] selected and ready for orders. Directing a [HS=HS_SurveyShip]Survey Ship[/HS] to [HS=HS_SurveyOrder]Survey[/HS] an [HS=HS_Anomaly]Anomaly[/HS] is much like ordering the ship to [HS=HS_ShipMovement]Move Order[/HS].[BR][BR]With the [HS=HS_SurveyShip]Survey Ship[/HS] selected, select an [HS=HS_Anomaly]Anomaly[/HS] to [HS=HS_SurveyOrder]Survey[/HS] by selecting it with the RIGHT Mouse Button. Doing so will set the [HS=HS_Anomaly]Anomaly[/HS] as the ship's target. The [HS=HS_SurveyShip]Survey Ship[/HS] will then move to the  [HS=HS_Anomaly]Anomaly[/HS] and, once at the destination, begin the [HS=HS_SurveyOrder]Survey[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartedFirstSurvey</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]Survey Ship[/HS] reports reaching its destination. The [HS=HS_SurveyShip]Survey Ship[/HS] will now begin to [HS=HS_SurveyOrder]Survey[/HS] the target [HS=HS_Anomaly]Anomaly[/HS].[BR][BR][HS=HS_SurveyOrder]Surveying[/HS] takes several [HS=HS_Months]Turns[/HS] to complete. If the [HS=HS_SurveyShip]Survey Ship[/HS] is interrupted by being given another order, they will lose progress in uncovering the [HS=HS_Anomaly]Anomaly[/HS].[BR][BR]There's more to manage while the [HS=HS_SurveyShip]Survey Ship[/HS] works. If you want to check the [HS=HS_SurveyShip]Survey Ships[/HS] progress, select the ship; the number of [HS=HS_Months]Turns[/HS] remaining will be detailed on the selected panel. </Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>Tutorial_SurveyedFirstAnomaly</InternalName>
         <FlavorTextOption>
-            <Text>Success![BR][BR]The [HS=HS_SurveyShip]Survey Ship[/HS] has finished [HS=HS_SurveyOrder]Surveying[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. Now, it's time to deal with whatever was uncovered.[BR][BR]Exploring the Galaxy is only the first step. Expanding the Alliance's influence will require colonizing new worlds. Not all planets are considered colonizable. Planets have a [HS=HS_PlanetClass]Planet Class[/HS], rating how large, resource-rich, and habitable a planet is. Anything rated higher than 0 is colonizable. Planets with a [HS=HS_PlanetClass]Planet Class[/HS] of 0 are considered a [HS=HS_DeadWorld]Dead World[/HS].[BR][BR][HS=HS_Colinizing]Colonized[/HS] planets provide resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. The Alliance's only [HS=HS_CoreWorld]Core World[/HS] is the Home World, Earth.[BR][BR]Utilize the Colony Ship provided by the Alliance to [HS=HS_ColonizeOrder]Colonize[/HS] a planet. Mars has always been the closest viable neighbor. It's advisable to start there. Remember to keep searching the universe for [HS=HS_Anomaly]Anomalies[/HS] to scan; they'll continue to benefit and expand our understanding of the galaxy around us.[BR][BR]Completed Objective: Scan an Anomaly[BR]New Objective: Colonize a Planet[BR]New Objective: Scan 5 Anomalies</Text>
+            <Text>The [HS=HS_SurveyShip]Survey Ship[/HS] has finished [HS=HS_SurveyOrder]Surveying[/HS] an [HS=HS_Anomaly]Anomaly[/HS]. Now, it's time to deal with whatever was uncovered. Not every [HS=HS_Anomaly]Anomaly[/HS] will be safe or purely beneficial, but the risk is worth the reward. [BR][BR][HS=HS_SurveyShip]Survey Ships[/HS] can be set to work automatically. To have a [HS=HS_SurveyShip]Survey Ship[/HS] explore and uncover [HS=HS_Anomaly]Anomalies[/HS] without constant direction, use the [ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]Auto-Survey[/HS] mode. Toggle [ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]Auto-Survey[/HS] mode by selecting the ship and pressing the [ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]Auto-Survey[/HS] button beside the selected panel.[BR][BR]Completed Objective: Scan an Anomaly[BR]New Objective: Scan 5 Anomalies</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -39,19 +132,67 @@
     <FlavorTextDef>
         <InternalName>Tutorial_StartStarbaseObjective</InternalName>
         <FlavorTextOption>
-            <Text>There are other ways along with [HS=HS_Colinizing]Colonized[/HS] planets to enhance Core Worlds.[BR][BR][ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic Starbases[/HS] can be built near a [HS=HS_CoreWorld]Core World[/HS] to improve the [HS=HS_CoreWorld]Core World's[/HS] economy. Constructing a [HS=HS_Starbase]Starbase[/HS] starts with producing a [HS=HS_Constructor]Constructor[/HS] from a [HS=HS_Shipyard]Shipyard[/HS]. Once built, [HS=HS_Constructor]Constructors[/HS] can be converted into [HS=HS_Starbase]Starbases[/HS] with the [HS=HS_ConstructStarbase]Construct Starbase[/HS] command.[BR][BR]New Objective: Build an Economic Starbase</Text>
+            <Text>Colonies are not the only way to gain resources or expand the Alliance's [HS=HS_ZoneOfControl]Zone of Control[/HS]. With the proper [HS=HS_Tech]Tech[/HS] we can build [HS=HS_Starbase]Starbases[/HS].[BR][BR][HS=HS_Starbase]Starbases[/HS] come in four forms, each having a different specialization. The four types of [HS=HS_Starbase]Starbase[/HS] are: [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military[/HS], [ICON=Icon_MiningStarbase] [HS=HS_MiningStarbase]Mining[/HS], [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic[/HS], and [ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]Communication[/HS].[BR][BR]First, we need to research the Starbases [HS=HS_Tech]Tech[/HS].[BR][BR]New Objective: Research Starbases</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartAsteroidMiningObjective</InternalName>
+        <FlavorTextOption>
+            <Text>As the Alliance expands, it's important to increase the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] value of [HS=HS_CoreWorld]Core Worlds[/HS]. Building Manufacturing Districts on [HS=HS_CoreWorld]Core Worlds[/HS] is one way to increase the value, but that often causes an increase in [HS=HS_Pollution]Pollution[/HS].[BR][BR]Increasing the [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Mineral[/HS] input to a planet will also increase [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS]. Space is full of floating rocks that could be mined for [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS]. Unlocking the ability to mine asteroids would allow the Alliance to increase the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] of [HS=HS_CoreWorld]Core Worlds[/HS] without increasing  [HS=HS_Pollution]Pollution[/HS].[BR][BR]New Objective: Research Asteroid Mining</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>Through Research, the Asteroid Mining [HS=HS_HS_Tech]Tech[/HS] has been unlocked. This [HS=HS_HS_Tech]Tech[/HS] allows for the construction of ships that can be used to set up mining operations on asteroids across the galaxy. Asteroids provide additional [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS] to the nearest [HS=HS_CoreWorld]Core World[/HS] to improve [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS].[BR][BR]To start mining Asteroids, select an Asteroid Miner with the LEFT Mouse Button. Then complete a [HS=HS_ShipMovement]Move Command[/HS] by RIGHT Clicking on an Asteroid. When the Asteroid Miner reaches the destination, it will set up an Asteroid Mine across all Asteroids in the Asteroid Belt.[BR][BR]New Objective: Mine an Asteroid</Text>
+            <Text>The Alliance has mastered the Asteroid Mining [HS=HS_Tech]Tech[/HS]. Asteroid Miners are now available to set up mining operations.[BR][BR]An asteroid mine increases the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] of a [HS=HS_CoreWorld]Core World[/HS] by providing [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS] input. An asteroid mine can only support a single [HS=HS_CoreWorld]Core World[/HS].[BR][BR]To start mining asteroids, [HS=HS_ShipMovement]Move[/HS] an Asteroid Miner to a belt of asteroids. The Asteroid Miner will set up a mine when it reaches the belt.[BR][BR]New Objective: Mine an Asteroid</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMiningOnObjective</InternalName>
         <FlavorTextOption>
-            <Text>Through Research, the Asteroid Mining [HS=HS_HS_Tech]Tech[/HS] has been unlocked. This [HS=HS_HS_Tech]Tech[/HS] allows for the construction of ships that can be used to set up mining operations on asteroids across the galaxy. Asteroids provide additional [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS] to the nearest [HS=HS_CoreWorld]Core World[/HS] to improve [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS].[BR][BR]To start mining Asteroids, select an Asteroid Miner with the LEFT Mouse Button. Then complete a [HS=HS_ShipMovement]Move Command[/HS] by RIGHT Clicking on an Asteroid. When the Asteroid Miner reaches the destination, it will set up an Asteroid Mine across all Asteroids in the Asteroid Belt.[BR][BR]Completed Objective: Research Asteroid Mining[BR]New Objective: Mine an Asteroid</Text>
+            <Text>The Alliance has mastered the Asteroid Mining [HS=HS_Tech]Tech[/HS]. Asteroid Miners are now available to set up mining operations.[BR][BR]An asteroid mine increases the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] of a [HS=HS_CoreWorld]Core World[/HS] by providing [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS] input. An asteroid mine can only support a single [HS=HS_CoreWorld]Core World[/HS].[BR][BR]To start mining asteroids, [HS=HS_ShipMovement]Move[/HS] an Asteroid Miner to a belt of asteroids. The Asteroid Miner will set up a mine when it reaches the belt.[BR][BR]Completed Objective: Research Asteroid Mining[BR]New Objective: Mine an Asteroid</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTechOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>With the research into the Starbases [HS=HS_Tech]Tech[/HS] complete, we can build [HS=HS_Constructor]Constructors[/HS] at a [HS=HS_Shipyard]Shipyard[/HS]. [HS=HS_Constructor]Constructors[/HS] are used to build [HS=HS_Starbase]Starbases[/HS]. There are several types of [HS=HS_Starbase]Starbase[/HS] to take advantage of. Try building a few [HS=HS_Constructor]Constructors[/HS] at the [HS=HS_Shipyard]Shipyard[/HS] and use them to build [HS=HS_Starbase]Starbases[/HS].[BR][BR]Completed Objective: Research Starbases[BR]New Objective: Build an Economic Starbase[BR]New Objective: Build a Military Starbase[BR]New Objective: Build a Mining Starbase[BR]New Objective: Build a Communications Starbase</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTech</InternalName>
+        <FlavorTextOption>
+            <Text>With the research into the Starbases [HS=HS_Tech]Tech[/HS] complete, we can build [HS=HS_Constructor]Constructors[/HS] at a [HS=HS_Shipyard]Shipyard[/HS]. [HS=HS_Constructor]Constructors[/HS] are used to build [HS=HS_Starbase]Starbases[/HS]. There are several types of [HS=HS_Starbase]Starbase[/HS] to take advantage of. Try building a few [HS=HS_Constructor]Constructors[/HS] at the [HS=HS_Shipyard]Shipyard[/HS] and use them to build [HS=HS_Starbase]Starbases[/HS].[BR][BR]New Objective: Build an Economic Starbase[BR]New Objective: Build a Military Starbase[BR]New Objective: Build a Mining Starbase[BR]New Objective: Build a Communications Starbase</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedConstructor</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Constructor]Constructor[/HS] selected and ready for orders. Positioning for [HS=HS_Constructor]Constructors[/HS] is critical. [HS=HS_Constructor]Constructors[/HS] are consumed when a [HS=HS_Starbase]Starbases[/HS] is built.[BR][BR]To build a [HS=HS_Starbase]Starbase[/HS], press the [ICON=Order_ConstructStarbase] [HS=HS_ConstructStarbase]Construct Starbase[/HS] button by the selected panel. The [HS=HS_Starbase]Starbase[/HS] will be built at the [HS=HS_Constructor]Constructors[/HS] current position.[BR][BR]Keep in mind that   [HS=HS_EconomicsStarbase]Economic Starbases[/HS] can only be built near [HS=HS_CoreWorld]Core Worlds[/HS] and [HS=HS_MiningStarbase]Mining Starbases[/HS] can only be built near unclaimed [HS=HS_StrategicResource]Strategic Resources[/HS]. [HS=HS_Starbase]Starbases[/HS] can not be built too close to another [HS=HS_Starbase]Starbase[/HS], and they can not be built in another Civilizaton's [HS=HS_ZoneOfControl]Zone of Control[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltEconomicStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>First [HS=HS_EconomicsStarbase]Economic Starbase[/HS] built. It will increase the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] and [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS] of Colonies within its area of influence.[BR][BR]Upgrades for [HS=HS_EconomicsStarbase]Economic Starbases[/HS] focus on further increasing the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] or [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS] of nearby Colonies. [HS=HS_EconomicsStarbase]Economic Starbases[/HS] are a great way to speed up the rate at which construction is completed without increasing [HS=HS_Pollution]Pollution[/HS]. To get a list of affected Colonies, press the Manage button by the selected panel for a [HS=HS_Starbase]Starbase[/HS].[BR][BR]Completed Objective: Build an Economic Starbase</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMilitaryStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>First [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military Starbase[/HS] built. It will increase the Attack and Defense of all ships and fleets within its area of effect. These [ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military Starbases[/HS] also tend to get more defensive and weapon-focused upgrades than other [HS=HS_Starbase]Starbases[/HS].[BR][BR][ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]Military Starbases[/HS] are great when built in areas where conflict regularly occurs and around Colonies to help fend off assaults. To get a list of affected Colonies, press the Manage button by the selected panel for a [HS=HS_Starbase]Starbase[/HS].[BR][BR]Completed Objective: Build a Military Starbase</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMiningStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>First [HS=HS_MiningStarbase]Mining Starbase[/HS] built. Any unclaimed [HS=HS_StrategicResource]Strategic Resources[/HS] within the area of effect will be claimed by the new [HS=HS_Starbase]Starbase[/HS]. Each turn, the [HS=HS_Starbase]Starbase[/HS] will add an amount of the mined [HS=HS_StrategicResource]Strategic Resources[/HS] to the Alliance's available resources. The amount mined can be increased by researching and applying upgrades to [HS=HS_MiningStarbase]Mining Starbases[/HS][BR][BR][HS=HS_StrategicResource]Strategic Resources[/HS] are important for constructing certain Planetary Improvements and Ships along with making certain upgrades.[BR][BR]Completed Objective: Build Mining Starbase</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltCommunicationsStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>First [ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]Communications Starbase[/HS] built. The [HS=HS_Starbase]Starbase[/HS] will begin to increase [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS]. [ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]Communications Starbases[/HS] are good for trying to lay early claim to an area or attempt to resist the spread of another Civilization's [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS] to keep their [HS=HS_ZoneOfControl]Zone of Control[/HS] under control.[BR][BR] If a Colony ends up in another Civilization's [HS=HS_ZoneOfControl]Zone of Control[/HS], it becomes at risk of being annexed. Each turn spent in a foreign [HS=HS_ZoneOfControl]Zone of Control[/HS] reduces control over a Colony until it is annexed or the Colony brought back into your [HS=HS_ZoneOfControl]Zone of Control[/HS].[BR][BR]Completed Objective: Build a Communications Starbase</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -63,50 +204,120 @@
     <FlavorTextDef>
         <InternalName>Tutorial_CompletedStarbaseStartAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>With the [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic Starbase[/HS] complete the nearby [HS=HS_CoreWorld]Core World[/HS] will gain a boost to its economy. The [HS=HS_EconomicsStarbase]Economic Starbase[/HS] is only one of the [HS=HS_Starbase]Starbase[/HS] types that can be built. Each type has its own purpose worth taking time to understand.[BR][BR]Another method to benefit [HS=HS_CoreWorld]Core World[/HS] is through Asteroid Mining. This requires the Asteroid Mining  [HS=HS_HS_Tech]Tech[/HS], available in the [HS=HS_ResearchCenter]Research Center[/HS].[BR][BR]Completed Objective: Build an Economic Starbase[BR]New Objective: Research Asteroid Mining</Text>
+            <Text>With the [ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]Economic Starbase[/HS] complete the nearby [HS=HS_CoreWorld]Core World[/HS] will gain a boost to its economy. The [HS=HS_EconomicsStarbase]Economic Starbase[/HS] is only one of the [HS=HS_Starbase]Starbase[/HS] types that can be built. Each type has its own purpose worth taking time to understand.[BR][BR]Another method to benefit [HS=HS_CoreWorld]Core World[/HS] is through Asteroid Mining. This requires the Asteroid Mining  [HS=HS_Tech]Tech[/HS], available in the [HS=HS_ResearchCenter]Research Center[/HS].[BR][BR]Completed Objective: Build an Economic Starbase[BR]New Objective: Research Asteroid Mining</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MinedAnAsteroid</InternalName>
         <FlavorTextOption>
-            <Text>Success![BR][BR]The Asteroid Miner has been converted into an asteroid mining station. Asteroid Miners are only usable once, with the ship being consumed to set up the mining station. When a mining station is developed, it claims the entire Asteroid Belt and begins to send resources to the nearest [HS=HS_CoreWorld]Core World[/HS].[BR][BR]Completed Objective: Mine an Asteroid</Text>
+            <Text>Mine established. Asteroid Miners are consumed to set up the mining station. When a mining station is developed, it claims the entire Asteroid Belt and begins to send resources to the nearest [HS=HS_CoreWorld]Core World[/HS].[BR][BR]Increasing the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] of a [HS=HS_CoreWorld]Core World[/HS] increases how quickly improvements are completed and ships constructed. A [HS=HS_CoreWorld]Core World[/HS] has several types of input like [HS=HS_Minerals]Minerals[/HS], each input representing a type of resource available to the planet that positively impacts the Planetary Output.[BR][BR]Completed Objective: Mine an Asteroid</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!---->
     <FlavorTextDef>
+        <InternalName>Tutorial_GuideToShipyard</InternalName>
+        <FlavorTextOption>
+            <Text>Before you end your [HS=HS_Months]Turn[/HS], make sure the [HS=HS_Shipyard]Shipyard[/HS] is working on constructing a new ship.[BR][BR]A [HS=HS_Shipyard]Shipyard[/HS] can't be allowed to idle and must be working on something at the end of every [HS=HS_Months]Turn[/HS]. While all available options are valid, it'd be wise to construct additional Probes to speed up our exploration of the [HS=HS_Sector]Sector[/HS].[BR][BR]To start constructing a new Ship, access the [HS=HS_Shipyard]Shipyard[/HS] by selecting it and then pressing the [ICON=Menu_ShipyardManagement_Icon] Management button by the selection panel. [BR][BR]How many [HS=HS_Months] Turns [/HS] it takes to complete a ship or project is influenced by the [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] value on the [HS=HS_CoreWorld]Core World[/HS] the [HS=HS_Shipyard]Shipyard[/HS] orbits.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedShipyardScreen</InternalName>
+        <FlavorTextOption>
+            <Text>Welcome to the Shipyard Management Window. On this screen, you can add ships to the Build Queue. Each [HS=HS_Months]Turn[/HS] the [HS=HS_Shipyard]Shipyard[/HS] will add progress to the ship at the front of the queue until it is complete, at which point it will be spawned into the [HS=HS_Sector]Sector[/HS] next to the [HS=HS_Shipyard]Shipyard[/HS].[BR][BR]The number of [HS=HS_Months]Turns[/HS] remaining can be seen on the ship's card in the queue. How long a ship takes from the start is listed on its entry in the Available Projects panel on the side of the screen. Select a ship in the Available Projects and press the Build Ship button to add a Ship to the queue. You can also add ships by Double-Clicking on the ship.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ExplainCitizens</InternalName>
+        <FlavorTextOption>
+            <Text>Citizens are vital to helping a [HS=HS_CoreWorld]Core World[/HS] function effectively. Citizens have stats that help improve Planetary Output. To train a Citizen, select them with the LEFT Mouse Button and then select a job.[BR][BR]Citizens work better when kept happy. Check on their [ICON=Approval_Stat_Icon] [HS=HS_Approval]Approval[/HS] often. Hover the Mouse over their [ICON=Approval_Stat_Icon] [HS=HS_Approval]Approval[/HS] icon to get a breakdown of what is affecting them.[BR][BR]Colonies will produce new Citizens as long as [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS] is available and [HS=HS_Pollution]Pollution[/HS] isn't too high. You can see the projected number of [HS=HS_Months]Turns[/HS] based on the current state of the [HS=HS_CoreWorld]Core World[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartColonization</InternalName>
+        <FlavorTextOption>
+            <Text>Thanks to your efforts, the Alliance has made many notable advancements toward expanding across the [HS=HS_Sector]Sector[/HS]. To truly develop, we must start [HS=HS_Colinizing]Colonizing[/HS] new planets.[BR][BR]The research team believes we can create ships perfect for such an effort with the proper advancements. The Colonization [HS=HS_Tech]Tech[/HS] will unlock the ability to construct Colony Ships. Return to the [HS=HS_ResearchCenter]Research Center[/HS] to ensure that the [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] generated each [HS=HS_Months]Turn[/HS] goes toward Colonizing.[BR][BR]New Objective: Research Colonization</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonizationOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>We should start working to expand the Alliance's borders. The next step is constructing a Colony Ship at a [HS=HS_Shipyard]Shipyard[/HS].[BR][BR][HS=HS_Shipyard]Shipyards[/HS] can only be constructed from [HS=HS_CoreWorld]Core Worlds[/HS]. The speed at which a [HS=HS_Shipyard]Shipyard[/HS] can produce ships is influenced by the associated [HS=HS_CoreWorld]Core World's[/HS] [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS].[BR][BR]To start constructing a new Ship, access the [HS=HS_Shipyard]Shipyard[/HS] by selecting it and then pressing the [ICON=Menu_ShipyardManagement_Icon] Management button by the selection panel.[BR][BR]New Objective: Construct a Colony Ship</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonization</InternalName>
+        <FlavorTextOption>
+            <Text>We should start working to expand the Alliance's borders. The next step is constructing a Colony Ship at a [HS=HS_Shipyard]Shipyard[/HS].[BR][BR][HS=HS_Shipyard]Shipyards[/HS] can only be constructed from [HS=HS_CoreWorld]Core Worlds[/HS]. The speed at which a [HS=HS_Shipyard]Shipyard[/HS] can produce ships is influenced by the associated [HS=HS_CoreWorld]Core World's[/HS] [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS].[BR][BR]To start constructing a new Ship, access the [HS=HS_Shipyard]Shipyard[/HS] by selecting it and then pressing the [ICON=Menu_ShipyardManagement_Icon] Management button by the selection panel.[BR][BR]New Objective: Construct a Colony Ship</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ConstructedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>A Colony Ship is constructed but can only be deployed once a Citizen staffs it. A Colony must always have one Citizen. You cannot put a Citizen on a Colony Ship if they're the only working Citizen on the planet. When a Colony Ship is finished or attempts to leave the orbit, you will need to ensure there is a Citizen on it.[BR][BR]You can check on your Citizens and how quickly their number is increasing on the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management Window[/HS].[BR][BR]Completed Objective: Construct a Colony Ship[BR]New Objective: Colonize a Planet</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>Colony Ship selected and ready for orders. Directing a Colony Ship to [HS=HS_Colinizing]Colonize[/HS] a planet is much like giving any order. With a Colony Ship selected, select a planet to [HS=HS_Colinizing]Colonize[/HS] with the RIGHT Mouse Button.[BR][BR]The Colony Ship will then move toward the planet, and once at the destination, it will attempt to [HS=HS_Colinizing]Colonize[/HS] the targeted planet.[BR][BR]Not all Planets can be [HS=HS_Colinizing]Colonized[/HS]. A Planet must have a [HS=HS_PlanetClass]Class[/HS] of 1 or greater. You can check a Planet's [HS=HS_PlanetClass]Class[/HS] by hovering the Mouse over the planet.[BR][BR]Mars is a perfect candidate to [HS=HS_Colinizing]Colonize[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>One giant step for the Alliance.[BR][BR]The Alliance has [HS=HS_Colinizing]Colonized[/HS] its first world. Now that the Alliance has claimed a planet, it will provide additional resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. Selecting the planet will show the path of the output.[BR][BR]Resources such as [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS], [ICON=Stat_Technology_Icon] [HS=HS_Technology]Technology[/HS], and [ICON=Stat_Wealth_Icon] [HS=HS_Wealth]Wealth[/HS] are crucial to expanding and thriving. The more planets [HS=HS_Colinizing]Colonized[/HS], the better the [HS=HS_CoreWorld]Core Worlds[/HS] can perform and complete projects.[BR][BR]The next step to establishing a foothold will be to settle more planets and eventually set up another [HS=HS_CoreWorld]Core World[/HS].[BR][BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets</Text>
+            <Text>One giant step for the Alliance.[BR][BR]Now that the Alliance has proven it can [HS=HS_Colinizing]Colonize[/HS] new worlds, it's time to expand truly.[BR][BR]It will take an effort combining what we've managed to establish to construct new Colony Ships and [HS=HS_Colinizing]Colonize[/HS] more planets. The effort will be well worth it as more planets provide the Alliance with more resources.[BR][BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>One giant step for the Alliance.[BR][BR]The Alliance has [HS=HS_Colinizing]Colonized[/HS] its first world, one large enough to support a larger colony and become a [HS=HS_CoreWorld]Core World[/HS]. Many planets are too minor or lack the resources to justify making it a [HS=HS_CoreWorld]Core World[/HS]. So when a planet large enough is settled, it should be taken full advantage of.[BR][BR][HS=HS_CoreWorld]Core Worlds[/HS] can support a [HS=HS_Shipyard]Shipyard[/HS] and be improved, but that requires a [HS=HS_Leaders]Leader[/HS] to be assigned as a [HS=HS_Governor]Governor[/HS].[BR][BR]A [HS=HS_Leaders]Leader[/HS] can be assigned from the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management Window[/HS] available by selecting the planet.[BR][BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets[BR]New Objective: Appoint a Governor</Text>
+            <Text>One giant step for the Alliance.[BR][BR]The Alliance has [HS=HS_Colinizing]Colonized[/HS] its first world, one large enough to support a larger Colony and become a [HS=HS_CoreWorld]Core World[/HS]. Many planets are too minor or lack the resources to justify making it a [HS=HS_CoreWorld]Core World[/HS]. So when a planet large enough is settled, it should be taken full advantage of.[BR][BR][HS=HS_CoreWorld]Core Worlds[/HS] can support a [HS=HS_Shipyard]Shipyard[/HS] and be improved, but that requires a [HS=HS_Leaders]Leader[/HS] to be assigned as a [HS=HS_Governor]Governor[/HS].[BR][BR]A [HS=HS_Leaders]Leader[/HS] can be assigned from the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management Window[/HS] available by selecting the planet.[BR][BR]Completed Objective: Colonize a Planet[BR]New Objective: Colonize 8 Planets[BR]New Objective: Appoint a Governor</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>The Alliance has [HS=HS_Colinizing]Colonized[/HS] another planet. Planets that aren't a [HS=HS_CoreWorld]Core World[/HS] provide additional resources to the nearest [HS=HS_CoreWorld]Core World[/HS]. Selecting the planet will show the path of the output.[BR][BR]Resources such as  [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Minerals[/HS], [ICON=Stat_Technology_Icon] [HS=HS_Technology]Technology[/HS], and [ICON=Stat_Wealth_Icon] [HS=HS_Wealth]Wealth[/HS] are crucial to expanding and thriving. The more planets [HS=HS_Colinizing]Colonized[/HS], the better the [HS=HS_CoreWorld]Core Worlds[/HS] can perform and complete projects.</Text>
+            <Text>When choosing planets to [HS=HS_Colinizing]Colonize[/HS], hovering the Mouse over a planet can provide vital information. [BR][BR]First is [HS=HS_PlanetClass]Planet Class[/HS]; this represents the amount of space available for development on a planet. Any planet with a [HS=HS_PlanetClass]Planet Class[/HS] over 10 can be turned into a [HS=HS_CoreWorld]Core World[/HS], which vastly expands the Alliance's capabilities.[BR][BR]Another factor is the provided resources. All [HS=HS_Colinizing]Colonizable[/HS] planets send resources to the nearest [HS=HS_CoreWorld]Core World[/HS] as Planetary Input to increase the [HS=HS_CoreWorld]Core World's[/HS] Planetary Output.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>You've settled your first planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]![BR][BR]Many planets aren't large enough to allow colonies to expand. Planets too small to support a [HS=HS_Shipyard]Shipyard[/HS] are well-suited for supporting larger colonies. These smaller colonies don't require any additional leadership or management. [BR][BR]Due to their rarity, taking advantage of any planet resource-rich enough to justify larger colonies is advisable. To do so, a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS] to the planet. Once a [HS=HS_Governor]Governor[/HS] is appointed, a [HS=HS_Shipyard]Shipyard[/HS] can be built over the planet, and the planet can be developed to better utilize the resources.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be recruited from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. Recruited [HS=HS_Leaders]Leaders[/HS] can then be assigned to manage planets under the [HS=HS_GovernorsScreen]Governors Screen[/HS].[BR][BR]New Objective: Appoint a Governor</Text>
+            <Text>Commander, we've [HS=HS_Colinizing]Colonized[/HS] a planet with a [HS=HS_PlanetClass]Planet Class[/HS] high enough to establish a new [HS=HS_CoreWorld]Core World[/HS]. [HS=HS_CoreWorld]Core Worlds[/HS] can support a [HS=HS_Shipyard]Shipyard[/HS] and be developed to provide the Alliance with additional Planetary Output. More Planetary Output means more of the vital resources that keep the Alliance moving forward.[BR][BR]To establish a [HS=HS_CoreWorld]Core World[/HS], a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS]. [HS=HS_Leaders]Leaders[/HS] can be hired and assigned through the [HS=HS_LeaderMenu]Leaders Menu[/HS] or hired more directly by pressing the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management[/HS] button.[BR][BR]New Objective: Assign a Governor</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--Additional Information after Colonization-->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedThirdPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>Keeping an expanding civilization fed can be a challenge. While [HS=HS_Colinizing]Colonizing[/HS] new planets and building Improvements on our [HS=HS_CoreWorld]Core Worlds[/HS], it's best to keep in mind how much [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS] is being produced versus being consumed. You can check the current rate of production versus the current rate of consumption by hovering the Mouse over the [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS] stat on the top resource bar.[BR][BR] [HS=HS_Colinizing]Colonizing[/HS] planets with high [ICON=Stat_Fertility_Icon] [HS=HS_Farming]Farming[/HS] is one way to boost the amount of food produced from a [HS=HS_CoreWorld]Core World[/HS]. Another way is to construct Improvements on a [HS=HS_CoreWorld]Core World[/HS] that boosts the amount of [ICON=Stat_Food_Icon] [HS=HS_Food]Food[/HS] produced.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFourthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>A benefit to expanding to other planets is finding additional resources and space to improve [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS], which speeds up how quickly we unlock new [HS=HS_Tech]Techs[/HS].[BR][BR][ICON=Stat_Technology_Icon] [HS=HS_Technology]Technology[/HS] provided as Planetary Input by a [HS=HS_Colinizing]Colonized[/HS] planet increases [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] on a [HS=HS_CoreWorld]Core World[/HS]. In addition, Improvements can be built on [HS=HS_CoreWorld]Core World[/HS] to increase the [ICON=Stat_Research_Icon] [HS=HS_Research]Research[/HS] that planet provides.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFifthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Colinizing]Colonizing[/HS] new planets doesn't just provide resources, it expands the Alliance's [HS=HS_ZoneOfControl]Zone of Control[/HS]. The [HS=HS_ZoneOfControl]Zone of Control[/HS] represents sections of space that are considered part of a Civilization, essentially establishing a border.[BR][BR]There are specific actions, like building [HS=HS_Starbase]Starbases[/HS], that can not be done in another Civilization's [HS=HS_ZoneOfControl]Zone of Control[/HS]. Other actions, like Asteroid Mining, can only be done within the  [HS=HS_ZoneOfControl]Zone of Control[/HS].[BR][BR]The  [HS=HS_ZoneOfControl]Zone of Control[/HS] expands naturally over time based on the [ICON=Stat_Influence_Icon] [HS=HS_Influence]Influence[/HS] of [HS=HS_CoreWorld]Core Worlds[/HS].</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--NEEDS A COREWORLD-->
+    <FlavorTextDef>
         <InternalName>Tutorial_ColonizedCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>You've settled your first planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]![BR][BR]Many planets aren't large enough to allow colonies to expand. Planets too small to support a [HS=HS_Shipyard]Shipyard[/HS] are well-suited for supporting larger colonies. These smaller colonies don't require any additional leadership or management. [BR][BR]Due to their rarity, taking advantage of any planet resource-rich enough to justify larger colonies is advisable. To do so, a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS] to the planet. Once a [HS=HS_Governor]Governor[/HS] is appointed, a [HS=HS_Shipyard]Shipyard[/HS] can be built over the planet, and the planet can be developed to better utilize the resources.[BR][BR][HS=HS_Leaders]Leaders[/HS] can be recruited from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. Recruited [HS=HS_Leaders]Leaders[/HS] can then be assigned to manage planets under the [HS=HS_GovernorsScreen]Governors Screen[/HS].[BR][BR]Completed Objective: Colonize a Class 10 or Greater Planet[BR]New Objective: Appoint a Governor</Text>
+            <Text>Commander, we've [HS=HS_Colinizing]Colonized[/HS] a planet with a [HS=HS_PlanetClass]Planet Class[/HS] high enough to establish a new [HS=HS_CoreWorld]Core World[/HS]. [HS=HS_CoreWorld]Core Worlds[/HS] can support a [HS=HS_Shipyard]Shipyard[/HS] and be developed to provide the Alliance with additional Planetary Output. [BR][BR]To establish a [HS=HS_CoreWorld]Core World[/HS], a [HS=HS_Leaders]Leader[/HS] must be assigned as a [HS=HS_Governor]Governor[/HS]. [HS=HS_Leaders]Leaders[/HS] can be hired and assigned through the [HS=HS_LeaderMenu]Leaders Menu[/HS] or hired more directly by pressing the [ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]Planet Management[/HS] button.[BR][BR]Completed Objective: Colonize a Class 10 or Greater Planet[BR]New Objective: Assign a Governor</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizeTargetPlanets</InternalName>
         <FlavorTextOption>
-            <Text>The Terran Alliance alliance was charged with colonizing planets to secure humanity's foothold in space. None can contest the Alliance's competency with all the planets successfully [HS=HS_Colinizing]Colonized[/HS]. Take a moment to revel in this accomplishment.[BR][BR]Completed Objective: Colonize 8 Planets</Text>
+            <Text>The Terran Alliance has claimed many planets through [HS=HS_Colinizing]Colonization[/HS]. Our proficiency and capabilities continue to expand thanks to your efforts.[BR][BR]Completed Objective: Colonize 8 Planets</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -118,25 +329,57 @@
     <FlavorTextDef>
         <InternalName>Tutorial_ColonzieTargetWorldsNoCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>The Terran Alliance alliance was charged with colonizing planets to secure humanity's foothold in space. None can contest the Alliance's competency with all the planets successfully [HS=HS_Colinizing]Colonized[/HS]. Take a moment to revel in this accomplishment.[BR][BR]There is work yet to do. None of the [HS=HS_Colinizing]Colonized[/HS] planets have a high enough class to justify expansion. Continue searching for a Planet with a [HS=HS_PlanetClass]Planet Class[/HS] 10 or higher to [HS=HS_ColonizeOrder]Colonize[/HS] so that we can establish a new [HS=HS_CoreWorld]Core World[/HS].[BR][BR]Completed Objective: Colonize 8 Planets[BR]New Objective: Colonize a Class 10 or Greater Planet</Text>
+            <Text>The Terran Alliance has claimed many planets through [HS=HS_Colinizing]Colonization[/HS]. Our proficiency and capabilities continue to expand thanks to your efforts.[BR][BR]Through our efforts, though, we've yet to [HS=HS_Colinizing]Colonize[/HS] a planet large enough to establish a new [HS=HS_CoreWorld]Core World[/HS]. Establishing a [HS=HS_CoreWorld]Core World[/HS] is now a priority for the Alliance.[BR][BR]Completed Objective: Colonize 8 Planets[BR]New Objective: Colonize a Class 10 or Greater Planet</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>Commander, we've earned enough [HS=HS_CulturePoint]Culture Points[/HS] to unlock a Cultural Trait. Specific Planetary improvements allow us to produce [HS=HS_CulturePoint]Culture Points[/HS], such as the Capital City.[BR][BR]Every Civilization has an affinity toward certain [HS=HS_Ideology]Ideologies[/HS]. Affinities can change over time based on decisions made and actions taken.[BR][BR]The [ICON=Menu_CulturalProgression_Icon] button for the Cultural Progression Menu to spend [HS=HS_CulturePoint]Culture Points[/HS] is located on the action bar at the bottom of the screen.[BR][BR]New Objective: Unlock a Cultural Trait</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_OpenedCultureScreen</InternalName>
+        <FlavorTextOption>
+            <Text>You've accessed the Cultural Progression screen. This screen is where you can check through the various Ideology trees. To learn about a Cultural Trait, hover the Mouse over the Cultural Trait; the context card will give information on the effects of the Cultural Trait and the current [HS=HS_CulturePoint]Culture Points[/HS] cost.[BR][BR]If you have enough [HS=HS_CulturePoint]Culture Points[/HS], you can unlock a Cultural Trait to gain its benefits. With an Ideology selected, you can also see the Ideology Discount at the top of the screen, representing your affinity for that [HS=HS_Ideology]Ideology[/HS]. You can earn more [HS=HS_CulturePoint]Culture Points[/HS] by constructing certain Planetary Improvements.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>As a Civilization grows, it takes more [HS=HS_CulturePoint]Culture Points[/HS] to unlock Cultural Traits. Focusing on a specific [HS=HS_Ideology]Ideology[/HS] and increasing affinity toward that [HS=HS_Ideology]Ideology[/HS] is an excellent way to bring the [HS=HS_CulturePoint]Culture Point[/HS] cost down and unlock the more beneficial traits quicker.[BR][BR]You can check the Cultural Progression screen to see how many [HS=HS_CulturePoint]Culture Points[/HS] are available, the current Ideology Discount of an [HS=HS_Ideology]Ideology[/HS], how many [HS=HS_CulturePoint]Culture Points[/HS] a new Cultural Trait costs or confirm the benefits of previously unlocked Cultural Traits.[BR][BR]Completed Objective: Unlock a Cultural Trait</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
         <InternalName>Tutorial_InstalledGovernor</InternalName>
         <FlavorTextOption>
-            <Text>You've successfully assigned a [HS=HS_Governor]Governor[/HS]! Their presence turns the Colony into a [HS=HS_CoreWorld]Core World[/HS] where a [HS=HS_Shipyard]Shipyard[/HS] can be built and the planet developed.[BR][BR]There is some bad news. Reports have confirmed the presence of Pirates in the Sector. While they're allowed a foothold in space and a place to construct ships, they are a threat. We must destroy their [HS=HS_Shipyard]Shipyard[/HS] to secure our Colonies' safety.[BR][BR]Completed Objective: Appoint a Governor[BR]New Objective: Destroy a Pirate Shipyard</Text>
+            <Text>You've successfully assigned a [HS=HS_Governor]Governor[/HS]! Their presence turns the Colony into a [HS=HS_CoreWorld]Core World[/HS] where a [HS=HS_Shipyard]Shipyard[/HS] can be built and the planet developed.[BR][BR]New [HS=HS_CoreWorld]Core Worlds[/HS] take time to develop as they often start with low Planetary Output and few resources. Utilizing [HS=HS_EconomicsStarbase]Economic Starbases[/HS], [HS=HS_Colinizing]Colonizing[/HS] nearby planets, and mining asteroids are all ways to increase [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Manufacturing[/HS] and speed up development. You can also expend [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] to [HS=HS_Rush]Rush[/HS] construction.[BR][BR]Completed Objective: Appoint a Governor</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_InformPlayerUnlockedLeaderScreen</InternalName>
         <FlavorTextOption>
-            <Text>No one can manage the entire Terran Alliance alone, no matter how competent. With the appropriate infrastructure, [HS=HS_Leaders]Leaders[/HS] can now be recruited. Every applicant has strengths and weaknesses, making them more or less suitable for any role.[BR][BR][HS=HS_Leaders]Leaders[/HS] can serve as [HS=HS_Governor]Governors[/HS] and manage a [HS=HS_CoreWorld]Core World[/HS], become [HS=HS_Diplomat]Diplomats[/HS] (if contact is made with other groups), and, importantly, they can serve as [HS=HS_Minister]Ministers[/HS]. [HS=HS_Minister]Ministers[/HS] focus on benefiting the entire civilization. Each ministry office has an area of focus and gives a benefit based on a Leader's specific skill.[BR][BR]Recruit new [HS=HS_Leaders]Leaders[/HS] from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_RecruitmentScreen]Recruitment Screen[/HS]. [HS=HS_Leaders]Leaders[/HS] can then be assigned to new roles under the [HS=HS_MinistersScreen]Ministers Screen[/HS].[BR][BR]New Objective: Appoint 3 Ministers</Text>
+            <Text>Commander, we now have access to [HS=HS_Leaders]Leaders[/HS]. Every applicant has strengths and weaknesses, making them more or less suitable for any role.[BR][BR][HS=HS_Leaders]Leaders[/HS] can serve in several positions, but before assigning them, they need to be hired. To hire [HS=HS_Leaders]Leaders[/HS] open the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS]. The button for the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] is located on the action bar at the bottom of the screen.[BR][BR]New Objective: Hire 2 Leaders</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedLeaderScreen</InternalName>
+        <FlavorTextOption>
+            <Text>Here in the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS] are multiple tabs. To hire new [HS=HS_Leaders]Leaders[/HS] focus on the [HS=HS_RecruitmentScreen]Recruitment[/HS] tab. Available candidates will be listed on the screen here with how many [HS=HS_Months]Turns[/HS] they will be available for recruitment and their relevant stats. Any role a [HS=HS_Leaders]Leader[/HS] takes will benefit from specific stats, but no role requires a [HS=HS_Leaders]Leader[/HS] to be proficient in all skills. So a low stat or two does not mean a [HS=HS_Leaders]Leader[/HS] will be ineffective.[BR][BR]To Hire a [HS=HS_Leaders]Leader[/HS] you will need to have enough [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS]. [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] are gained over time based on the [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Income[/HS] of all [HS=HS_CoreWorld]Core Worlds[/HS]. To hire a [HS=HS_Leaders]Leader[/HS], double-click on them with the LEFT Mouse Button.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_HiredTargetLeaders</InternalName>
+        <FlavorTextOption>
+            <Text>Leaders hired and ready for duty. There are many ways a [HS=HS_Leaders]Leader[/HS] can serve, but a great way to benefit the entire Alliance is to assign [HS=HS_Leaders]Leaders[/HS] as [HS=HS_Minister]Ministers[/HS].[BR][BR][HS=HS_Minister]Ministers[/HS] oversee specific aspects of a Civilization and provide a benefit based on a specific stat. See available offices in the [HS=HS_LeaderMenu]Leaders Menu[/HS] under the [HS=HS_MinistersScreen]Ministers[/HS] tab. Hovering the Mouse over a [HS=HS_Minister]Ministers[/HS] Office will provide additional information about the Office. Assign [HS=HS_Minister]Ministers[/HS] by dragging and dropping [HS=HS_Leaders]Leaders[/HS] with the LEFT Mouse Button.[BR][BR]Completed Objective: Hire 2 Leaders[BR]New Objective: Appoint 3 Ministers</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CabinetFilled</InternalName>
         <FlavorTextOption>
-            <Text>You've successfully appointed several [HS=HS_Leaders]Leaders[/HS] into roles as [HS=HS_Minister]Ministers[/HS]. Their support will go a long way to assisting in exploring the galaxy, settling new planets, and the expansion of the Terran Alliance's Influence. As you recruit new [HS=HS_Leaders]Leaders[/HS] or their skills change, you can always change what role a [HS=HS_Leaders]Leader[/HS] has from the [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Leaders Menu[/HS].[BR][BR]There are other ways to benefit the entire Alliance. [HS=HS_Policy]Policies[/HS] are rules that can be issued to affect all colonies and fleets. To enact a [HS=HS_Policy]Policy[/HS], the appropriate [HS=HS_Tech]Tech[/HS] has to be researched in the [HS=HS_ResearchCenter]Research Center[/HS]. Research Colonial Policies to access the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] and a [HS=HS_Policy]Policies[/HS] slot.[BR][BR]Completed Objective: Appoint 3 Ministers[BR]New Objective: Research Colonial Policies</Text>
+            <Text>You've successfully appointed several [HS=HS_Leaders]Leaders[/HS] into roles as [HS=HS_Minister]Ministers[/HS]. Their support will go a long way to assisting the Alliance. As you recruit new [HS=HS_Leaders]Leaders[/HS] or existing [HS=HS_Leaders]Leaders'[/HS] skills change, you can always change what role a [HS=HS_Leaders]Leader[/HS] has from the [ICON=Menu_Leader_Icon]  [HS=HS_LeaderMenu]Leaders Menu[/HS].[BR][BR]All [HS=HS_Leaders]Leaders[/HS] have strengths and weaknesses, so checking your [HS=HS_Leaders]Leaders[/HS] can go a long way. More [HS=HS_Leaders]Leaders[/HS] will become available for hire as [HS=HS_Months]Turns[/HS] pass.[BR][BR]Completed Objective: Appoint 3 Ministers</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -152,9 +395,27 @@
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_GuideToUnlockPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>As the Alliance grows, so should its tools for management. We'll need to complete some additional research to develop the infrastructure to manage the Alliance better.[BR][BR]The Colonial Policies [HS=HS_Tech]Tech[/HS] will unlock the ability to access the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS]. From the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS], it will be possible to manage [HS=HS_Taxes]Taxes[/HS] for the entire Alliance, get an overview of the cumulative Planetary Output, and even enact  [HS=HS_Policy]Policies[/HS].[BR][BR]New Objective: Research Colonial Policies</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>Tutorial_UnlockedPolicyScreen</InternalName>
         <FlavorTextOption>
-            <Text>Research complete! Now that you've finished researching the Colonial Pollicies [HS=HS_Tech]Tech[/HS], you have gained access to the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] and [HS=HS_Policy]Policies[/HS].[BR][BR]Under the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS], you can get a high-level overview of the Alliance. You can check overall Approval, Civilization Outputs, and more. The [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] also gives access to Civilization [HS=HS_Policy]Policies[/HS]. The number of [HS=HS_Policy]Policies[/HS] that can be enacted can be increased by researching certain [HS=HS_Tech]Techs[/HS]. Try enacting a [HS=HS_Policy]Policy[/HS] now to help the Alliance operate more cohesively.[BR][BR]Completed Objective: Research Colonial Pollicies[BR]New Objective: Enact a Policy</Text>
+            <Text>The research into Colonial Policies is complete. You can now access the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS]. The [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] provides plenty of useful information and it allows you to enact [HS=HS_Policy]Policies[/HS] that affect the entire Alliance.[BR][BR]You can open the  [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] by pressing the  [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] button on the action bar.[BR][BR]Complete Objective: Research Colonial Policies[BR]New Objective: Enact a Policy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedPolicyScreenNotObjective</InternalName>
+        <FlavorTextOption>
+            <Text>The research into Colonial Policies is complete. You can now access the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS]. The [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] provides plenty of useful information and it allows you to enact [HS=HS_Policy]Policies[/HS] that affect the entire Alliance.[BR][BR]You can open the  [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] by pressing the  [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS] button on the action bar.[BR][BR]New Objective: Enact a Policy</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>Here in the [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Civilization Menu[/HS], you have access to a few tools to manage the entire Civilization better. You can adjust the [HS=HS_Taxes]Tax Rate[/HS] which directly affects [ICON=Approval_Stat_Icon] [HS=HS_Approval]Approval[/HS] and the change in [ICON=Stat_Credits_Icon] [HS=HS_Credit]Credits[/HS] each [HS=HS_Months]Turn[/HS].[BR][BR]You can also now enact a [HS=HS_Policy]Policy[/HS]. [HS=HS_Policy]Policies[/HS] are a way to issue a command that will affect every Colony, Citizen, [HS=HS_Fleet]Fleet[/HS], and sometimes more. You can unlock additional Policy Slots by researching certain [HS=HS_Tech]Techs[/HS].[BR][BR]To enact a [HS=HS_Policy]Policy[/HS], choose a [HS=HS_Policy]Policy[/HS] from the Available Policy panel then drag and drop it into an unlocked slot.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -166,7 +427,19 @@
     <FlavorTextDef>
         <InternalName>Tutorial_PiratesSpotted</InternalName>
         <FlavorTextOption>
-            <Text>TKTKTKTKTKTKTKTKTK</Text>
+            <Text>Commander, it's been confirmed that the [HS=HS_Pirates]Pirates[/HS] have established a [HS=HS_Shipyard]Shipyard[/HS] in the [HS=HS_Sector]Sector[/HS]. The problem is likely only to get worse.[BR][BR]Not only do the [HS=HS_Pirates]Pirates[/HS] threaten our fleets and colonies, but they give the Terran Alliance a bad reputation. We should remove their ability to create more ships to manage this issue quickly.[BR][BR]New Objective: Destroy a Pirate Shipyard</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FighterSelected</InternalName>
+        <FlavorTextOption>
+            <Text>Fighter selected and ready for orders![BR][BR]Fighters come in many forms with different hull types, weapons, and armor. Their primary purpose is to defend and attack. They can be ordered to [HS=HS_ShipMovement]Move[/HS] to colonies or Starbases where they'll move into orbit and serve as defenders if any hostile fleet attempts to attack the location.[BR][BR]To order ships to attack, select a target with the RIGHT Mouse Button. The target will become the destination of the chosen ship's movement. Once in an adjacent tile, combat can take place.[BR][BR][HS=HS_Fleet]Fleets[/HS] perform better in combat than lone fighters. To create a [HS=HS_Fleet]Fleet[/HS] move ships onto the same tile, if they have enough [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS] the ships will join up automatically.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_LostAFight</InternalName>
+        <FlavorTextOption>
+            <Text>Commander, we've lost a conflict.[BR][BR]In the future, we can improve our odds of victory by putting our ships into [HS=HS_Fleet]Fleets[/HS]. Form [HS=HS_Fleet]Fleets[/HS] by [HS=HS_ShipMovement]Moving[/HS] Ships onto the same tile. A [HS=HS_Fleet]Fleet[/HS] is restricted in size by its [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS], so if a [HS=HS_Fleet]Fleet[/HS] isn't forming or expanding, the [ICON=ShipLogistics_Icon] [HS=HS_Logistics]Logistics[/HS] score is too high.[BR][BR]Additionally, control when fights occur by staying on the offensive. Initiate battles heavily weighted in our favor to weaken enemies. Avoid fleets too powerful to quickly take down and utilize distance tactics such as the Beam Volley and Missile Volley.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -184,13 +457,13 @@
     <FlavorTextDef>
         <InternalName>Tutorial_GuideToExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>Over time, the Alliance gains [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS], a resource representing the ability to charm or force people to carry out specific orders. [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] can be spent in several ways, and one way that often costs the most is [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS].[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] are abilities that happen immediately and can have various impacts. They can be beneficial in all types of scenarios. The Draft Colonists order may be the most helpful as the Alliance expands. Use an [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] to help with the Alliance's current goals.[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] are selected from the related radial option. Some will execute as soon as the usage is confirmed. Others require a target and must be directed after confirming the order. Hover the Mouse over the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] option and then use the LEFT Mouse Button to select an order.[BR][BR]New Objective: Use an Executive Order</Text>
+            <Text>Over time, the Alliance gains Control, a resource for exerting your will. [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] can be spent in several ways, one beneficial way being with [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS].[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] are abilities that can have various impacts. They can be beneficial in all types of scenarios. The Draft Colonists order may be the most helpful as the Alliance expands. To use an [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS], start by hovering the Mouse over the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] option and then use the LEFT Mouse Button to select an order.[BR][BR]New Objective: Use an Executive Order</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_UsedExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>Success![BR][BR]Your [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] has been carried out. On top of the Cost, most [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] have a Cooldown time, measuring the number of [HS=HS_Months]Months[/HS] that must pass before the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] can be used again. Ensuring there's enough [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] accruing from [HS=HS_CoreWorld]Core Worlds[/HS] is always a good idea so that [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] can be utilized when needed.[BR][BR]Completed Objective: Use an Executive Order</Text>
+            <Text>Success![BR][BR]Your [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] has been carried out. On top of the Cost, most [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] have a Cooldown time, measuring the number of [HS=HS_Months]Turns[/HS] that must pass before the [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Order[/HS] can be used again. Ensuring there's enough [ICON=Stat_Control_Icon] [HS=HS_Control]Control[/HS] accruing from [HS=HS_CoreWorld]Core Worlds[/HS] is always a good idea so that [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Executive Orders[/HS] can be utilized when needed.[BR][BR]Completed Objective: Use an Executive Order</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
