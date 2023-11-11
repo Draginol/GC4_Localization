@@ -9,103 +9,313 @@
     <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartOfGame</InternalName>
-        
         <FlavorTextOption>
-            <Text>探索并了解银河系是为了扩大联盟的[HS=HS_ZoneOfControl]控制区域[/HS]的首要步骤。探测器是探索宇宙的最佳工具，它们拥有无约束的[HS=HS_ShipRange]范围[/HS]并可以迅速行动。[BR][BR]联盟已经在地球轨道附近为你准备了一个探测器。使用鼠标左键选中该探测器，并给它下达[HS=HS_ShipMovement]移动[/HS]的指令开始探索。你可以在地图上用鼠标右键点击想要探测器移动到的位置，或是在探测器界面选择[ICON=AutoExplore_Icon] [HS=HS_AutoExplore]自动探索[/HS]模式。只有在所有的舰船和舰队都已经完成移动或被设置为待命状态后，一个[HS=HS_Months]月[/HS]才能结束。[BR][BR]已有报告提到了一些不寻常的信号。它们的来源和意义现在还不明确，但我们相信这可能来自另一个文明。请使用探测器去找到它们。[BR][BR]新的任务目标：发现另一个文明。
-        </Text>
+            <Text>欢迎来到银河文明IV。今天，我们将回顾人类在实现超光速旅行后所迈出的第一步。联合地球决定开始殖民其他行星后，它创建了一个名为地球联盟的组织，以监督这一事业。其首个任务是探索太空，寻找潜在的殖民候选地。[BR][BR]探索并了解银河系是扩张联盟[HS=HS_ZoneOfControl]控制区[/HS]的第一步。探测器是探索宇宙的最佳方式。它们具有不受限的[HS=HS_ShipRange]航程[/HS]，且能快速移动。[BR][BR][I]任务报告将以橙色图标的形式出现在屏幕的左侧。左键点击一个图标以查看。[/I][BR][BR]一枚深空探测器最近在地球轨道附近发射。使用鼠标左键选中该探测器，并下达[HS=HS_ShipMovement]移动[/HS]指令开始探索。这可以通过使用鼠标右键在地图上选择探测器应该移动到的位置，或在探测器界面上选择[ICON=AutoExplore_Icon] [HS=HS_AutoExplore]自动探索[/HS]模式来完成。只有在所有飞船和舰队都使用了它们的所有移动或被设置为待命后，才能结束[HS=HS_Months]一个月[/HS]的时间。[BR][BR]有报告称接收到异常信号。其来源和含义难以辨认，但人们认为这可能是另一个文明。使用探测器来寻找它们。[BR][BR]新任务：定位其他文明</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedProbe</InternalName>
+        <FlavorTextOption>
+            <Text>探针已选定！飞船准备接收指令。在银河系中指挥舰船是成功的关键。给探针下达第一个指令[HS=HS_ShipMovement]移动[/HS]。[BR][BR]选定探针后，通过在空旷空间上点击鼠标右键来设定目的地。探针将通过从一个[HS=HS_Tile]格子[/HS]移动到另一个格子，沿最直接的路线前往该位置。[BR][BR]如果你没有看到网格，你可以在选项菜单的界面下设置网格可见性。也可以通过按G键来循环切换网格显示。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteProbeMove</InternalName>
+        <FlavorTextOption>
+            <Text>成功！[BR][BR]在探索[HS=HS_Sector]区域[/HS]时，请记住所有飞船在一个[HS=HS_Months]回合[/HS]内能移动的距离是有限的。所有飞船都有一定数量的[ICON=Moves_Icon] [HS=HS_Moves]移动力[/HS]，代表它们在一个回合内可以穿越的[HS=HS_Tile]格子[/HS]数。[BR][BR]如果你下达的命令超出了飞船在单个[HS=HS_Months]回合[/HS]内能移动的范围，它将会继续执行这些命令，直到需要的[HS=HS_Months]回合[/HS]数完成，到达设定位置。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>指挥官，接下来需要您关注的是确保[HS=HS_ResearchCenter]研究中心[/HS]有一个明确的目标。[BR][BR]虽然有多种选择，但建议专注于提升我们探索能力的[HS=HS_Tech]技术[/HS]，例如勘测任务。通过左键点击研究栏来访问研究中心。[BR][BR]新目标：研究勘测任务</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenResearchScreenFirstTime</InternalName>
+        <FlavorTextOption>
+            <Text>欢迎来到[HS=HS_ResearchCenter]研究中心[/HS]。这里是指导研究工作以解锁新的[HS=HS_Tech]技术[/HS]的地方。完成[HS=HS_Tech]技术[/HS]是获得新船只、建筑、管理要素等的方式。[BR][BR]屏幕分为三个部分——中间是顾问建议，正在研究的[HS=HS_Tech]技术[/HS]显示在底部，所有可研究的[HS=HS_Tech]技术[/HS]列在右侧面板上。[BR][BR]用左键点击[HS=HS_Tech]技术[/HS]会将其设置为当前研究目标。现在试着设置一个研究目标。建议从勘测任务开始。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnSetFirstResearchTarget</InternalName>
+        <FlavorTextOption>
+            <Text>研究目标已设定！[BR][BR]所有[HS=HS_Tech]科技[/HS]都需要一定量的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]点数。每个[HS=HS_Months]回合[/HS]都会生成并应用一定量的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]点数到目标[HS=HS_Tech]科技[/HS]上。[BR][BR]主要是，这关系到完成研究所需的时间长短。你可以在科技列表中看到完成一个[HS=HS_Tech]科技[/HS]所需的[HS=HS_Months]回合[/HS]数。剩余的[HS=HS_Months]回合[/HS]数显示在研究进度条上。[BR][BR]随着地球联盟的扩张，增加每个[HS=HS_Months]回合[/HS]生成的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]点数的方法将会介绍。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>调查任务研究完成，我们获得了一艘[HS=HS_SurveyShip]旗舰[/HS]。[BR][BR][HS=HS_SurveyShip]旗舰[/HS]将对探索银河系至关重要。[HS=HS_SurveyShip]旗舰[/HS]装备了探查[HS=HS_Anomaly]异常[/HS]所需的模块。[BR][BR]所谓[HS=HS_Anomaly]异常[/HS]，是指那些不明、被弃置或难以理解的太空物体。揭示一个[HS=HS_Anomaly]异常[/HS]可能带来好处，但也可能充满危险。使用新的[HS=HS_SurveyShip]旗舰[/HS]对[HS=HS_Anomaly]异常[/HS]进行勘察。[BR][BR]新目标：扫描一个异常。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShipsOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>调查任务研究完成，我们获得了一艘[HS=HS_SurveyShip]旗舰[/HS]。[BR][BR][HS=HS_SurveyShip]旗舰[/HS]对于探索银河系至关重要。[HS=HS_SurveyShip]旗舰[/HS]拥有调查[HS=HS_Anomaly]异常[/HS]所必需的模块。[BR][BR][HS=HS_Anomaly]异常[/HS]是宇宙中不明、被遗弃或难以理解的物体。揭露一个[HS=HS_Anomaly]异常[/HS]可能有益，但也可能危险。使用新的[HS=HS_SurveyShip]旗舰[/HS]对[HS=HS_Anomaly]异常[/HS]进行调查。[BR][BR]已完成目标：研究调查任务[BR]新目标：扫描异常</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>新的[HS=HS_Months]轮次[/HS]开始了。常需关注的另一职责是管理我们的[HS=HS_CoreWorld]核心世界[/HS]。[HS=HS_CoreWorld]核心世界[/HS]是指有[HS=HS_Leaders]领袖[/HS]统治的任何行星。目前，那就是我们的母星，地球。随着联盟的扩张，我们将需要更多讨论[HS=HS_Leaders]领袖[/HS]，以及如何建立一个[HS=HS_CoreWorld]核心世界[/HS]，但现在，我们先关注地球。[BR][BR]通过用鼠标左键选择地球，然后按下[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]行星管理[/HS]按钮，来访问[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]行星管理窗口[/HS]。[BR][BR]新目标：建造2项行星设施。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>在此屏幕上，您可以看到与该星球相关的所有信息。目前，我们关注的是规划改进措施。改进措施可以带来多种益处；最常见的是它们如何影响行星产出。[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]、[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]、[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]、[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]以及[ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]都对联盟产生了独特的影响。提高产出将带来益处。[BR][BR]尝试在一个空白瓦片上放置地球的首都城市改进设施。您可以通过按住鼠标左键选中右侧面板中的独特改进措施，并将其拖动到一个瓦片上，然后释放鼠标左键来实现这一点。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_PlacedFirstPlanetaryImprovement</InternalName>
+        <FlavorTextOption>
+            <Text>部署确认，指挥官。随着您布置更多的设施和区域，了解[HS=HS_Adjacency]邻接加成[/HS]至关重要。所有设施和区域都有基于它们等级的特定效果。通过建造可以应用于设施提供的加成的邻接加成物，您可以增加等级。[BR][BR]另一个增加您的设施并提升它们等级的方法是在已有特定优势的地块上建造。在与它们优势相匹配的地块上紧密建造类似结构通常会获得最佳效果。[BR][BR]您可以通过一次性规划好几个设施或区域的计划来提前规划。建造队列中将会显示完成的顺序，您可以根据需要重新排列。[BR][BR]通过点击左键选中一个地块，然后从可用选项中选择一个区域来规划一些区域。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedPlanetaryImprovements</InternalName>
+        <FlavorTextOption>
+            <Text>殖民地报告又一项行星改善工程已经完成。这或许只是个开始，但每项完成的改善都将提升我们的效能。有时候，我们应该记得庆祝这些小胜利。[BR][BR]你需要继续管理[HS=HS_CoreWorld]核心世界[/HS]。如果你对某个改善或区域的位置不满意，可以使用拆除命令来清理地块。选择该地块，然后选择摧毁改善选项。[BR][BR]完成的目标：建造2项行星改善工程</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnCompletedExplore</InternalName>
+        <FlavorTextOption>
+            <Text>指挥官，我们已和德伦金人取得联系，确认他们是神秘信号的来源。[BR][BR]关于他们，我们没有更多信息。建议谨慎接近并保持积极的外交关系。我们在这个[HS=HS_Sector]星区[/HS]周围已经有足够的海盗问题了。[BR][BR]即使这不是我们的主动任务，我们也应该继续探索，以帮助完成我们的其他目标。[BR][BR]完成的任务：探索星区</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedFirstTurnActions</InternalName>
+        <FlavorTextOption>
+            <Text>指挥官，处理完所有待解决问题后，您可以结束本回合。[BR][BR]一个月内能做的事情有限，月份即是[HS=HS_Months]回合[/HS]的计量单位。当所有需要关注的问题都被确认或处理后，您可以通过[HS=HS_Months]回合[/HS]，进入下一个月份，开始新的[HS=HS_Months]回合[/HS]。[BR][BR]您可以通过按回合按钮或按TAB键来通过[HS=HS_Months]回合[/HS]。[BR][BR]准备好后，通过回合；下一个[HS=HS_Months]回合[/HS]还有更多问题等待处理。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartSurveyObjective</InternalName>
         <FlavorTextOption>
-            <Text>应该警惕Drengin。然而，联盟必须继续保护[HS=HS_Sector]领域[/HS]。[BR][BR][HS=HS_SurveyShip]勘查舰[/HS]是探索银河系的另一个关键部分。[HS=HS_SurveyShip]勘查舰[/HS]可能比探测器慢，且受到[HS=HS_ShipRange]航程[/HS]的限制，但它们可以自我防御。更重要的是，[HS=HS_SurveyShip]勘查舰[/HS]可以用来调查[HS=HS_Anomaly]异常[/HS]。[BR][BR][HS=HS_Anomaly]异常[/HS]有多种形式，但都可以由[HS=HS_SurveyShip]勘查舰[/HS]扫描。一次[HS=HS_SurveyOrder]勘查[/HS]需要几个[HS=HS_Months]月[/HS]才能完成，但一旦完成，它通常会揭示有益的资源、组件或技术。[BR][BR][HS=HS_SurveyShip]勘查舰[/HS]可以被命令[HS=HS_SurveyOrder]勘查[/HS]一个[HS=HS_Anomaly]异常[/HS]，通过将其命令到[HS=HS_Anomaly]异常[/HS]的位置，或者利用船的[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自动勘查[/HS]功能。[BR][BR]完成的目标：找到其他文明[BR]新的目标：扫描一个异常</Text>
+            <Text>应时刻警惕德伦金族。无论如何，我们必须继续确保[HS=HS_Sector]星区[/HS]的安全。[BR][BR][HS=HS_SurveyShip]旗舰[/HS]是探索银河系的另一个关键要素。[HS=HS_SurveyShip]旗舰[/HS]可能比探测器慢，且在[HS=HS_ShipRange]航程[/HS]上受到限制，但它们能够自卫。更重要的是，[HS=HS_SurveyShip]旗舰[/HS]可用于调查[HS=HS_Anomaly]异常现象[/HS]。[BR][BR][HS=HS_Anomaly]异常现象[/HS]呈现多种形式，但都可以由[HS=HS_SurveyShip]旗舰[/HS]进行扫描。进行一次[HS=HS_SurveyOrder]调查[/HS]需要几个[HS=HS_Months]月[/HS]的时间来完成，但一旦完成通常会揭示有益的资源、组件或技术。[BR][BR][HS=HS_SurveyShip]旗舰[/HS]可以通过指令前往[HS=HS_Anomaly]异常现象[/HS]的位置或使用舰船的[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自动调查[/HS]功能，来接受[HS=HS_SurveyOrder]调查[/HS]一个[HS=HS_Anomaly]异常现象[/HS]的命令。[BR][BR]已完成目标：定位其他文明[BR]新目标：扫描一个异常现象</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectSurveyShip</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]旗舰[/HS]已选中，待命接收指令。指派一艘[HS=HS_SurveyShip]旗舰[/HS]前往[HS=HS_SurveyOrder]勘查[/HS][HS=HS_Anomaly]异常区域[/HS]，就像下达[HS=HS_ShipMovement]移动命令[/HS]一样。[BR][BR]选中[HS=HS_SurveyShip]旗舰[/HS]后，使用鼠标右键选定一个[HS=HS_Anomaly]异常区域[/HS]进行[HS=HS_SurveyOrder]勘查[/HS]。这样会将该[HS=HS_Anomaly]异常区域[/HS]设为舰只的目标。之后，[HS=HS_SurveyShip]旗舰[/HS]会前往[HS=HS_Anomaly]异常区域[/HS]，抵达目的地后，开始进行[HS=HS_SurveyOrder]勘查[/HS]。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartedFirstSurvey</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]旗舰[/HS]报告已抵达目的地。[HS=HS_SurveyShip]旗舰[/HS]现将开始对目标[HS=HS_Anomaly]异常现象[/HS]进行[HS=HS_SurveyOrder]勘测[/HS]。[BR][BR][HS=HS_SurveyOrder]勘测[/HS]需要数个[HS=HS_Months]回合[/HS]完成。如果[HS=HS_SurveyShip]旗舰[/HS]接到其他指令被打断，将会失去揭露[HS=HS_Anomaly]异常现象[/HS]的进度。[BR][BR]在[HS=HS_SurveyShip]旗舰[/HS]工作时，还有更多事项需要管理。如果你想检查[HS=HS_SurveyShip]旗舰[/HS]的进度，选择这艘船；选中面板上将详细显示剩余的[HS=HS_Months]回合[/HS]数。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_SurveyedFirstAnomaly</InternalName>
         <FlavorTextOption>
-            <Text>成功！[BR][BR] [HS=HS_SurveyShip]探测船[/HS]已完成对[HS=HS_Anomaly]异常[/HS]的[HS=HS_SurveyOrder]探测[/HS]。现在，是时候处理我们发现的东西了。[BR][BR]探索银河系只是第一步。扩大联盟的影响力将需要殖民新的世界。并非所有的行星都可以被认为是适合殖民的。行星有一个[HS=HS_PlanetClass]行星级别[/HS]，用来评估行星的大小、资源丰富程度以及宜居性。任何高于0的等级都可以被认为是可以殖民的。等级为0的行星被认为是[HS=HS_DeadWorld]死亡世界[/HS]。[BR][BR][HS=HS_Colinizing]殖民[/HS]的行星会向最近的[HS=HS_CoreWorld]核心世界[/HS]提供资源。联盟唯一的[HS=HS_CoreWorld]核心世界[/HS]是我们的家园，地球。[BR][BR]使用联盟提供的殖民船去[HS=HS_ColonizeOrder]殖民[/HS]一个行星。火星一直是我们最近的可行邻居。建议从那里开始。记得继续在宇宙中寻找[HS=HS_Anomaly]异常[/HS]进行扫描；它们将继续为我们理解周围的银河系提供帮助和扩展。[BR][BR]完成目标：扫描一个异常[BR]新目标：殖民一个行星[BR]新目标：扫描5个异常</Text>
+            <Text>[HS=HS_SurveyShip]旗舰[/HS]已完成对[HS=HS_Anomaly]异常[/HS]的[HS=HS_SurveyOrder]勘测[/HS]工作。现在，是时候处理任何被揭露出的事物了。并非每一个[HS=HS_Anomaly]异常[/HS]都是安全或纯粹有益的，但风险总是值得的回报。[BR][BR][HS=HS_SurveyShip]旗舰[/HS]可以设置为自动工作。要让一艘[HS=HS_SurveyShip]旗舰[/HS]探索并揭示[HS=HS_Anomaly]异常[/HS]而无需不断的指导，请使用[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自动勘测[/HS]模式。通过选择舰船并按下选定面板旁的[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自动勘测[/HS]按钮来切换[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自动勘测[/HS]模式。[BR][BR]已完成目标：扫描一个异常[BR]新目标：扫描5个异常</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_SurveyedTargetAnomalies</InternalName>
         <FlavorTextOption>
-            <Text>联盟已经完成了其[HS=HS_SurveyOrder]调查[/HS]5个[HS=HS_Anomaly]异常[/HS]的目标。每个都是不同的体验，即使并非所有的都是安全的。即使这不是一个目标，继续扫描[HS=HS_Anomaly]异常[/HS]将证明是有益的。[BR][BR]已完成的目标：扫描5个异常</Text>
+            <Text>我们已完成了[HS=HS_SurveyOrder]勘测[/HS]5个[HS=HS_Anomaly]异常点[/HS]的目标。每一次勘测都是不同的体验，虽然并非所有的异常点都是安全的。即使这不是一个目标，继续扫描[HS=HS_Anomaly]异常点[/HS]将会证明是有益的。[BR][BR]已完成的任务：扫描5个异常点</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartStarbaseObjective</InternalName>
         <FlavorTextOption>
-            <Text>这是一个提示文本，在教程中玩家已经殖民了4个星球，并且正在回合开始时。他们将得到一个目标，就是建立一个经济星基，并且明确指示如何制造一个建造者并将其变为星基。</Text>
+            <Text>殖民地并非获取资源或扩大联盟[HS=HS_ZoneOfControl]控制区[/HS]的唯一方式。拥有适当的[HS=HS_Tech]技术[/HS]，我们就能建造[HS=HS_Starbase]星基站[/HS]。[BR][BR][HS=HS_Starbase]星基站[/HS]有四种形态，各有不同的专长。四种类型的[HS=HS_Starbase]星基站[/HS]分别是：[ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]军事[/HS]、[ICON=Icon_MiningStarbase] [HS=HS_MiningStarbase]采矿[/HS]、[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]经济[/HS]以及[ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]通讯[/HS]。[BR][BR]首先，我们需要研究星基站[HS=HS_Tech]技术[/HS]。[BR][BR]新目标：研究星基站</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartAsteroidMiningObjective</InternalName>
+        <FlavorTextOption>
+            <Text>随联盟扩张，提升[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]能力对[HS=HS_CoreWorld]核心世界[/HS]至关重要。在[HS=HS_CoreWorld]核心世界[/HS]建设制造区是一种提升方法，但这往往会导致[HS=HS_Pollution]污染[/HS]增加。[BR][BR]增加行星的[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]输入也能提高[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]能力。太空中充满了可以开采的漂浮岩石[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]。解锁小行星开采能力，将使联盟能够提高[HS=HS_CoreWorld]核心世界[/HS]的[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]能力，同时不增加[HS=HS_Pollution]污染[/HS]。[BR][BR]新目标：研究小行星开采技术。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) 当玩家掌握了小行星采矿技术，且尚未开始采矿小行星带的任务分支时，此事件会发生。此事件将给出清晰的指示，引导玩家如何进行小行星带的采矿任务。</Text>
+            <Text>联盟已精通小行星采矿[HS=HS_Tech]技术[/HS]。小行星矿工现在可以设置采矿作业了。[BR][BR]小行星矿场可以通过提供[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]所需的[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]输入，来增加[HS=HS_CoreWorld]核心世界[/HS]的产出。一个小行星矿场只能支持单个[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR]要开始小行星采矿，请[HS=HS_ShipMovement]移动[/HS]一艘小行星矿工到小行星带。小行星矿工抵达后将建立一个矿场。[BR][BR]新目标：开采一颗小行星</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMiningOnObjective</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) 当玩家掌握了小行星采矿技术，并积极地在执行采矿小行星带的任务分支时，这个事件就会发生。此事件提供了明确的指示，指导如何采矿小行星带。完成'掌握小行星采矿技术'的目标得到认可。</Text>
+            <Text>联盟已掌握了小行星采矿[HS=HS_Tech]技术[/HS]。现在可以部署小行星矿工进行采矿作业。[BR][BR]小行星矿场能够通过提供[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造业[/HS]所需的[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]输入，增加[HS=HS_CoreWorld]核心世界[/HS]的产能。一个小行星矿场只能支持单个[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR]要开始采矿小行星，[HS=HS_ShipMovement]移动[/HS]一艘小行星矿工飞船至小行星带。小行星矿工到达后将建立一个矿场。[BR][BR]已完成目标：研究小行星采矿[BR]新目标：采矿一个小行星</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTechOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>研究[HS=HS_Tech]星基技术[/HS]完成后，我们现在可以在[HS=HS_Shipyard]船坞[/HS]建造[HS=HS_Constructor]建造者[/HS]。[HS=HS_Constructor]建造者[/HS]用于构建[HS=HS_Starbase]星基[/HS]。有好几种类型的[HS=HS_Starbase]星基[/HS]可供利用。尝试在[HS=HS_Shipyard]船坞[/HS]建造几个[HS=HS_Constructor]建造者[/HS]，并用它们来建造[HS=HS_Starbase]星基[/HS]。[BR][BR]已完成目标：研究星基[BR]新目标：建造经济星基[BR]新目标：建造军事星基[BR]新目标：建造采矿星基[BR]新目标：建造通讯星基</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTech</InternalName>
+        <FlavorTextOption>
+            <Text>星基站[HS=HS_Tech]科技[/HS]研究完成后，我们可以在[HS=HS_Shipyard]船坞[/HS]建造[HS=HS_Constructor]建造者[/HS]。[HS=HS_Constructor]建造者[/HS]用于构建[HS=HS_Starbase]星基站[/HS]。有几种类型的[HS=HS_Starbase]星基站[/HS]供你利用。尝试在[HS=HS_Shipyard]船坞[/HS]建造几个[HS=HS_Constructor]建造者[/HS]，并使用它们来建设[HS=HS_Starbase]星基站[/HS]。[BR][BR]新目标：建造经济型星基站[BR]新目标：建造军事型星基站[BR]新目标：建造采矿型星基站[BR]新目标：建造通信型星基站</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedConstructor</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Constructor]建造者[/HS]已选定，准备接受指令。放置[HS=HS_Constructor]建造者[/HS]的位置至关重要。建造[HS=HS_Starbase]星基[/HS]时，[HS=HS_Constructor]建造者[/HS]将被消耗。[BR][BR]要建造[HS=HS_Starbase]星基[/HS]，请按选定面板旁的[ICON=Order_ConstructStarbase] [HS=HS_ConstructStarbase]建立星基[/HS]按钮。[HS=HS_Starbase]星基[/HS]将在[HS=HS_Constructor]建造者[/HS]当前位置建造。[BR][BR]请记住，[HS=HS_EconomicsStarbase]经济星基[/HS]只能在[HS=HS_CoreWorld]核心世界[/HS]附近建造，而[HS=HS_MiningStarbase]矿业星基[/HS]只能在未被占领的[HS=HS_StrategicResource]战略资源[/HS]附近建造。[HS=HS_Starbase]星基[/HS]不能建得离另一个[HS=HS_Starbase]星基[/HS]太近，也不能在其他文明的[HS=HS_ZoneOfControl]控制区[/HS]内建造。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltEconomicStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>首个[HS=HS_EconomicsStarbase]经济星基站[/HS]建成。它将提高其影响范围内殖民地的[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]生产[/HS]和[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]。[BR][BR][HS=HS_EconomicsStarbase]经济星基站[/HS]的升级将进一步提高附近殖民地的[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]生产[/HS]或[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]收入[/HS]。[HS=HS_EconomicsStarbase]经济星基站[/HS]是加快完成建设速度而不增加[HS=HS_Pollution]污染[/HS]的绝佳方式。要获取受影响殖民地列表，请按选中面板旁的管理按钮查看[HS=HS_Starbase]星基站[/HS]。[BR][BR]完成目标：建造一个经济星基站</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMilitaryStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>首个[ICON=Icon_MilitaryStarbase][HS=HS_MilitaryStarbase]军事星基站[/HS]建成。它将增强其影响范围内所有舰船和舰队的攻击与防御能力。这些[ICON=Icon_MilitaryStarbase][HS=HS_MilitaryStarbase]军事星基站[/HS]也比其他[HS=HS_Starbase]星基站[/HS]更倾向于获得防御和武器方面的升级。[BR][BR][ICON=Icon_MilitaryStarbase][HS=HS_MilitaryStarbase]军事星基站[/HS]建在经常发生冲突的区域以及殖民地周围非常有效，有助于抵御攻击。要查看受影响的殖民地列表，请按选定面板旁的管理按钮，查看[HS=HS_Starbase]星基站[/HS]。[BR][BR]完成目标：建造一个军事星基站。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMiningStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>首个[HS=HS_MiningStarbase]采矿星基站[/HS]建成。效应范围内的任何未开采[HS=HS_StrategicResource]战略资源[/HS]都将归新建的[HS=HS_Starbase]星基站[/HS]所有。每个回合，[HS=HS_Starbase]星基站[/HS]将会向联盟增加一定数量的开采[HS=HS_StrategicResource]战略资源[/HS]。通过研究并升级[HS=HS_MiningStarbase]采矿星基站[/HS]可以增加采矿量[BR][BR][HS=HS_StrategicResource]战略资源[/HS]对于建造某些行星设施和飞船以及进行特定升级至关重要[BR][BR]完成目标：建造采矿星基站</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltCommunicationsStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>首座[ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]通讯星基站[/HS]建成。该[HS=HS_Starbase]星基站[/HS]将开始增加[ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]。[ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]通讯星基站[/HS]适合早期宣称某区域或尝试抵抗其他文明扩散的[ICON=Stat_Influence_Icon] [HS=HS_Influence]影响力[/HS]，以控制它们的[HS=HS_ZoneOfControl]控制区[/HS]。[BR][BR]如果殖民地位于另一个文明的[HS=HS_ZoneOfControl]控制区[/HS]内，它将面临被吞并的风险。每个回合在外国[HS=HS_ZoneOfControl]控制区[/HS]中度过都会减少对殖民地的控制，直到它被吞并或被带回你的[HS=HS_ZoneOfControl]控制区[/HS]内。[BR][BR]完成目标：建造一个通讯星基站。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CompletedStarbase</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER)玩家在此步骤中建造经济星基后，该事件就会发生。确认完成建造经济星基，并加强使用。</Text>
+            <Text>完成了[ICON=Icon_EconomicsStarbase][HS=HS_EconomicsStarbase]经济星基站[/HS]，附近的[HS=HS_CoreWorld]核心世界[/HS]将获得经济增强。[HS=HS_EconomicsStarbase]经济星基站[/HS]只是可以建造的[HS=HS_Starbase]星基站[/HS]类型之一。每种类型都有其独特的用途，值得花时间去了解。[BR][BR]完成的目标：建造一个经济星基站</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CompletedStarbaseStartAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>(占位符) 此事件发生在玩家在此步骤中构建经济星基后。识别完成建造经济星基后并加强使用。引入了小行星采矿，并赋予了掌握小行星采矿技术的目标。</Text>
+            <Text>随着[ICON=Icon_EconomicsStarbase][HS=HS_EconomicsStarbase]经济星基站[/HS]的建成，附近的[HS=HS_CoreWorld]核心世界[/HS]将获得经济增益。[HS=HS_EconomicsStarbase]经济星基站[/HS]只是可建造的[HS=HS_Starbase]星基站[/HS]类型之一。每种类型都有其特定的用途，值得花时间去了解。[BR][BR]另一个惠及[HS=HS_CoreWorld]核心世界[/HS]的方法是通过小行星采矿。这需要[HS=HS_Tech]技术[/HS]中的小行星采矿技术，在[HS=HS_ResearchCenter]研究中心[/HS]中可以找到。[BR][BR]已完成目标：建造一个经济星基站[BR]新目标：研究小行星采矿</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MinedAnAsteroid</InternalName>
         <FlavorTextOption>
-            <Text>(占位符) 这个事件发生在玩家完成了“开采小行星”步骤并开采了一个小行星之后。</Text>
+            <Text>矿场已建立。小行星矿工在建立采矿站时会被消耗。一旦采矿站建成，它将占领整个小行星带，并开始向最近的[HS=HS_CoreWorld]核心世界[/HS]发送资源。[BR][BR]提高[HS=HS_CoreWorld]核心世界[/HS]的[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]制造[/HS]能力，可以加快完成改进和建造舰船的速度。一个[HS=HS_CoreWorld]核心世界[/HS]拥有多种类型的输入，比如[HS=HS_Minerals]矿物[/HS]，每种输入代表该星球可用的资源类型，对行星产出有积极影响。[BR][BR]已完成目标：开采一个小行星</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!---->
     <FlavorTextDef>
+        <InternalName>Tutorial_GuideToShipyard</InternalName>
+        <FlavorTextOption>
+            <Text>在结束你的[HS=HS_Months]回合[/HS]前，请确保[HS=HS_Shipyard]船坞[/HS]正在建造新飞船。[BR][BR][HS=HS_Shipyard]船坞[/HS]不能闲置，每个[HS=HS_Months]回合[/HS]结束时都必须在施工。虽然所有选项都可行，但建造额外的探测器以加快我们对[HS=HS_Sector]星区[/HS]的探索会是明智之举。[BR][BR]要开始建造新飞船，请选择[HS=HS_Shipyard]船坞[/HS]，然后按选择面板旁的[ICON=Menu_ShipyardManagement_Icon]管理按钮。[BR][BR]完成飞船或项目需要的[HS=HS_Months]回合数[/HS]，会受到[HS=HS_Shipyard]船坞[/HS]所环绕的[HS=HS_CoreWorld]核心世界[/HS]上的[ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]制造[/HS]值的影响。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedShipyardScreen</InternalName>
+        <FlavorTextOption>
+            <Text>欢迎使用船坞管理窗口。在此屏幕上，您可以向建造队列中添加飞船。每个[HS=HS_Months]回合[/HS]，[HS=HS_Shipyard]船坞[/HS]将对队列前端的飞船进行建造进度，直至完成，然后它将被生成至[HS=HS_Sector]区域[/HS]中[HS=HS_Shipyard]船坞[/HS]旁边。[BR][BR]飞船卡片上会显示剩余的[HS=HS_Months]回合[/HS]数。飞船从开始到完成所需的时间，会在屏幕侧边的可用项目面板中列出。选择可用项目中的一艘飞船并按下建造飞船按钮，即可将飞船添加到队列中。您也可以通过双击飞船来添加。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ExplainCitizens</InternalName>
+        <FlavorTextOption>
+            <Text>市民对于[HS=HS_CoreWorld]核心世界[/HS]的高效运转至关重要。市民拥有提升行星产出的属性。要训练市民，请用左键点击选择他们，然后选择一个工作。[BR][BR]保持市民的幸福有助于他们工作得更好。经常检查他们的[ICON=Approval_Stat_Icon] [HS=HS_Approval]满意度[/HS]。将鼠标悬停在他们的[ICON=Approval_Stat_Icon] [HS=HS_Approval]满意度[/HS]图标上，可以查看影响他们的详细因素。[BR][BR]只要有[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]供应并且[HS=HS_Pollution]污染[/HS]不是太严重，殖民地就会生产新的市民。你可以根据[HS=HS_CoreWorld]核心世界[/HS]当前状况，查看预计的[HS=HS_Months]回合[/HS]数。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartColonization</InternalName>
+        <FlavorTextOption>
+            <Text>感谢您的努力，联盟在向[HS=HS_Sector]星域[/HS]扩张方面取得了诸多显著进展。为了真正发展，我们必须开始[HS=HS_Colonizing]殖民[/HS]新行星。[BR][BR]研究团队相信，只要有了适当的进步，我们就能创造出完美适合这一任务的飞船。殖民[HS=HS_Tech]技术[/HS]将解锁建造殖民船的能力。返回[HS=HS_ResearchCenter]研究中心[/HS]，确保每个[HS=HS_Months]回合[/HS]产生的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]都投入到殖民事业中。[BR][BR]新目标：研究殖民技术</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonizationOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>我们应当开始扩展联盟边界的工作。下一步是在[HS=HS_Shipyard]船坞[/HS]建造一艘殖民船。[BR][BR][HS=HS_Shipyard]船坞[/HS]只能在[HS=HS_CoreWorld]核心世界[/HS]建设。[HS=HS_Shipyard]船坞[/HS]的舰船生产速度受关联的[HS=HS_CoreWorld]核心世界[/HS][ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]制造[/HS]能力影响。[BR][BR]要开始建造新船，通过选择[HS=HS_Shipyard]船坞[/HS]，然后按选项面板的[ICON=Menu_ShipyardManagement_Icon]管理按钮。[BR][BR]新目标：建造一艘殖民船。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonization</InternalName>
+        <FlavorTextOption>
+            <Text>我们应当开始扩展联盟边界的工作。下一步是在[HS=HS_Shipyard]船坞[/HS]建造一艘殖民船。[BR][BR][HS=HS_Shipyard]船坞[/HS]只能在[HS=HS_CoreWorld]核心世界[/HS]建设。[HS=HS_Shipyard]船坞[/HS]的舰船生产速度受关联的[HS=HS_CoreWorld]核心世界[/HS][ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]制造[/HS]能力影响。[BR][BR]要开始建造新船，通过选择[HS=HS_Shipyard]船坞[/HS]，然后按选项面板的[ICON=Menu_ShipyardManagement_Icon]管理按钮。[BR][BR]新目标：建造一艘殖民船。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ConstructedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>殖民船已建造完成，但必须有一名公民操作才能部署。殖民地上必须始终有一名公民。如果他们是星球上唯一的在岗公民，你不能将公民分配到殖民船上。当殖民船建成或试图离开轨道时，你需要确保船上有一名公民。[BR][BR]你可以在[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]星球管理窗口[/HS]查看公民数量及其增长速度。[BR][BR]已完成目标：建造殖民船[BR]新目标：殖民一颗星球</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>殖民船已选择，等待指令。将殖民船指派至[HS=HS_Colinizing]殖民[/HS]行星，操作如同下达其他指令。选中殖民船后，使用鼠标右键选择一个要[HS=HS_Colinizing]殖民[/HS]的行星。[BR][BR]殖民船随即向该行星移动，在到达目的地后，将尝试对目标行星进行[HS=HS_Colinizing]殖民[/HS]。[BR][BR]并非所有行星都能被[HS=HS_Colinizing]殖民[/HS]。行星必须具有[HS=HS_PlanetClass]等级[/HS]1或以上。你可以将鼠标悬停在行星上以检查行星的[HS=HS_PlanetClass]等级[/HS]。[BR][BR]火星是进行[HS=HS_Colinizing]殖民[/HS]的理想选择。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>联盟的一大步。[BR][BR]联盟已经[HS=HS_Colinizing]殖民[/HS]了它的第一个世界。现在联盟已经占领了一个星球，它将为最近的[HS=HS_CoreWorld]核心世界[/HS]提供额外的资源。选择这个星球将显示输出的路径。[BR][BR]像[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]，[ICON=Stat_Technology_Icon] [HS=HS_Technology]技术[/HS]，和[ICON=Stat_Wealth_Icon] [HS=HS_Wealth]财富[/HS]这样的资源对于扩展和繁荣至关重要。[HS=HS_Colinizing]殖民[/HS]的星球越多，[HS=HS_CoreWorld]核心世界[/HS]的表现和完成项目的能力就越好。[BR][BR]建立立足点的下一步将是定居更多的星球，最终设立另一个[HS=HS_CoreWorld]核心世界[/HS]。[BR]完成的目标：殖民一个星球[BR]新的目标：殖民8个星球</Text>
+            <Text>人类联盟的一大步。[BR][BR]既然我们已证明可以[HS=HS_Colinizing]殖民[/HS]新世界，那么真正的扩张时刻已经到来。[BR][BR]这将需要我们把已经建立的一切结合起来，造出新的殖民飞船并[HS=HS_Colinizing]殖民[/HS]更多星球。随着更多星球为联盟提供更多资源，这番努力将是非常值得的。[BR][BR]已完成目标：殖民一个行星[BR]新目标：殖民8个行星</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>对联盟来说，这是一次巨大的进步。[BR][BR]联盟已经在第一颗星球上[HS=HS_Colinizing]建立殖民地[/HS]，这颗星球足够大，可以支持更大规模的殖民地，成为[HS=HS_CoreWorld]核心世界[/HS]。许多星球太小或者缺乏资源，无法成为[HS=HS_CoreWorld]核心世界[/HS]。所以，当一颗足够大的星球被开发时，应充分利用其潜力。[BR][BR][HS=HS_CoreWorld]核心世界[/HS]可以支持一个[HS=HS_Shipyard]船坞[/HS]并进行升级，但这需要一位[HS=HS_Leaders]领导者[/HS]被任命为[HS=HS_Governor]行政长官[/HS]。[BR][BR]可以在[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]星球管理窗口[/HS]中选择星球，然后分配[HS=HS_Leaders]领导者[/HS]。[BR]已完成目标：殖民一颗星球[BR]新目标：殖民8颗星球[BR]新目标：任命一位行政长官</Text>
+            <Text>联盟迈出的一大步。[BR][BR]联盟已经[HS=HS_Colinizing]殖民[/HS]了第一个世界，这是一个足够大的星球，可以支持更大规模的殖民地，并成为[HS=HS_CoreWorld]核心世界[/HS]。许多星球太小或缺乏资源，不足以成为[HS=HS_CoreWorld]核心世界[/HS]。因此，当我们定居了一个足够大的星球时，应该充分利用它。[BR][BR][HS=HS_CoreWorld]核心世界[/HS]可以支持一个[HS=HS_Shipyard]造船厂[/HS]并进行改善，但这需要指派一位[HS=HS_Leaders]领袖[/HS]作为[HS=HS_Governor]总督[/HS]。[BR][BR]可以从[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]行星管理窗口[/HS]指派[HS=HS_Leaders]领袖[/HS]，通过选择行星即可打开。[BR][BR]已完成目标：殖民一个星球[BR]新目标：殖民8个星球[BR]新目标：任命一位总督</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>联盟已经[HS=HS_Colinizing]殖民[/HS]了另一个星球。那些不是[HS=HS_CoreWorld]核心世界[/HS]的星球会为最近的[HS=HS_CoreWorld]核心世界[/HS]提供额外资源。选择星球将显示输出路径。[BR][BR]如 [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]矿物[/HS]，[ICON=Stat_Technology_Icon] [HS=HS_Technology]技术[/HS]，和 [ICON=Stat_Wealth_Icon] [HS=HS_Wealth]财富[/HS]等资源对于扩大和繁荣至关重要。[HS=HS_Colinizing]殖民[/HS]的星球越多，[HS=HS_CoreWorld]核心世界[/HS]的表现和完成项目的能力就越好。</Text>
+            <Text>选择要[HS=HS_Colinizing]殖民[/HS]的行星时，将鼠标悬停在行星上可以提供关键信息。[BR][BR]首先是[HS=HS_PlanetClass]行星等级[/HS]；这代表行星上可用于开发的空间大小。任何[HS=HS_PlanetClass]行星等级[/HS]超过10的行星都可以转变为[HS=HS_CoreWorld]核心世界[/HS]，这将极大扩张联盟的能力。[BR][BR]另一个因素是提供的资源。所有[HS=HS_Colinizing]可殖民[/HS]行星都会将资源发送至最近的[HS=HS_CoreWorld]核心世界[/HS]作为行星输入，以增加[HS=HS_CoreWorld]核心世界的[/HS]行星输出。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>你已经定居了你的第一个足够大的星球，可以在上面建立一个新的[HS=HS_CoreWorld]核心世界[/HS]！[BR][BR]许多星球的大小不足以允许殖民地扩张。太小的星球无法支持一个[HS=HS_Shipyard]造船厂[/HS]，但却非常适合支持更大的殖民地。这些小殖民地不需要任何额外的领导或管理。[BR][BR]由于它们的稀有性，利用任何资源丰富到足以证明大型殖民地是明智的。为此，必须指派一位[HS=HS_Leaders]领袖[/HS]作为星球的[HS=HS_Governor]总督[/HS]。一旦指派了一位[HS=HS_Governor]总督[/HS]，就可以在星球上建立[HS=HS_Shipyard]造船厂[/HS]，并开发星球以更好地利用资源。[BR][BR][HS=HS_Leaders]领袖[/HS]可以从[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领袖菜单[/HS]中招募，在[HS=HS_RecruitmentScreen]招募屏幕[/HS]下。招募的[HS=HS_Leaders]领袖[/HS]可以被指派来管理[HS=HS_GovernorsScreen]总督屏幕[/HS]下的星球。[BR][BR]新任务：任命一位总督</Text>
+            <Text>指挥官，我们已[HS=HS_Colonizing]殖民[/HS]了一个[HS=HS_PlanetClass]星球等级[/HS]足够高，能够建立新的[HS=HS_CoreWorld]核心世界[/HS]。[HS=HS_CoreWorld]核心世界[/HS]能够支持一个[HS=HS_Shipyard]船坞[/HS]，并可发展以提供联盟额外的行星产出。更多的行星产出意味着更多维持联盟前进的关键资源。[BR][BR]要建立一个[HS=HS_CoreWorld]核心世界[/HS]，必须指派一名[HS=HS_Leaders]领袖[/HS]作为[HS=HS_Governor]州长[/HS]。[HS=HS_Leaders]领袖[/HS]可以通过[HS=HS_LeaderMenu]领袖菜单[/HS]招募并指派，或者通过点击[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]行星管理[/HS]按钮直接招募。[BR][BR]新目标：指派一名州长</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--Additional Information after Colonization-->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedThirdPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>扩张文明的食物供应可能是个挑战。在[HS=HS_Colinizing]殖民[/HS]新星球并在我们的[HS=HS_CoreWorld]核心世界[/HS]上建造设施时，最好记住生产的[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]与消耗的量。将鼠标悬停在顶部资源栏的[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]统计上，可检查当前的产量与消耗率。[BR][BR] [HS=HS_Colinizing]殖民[/HS]具有高[ICON=Stat_Fertility_Icon] [HS=HS_Farming]农业[/HS]的星球是提高[HS=HS_CoreWorld]核心世界[/HS]食物产量的一种方法。另一种方法是在[HS=HS_CoreWorld]核心世界[/HS]上建造提高[ICON=Stat_Food_Icon] [HS=HS_Food]食物[/HS]产量的设施。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFourthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>扩展至其他星球的好处在于发现额外资源和空间，用以提升[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]，加速我们解锁新[HS=HS_Tech]科技[/HS]的速度。[BR][BR][ICON=Stat_Technology_Icon] [HS=HS_Technology]技术[/HS]作为行星输入，由一个[HS=HS_Colinizing]殖民[/HS]星球提供，增强了[HS=HS_CoreWorld]核心世界[/HS]上的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]。此外，可以在[HS=HS_CoreWorld]核心世界[/HS]上建造改良设施，以提高该星球提供的[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFifthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Colinizing]殖民[/HS]新星球不仅提供资源，也扩展了联盟的[HS=HS_ZoneOfControl]控制区域[/HS]。[HS=HS_ZoneOfControl]控制区域[/HS]代表被视作文明一部分的空间区域，基本上建立了边界。[BR][BR]有特定行动，如建造[HS=HS_Starbase]星基[/HS]，不能在其他文明的[HS=HS_ZoneOfControl]控制区域[/HS]内进行。其他行动，如小行星采矿，则只能在[HS=HS_ZoneOfControl]控制区域[/HS]内进行。[BR][BR][HS=HS_ZoneOfControl]控制区域[/HS]会根据[ICON=Stat_Influence_Icon][HS=HS_Influence]影响力[/HS]随时间自然扩张，尤其是[HS=HS_CoreWorld]核心世界[/HS]的影响。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--NEEDS A COREWORLD-->
+    <FlavorTextDef>
         <InternalName>Tutorial_ColonizedCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>你已经定居在你的第一个足够大的星球上，可以建立一个新的[HS=HS_CoreWorld]核心世界[/HS]！[BR][BR]许多星球不够大，无法允许殖民地扩张。对于那些无法支持[HS=HS_Shipyard]造船厂[/HS]的小星球，它们非常适合支持大型殖民地。这些小殖民地不需要任何额外的领导或管理。[BR][BR]由于他们的稀有，利用任何资源丰富的星球来创立大型殖民地是明智的。为了做到这一点，必须指定一名[HS=HS_Leaders]领导者[/HS]作为星球的[HS=HS_Governor]长官[/HS]。一旦有[HS=HS_Governor]长官[/HS]被任命，[HS=HS_Shipyard]造船厂[/HS]可以在星球上建立，并开始更好地利用资源。[BR][BR][HS=HS_Leaders]领导者[/HS]可以从[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]在[HS=HS_RecruitmentScreen]招募屏幕[/HS]下招募。然后，招募的[HS=HS_Leaders]领导者[/HS]可以被指派去管理在[HS=HS_GovernorsScreen]长官屏幕[/HS]下的星球。[BR][BR]完成的目标：殖民类别10或更高级别的星球[BR]新目标：任命一位长官</Text>
+            <Text>指挥官，我们已经[HS=HS_Colinizing]殖民[/HS]了一个[HS=HS_PlanetClass]星球等级[/HS]足够高，可以建立新的[HS=HS_CoreWorld]核心世界[/HS]。[HS=HS_CoreWorld]核心世界[/HS]能够支持一个[HS=HS_Shipyard]船坞[/HS]，并且可以发展来为联盟提供额外的行星产出。[BR][BR]要建立一个[HS=HS_CoreWorld]核心世界[/HS]，必须指派一位[HS=HS_Leaders]领袖[/HS]作为[HS=HS_Governor]总督[/HS]。[HS=HS_Leaders]领袖[/HS]可以通过[HS=HS_LeaderMenu]领袖菜单[/HS]招募和指派，或者通过点击[ICON=Menu_PlanetManagement_Icon][HS=HS_PlanetManagement]行星管理[/HS]按钮来更直接地招募。[BR][BR]已完成目标：殖民10级或更高等级的星球[BR]新目标：指派一名总督</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizeTargetPlanets</InternalName>
         <FlavorTextOption>
-            <Text>地球联盟被指派去殖民行星，以确保人类在太空的立足之处。无人能够质疑联盟的能力，所有的行星都成功地[HS=HS_Colinizing]殖民化[/HS]。花一点时间欣赏这个成就吧。[BR][BR]完成任务：殖民8个行星</Text>
+            <Text>地球联盟通过[HS=HS_Colinizing]殖民[/HS]占领了许多行星。感谢您的努力，我们的熟练度和能力得以不断扩展。[BR][BR]已完成目标：殖民8个行星</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -117,25 +327,57 @@
     <FlavorTextDef>
         <InternalName>Tutorial_ColonzieTargetWorldsNoCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>地球联盟被指派殖民行星，以确保人类在太空的立足之地。没有人能够质疑联盟的能力，所有的行星都成功地被[HS=HS_Colinizing]殖民化[/HS]。花一点时间，享受这个成就吧。[BR][BR]还有工作要做。所有的[HS=HS_Colinizing]殖民化[/HS]行星的等级都不足以证明扩张的必要性。继续寻找一个[HS=HS_PlanetClass]行星等级[/HS]10或更高的行星去[HS=HS_ColonizeOrder]殖民化[/HS]，以便我们可以建立一个新的[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR]完成的目标：殖民化8个行星[BR]新的目标：殖民化一个等级10或更高的行星</Text>
+            <Text>地球联盟已通过[HS=HS_Colinizing]殖民[/HS]手段占领了许多星球。正因为你的努力，我们的熟练度和能力不断提升。[BR][BR]尽管我们已经付出了努力，但我们还未能[HS=HS_Colinizing]殖民[/HS]到足够大的星球，以建立一个新的[HS=HS_CoreWorld]核心世界[/HS]。现在，建立[HS=HS_CoreWorld]核心世界[/HS]已成为联盟的优先任务。[BR][BR]已完成目标：殖民8个星球[BR]新目标：殖民一个10级或以上的星球</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>指挥官，我们已经获得足够的[HS=HS_CulturePoint]文化点数[/HS]来解锁一个文化特质。特定的行星建设能够产生[HS=HS_CulturePoint]文化点数[/HS]，比如首都城市。[BR][BR]每个文明都倾向于某些[HS=HS_Ideology]意识形态[/HS]。随着时间推移，基于所做决策和采取行动，倾向性可能会发生变化。[BR][BR]在屏幕底部的操作栏上可以找到用于文化进展菜单的[ICON=Menu_CulturalProgression_Icon]按钮，以此花费[HS=HS_CulturePoint]文化点数[/HS]。[BR][BR]新目标：解锁一个文化特质</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_OpenedCultureScreen</InternalName>
+        <FlavorTextOption>
+            <Text>您已进入文化进程界面。在这里您可以检查各种意识形态树。要了解文化特性，将鼠标悬停在文化特性上；上下文卡片将提供文化特性的效果和当前[HS=HS_CulturePoint]文化点数[/HS]成本。[BR][BR]如果您有足够的[HS=HS_CulturePoint]文化点数[/HS]，您可以解锁一个文化特性以获得其好处。选择一个意识形态后，您还可以在屏幕顶部看到意识形态折扣，代表您对该[HS=HS_Ideology]意识形态[/HS]的亲和力。通过建设某些行星改善设施，您可以赚取更多的[HS=HS_CulturePoint]文化点数[/HS]。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>随着文明的发展，解锁文化特质需要更多的[HS=HS_CulturePoint]文化点[/HS]。专注于特定的[HS=HS_Ideology]意识形态[/HS]并增加对该[HS=HS_Ideology]意识形态[/HS]的亲和力是降低[HS=HS_CulturePoint]文化点[/HS]成本并更快解锁有益特质的绝佳方式。[BR][BR]您可以查看文化进程屏幕，以了解有多少[HS=HS_CulturePoint]文化点[/HS]可用，一个[HS=HS_Ideology]意识形态[/HS]当前的折扣率，新文化特质的[HS=HS_CulturePoint]文化点[/HS]成本，或确认先前解锁的文化特质的好处。[BR][BR]已完成的目标：解锁一个文化特质。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
         <InternalName>Tutorial_InstalledGovernor</InternalName>
         <FlavorTextOption>
-            <Text>你已经成功指派了一位[HS=HS_Governor]州长[/HS]！他们的存在将殖民地转变为一个可以建造[HS=HS_Shipyard]造船厂[/HS]并发展行星的[HS=HS_CoreWorld]核心世界[/HS]。[BR][BR]但有一些坏消息。报告已经确认了星区中有海盗的存在。只要他们在太空中占有立足点并有地方建造船只，他们就是威胁。我们必须摧毁他们的[HS=HS_Shipyard]造船厂[/HS]，以保障我们殖民地的安全。[BR][BR]已完成任务：指派州长[BR]新任务：摧毁海盗造船厂</Text>
+            <Text>您已成功指派一位[HS=HS_Governor]总督[/HS]！他们的到来将殖民地转变为[HS=HS_CoreWorld]核心世界[/HS]，在此可以建造[HS=HS_Shipyard]船坞[/HS]并发展行星。[BR][BR]新的[HS=HS_CoreWorld]核心世界[/HS]发展需要时间，因为它们通常起始时行星产出低，资源稀缺。利用[HS=HS_EconomicsStarbase]经济星基[/HS]、[HS=HS_Colinizing]殖民[/HS]附近行星和开采小行星都是提升[ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]制造[/HS]能力并加速发展的途径。您也可以消耗[ICON=Stat_Credits_Icon][HS=HS_Credit]信用点[/HS]来[HS=HS_Rush]加速[/HS]建设。[BR][BR]已完成目标：任命总督</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_InformPlayerUnlockedLeaderScreen</InternalName>
         <FlavorTextOption>
-            <Text>无论多么能干，没有人能独自管理整个地球联盟。现在，只要有适当的基础设施，就可以招募[HS=HS_Leaders]领导人[/HS]。每个申请人都有优点和缺点，这使他们对任何角色的适合程度各不相同。[BR][BR][HS=HS_Leaders]领导人[/HS]可以作为[HS=HS_Governor]州长[/HS]，管理一个[HS=HS_CoreWorld]核心世界[/HS]，成为[HS=HS_Diplomat]外交官[/HS]（如果与其他团体取得联系），并且，重要的是，他们可以作为[HS=HS_Minister]部长[/HS]。[HS=HS_Minister]部长[/HS]致力于为整个文明带来利益。每个部长办公室都有一个关注的领域，并根据领导者的特定技能提供利益。[BR][BR]从[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导人菜单[/HS]中招募新的[HS=HS_Leaders]领导人[/HS]，该菜单位于[HS=HS_RecruitmentScreen]招募屏幕[/HS]下。然后，可以在[HS=HS_MinistersScreen]部长屏幕[/HS]下为[HS=HS_Leaders]领导人[/HS]分配新的角色。[BR][BR]新任务：任命3位部长。</Text>
+            <Text>指挥官，我们现在获得了[HS=HS_Leaders]领袖[/HS]的访问权。每位申请者都有优势和劣势，这决定了他们对各种角色的适应度。[BR][BR][HS=HS_Leaders]领袖[/HS]可以担任多个职位，但在分配之前，需要先聘用他们。要聘用[HS=HS_Leaders]领袖[/HS]，打开[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领袖菜单[/HS]。[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领袖菜单[/HS]的按钮位于屏幕底部的操作栏上。[BR][BR]新目标：聘用2名领袖</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedLeaderScreen</InternalName>
+        <FlavorTextOption>
+            <Text>在[ICON=Menu_Leader_Icon][HS=HS_LeaderMenu]领袖菜单[/HS]中有多个标签页。要雇佣新的[HS=HS_Leaders]领袖[/HS]，请关注[HS=HS_RecruitmentScreen]招募[/HS]标签页。可招募的候选人将在这里的屏幕上列出，显示他们可招募的[HS=HS_Months]回合[/HS]数量及其相关统计数据。一个[HS=HS_Leaders]领袖[/HS]的任何角色都会从特定统计数据中受益，但没有角色需要[HS=HS_Leaders]领袖[/HS]在所有技能上都熟练。因此，一两个低统计数据并不意味着[HS=HS_Leaders]领袖[/HS]就无效。[BR][BR]要雇佣一名[HS=HS_Leaders]领袖[/HS]，你需要有足够的[ICON=Stat_Credits_Icon][HS=HS_Credit]信用点[/HS]。[ICON=Stat_Credits_Icon][HS=HS_Credit]信用点[/HS]会根据所有[HS=HS_CoreWorld]核心世界[/HS]的[ICON=Stat_Income_Icon][HS=HS_ColonyGrossIncome]收入[/HS]随时间增加。要雇佣一名[HS=HS_Leaders]领袖[/HS]，用鼠标左键双击他们。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_HiredTargetLeaders</InternalName>
+        <FlavorTextOption>
+            <Text>领袖已招募，随时待命。[HS=HS_Leaders]领袖[/HS]的服务方式多种多样，但给整个联盟带来好处的一个绝佳方式是指派[HS=HS_Leaders]领袖[/HS]担任[HS=HS_Minister]部长[/HS]。[BR][BR][HS=HS_Minister]部长[/HS]监管文明的特定方面，并根据特定统计数据提供利益。在[HS=HS_LeaderMenu]领袖菜单[/HS]下的[HS=HS_MinistersScreen]部长[/HS]标签页查看可用职位。将鼠标悬停在[HS=HS_Minister]部长[/HS]办公室上方可以查看有关办公室的额外信息。通过用左键拖放[HS=HS_Leaders]领袖[/HS]来指派[HS=HS_Minister]部长[/HS]。[BR][BR]已完成目标：招募2名领袖[BR]新目标：任命3名部长</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CabinetFilled</InternalName>
         <FlavorTextOption>
-            <Text>您已成功任命若干位[HS=HS_Leaders]领导者[/HS]担任[HS=HS_Minister]部长[/HS]职务。他们的支持将在很大程度上帮助探索星系，定居新的行星，以及扩大地球联盟的影响力。当您招募新的[HS=HS_Leaders]领导者[/HS]或者他们的技能发生改变时，您可以随时更改[HS=HS_Leaders]领导者[/HS]在[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]领导者菜单[/HS]中的角色。[BR][BR]还有其他方式可以让整个联盟受益。[HS=HS_Policy]政策[/HS]是可以影响所有殖民地和舰队的规则。要实施一项[HS=HS_Policy]政策[/HS]，必须在[HS=HS_ResearchCenter]研究中心[/HS]中研究相应的[HS=HS_Tech]技术[/HS]。研究殖民政策以访问[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]和一个[HS=HS_Policy]政策[/HS]插槽。[BR][BR]已完成目标：任命3位部长[BR]新目标：研究殖民政策</Text>
+            <Text>您已成功任命数名[HS=HS_Leaders]领袖[/HS]担任[HS=HS_Minister]部长[/HS]职务。他们的支持将极大助益联盟。随着您招募新的[HS=HS_Leaders]领袖[/HS]或现有[HS=HS_Leaders]领袖们[/HS]的技能变化，您可以随时在[ICON=Menu_Leader_Icon][HS=HS_LeaderMenu]领袖菜单[/HS]中调整[HS=HS_Leaders]领袖[/HS]的角色。[BR][BR]所有[HS=HS_Leaders]领袖[/HS]都有优势和不足，因此检查您的[HS=HS_Leaders]领袖[/HS]非常重要。随着[HS=HS_Months]回合[/HS]的推移，将有更多[HS=HS_Leaders]领袖[/HS]可供聘用。[BR][BR]已完成目标：任命3名部长</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -151,9 +393,27 @@
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_GuideToUnlockPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>随着联盟的壮大，其管理工具也应随之提升。我们需要进一步研究，以开发更好管理联盟的基础设施。[BR][BR]《殖民政策》[HS=HS_Tech]科技[/HS]将解锁进入[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]的能力。通过[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]，可以管理整个联盟的[HS=HS_Taxes]税收[/HS]，查看行星产出总览，甚至制定[HS=HS_Policy]政策[/HS]。[BR][BR]新任务：研究殖民政策</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>Tutorial_UnlockedPolicyScreen</InternalName>
         <FlavorTextOption>
-            <Text>研究完成！您已经完成了对殖民政策[HS=HS_Tech]技术[/HS]的研究，您已经获得了进入[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]和[HS=HS_Policy]政策[/HS]的权限。[BR][BR]在[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]下，您可以获得联盟的高级概览。您可以查看总体批准，文明产出等等。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]也提供了文明[HS=HS_Policy]政策[/HS]的访问。通过研究某些[HS=HS_Tech]技术[/HS]，可以增加可以实施的[HS=HS_Policy]政策[/HS]的数量。现在试着实施一个[HS=HS_Policy]政策[/HS]以帮助联盟更加紧密的运作。[BR][BR]已完成目标：研究殖民政策[BR]新目标：实施一个政策</Text>
+            <Text>殖民政策研究完成。现在您可以访问[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]提供大量有用信息，并且允许您颁布影响整个联盟的[HS=HS_Policy]政策[/HS]。[BR][BR]您可以通过按动作栏上的[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]按钮来打开[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明菜单[/HS]。[BR][BR]完成目标：研究殖民政策[BR]新目标：颁布一项政策</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedPolicyScreenNotObjective</InternalName>
+        <FlavorTextOption>
+            <Text>殖民政策研究完成。您现在可以访问[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]。[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]提供了大量有用信息，并且允许您颁布影响整个联盟的[HS=HS_Policy]政策[/HS]。[BR][BR]您可以通过按动作栏上的[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]按钮来打开[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]。[BR][BR]新目标：颁布一项政策</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>在[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明菜单[/HS]这里，你可以使用一些工具更好地管理整个文明。你可以调整[HS=HS_Taxes]税率[/HS]，这将直接影响[ICON=Approval_Stat_Icon][HS=HS_Approval]支持率[/HS]以及每个[HS=HS_Months]回合[/HS]的[ICON=Stat_Credits_Icon][HS=HS_Credit]积分[/HS]变化。[BR][BR]你现在还可以颁布一项[HS=HS_Policy]政策[/HS]。[HS=HS_Policy]政策[/HS]是一种会影响每个殖民地、公民、[HS=HS_Fleet]舰队[/HS]，有时甚至更多的命令方式。通过研究某些[HS=HS_Tech]技术[/HS]，你可以解锁额外的政策槽。[BR][BR]要颁布一个[HS=HS_Policy]政策[/HS]，从可用政策面板中选择一个[HS=HS_Policy]政策[/HS]，然后将其拖放到一个解锁的槽中。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -165,7 +425,19 @@
     <FlavorTextDef>
         <InternalName>Tutorial_PiratesSpotted</InternalName>
         <FlavorTextOption>
-            <Text>TKTKTKTKTKTKTKTKTK</Text>
+            <Text>指挥官，已确认[HS=HS_Pirates]海盗[/HS]在[HS=HS_Sector]星区[/HS]建立了[HS=HS_Shipyard]造船厂[/HS]。问题可能会进一步恶化。[BR][BR]这些[HS=HS_Pirates]海盗[/HS]不仅威胁我们的舰队和殖民地，还给地球联盟带来了坏名声。我们应当尽快拆除他们的造船能力，以此来解决问题。[BR][BR]新目标：摧毁一座海盗造船厂</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FighterSelected</InternalName>
+        <FlavorTextOption>
+            <Text>战斗机选定，准备接受命令！[BR][BR]战斗机种类繁多，具备不同的船体、武器和装甲。它们的主要目的是防守和进攻。可以指令它们[HS=HS_ShipMovement]移动[/HS]到殖民地或星基站，在轨道上驻防，以防任何敌对舰队试图攻击该位置。[BR][BR]要指令舰船进攻，请用鼠标右键选择目标。目标将成为所选舰船移动的目的地。一旦移至相邻区域，便可进行战斗。[BR][BR][HS=HS_Fleet]舰队[/HS]在战斗中的表现优于单独的战斗机。要创建[HS=HS_Fleet]舰队[/HS]，将舰船移动到同一区域，如果它们的[ICON=ShipLogistics_Icon] [HS=HS_Logistics]后勤[/HS]足够，舰船将自动结成舰队。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_LostAFight</InternalName>
+        <FlavorTextOption>
+            <Text>指挥官，我们输掉了一场冲突。[BR][BR]未来，我们可以通过将舰船组成[HS=HS_Fleet]舰队[/HS]来提高胜算。通过[HS=HS_ShipMovement]移动[/HS]舰船至同一区块来组建[HS=HS_Fleet]舰队[/HS]。一个[HS=HS_Fleet]舰队[/HS]的规模受到其[ICON=ShipLogistics_Icon] [HS=HS_Logistics]后勤[/HS]的限制，因此如果[HS=HS_Fleet]舰队[/HS]无法形成或扩张，那是因为[ICON=ShipLogistics_Icon] [HS=HS_Logistics]后勤[/HS]分数过高。[BR][BR]另外，通过保持进攻来控制战斗的发生时机。主动发起对我们有利的战斗来削弱敌人。避免与过于强大、难以迅速击败的舰队交战，并利用距离战术，如光束齐射和导弹齐射。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -183,13 +455,13 @@
     <FlavorTextDef>
         <InternalName>Tutorial_GuideToExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>随着时间的推移，联盟将积累[ICON=Stat_Control_Icon] [HS=HS_Control]控制[/HS]点数，这是一种代表着对其他实体施加影响或命令的资源。这些[HS=HS_Control]控制[/HS]点数可以用于多种目的，其中，最为常见的就是发出[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]。[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]具有即刻生效并带来各种效果的特性。这些命令在许多情境中都极为有用。例如，在联盟扩张的时候，“征募殖民者”命令可能特别实用。试着利用[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]来更好地实现联盟的目标。[BR][BR]你可以在相关的选单中找到并使用[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]。有些命令会在确认后立刻生效，而有些则需要你选择一个目标并进行具体的指派。将鼠标放在[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]图标上并使用左键来选择相应的命令。[BR][BR]新目标：执行一次行政命令。</Text>
+            <Text>随着时间的推移，联盟获取了控制力，这是一种施加意志的资源。[ICON=Stat_Control_Icon] [HS=HS_Control]控制力[/HS]可用于多种方式，其中一个有益的方式是使用[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]。[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]是可以产生各种影响的能力。它们在所有类型的场景中都可能有益。随着联盟的扩张，“征召殖民者”命令或许是最有帮助的。要使用一个[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]，首先将鼠标悬停在[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]选项上，然后使用鼠标左键选择一个命令。[BR][BR]新目标：使用一个行政命令。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_UsedExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>成功！[BR][BR]您的[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]已经执行了。除了成本，大多数[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]都有一个冷却时间，即在[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]可以再次使用之前必须经过多少个[HS=HS_Months]月[/HS]。确保有足够的[ICON=Stat_Control_Icon] [HS=HS_Control]控制[/HS]来自[HS=HS_CoreWorld]核心世界[/HS]总是一个好主意，这样[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]就可以在需要时使用。[BR][BR]完成任务：使用一次行政命令</Text>
+            <Text>成功！[BR][BR]您的[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]已经执行。除了成本之外，大多数[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]都有冷却时间，即在[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]能再次使用之前必须等待的[HS=HS_Months]回合[/HS]数。确保从[HS=HS_CoreWorld]核心世界[/HS]获得足够的[ICON=Stat_Control_Icon] [HS=HS_Control]控制力[/HS]始终是明智之举，这样在需要时就可以使用[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]行政命令[/HS]。[BR][BR]完成目标：使用一项行政命令</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
