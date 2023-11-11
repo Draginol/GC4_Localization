@@ -95,6 +95,11 @@
         <Label>Requires Supernova</Label>
         <String>Requires Supernova</String>
     </StringTable>
+  <StringTable>
+    <Label>TalesOfTheArnor</Label>
+    <String>Tales of the Arnor</String>
+  </StringTable>
+  
     <StringTable>
         <Label>Factions_Tooltip</Label>
         <String>Assign leaders to work with various factions in your civilization in order to gain favor and procure from their abilities.</String>
@@ -305,7 +310,7 @@
     </StringTable>
     <StringTable>
         <Label>Civ_locked_For_EA_Tooltip</Label>
-        <String>Locked in Early Access</String>
+        <String>Coming Soon!</String>
     </StringTable>
     <StringTable>
         <Label>Available_Civilizations</Label>
@@ -1015,9 +1020,13 @@
         <Label>MODS_OFFLINE</Label>
         <String>Mod Manager is currently unavailable. Please try again later.</String>
     </StringTable>
+  <StringTable>
+    <Label>NoModInfoFound</Label>
+    <String>No mod info found.</String>
+  </StringTable>
     <StringTable>
         <Label>MODS_ONLINE</Label>
-        <String>Mod Workshop</String>
+        <String>Workshop</String>
     </StringTable>
     <StringTable>
         <Label>MOD_UPDATES_AVAILBLE</Label>
@@ -3125,7 +3134,7 @@
     </StringTable>
     <StringTable>
         <Label>GROWTH_TOOLTIP_BLACK_NOTIFICATION_TEXT</Label>
-        <String>[COLOR=BrightRed]There isn't enough food in your civilization to sustain the population of this planet. Increase your food income to address this shortage.[/COLOR]</String>
+        <String>[COLOR=BrightRed]There isn't enough food in your civilization to sustain the organic population of this planet. Increase your food income to address this shortage.[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>INFLUENCE_TOOLTIP_YELLOW_NOTIFICATION_TEXT</Label>
@@ -5064,6 +5073,34 @@
         <String>Damage</String>
     </StringTable>
     <StringTable>
+      <Label>BATTLE_LOG_TOOLTIP_EVASIONSTAT</Label>
+      <String>Evasion: {AMOUNT:0}[BR][BR]{DESCRIPTION}</String>
+    </StringTable>
+    <StringTable>
+      <Label>BATTLE_LOG_TOOLTIP_SHIELDINTEGRITY</Label>
+      <String>Shield Integrity: {AMOUNT:0}[BR]Max Shields: {AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
+    </StringTable>
+    <StringTable>
+      <Label>BATTLE_LOG_TOOLTIP_SHIELDINTEGRITY_NA</Label>
+      <String>No Shields[BR][BR]{DESCRIPTION}</String>
+    </StringTable>
+      <StringTable>
+      <Label>BATTLE_LOG_TOOLTIP_ARMORINTEGRITY</Label>
+      <String>Armor Integrity: {AMOUNT:0}[BR]Max Armor: {AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
+    </StringTable>
+    <StringTable>
+      <Label>BATTLE_LOG_TOOLTIP_ARMORINTEGRITY_NA</Label>
+      <String>No Armor[BR][BR]{DESCRIPTION}</String>
+    </StringTable>
+    <StringTable>
+        <Label>BATTLELOG_PERCENT_STRING</Label>
+        <String>{AMOUNT}%</String>
+    </StringTable>
+  <StringTable>
+    <Label>BATTLE_LOG_NO_DEFENSE_VALUE</Label>
+    <String>NA</String>
+  </StringTable>
+    <StringTable>
         <Label>GOVERNORSLABEL</Label>
         <String>Commands</String>
     </StringTable>
@@ -5673,7 +5710,7 @@
     </StringTable>
     <StringTable>
         <Label>VOVolume</Label>
-        <String>Voiceover Volume (relative to music)</String>
+        <String>Voiceover Volume</String>
     </StringTable>
     <StringTable>
         <Label>TEAM_LABEL</Label>
@@ -6309,7 +6346,7 @@
     </StringTable>
     <StringTable>
         <Label>ShowAutoPilotLines</Label>
-        <String>Show Auto-Pilot Lines</String>
+    	<String>Show All Fleet Paths</String>
     </StringTable>
     <StringTable>
         <Label>MANUFACTURINGSPENDINGRATIOLABEL</Label>
@@ -6529,7 +6566,7 @@
 	</StringTable>
     <StringTable>
         <Label>MANAGEPLANETBUTTON</Label>
-        <String>Manage [Dbl Click]</String>
+        <String>Manage (Dbl Click)</String>
     </StringTable>
     <StringTable>
         <Label>REPORTS_LABEL</Label>
@@ -9944,6 +9981,10 @@
         <String>Escaped!</String>
     </StringTable>
     <StringTable>
+      <Label>Battle_Log_Overkill</Label>
+      <String>Overkill!</String>
+    </StringTable>
+    <StringTable>
         <Label>Battle_Viewer_Deflected</Label>
         <String>Deflected!</String>
     </StringTable>
@@ -10263,6 +10304,11 @@
         <Label>CIVILIZATIONSETUP_MISSING_DLC_TOOLTIP</Label>
         <String>Purchase the %s to unlock this Civilization!</String>
     </StringTable>
+  <StringTable>
+    <Label>CIVILIZATIONSETUP_DISABLED_DLC_TOOLTIP</Label>
+    <String>Enable %s to unlock this Civilization!</String>
+  </StringTable>
+
     <StringTable>
         <Label>STARBASE_STAT_MAINTENANCE_LABEL</Label>
         <String>Maintenance</String>
@@ -20988,7 +21034,7 @@
     </StringTable>
     <StringTable>
         <Label>IsCoreWorld_REQLABEL</Label>
-        <String>Is Core World</String>
+        <String>[COLOR=BrightRed]Cannot build: Requires[/COLOR] [HS=HS_CoreWorld]Core World[/HS]</String>
     </StringTable>
     <StringTable>
         <Label>IsCapital_REQLABEL</Label>
@@ -21587,9 +21633,15 @@
         <String>Shop</String>
     </StringTable>
     <StringTable>
-        <Label>Title_Mods_Label</Label>
-        <String>Mods</String>
+        <Label>Title_Workshop_Label</Label>
+        <String>Mods Workshop</String>
     </StringTable>
+
+  <StringTable>
+    <Label>Title_ModManager_Label</Label>
+    <String>Mod Manager</String>
+  </StringTable>
+  
     <StringTable>
         <Label>Title_Visit_Label</Label>
         <String>Visit</String>
@@ -23796,7 +23848,7 @@
     </StringTable>
     <StringTable>
         <Label>BETA_FOR_TESTING_PORPOSES_ONLY</Label>
-        <String>EARLY ACCESS. PLEASE REPORT BUGS AND YOUR IDEAS.</String>
+        <String> </String>
     </StringTable>
     <StringTable>
         <Label>GotoBinkMode</Label>
@@ -25352,6 +25404,10 @@
         <String>Weapon</String>
     </StringTable>
     <StringTable>
+      <Label>Battle_Log_Accuracy</Label>
+      <String>Accuracy</String>
+    </StringTable>
+    <StringTable>
         <Label>Battle_Log_Range</Label>
         <String>Range</String>
     </StringTable>
@@ -25818,12 +25874,57 @@
         <String>Voiceovers</String>
     </StringTable>
 
-	
 	<StringTable>
 		<Label>ResearchTurnsRemaining</Label>
 		<String>%d turn(s) to complete research</String>
 	</StringTable>
-	
+
+	<StringTable>
+		<Label>Mods_ScreenTitle</Label>
+		<String>Mod Manager</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_ActiveMods</Label>
+		<String>Active</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_AvailableMods</Label>
+		<String>Available</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_Enable</Label>
+		<String>Activate</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_Disable</Label>
+		<String>Deactivate</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_AddMods</Label>
+		<String>Add</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_GetInfo</Label>
+		<String>Get Info</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_Browse</Label>
+		<String>Browse</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Mods_Details</Label>
+		<String>Mod Details</String>
+	</StringTable>
+
+
 	<!-- ***************************************************************************** -->
 
     <!-- ******************DO NOT TRANSLATE THIS STRING******************************* -->

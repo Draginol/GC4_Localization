@@ -343,7 +343,7 @@ class TranslationApp(QMainWindow):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=1000,
+                max_tokens=1500,
                 n=1,
                 stop=None,
                 temperature=0.7,
@@ -372,11 +372,11 @@ class TranslationApp(QMainWindow):
             translated_text = self.translate_to_language(english_text, row, target_language)
             return row, translated_text
 
-        CHUNK_SIZE = 48
+        CHUNK_SIZE = 32
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=48) as executor:
+            with ThreadPoolExecutor(max_workers=32) as executor:
                 results = list(executor.map(translate_row, chunk))
 
             for row, translated_text in results:
