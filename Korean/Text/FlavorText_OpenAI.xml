@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>당신은 숙련된 과학 소설 작가입니다.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0} 진영의 해군 또는 우주선 부호를 공상 과학 전략 게임에 맞게 창의적으로 만들어주세요. 응답은 약어 또는 줄임말이어야 하며, 정확하게 2 또는 3개의 대문자로 구성되어야 합니다. 각 대문자 뒤에는 마침표를 붙여주세요. 전체 단어를 포함하지 마세요. 예를 들어, H.M.S. 또는 U.S.S.와 같습니다. 응답은 마침표를 포함하여 6글자를 초과하지 마세요.</Text>
+            <Text>{PREVIOUSCONV:0}에서 첫 번째 단어의 첫 글자를 첫 번째 글리프로, 두 번째 단어의 첫 글자를 두 번째 글리프로 사용하고, 'Ship'의 첫 글자를 마지막 글자로 사용하여 함대 접두사를 생성하세요. 응답은 점으로 구분된 3개의 영문 글리프여야 하며, 전체 단어가 아니어야 합니다.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

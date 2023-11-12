@@ -29,41 +29,20 @@
             <Text>Se arregla para parecer idéntico a un amigo muerto hace mucho tiempo.</Text>
             <Text>Constantemente volteando una moneda de origen extraterrestre.</Text>
             <Text>Se sabe que ha hecho cumplir violentamente el uso de la gramática correcta.</Text>
-            <Text>Insiste en que los Precursores aún caminan entre nosotros, disfrazados.</Text>
-            <Text>Ama cantar, pero tiene un espantoso sentido del tono, ritmo y armonía.</Text>
-            <Text>Perdió contacto con su familia.</Text>
-            <Text>Adora asignar nombres de mascotas humillantes a sus asesores.</Text>
             <Text>Tiene un sentido del humor terrible.</Text>
             <Text>Es guiado(a) por dos voces enfrentadas en su cabeza, cuyo consejo combinado nunca falla.</Text>
             <Text>Una vez cometió accidentalmente un acto de canibalismo.</Text>
             <Text>Metódico(a) y organizado(a), emprendió un extenso entrenamiento para ser archivista.</Text>
             <Text>Es amenazado(a) por amenazas de muerte anónimas que llegan de alguna entidad desconocida.</Text>
-            <Text>Sirve a disposición de una organización secreta que podría matarlo(a) en cualquier momento.</Text>
             <Text>Experimenta sinestesia al comunicarse con especies alienígenas.</Text>
-            <Text>Lleva consigo el cráneo de su antiguo némesis.</Text>
-            <Text>Pasó décadas bajo un voto de silencio, sin comunicarse con nadie.</Text>
-            <Text>Estuvo atrapado(a) en una nave colonial a la deriva durante muchas décadas.</Text>
-            <Text>Trabaja diligentemente todos los días en su autobiografía.</Text>
             <Text>Tiene una terrible tartamudez y un miedo paralizante a hablar en público.</Text>
             <Text>Único(a) superviviente de un accidente durante el entrenamiento en una academia militar.</Text>
             <Text>Tiene terror de su propio reflejo.</Text>
-            <Text>Entrenado(a) para ser un(a) científico(a), pero no tenía la aptitud.</Text>
             <Text>Encontró a un monstruo espacial, ahora está obsesionado(a) con encontrarlo de nuevo.</Text>
             <Text>Tiene extrañas nociones de 'honor'.</Text>
-            <Text>Debido a un incidente desconocido en su infancia, se niega a estar en una habitación o espacio con poca luz.</Text>
             <Text>Está obsesionado(a) con la genealogía y totalmente convencido(a) de que el conocimiento ancestral es real.</Text>
             <Text>Insiste vehementemente que es la reencarnación de un gran líder de la historia antigua.</Text>
-            <Text>Posee un artefacto misterioso que le impide proyectar una sombra.</Text>
-            <Text>Fue criado(a) por los enemigos de sus padres como rehén.</Text>
-            <Text>Es el último miembro de una antigua estirpe.</Text>
-            <Text>Es muy probable que sea el niño(a) de la profecía que guiará a la gente hacia la grandeza o la perdición.</Text>
-            <Text>Prefiere la comunicación verbal, incluso hasta el punto de destruir documentos sin leer.</Text>
             <Text>Un(a) despiadado(a) disciplinario(a), que exige perfección de sus subordinados.</Text>
-            <Text>Enfrentó numerosas acusaciones de tener creencias 'impuras'. Las acusaciones eran ciertas.</Text>
-            <Text>Fue una vez acusado(a) injustamente del asesinato de un rival político.</Text>
-            <Text>Proviene de una familia que respalda secretamente la piratería espacial.</Text>
-            <Text>Se le ha entregado todo en bandeja de plata. Nunca ha sido desafiado(a).</Text>
-            <Text>Un(a) soñador(a) lúcido(a), que utiliza sus sueños para ensayar reuniones importantes.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -92,7 +71,7 @@
                 <CitizenRace>Race_Moth</CitizenRace>
             </Requirements>
             <Text>Duerme con una linterna oculta bajo su almohada.</Text>
-            <Text>Nunca ha sido formalmente acusado(a) de incendio provocado, pero no se le permite acercarse a acelerantes.</Text>
+            <Text>Nunca ha sido formalmente acusado de incendio intencional, pero no se le permite acercarse a acelerantes.</Text>
             <Text>Dedica gran parte de su tiempo libre a meditar.</Text>
             <Text>Se destacó a través de un movimiento de base.</Text>
             <Text>Mantiene recordatorios de las reglas básicas de gramática escritos en su mano.</Text>
@@ -129,7 +108,7 @@
             <Requirements>
                 <CitizenRace>Race_Torian</CitizenRace>
             </Requirements>
-            <Text>Sobrevivió la vida como un(a) esclavo(a) Drengin.</Text>
+            <Text>Sobrevivió la vida como un esclavo de los Drengin.</Text>
             <Text>Siempre se mantiene cerca de la salida de cualquier habitación.</Text>
             <Text>Dedica su tiempo libre a donar tiempo a programas para ayudar a los necesitados.</Text>
             <Text>Lleva dos dientes de Drengin en un collar.</Text>
@@ -197,7 +176,7 @@
             <Requirements>
                 <CitizenTrait>LeaderTrait_TrainedChef</CitizenTrait>
             </Requirements>
-            <Text>Criado(a) por okupas en una fábrica desolada.</Text>
+            <Text>Once trained as a chef, dreams of opening their own restaurant.</Text>
             <PreferenceWeight>11</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -406,15 +385,162 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <CitizenTrait>LeaderTrait_PrecursorsEnigma</CitizenTrait>
+            </Requirements>
+            <Text>Insiste en que los Precursores aún caminan entre nosotros, disfrazados.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_DreadfulMelody</CitizenTrait>
+            </Requirements>
+            <Text>Ama cantar, pero tiene un espantoso sentido del tono, ritmo y armonía.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_RelativisticReunion</CitizenTrait>
+            </Requirements>
+            <Text>Perdió contacto con su familia.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_NamingGame</CitizenTrait>
+            </Requirements>
+            <Text>Adora asignar nombres de mascotas humillantes a sus asesores.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_SecretWatchers</CitizenTrait>
+            </Requirements>
+            <Text>Sirve a disposición de una organización secreta que podría matarlo(a) en cualquier momento.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_NemesisLegacy</CitizenTrait>
+            </Requirements>
+            <Text>Lleva consigo el cráneo de su antiguo némesis.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_MuteMysteries</CitizenTrait>
+            </Requirements>
+            <Text>Pasó décadas bajo un voto de silencio, sin comunicarse con nadie.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_LostColonyShip</CitizenTrait>
+            </Requirements>
+            <Text>Estuvo atrapado(a) en una nave colonial a la deriva durante muchas décadas.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_UnfinishedAutobiography</CitizenTrait>
+            </Requirements>
+            <Text>Trabaja diligentemente todos los días en su autobiografía.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_UnfulfilledDream</CitizenTrait>
+            </Requirements>
+            <Text>Entrenado(a) para ser un(a) científico(a), pero no tenía la aptitud.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_DarkPast</CitizenTrait>
+            </Requirements>
+            <Text>Debido a un incidente desconocido en su infancia, se niega a estar en una habitación o espacio con poca luz.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_ShadowlessArtifact</CitizenTrait>
+            </Requirements>
+            <Text>Posee un artefacto misterioso que le impide proyectar una sombra.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_HostageChild</CitizenTrait>
+            </Requirements>
+            <Text>Was raised by their parents' enemies as a hostage.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_AncientBloodline</CitizenTrait>
+            </Requirements>
+            <Text>Es el último miembro de una antigua estirpe.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_ChildOfProphecy</CitizenTrait>
+            </Requirements>
+            <Text>Es muy probable que sea el niño(a) de la profecía que guiará a la gente hacia la grandeza o la perdición.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_DocumentDestroyer</CitizenTrait>
+            </Requirements>
+            <Text>Prefiere la comunicación verbal, incluso hasta el punto de destruir documentos sin leer.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_HereticPast</CitizenTrait>
+            </Requirements>
+            <Text>Enfrentó numerosas acusaciones de tener creencias 'impuras'. Las acusaciones eran ciertas.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_FramedInnocent</CitizenTrait>
+            </Requirements>
+            <Text>Fue una vez acusado(a) injustamente del asesinato de un rival político.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_PirateFamily</CitizenTrait>
+            </Requirements>
+            <Text>Proviene de una familia que respalda secretamente la piratería espacial.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_SilverPlatter</CitizenTrait>
+            </Requirements>
+            <Text>Se le ha entregado todo en bandeja de plata. Nunca ha sido desafiado(a).</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <CitizenTrait>LeaderTrait_Dreamer</CitizenTrait>
+            </Requirements>
+            <Text>Un(a) soñador(a) lúcido(a), que utiliza sus sueños para ensayar reuniones importantes.</Text>
+            <PreferenceWeight>12</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <SpeakerRaceTrait>CarbonBasedLife</SpeakerRaceTrait>
             </Requirements>
             <Text>Amplio historial criminal fue borrado por contactos gubernamentales.</Text>
             <Text>Ha contraído grandes cantidades de deuda por juego.</Text>
-            <Text>Increíblemente vanidoso(a), conocido(a) por matar a personas más atractivas.</Text>
-            <Text>Un(a) antiguo(a) asesino(a) deprimido(a), atormentado(a) por su culpa.</Text>
-            <Text>Tacaño(a) con el dinero y despreciado(a) por sus subordinados.</Text>
-            <Text>Temido(a) y odiado(a), pero secretamente desesperado(a) por ser querido(a).</Text>
-            <Text>Tiene sueños recurrentes de sí mismo(a) en una vida pasada.</Text>
+            <Text>Increíblemente vanidoso, conocido por matar a personas más atractivas que él.</Text>
+            <Text>Un antiguo asesino deprimido, atormentado por su culpa.</Text>
+            <Text>Tacaño con el dinero y despreciado por sus subordinados.</Text>
+            <Text>Temido y odiado, pero secretamente desesperado por ser querido.</Text>
+            <Text>Tiene sueños recurrentes de sí mismos en una vida pasada.</Text>
             <Text>Tiene un hermano más famoso al que desprecia.</Text>
             <Text>Pasó toda su vida persiguiendo métodos para lograr la inmortalidad.</Text>
             <Text>Tiene un alarmante número de conexiones criminales.</Text>
@@ -556,11 +682,11 @@
             <Requirements>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Prueba de Planeta Terrano 1.</Text>
-            <Text>Terran Planet Test 2</Text>
-            <Text>Terran Planet Test 3</Text>
-            <Text>Terran Planet Test 4</Text>
-            <Text>Terran Planet Test 5</Text>
+            <Text>Prueba de Planeta Terrano 1</Text>
+            <Text>Prueba de Planeta Terrano 2</Text>
+            <Text>Prueba del Planeta Terrano 3</Text>
+            <Text>Prueba de Planeta Terrano 4</Text>
+            <Text>Prueba del Planeta Terrano 5</Text>
             <PreferenceWeight>0</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
