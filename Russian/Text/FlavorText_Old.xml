@@ -678,7 +678,7 @@
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>{PLAYERFACTIONLONG:2}, мы ценим вас, но усиление военного присутствия нас беспокоит.</Text>
+            <Text>{PLAYERFACTIONLONG:2}, мы видим, как вы накапливаете силы у наших дверей. Вам следует прекратить это.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -688,7 +688,7 @@
                     <RangeMax>-4</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, мы ценим вас, но усиление военного присутствия нас беспокоит.</Text>
+            <Text>{PLAYERFACTIONLONG:2} Несмотря на то, что вы нам нравитесь, нам не нравится военное наращивание, которое мы видим.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -760,7 +760,7 @@
     <FlavorTextDef>
         <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Надеюсь, ради вас, что наше доверие не было напрасным.</Text>
+            <Text>Мы будем внимательно наблюдать.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -1312,15 +1312,28 @@
     <FlavorTextDef>
         <InternalName>STOLE_TECH_FAIL</InternalName>
         <FlavorTextOption>
-            <Text>Мы не украли никаких технологий у {PLAYERFACTION:3}.</Text>
+            <Text>Наш космический глаз устремился на {PLAYERFACTION:3}. Хотя новых технологий не обнаружено, мы получили представление о методах исследования, отличных от наших. [BR][BR][COLOR=UIDefaultHighlight][ICON=Stat_Research_Icon] +25% к прогрессу исследований[/COLOR]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+
+    <FlavorTextDef>
+		<InternalName>STOLE_TECH_FAIL_NO_RESEARCH</InternalName>
+		<FlavorTextOption>
+			<Text>Наш космический глаз устремился на {PLAYERFACTION:3}. Новых технологий не обнаружено, и у нас не было своего исследовательского проекта для сравнения с ихним.</Text>
+		</FlavorTextOption>
+	</FlavorTextDef>
     <FlavorTextDef>
         <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
         <FlavorTextOption>
             <Text>Ура нам.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
+    <FlavorTextDef>
+		<InternalName>STOLE_TECH_RESPONSE_OK_NO_RESEARCH</InternalName>
+		<FlavorTextOption>
+			<Text>Как неразумно с нашей стороны.</Text>
+		</FlavorTextOption>
+	</FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC</InternalName>
         <FlavorTextOption>
