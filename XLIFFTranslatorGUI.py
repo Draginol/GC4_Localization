@@ -259,7 +259,7 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 1)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"In the context of a sci-fi game and '{label_name}' to identify the string in a string table, translate this English string smoothly and with nuance while respecting formatting codes into {target_language}: Output only the translated text. Text to translate: {text}"
+        prompt = f"In the context of a sci-fi game and '{label_name}' to identify the string in a string table, translate this English string smoothly and with nuance while respecting formatting codes and HotSpot (HS) Definitions into {target_language}: Output only the translated text. Text to translate: {text}"
 
         try:
             response = openai.chat.completions.create(
