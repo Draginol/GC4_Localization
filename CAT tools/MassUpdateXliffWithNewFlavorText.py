@@ -30,7 +30,8 @@ def process_file_element(file_element, english_root, translated_root):
             english_entry = find_entry_by_internal_name(english_root, internal_name)
             if english_entry:
                 english_text = english_entry.find('.//Text').text
-                if source_text != english_text:
+                 # Compare first 100 characters
+                if source_text[:100] != english_text[:100]:
                     trans_unit.find('source').text = escape_xml(english_text)
                     trans_unit.find('target').text = " "  # Resetting target text to a single space
 
