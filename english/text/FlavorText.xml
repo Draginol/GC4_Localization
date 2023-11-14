@@ -5752,6 +5752,22 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We humbly agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are grateful for your mercy and agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <TradePersuaded>true</TradePersuaded>
             </Requirements>
             <Text>You are very persuasive, let's trade.</Text>
@@ -5986,8 +6002,17 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>You may live. For now.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>You have our respect.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>

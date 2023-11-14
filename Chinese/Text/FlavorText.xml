@@ -2862,7 +2862,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>We strive to extend kindness to all we meet.</Text>
+            <Text>我们致力于向所有遇见的人展示善意。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3014,7 +3014,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>We strive to extend kindness to all we meet.</Text>
+            <Text>我们致力于向所有遇见的人展示善意。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5750,6 +5750,22 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Erasuto ki nakeduc menurit! {LEADERNAME:2}，您需要研究通用翻译器，以便理解{PLAYERFACTION:1}的神秘信息！[BR](你需要研究通用翻译器)</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>Erasuto ki nakeduc menurit! {LEADERNAME:2}，您需要研究通用翻译器，以便理解{PLAYERFACTION:1}的神秘信息！[BR](你需要研究通用翻译器)</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <TradePersuaded>true</TradePersuaded>
             </Requirements>
             <Text>你非常有说服力，让我们交易吧。</Text>
@@ -5984,8 +6000,17 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>这将对我们有用。暂时。。如果它是一个文件名，只需复制英文。</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>您有我们的尊敬。</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>

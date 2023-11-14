@@ -2865,7 +2865,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>We strive to extend kindness to all we meet.</Text>
+            <Text>Мы стремимся проявлять доброту ко всем, кого встречаем.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3121,7 +3121,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_KORATH</ListenerFaction>
             </Requirements>
-            <Text>Искренность, которую я обнаруживаю в твоем сознании, редка.</Text>
+            <Text>The sincerity I detect in your mind is rare.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5755,6 +5755,22 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We humbly agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are grateful for your mercy and agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <TradePersuaded>true</TradePersuaded>
             </Requirements>
             <Text>Вы очень убедительны, давайте обменяемся.</Text>
@@ -5989,8 +6005,17 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>Это сработает для нас. Пока.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>You have our respect.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6166,7 +6191,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>Here is an exchange we propose, alien. It is a good one, fair and true.</Text>
+            <Text>Вот обмен, который мы предлагаем, пришелец. Он хороший, честный и искренний.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>

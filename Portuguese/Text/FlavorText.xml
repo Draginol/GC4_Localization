@@ -1616,7 +1616,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Hã?.</Text>
+            <Text>Hã?</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2862,7 +2862,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>We strive to extend kindness to all we meet.</Text>
+            <Text>Nos esforçamos para estender a gentileza a todos que encontramos.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3118,7 +3118,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_KORATH</ListenerFaction>
             </Requirements>
-            <Text>A sinceridade que detecto em sua mente é rara.</Text>
+            <Text>The sincerity I detect in your mind is rare.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4876,7 +4876,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>[I]A forma de vida agitada lança algo na tela, mantendo um olhar intenso.[/I][BR][BR][COLOR=UIDefaultHighlight](Estamos em guerra)[/COLOR]</Text>
+            <Text>[I]A forma de vida contorcendo-se atira algo na tela, mantendo um olhar intenso.[/I][BR][BR][COLOR=UIDefaultHighlight](Estamos em guerra)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -5306,7 +5306,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -5750,6 +5750,22 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We humbly agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are grateful for your mercy and agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <TradePersuaded>true</TradePersuaded>
             </Requirements>
             <Text>Você é bastante persuasivo, vamos negociar.</Text>
@@ -5984,8 +6000,17 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>Isto funcionará para nós. Por enquanto.</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>You have our respect.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6161,7 +6186,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>Here is an exchange we propose, alien. It is a good one, fair and true.</Text>
+            <Text>Aqui está uma troca que propomos, alienígena. É uma boa, justa e verdadeira.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6440,7 +6465,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]A mensagem caótica e contorcida é completamente indecifrável, o único som vindo da comunicação é um ruído borbulhante de fundo.[/I]</Text>
+            <Text>[I]A mensagem caótica e contorcida é completamente indecifrável, o único som que vem da comunicação é um ruído de fundo borbulhante e baixo.[/I]</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6509,7 +6534,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6630,7 +6655,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6643,7 +6668,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6656,7 +6681,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6669,7 +6694,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6682,7 +6707,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6695,7 +6720,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6708,7 +6733,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6721,7 +6746,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6734,7 +6759,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6747,7 +6772,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6760,7 +6785,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6773,7 +6798,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6799,7 +6824,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6812,7 +6837,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6825,7 +6850,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6838,7 +6863,7 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -6851,11 +6876,11 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>We are very grateful. We will not forget your generosity.</Text>
+            <Text>Estamos muito gratos. Não esqueceremos a sua generosidade.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -6864,11 +6889,11 @@
             <Requirements>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar sobre o Tradutor Universal)</Text>
+            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Você precisa pesquisar o Tradutor Universal)</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>We are sorry, but we cannot vindicate assisting you at this time. Perhaps if we had closer relations we could find the funds... but as things stand, we think we are better off keeping our assets to ourselves..</Text>
+            <Text>Lamentamos, mas não podemos justificar a assistência a você neste momento. Talvez se tivéssemos relações mais estreitas, poderíamos encontrar os fundos... mas como as coisas estão, acreditamos que é melhor manter nossos ativos para nós mesmos.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
