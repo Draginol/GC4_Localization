@@ -1,0 +1,76 @@
+<StringTableList
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+    <StringTable>
+		<Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
+		<String>U některých tagů je název tagu jednoduše ve tvaru {}.[BR]Syntaxe: {GAMETAG} [BR]Příklad: "{PLANETNAME} je skvělé místo k životu!" [BR]Jiné mají : za ním číslo, které je GameTextIndex, aby se rozlišilo mezi více možnými náhradami. [BR]V textu s charakteristikami konverzace je 1 mluvčí (hráč, který konverzaci zahajuje), 2 posluchač (hráč, který konverzaci přijímá) a 3 hráč třetí strany (hráč, o kterém mluvčí a posluchač hovoří)[BR]V konverzacích, kde je něco nabízeno, použijte GameTextIndex k označení toho, kdo danou věc dává (AMOUNT, TECHNAME, OBJECTNAME)[BR]Syntaxe: [BR]V textu s charakteristikami konverzace je 1 mluvčí (hráč, který konverzaci zahajuje), 2 posluchač (hráč, který konverzaci přijímá) a 3 hráč třetí strany (hráč, o kterém mluvčí a posluchač hovoří): {GAMETAG:#} [BR]Příklad 1: "My, {PLAYERFACTIONLONG:1} vyhlašujeme válku vám, {PLAYERFACTIONLONG:2}"[BR]Příklad 2: "{PLAYERFACTION:3} už nejsou."</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
+		<String>Zkrácená verze názvu hráčovy civilizace</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
+		<String>Název hráčovy civilizace</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
+		<String>Dlouhý popis hráčovy frakce</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
+		<String>Seznam vlastností hráčovy frakce</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_ORIGINALTEXT</Label>
+		<String>Původní text charakteristiky se záměnami před spuštěním post-procesu</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_PREVIOUSCONV</Label>
+		<String>Text charakteru předchozí konverzace se záměnami před spuštěním post-procesu</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
+		<String>Již se nepoužívá. Místo toho použijte PLAYERFACTION nebo PLAYERFACTIONLONG</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
+		<String>Jméno vůdce hráčovy civilizace</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
+		<String>Tahy k dokončení projektu</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
+		<String>Název projektu ve frontě na stavbu (loděnice nebo planeta)</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
+		<String>Používá se pro stanovení podmínky vítězství, kterou hra skončí</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
+		<String>Seznam hráčů, kteří splnili podmínku vítězství</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
+		<String>Název planety, o které se diskutuje</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
+		<String>Množství něčeho, obvykle nabízených/žádaných/požadovaných kreditů</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
+		<String>Název nabízené/žádané/požadované technologie.</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
+		<String>Název nabízeného/žádaného/požadovaného předmětu</String>
+	</StringTable>
+	<StringTable>
+		<Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
+		<String>Jméno pracovníka, o kterém se diskutuje</String>
+	</StringTable>
+</StringTableList>
