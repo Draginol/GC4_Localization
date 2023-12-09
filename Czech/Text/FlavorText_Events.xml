@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FlavorTextDefs
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+  <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Pokud existuje způsob, jak vás zachránit, najdeme ho.</Text>
+            <PreferenceWeight>10000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Jsme {PLAYERFACTION:1}. Naše experimenty se zvrtly.  Nyní to mají pod kontrolou.  Nezbývá nám nic jiného, než zemřít. [BR][BR]{PLAYERFACTION:2} musí být zničena. </Text>
+            <PreferenceWeight>10000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Nenecháme se vymazat.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Jsme {PLAYERFACTION:1}. Přišli jsme sem z alternativní budoucnosti, kde {PLAYERFACTION:2} zničili samotný vesmír.[BR][BR]Musíte být zastaveni. Připravte se na zničení.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Měl by ses vrátit na svůj strom, hlodavče.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Vaše zkáza se blíží. My jsme {PLAYERFACTION:1}. [BR][BR]Zbavíme galaxii veškeré pod-Veverkové špíny. </Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>Měl jsi zůstat mrtvý.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
+                <RelationsRange>
+                    <RangeMin>-999</RangeMin>
+                    <RangeMax>-2</RangeMax>
+                </RelationsRange>
+            </Requirements>
+            <Text>[COLOR=UIDefaultHighlight](Přichází zakódovaný přenos)[/COLOR][BR][BR]Galaxie si myslela, že jsme mrtví.  Brzy zjistíte, jak moc se spletli. Připravte se na smrt. </Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+</FlavorTextDefs>

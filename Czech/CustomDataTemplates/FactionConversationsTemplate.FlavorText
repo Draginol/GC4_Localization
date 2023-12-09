@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<FlavorTextDefs
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTag>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Rádi vás poznáváme, {PLAYERFACTION:2}]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTag>
+      <Requirements>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
+      </Requirements>
+      <Text><![CDATA[The {PLAYERFACTION:1} se těší na další informace o {PLAYERFACTION:2}]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Jste jedním z mnoha {LEADERNAME:2}, postupujte opatrně.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Stejně tak {LEADERNAME:1}.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Peaceful-->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Také vás rád poznávám.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Těšíme se, že se o vás dozvíme víc.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Neutral -->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Uvidíme, jak moc nás setkání s vámi potěší, až se s vámi seznámíme.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Jsem si jistý, že si nás zamilujete, až nás poznáte.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <!-- Neutral -->
+  <FlavorTextDef>
+
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Jsme otevřeni obchodu. [COLOR=UIDefaultHighlight](Otevře obchod)[/COLOR]. ]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTag>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Připravte se na válku!]]></Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTag>
+      <Requirements>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
+      </Requirements>
+      <Text><![CDATA[Jste připraveni na válku, {PLAYERFACTION:2}?]]></Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Aggressive -->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_AGGRESSIVE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Přineste to! Rozdrtíme vás jako havěť.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Jsme připraveni. Tohoto dne budete litovat!]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- Disappointed-->
+  <FlavorTextDef>
+
+    <InternalName>DECLARE_WAR_RESPONSE_DISAPPOINTED</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Škoda, že jsme se nedokázali dohodnout.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Je nám líto, že jste považovali válku za nevyhnutelnou možnost, ale uvidíme, kdo je lépe připraven.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+   
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTag>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Ukončeme tuto válku a napravme škody.]]></Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTag>
+      <Requirements>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
+      </Requirements>
+      <Text><![CDATA[Ukončeme tuto válku.]]></Text>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- agree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Jistě.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[To zní dobře.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_AGREE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Úžasné.]]></Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
+      </Requirements>
+      <Text><![CDATA[Skvělé.]]></Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <!-- disagree -->
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Ne. Prostě ne.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[Ne, ne.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_RESPONSE_REFUSE_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Děláte chybu.]]></Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
+      </Requirements>
+      <Text><![CDATA[V pořádku. Buď takový.]]></Text>
+      <PreferenceWeight>2</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <!-- Conversation: DemandCredits -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Požadujeme, abyste nám poskytli {AMOUNT:2} kreditů.]]></Text>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2} vám prozatím poskytne to, co chcete.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTION:2} se nebude pohybovat.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Mrzí mě to, ale ne tolik jako vás.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandCreditsPerTurn -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Zaplaťte nám {AMOUNT:2} kreditů za den a gratulujte si, že přežijete další den.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nesouhlasíme s vámi, {LEADERNAME:1}, ale prozatím vám vyhovíme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Smějeme se ti do očí, {LEADERNAME:1}, Jdi pryč.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[To mě mrzí. Ale ne tolik, jako to bude mrzet tebe.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandTech -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Poskytněte nám informace o {TECHNAME:2} a možná to pomůže našim vztahům.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[V naději na zachování dobrých vztahů vám {PLAYERFACTIONLONG:2} prozatím poskytne to, co chcete.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Je roztomilé, jak si myslíte, že vám jen tak předáme své znalosti o {TECHNAME:2}. Udělejte si své domácí úkoly.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[To mě mrzí. Ale ne tolik, jako to bude mrzet tebe.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Můžete nám pomoci darem ve výši {AMOUNT:2} kreditů?]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Samozřejmě. Kéž bychom i nadále spolupracovali ve prospěch obou našich civilizací.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Děkujeme, vaší podpory si velmi vážíme!]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Je mi líto, ale {PLAYERFACTIONLONG:2} vám v tuto chvíli nemůže pomoct.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Uvažovali byste o daru znalostí {TECHNAME:2}, který by nám pomohl?]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Samozřejmě. Kéž bychom i nadále spolupracovali ve prospěch obou našich civilizací.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vaší pomoci si velmi vážíme! Děkujeme!]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Je mi líto, ale {PLAYERFACTIONLONG:2} vám v tuto chvíli nemůže pomoci s vaší žádostí.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestCredits help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Útočí na nás {PLAYERFACTIONLONG:3}. Prosím, {LEADERNAME:2} pomozte nám tím, že nám dáte {AMOUNT:2} kreditů.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Souhlasím.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vážíme si vaší pomoci.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2} vám v tuto chvíli nemůže pomoct.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestTech help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Útočí na nás {PLAYERFACTIONLONG:3}. Hodila by se nám vaše pomoc, {LEADERNAME:2}. Mohl byste nám poskytnout {TECHNAME:2}?]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Souhlasím.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Děkujeme vám za sdílení vaší technologie.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2} má své vlastní problémy. Ne.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: RequestWar help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Útočí na nás {PLAYERFACTIONLONG:3}. Situace je zoufalá, {LEADERNAME:2}. Snad přežijeme, když jim vyhlásíte válku {PLAYERFACTIONLONG:3}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Velmi dobře. Vyhlásíme jim válku.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vaší pomoci si ceníme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2} v tuto chvíli nemůže vést válku proti {PLAYERFACTIONLONG:3}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+  <!-- Default: a request, happy if they oblige-->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:3} jsou nebezpeční a byli bychom rádi, kdybyste nám pomohli se jich zbavit. Přijali byste za to {AMOUNT:1} kreditů?]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vyhlásíme válku {PLAYERFACTIONLONG:3}. ]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Věděl jsem, že se na tebe můžeme spolehnout. Děkuji vám!]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Je mi líto, ale {PLAYERFACTIONLONG:2} teď nemůže toto břemeno převzít.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vyhlaste válku {PLAYERFACTIONLONG:3} a my vám poskytneme {AMOUNT:1} kreditů, abyste se zbavili obav z výdajů.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vyhlásíme válku {PLAYERFACTIONLONG:3}. Kéž bychom i nadále spolupracovali ve prospěch obou našich civilizací.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Nemáme zájem se stát žoldáky pro váš užitek, {LEADERNAME:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Brzy se budete muset rozhodnout, na čí stranu se postavíte, a pak si budete přát, abyste naši velkorysou nabídku přijali.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: PayTechForDeclareWarOnOther -->
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:3} jsou nebezpeční a byli bychom rádi, kdybyste nám pomohli se jich zbavit. Vyhlaste jim válku a my vám poskytneme znalosti {TECHNAME:1}, které vám pomohou v boji.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Vyhlásíme válku {PLAYERFACTIONLONG:3}. ]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Věděl jsem, že se na tebe můžeme spolehnout. Děkuji!]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Je mi líto, ale {PLAYERFACTIONLONG:2} nyní prostě nemůže převzít toto břemeno.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveCredits -->
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:1} by ráda oslavila naše přátelství darem ve výši {AMOUNT:1} kreditů.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Děkujeme za tento dar.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: GiveTech -->
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:1} by chtěl naše přátelství oslavit darem v podobě znalosti {TECHNAME:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Děkujeme za tento dar.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: OnPlayerDead -->
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:3} zničen.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Rozumím.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- Conversation: DemandStarbaseRemoval -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vaše hvězdná základna {OBJECTNAME} je přímou hrozbou pro naše zájmy. Žádáme, abyste ji okamžitě odstranili.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Dobře, okamžitě ji zničíme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Výborně, máte uznání {PLAYERFACTIONLONG:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ne, hvězdná základna zůstane tam, kde je.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Chápete, že to zpochybňuje vaše záměry, {LEADERNAME:2}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <!-- DemandAscensionStarbase -->
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START)-->
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Chci vaši hvězdnou základnu {OBJECTNAME}. Pokud nám ji nedáte, vezmeme si ji násilím.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Uklidněte se. Odstraníme ji.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Rozhodli jste se správně.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ne, děkujeme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Tak tedy válka.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Chceme vaši hvězdnou základnu {OBJECTNAME}, má bránu povznesení. Dáme vám za ni {AMOUNT:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Dobře.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Výborně, máte uznání {PLAYERFACTIONLONG:1}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[Ne.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Text><![CDATA[My se toho nevzdáme, {LEADERNAME:2}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END)-->
+
+  <!--Get off my lawn-->
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2}, vidíme, že před naším prahem buduješ armádu. Měli byste to zastavit.]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2}, vidíme, že před naším prahem buduješ armádu. Měli byste to zastavit.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2}, vidíme, že před naším prahem buduješ armádu. Měli byste to zastavit.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[{PLAYERFACTIONLONG:2} I když tě máme rádi, nelíbí se nám budování armády, které vidíme.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[Tady není nic k vidění...]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[Proč mi v tom nezabráníš?]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[Tady není nic k vidění...]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[Musíš nám věřit, příteli.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+
+    <FlavorTextOption>
+      <Text><![CDATA[To se ještě uvidí.]]></Text>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[To se ještě uvidí.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[Budeme vás sledovat.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <Text><![CDATA[Doufám, že naše důvěra nebyla zbytečná.]]></Text>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Měli bychom vás varovat, {LEADERNAME:2}, {PLAYERFACTIONLONG:3} vybudoval silnou armádu. Mějte se před nimi na pozoru.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Děkujeme za upozornění. Budeme opatrní.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vždy.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vypadá to, že máte problémy s {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Přijměte prosím od nás tento {OBJECTNAME:1}, který vám pomůže s vaším válečným úsilím.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vaše pomoc přichází v pravý čas. Děkujeme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Vždy pomáháme svým přátelům.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[{LEADERNAME:2}, vyhráváte. Vzdáváme se a předáváme veškerý náš zbývající majetek do vašich rukou.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Jsem rád, že jsi dostal rozum.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Možná jsme skončili, {LEADERNAME:2}, ale jsi blázen, jestli si myslíš, že ti předáme naše lidi do opatrování. Veškerý náš zbývající majetek bude předán našim přátelům {PLAYERFACTIONLONG:3}.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Dělejte, co chcete, i když to na výsledku nic nezmění.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Nemáme na výběr, {LEADERNAME:2}, musíme se podřídit {PLAYERFACTIONLONG:3}. V minulosti jste na nás byli hodní, a tak je naším přáním předat vám zbytek naší říše. Využijte naše zdroje k odvetnému úderu na {PLAYERFACTIONLONG:3}!]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text><![CDATA[Děkujeme.]]></Text>
+    </FlavorTextOption>
+  </FlavorTextDef>
+
+
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_ACCEPT</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: Dobrá, pojďme obchodovat.</Text>
+      <Text>{LEADERNAME:1}: To je přijatelné.</Text>
+      <Text>{LEADERNAME:1}: Souhlasím.</Text>
+      <Text>{LEADERNAME:1}: To funguje.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_REFUSE</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: Tato nabídka je nepřijatelná.</Text>
+      <Text>{LEADERNAME:1}: Ne.</Text>
+      <Text>{LEADERNAME:1}: Tohle je pro mě nepoužitelné</Text>
+      <Text>{LEADERNAME:1}: Potřebujeme víc.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_PERFORMED</InternalName>
+
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
+      </Requirements>
+      <Text>{LEADERNAME:1}: Jsem rád, že jsme se dohodli.</Text>
+      <Text>{LEADERNAME:1}: Tohle byl dobrý den.</Text>
+      <PreferenceWeight>30</PreferenceWeight>
+    </FlavorTextOption>
+
+  </FlavorTextDef>
+
+</FlavorTextDefs>
