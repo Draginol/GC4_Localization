@@ -62,11 +62,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileTitle</Label>
-    <String>Zelle</String>
+    <String>Kachel</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TileDec</Label>
-    <String>Der Spielraum ist in sechseckige Zellen unterteilt. Die Entfernung wird anhand der Anzahl der Zellen zwischen den Standorten gemessen. Das Raster der Zellen kann im Optionsmenü unter Interface ein- und ausgeschaltet werden. Das Umschalten von "Raster anzeigen" wenn nah und "Raster anzeigen" wenn weit bestimmt, ob das Zellenrraster bei bestimmten Zoomdistanzen sichtbar ist.</String>
+    <String>Der Spielraum ist in sechseckige Kacheln unterteilt. Die Entfernung wird anhand der Anzahl der Kacheln zwischen den Standorten gemessen. Das Raster der Kacheln kann im Optionsmenü unter Interface ein- und ausgeschaltet werden. Das Umschalten von Raster anzeigen wenn nah und Raster anzeigen wenn weit bestimmt, ob Kacheln bei bestimmten Zoomdistanzen sichtbar sind.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_MonthsTitle</Label>
@@ -82,7 +82,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MovesDec</Label>
-    <String>Jedes Schiff und jede Flotte hat eine festgelegte Anzahl an [ICON=Moves_Icon] Zügen. [ICON=Moves_Icon] Züge sind die Anzahl der [HS=HS_Tile]Zellen[/HS], die das Schiff oder die Flotte in einem [HS=HS_Months]Monat[/HS] durchqueren kann.[BR][BR]</String>
+    <String>Jedes Schiff und jede Flotte hat eine festgelegte Anzahl an [ICON=Moves_Icon] Zügen. [ICON=Moves_Icon] Züge sind die Anzahl der [HS=HS_Tile]Felder[/HS], die das Schiff oder die Flotte in einem [HS=HS_Months]Monat[/HS] durchqueren kann.[BR][BR]</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipTitle</Label>
@@ -106,7 +106,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ShipMovementDec</Label>
-    <String>Individuelle [HS=HS_Ship]Schiffe[/HS] und [HS=HS_Fleet]Flotten[/HS] können durch die Galaxie bewegt werden, indem man das [HS=HS_Ship]Schiff[/HS] oder die [HS=HS_Fleet]Flotte[/HS] mit der LINKEN Maustaste auswählt und dann mit der RECHTEN Maustaste eine [HS=HS_Tile]Zelle[/HS] zum Bewegen auswählt.</String>
+    <String>Individuelle [HS=HS_Ship]Schiffe[/HS] und [HS=HS_Fleet]Flotten[/HS] können durch die Galaxie bewegt werden, indem man das [HS=HS_Ship]Schiff[/HS] oder die [HS=HS_Fleet]Flotte[/HS] mit der LINKEN Maustaste auswählt und dann mit der RECHTEN Maustaste ein [HS=HS_Tile]Kachel[/HS] zum Bewegen auswählt.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PlanetTypeTitle</Label>
@@ -170,7 +170,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoExploreDec</Label>
-    <String>[ICON=AutoExplore_Icon] Auto-Erkunden ist eine Option, die [HS=HS_Ship]Schiffe[/HS] ohne direkte Befehle bewegen lässt. [HS=HS_Ship]Schiffe[/HS] im [ICON=AutoExplore_Icon] Auto-Erkunden Modus bewegen sich zu Zielen, die derzeit unbekannt und unerforscht sind.[BR][BR]Wenn die gesamte Galaxie erforscht ist und es keine unerforschten [HS=HS_Tile]Zellen[/HS] mehr gibt, wird der Befehl [ICON=AutoExplore_Icon] Auto-Erkunden nicht mehr verfügbar sein.</String>
+    <String>[ICON=AutoExplore_Icon] Auto-Explore ist eine Option, die [HS=HS_Ship]Schiffe[/HS] ohne direkte Befehle bewegen lässt. [HS=HS_Ship]Schiffe[/HS] in [ICON=AutoExplore_Icon] Auto-Explore bewegen sich zu Zielen, die derzeit unbekannt und unerforscht sind.[BR][BR]Wenn die gesamte Galaxie erforscht ist und es keine unerforschten [HS=HS_Tile]Kacheln[/HS] gibt, wird die [ICON=AutoExplore_Icon] Auto-Explore-Option nicht mehr verfügbar sein.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyTitle</Label>
@@ -190,11 +190,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineTitle</Label>
-    <String>[ICON=AutoMine_Icon] Auto-Schürfen</String>
+    <String>[ICON=AutoMine_Icon] Auto-Mine</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoMineDec</Label>
-    <String>[ICON=AutoMine_Icon] Auto-Schürfen ist eine Option für Asteroiden-Schürfer. Ein [HS=HS_Ship]Schiff[/HS] im [ICON=AutoMine_Icon] Auto-Schürf Modus wird sich ohne direkte Befehle bewegen, um Asteroiden innerhalb der [HS=HS_ZoneOfControl]Kontrollzone[/HS] zum Abbau zu finden.</String>
+    <String>[ICON=AutoMine_Icon] Auto-Mine ist eine Option für Asteroiden-Mining-Schiffe. Ein [HS=HS_Ship]Schiff[/HS] im [ICON=AutoMine_Icon] Auto-Mine wird sich ohne direkte Befehle bewegen, um Asteroiden innerhalb der [HS=HS_ZoneOfControl]Kontrollzone[/HS] zum Abbau zu finden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SectorTitle</Label>
@@ -210,7 +210,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_LeaderMenuDec</Label>
-    <String>Das [ICON=Menu_Leader_Icon] Anführer-Menü ist der Ort, an dem [HS=HS_Leaders]Anführer[/HS] rekrutiert und verwaltet werden können. Unter dem [ICON=Menu_Leader_Icon] Anführer-Menü gibt es Bildschirme für [HS=HS_RecruitmentScreen]Rekrutierung[/HS], [HS=HS_MinistersScreen]Minister[/HS], [HS=HS_GovernorsScreen]Gouverneure[/HS], [HS=HS_DiplomatsScreen]Diplomaten[/HS], [HS=HS_CommandersScreen]Kommandanten[/HS] und [HS=HS_FactionsScreen]Fraktionen[/HS].[BR][BR]Zugang zum [ICON=Menu_Leader_Icon] Anführer-Menü erhalten Sie, indem Sie das Symbol im Radial-Menü mit der LINKEN Maustaste auswählen.</String>
+    <String>Das [ICON=Menu_Leader_Icon] Führer-Menü ist der Ort, an dem [HS=HS_Leaders]Führer[/HS] rekrutiert und verwaltet werden können. Unter dem [ICON=Menu_Leader_Icon] Führer-Menü gibt es Bildschirme für [HS=HS_RecruitmentScreen]Rekrutierung[/HS], [HS=HS_MinistersScreen]Minister[/HS], [HS=HS_GovernorsScreen]Gouverneure[/HS], [HS=HS_DiplomatsScreen]Diplomaten[/HS], [HS=HS_CommandersScreen]Kommandanten[/HS] und [HS=HS_FactionsScreen]Fraktionen[/HS].[BR][BR]Zugang zum [ICON=Menu_Leader_Icon] Führer-Menü erhalten Sie, indem Sie das Symbol im Radial-Menü mit der LINKEN Maustaste auswählen.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_RecruitmentScreenTitle</Label>
@@ -226,7 +226,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_MinistersScreenDec</Label>
-    <String>Der Ministerbildschirm kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Anführer-Menü[/HS] aufgerufen werden. Ministerbüros bieten spezifische Vorteile für die gesamte Zivilisation basierend auf den Werten der eingesetzten [HS=HS_Leaders]Anführer[/HS]. Ministerbüros ohne einen zugewiesenen [HS=HS_Leaders]Anführer[/HS] bieten keine Vorteile. Wenn Sie mit der Maus über ein Büro fahren, erhalten Sie spezifische Informationen über das Büro und seine Vorteile.[BR][BR][HS=HS_Leaders]Anführer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewiesen und neu zugewiesen werden.</String>
+    <String>Der Ministerbildschirm kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Führer-Menü[/HS] aufgerufen werden. Ministerbüros bieten spezifische Vorteile für die gesamte Zivilisation basierend auf den Werten der eingesetzten [HS=HS_Leaders]Führer[/HS]. Ministerbüros ohne einen zugewiesenen [HS=HS_Leaders]Führer[/HS] bieten keine Vorteile. Wenn Sie mit der Maus über ein Büro fahren, erhalten Sie spezifische Informationen über das Büro und seine Vorteile.[BR][BR][HS=HS_Leaders]Führer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewiesen und neu zugewiesen werden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenTitle</Label>
@@ -234,7 +234,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_GovernorsScreenDec</Label>
-    <String>Der Bildschirm des Gouverneurs kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Anführer-Menü[/HS] aufgerufen werden. Der Bildschirm des Gouverneurs gibt einen kurzen Überblick über jeden kolonisierten Planeten mit einer [HS=HS_PlanetClass]Planet-Klasse[/HS] von 10 oder höher. Wenn ein [HS=HS_Leaders]Anführer[/HS] dem Planeten zugewiesen ist, ist der Planet eine [HS=HS_CoreWorld]Kernwelt[/HS].[BR][BR][HS=HS_Leaders]Anführer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewiesen und neu zugewiesen werden.</String>
+    <String>Der Bildschirm des Gouverneurs kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Führer-Menü[/HS] aufgerufen werden. Der Bildschirm des Gouverneurs gibt einen kurzen Überblick über jeden kolonisierten Planeten mit einer [HS=HS_PlanetClass]Planet-Klasse[/HS] von 10 oder höher. Wenn ein [HS=HS_Leaders]Anführer[/HS] dem Planeten zugewiesen ist, ist der Planet eine [HS=HS_CoreWorld]Kernwelt[/HS].[BR][BR][HS=HS_Leaders]Anführer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewiesen und neu zugewiesen werden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_DiplomatsScreenTitle</Label>
@@ -242,7 +242,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_DiplomatsScreenDec</Label>
-    <String>Der Diplomatenbildschirm kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Anführer-Menü[/HS] aufgerufen werden. Der Diplomatenbildschirm gibt einen kurzen Überblick über unsere Beziehung zu allen anderen bekannten Zivilisationen. Ein [HS=HS_Leaders]Anführer[/HS] kann als [HS=HS_Diplomat]Diplomat[/HS] zugewiesen werden, um Ihre Beziehung zu anderen Zivilisationen zu beeinflussen.[BR][BR][HS=HS_Leaders]Anführer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewählt und neu zugewiesen werden.</String>
+    <String>Der Diplomatenbildschirm kann über das [ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]Führer-Menü[/HS] aufgerufen werden. Der Diplomatenbildschirm gibt einen kurzen Überblick über unsere Beziehung zu allen anderen bekannten Zivilisationen. Ein [HS=HS_Leaders]Führer[/HS] kann als [HS=HS_Diplomat]Diplomat[/HS] zugewiesen werden, um Ihre Beziehung zu anderen Zivilisationen zu beeinflussen.[BR][BR][HS=HS_Leaders]Führer[/HS] können zu jedem Zeitpunkt während Ihres Zuges zugewiesen, abgewählt und neu zugewiesen werden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_CommandersScreenTitle</Label>
@@ -266,7 +266,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_CivilizationMenuDec</Label>
-    <String>Das [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü bietet einen Überblick über Ihre gesamte Zivilisation und einige Werkzeuge zur Verwaltung Ihrer Zivilisation in größerem Maßstab. Im [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü können die [HS=HS_Taxes]Steuerquote[/HS] und [HS=HS_Policy]die aktuelle Politik[/HS] festgelegt werden.[BR][BR]Zugriff auf das [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü erhalten Sie, indem Sie das Symbol im Radialmenü mit der LINKEN Maustaste auswählen.</String>
+    <String>Das [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü bietet einen Überblick über Ihre gesamte Zivilisation und einige Werkzeuge zur Verwaltung Ihrer Zivilisation in größerem Maßstab. Im [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü können die [HS=HS_Taxes]Steuerquote[/HS] und [HS=HS_Policy]Richtlinien[/HS] festgelegt werden.[BR][BR]Zugriff auf das [ICON=Menu_CivilizationMenu_Icon] Zivilisationsmenü erhalten Sie, indem Sie das Symbol im Radialmenü mit der LINKEN Maustaste auswählen.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_SupportingColoniesTitle</Label>
@@ -326,11 +326,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechTitle</Label>
-    <String>Technologie</String>
+    <String>Technik</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_TechDec</Label>
-    <String>Ein Technologie ist eine Option im [HS=HS_ResearchCenter]Forschungszentrum[/HS], die bei der Forschung eindeutige Freischaltungen bietet, die neue [HS=HS_Ship]Schiffe[/HS], [HS=HS_Improvement]Verbesserungen[/HS], [HS=HS_ExecutiveOrders]Vollzugsanordnungen[/HS] und mehr sein können.[BR][BR]Erfahren Sie mehr darüber, was ein Tech freischaltet, indem Sie die Maus über die Technologie im [HS=HS_ResearchCenter]Forschungszentrum[/HS] bewegen.</String>
+    <String>Ein Tech ist eine Option im [HS=HS_ResearchCenter]Forschungszentrum[/HS], die bei der Forschung eindeutige Freischaltungen bietet, die neue [HS=HS_Ship]Schiffe[/HS], [HS=HS_Improvement]Verbesserungen[/HS], [HS=HS_ExecutiveOrders]Exekutivbefehle[/HS] und mehr sein können.[BR][BR]Erfahren Sie mehr darüber, was ein Tech freischaltet, indem Sie die Maus über das Tech im [HS=HS_ResearchCenter]Forschungszentrum[/HS] bewegen.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_PiratesTitle</Label>
@@ -378,7 +378,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConstructStarbaseDec</Label>
-    <String>Der Befehl Sternenbasis bauen kann einem [HS=HS_Constructor]Arbeitsschiff[/HS] gegeben werden. Dies wird das [HS=HS_Constructor]Arbeitsschiff[/HS] verbrauchen und eine [HS=HS_Starbase]Sternenbasis[/HS] eines gewählten Typs erstellen. [HS=HS_Starbase]Sternenbasen[/HS] können nicht in der [HS=HS_ZoneOfControl]Kontrollzone[/HS] eines anderen Spieler's oder innerhalb eines Radius von 3 [HS=HS_Tile]Zellen[/HS] um eine andere [HS=HS_Starbase]Sternenbasis[/HS] gebaut werden.</String>
+    <String>Der Befehl Sternenbasis bauen kann einem [HS=HS_Constructor]Arbeitsschiff[/HS] gegeben werden. Dies wird das [HS=HS_Constructor]Arbeitsschiff[/HS] verbrauchen und eine [HS=HS_Starbase]Sternenbasis[/HS] eines gewählten Typs erstellen. [HS=HS_Starbase]Sternenbasen[/HS] können nicht in einer anderen Spieler's [HS=HS_ZoneOfControl]Kontrollzone[/HS] oder innerhalb von 3 [HS=HS_Tile]Kacheln[/HS] einer anderen [HS=HS_Starbase]Sternenbasis[/HS] gebaut werden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StarbaseTitle</Label>
@@ -430,11 +430,11 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyTitle</Label>
-    <String>[ICON=Order_Standby] Auf-Abruf</String>
+    <String>[ICON=Order_Standby] Bereitschaft</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyDec</Label>
-    <String>Der Auf-Abruf Befehl kann verwendet werden, um ein Schiff unbegrenzt im Leerlauf zu halten. Im Gegensatz zu anderen Befehlen, bei denen es Szenarien gibt, in denen ein Schiff den Leerlauf stoppt, werden Schiffe im Auf-Abruf-Modus diesen nicht verlassen, bis sie dazu aufgefordert werden.</String>
+    <String>Der Standby-Befehl kann verwendet werden, um ein Schiff unbegrenzt im Leerlauf zu halten. Im Gegensatz zu anderen Befehlen, bei denen es Szenarien gibt, in denen ein Schiff den Leerlauf stoppt, werden Schiffe im Standby-Modus diesen nicht verlassen, bis sie dazu aufgefordert werden.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_Biology</Label>
@@ -710,15 +710,15 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Name</Label>
-    <String>Bluffende Piraten</String>
+    <String>Bluffender Pirat</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Dec</Label>
-    <String>Ihr Erkundungsschiff nähert sich einem eigenartigen Signal, das es aus einem Weltraumschrottfeld aufgefangen hat. Als das Schiff schließlich das Objekt, das das Signal aussendet, ortet und sich nähert, ertönt eine Stimme über das Bordintercom.[BR][BR]"Schaue her! Du bist in den Klauen von Käpt'n Aurorabart Donnerklinge gefangen, wuff-wuff ... und mir, Erster Maat Nebula, den größten Piraten der Galaxie! Übergib deine Credits jetzt, es sei denn, du möchtest dem Zorn meines Flaggschiffs, der Sternenfurcht, und ihrer furchtlosen Flotte gegenüberstehen."[BR][BR]Bei weiteren Untersuchungen scheint die Sternenfurcht nicht mehr als ein Bergbauschiff zu sein, bemannt von zwei Lebensformen. Dutzende Kommunikationssignale von "Schiffen" werden erfasst, aber Untersuchungen deuten darauf hin, dass es sich nur um Weltraumschrott handelt.</String>
+    <String>..</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Liberty_Bonus_Name</Label>
-    <String>Was sagst du dazu, unserer Ränge beizutreten, oh furchterregender Käpt'n Aurorabart?</String>
+    <String>Was sagst du dazu, unserer Ränge beizutreten, oh furchterregender Starbeard?</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Liberty_Bonus_Dec</Label>
@@ -726,11 +726,11 @@
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Equality_Bonus_Name</Label>
-    <String>Biete eine "Freibeuter"-Mission für die Sternenfurcht und ihre Crew an.</String>
+    <String>Biete eine "Freibeuter"-Mission für The Cosmos Dread und ihre Crew an.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Equality_Bonus_Dec</Label>
-    <String>Die Sternenfurcht schließt sich euch an.</String>
+    <String>Verliehen Der Kosmos Schrecken</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BluffingPirate_Authority_Bonus_Name</Label>
@@ -742,23 +742,30 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Name</Label>
-    <String>Galaktischer Artenreichtum</String>
+    <String>Galaktische Erhaltung</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Dec</Label>
-    <String>Die Organisation für intergalaktischen Artenschutz (OIA) möchte Proben aus der gesamten Galaxie für Studien sammeln. Ihr Ziel ist es, insbesondere Kreaturen zu sammeln, die in vielen verschiedenen Umgebungen leben können, um die Biodiversität und Anpassungsfähigkeit im gesamten Kosmos besser zu verstehen. Sie sind sich einig, dass der beste Ort, um neue Daten zu sammeln, von noch nicht besiedelten terrestrischen Planeten stammt.[BR][BR]Die OIAG bietet ein Stipendium an, um sie in ihrer Studie zu unterstützen. Es beinhaltet ein kostenfreies Kolonieschiff mit Forschern und Wissenschaftlern, bereit zur Abreise für die Studienmission.</String>
+    <String>
+			The Intergalactic Wildlife Conservancy (IWC) would like to collect specimens from around the galaxy for study. Specifically, their hope is to gather creatures suited to living in many different kinds of enviornments to better understand the biodiversity and adaptability throughout the cosmos. They agree the best place to gather new data is from uncolonized terrestrial planets.
+
+			The IWC is offering a grant to aid them in their study. It includes a free colony ship full of explorers and scientists ready to be sent off to study.
+		</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Name</Label>
-    <String>Wir freuen uns, die Förderung anzunehmen und der OIA bei ihren Bemühungen zu helfen.</String>
+    <String>Wir freuen uns, die Förderung anzunehmen und der IWC bei ihren Bemühungen zu helfen.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_Bonus_Dec</Label>
-    <String>Starte eine Mission: du erhäst ein kKostenloses Kolonieschiff</String>
+    <String>
+			Start A Mission
+			Free Colony Ship
+		</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_QuestDescription</Label>
-    <String>Die OIA hat uns gebeten, terrestrische Planeten zu kolonisieren, damit sie die Tierwelt in der gesamten Galaxie studieren können.</String>
+    <String>Die IWC hat uns gebeten, terrestrische Planeten zu kolonisieren, damit sie die Tierwelt in der gesamten Galaxie studieren können.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Liberty_ObjectiveDisplayName1</Label>
@@ -766,7 +773,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Equality_Bonus_Name</Label>
-    <String>Ignoriere die OIA.</String>
+    <String>Ignoriere die IWC.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_Equality_Bonus_Dec</Label>
@@ -778,15 +785,19 @@
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Dec</Label>
-    <String>Die Organisation für intergalaktischen Artenschutz (OIA) freut sich, den Erfolg des galaktischen Artenschutzprogramms zu verkünden. Unsere Präsenz auf diesen Planeten ermöglicht es uns, mehr über die natürlichen Paradiese der Galaxie und die Kreaturen, die sie bewohnen, zu erfahren.[BR][BR]Mit dem Erfolg des Programms hat die OIA "Die Arche" in Auftrag gegeben. Ein Raumschiff voll lebender Exemplare aus der gesamten Galaxie. Es ist als fliegendes Ökologie-Labor konzipiert und soll Ökosysteme im gesamten Kosmos wiederherstellen. Die Arche wurde uns anvertraut, als Anerkennung für unsere Unterstützung der Artenschutzmaßnahmen der OIA.</String>
+    <String>
+			The Intergalactic Wildlife Conservency (IWC) is pleased to report the success of the galactic conservation program. Our presence on these planets will allow us to learn more about the natural edens of the galaxy and the creatures that inhabit them.
+
+			With the success of the progam the IWC has commissioned "The Arc". A ship full of live specimens from around the galaxy. It is intended to be a flying ecology lab, restoring ecosystems throughout the galaxy. The Arc has been entrusted to us, for our support of the IWC's conservation efforts.
+		</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Liberty_Bonus_Name</Label>
-    <String>Wir werden Die Arche sehr gut nutzen.</String>
+    <String>Wir werden The Arc sehr gut nutzen.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_GalacticConservation_End_Liberty_Bonus_Dec</Label>
-    <String>Das Raumschiff Die Arche schleßt sich un san.</String>
+    <String>Verliehen Der Bogen</String>
   </StringTable>
   <StringTable>
     <Label>Quest_ExpandReach_Name</Label>
@@ -910,7 +921,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Name</Label>
-    <String>Anführer Rekrutieren</String>
+    <String>Führer Rekrutieren</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_Dec</Label>
@@ -934,11 +945,11 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_End_Name</Label>
-    <String>Rekrutierte Anführer</String>
+    <String>Rekrutierte Führer</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_End_Dec</Label>
-    <String>Wir haben erfolgreich neue Anführer rekrutiert und ausgebildet, um unsere Kolonien, Flotten und andere Angelegenheiten zu verwalten.</String>
+    <String>Wir haben erfolgreich neue Führungskräfte rekrutiert und ausgebildet, um unsere Kolonien, Flotten und andere Angelegenheiten zu verwalten.</String>
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_End_Liberty_Bonus_Name</Label>
@@ -946,7 +957,7 @@
   </StringTable>
   <StringTable>
     <Label>Quest_RecruitLeaders_End_Liberty_Bonus_Dec</Label>
-    <String>+2 auf alle Anführer-Werte</String>
+    <String>+2 auf alle Anführer-Statistiken</String>
   </StringTable>
   <StringTable>
     <Label>Quest_BuildShipyard_Name</Label>
@@ -1018,7 +1029,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ConstructThreeProbes_Dec</Label>
-    <String>Bauen Sie 3 Sonden in einer [HS=HS_Shipyard]Schiffswerft[/HS]. Sonden sind notwendig, um den unerforschten Teil des [HS=HS_Sector]Sektors[/HS] zu erkunden und die Quelle des zuvor erkannten Signals zu finden.</String>
+    <String>Bauen Sie 3 Sonden im [HS=HS_Shipyard]Schiffswerft[/HS]. Sonden sind notwendig, um den unerforschten [HS=HS_Sector]Sektor[/HS] zu erkunden und die Quelle des zuvor erkannten Signals zu finden.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Name</Label>
@@ -1026,7 +1037,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ConstructThreeStarbases_Dec</Label>
-    <String>[HS=HS_Starbase]Sternenbasen[/HS] sind für die Unterstützung des Imperiums unerlässlich. Sie sind erforderlich, um die [HS=HS_StrategicResource]strategischen Ressourcen[/HS] zu sammeln, die zum Bau bestimmter Arten von Sternenschiffen und Waffen notwendig sind.[BR][BR]Produzieren Sie [HS=HS_Constructor]Arbeitsschiffe[/HS] in der [HS=HS_Shipyard]Schiffswerft[/HS] und nutzen Sie dann ihren [HS=HS_ConstructStarbase]Sternenbasis bauen[/HS] Befehl.</String>
+    <String>[HS=HS_Starbase]Sternenbasen[/HS] sind für die Unterstützung des Imperiums unerlässlich. Sie sind erforderlich, um die [HS=HS_StrategicResource]strategischen Ressourcen[/HS] zu sammeln, die zum Bau bestimmter Arten von Sternenschiffen und Waffen notwendig sind.[BR][BR]Produzieren Sie [HS=HS_Constructor]Arbeitsschiffe[/HS] aus der [HS=HS_Shipyard]Raumschiffswerft[/HS] und nutzen Sie dann ihren [HS=HS_ConstructStarbase]Sternenbasis bauen[/HS] Befehl.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_TheOpportunity_ResearchPlanetryInvasion_Name</Label>
@@ -1042,7 +1053,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseProbe_Dec</Label>
-    <String>Geben Sie der Sonde Befehle, bis alle ihre [ICON=Moves_Icon] [HS=HS_Moves]Bewegungsschritte[/HS] genutzt wurden. Wählen Sie die Sonde aus und nutzen Sie sie zur Erkundung der Galaxie.</String>
+    <String>Geben Sie der Sonde Befehle, bis alle ihre [ICON=Moves_Icon] [HS=HS_Moves]Züge[/HS] genutzt wurden. Wählen Sie die Sonde aus und nutzen Sie sie zur Erkundung der Galaxie.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyFirstAnomaly</Label>
@@ -1050,15 +1061,15 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyFirstAnomaly_Dec</Label>
-    <String>Nutzen Sie das [HS=HS_SurveyShip]Erkundungsschiff[/HS], um eine [HS=HS_Anomaly]Anomalie[/HS] zu [HS=HS_SurveyOrder]untersuchen[/HS]. Die [HS=HS_SurveyOrder]Untersuchung[/HS] einer Anomalie erfordert mehrere [HS=HS_Months]Monate[/HS] ununterbrochener Arbeit. Wenn das [HS=HS_SurveyShip]Erkundungsschiff[/HS] bewegt oder andere Befehle erhält, wird es jeden Fortschritt bei der Aufdeckung der Anomalie verlieren.[BR][BR]Wählen Sie das Erkundungsschiff mit der LINKEN Maustaste aus und geben Sie ihm den Befehl, eine Anomalie zu untersuchen. Dies kann erfolgen, indem Sie eine Anomalie als Ziel des Schiffes mit der RECHTEN Maustaste festlegen.</String>
+    <String>Nutzen Sie das [HS=HS_SurveyShip]Erkundungsschiff[/HS], um eine [HS=HS_Anomaly]Anomalie[/HS] zu [HS=HS_SurveyOrder]untersuchen[/HS]. Die [HS=HS_SurveyOrder]Untersuchung[/HS] einer [HS=HS_Anomaly]Anomalie[/HS] erfordert mehrere [HS=HS_Months]Monate[/HS] ununterbrochener Arbeit. Wenn das [HS=HS_SurveyShip]Erkundungsschiff[/HS] bewegt oder andere Befehle erhält, wird es jeden Fortschritt bei der Aufdeckung der [HS=HS_Anomaly]Anomalie[/HS] verlieren.[BR][BR]Wählen Sie das [HS=HS_SurveyShip]Erkundungsschiff[/HS] mit der LINKEN Maustaste aus und geben Sie ihm den Befehl, eine [HS=HS_Anomaly]Anomalie[/HS] zu [HS=HS_SurveyOrder]untersuchen[/HS]. Dies kann erfolgen, indem Sie eine [HS=HS_Anomaly]Anomalie[/HS] als Ziel des Schiffes mit der RECHTEN Maustaste festlegen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyTargetAnomalies</Label>
-    <String>Untersuche 5 Anomalien</String>
+    <String>Scanne 5 Anomalien</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_SurveyTargetAnomalies_Dec</Label>
-    <String>Nutzen Sie das [HS=HS_SurveyShip]Erkundungsschiff[/HS] um mehrere [HS=HS_Anomaly]Anomalien[/HS] zu [HS=HS_SurveyOrder]untersuchen[/HS]. Viele unbekannte Objekte befinden sich im Weltraum - absichtlich oder unabsichtlich zurückgelassen. Um die Sterne zu beherrschen, müssen wir viele Anomalien entdecken und nutzen.</String>
+    <String>Nutzen Sie das [HS=HS_SurveyShip]Erkundungsschiff[/HS] um mehrere [HS=HS_Anomaly]Anomalien[/HS] zu [HS=HS_SurveyOrder]untersuchen[/HS]. Viele unbekannte Objekte befinden sich im Weltraum - absichtlich oder unabsichtlich zurückgelassen. Um die Sterne zu beherrschen, müssen wir viele [HS=HS_Anomaly]Anomalien[/HS] entdecken und adressieren.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_ColonizeFirstPlanet</Label>
@@ -1074,7 +1085,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
-    <String>Greifen Sie auf das [HS=HS_ResearchCenter]Forschungszentrum[/HS] zu und stellen Sie sicher, dass die aktuelle [HS=HS_Tech]Techniologie[/HS] Kolonialpolitiken erforscht wird. Wie viele [HS=HS_Months]Monate[/HS] die [HS=HS_Tech]Technologie[/HS] zur Erforschung benötigt, wird durch die Forschungsrate über alle [HS=HS_CoreWorld]Kernwelten[/HS] bestimmt.</String>
+    <String>Greifen Sie auf das [HS=HS_ResearchCenter]Forschungszentrum[/HS] zu und stellen Sie sicher, dass die aktuelle [HS=HS_Tech]Technik[/HS] Colonial Pollicies erforscht wird. Wie viele [HS=HS_Months]Monate[/HS] die [HS=HS_Tech]Technik[/HS] zur Erforschung benötigt, wird durch die Forschungsrate über alle [HS=HS_CoreWorld]Kernwelten[/HS] bestimmt.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy</Label>
@@ -1082,7 +1093,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy_Dec</Label>
-    <String>[HS=HS_Policy]Politik[/HS] ist eine Möglichkeit, jede Kolonie und Flotte in einer Zivilisation zu beeinflussen. Aktivieren Sie eine [HS=HS_Policy]Politik[/HS] im [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Zivilisationsmenü[/HS], um Ziele zu erreichen. Die aktuelle [HS=HS_Policy]Politik[/HS] kann jederzeit während Ihres Zuges geändert werden, um sich besser an veränderte Umstände anzupassen.</String>
+    <String>[HS=HS_Policy]Richtlinien[/HS] sind eine Möglichkeit, jede Kolonie und Flotte in einer Zivilisation zu beeinflussen. Erlassen Sie eine [HS=HS_Policy]Richtlinie[/HS] im [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Zivilisationsmenü[/HS], um Ziele zu erreichen. [HS=HS_Policy]Richtlinien[/HS] können jederzeit während Ihres Zuges geändert werden, um sich besser an veränderte Umstände anzupassen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_RushPlanetaryImprovement</Label>
@@ -1090,7 +1101,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_RushPlanetaryImprovement_Dec</Label>
-    <String>Um eine [HS=HS_Rush]Beschleunigung[/HS] einer planetarischen Verbesserung vorzunehmen, wählen Sie eine [HS=HS_CoreWorld]Kernwelt[/HS] aus und öffnen das Verwaltungsfenster. Wenn Sie mit der LINKEN Maustaste einen Artikel in der Bau-Warteschlange auswählen, werden einige kontextbezogene Optionen angezeigt. Unter diesen befindet sich die Option [HS=HS_Rush]Beschleunigen[/HS]. Solange Sie das erforderliche [ICON=Stat_Control_Icon] [HS=HS_Control]Kontrolle[/HS] und [ICON=Stat_Credits_Icon] [HS=HS_Credit]Kredite[/HS] haben, wird die Auswahl der Option [HS=HS_Rush]Beschleunigen[/HS] die spezifische Verbesserung [HS=HS_Rush]Beschleunigen[/HS]. Die Option [HS=HS_Rush]Beschleunigen[/HS] wird ausgegraut und unansprechbar sein, wenn Sie nicht über die notwendigen Ressourcen verfügen.</String>
+    <String>Um eine [HS=HS_Rush]Beschleunigung[/HS] einer Planetarischen Verbesserung vorzunehmen, wählen Sie eine [HS=HS_CoreWorld]Kernwelt[/HS] aus und öffnen das Verwaltungsfenster. Wenn Sie mit der LINKEN Maustaste einen Artikel in der Bau-Warteschlange auswählen, werden einige kontextbezogene Optionen angezeigt. Unter diesen befindet sich die Option [HS=HS_Rush]Beschleunigen[/HS]. Solange Sie das erforderliche [ICON=Stat_Control_Icon] [HS=HS_Control]Kontrolle[/HS] und [ICON=Stat_Credits_Icon] [HS=HS_Credit]Kredite[/HS] haben, wird die Auswahl der Option [HS=HS_Rush]Beschleunigen[/HS] die spezifische Verbesserung [HS=HS_Rush]Beschleunigen[/HS]. Die Option [HS=HS_Rush]Beschleunigen[/HS] wird ausgegraut und unansprechbar sein, wenn Sie nicht über die notwendigen Ressourcen verfügen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseExecutiveOrder</Label>
@@ -1098,7 +1109,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UseExecutiveOrder_Dec</Label>
-    <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Vollzugsanordnungen[/HS] werden aus der zugehörigen radialen Optionsleiste unten ausgewählt. Einige werden sofort ausgeführt, sobald die Verwendung bestätigt ist. Andere benötigen ein Ziel und müssen nach Bestätigung des Befehls gerichtet werden. Bewegen Sie die Maus über die gewünschte [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Vollzugsanordnungen[/HS] und verwenden Sie dann die LINKE Maustaste, um einen Befehl auszuwählen.</String>
+    <String>[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Vollzugsanordnungen[/HS] werden aus der zugehörigen radialen Optionsleiste ausgewählt. Einige werden sofort ausgeführt, sobald die Verwendung bestätigt ist. Andere benötigen ein Ziel und müssen nach Bestätigung des Befehls gerichtet werden. Bewegen Sie die Maus über die gewünschte [ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]Vollzugsanordnungen[/HS] und verwenden Sie dann die LINKE Maustaste, um einen Befehl auszuwählen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_MineAnAsteroid</Label>
@@ -1106,7 +1117,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_MineAnAsteroid_Dec</Label>
-    <String>Einen Asteroid-Schürfer verwenden, um einen Asteroiden abzubauen. Wähle den Asteroid-Schürfer mit der LINKEN Maustaste aus und erteile ihm den Befehl, einen Asteroiden abzubauen. Gib einen Abbauauftrag, indem du mit der RECHTEN Maustaste eine Asteroidenfeld als Ziel für das Schiff festlegst. [BR][BR] Wenn ein Asteroid-Schürfer eine Astromine einrichtet, wird sie für alle Asteroiden des Asteroidenfelds eingerichtet. Das Errichten einer Mine verbraucht den Asteroid-Schürfer und macht die Schiffe nur einmalig verwendbar.</String>
+    <String>(PLATZHALTER) Kurze Beschreibung des Ziels, einen Asteroiden abzubauen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_BuildEconomicStarbase</Label>
@@ -1114,7 +1125,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_BuildEconomicStarbase_Dec</Label>
-    <String>"Wirtschafts-Sternenbasen" werden genutzt, um die [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Produktion[/HS] und [ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]Einnahmen[/HS] von Kolonien zu steigern. Diese können nur in der Nähe von [HS=HS_CoreWorld]Kernwelten[/HS] gebaut werden. [BR][BR] Mit einem [HS=HS_Constructor]Arbeitsschiff[/HS] ausgewählt, kannst du einen Kreis sehen, der den Bereich der Einflussnahme markiert, den kannst du einen Kreis sehen, der den Bereich der Einflussnahme markiert, den sie beanspruchen würde, wenn das Schiff in eine [HS=HS_Starbase]Sternenbasis[/HS] umgewandelt wird. Um diese zu bauen, drücke das [HS=HS_ConstructStarbase]Sternenbasis bauen[/HS]-Feld im ausgewählten Steuerbereich.</String>
+    <String>(PLATZHALTER) Kurze Beschreibung des Ziels, eine Wirtschaftsraumbasis zu bauen.</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockAsteroidMining</Label>
@@ -1122,7 +1133,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockAsteroidMining_Dec</Label>
-    <String>Wähle die zu erforschende [HS=HS_Tech]Technologie[/HS] im [HS=HS_ResearchCenter]Forschungszentrum[/HS] aus. Um die [ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Produktion[/HS] einer [HS=HS_CoreWorld]Kernwelt[/HS] durch Bereitstellung von [ICON=Stat_Minerals_Icon] [HS=HS_Minerals]Mineralien[/HS] zu erhöhen, sollten wir die Asteroiden-Bergbau Technologie erforschen. Nach Abschluss der Forschung gewährt die [HS=HS_Tech]Technologie[/HS] Zugang zu Asteroid-Schürfern. [BR][BR]Jeder neue [HS=HS_Months]Monat[/HS] trägt zum Fortschritt der ausgeählten [HS=HS_Tech]Technologie[/HS] im Forschungszentrum bei. Die meisten [HS=HS_Tech]Technologien[/HS] benötigen mehrere [HS=HS_Months]Monate[/HS], um abgeschlossen zu werden.</String>
+    <String>(PLATZHALTER) Kurze Beschreibung des Ziels, die Asteroiden-Bergbau-Technologie zu beherrschen.</String>
   </StringTable>
   <StringTable>
     <Label>RUSH_MULTIPLIER</Label>
@@ -1134,7 +1145,7 @@
   </StringTable>
   <StringTable>
     <Label>TURNS_TO_UPGRADE_EXPLANATION_TOOLTIP</Label>
-    <String>Die Anzahl der Monate, die benötigt werden, um die Schiffsüberholung für dieses Schiff abzuschließen.[BR][BR]Der Wert wird durch die Entfernung zur nächsten Schiffswerft bestimmt. Je näher ein Schiff an einer Schiffswerft ist, desto weniger Monate benötigt es für die Fertigstellung.[BR][BR]Dieses Schiff ist %u Zellen von der nächsten Schiffswerft {OBJECTNAME} entfernt.</String>
+    <String>Die Anzahl der Monate, die benötigt werden, um die Upgrades für dieses Schiff abzuschließen.[BR][BR]Der Wert wird durch die Entfernung zur nächsten Schiffswerft bestimmt. Je näher ein Schiff an einer Schiffswerft ist, desto weniger Monate benötigt es für die Fertigstellung.[BR][BR]Dieses Schiff ist %u Kacheln von der nächsten Schiffswerft {OBJECTNAME} entfernt.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZEN_FG_INFOTEXT_GENERATED</Label>
@@ -1142,11 +1153,11 @@
   </StringTable>
   <StringTable>
     <Label>DISABLED_IN_MULTIPLAYER</Label>
-    <String>Vorübergehend im Mehrspielermodus deaktiviert.</String>
+    <String>Vorübergehend deaktiviert im Mehrspielermodus.</String>
   </StringTable>
   <StringTable>
     <Label>CANNOT_REFIT_ERROR_LABEL</Label>
-    <String>[COLOR=BrightRed]Schiffsüberholung nicht möglich: [/COLOR]</String>
+    <String>[COLOR=BrightRed]Umrüstung nicht möglich: [/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>FLEET_TOOLTIP_DISABLED_REQUIRESSHIPYARD</Label>
@@ -1162,7 +1173,7 @@
   </StringTable>
   <StringTable>
     <Label>GovernorDefectedTitle</Label>
-    <String>Übergelaufener Gouverneur </String>
+    <String>Gouverneur Überläufer</String>
   </StringTable>
   <StringTable>
     <Label>GovernorRebelledMessage</Label>
@@ -1174,10 +1185,10 @@
   </StringTable>
   <StringTable>
     <Label>Supernova_Generating_Citizen_Images</Label>
-    <String>Suche nach passenden Bilder zu Bürgern...</String>
+    <String>Suche nach passenden Bürgerbildern...</String>
   </StringTable>
   <StringTable>
     <Label>ResearchTurnsRemaining</Label>
-    <String>%d Monate(e) bis zum Abschluss der Forschung</String>
+    <String>%d Monat(e) bis zum Abschluss der Forschung</String>
   </StringTable>
 </StringTableList>

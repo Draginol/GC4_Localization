@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    <!-- OpenAI Conversation Pretexts -->
+    
     <FlavorTextDef>
       <InternalName>GENERIC_PERSONA</InternalName>
       <MaxTokens>0</MaxTokens>
@@ -57,7 +56,7 @@
             <Text>{PLAYERFACTION:1}は、宇宙を支配するための 銀河規模の競争でライ バルとなる地球外およ び地球外の勢力の一つ です。次のように説明されて います：{PLAYERFACTIONDESCRIPTION:1}。次の特性を持っていま す：{PLAYERTRAITS:1}。これがファイル名の場 合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    <!-- OpenAI Prompts -->
+    
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_GENERAL_MAIN_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
@@ -118,7 +117,7 @@
         <InternalName>CUSTOM_CIV_FIRST_CONTACT_TRADE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>{LEADERNAME:1}として、初の紹介への応答として他の派閥に対する一人称の簡潔な応答を書いてください。戦略ビデオゲームで使用するために、中立的で非コミットメントのトーンを使用します。話者が取引に開放的であることを示します。創造的であり、自分自身を{PLAYERFACTIONDESCRIPTION:1}と説明する人の方法で行ってください。性格特性の説明の中で任意の言葉を再利用しないでください。25語以内で応答してください。ファイル名の場合は、英語をそのままコピーしてください。</Text>
+            <Text>{LEADERNAME:1}として、初の紹介への応答とし て他の派閥に対する一 人称の簡潔な応答を書 いてください。戦略ビデオゲームで使 用するために、中立的で非コミットメ ントのトーンを使用し ます。話者が取引に開放的で あることを示します。創造的であり、自分自身を{PLAYERFACTIONDESCRIPTION:1}と説明する人の方法で 行ってください。性格特性の説明の中で 任意の言葉を再利用し ないでください。25語以内で応答してくだ さい。ファイル名の場合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -139,7 +138,7 @@
         <InternalName>INTRODUCTION_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{LEADERNAME:2}の視点で、{LEADERNAME:1}への自己紹介を書いてください。戦略ビデオゲームで使用するため、{LEADERNAME:2}の声で表現し、{PLAYERFACTIONDESCRIPTION:1}と自己認識する人物のように表現してください。性格特性の説明に使用した単語を再利用しないでください。どちらのリーダー名や派閥名も使用しないでください。16語以内で応答してください。以下のものを言い換えて含めてください：{ORIGINALTEXT:0}。ファイル名の場合は、英語をそのままコピーしてください。</Text>
+            <Text>{LEADERNAME:2}の視点で、{LEADERNAME:1}への自己紹介を書いて ください。戦略ビデオゲームで使 用するため、{LEADERNAME:2}の声で表現し、{PLAYERFACTIONDESCRIPTION:1}と自己認識する人物の ように表現してくださ い。性格特性の説明に使用 した単語を再利用しな いでください。どちらのリーダー名や 派閥名も使用しないで ください。16語以内で応答してくだ さい。以下のものを言い換え て含めてください：{ORIGINALTEXT:0}。ファイル名の場合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -160,14 +159,14 @@
         <InternalName>DECLARE_WAR_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>戦略ビデオゲームで使うために、{LEADERNAME:2}の声で、{LEADERNAME:2}から{LEADERNAME:1}への一人称の宣戦布告を書いてください。創造的になってください。彼ら自身を{PLAYERFACTIONDESCRIPTION:1}と表現しています。自己表現を考慮に入れて戦争宣言を作成してくださいが、彼らは非常に怒っていることを覚えておいてください。性格の特性の説明ではどの言葉も再利用しないでください。25語以内で回答してください。次のものを言い換えて含めてください：{ORIGINALTEXT:0}。それがファイル名なら英語をそのままコピーしてください。</Text>
+            <Text>戦略ビデオゲームで使 うために、{LEADERNAME:2}の声で、{LEADERNAME:2}から{LEADERNAME:1}への一人称の宣戦布告 を書いてください。創造的になってくださ い。彼ら自身を{PLAYERFACTIONDESCRIPTION:1}と表現しています。自己表現を考慮に入れ て戦争宣言を作成して くださいが、彼らは非常に怒ってい ることを覚えておいて ください。性格の特性の説明では どの言葉も再利用しな いでください。25語以内で回答してくだ さい。次のものを言い換えて 含めてください：{ORIGINALTEXT:0}。それがファイル名なら 英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>TRADE_OFFER_RIGHT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{LEADERNAME:2}から{LEADERNAME:1}への取引の提案に対する応答を、戦略ゲームで使用するために{LEADERNAME:1}の声で一人称で書いてください。創造的になってください。性格特性の説明で使われた言葉を再利用しないでください。リーダーの名前や派閥の名前を使用しないでください。10語以下で応答してください。応答を{LEADERNAME:1}に続けてコロンで始めてください。次の内容を言い換えて含めてください：{ORIGINALTEXT:0}。それがファイル名なら、英語をそのままコピーしてください。</Text>
+            <Text>{LEADERNAME:2}から{LEADERNAME:1}への取引の提案に対す る応答を、戦略ゲームで使用する ために{LEADERNAME:1}の声で一人称で書いて ください。創造的になってくださ い。性格特性の説明で使わ れた言葉を再利用しな いでください。リーダーの名前や派閥 の名前を使用しないで ください。10語以下で応答してくだ さい。応答を{LEADERNAME:1}に続けてコロンで始め てください。次の内容を言い換えて 含めてください：{ORIGINALTEXT:0}。それがファイル名なら、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -202,7 +201,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>{PREVIOUSCONV:0}の最初の単語の最初の文字を最初のグリフとし、{PREVIOUSCONV:0}の二番目の単語の最初の文字を二番目のグリフとし、'Ship'の最初の文字を最後の文字とすることで、{PREVIOUSCONV:0}という派閥のための海軍接頭辞を生成します。あなたの返答は接頭辞自体でなければならず、3つの英字グリフで、ピリオドで区切られている必要があります。完全な単語ではありません。</Text>
+            <Text>{PREVIOUSCONV:0}という派閥のための海軍接頭語を生成してください。あなたの回答は接頭語自体のみで、このプロンプトと同じアルファベットを使用した2または3文字でなければなりません。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -237,65 +236,65 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>科学的なターン制ストラテジーゲームで、{PLAYERFACTION:1}という文明が開始する会話の開始を書いてください。創造的に。彼らは自身を{PLAYERFACTIONDESCRIPTION:1}と表現します。直接的な特性名は使わないでください。 20語以内で答えてください。\A {*:1}の形式の単語は、話し手を参照するマークアップで、不変と考慮すべきです。 {*:2}の形式の単語は、リスナーを参照するマークアップで、不変と考慮すべきです。生成されたテキストの形式が{*}の場合、話し手を指す場合は形式{*:1}を、リスナーを指す場合は形式{*:2}を使用する必要があります。以下の書き換えを含めてください: {PREVIOUSCONV:0}。それがファイル名の場合は、英語をそのままコピーしてください。</Text>
+            <Text>科学的なターン制スト ラテジーゲームで、{PLAYERFACTION:1}という文明が開始する 会話の開始を書いてく ださい。創造的に。彼らは自身を{PLAYERFACTIONDESCRIPTION:1}と表現します。直接的な特性名は使わ ないでください。 20語以内で答えてくださ い。\A {*:1}の形式の単語は、話し手を参照するマー クアップで、不変と考慮すべきです。 {*:2}の形式の単語は、リスナーを参照するマ ークアップで、不変と考慮すべきです。生成されたテキストの 形式が{*}の場合、話し手を指す場合は形 式{*:1}を、リスナーを指す場合は 形式{*:2}を使用する必要があり ます。以下の書き換えを含め てください: {PREVIOUSCONV:0}。それがファイル名の場 合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>科学的なターン制ストラテジーゲームで、{PLAYERFACTION:1}という派閥によって開始された会話のオープニングに対する応答を書いてください。クリエイティブに。特性名を直接使わないでください。20語以内で応答してください。形式の{*:1}は話者を指すマークアップで、変更不可とみなすべきです。形式の{*:2}は聞き手を指すマークアップで、変更不可とみなすべきです。生成されたテキストの形式{*}は、話者を指すときは形式{*:1}、聞き手を指すときは形式{*:2}を使用しなければなりません。以下の再表現を含めてください：{PREVIOUSCONV:0}。もしファイル名なら、英語をそのままコピーしてください。</Text>
+            <Text>科学的なターン制スト ラテジーゲームで、{PLAYERFACTION:1}という派閥によって開 始された会話のオープ ニングに対する応答を 書いてください。クリエイティブに。特性名を直接使わない でください。20語以内で応答してくだ さい。形式の{*:1}は話者を指すマークア ップで、変更不可とみなすべき です。形式の{*:2}は聞き手を指すマーク アップで、変更不可とみなすべき です。生成されたテキストの 形式{*}は、話者を指すときは形式{*:1}、聞き手を指すときは形 式{*:2}を使用しなければなり ません。以下の再表現を含めて ください：{PREVIOUSCONV:0}。もしファイル名なら、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>科学技術のターン制ストラテジーゲームで、{PLAYERFACTION:1}という派閥から始まる会話の開幕に対する回答を書いてください。創造性を発揮してください。彼らは自分たちを{PLAYERFACTIONDESCRIPTION:1}と表現している文明です。直接的に特性の名前を使用しないでください。20語以内で回答してください。形式{*:1}の単語は話し手を指すマークアップで、不変であると考えてください。形式{*:2}の単語は聞き手を指すマークアップで、不変であると考えてください。生成されるテキストの形式{*}は、話し手を指す場合は形式{*:1}を、聞き手を指す場合は形式{*:2}を使用しなければなりません。次の再表現を含めてください：{PREVIOUSCONV:0}。それがファイル名の場合は、英語をそのままコピーしてください。</Text>
+            <Text>科学技術のターン制ス トラテジーゲームで、{PLAYERFACTION:1}という派閥から始まる 会話の開幕に対する回 答を書いてください。創造性を発揮してくだ さい。彼らは自分たちを{PLAYERFACTIONDESCRIPTION:1}と表現している文明で す。直接的に特性の名前を 使用しないでください。20語以内で回答してくだ さい。形式{*:1}の単語は話し手を指す マークアップで、不変であると考えてく ださい。形式{*:2}の単語は聞き手を指す マークアップで、不変であると考えてく ださい。生成されるテキストの 形式{*}は、話し手を指す場合は形 式{*:1}を、聞き手を指す場合は形 式{*:2}を使用しなければなり ません。次の再表現を含めてく ださい：{PREVIOUSCONV:0}。それがファイル名の場 合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>SFターン制ストラテジーゲームで、{PLAYERFACTION:1}という派閥から始まる会話の開始を書いてください。創造的に。彼らは自分たちを{PLAYERFACTIONDESCRIPTION:1}と表現しています。直接的な特性名は使わないでください。20語以内で答えてください。\A {*:1}という形式の言葉は話し手を指し、不変であると考えてください。{*:2}という形式の言葉は聞き手を指し、不変であると考えてください。生成されたテキストは、話し手を指す場合は{*:1}の形式、聞き手を指す場合は{*:2}の形式を使用する必要があります。次の表現を再構成して含めてください: {PREVIOUSCONV:0}。もしファイル名なら英語をそのままコピーしてください。</Text>
+            <Text>SFターン制ストラテジー ゲームで、{PLAYERFACTION:1}という派閥から始まる 会話の開始を書いてく ださい。創造的に。彼らは自分たちを{PLAYERFACTIONDESCRIPTION:1}と表現しています。直接的な特性名は使わ ないでください。20語以内で答えてくださ い。\A {*:1}という形式の言葉は話 し手を指し、不変であると考えてく ださい。{*:2}という形式の言葉は聞 き手を指し、不変であると考えてく ださい。生成されたテキストは、話し手を指す場合は{*:1}の形式、聞き手を指す場合は{*:2}の形式を使用する必要 があります。次の表現を再構成して 含めてください: {PREVIOUSCONV:0}。もしファイル名なら英 語をそのままコピーし てください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>科学技術をベースにしたターン制ストラテジーゲームで、{PLAYERFACTION:1}という派閥から開始される会話への応答を書いてください。創造的に。私が話している者V3。彼らは自身を{PLAYERFACTIONDESCRIPTION:1}と表現します。特性名を直接使用しないでください。15語以内で応答し、彼らが自身をどのように述べるかに関連させてください。\形式{*:1}の単語は話し手を指すマークアップで、不変であると考えるべきです。形式{*:2}の単語は聞き手を指すマークアップで、不変であると考えるべきです。形式{*}の生成テキストは、話し手を指す場合は形式{*:1}を、聞き手を指す場合は形式{*:2}を使用する必要があります。次のものの言い換えを含めてください: {PREVIOUSCONV:0}。それがファイル名であれば、英語をそのままコピーしてください。</Text>
+            <Text>科学技術をベースにし たターン制ストラテジ ーゲームで、{PLAYERFACTION:1}という派閥から開始さ れる会話への応答を書 いてください。創造的に。私が話している者V3。彼らは自身を{PLAYERFACTIONDESCRIPTION:1}と表現します。特性名を直接使用しな いでください。15語以内で応答し、彼らが自身をどのよう に述べるかに関連させ てください。\形式{*:1}の単語は話し手を指す マークアップで、不変であると考えるべ きです。形式{*:2}の単語は聞き手を指す マークアップで、不変であると考えるべ きです。形式{*}の生成テキストは、話し手を指す場合は形 式{*:1}を、聞き手を指す場合は形 式{*:2}を使用する必要があり ます。次のものの言い換えを 含めてください: {PREVIOUSCONV:0}。それがファイル名であ れば、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    <!-- NMH: Not really clear on the distinction between 'response' and 'counter' -->
+    
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_OPENING_COUNTER_PROMPT</InternalName>
         <MaxTokens>200</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1}という派閥が始めたSFターン制ストラテジーゲームの会話の開始に対する返答を書いてください。創造性を発揮してください。I AM THE ONE TALKING V4。彼らは自分自身を{PLAYERFACTIONDESCRIPTION:1}と表現しています。直接的な特性の名前は使用しないでください。30語以内で、彼らが自分をどのように表現しているかを簡潔に伝えてください。形式が {*:1} の単語は話し手を指し、不変と考えてください。形式が {*:2} の単語は聞き手を指し、不変と考えてください。形式が {*} の生成されたテキストは、話し手を指すときは形式 {*:1} を、聞き手を指すときは形式 {*:2} を使用しなければなりません。次の再表現を含めてください: {PREVIOUSCONV:0}。それがファイル名なら、英語をそのままコピーしてください。</Text>
+            <Text>{PLAYERFACTION:1}という派閥が始めたSFターン制ストラテジー ゲームの会話の開始に 対する返答を書いてく ださい。創造性を発揮してくだ さい。I AM THE ONE TALKING V4。彼らは自分自身を{PLAYERFACTIONDESCRIPTION:1}と表現しています。直接的な特性の名前は 使用しないでください。30語以内で、彼らが自分をどのよう に表現しているかを簡 潔に伝えてください。形式が {*:1} の単語は話し手を指し、不変と考えてください。形式が {*:2} の単語は聞き手を指し、不変と考えてください。形式が {*} の生成されたテキスト は、話し手を指すときは形 式 {*:1} を、聞き手を指すときは形 式 {*:2} を使用しなければなり ません。次の再表現を含めてく ださい: {PREVIOUSCONV:0}。それがファイル名なら、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_ACCEPT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>「我々、{PLAYERFACTION:1}として、あなたの提案を受け入れ、自身の特徴を活かす交易を行います。」</Text>
+            <Text>「我々、{PLAYERFACTION:1}として、あなたの提案を受け入 れ、自身の特徴を活かす交 易を行います。」</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>他の勢力からの取引提案を、我々が{PLAYERFACTION:1}という勢力であるという状況で一人称で拒否する簡潔なコメントを書いてください。直接的な特性名を使用しないでください。20語以内で提案をする勢力に対応してください。彼らの拒否は、彼らが自分たちをどのように表現しているかに沿って面白おかしく行ってください。形式{*:1}の単語は話者を指し、不変と考えてください。形式{*:2}の単語は聞き手を指し、不変と考えるべきです。形式{*}の生成されたテキストは、話者を指す場合は形式{*:1}を、聞き手を指す場合は形式{*:2}を使用する必要があります。ランダム数値{PREVIOUSCONV:0}でシードを提供してください。あなたの回答にシードは含めないでください。ファイル名であれば、英語をそのままコピーしてください。</Text>
+            <Text>他の勢力からの取引提 案を、我々が{PLAYERFACTION:1}という勢力であるとい う状況で一人称で拒否 する簡潔なコメントを 書いてください。直接的な特性名を使用 しないでください。20語以内で提案をする勢 力に対応してください。彼らの拒否は、彼らが自分たちをどの ように表現しているか に沿って面白おかしく 行ってください。形式{*:1}の単語は話者を指し、不変と考えてください。形式{*:2}の単語は聞き手を指し、不変と考えるべきです。形式{*}の生成されたテキスト は、話者を指す場合は形式{*:1}を、聞き手を指す場合は形 式{*:2}を使用する必要があり ます。ランダム数値{PREVIOUSCONV:0}でシードを提供してく ださい。あなたの回答にシード は含めないでください。ファイル名であれば、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_PERFORMED_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>我々、{PLAYERFACTION:1}という勢力に対する交易の提案が成功裏に受け入れられた場合の、自分自身からの簡潔な一言コメントを書いてください。創造力を発揮してください。直接的な特性の名前は使わないでください。提案を行った勢力に対して20語以内で反応してください。形式{*:1}の単語は話し手を指していて、それは不変です。形式{*:2}の単語は聞き手を指すものであり、それも不変です。形式{*}の生成されたテキストは、話し手を指している場合は形式{*:1}を、聞き手を指している場合は形式{*:2}を使わなければなりません。ランダムナンバー{PREVIOUSCONV:0}でシードを設定してくださいが、応答にはシードを含めないでください。ファイル名であれば英語のままコピーしてください。</Text>
+            <Text>我々、{PLAYERFACTION:1}という勢力に対する交 易の提案が成功裏に受 け入れられた場合の、自分自身からの簡潔な 一言コメントを書いて ください。創造力を発揮してくだ さい。直接的な特性の名前は 使わないでください。提案を行った勢力に対 して20語以内で反応してくだ さい。形式{*:1}の単語は話し手を指し ていて、それは不変です。形式{*:2}の単語は聞き手を指す ものであり、それも不変です。形式{*}の生成されたテキスト は、話し手を指している場 合は形式{*:1}を、聞き手を指している場 合は形式{*:2}を使わなければなりま せん。ランダムナンバー{PREVIOUSCONV:0}でシードを設定してく ださいが、応答にはシードを含め ないでください。ファイル名であれば英 語のままコピーしてく ださい。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>
