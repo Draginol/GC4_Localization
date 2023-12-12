@@ -1,6 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    
-    
+    <!-- Created with the Flavor Text Editor -->
+    <!-- FlavorText.xml -->
     <FlavorTextDef>
         <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
         <FlavorTextOption>
@@ -31,7 +32,7 @@
             <Requirements>
                 <PersonalityType>Totalitarianism</PersonalityType>
             </Requirements>
-            <Text>私の承認なしに私の帝 国で取引は行われませ ん。[COLOR=UIDefaultHighlight](取引を開始)[/COLOR]。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>存続を正当化するものが何か、見せてもらおう。</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -110,7 +111,7 @@
         <FlavorTextOption>
             <Text>あなたを歓迎します、{PLAYERFACTION:2}。</Text>
             <Text>暖かい挨拶、{PLAYERFACTION:2}。あなたが友人か敵かは 知りません。それは時間が答えを出 すだけです。今のところ、私たちはあなたに平和 を祈ります。</Text>
-            <Text>あなたがその{PLAYERFACTION:2}ですね。私たちにあなたたちの 噂が届いています。あなたが友人なのか敵 なのか、すぐに見極めます。</Text>
+            <Text>我々は自身の悲劇を乗り越えた生存者としてあなた方の前に立っています。あなた方の信念や、他の種族を劣ったものと見る視点を知っています。しかし、これだけは聞いてください：我々は無視されたり、根絶されたりするような単なる幽霊ではありません。[BR][BR]我々の歴史は、ヨールに対する耐久性の物語であり、我々の強さと意志の証です。最初の遭遇において、あなた方に自らの観念を再考してほしいと強く促します。我々は征服されるべき敵ではなく、宇宙の舞台で尊重されるべき平等な存在です。</Text>
             <Text>あなたが{PLAYERFACTION:2}と呼ばれていると聞い ています。これは我々にとって非常に興味深 いです。我々が協力する運命にある のか、相互に絶滅を求めるの かはまだ見えません..</Text>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -173,13 +174,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>あなたが知っているよ うなあなたの人生は、今終わりました。 まもなく、あなたは私たちの奴隷 になります。</Text>
+            <Text>あなたが知っているようなあなたの人生は、今終わりました。 まもなく、あなたは私たちの奴隷になります。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>新たな存在。なんて喜ばしい！まだ 恐怖は無い。あなたの瞳にはまだ炎 が燃えている。ああ、それがどれほど早く変 わることか..</Text>
+            <Text>新たな存在。なんて喜ばしい！まだ恐怖は無い。あなたの瞳にはまだ炎が燃えている。ああ、それがどれほど早く変わることか..</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -1581,7 +1582,7 @@
         <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
         <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
       </Requirements>
-      <Text>あなたの効率性と回復 力は我々には明らかです。しかし、破壊の努力に対する愛 情はありません、そして平和を望みます。</Text>
+      <Text>あなたの効率性と回復力は我々には明らかです。しかし、破壊の努力に対する愛情はありません、そして平和を望みます。</Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
     <FlavorTextOption>
@@ -1627,7 +1628,7 @@
             </Requirements>
             <Text>これを後悔するでしょ う、{LEADERNAME:1}..</Text>
             <Text>私たちはあなたを破壊 するつもりです。</Text>
-            <Text>私たちの間に平和は決 して存在しない。</Text>
+            <Text>あなたの味はどんなものかしら。</Text>
             <Text>あなたが消え去った後 で、あなたの歴史をカタロ グにします。</Text>
             <PreferenceWeight>5</PreferenceWeight>
         </FlavorTextOption>
@@ -1638,10 +1639,10 @@
                     <RangeMax>-2</RangeMax>
                 </RelationsRange>
             </Requirements>
-            <Text>これを後悔するでしょ う、{LEADERNAME:1}..</Text>
-            <Text>私たちはあなたを破壊 するつもりです。</Text>
-            <Text>私たちの間に平和は決 して存在しない。</Text>
-            <Text>あなたが消え去った後 で、あなたの歴史をカタロ グにします。</Text>
+            <Text>これを後悔するでしょう、{LEADERNAME:1}..</Text>
+            <Text>私たちはあなたを破壊するつもりです。</Text>
+            <Text>私たちの間に平和は決して存在しない。</Text>
+            <Text>あなたが消え去った後で、あなたの歴史をカタログにします。</Text>
             <PreferenceWeight>5</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -2661,7 +2662,7 @@
                 <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
                 <ListenerFaction>FACTION_MIMOT</ListenerFaction>
             </Requirements>
-            <Text>それはあなたから来る と少し皮肉な感じがし ます..</Text>
+            <Text>それはあなたから来ると少し皮肉な感じがします..</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3013,7 +3014,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>私たちは出会う全ての 者に優しさを伸ばすよ う努めています。</Text>
+            <Text>私たちは出会う全ての者に優しさを伸ばすよう努めています。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3109,7 +3110,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>あなたの心に感じる誠 実さは稀です。</Text>
+            <Text>あなたの心に感じる誠実さは稀です。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -3157,7 +3158,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
             </Requirements>
-            <Text>我々はいつも無毛の類人猿 と話すのを楽しんでい ます。</Text>
+            <Text>あなたが宇宙の仲間入りを果たすことは、おそらくないでしょう。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -3836,7 +3837,7 @@
                 <SpeakerFaction>FACTION_YOR</SpeakerFaction>
                 <ListenerFaction>FACTION_ICONIAN</ListenerFaction>
             </Requirements>
-            <Text>私たちは自分たちのも のを取り戻します。</Text>
+            <Text>私たちは自分たちのものを取り戻します。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4412,7 +4413,7 @@
                 <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>ただ覚えておいてくだ さい、あなたが成長するにつ れて、最初にあなたを引き上 げたのは誰か。..もしファイル名なら英 語をそのままコピーし てください。</Text>
+            <Text>ただ覚えておいてください、あなたが成長するにつれて、最初にあなたを引き上げたのは誰か。..もしファイル名なら英語をそのままコピーしてください。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4516,7 +4517,7 @@
                 <SpeakerFaction>FACTION_MOTH</SpeakerFaction>
                 <ListenerFaction>FACTION_CRYSTALLINE</ListenerFaction>
             </Requirements>
-            <Text>あなたの頭の中で恐怖 があまりにも大声で叫 ばないようにしてみて ください。</Text>
+            <Text>あなたの頭の中で恐怖があまりにも大声で叫ばないようにしてみてください。</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -4754,7 +4755,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>私はあなたとあなたの 民の心を覗き見ました。もはや、ルクサーデミニオンの 利益に対するあなたの 意向を無視することは できません。[BR][BR][COLOR=UIDefaultHighlight](我々は戦争状態にある)[/COLOR]。</Text>
+            <Text>We will not simply wait for your attack, we made that mistake already.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -4772,7 +4773,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>私はあなたとあなたの 民の心を覗き見ました。もはや、ルクサーデミニオンの 利益に対するあなたの 意向を無視することは できません。[BR][BR][COLOR=UIDefaultHighlight](我々は戦争状態にある)[/COLOR]。</Text>
+            <Text>私はあなたとあなたの民の心を覗き見ました。もはや、ルクサーデミニオンの利益に対するあなたの意向を無視することはできません。[BR][BR][COLOR=UIDefaultHighlight](我々は戦争状態にある)[/COLOR]。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5718,7 +5719,7 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Text>それでは、取引しましょう。</Text>
-            <Text>成功した交渉に乾杯し ます。</Text>
+            <Text>これは受け入れ可能で す。</Text>
             <Text>同意します..もしファイル名なら、英語をそのままコピー してください。</Text>
             <Text>これは機能します.. [I]がファイル名の場合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
@@ -5746,6 +5747,22 @@
             </Requirements>
             <Text>これらの条件に同意し ます。</Text>
             <PreferenceWeight>30</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We humbly agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are grateful for your mercy and agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5844,7 +5861,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
             </Requirements>
-            <Text>このオファーは気に入 らない。</Text>
+            <Text>このオファーは気に入らない。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5868,13 +5885,13 @@
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>この提案を持ちかけた ことに対し、お前の腹を裂くべきだ..</Text>
+            <Text>この提案を持ちかけたことに対し、お前の腹を裂くべきだ..</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>あなたの提案は軽蔑に 値する。</Text>
+            <Text>あなたの提案は軽蔑に値する。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5972,7 +5989,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_XELOXI</SpeakerFaction>
             </Requirements>
-            <Text>成功した交渉に乾杯し ます。</Text>
+            <Text>成功した交渉に乾杯します。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5983,20 +6000,29 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>これは私たちのために 機能します。今のところ..</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>You have our respect.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>これはほとんど受け入 れられませんが、私はこれ以上時間を無 駄にすることはありま せん。</Text>
+            <Text>これはほとんど受け入れられませんが、私はこれ以上時間を無駄にすることはありません。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
             </Requirements>
-            <Text>これは私たちのために 機能します。今のところ..</Text>
+            <Text>これは私たちのために機能します。今のところ..</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -6324,7 +6350,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
             </Requirements>
-            <Text>これは私たちが提案す る交換です、エイリアン。それは良いもの、公平で真実的なもので す。</Text>
+            <Text>これは私たちが提案する交換です、エイリアン。それは良いもの、公平で真実的なものです。</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>

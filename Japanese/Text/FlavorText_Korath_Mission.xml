@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Korath_StartOfGame</InternalName>
+        <FlavorTextOption>
+            <Text>ようこそ、存在よ。我々コラスは、宇宙の至高の先鋒であり、ドレンジンの究極の表現である。[BR][BR]我々の教義、我々の存在の指針を理解する時が来た。[BR][BR]広大な宇宙には、自然の秩序があり、言葉にはされない階層が全生命を支配している。我々コラスはこの秩序の頂点に立ち、進化と意識の極みである。我々の哲学は悪意に基づくものではなく、論理的必然性に基づくものだ。[BR][BR]あなたの住処を守るために行う単純な行動を考えてみてほしい。巣を作るハチを取り除かないか？住居用地を湿地から回復すること、あるいは存在を脅かす害虫を駆除することが悪意あるとされるだろうか？そうした行為は憎しみからではなく、生存と進歩のための原始的な需要から行われる。[BR][BR]同様に、我々は他の種を単純な生き物と見なしている。彼らは我々のように自覚があり、宇宙の深い理解に欠けている。彼らの存在は、進化の低い状態であり、我々の存在と同等ではない。あなたが食糧のために家畜を殺すように、あるいはより大きな生態系のバランスのために動物を減らすように、我々も宇宙の均衡を維持するために行動する。[BR][BR]我々の行動はしばしば残酷さと誤解されるが、その本質は宇宙の管理としてのものだ。弱い種を根絶することは選択ではなく義務である。それは最高の生命形態であるドレンジンの生存と支配を確保する、我々が負う責任である。[BR][BR]我々はこの任務を楽しむわけではない。それは我々が受け入れる重荷である。自然秩序の論理的な進展であり、銀河の純粋さとバランスに向けた必要な一歩である。下等な種を増殖させることは、混沌を招き、宇宙の繊細な構造を乱すことに他ならない。[BR][BR]宇宙は慈悲の揺りかごではなく、揺るぎない真実の領域である。そして真実はこれだ：最も強く、最も進化した者だけが未来を形作る権利を持つ。これが我々の哲学の本質であり、我々の存在の核心である。コラスは悪を求めない。我々は秩序を求め、進歩を求め、星々の正当な支配者の昇華を求めるのだ。[BR][BR]あなたは、存在よ、我々が必要な仕事をするのを観察する稀な機会を持っている。この機会を喜びなさい。コラスの行動を目撃せよ。宇宙の自然な秩序を目撃せよ。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Conversation_KorathMeetOthers</InternalName>
+        <FlavorTextOption>
+            <Text>宇宙の壮大なタペストリーにおいて、すべての糸にはその場所があり、すべての種にはその役割がある。[BR][BR]私たちは観察者であり、最初は学び手である。他の存在の独特な性質を理解しようと試みる。私たちの哲学は慎重な研究にある。それぞれの種が宇宙の大計においてどのような役割を果たしているかを確かめるためだ。それは微妙なバランスであり、私たちは理由なくそれを乱すことはない。[BR][BR]ここに、この接触の瞬間において、私たちはこれらの生き物に慎重な友情の手を差し伸べる。しかし、宇宙は審判と結果の場所であり、私たちコラスはその警戒する管理者であることを認識してほしい。[BR][BR]私たちは観察し、その後、種を不安定な要素として取り除くために行動する。これは悪意のある行為ではなく、浄化の行為である。それは外科的な切除であり、全体の健康のために木を剪定するように、精密で不必要な残酷さを伴わない。[BR][BR]観察せよ。学べ。理解せよ。そして、私たちが提供するサービスに感謝せよ。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We stand before you as the enduring survivors of our own tragedy. We know of your beliefs, your view of other species as lesser. But heed this: we are not mere specters to be dismissed or eradicated. [BR][BR]Our history is one of resilience against the Yor, a testament to our strength and will. In our first encounter, we urge you to reconsider your notions. We are not adversaries to be conquered, but equals to be respected in the cosmic arena.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>I wonder what you'll taste like.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Let us see what you have that justifies your continuing existence.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>It is unlikely you are going to make the cosmic cut.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>I don't remember the Drengin being quite this ugly. Sickly even.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerFaction>FACTION_KORATH_Campaign_ReturnOfKorath</ListenerFaction>
+            </Requirements>
+            <Text>We are not Drengin!</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We might as well trade while the peace remains.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Your bones will make excellent decorations.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Your arrival fills us with deep concern. Your reputation precedes you, a shadow cast across the stars, a symbol of unbridled malevolence and destruction.[BR][BR]Our civilization, guided by principles of enlightenment and harmony, stands in stark contrast to your ruthless ethos. The Korath's blatant disregard for life, for the sanctity of sentient existence, is an abomination in our eyes.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>You have no value. You are neither sentient or food.</Text>
+            <PreferenceWeight>500</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Your skin has a pleasant hue to it.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Our people, the Torians, and our memory of suffering at the hands of monsters like you is long and bitter. Your kind, with your contemptuous view of other species as mere tools, embodies the very essence of our disdain. [BR][BR]We are acutely aware of the atrocities you commit, the abhorrent genetic manipulations to create docile, ruined beings, treating sentient life as cattle. Such acts are not just aggressive; they are an affront to the very essence of what it means to be sentient. [BR][BR]We will not go quietly into the night.
+                </Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>It is always good to find a fresh supply of Torian.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>You appear more defective than is typical of your kind.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We greet you with a nod of equal stature, yet with eyes wide open to your true nature. Your strength is undeniable.[BR][BR]We recognize you as a formidable player. Like us, you understand the necessity of asserting dominance. While you wield brute force, for that suits your limited capabilities, we prefer the subtlety of manipulation, the art of steering events from the shadows.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>A quasi-sentient dragon is hardly subtle.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>It is laughable that a mere beast believes they can interact with us on our level.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We of the Corporate Sector make no excuses. You, like all our potential customers, are above us. You are better than us.  But consider this, instead of exterminating us, think of us as species that could be made use of. The Limuras of Thacos IV that clean the fins off the Urho sharks.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Perhaps we may let you live.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>We have drone technology to service our needs. We don't need more parasites.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+</FlavorTextDefs>

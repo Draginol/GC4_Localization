@@ -2,6 +2,13 @@
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- OpenAI Conversation Pretexts -->
     <FlavorTextDef>
+      <InternalName>GENERIC_PERSONA</InternalName>
+      <MaxTokens>0</MaxTokens>
+      <FlavorTextOption>
+        <Text>Είσαι ένας ικανός συγγραφέας επιστημονικής φαντασίας.</Text>
+      </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
@@ -195,7 +202,7 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Παρακαλώ δημιουργήστε έναν κωδικό κλήσης για την ομάδα {PREVIOUSCONV:0} σε ένα παιχνίδι στρατηγικής επιστημονικής φαντασίας. Να είστε δημιουργικοί. Η απάντηση θα πρέπει να είναι ακρωνύμιο ή συντομογραφία και να αποτελείται ακριβώς από 2 ή 3 κεφαλαία γράμματα με κάθε κεφαλαίο γράμμα να ακολουθείται από μια τελεία. Δεν πρέπει να περιλαμβάνει ολόκληρες λέξεις. Για παράδειγμα Χ.Κ. Ένα άλλο παράδειγμα Ε.Δ. Η απάντηση δεν πρέπει να υπερβαίνει τα 6 γράμματα συμπεριλαμβανομένων των τελειών. . Εάν είναι όνομα αρχείου, απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>{Π.Σ.Π}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>

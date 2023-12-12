@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <FlavorTextDef>
         <InternalName>Tutorial_GenericConfirm</InternalName>
@@ -5,201 +6,474 @@
             <Text>理解しました。ファイル名の場合は、英語をそのままコピー してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartOfGame</InternalName>
-        
         <FlavorTextOption>
-            <Text>銀河を探索し理解する ことは、連盟の[HS=HS_ZoneOfControl]支配領域[/HS]を拡大するための最初 のステップです。プローブは宇宙を探索 する最良の方法です。それらは制限なく[HS=HS_ShipRange]範囲[/HS]を移動でき、速く移動することがで きます。[BR][BR]連盟はすでに地球の軌 道近くにプローブを提 供しています。左マウスボタンを使用 してそのプローブを選 択し、[HS=HS_ShipMovement]移動[/HS]命令を出して探索を開 始します。これは、マップ上でプローブが 移動すべき場所を右マ ウスボタンで選択する か、プローブのインターフ ェースで[ICON=AutoExplore_Icon] [HS=HS_AutoExplore]自動探索[/HS]モードを選択すること によって行うことがで きます。[HS=HS_Months]月[/HS]は、すべての船と艦隊がす べての移動を使い果た したか、待機状態にされるまで 終わることはありませ ん。[BR][BR]異常な信号の報告があ りました。その源と意味は見分け るのが難しいですが、それは別の文明である と考えられています。それらを見つけるため にプローブを使ってく ださい。[BR][BR]新しい目標：他の文明 を見つけること。それがファイル名であ れば、英語をそのままコピー してください。</Text>
+            <Text>ギャラクティック・シヴィライゼーションズ IV へようこそ。本日は、人類が超光速航行を実現した後の最初のステップをレビューします。統合地球政府が他の惑星への植民を開始すると決定した際、その事業を監督するテラン連合という組織を創設しました。その初の任務は、植民の候補となる惑星を偵察するために宇宙を探索することでした。[BR][BR]銀河を探索し、知ることは連合の[HS=HS_ZoneOfControl]支配領域[/HS]を拡大する第一歩です。プローブは宇宙を探索する最良の方法です。制限なく[HS=HS_ShipRange]行動範囲[/HS]を持ち、迅速に動けます。[BR][BR][I]任務報告は画面の左側にオレンジ色のアイコンとして表示されます。レポートを確認するには、それを左クリックします。[/I][BR][BR]最近、地球軌道近くに深宇宙プローブが打ち上げられました。左のマウスボタンを使ってそのプローブを選択し、探索を開始するために[HS=HS_ShipMovement]移動[/HS]命令を出します。これは、マップ上でプローブが移動すべき場所を右のマウスボタンで選択するか、プローブのインターフェース上で[ICON=AutoExplore_Icon] [HS=HS_AutoExplore]自動探索[/HS]モードを選択することで行えます。[HS=HS_Months]月[/HS]は、すべての船や艦隊が動きを使い果たすか、待機状態になるまで終了することはありません。[BR][BR]変わった信号が報告されています。その出所や意味は弱すぎて判別できませんが、他の文明であると考えられています。プローブを使ってそれらを見つけ出してください。[BR][BR]新しい目標：他の文明の発見</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedProbe</InternalName>
+        <FlavorTextOption>
+            <Text>プローブ選択済み！船は命令待ちの状態です。銀河を巡る艦船の指示は成功への鍵です。プローブに最初の命令[HS=HS_ShipMovement]移動[/HS]を出しましょう。[BR][BR]プローブを選択したら、未占領の宇宙空間を右クリックして目的地を設定します。プローブは、一つの[HS=HS_Tile]タイル[/HS]から次へと最短ルートを利用して目的地へ進みます。[BR][BR]グリッドが見えない場合は、オプションメニューのインターフェースでグリッドの可視性を設定できます。また、Gキーを押すことでグリッドの可視性を切り替えることもできます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteProbeMove</InternalName>
+        <FlavorTextOption>
+            <Text>成功！[BR][BR][HS=HS_Sector]セクター[/HS]を探索する際、すべての船には１[HS=HS_Months]ターン[/HS]あたりの移動距離に制限があることを覚えておいてください。全ての船は一定量の[ICON=Moves_Icon] [HS=HS_Moves]移動ポイント[/HS]を持っており、これは１ターンで横切ることができる[HS=HS_Tile]タイル[/HS]の数を表しています。[BR][BR]もし、１[HS=HS_Months]ターン[/HS]で移動できる距離を超える命令を出した場合、船は指定された場所に到達するのに必要な[HS=HS_Months]ターン[/HS]数をかけてその命令に従い続けます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>司令官、次に注意を払うべき事項は、[HS=HS_ResearchCenter]研究センター[/HS]に活動目標が設定されていることを確認することです。[BR][BR]選択肢は複数ありますが、探査ミッションのような我々の探査能力を強化する[HS=HS_Tech]技術[/HS]に焦点を当てることをお勧めします。研究センターにアクセスするには、左のマウスボタンで研究バーを選択してください。[BR][BR]新しい目標：探査ミッションの研究</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenResearchScreenFirstTime</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_ResearchCenter]研究センター[/HS]へようこそ。新しい[HS=HS_Tech]技術[/HS]を解除する研究活動を指揮する場所です。[HS=HS_Tech]技術[/HS]を完成させることで、新しい船、建物、管理要素などにアクセスできます。[BR][BR]画面は3つのセクションに分かれています—中央にはアドバイザーの提案、下には現在研究中の[HS=HS_Tech]技術[/HS]、右側のパネルには研究可能な全[HS=HS_Tech]技術[/HS]がリストされています。[BR][BR]左クリックで[HS=HS_Tech]技術[/HS]を選択すると、現在の研究対象として設定されます。今すぐ研究対象を設定してみましょう。調査ミッションから始めることをお勧めします。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnSetFirstResearchTarget</InternalName>
+        <FlavorTextOption>
+            <Text>研究対象設定！[BR][BR]全ての[HS=HS_Tech]テック[/HS]には一定量の[ICON=Stat_Research_Icon] [HS=HS_Research]リサーチ[/HS]が必要です。毎[HS=HS_Months]ターン[/HS]に生成された[ICON=Stat_Research_Icon] [HS=HS_Research]リサーチ[/HS]が対象の[HS=HS_Tech]テック[/HS]に適用されます。[BR][BR]主に、研究の完了にどれくらい時間がかかるかが関係します。リストで[HS=HS_Tech]テック[/HS]の完成に必要な[HS=HS_Months]ターン[/HS]数を確認できます。残りの[HS=HS_Months]ターン[/HS]数はリサーチバーに表示されています。[BR][BR]毎[HS=HS_Months]ターン[/HS]に生成される[ICON=Stat_Research_Icon] [HS=HS_Research]リサーチ[/HS]量を増やす方法は、テラン連合が拡大するにつれて説明します。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShips</InternalName>
+        <FlavorTextOption>
+            <Text>調査ミッションの研究完了、[HS=HS_SurveyShip]旗艦[/HS]を手に入れました。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]は銀河探索に不可欠です。[HS=HS_SurveyShip]旗艦[/HS]には[HS=HS_Anomaly]異常[/HS]を調査するための必要なモジュールが搭載されています。[BR][BR][HS=HS_Anomaly]異常[/HS]とは、宇宙にある不明、放棄された、または難解なオブジェクトです。[HS=HS_Anomaly]異常[/HS]を発見することは有益かもしれませんが、危険も伴います。新しい[HS=HS_SurveyShip]旗艦[/HS]を使って[HS=HS_Anomaly]異常[/HS]を調査してください。[BR][BR]新しい目標：異常をスキャンする</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_CompleteResearchSurveyShipsOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>調査ミッションの研究が完了し、[HS=HS_SurveyShip]旗艦[/HS]を獲得しました。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]は銀河の探索に不可欠です。[HS=HS_SurveyShip]旗艦[/HS]には[HS=HS_Anomaly]異常[/HS]を調査するための必要なモジュールが装備されています。[BR][BR][HS=HS_Anomaly]異常[/HS]とは、不明瞭、放棄された、または難解な宇宙の物体です。[HS=HS_Anomaly]異常[/HS]を解明することは有益なこともありますが、危険も伴います。新しい[HS=HS_SurveyShip]旗艦[/HS]を使って[HS=HS_Anomaly]異常[/HS]を調査してください。[BR][BR]達成した目標：調査ミッションの研究[BR]新しい目標：異常をスキャンする</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>新たな[HS=HS_Months]ターン[/HS]の始まりです。注目すべきもう一つの任務は、我々の[HS=HS_CoreWorld]中心惑星[/HS]を管理することです。[HS=HS_CoreWorld]中心惑星[/HS]とは、[HS=HS_Leaders]指導者[/HS]が統治する惑星のことです。今のところ、それは私たちの母星、地球だけです。連合が拡大するにつれて、[HS=HS_Leaders]指導者[/HS]について、また[HS=HS_CoreWorld]中心惑星[/HS]の設立方法についてもっと話す必要がありますが、今は地球に焦点を当てましょう。[BR][BR]左クリックで地球を選択し、[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理ウィンドウ[/HS]を開くために[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理[/HS]ボタンを押します。[BR][BR]新しい目標：惑星改良を2つ建設する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPlanetaryManagement</InternalName>
+        <FlavorTextOption>
+            <Text>この画面では、惑星に関連する全てを確認できます。現在、我々は改良計画に注目しています。改良にはいくつかの有益な効果があり、最も一般的なのは惑星の産出に与える影響です。[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]、[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]、[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]収入[/HS]、[ICON=Stat_Food_Icon] [HS=HS_Food]食糧[/HS]、[ICON=Stat_Influence_Icon] [HS=HS_Influence]影響力[/HS]はそれぞれが同盟に独自の影響を与えます。産出を向上させることは有益な効果をもたらします。[BR][BR]開いているタイルに地球の首都改良を配置してみてください。これは、右側のパネルからユニークな改良を左クリックで選び、ドラッグしてタイルに持っていき、左クリックを離して配置することで行えます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_PlacedFirstPlanetaryImprovement</InternalName>
+        <FlavorTextOption>
+            <Text>配置確認、司令官。追加で施設や地区を配置する際には、[HS=HS_Adjacency]隣接ボーナス[/HS]のことを理解しておくことが重要です。全ての施設や地区は、そのレベルに基づいた特定の効果を持っています。隣接ボーナスを持つ何かを建設することで、施設が提供するボーナスに適用され、レベルを上げることができます。[BR][BR]施設を強化し、レベルを上げる別の方法は、既存の利点があるタイルの上に建設することです。利益に適合するタイルに近い構造物を建てることで、しばしば最良の結果が得られます。[BR][BR]複数の施設や地区の計画を一度に配置して先を見据えることができます。建設の完了順序は、必要に応じて並び替え可能な建設キューで確認できます。[BR][BR]地区を計画するには、左クリックでタイルを選択し、利用可能なオプションから地区を選びます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedPlanetaryImprovements</InternalName>
+        <FlavorTextOption>
+            <Text>植民地から、新たな惑星改良が完了したとの報告があった。始まりに過ぎないかもしれないが、改良を一つ完了するごとに我々の熟練度は上がる。時には小さな勝利も祝うべきだ。[BR][BR]引き続き[HS=HS_CoreWorld]中核世界[/HS]の管理が必要だ。改良や地区の位置が気に入らない場合、解体命令を使ってタイルをクリアできる。タイルを選択し、改良破壊オプションを選ぶのだ。[BR][BR]完了した目標：惑星改良を2つ建設する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_OnCompletedExplore</InternalName>
+        <FlavorTextOption>
+            <Text>司令官、ドレンギンとの接触に成功し、彼らが謎の信号の発信源であることを確認しました。[BR][BR]彼らに関する追加情報はありません。慎重に接近し、外交関係を良好に保つことが望ましいです。この[HS=HS_Sector]セクター[/HS]周辺の海賊たちとの問題はもう十分です。[BR][BR]積極的な目標とはしていないにしても、他の目標を完遂するためにも、探索を続けるべきです。[BR][BR]達成した目標：セクターを探索する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_FinishedFirstTurnActions</InternalName>
+        <FlavorTextOption>
+            <Text>司令官、全ての未解決事項に対応したらターンを終了できます。[BR][BR]月はターンの単位であり、１ターンにできることには限りがあります。注意が必要な全ての問題に対応したら、[HS=HS_Months]ターン[/HS]を経過させ、次の月に進んで新しい[HS=HS_Months]ターン[/HS]を始めることができます。[BR][BR][HS=HS_Months]ターン[/HS]を経過するには、ターンボタンを押すか、TABキーを押します。[BR][BR]準備ができたらターンを経過させましょう。次の[HS=HS_Months]ターン[/HS]にもたくさんの対応事項があるでしょう。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartSurveyObjective</InternalName>
         <FlavorTextOption>
-            <Text>Drenginには警戒が必要です。それにもかかわらず、連合は[HS=HS_Sector]セクター[/HS]の確保を続けなければ なりません。[BR][BR][HS=HS_SurveyShip]調査船[/HS]は銀河の探索において も重要な要素です。[HS=HS_SurveyShip]調査船[/HS]はプローブよりも遅く、[HS=HS_ShipRange]範囲[/HS]に制限がありますが、自己防衛が可能です。より重要なことに、[HS=HS_SurveyShip]調査船[/HS]は[HS=HS_Anomaly]異常[/HS]の調査に使用できます。[BR][BR][HS=HS_Anomaly]異常[/HS]はさまざまな形をとり ますが、すべて[HS=HS_SurveyShip]調査船[/HS]によってスキャンする ことができます。[HS=HS_SurveyOrder]調査[/HS]は数[HS=HS_Months]ヶ月[/HS]かかりますが、終了すると有益なリソ ース、部品、または技術が明らかに なります。[BR][BR][HS=HS_SurveyShip]調査船[/HS]は、[HS=HS_Anomaly]異常[/HS]の位置に命令するか、船の[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自動調査[/HS]機能を利用することで、[HS=HS_Anomaly]異常[/HS]の[HS=HS_SurveyOrder]調査[/HS]を命令することができ ます。[BR][BR]達成した目標: 他の文明を</Text>
+            <Text>ドレンギンには常に警戒が必要です。それでも、[HS=HS_Sector]セクター[/HS]の確保を続けなければなりません。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]は、銀河を探索する上で重要な要素です。[HS=HS_SurveyShip]旗艦[/HS]はプローブより速度が遅く、[HS=HS_ShipRange]射程[/HS]に制限がありますが、自衛することができます。さらに重要なことに、[HS=HS_SurveyShip]旗艦[/HS]は[HS=HS_Anomaly]異常現象[/HS]を調査するために使用できます。[BR][BR][HS=HS_Anomaly]異常現象[/HS]は様々な形をとりますが、すべて[HS=HS_SurveyShip]旗艦[/HS]によってスキャンすることができます。[HS=HS_SurveyOrder]調査[/HS]は数[HS=HS_Months]ヶ月[/HS]を要しますが、完了すると有益な資源、コンポーネント、または技術が明らかになることが多いです。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]は、[HS=HS_Anomaly]異常現象[/HS]の位置に命じるか、または船の[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自動調査[/HS]機能を利用して[HS=HS_Anomaly]異常現象[/HS]を[HS=HS_SurveyOrder]調査[/HS]するよう命じることができます。[BR][BR]達成した目標： 他の文明を発見する[BR]新しい目標： 異常現象をスキャンする</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectSurveyShip</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]旗艦[/HS]が選択され、命令待ちです。[HS=HS_SurveyShip]旗艦[/HS]に[HS=HS_SurveyOrder]調査[/HS]を命じるのは、その船に[HS=HS_ShipMovement]移動命令[/HS]を出すのとよく似ています。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]を選択した状態で、右クリックを使用して[HS=HS_Anomaly]異常[/HS]を[HS=HS_SurveyOrder]調査[/HS]対象として選びます。これにより、[HS=HS_Anomaly]異常[/HS]が船のターゲットに設定されます。[HS=HS_SurveyShip]旗艦[/HS]はその[HS=HS_Anomaly]異常[/HS]に向かって移動し、目的地に到着したら[HS=HS_SurveyOrder]調査[/HS]を開始します。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartedFirstSurvey</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_SurveyShip]旗艦[/HS]が目的地に到着したと報告しています。[HS=HS_SurveyShip]旗艦[/HS]は今から目標の[HS=HS_Anomaly]異常領域[/HS]に対する[HS=HS_SurveyOrder]調査[/HS]を開始します。[BR][BR][HS=HS_SurveyOrder]調査[/HS]は完了するまで数[HS=HS_Months]ターン[/HS]を要します。もし[HS=HS_SurveyShip]旗艦[/HS]が他の命令を受けて作業を中断すると、[HS=HS_Anomaly]異常領域[/HS]の解明における進捗が失われます。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]の作業管理はこれだけではありません。[HS=HS_SurveyShip]旗艦[/HS]の進捗状況を確認したい場合は、船を選択してください。残りの[HS=HS_Months]ターン[/HS]数が選択パネルに詳しく表示されます。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_SurveyedFirstAnomaly</InternalName>
         <FlavorTextOption>
-            <Text>成功![BR][BR][HS=HS_SurveyShip]調査船[/HS]が[HS=HS_SurveyOrder]アノマリーの調査[/HS]を完了しました。今度は、発見されたものを処理 する時間です。[BR][BR]銀河を探索するのは最 初の一歩に過ぎません。連盟の影響力を拡大す るには新しい世界を植 民地化する必要があり ます。すべての惑星が植民地 化可能とは限りません。惑星は[HS=HS_PlanetClass]惑星クラス[/HS]を持っており、その大きさ、資源の豊富さ、居住可能性を評価しま す。0より高い評価を受けた ものは植民地化可能で す。[HS=HS_PlanetClass]惑星クラス[/HS]が0の惑星は[HS=HS_DeadWorld]死の世界[/HS]と見なされます。[BR][BR][HS=HS_Colinizing]植民地化[/HS]した惑星は最寄りの[HS=HS_CoreWorld]中心世界[/HS]に資源を提供します。連盟の唯一の[HS=HS_CoreWorld]中心世界[/HS]は地球、ホームワールドです。[BR][BR]連盟から提供されたコ ロニーシップを使用し て惑星を[HS=HS_ColonizeOrder]植民地化[/HS]します。マーズは常に最も近く の実用的な隣人でした。そこから始めることを お勧めします。宇宙を探索し続けて[HS=HS_Anomaly]アノマリー[/HS]をスキャ</Text>
+            <Text>[HS=HS_SurveyShip]旗艦[/HS]は[HS=HS_SurveyOrder]調査[/HS]を終えた[HS=HS_Anomaly]異常領域[/HS]です。今、暴かれたものに対処する時です。すべての[HS=HS_Anomaly]異常領域[/HS]が安全であったり完全に有益であるわけではありませんが、リスクは報酬に値します。[BR][BR][HS=HS_SurveyShip]旗艦[/HS]は自動で作業を行うことができます。[HS=HS_SurveyShip]旗艦[/HS]に指示を出さずに[HS=HS_Anomaly]異常領域[/HS]を探索し発見させるには、[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自動調査[/HS]モードを使用します。[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自動調査[/HS]モードは、船を選択し、選択したパネルの隣にある[ICON=AutoSurvey_Icon] [HS=HS_AutoSurvey]自動調査[/HS]ボタンを切り替えることで行います。[BR][BR]達成した目標：異常領域をスキャン[BR]新しい目標：5つの異常領域をスキャン</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_SurveyedTargetAnomalies</InternalName>
         <FlavorTextOption>
-            <Text>連合は[HS=HS_SurveyOrder]調査[/HS]5つの[HS=HS_Anomaly]異常[/HS]という目標を達成しま した。それぞれが異なる経験 をもたらしてくれた、全てが安全だったわけ ではありません。目標でなくても、[HS=HS_Anomaly]異常[/HS]を続けてスキャンする ことは有益でしょう。[BR][BR]達成した目標：5つの異常をスキャンし ます。ファイル名の場合は英 語をそのままコピーし てください。</Text>
+            <Text>[HS=HS_SurveyOrder]調査[/HS]の目標である5つの[HS=HS_Anomaly]異常[/HS]を完了しました。それぞれが異なる体験でしたし、全てが安全だったわけではありません。目標ではなくても、[HS=HS_Anomaly]異常[/HS]をスキャンし続けることは有益です。[BR][BR]完了した目標：5つの異常をスキャン</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!---->
     <FlavorTextDef>
         <InternalName>Tutorial_StartStarbaseObjective</InternalName>
         <FlavorTextOption>
-            <Text>これは、プレイヤーが4つの惑星を植民地化し、チュートリアルのター ンの開始時にあるスタ ブテキストです。彼らは経済スターベー スを建設する目標を得 て、どのように建設者を作 り、それをスターベースに 変えるかについての明 確な指示を得ます。これがファイル名の場 合は、英語をそのままコピー してください。</Text>
+            <Text>植民地だけが資源を得たり連合の[HS=HS_ZoneOfControl]支配領域[/HS]を広げる唯一の方法ではありません。適切な[HS=HS_Tech]テック[/HS]を使えば、[HS=HS_Starbase]スターベース[/HS]を建設できます。[BR][BR][HS=HS_Starbase]スターベース[/HS]には四つの形態があり、それぞれが異なる専門分野を持っています。四種類の[HS=HS_Starbase]スターベース[/HS]は次の通りです：[ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]軍事[/HS]、[ICON=Icon_MiningStarbase] [HS=HS_MiningStarbase]採掘[/HS]、[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]経済[/HS]、そして[ICON=Icon_CommunicationsStarbase] [HS=HS_CommunicationsStarbase]通信[/HS]。[BR][BR]まず、スターベースの[HS=HS_Tech]テック[/HS]を研究する必要があります。[BR][BR]新たな目標：スターベースの研究</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartAsteroidMiningObjective</InternalName>
+        <FlavorTextOption>
+            <Text>連合が拡大するにつれ、[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]値を[HS=HS_CoreWorld]中核惑星[/HS]で高めることが重要です。[HS=HS_CoreWorld]中核惑星[/HS]に製造区域を建設することはその方法の一つですが、それはしばしば[HS=HS_Pollution]汚染[/HS]の増加を招きます。[BR][BR][ICON=Stat_Minerals_Icon] [HS=HS_Minerals]鉱物[/HS]の惑星への投入を増やすことも[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]を増加させます。宇宙は採掘可能な[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]鉱物[/HS]で満ちた浮遊岩でいっぱいです。小惑星の採掘能力を解禁することで、連合は[HS=HS_CoreWorld]中核惑星[/HS]の[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]を増やすことができ、[HS=HS_Pollution]汚染[/HS]を増加させずに済みます。[BR][BR]新たな目標: 小惑星採掘の研究</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) このイベントは、プレイヤーが小惑星の 採掘をマスターし、まだ小惑星帯を採掘す る目的の枝にいないと きに発生します。このイベントは、どのように行うかにつ いての明確な指示とと もに、小惑星帯を採掘する目 的を与えます。ファイル名であれば、英語をそのままコピー してください。</Text>
+            <Text>連合は小惑星採掘[HS=HS_Tech]技術[/HS]を習得しました。小惑星採掘機が採掘活動を開始できるようになりました。[BR][BR]小惑星の鉱山は、[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]を提供することで[HS=HS_CoreWorld]中枢惑星[/HS]の[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]鉱物[/HS]入力を増加させます。小惑星の鉱山は一つの[HS=HS_CoreWorld]中枢惑星[/HS]のみを支援できます。[BR][BR]小惑星採掘を始めるには、小惑星採掘機を小惑星帯に[HS=HS_ShipMovement]移動[/HS]させます。小惑星採掘機は小惑星帯に到着した時点で鉱山を設置します。[BR][BR]新しい目標：小惑星を採掘せよ</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MasteredAsteroidMiningOnObjective</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) このイベントは、プレイヤーが小惑星の 採掘をマスターし、小惑星帯を採掘する目 的の枝に積極的に取り 組んでいるときに発生 します。このイベントは、小惑星帯を採掘すると いう目標を明確な指示 と共に提供します。目標「小惑星採掘技術の習得」の達成を認識します。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>同盟は小惑星採掘[HS=HS_Tech]技術[/HS]を習得しました。小惑星採掘船が採掘活動を始める準備ができました。[BR][BR]小惑星の鉱山は[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]能力を向上させることができ、[HS=HS_CoreWorld]主要惑星[/HS]に[ICON=Stat_Minerals_Icon] [HS=HS_Minerals]鉱物[/HS]を供給します。一つの鉱山は一つの[HS=HS_CoreWorld]主要惑星[/HS]のみを支えることができます。[BR][BR]小惑星採掘を始めるには、[HS=HS_ShipMovement]移動[/HS]して小惑星帯へ小惑星採掘船を派遣します。小惑星帯に到着すると採掘船が鉱山を設置します。[BR][BR]達成した目標：小惑星採掘の研究[BR]新たな目標：小惑星を採掘する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTechOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>スターベース[HS=HS_Tech]技術[/HS]の研究が完了し、[HS=HS_Shipyard]造船所[/HS]で[HS=HS_Constructor]建造船[/HS]を建造できるようになりました。[HS=HS_Constructor]建造船[/HS]は[HS=HS_Starbase]スターベース[/HS]を建設するために使用されます。利用できる[HS=HS_Starbase]スターベース[/HS]にはいくつかの種類があります。[HS=HS_Shipyard]造船所[/HS]でいくつかの[HS=HS_Constructor]建造船[/HS]を建造し、それらを使って[HS=HS_Starbase]スターベース[/HS]を建設してみてください。[BR][BR]達成した目標：スターベースの研究[BR]新しい目標：経済スターベースの建設[BR]新しい目標：軍事スターベースの建設[BR]新しい目標：採掘スターベースの建設[BR]新しい目標：通信スターベースの建設</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedStarbaseTech</InternalName>
+        <FlavorTextOption>
+            <Text>スターベース[HS=HS_Tech]技術[/HS]の研究が完了し、[HS=HS_Shipyard]造船所[/HS]で[HS=HS_Constructor]建造船[/HS]を建造できます。[HS=HS_Constructor]建造船[/HS]は[HS=HS_Starbase]スターベース[/HS]を建設するために使用されます。利用できる[HS=HS_Starbase]スターベース[/HS]にはいくつかの種類があります。[HS=HS_Shipyard]造船所[/HS]でいくつかの[HS=HS_Constructor]建造船[/HS]を建て、それらを使って[HS=HS_Starbase]スターベース[/HS]を建設してみましょう。[BR][BR]新たな目標: 経済スターベースを建設する[BR]新たな目標: 軍事スターベースを建設する[BR]新たな目標: 採掘スターベースを建設する[BR]新たな目標: 通信スターベースを建設する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedConstructor</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Constructor]コンストラクター[/HS]が選択され、指示待ちです。[HS=HS_Constructor]コンストラクター[/HS]の配置は重要です。[HS=HS_Constructor]コンストラクター[/HS]は、[HS=HS_Starbase]スターベース[/HS]を建造する際に消費されます。[BR][BR][HS=HS_Starbase]スターベース[/HS]を建造するには、選択パネルの[ICON=Order_ConstructStarbase] [HS=HS_ConstructStarbase]スターベース建造[/HS]ボタンを押してください。[HS=HS_Starbase]スターベース[/HS]は、[HS=HS_Constructor]コンストラクター[/HS]の現在位置で建造されます。[BR][BR][HS=HS_EconomicsStarbase]経済スターベース[/HS]は[HS=HS_CoreWorld]コアワールド[/HS]の近くにのみ、[HS=HS_MiningStarbase]採掘スターベース[/HS]は未開の[HS=HS_StrategicResource]戦略資源[/HS]の近くにのみ建てられます。[HS=HS_Starbase]スターベース[/HS]は、他の[HS=HS_Starbase]スターベース[/HS]の近くや、他の文明の[HS=HS_ZoneOfControl]支配領域[/HS]内には建てることができません。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltEconomicStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>最初の[HS=HS_EconomicsStarbase]経済スターベース[/HS]が建造されました。影響範囲内のコロニーの[ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]製造[/HS]能力と[ICON=Stat_Income_Icon][HS=HS_ColonyGrossIncome]収入[/HS]を増加させます。[BR][BR][HS=HS_EconomicsStarbase]経済スターベース[/HS]のアップグレードは、近隣のコロニーの[ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]製造[/HS]能力や[ICON=Stat_Income_Icon][HS=HS_ColonyGrossIncome]収入[/HS]をさらに向上させることに焦点を当てています。[HS=HS_EconomicsStarbase]経済スターベース[/HS]は、[HS=HS_Pollution]汚染[/HS]を増加させることなく建設速度を上げる絶好の方法です。影響を受けるコロニーのリストを表示するには、選択したパネルの管理ボタンを押して[HS=HS_Starbase]スターベース[/HS]を管理してください。[BR][BR]達成した目標：経済スターベースを建造する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMilitaryStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>最初の[ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]軍事スターベース[/HS]が建造されました。影響範囲内の全艦船と艦隊の攻撃力と防御力が強化されます。これらの[ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]軍事スターベース[/HS]は他の[HS=HS_Starbase]スターベース[/HS]よりも防御と武装のアップグレードを多く受ける傾向があります。[BR][BR][ICON=Icon_MiltaryStarbase] [HS=HS_MilitaryStarbase]軍事スターベース[/HS]は、頻繁に紛争が起きる地域や植民地の周囲に建てると、攻撃から守るのに非常に有効です。影響を受ける植民地のリストを見るには、選択したパネルの管理ボタンを押して[HS=HS_Starbase]スターベース[/HS]を管理してください。[BR][BR]達成した目標：軍事スターベースを建造する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltMiningStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>初の[HS=HS_MiningStarbase]採掘スターベース[/HS]が建造されました。効果範囲内の未請求[HS=HS_StrategicResource]戦略資源[/HS]は新しい[HS=HS_Starbase]スターベース[/HS]によって請求されます。毎ターン、[HS=HS_Starbase]スターベース[/HS]は採掘された[HS=HS_StrategicResource]戦略資源[/HS]を同盟の利用可能資源に加えます。採掘量は[HS=HS_MiningStarbase]採掘スターベース[/HS]にアップグレードを研究し適用することで増加します[BR][BR][HS=HS_StrategicResource]戦略資源[/HS]は特定の惑星改良や艦船の建造、特定のアップグレードに重要です。[BR][BR]達成目標：採掘スターベースを建造</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_BuiltCommunicationsStarbase</InternalName>
+        <FlavorTextOption>
+            <Text>最初の[ICON=Icon_CommunicationsStarbase][HS=HS_CommunicationsStarbase]通信スターベース[/HS]が建造されました。この[HS=HS_Starbase]スターベース[/HS]は[ICON=Stat_Influence_Icon][HS=HS_Influence]影響力[/HS]の増加を開始します。[ICON=Icon_CommunicationsStarbase][HS=HS_CommunicationsStarbase]通信スターベース[/HS]は、早期にエリアの主張を試みたり、他の文明の[ICON=Stat_Influence_Icon][HS=HS_Influence]影響力[/HS]の拡散に抵抗して自分たちの[HS=HS_ZoneOfControl]支配領域[/HS]を管理するのに適しています。[BR][BR]もし植民地が他の文明の[HS=HS_ZoneOfControl]支配領域[/HS]内にある場合、併合されるリスクがあります。他国の[HS=HS_ZoneOfControl]支配領域[/HS]内で過ごすターンごとに、植民地のコントロールが減少し、併合されるか、あるいは植民地が自分たちの[HS=HS_ZoneOfControl]支配領域[/HS]に戻るまで続きます。[BR][BR]達成した目標：通信スターベースを建造する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CompletedStarbase</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) このイベントは、プレイヤーがこのステ ップで経済スターベー スを建設した後に発生 します。経済スターベースの建 設完了を認識し、使用を強化します。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]経済スターベース[/HS]の完成により、近くの[HS=HS_CoreWorld]中心惑星[/HS]の経済が活性化します。[HS=HS_EconomicsStarbase]経済スターベース[/HS]は建造可能な[HS=HS_Starbase]スターベース[/HS]タイプの一つに過ぎません。各タイプは理解する価値のある独自の目的を持っています。[BR][BR]達成した目標：経済スターベースを建造する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CompletedStarbaseStartAsteroidMining</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) このイベントは、プレイヤーがこのステ ップで経済スターベー スを建設した後に発生 します。経済スターベースの建 設の完了を認識し、使用法を強化します。アステロイドマイニン グを紹介し、アステロイドマイニン グ技術をマスターする 目標を提供します。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>[ICON=Icon_EconomicsStarbase] [HS=HS_EconomicsStarbase]経済スターベース[/HS]が完成すると、近隣の[HS=HS_CoreWorld]中心惑星[/HS]の経済が促進されます。[HS=HS_EconomicsStarbase]経済スターベース[/HS]は建設可能な[HS=HS_Starbase]スターベース[/HS]タイプの一つです。各タイプには理解する価値のある目的があります。[BR][BR][HS=HS_CoreWorld]中心惑星[/HS]を強化する別の方法は、小惑星採掘です。これには[HS=HS_ResearchCenter]研究センター[/HS]で入手可能な小惑星採掘[HS=HS_Tech]テック[/HS]が必要です。[BR][BR]達成した目標：経済スターベースを建設する[BR]新しい目標：小惑星採掘を研究する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_MinedAnAsteroid</InternalName>
         <FlavorTextOption>
-            <Text>(PLACEHOLDER) このイベントは、プレイヤーが小惑星を 採掘し、「小惑星を採掘する」ステップを完了した後 に発生します。もしファイル名であれ ば、英語をそのままコピー してください。</Text>
+            <Text>鉱山が確立しました。鉱業用アステロイドミナーは採掘ステーションの設置に尽力します。採掘ステーションが開発されると、そのアステロイドベルト全体を主張し、最寄りの[HS=HS_CoreWorld]コアワールド[/HS]へ資源を送り始めます。[BR][BR][ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]を増やすことで、[HS=HS_CoreWorld]コアワールド[/HS]の改善速度や船の建造速度が向上します。[HS=HS_CoreWorld]コアワールド[/HS]には[HS=HS_Minerals]鉱物[/HS]など、惑星の生産アウトプットにプラスの影響を与える複数の入力タイプがあります。[BR][BR]達成した目標：アステロイドを採掘する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
-    
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_GuideToShipyard</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Months]ターン[/HS]の終了前に、[HS=HS_Shipyard]造船所[/HS]で新しい船の建造を進行中であることを確認してください。[BR][BR][HS=HS_Shipyard]造船所[/HS]は稼働を停止してはならず、毎[HS=HS_Months]ターン[/HS]の終わりに何かを作業中でなければなりません。利用可能な選択肢は全て有効ですが、[HS=HS_Sector]セクター[/HS]の探索を加速するために、追加のプローブを建造することをお勧めします。[BR][BR]新しい船の建造を開始するには、[HS=HS_Shipyard]造船所[/HS]を選択し、選択パネルで[ICON=Menu_ShipyardManagement_Icon]管理ボタンを押します。[BR][BR]船またはプロジェクトの完成にかかる[HS=HS_Months]ターン[/HS]数は、その[HS=HS_Shipyard]造船所[/HS]が周回する[HS=HS_CoreWorld]中心惑星[/HS]の[ICON=Manufacturing_Stat_Icon][HS=HS_Manufacturing]製造[/HS]値によって影響を受けます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedShipyardScreen</InternalName>
+        <FlavorTextOption>
+            <Text>造船所管理ウィンドウへようこそ。この画面では、建造キューに船を追加できます。各[HS=HS_Months]ターン[/HS]ごとに、[HS=HS_Shipyard]造船所[/HS]はキューの先頭の船の進捗を追加し、完成すると、その船は隣接する[HS=HS_Sector]セクター[/HS]に出現します。[BR][BR]残りの[HS=HS_Months]ターン[/HS]数は、キュー内の船のカードで確認できます。船の建造開始から完成までの時間は、画面側面の利用可能プロジェクトパネルに記載されています。利用可能プロジェクトで船を選択し、「船を建造」ボタンを押してキューに船を追加します。また、船をダブルクリックすることでも追加できます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ExplainCitizens</InternalName>
+        <FlavorTextOption>
+            <Text>市民は[HS=HS_CoreWorld]中核世界[/HS]の効率的な機能に不可欠です。市民には惑星の産出を向上させるステータスがあります。市民を訓練するには、左クリックで選択し、その後、仕事を選んでください。[BR][BR]市民は幸福な状態でより良く働きます。彼らの[ICON=Approval_Stat_Icon][HS=HS_Approval]承認[/HS]をこまめにチェックしましょう。マウスを[ICON=Approval_Stat_Icon][HS=HS_Approval]承認[/HS]アイコンの上に置くと、何が影響を与えているかの内訳がわかります。[BR][BR]植民地は、[ICON=Stat_Food_Icon][HS=HS_Food]食糧[/HS]が利用可能で、かつ[HS=HS_Pollution]汚染[/HS]が高すぎない限り、新しい市民を生産し続けます。現在の[HS=HS_CoreWorld]中核世界[/HS]の状態に基づいた予測される[HS=HS_Months]ターン[/HS]数を確認できます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_StartColonization</InternalName>
+        <FlavorTextOption>
+            <Text>あなたの努力により、同盟は[HS=HS_Sector]セクター[/HS]全域にわたる拡張に向けて多くの顕著な進歩を遂げました。真に発展するためには、新たな惑星の[HS=HS_Colinizing]植民[/HS]を始める必要があります。[BR][BR]研究チームは適切な進歩を遂げれば、そのような努力に完璧な船を作り出せると信じています。植民[HS=HS_Tech]技術[/HS]が開発されれば、コロニーシップの建造が可能となります。[HS=HS_ResearchCenter]研究センター[/HS]に戻り、毎[HS=HS_Months]ターン[/HS]ごとに生成される[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]が植民に向けて使われるようにしてください。[BR][BR]新たな目標：植民研究</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonizationOnObjective</InternalName>
+        <FlavorTextOption>
+            <Text>連合の境界を拡大する作業を開始すべきです。次のステップは、[HS=HS_Shipyard]造船所[/HS]でコロニー船を建造することです。[BR][BR][HS=HS_Shipyard]造船所[/HS]は[HS=HS_CoreWorld]コアワールド[/HS]からのみ建設可能です。[HS=HS_Shipyard]造船所[/HS]が船を生産する速度は、関連する[HS=HS_CoreWorld]コアワールド[/HS]の[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]に影響されます。[BR][BR]新しい船の建造を開始するには、[HS=HS_Shipyard]造船所[/HS]を選択し、選択パネルの[ICON=Menu_ShipyardManagement_Icon] 管理ボタンを押してください。[BR][BR]新しい目標：コロニー船を建造する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ResearchedColonization</InternalName>
+        <FlavorTextOption>
+            <Text>連合の境界を広げる作業を開始すべきです。次のステップは[HS=HS_Shipyard]造船所[/HS]でコロニー船を建造することです。[BR][BR][HS=HS_Shipyard]造船所[/HS]は[HS=HS_CoreWorld]中心世界[/HS]からのみ建設可能です。[HS=HS_Shipyard]造船所[/HS]が船を生産する速度は、関連する[HS=HS_CoreWorld]中心世界[/HS]の[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造能力[/HS]によって影響を受けます。[BR][BR]新しい船の建造を開始するには、[HS=HS_Shipyard]造船所[/HS]を選択し、選択パネルの[ICON=Menu_ShipyardManagement_Icon] 管理ボタンを押してください。[BR][BR]新しい目標：コロニー船を建造する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ConstructedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>コロニーシップは建造されましたが、市民が乗務するまでは出発できません。コロニーには常に一人の市民が必要です。惑星で唯一働いている市民をコロニーシップに乗せることはできません。コロニーシップの建造が完了したり、軌道を離れる際には、市民が乗っていることを確認してください。[BR][BR]市民の数と増加速度は[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理ウィンドウ[/HS]で確認できます。[BR][BR]達成した目標：コロニーシップを建造する[BR]新しい目標：惑星を植民する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_SelectedColonyShip</InternalName>
+        <FlavorTextOption>
+            <Text>コロニー船が選択され、命令待ちです。コロニー船に[HS=HS_Colinizing]植民[/HS]命令を出すことは、他の命令を出すのと同じです。コロニー船を選択したら、右クリックで植民する惑星を選択してください。[BR][BR]コロニー船はその後、惑星に向かって移動し、目的地に到着次第、目標の惑星に植民を試みます。[BR][BR]全ての惑星が植民できるわけではありません。植民可能な惑星は[HS=HS_PlanetClass]クラス[/HS]が1以上でなければなりません。惑星の[HS=HS_PlanetClass]クラス[/HS]はマウスを惑星の上に置くことで確認できます。[BR][BR]火星は植民するのに最適な候補です。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>連合にとっての一大ス テップ。[BR][BR]連合は初めての星を[HS=HS_Colinizing]植民地化[/HS]しました。連合が惑星を獲得した ことで、最寄りの[HS=HS_CoreWorld]中心世界[/HS]に追加のリソースを提 供します。惑星を選択すると、出力のパスが表示され ます。[BR][BR][ICON=Stat_Minerals_Icon] [HS=HS_Minerals]ミネラル[/HS]、[ICON=Stat_Technology_Icon] [HS=HS_Technology]テクノロジー[/HS]、そして[ICON=Stat_Wealth_Icon] [HS=HS_Wealth]富[/HS]などのリソースは拡大 と繁栄に不可欠です。[HS=HS_Colinizing]植民地化[/HS]された惑星が多ければ 多いほど、[HS=HS_CoreWorld]中心世界[/HS]はより良くパフォーマ ンスを発揮し、プロジェクトを完了す ることができます。[BR][BR]足場を確立する次のス テップは、さらに多くの惑星を定 住させ、最終的には別の[HS=HS_CoreWorld]中心世界[/HS]を設立することです。[BR]目標達成：惑星を植民 地化する[BR]新たな目標：8つの惑星を植民地化す る。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>テラン同盟が巨大な一歩を踏み出しました。[BR][BR]新たな世界を[HS=HS_Colinizing]植民[/HS]できることが証明された今、真の拡大へと進む時です。[BR][BR]私たちが築いてきた基盤を組み合わせて新たなコロニーシップを建造し、さらなる惑星を[HS=HS_Colinizing]植民[/HS]する努力が必要です。より多くの惑星が同盟に資源を供給するため、その努力は十分に価値があります。[BR][BR]達成された目標：惑星を植民[BR]新しい目標：8つの惑星を植民</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedFirstPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>同盟にとっての一大ス テップ。[BR][BR]同盟は最初の惑星[HS=HS_Colinizing]植民地化[/HS]が行われました。大規模なコロニーを支 え、[HS=HS_CoreWorld]中心世界[/HS]となるほどの大きなも のです。多くの惑星は、[HS=HS_CoreWorld]中心世界[/HS]にするにはあまりにも 小さすぎるか、資源が足りません。したがって、十分な大きさの惑星が 開拓された際には、十分に利用するべきで す。[BR][BR][HS=HS_CoreWorld]中心世界[/HS]は[HS=HS_Shipyard]造船所[/HS]を支え、改良することが可能で すが、そのためには[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Governor]総督[/HS]として任命する必要が あります。[BR][BR][HS=HS_Leaders]リーダー[/HS]は、惑星を選択することで 利用可能となる[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理ウィンドウ[/HS]から任命することがで きます。[BR]達成目標：惑星の植民 地化[BR]新目標：8つの惑星の植民地化[BR]新目標：総督の任命。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>同盟の一大ステップ。[BR][BR]同盟は初めての惑星を[HS=HS_Colinizing]植民[/HS]し、より大きなコロニーを支え、[HS=HS_CoreWorld]中核惑星[/HS]となるほどの規模を持つ惑星です。多くの惑星は小さすぎたり、資源が不足していて[HS=HS_CoreWorld]中核惑星[/HS]にすることは正当化されません。よって、十分な大きさの惑星が開拓されたら、最大限に活用すべきです。[BR][BR][HS=HS_CoreWorld]中核惑星[/HS]は[HS=HS_Shipyard]造船所[/HS]を支え、改良も可能ですが、それには[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Governor]総督[/HS]として割り当てる必要があります。[BR][BR][HS=HS_Leaders]リーダー[/HS]は、惑星を選択することで利用可能な[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理ウィンドウ[/HS]から割り当てることができます。[BR][BR]完了した目標：惑星を植民する[BR]新しい目標：惑星を8つ植民する[BR]新しい目標：総督を任命する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetNormal</InternalName>
         <FlavorTextOption>
-            <Text>同盟は[HS=HS_Colinizing]植民地化[/HS]した別の惑星がありま す。 [HS=HS_CoreWorld]中心世界[/HS]ではない惑星は、最も近い[HS=HS_CoreWorld]中心世界[/HS]に追加のリソースを提 供します。惑星を選択すると、出力のパスが表示され ます。[BR][BR][ICON=Stat_Minerals_Icon] [HS=HS_Minerals]鉱物[/HS]、[ICON=Stat_Technology_Icon] [HS=HS_Technology]技術[/HS]、および[ICON=Stat_Wealth_Icon] [HS=HS_Wealth]富[/HS]などのリソースは、拡大と繁栄に不可欠で す。 [HS=HS_Colinizing]植民地化[/HS]された惑星が多ければ 多いほど、[HS=HS_CoreWorld]中心世界[/HS]はより良くパフォーマ ンスを発揮し、プロジェクトを完成さ せることができます。それがファイル名であ れば、英語をそのままコピー してください。</Text>
+            <Text>惑星を[HS=HS_Colinizing]植民[/HS]する際には、マウスを惑星の上に置くと重要な情報が表示されます。[BR][BR]最初に[HS=HS_PlanetClass]惑星クラス[/HS]があります。これは惑星での開発可能なスペースの量を表しています。[HS=HS_PlanetClass]惑星クラス[/HS]が10以上の惑星は[HS=HS_CoreWorld]中枢惑星[/HS]に変えることができ、同盟の能力を大きく拡張します。[BR][BR]もう一つの要素は提供される資源です。全ての[HS=HS_Colinizing]植民可能[/HS]な惑星は最寄りの[HS=HS_CoreWorld]中枢惑星[/HS]に資源を惑星のインプットとして送り、[HS=HS_CoreWorld]中枢惑星の[/HS]惑星のアウトプットを増加させます。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizedNewPlanetCoreWorld</InternalName>
         <FlavorTextOption>
-            <Text>あなたは初めて[HS=HS_CoreWorld]コアワールド[/HS]を設立できるほど大き な惑星を植民地化しま した！[BR][BR]多くの惑星は、植民地が拡大するには 十分な広さがありませ ん。[HS=HS_Shipyard]造船所[/HS]を支えるには小さすぎ る惑星は、より大きな植民地を支 えるのに適しています。これらの小さな植民地 は、追加のリーダーシップ や管理を必要としませ ん。[BR][BR]その希少性から、大きな植民地を正当化 できるほど資源が豊富 な惑星を利用すること が推奨されます。そのためには、[HS=HS_Leaders]リーダー[/HS]を惑星の[HS=HS_Governor]ガバナー[/HS]として指名する必要が あります。[HS=HS_Governor]ガバナー[/HS]が任命されると、惑星の上に[HS=HS_Shipyard]造船所[/HS]を建設し、惑星を開発して資源を より効率的に利用する ことができます。[BR][BR][HS=HS_Leaders]リーダー[/HS]は、[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]から[HS=HS_RecruitmentScreen]リクルートスクリーン[/HS]下で募集することがで きます。募集した[HS=HS_Leaders]リーダー[/HS]は、[HS=HS_GovernorsScreen]ガバナースクリーン[/HS]下で惑星の管理に任命 することができ</Text>
+            <Text>司令官、私たちは[HS=HS_Colinizing]植民地化[/HS]した惑星が[HS=HS_PlanetClass]惑星クラス[/HS]が高く、新たな[HS=HS_CoreWorld]中核世界[/HS]を確立できます。[HS=HS_CoreWorld]中核世界[/HS]は[HS=HS_Shipyard]造船所[/HS]を支持し、提携に追加の惑星産出をもたらすために開発することができます。惑星産出が増えれば、提携が前進を続けるための重要な資源がより多くなります。[BR][BR][HS=HS_CoreWorld]中核世界[/HS]を確立するには、[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Governor]知事[/HS]として任命する必要があります。[HS=HS_Leaders]リーダー[/HS]は[HS=HS_LeaderMenu]リーダーメニュー[/HS]から雇用し、割り当てることができますし、[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理[/HS]ボタンを押すことでより直接的に雇用することもできます。[BR][BR]新たな目標：知事を任命する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--Additional Information after Colonization-->
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedThirdPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>拡大する文明の食糧供給は挑戦です。新たな惑星の[HS=HS_Colinizing]植民[/HS]や[HS=HS_CoreWorld]母星[/HS]の改善を行う際、生産される[ICON=Stat_Food_Icon] [HS=HS_Food]食料[/HS]と消費される食料のバランスを考えることが重要です。生産と消費の現状を確認するには、リソースバー上部の[ICON=Stat_Food_Icon] [HS=HS_Food]食料[/HS]の統計にマウスを合わせてください。[BR][BR] 高い[ICON=Stat_Fertility_Icon] [HS=HS_Farming]耕作適性[/HS]を持つ惑星の[HS=HS_Colinizing]植民[/HS]は、[HS=HS_CoreWorld]母星[/HS]からの食料生産量を増やす方法の一つです。また、[HS=HS_CoreWorld]母星[/HS]で食料生産量を増加させる改善を施すのも有効な手段です。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFourthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>他の惑星への拡張の利点は、追加の資源と[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]を進化させるスペースを見つけることで、新しい[HS=HS_Tech]技術[/HS]をより速く解除するのに役立ちます。[BR][BR][ICON=Stat_Technology_Icon] [HS=HS_Technology]技術[/HS]は、[HS=HS_Colinizing]植民[/HS]惑星によって惑星入力として提供され、[HS=HS_CoreWorld]中核世界[/HS]での[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]を増加させます。さらに、[HS=HS_CoreWorld]中核世界[/HS]に施設を建設して、その惑星が提供する[ICON=Stat_Research_Icon] [HS=HS_Research]研究[/HS]を増やすことができます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_ColonizedFifthPlanet</InternalName>
+        <FlavorTextOption>
+            <Text>[HS=HS_Colinizing]植民[/HS]はただ資源を提供するだけでなく、同盟の[HS=HS_ZoneOfControl]支配領域[/HS]を広げます。[HS=HS_ZoneOfControl]支配領域[/HS]とは、文明の一部と見なされる宇宙の区画で、事実上の国境を確立します。[BR][BR][HS=HS_Starbase]スターベース[/HS]の建造など、他文明の[HS=HS_ZoneOfControl]支配領域[/HS]内では行えない特定の行動があります。他の行動、例えば小惑星の採掘は[HS=HS_ZoneOfControl]支配領域[/HS]内でのみ行うことができます。[BR][BR][HS=HS_ZoneOfControl]支配領域[/HS]は、[ICON=Stat_Influence_Icon][HS=HS_Influence]影響力[/HS]を持つ[HS=HS_CoreWorld]中心惑星[/HS]に基づいて自然に時間と共に広がります。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!--NEEDS A COREWORLD-->
+    <FlavorTextDef>
         <InternalName>Tutorial_ColonizedCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>あなたは初めて、新たな[HS=HS_CoreWorld]コアワールド[/HS]を設立するのに十分な 大きさの惑星を開拓し ました！[BR][BR]多くの惑星は、コロニーが拡大するの に十分な大きさではあ りません。[HS=HS_Shipyard]シップヤード[/HS]を支えるには小さすぎ る惑星は、より大きなコロニーを 支えるのに適していま す。これらの小さなコロニ ーには、追加のリーダーシップ や管理は必要ありませ ん。[BR][BR]その稀少性から、大きなコロニーを正当 化するのに十分な資源 が豊富な惑星を利用す ることが勧められます。そのためには、[HS=HS_Leaders]リーダー[/HS]を惑星の[HS=HS_Governor]ガバナー[/HS]として指名する必要が あります。[HS=HS_Governor]ガバナー[/HS]が任命されると、惑星上に[HS=HS_Shipyard]シップヤード[/HS]を建設し、惑星の資源をより効果 的に利用するために開 発することができます。[BR][BR][HS=HS_Leaders]リーダー[/HS]は[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]から[HS=HS_RecruitmentScreen]リクルートメントスク リーン[/HS]を通じてリクルートす ることができます。リクルートされた[HS=HS_Leaders]リーダー[/HS]は、[HS=HS_GovernorsScreen]ガバナースクリーン[/HS]を通じて惑</Text>
+            <Text>司令官、我々は[HS=HS_Colinizing]植民地化[/HS]した惑星が[HS=HS_PlanetClass]惑星クラス[/HS]が高く、新たな[HS=HS_CoreWorld]中核世界[/HS]を確立できるレベルです。[HS=HS_CoreWorld]中核世界[/HS]は[HS=HS_Shipyard]造船所[/HS]を支え、同盟への追加的な惑星アウトプットを提供するために発展させることが可能です。[BR][BR][HS=HS_CoreWorld]中核世界[/HS]を確立するためには、[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Governor]総督[/HS]として任命する必要があります。[HS=HS_Leaders]リーダー[/HS]は[HS=HS_LeaderMenu]リーダーメニュー[/HS]から雇用し、任命することができるほか、[ICON=Menu_PlanetManagement_Icon] [HS=HS_PlanetManagement]惑星管理[/HS]ボタンを直接押して雇用することもできます。[BR][BR]達成した目標：クラス10以上の惑星を植民地化する[BR]新たな目標：総督を任命する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizeTargetPlanets</InternalName>
         <FlavorTextOption>
-            <Text>テランアライアンス連 盟は、宇宙における人類の足 場を確保するために惑 星の植民地化を任され ました。連盟の能力は、すべての惑星が成功裏 に[HS=HS_Colinizing]植民地化[/HS]されたことで誰もが認 めるところです。この成果を一瞬、享受しましょう。[BR][BR]完了した目標：8つの惑星を植民地化す る。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>テラン同盟は数多くの惑星を[HS=HS_Colinizing]植民[/HS]によって領有しています。あなたの努力のおかげで、我々の熟練度と能力は拡大し続けています。[BR][BR]達成した目標：惑星8つを植民</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonizeTargetPlanetsLastCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>テラン・アライアンス は、宇宙での人類の足場を 確保するために惑星を 植民地化する任を負い ました。アライアンスの能力は、すべての惑星が成功裏 に[HS=HS_Colinizing]植民地化[/HS]されたことで疑いよう のないものとなりまし た。この成果をひととき、楽しんでください。[BR][BR]また、新たな[HS=HS_CoreWorld]コアワールド[/HS]を設立するのに十分な 大きさの惑星に最初の 入植地を確立しました ！[BR][BR]多くの惑星は、植民地が拡大するのに 十分な大きさではあり ません。[HS=HS_Shipyard]シップヤード[/HS]を支えるには小さすぎ る惑星は、より大きな植民地を支 えるのに適しています。これらの小さな植民地 は、追加のリーダーシップ や管理を必要としませ ん。[BR][BR]その希少性から、大きな植民地を正当化 するだけの資源が豊富 な惑星を利用すること が勧められます。そのためには、[HS=HS_Leaders]リーダー[/HS]が惑星の[HS=HS_Governor]ガバナー[/HS]として指名される必要 があります。一度[HS=HS_Governor]ガバナー[/HS]が任命されると、惑星の上に[HS=HS_Shipyard]シップヤード[/HS]を建設することができ、惑星を資源をより良く 利用するように</Text>
+            <Text>テラン・アライアンスは、宇宙での人類の足場を確保するために惑星を植民地化する任を負いました。アライアンスの能力は、すべての惑星が成功裏に[HS=HS_Colinizing]植民地化[/HS]されたことで疑いようのないものとなりました。この成果をひととき、楽しんでください。[BR][BR]また、新たな[HS=HS_CoreWorld]コアワールド[/HS]を設立するのに十分な大きさの惑星に最初の入植地を確立しました！[BR][BR]多くの惑星は、植民地が拡大するのに十分な大きさではありません。[HS=HS_Shipyard]シップヤード[/HS]を支えるには小さすぎる惑星は、より大きな植民地を支えるのに適しています。これらの小さな植民地は、追加のリーダーシップや管理を必要としません。[BR][BR]その希少性から、大きな植民地を正当化するだけの資源が豊富な惑星を利用することが勧められます。そのためには、[HS=HS_Leaders]リーダー[/HS]が惑星の[HS=HS_Governor]ガバナー[/HS]として指名される必要があります。一度[HS=HS_Governor]ガバナー[/HS]が任命されると、惑星の上に[HS=HS_Shipyard]シップヤード[/HS]を建設することができ、惑星を資源をより良く利用するように</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_ColonzieTargetWorldsNoCoreworld</InternalName>
         <FlavorTextOption>
-            <Text>テランアライアンスは、宇宙における人類の足 場を確保するために惑 星の植民地化を任され ました。アライアンスの能力は、すべての惑星が成功裏 に[HS=HS_Colinizing]植民地化[/HS]されたことで誰もが認 めざるを得ません。この成果を一瞬で喜ん でください。[BR][BR]しかしまだやるべきこ とがあります。[HS=HS_Colinizing]植民地化[/HS]された惑星の中には、拡張を正当化するため のクラスが高いものは ありません。[HS=HS_PlanetClass]惑星クラス[/HS]が10以上の惑星を探し続け、我々が新しい[HS=HS_CoreWorld]コアワールド[/HS]を確立できるように[HS=HS_ColonizeOrder]植民地化[/HS]してください。[BR][BR]達成した目標: 8つの惑星を植民地化[BR]新しい目標: クラス10以上の惑星を植民地化 してください。これがファイル名なら、英語をそのままコピー してください。</Text>
+            <Text>テラン同盟は[HS=HS_Colinizing]植民[/HS]を通じて多くの惑星を主張してきました。あなたの努力のおかげで、我々の熟練度と能力は拡大し続けています。[BR][BR]しかし、我々の努力を通じても、新たな[HS=HS_CoreWorld]中核世界[/HS]を確立するには十分な大きさの惑星を[HS=HS_Colinizing]植民[/HS]することはまだありません。[HS=HS_CoreWorld]中核世界[/HS]の確立は今や同盟にとって優先事項です。[BR][BR]達成した目標：8つの惑星を植民[BR]新たな目標：クラス10以上の惑星を植民</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>司令官、十分な[HS=HS_CulturePoint]カルチャーポイント[/HS]を獲得し、文化的特性の解放が可能です。首都のような特定の惑星施設が[HS=HS_CulturePoint]カルチャーポイント[/HS]を生産することを可能にします。[BR][BR]文明は特定の[HS=HS_Ideology]イデオロギー[/HS]を好む傾向があります。傾向は時間が経つにつれ、行動や決断によって変化します。[BR][BR]文化進展メニューへの[ICON=Menu_CulturalProgression_Icon]ボタンは、画面下部のアクションバーにあり、[HS=HS_CulturePoint]カルチャーポイント[/HS]の使用ができます。[BR][BR]新しい目標：文化的特性を解放する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
+        <InternalName>Tutorial_OpenedCultureScreen</InternalName>
+        <FlavorTextOption>
+            <Text>あなたは文化進化画面にアクセスしました。この画面では、様々なイデオロギーのツリーを確認できます。文化特性について知るには、マウスを文化特性の上に置くと、コンテキストカードが文化特性の効果と現在の[HS=HS_CulturePoint]文化ポイント[/HS]のコストを表示します。[BR][BR]十分な[HS=HS_CulturePoint]文化ポイント[/HS]を持っている場合、文化特性をアンロックしてその利点を得ることができます。イデオロギーを選択すると、その[HS=HS_Ideology]イデオロギー[/HS]に対する親和性を表すイデオロギー割引が画面の上部に表示されます。特定の惑星改良を行うことで、より多くの[HS=HS_CulturePoint]文化ポイント[/HS]を獲得できます。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedCultureTrait</InternalName>
+        <FlavorTextOption>
+            <Text>文明が成長するにつれて、文化的特性を解除するのに必要な[HS=HS_CulturePoint]文化ポイント[/HS]が増えます。 特定の[HS=HS_Ideology]イデオロギー[/HS]に焦点を当て、その[HS=HS_Ideology]イデオロギー[/HS]に対する親和性を高めることは、[HS=HS_CulturePoint]文化ポイント[/HS]のコストを抑え、より有益な特性を素早く解除する優れた方法です。[BR][BR]文化進行画面を確認して、利用可能な[HS=HS_CulturePoint]文化ポイント[/HS]の数、[HS=HS_Ideology]イデオロギー[/HS]の現在の割引率、新しい文化的特性のコスト、または以前に解除した文化的特性の利点を確認できます。[BR][BR]達成した目標：文化的特性を解除する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <!---->
+    <FlavorTextDef>
         <InternalName>Tutorial_InstalledGovernor</InternalName>
         <FlavorTextOption>
-            <Text>あなたは成功裡に[HS=HS_Governor]知事[/HS]を任命しました！彼ら の存在はコロニーを[HS=HS_CoreWorld]コアワールド[/HS]に変え、ここで[HS=HS_Shipyard]造船所[/HS]を建設し、惑星を開発することが できます。[BR][BR]しかし、悪いニュースもありま す。セクターに海賊の存在 が確認されました。彼らが宇宙で足場を築 き、船を建造する場所を持 つ限り、彼らは脅威です。私たちは彼らの[HS=HS_Shipyard]造船所[/HS]を破壊して、私たちのコロニーの安 全を確保しなければな りません。[BR][BR]達成した目標：知事を 任命する[BR]新しい目標：海賊の造 船所を破壊する。もしそれがファイル名 なら、英語をそのままコピー してください。</Text>
+            <Text>あなたは[HS=HS_Governor]総督[/HS]をうまく任命しました！彼らの存在により、植民地は[HS=HS_CoreWorld]中核惑星[/HS]に変わり、そこには[HS=HS_Shipyard]造船所[/HS]が建設され、惑星が開発されます。[BR][BR]新しい[HS=HS_CoreWorld]中核惑星[/HS]は発展するのに時間がかかります。しばしば、惑星の生産力が低く、資源も少ない状態からスタートします。[HS=HS_EconomicsStarbase]経済宇宙基地[/HS]を利用したり、近隣の惑星を[HS=HS_Colinizing]植民[/HS]したり、小惑星を採掘したりすることで、[ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]製造[/HS]を増やし、開発を加速させる方法があります。また、[ICON=Stat_Credits_Icon] [HS=HS_Credit]クレジット[/HS]を使って建設を[HS=HS_Rush]急ぎ[/HS]ます。[BR][BR]達成した目標：総督を任命する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_InformPlayerUnlockedLeaderScreen</InternalName>
         <FlavorTextOption>
-            <Text>どれほど有能でも、テラン同盟全体を一人 で管理することはでき ません。適切なインフラを持つ ことで、[HS=HS_Leaders]リーダー[/HS]は現在、募集することが可能で す。すべての応募者には長 所と短所があり、その結果、どの役割にも適したり 不適したりします。[BR][BR][HS=HS_Leaders]リーダー[/HS]は、[HS=HS_Governor]知事[/HS]となり、[HS=HS_CoreWorld]中心世界[/HS]を管理したり、他のグループと接触が ある場合は[HS=HS_Diplomat]外交官[/HS]になったり、そして重要なことに、[HS=HS_Minister]大臣[/HS]を務めることができま す。[HS=HS_Minister]大臣[/HS]は全体の文明にメリッ トをもたらすことに重 点を置きます。各省庁は特定の分野に 焦点を当て、リーダーの特定のスキ ルに基づいた利益を提 供します。[BR][BR]新たな[HS=HS_Leaders]リーダーズ[/HS]を[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーズ メニュー[/HS]から[HS=HS_RecruitmentScreen]募集画面[/HS]下で募集します。[HS=HS_Leaders]リーダー[/HS]はその後、[HS=HS_MinistersScreen]大臣画面[/HS]下で新たな役割に任命 することができます。[BR][BR]新たな目標：3人の大臣を任命する。ファイル名であれば英</Text>
+            <Text>司令官、[HS=HS_Leaders]リーダー[/HS]のアクセスが可能になりました。応募者には長所と短所があり、任務に適しているかどうかが異なります。[BR][BR][HS=HS_Leaders]リーダー[/HS]は複数のポジションで活動できますが、任命する前に雇用する必要があります。[HS=HS_Leaders]リーダー[/HS]を雇うには、[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]を開いてください。[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]のボタンは画面下部のアクションバーにあります。[BR][BR]新しい目標：リーダーを2名雇用する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedLeaderScreen</InternalName>
+        <FlavorTextOption>
+            <Text>[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]には、複数のタブがあります。新しい[HS=HS_Leaders]リーダー[/HS]を雇うには、[HS=HS_RecruitmentScreen]採用[/HS]タブに注目しましょう。利用可能な候補者は、募集可能な[HS=HS_Months]ターン数[/HS]と関連するステータスと共にここにリストされます。[HS=HS_Leaders]リーダー[/HS]が担う役割は特定のステータスから恩恵を受けますが、全てのスキルで熟練している必要はありません。従って、低いステータスがあっても[HS=HS_Leaders]リーダー[/HS]が効果的でないわけではありません。[BR][BR][HS=HS_Leaders]リーダー[/HS]を雇うには、十分な[ICON=Stat_Credits_Icon] [HS=HS_Credit]クレジット[/HS]が必要です。[ICON=Stat_Credits_Icon] [HS=HS_Credit]クレジット[/HS]は、すべての[HS=HS_CoreWorld]中核ワールド[/HS]の[ICON=Stat_Income_Icon] [HS=HS_ColonyGrossIncome]収入[/HS]に基づいて時間と共に獲得されます。[HS=HS_Leaders]リーダー[/HS]を雇うには、左マウスボタンでダブルクリックしてください。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_HiredTargetLeaders</InternalName>
+        <FlavorTextOption>
+            <Text>リーダーを雇い、任務の準備ができました。[HS=HS_Leaders]リーダー[/HS]が貢献できる方法はたくさんありますが、[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Minister]大臣[/HS]に任命することで、同盟全体に利益をもたらす素晴らしい方法です。[BR][BR][HS=HS_Minister]大臣[/HS]は文明の特定の側面を監督し、特定のステータスに基づいた利益を提供します。利用可能なオフィスは[HS=HS_LeaderMenu]リーダーメニュー[/HS]の[HS=HS_MinistersScreen]大臣[/HS]タブで確認できます。マウスを[HS=HS_Minister]大臣[/HS]のオフィスの上にホバーすると、オフィスに関する追加情報が表示されます。[HS=HS_Minister]大臣[/HS]を任命するには、左クリックで[HS=HS_Leaders]リーダー[/HS]をドラッグアンドドロップします。[BR][BR]達成した目標：リーダー2名を雇う[BR]新しい目標：大臣3名を任命する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CabinetFilled</InternalName>
         <FlavorTextOption>
-            <Text>あなたはうまく[HS=HS_Leaders]リーダーたち[/HS]を[HS=HS_Minister]大臣[/HS]の役割に任命しました。彼らの支持は、銀河の探索、新しい惑星の入植、そしてテラン同盟の影 響力の拡大に大いに役 立つでしょう。新たに[HS=HS_Leaders]リーダー[/HS]を募集するたびや、彼らのスキルが変わっ たときは、いつでも[HS=HS_Leaders]リーダー[/HS]の役割を[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]から変更することがで きます。[BR][BR]同盟全体を利益する他 の方法もあります。[HS=HS_Policy]ポリシー[/HS]は、すべての植民地と艦隊 に影響を与えるルール です。[HS=HS_Policy]ポリシー[/HS]を発効するには、適切な[HS=HS_Tech]テック[/HS]を[HS=HS_ResearchCenter]リサーチセンター[/HS]で研究する必要があり ます。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]シヴィライゼーション メニュー[/HS]と[HS=HS_Policy]ポリシー[/HS]スロットにアクセスす るために、植民地ポリシーを研究 します。[BR][BR]完了した目標：3人の大臣を任命する[BR]新しい目標：植民地ポ リシーを研究する。ファイル名の場合は英</Text>
+            <Text>あなたは複数の[HS=HS_Leaders]指導者[/HS]を[HS=HS_Minister]大臣[/HS]の役割に任命することに成功しました。彼らの支援は同盟を助けるために大いに役立ちます。新しい[HS=HS_Leaders]指導者[/HS]を募集したり、既存の[HS=HS_Leaders]指導者[/HS]のスキルが変わった場合、[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]指導者メニュー[/HS]からいつでも指導者の役割を変更できます。[BR][BR]全ての[HS=HS_Leaders]指導者[/HS]には長所と短所がありますので、[HS=HS_Leaders]指導者[/HS]をチェックすることが重要です。[HS=HS_Leaders]指導者[/HS]は[HS=HS_Months]ターン[/HS]が経過するにつれて、雇用可能になります。[BR][BR]達成した目標：3人の大臣を任命する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CabinetFilledUnlockedPolicyScreen</InternalName>
         <FlavorTextOption>
-            <Text>あなたは[HS=HS_Leaders]リーダー[/HS]を数名、[HS=HS_Minister]大臣[/HS]として任命することに 成功しました。彼らの支持は、銀河の探索、新たな惑星の開拓、そしてテランアライア ンスの影響力の拡大に 大いに貢献するでしょ う。新たに[HS=HS_Leaders]リーダー[/HS]を募集するか、スキルが変わった場合 でも、[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]からリーダーの役割を いつでも変更できます。[BR][BR]アライアンス全体に利 益をもたらす他の方法 もあります。[HS=HS_Policy]ポリシー[/HS]は、すべての植民地と艦隊 に影響を与えるルール を発行することができ ます。適切な[HS=HS_Tech]テクノロジー[/HS]は、コロニアルポリシーの 研究によってすでに解 除されています。現在、[HS=HS_Policy]ポリシー[/HS]は[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]で制定することができ ます。[BR][BR]達成目標：3人の大臣を任命する[BR]新しい目標：ポリシー を制定する。ファイル名であれば、英語のままコピーして ください。</Text>
+            <Text>あなたは[HS=HS_Leaders]リーダー[/HS]を数名、[HS=HS_Minister]大臣[/HS]として任命することに成功しました。彼らの支持は、銀河の探索、新たな惑星の開拓、そしてテランアライアンスの影響力の拡大に大いに貢献するでしょう。新たに[HS=HS_Leaders]リーダー[/HS]を募集するか、スキルが変わった場合でも、[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]からリーダーの役割をいつでも変更できます。[BR][BR]アライアンス全体に利益をもたらす他の方法もあります。[HS=HS_Policy]ポリシー[/HS]は、すべての植民地と艦隊に影響を与えるルールを発行することができます。適切な[HS=HS_Tech]テクノロジー[/HS]は、コロニアルポリシーの研究によってすでに解除されています。現在、[HS=HS_Policy]ポリシー[/HS]は[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]で制定することができます。[BR][BR]達成目標：3人の大臣を任命する[BR]新しい目標：ポリシーを制定する。ファイル名であれば、英語のままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_CabinetFilledEnactedAPolicy</InternalName>
         <FlavorTextOption>
-            <Text>あなたは、いくつかの[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Minister]大臣[/HS]の役職に任命すること に成功しました。彼らの支持は、銀河の探索、新たな惑星の開拓、テラ連盟の影響力の拡 大に大いに役立つでし ょう。新たに[HS=HS_Leaders]リーダー[/HS]を募集したり、彼らのスキルが変わっ たりした際には、常に[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]からリーダーの役割を 変更することができま す。[BR][BR]全連盟に利益をもたら す他の方法もあります。[HS=HS_Policy]ポリシー[/HS]は、全ての植民地と艦隊に 影響を及ぼすことがで きるルールです。あなたはすでに[HS=HS_Tech]テック[/HS]を利用して[HS=HS_Policy]ポリシー[/HS]にアクセスし、一つを施行しました。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]で[HS=HS_Policy]ポリシー[/HS]を変更して、文明の現在のニーズに より適応させることが できることを覚えてお いてください。[BR][BR]達成した目標：3人の大臣を任命する。もしファイル名なら英 語をそのままコピーし てください。</Text>
+            <Text>あなたは、いくつかの[HS=HS_Leaders]リーダー[/HS]を[HS=HS_Minister]大臣[/HS]の役職に任命することに成功しました。彼らの支持は、銀河の探索、新たな惑星の開拓、テラ連盟の影響力の拡大に大いに役立つでしょう。新たに[HS=HS_Leaders]リーダー[/HS]を募集したり、彼らのスキルが変わったりした際には、常に[ICON=Menu_Leader_Icon] [HS=HS_LeaderMenu]リーダーメニュー[/HS]からリーダーの役割を変更することができます。[BR][BR]全連盟に利益をもたらす他の方法もあります。[HS=HS_Policy]ポリシー[/HS]は、全ての植民地と艦隊に影響を及ぼすことができるルールです。あなたはすでに[HS=HS_Tech]テック[/HS]を利用して[HS=HS_Policy]ポリシー[/HS]にアクセスし、一つを施行しました。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]で[HS=HS_Policy]ポリシー[/HS]を変更して、文明の現在のニーズにより適応させることができることを覚えておいてください。[BR][BR]達成した目標：3人の大臣を任命する。もしファイル名なら英語をそのままコピーしてください。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_GuideToUnlockPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>連合の成長とともに、その管理ツールも進化させるべきだ。連合をより効果的に管理するためのインフラを開発するためには、追加の研究が必要だ。[BR][BR]「コロニアルポリシー」[HS=HS_Tech]技術[/HS]を研究すると、[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]へのアクセスが可能になる。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]からは、連合全体の[HS=HS_Taxes]税金[/HS]を管理したり、惑星の総産出を一覧で確認したり、さらに[HS=HS_Policy]ポリシー[/HS]を制定することができるようになる。[BR][BR]新しい目標：コロニアルポリシーの研究</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_UnlockedPolicyScreen</InternalName>
         <FlavorTextOption>
-            <Text>研究が完了しました！ コロニアル・ポリシー[HS=HS_Tech]テック[/HS]の研究を終えたことで、[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]と[HS=HS_Policy]ポリシー[/HS]が利用可能になりまし た。[BR][BR][ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]からは、アライアンスの全体像 を確認することができ ます。全体の承認、文明の出力などをチェ ックすることができま す。また、[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]からは文明[HS=HS_Policy]ポリシー[/HS]にもアクセスできます。特定の[HS=HS_Tech]テック[/HS]を研究することで、制定できる[HS=HS_Policy]ポリシー[/HS]の数を増やすことがで きます。今すぐ[HS=HS_Policy]ポリシー[/HS]を制定して、アライアンスがより一 体として機能するよう にしましょう。[BR][BR]達成した目標：コロニ アル・ポリシーの研究[BR]新たな目標：ポリシー を制定する。 ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>植民地政策の研究が完了しました。これで[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明メニュー[/HS]にアクセスできます。[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明メニュー[/HS]には役立つ情報が豊富にあり、全連合に影響を与える[HS=HS_Policy]政策[/HS]を制定することができます。[BR][BR]アクションバーにある[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明メニュー[/HS]ボタンを押して[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明メニュー[/HS]を開けます。[BR][BR]達成目標：植民地政策の研究[BR]新しい目標：政策を制定する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_UnlockedPolicyScreenNotObjective</InternalName>
+        <FlavorTextOption>
+            <Text>植民地政策の研究が完了しました。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]にアクセスできるようになりました。[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]は有用な情報を提供し、同盟全体に影響を与える[HS=HS_Policy]政策[/HS]を制定することができます。[BR][BR]アクションバーの[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]ボタンを押すことで、[ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]文明メニュー[/HS]を開くことができます。[BR][BR]新しい目標：政策を制定する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_OpenedPolicyScreen</InternalName>
+        <FlavorTextOption>
+            <Text>[ICON=Menu_CivilizationMenu_Icon][HS=HS_CivilizationMenu]文明メニュー[/HS]では、文明全体をより効果的に管理するためのいくつかのツールにアクセスできます。[ICON=Approval_Stat_Icon][HS=HS_Approval]承認[/HS]への直接的な影響と、各[HS=HS_Months]ターン[/HS]における[ICON=Stat_Credits_Icon][HS=HS_Credit]クレジット[/HS]の変動に影響を及ぼす[HS=HS_Taxes]税率[/HS]を調整できます。[BR][BR]また、[HS=HS_Policy]政策[/HS]を制定することもできます。[HS=HS_Policy]政策[/HS]は、すべてのコロニー、市民、[HS=HS_Fleet]艦隊[/HS]に影響を及ぼすコマンドを発行する方法です。特定の[HS=HS_Tech]技術[/HS]を研究することで追加の政策スロットを解除できます。[BR][BR][HS=HS_Policy]政策[/HS]を制定するには、利用可能な政策パネルから[HS=HS_Policy]政策[/HS]を選び、解除されたスロットにドラッグアンドドロップします。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_EnactedAPolicy</InternalName>
         <FlavorTextOption>
-            <Text>あなたは成功して[HS=HS_Policy]ポリシー[/HS]を施行しました。変更は可能な限り早く 実行されます！[BR][BR]あなたのターン中には、変化する目標に適応し たり、特定の問題に対応する ために、[HS=HS_Policy]ポリシー[/HS]をいつでも変更できる ことを覚えておいてく ださい。[BR][BR]完了した目標：ポリシ ーを施行する。ファイル名であれば英 語をそのままコピーし てください。</Text>
+            <Text>あなたは成功して[HS=HS_Policy]ポリシー[/HS]を施行しました。変更は可能な限り早く実行されます！[BR][BR]あなたのターン中には、変化する目標に適応したり、特定の問題に対応するために、[HS=HS_Policy]ポリシー[/HS]をいつでも変更できることを覚えておいてください。[BR][BR]完了した目標：ポリシーを施行する。ファイル名であれば英語をそのままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_PiratesSpotted</InternalName>
         <FlavorTextOption>
-            <Text>TKTKTKTKTKTKTKTKTK</Text>
+            <Text>司令官、[HS=HS_Pirates]海賊たち[/HS]が[HS=HS_Sector]セクター[/HS]に[HS=HS_Shipyard]造船所[/HS]を設立したことが確認されました。問題は悪化する一方です。[BR][BR][HS=HS_Pirates]海賊たち[/HS]は私たちの艦隊や植民地を脅かすだけでなく、テラン連合の評判にも悪影響を及ぼしています。彼らがさらに船を造る能力を取り除くことで、この問題を迅速に解決すべきです。[BR][BR]新しい目標：海賊の造船所を破壊する</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_FighterSelected</InternalName>
+        <FlavorTextOption>
+            <Text>戦闘機選択完了、命令待ち！[BR][BR]戦闘機には様々な形態があり、ハルタイプ、武器、装甲が異なります。主な目的は防御と攻撃です。[HS=HS_ShipMovement]移動[/HS]命令でコロニーやスターベースへと向かわせ、敵艦隊が攻撃しようとした際には軌道上で守備につきます。[BR][BR]艦船に攻撃命令を出すには、右クリックで目標を選択してください。選択した艦船が目標へ移動します。隣接タイルに到達したら、戦闘が可能です。[BR][BR][HS=HS_Fleet]艦隊[/HS]は単独の戦闘機より戦闘で優れています。[HS=HS_Fleet]艦隊[/HS]を作るには、艦船を同じタイルに移動させ、十分な[ICON=ShipLogistics_Icon] [HS=HS_Logistics]兵站[/HS]があれば自動的に結合します。</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>Tutorial_LostAFight</InternalName>
+        <FlavorTextOption>
+            <Text>司令官、敗北を喫しました。[BR][BR]将来的に勝利の確率を高めるためには、船を[HS=HS_Fleet]艦隊[/HS]に編成しましょう。[HS=HS_Fleet]艦隊[/HS]は、同じタイルに船を[HS=HS_ShipMovement]移動[/HS]させることで形成できます。[HS=HS_Fleet]艦隊[/HS]のサイズは[ICON=ShipLogistics_Icon] [HS=HS_Logistics]物流[/HS]によって制限されているため、[HS=HS_Fleet]艦隊[/HS]が形成されない、または拡大しない場合は、[ICON=ShipLogistics_Icon] [HS=HS_Logistics]物流[/HS]スコアが高すぎるということです。[BR][BR]さらに、攻勢に出ることで戦闘の発生をコントロールしましょう。我々に有利な戦いを仕掛け、敵を弱らせます。すぐには倒せそうにない強力な艦隊は避け、ビーム・ボレーやミサイル・ボレーのような距離戦術を活用してください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_GuideToRushImprovement</InternalName>
         <FlavorTextOption>
-            <Text>時には、特に対立の最中では、何かが終わるのを数[HS=HS_Months]ヶ月[/HS]待つことは選択肢にな らないことがあります。そのようなシナリオで は、多くのプロジェクトや 建設を[HS=HS_Rush]急ぎ[/HS]で行うことができます。[HS=HS_Rush]急ぐ[/HS]には[ICON=Stat_Credits_Icon] [HS=HS_Credit]クレジット[/HS]が必要で、よく大量に必要になり ますが、何かを完成させるのに 必要な時間を1[HS=HS_Months]ヶ月[/HS]に短縮することができ ます。[BR][BR]一部の植民地は、対立が注意力とリソー スを取りすぎることを 心配しています。彼らの懸念を軽減する ために、惑星の改善を[HS=HS_Rush]急ぐ[/HS]ことで、彼らがまだ思い出され、同盟が世界の開発に投 資し続けていることを 示してください。[BR][BR][HS=HS_Rush]急ぐ[/HS]ための惑星改善を選択 するには、[HS=HS_CoreWorld]コアワールド[/HS]を選択し、管理ウィンドウを開き ます。ビルドキュー内の任意 のアイテムを左マウス ボタンで選択すると、いくつかのコンテキス トメニューが表示され ます。その中には[HS=HS_Rush]急ぐ[/HS]オプションがあります。[ICON=Stat_Control_Icon] [HS=HS_Control]コント</Text>
+            <Text>時には、特に対立の最中では、何かが終わるのを数[HS=HS_Months]ヶ月[/HS]待つことは選択肢にならないことがあります。そのようなシナリオでは、多くのプロジェクトや建設を[HS=HS_Rush]急ぎ[/HS]で行うことができます。[HS=HS_Rush]急ぐ[/HS]には[ICON=Stat_Credits_Icon] [HS=HS_Credit]クレジット[/HS]が必要で、よく大量に必要になりますが、何かを完成させるのに必要な時間を1[HS=HS_Months]ヶ月[/HS]に短縮することができます。[BR][BR]一部の植民地は、対立が注意力とリソースを取りすぎることを心配しています。彼らの懸念を軽減するために、惑星の改善を[HS=HS_Rush]急ぐ[/HS]ことで、彼らがまだ思い出され、同盟が世界の開発に投資し続けていることを示してください。[BR][BR][HS=HS_Rush]急ぐ[/HS]ための惑星改善を選択するには、[HS=HS_CoreWorld]コアワールド[/HS]を選択し、管理ウィンドウを開きます。ビルドキュー内の任意のアイテムを左マウスボタンで選択すると、いくつかのコンテキストメニューが表示されます。その中には[HS=HS_Rush]急ぐ[/HS]オプションがあります。[ICON=Stat_Control_Icon] [HS=HS_Control]コント</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_RushedImprovement</InternalName>
         <FlavorTextOption>
-            <Text>連合の市民は彼らの仕 事に投資された資源を 評価します。良くやった。[BR][BR][HS=HS_Rush]急ぎ[/HS]は、コロニーと[HS=HS_Shipyard]造船所[/HS]ごとに[HS=HS_Months]月[/HS]に1回しか使用できないこ とを知っておくことが 不可欠です。それは、しばしば必要な高額な 代金の上です。[HS=HS_Rush]急ぐ[/HS]は、劇的な利点を得るか、迅速に問題に対応する ために最適に使用され ます。[BR][BR]完了した目標：惑星改 善を急げ。それがファイル名の場 合は、英語をそのままコピー してください。</Text>
+            <Text>連合の市民は彼らの仕事に投資された資源を評価します。良くやった。[BR][BR][HS=HS_Rush]急ぎ[/HS]は、コロニーと[HS=HS_Shipyard]造船所[/HS]ごとに[HS=HS_Months]月[/HS]に1回しか使用できないことを知っておくことが不可欠です。それは、しばしば必要な高額な代金の上です。[HS=HS_Rush]急ぐ[/HS]は、劇的な利点を得るか、迅速に問題に対応するために最適に使用されます。[BR][BR]完了した目標：惑星改善を急げ。それがファイル名の場合は、英語をそのままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_GuideToExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>時間と共に、同盟は[ICON=Stat_Control_Icon] [HS=HS_Control]コントロール[/HS]という、特定の命令を遂行させ る魅力や力を表すリソ ースを獲得します。[ICON=Stat_Control_Icon] [HS=HS_Control]コントロール[/HS]はいくつかの方法で使 われ、その中でも最もコスト がかかるのが[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]です。[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]はすぐに発生し、様々な影響を及ぼすことが できる能力です。あらゆるシナリオで有 益であり、同盟が拡大する中で最 も役立つのは「コロニストの徴集」命令かもしれません。同盟の現在の目標を支 援するために、[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]を使用します。[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]は関連するラジアルオ プションから選択され ます。一部は使用が確認され るとすぐに実行されま す。他のものはターゲット が必要で、オーダーを確認した後 に指示を出す必要があ ります。マウスを[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]オプションの上に置き、左マウ</Text>
+            <Text>時間とともに、同盟はコントロールという資源を得ます。これはあなたの意志を行使するためのものです。[ICON=Stat_Control_Icon] [HS=HS_Control]コントロール[/HS]は複数の方法で使用でき、その中でも有益な方法の一つが[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]です。[BR][BR][ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]は様々な影響を与える能力です。これらはあらゆるシナリオで有益です。同盟が拡大するにつれて、植民者募集の命令が最も役立つかもしれません。[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]を使用するには、まずマウスを[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]オプション上にホバーさせ、次に左クリックで命令を選択します。[BR][BR]新しい目標：執行命令を使用する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_UsedExecutiveOrder</InternalName>
         <FlavorTextOption>
-            <Text>成功![BR][BR]あなたの[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]が実行されました。費用に加えて、ほとんどの[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]にはクールダウン時間 が設けられており、[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]が再度使用できるまで に経過しなければなら ない[HS=HS_Months]月数[/HS]を測定します。[ICON=Stat_Control_Icon] [HS=HS_Control]コントロール[/HS]が[HS=HS_CoreWorld]コアワールド[/HS]から十分に蓄積されて いることを確認するこ とは、必要に応じて[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]エグゼクティブオーダ ー[/HS]を利用できるようにす るために常に良いアイ デアです。[BR][BR]達成した目標: エグゼクティブオーダ ーを使用する。それがファイル名の場 合は、英語をそのままコピー してください。</Text>
+            <Text>成功！[BR][BR]あなたの[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]が実行されました。コストに加え、ほとんどの[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]にはクールダウン時間があります。これは、[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]を再び使用する前に経過しなければならない[HS=HS_Months]ターン[/HS]の数を測ります。[HS=HS_CoreWorld]中枢世界[/HS]から得られる[ICON=Stat_Control_Icon] [HS=HS_Control]コントロール[/HS]が常に十分あることを確認することは、必要な時に[ICON=Menu_ExecutiveOrders_Icon] [HS=HS_ExecutiveOrders]執行命令[/HS]を活用できるようにするためには常に良い考えです。[BR][BR]完了した目標：執行命令を使用する</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_PirateShipyardDestroyed</InternalName>
         <FlavorTextOption>
-            <Text>この[HS=HS_Sector]セクター[/HS]における[HS=HS_Pirates]海賊[/HS]の拠点は壊滅しました。いくつかの余波がある かもしれませんが、新たな船を作る能力が なくなったため、この[HS=HS_Sector]セクター[/HS]での彼らの存在は衰え るでしょう。[BR][BR]素晴らしい仕事です。テラアライアンスは、このセクターでの確固 たる足場を確立する一 歩近づきました。[BR][BR]達成した目標：海賊の 造船所を破壊する。もしファイル名なら英 語をそのままコピーし てください。Tutorial_PirateShipyardDestroyed</Text>
+            <Text>この[HS=HS_Sector]セクター[/HS]における[HS=HS_Pirates]海賊[/HS]の拠点は壊滅しました。いくつかの余波があるかもしれませんが、新たな船を作る能力がなくなったため、この[HS=HS_Sector]セクター[/HS]での彼らの存在は衰えるでしょう。[BR][BR]素晴らしい仕事です。テラアライアンスは、このセクターでの確固たる足場を確立する一歩近づきました。[BR][BR]達成した目標：海賊の造船所を破壊する。もしファイル名なら英語をそのままコピーしてください。Tutorial_PirateShipyardDestroyed</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>Tutorial_NeedsUnlockLeaderScreen</InternalName>
         <FlavorTextOption>
-            <Text>テラン連盟の影響力が 拡大するにつれて、有能な[HS=HS_Leaders]リーダー[/HS]が必要になります。[HS=HS_Leaders]リーダー[/HS]は、[HS=HS_CoreWorld]コアワールド[/HS]の管理を支援し、全連盟に利益をもたら す[HS=HS_Minister]大臣[/HS]としての役割を果たし、さらに多くのことを行 うことができます。連盟は、[HS=HS_Leaders]リーダー[/HS]を募集するためのイン フラを確保する必要が あります。これは、[HS=HS_CoreWorld]コアワールド[/HS]でコロニアルリーダー シッププロジェクトを 完成させることにより 達成できます。[BR][BR]新しい目標：コロニア ルリーダーシッププロ ジェクトを完了させる。ファイル名の場合は、英語をそのままコピー してください。</Text>
+            <Text>テラン連盟の影響力が拡大するにつれて、有能な[HS=HS_Leaders]リーダー[/HS]が必要になります。[HS=HS_Leaders]リーダー[/HS]は、[HS=HS_CoreWorld]コアワールド[/HS]の管理を支援し、全連盟に利益をもたらす[HS=HS_Minister]大臣[/HS]としての役割を果たし、さらに多くのことを行うことができます。連盟は、[HS=HS_Leaders]リーダー[/HS]を募集するためのインフラを確保する必要があります。これは、[HS=HS_CoreWorld]コアワールド[/HS]でコロニアルリーダーシッププロジェクトを完成させることにより達成できます。[BR][BR]新しい目標：コロニアルリーダーシッププロジェクトを完了させる。ファイル名の場合は、英語をそのままコピーしてください。</Text>
         </FlavorTextOption>
     </FlavorTextDef>
 </FlavorTextDefs>

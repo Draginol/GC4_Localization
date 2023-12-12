@@ -5,7 +5,7 @@
       <InternalName>GENERIC_PERSONA</InternalName>
       <MaxTokens>0</MaxTokens>
       <FlavorTextOption>
-        <Text>Вы опытный писатель-фантаст.</Text>
+        <Text>Вы талантливый писатель-фантаст.</Text>
       </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -202,7 +202,9 @@
         <InternalName>FACTION_CALLSIGN_PROMPT</InternalName>
         <MaxTokens>50</MaxTokens>
         <FlavorTextOption>
-            <Text>Сформируйте морской префикс для фракции с названием {PREVIOUSCONV:0}, используя первый символ первого слова в {PREVIOUSCONV:0} как первый глиф, первый символ второго слова как второй глиф, и используя первый символ 'Корабль' в качестве последней буквы. Ваш ответ может быть только самим префиксом, он должен состоять из 3 русских глифов, разделенных точками, не полных слов.</Text>
+            <Text>Since the actual faction name from the previous conversation ({PREVIOUSCONV:0}) wasn't provided, I'll provide a placeholder response. If the faction name was, for example, "Galactic Alliance," and using "Ship" for the last letter, then the prefix would be:
+G.A.S. 
+Please replace "Galactic Alliance" with the actual faction name from {PREVIOUSCONV:0} and follow the same pattern for the prefix.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
