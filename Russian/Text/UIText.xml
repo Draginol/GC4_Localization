@@ -1,4 +1,4 @@
-﻿<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
     <StringTable>
         <Label>BEGIN_UITEXT</Label>
         <String>Russian UIText</String>
@@ -3452,7 +3452,7 @@
     </StringTable>
     <StringTable>
         <Label>SHIP_DESIGNER_CATEGORY_Undeclared</Label>
-        <String>Неклассифицированные корабли</String>
+        <String>Корабли без класса</String>
     </StringTable>
     <StringTable>
         <Label>SHIP_DESIGNER_CATEGORY_Irradiated</Label>
@@ -5080,19 +5080,19 @@
     </StringTable>
     <StringTable>
       <Label>BATTLE_LOG_TOOLTIP_SHIELDINTEGRITY</Label>
-      <String>Целостность щита: {AMOUNT:0}[BR]Max Shields: {AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
+      <String>Целостность Щита: {AMOUNT:0}[BR]Макс. Щиты: {AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
     </StringTable>
     <StringTable>
       <Label>BATTLE_LOG_TOOLTIP_SHIELDINTEGRITY_NA</Label>
-      <String>No Shields[BR][BR]{DESCRIPTION}</String>
+      <String>Щиты отсутствуют[BR][BR]{DESCRIPTION}</String>
     </StringTable>
       <StringTable>
       <Label>BATTLE_LOG_TOOLTIP_ARMORINTEGRITY</Label>
-      <String>Целостность брони: {AMOUNT:0}[BR]Max Armor: {AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
+      <String>Броня Цела: {AMOUNT:0}[BR]Макс Брони:{AMOUNT:1}[BR][BR]{DESCRIPTION}</String>
     </StringTable>
     <StringTable>
       <Label>BATTLE_LOG_TOOLTIP_ARMORINTEGRITY_NA</Label>
-      <String>No Armor[BR][BR]{DESCRIPTION}</String>
+      <String>Без брони[BR][BR]{DESCRIPTION}</String>
     </StringTable>
     <StringTable>
         <Label>BATTLELOG_PERCENT_STRING</Label>
@@ -5264,7 +5264,7 @@
     </StringTable>
     <StringTable>
         <Label>NetIncomeLABEL</Label>
-        <String>Чистый ежемесячный доход</String>
+        <String>Доход в месяц</String>
     </StringTable>
     <StringTable>
         <Label>ColonyGrossIncomeLABEL</Label>
@@ -5408,7 +5408,7 @@
     </StringTable>
     <StringTable>
         <Label>BattleCasualtiesPrediction_Format</Label>
-        <String>Мы: {VALUE:1}[BR]Them: {VALUE:2}</String>
+        <String>Нас: {VALUE:1}[BR]Их: {VALUE:2}</String>
     </StringTable>
     <StringTable>
         <Label>EJECTALLBUTTONLABEL</Label>
@@ -5712,7 +5712,7 @@
     </StringTable>
     <StringTable>
         <Label>VOVolume</Label>
-        <String>Громкость голоса за кадром</String>
+        <String>Громкость озвучки</String>
     </StringTable>
     <StringTable>
         <Label>TEAM_LABEL</Label>
@@ -5832,11 +5832,11 @@
     </StringTable>
 	<StringTable>
 		<Label>REFIT</Label>
-		<String>Refit</String>
+		<String>Переоснащение</String>
 	</StringTable>
 	<StringTable>
 		<Label>CANCELREFIT</Label>
-		<String>Отменить обновление</String>
+		<String>Отменить модернизацию</String>
 	</StringTable>
     <StringTable>
         <Label>LEVEL_UPGRADE_CONFIRM</Label>
@@ -7296,7 +7296,7 @@
     </StringTable>
     <StringTable>
         <Label>NEW_DESIGN_PICK_CLASS_LABEL</Label>
-        <String>Модель нов. кор.</String>
+        <String>Выберите класс корабля</String>
     </StringTable>
     <StringTable>
         <Label>ROTATIONNAME</Label>
@@ -13114,11 +13114,11 @@
     </StringTable>
     <StringTable>
         <Label>Policies_Approval_With_Icon</Label>
-        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
+        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Утверждение[/HS]</String>
     </StringTable>
     <StringTable>
         <Label>Policies_Government_With_Icon</Label>
-        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
+        <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Утверждение[/HS]</String>
     </StringTable>
     <StringTable>
         <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
@@ -14978,11 +14978,11 @@
     </StringTable>
     <StringTable>
 		<Label>Hotkey_ShipRefitNext</Label>
-		<String>Переоборудование корабля - следующий корабль</String>
+		<String>Кораб. модерн. - След. кораб.</String>
 	</StringTable>
 	<StringTable>
 		<Label>Hotkey_ShipRefitPrev</Label>
-		<String>Переделка корабля - предыдущий корабль</String>
+		<String>Корабль-модерн. - Пред. корабль</String>
 	</StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_FORMAT</Label>
@@ -15010,7 +15010,7 @@
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_UPGRADE_TEXT</Label>
-        <String>[B]Refit[/B][BR][COLOR=UIDefaultHot]Улучшай корабли, чтобы переоборудовать их последней версией оружия, брони и снаряжения.[/COLOR].</String>
+        <String>[B]Переоснащение[/B][BR][COLOR=UIDefaultHot]Модернизируйте корабли, чтобы оснастить их последними версиями вооружения, брони и оборудования.[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>HOTKEY_TOOLTIP_DECOMMISSION_TEXT</Label>
@@ -16162,7 +16162,7 @@
     </StringTable>
 	<StringTable>
         <Label>CANNOT_REFIT_ERROR_LABEL</Label>
-        <String>[COLOR=BrightRed]Cannot refit: [/COLOR]</String>
+        <String>[COLOR=BrightRed]Не могу переоснастить: [/COLOR]</String>
     </StringTable>
 	<StringTable>
 		<Label>IS_SYNTHETIC_ERROR_LABEL</Label>
@@ -16990,7 +16990,7 @@
     </StringTable>
     <StringTable>
         <Label>Undeclared</Label>
-        <String>Неклассифицированный</String>
+        <String>Неклассиф.</String>
     </StringTable>
     <StringTable>
         <Label>Undeclared_Desc</Label>
@@ -23562,7 +23562,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_PromethionBorn_Dec</Label>
-        <String>Рожденные в Прометионе граждане вносят 0,4 [HS=HS_Growth]Прироста[/HS] в месяц плюс дополнительные 0,006 Прироста за каждый Прометион, который хранит их цивилизация.[BR][BR]При 100 хранимых Прометионах они имеют такую же скорость Прироста, как и другие виды (1 в месяц). При хранении около 266 Promethion они будут иметь вдвое большую скорость роста, чем другие виды. При отсутствии Promethion они будут иметь базовый прирост 0,4 в месяц.</String>
+        <String>Рожденные в Прометионе граждане вносят 0,4 [HS=HS_Growth]Прироста[/HS] в месяц плюс дополнительные 0,006 Прироста за каждый Прометион, который хранит их цивилизация.[BR][BR]При 100 хранимых Прометионах они имеют такую же скорость Прироста, как и другие виды (1 в месяц). При хранении около 266 прометий они будут иметь вдвое большую скорость роста, чем другие виды. При отсутствии прометий они будут иметь базовый прирост 0,4 в месяц.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_OnyxHiveGrowth_Name</Label>
@@ -23570,7 +23570,7 @@
     </StringTable>
     <StringTable>
         <Label>Concept_OnyxHiveGrowth_Dec</Label>
-        <String>Кремниевые граждане вносят 0,4 [HS=HS_Growth]Прироста[/HS] в месяц плюс дополнительные 0,006 Прироста за каждый Прометион, который хранит их цивилизация.[BR][BR]При хранении 100 Прометионов они имеют такую же скорость роста, как и другие виды (1 в месяц). При хранении около 266 Promethion они будут иметь вдвое большую скорость роста, чем другие виды. При отсутствии Promethion они будут иметь базовый прирост 0,4 в месяц.</String>
+        <String>Кремниевые граждане вносят 0,4 [HS=HS_Growth]Прироста[/HS] в месяц плюс дополнительные 0,006 Прироста за каждый Прометион, который хранит их цивилизация.[BR][BR]При хранении 100 Прометионов они имеют такую же скорость роста, как и другие виды (1 в месяц). При хранении около 266 прометий они будут иметь вдвое большую скорость роста, чем другие виды. При отсутствии прометий они будут иметь базовый прирост 0,4 в месяц.</String>
     </StringTable>
     <StringTable>
         <Label>Concept_Project_Name</Label>
@@ -23974,7 +23974,7 @@
     </StringTable>
 	<StringTable>
 		<Label>MasterTech_StarshipRefits_TriggerDesc</Label>
-		<String>Переоборудование кораблей доступно</String>
+		<String>Корабль на модерн.</String>
 	</StringTable>
     <StringTable>
         <Label>MasterTech_ColonialPolicies_TriggerDesc</Label>
@@ -25619,7 +25619,7 @@
     </StringTable>
     <StringTable>
         <Label>FIRST_UNHIDE_SHIPDESIGNERWND_Msg</Label>
-        <String>Приветствую {LEADERNAME}![BR][BR]Добро пожаловать на экран конструктора кораблей! Здесь ты можешь создать индивидуальный дизайн корабля для своей цивилизации, выбрав класс, корпус и оснастив его различными компонентами.[BR][BR][COLOR=UIDefaultHighlight]Выбери класс корабля[/COLOR]: Выбери класс, например, истребители, боевые крейсеры, фрахтовики или корабли-колонии. Это определит доступные варианты корпуса.[BR][BR][COLOR=UIDefaultHighlight]Выбери корпус[/COLOR]: размер корпуса соответствует классу и определяет, сколько всего ты сможешь уместить на корабле.[BR][BR]С левой стороны ты найдешь различные категории оборудования. Оснасти свой корабль различными компонентами из четырех подвкладок: Weapons, Defenses, Propulsion и Special Modules [BR][BR]В середине экрана отображается текущий дизайн с информацией о том, сколько места осталось для добавления оборудования.  В верхней части посередине ты увидишь небольшой значок чертежа. Он позволяет перейти в режим полноценного визуального проектирования.  Сверху Справа ты увидишь краткую информацию о выбранном дизайне, включая типы оружия, защиту, стоимость обслуживания, хитпоинты, скорость передвижения, дальность действия сенсоров, логистику, тип корпуса и стоимость строительства. Начни с более простых конструкций и постепенно изучай более продвинутые варианты по мере знакомства с системой.</String>
+        <String>Привет, {LEADERNAME}![BR][BR]Добро пожаловать на экран Конструктора Кораблей! Здесь ты можешь создавать свои уникальные корабельные дизайны для своей цивилизации, выбирая класс, корпус и устанавливая различные компоненты.[BR][BR][COLOR=UIDefaultHighlight]Выбери класс корабля[/COLOR]: Выбери класс, такой как Истребители, Боевые Крейсеры, Транспортники или Колониальные Корабли. Это определит доступные варианты корпусов.[BR][BR][COLOR=UIDefaultHighlight]Выбери корпус[/COLOR]: Размер корпуса соответствует классу и определяет, сколько ты сможешь поместить на корабль.[BR][BR]Слева ты найдешь различные категории оборудования. Оснасти свой корабль компонентами из четырех подразделов: Вооружение, Защита, Двигатели и Специальные Модули.[BR][BR]В центре экрана отображается текущий дизайн с информацией о том, сколько места осталось для добавления оборудования. В верхней части экрана ты увидишь иконку с маленьким чертежом. Она позволяет перейти в полноценный режим визуального дизайна. Справа ты увидишь сводку выбранного дизайна, включая типы вооружения, защиту, затраты на обслуживание, очки прочности, скорость движения, дальность датчиков, логистику, тип корпуса и стоимость строительства. Начни с простых дизайнов и постепенно изучай более сложные варианты, как только ты ознакомишься с системой.</String>
     </StringTable>
     <StringTable>
         <Label>IdeologyDiscountTooltip</Label>
