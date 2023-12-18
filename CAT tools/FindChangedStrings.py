@@ -1,3 +1,21 @@
+
+"""
+This script compares XML files in two directories and outputs the differences to a CSV file.
+
+Functions:
+- get_string_tables(directory): Reads all XML files in the directory, extracts 'Label' and 'String' from each 'StringTable', and returns a dictionary of labels and strings.
+
+- compare_directories(dir_a, dir_b): Compares the string tables in two directories and returns a dictionary of labels and strings that exist in both directories but have different string values.
+
+- output_to_csv(data, file_path): Writes a dictionary to a CSV file. Each row in the CSV file represents a label and its corresponding string.
+
+- main(): Uses a tkinter GUI to ask the user to select two directories and a file path, compares the string tables in the two directories, and outputs the differences to a CSV file.
+
+This script is designed to be run as a standalone program, and it uses a tkinter GUI to interact with the user.
+"""
+
+
+
 import os
 import csv
 import tkinter as tk
