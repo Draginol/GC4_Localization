@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- Created with the Flavor Text Editor -->
     <!-- FlavorText.xml -->
@@ -9,21 +9,21 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Имитируйте жест пожимания плечами несколькими щупальцами.[/I]</Text>
+            <Text>[I]Изобразить пожимание плечами с помощью пары щупалец.[/I]</Text>
             <PreferenceWeight>30</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>Торговля? Вы можете торговать? [COLOR=UIDefaultHighlight](Открыть Торговлю)[/COLOR]</Text>
+            <Text>Можете торговать? [COLOR=UIDefaultHighlight](Меню торговли)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Протягиваю камень почти непостижимого цвета.[/I] [COLOR=UIDefaultHighlight](Открывает Торговлю)[/COLOR]</Text>
+            <Text>[I]Протянуть камень практически неописуемого цвета.[/I] [COLOR=UIDefaultHighlight](Меню торговли)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -33,14 +33,14 @@
         <Requirements>
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
         </Requirements>
-        <Text>[I]Наступает момент тишины. Даже с помощью Универсального переводчика, кажется невозможным общаться словами. Существо кажется расслабленным, щупальца волнообразно двигаются перед экраном.[/I]</Text>
+        <Text>[I]Наступает тишина. Даже с универсальным переводчиком разговор представляется невозможным. Кажется, существо расслабленно, оно машет щупальцами в экран.[/I]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
         <Requirements>
             <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>Вы, возможно, самое тревожное, что я когда-либо видел. Уверен, вам это часто говорят.</Text>
+        <Text>Вполне вероятно, вы самое леденящее душу создание, что мне встречалось. Несомненно, вам это известно.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -48,7 +48,7 @@
             <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>Так, как ты- Ты не одна из наших личинок.</Text>
+        <Text>Так, как вы... А вы не из наших личинок.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -56,7 +56,7 @@
             <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>Приветствуем? Мы надеемся, вы открыты для дружественных дипломатических отношений.</Text>
+        <Text>Приветствуем? Надеемся, вы готовы к дружеским дипломатическим отношениям.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -64,7 +64,7 @@
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>Если вы не съедобны и не подходите для роли рабов, тогда вам будет приятно узнать, что мы, вероятно, уничтожим вас в последнюю очередь.</Text>
+            <Text>Если вы несъедобные и не годитесь в рабы, то можете радоваться, вас мы, скорее всего, уничтожим последними.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -72,7 +72,7 @@
             <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>Мы постараемся проявить к вам такое же уважение, как ко всей жизни, и надеемся, что вы окажетесь более разумными, чем выглядите.</Text>
+        <Text>Мы приложим все усилия и будем так же уважать вас всю жизнь. Надеемся, вы разумнее, чем кажетесь.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -80,7 +80,7 @@
             <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>Таким грязным и заблудшим, каким вы кажетесь, примите Путь, и мы сможем управлять вашим спасением.</Text>
+        <Text>И хотя с виду вы скверны, примите Путь, и мы, возможно, поспособствуем вашему спасению.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -88,7 +88,7 @@
                 <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>Вы знакомы с законами экономики? Если нет, мы с удовольствием введем вас в межзвездный рынок.</Text>
+            <Text>Знаете законы экономики? Если нет, мы с радостью познакомим вас с межзвездным рынком.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -96,7 +96,7 @@
                 <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>Вы какая-то форма оскверненной корневой системы?</Text>
+            <Text>Вы какая-то оскверненная корневая система?</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -104,7 +104,7 @@
             <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
             <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
         </Requirements>
-        <Text>О! Вы, э-э-э, интересны. Я представляю Терранское Сопротивление. Давайте найдем общий язык.</Text>
+        <Text>Ах! А вы, эм-м, любопытные. Я представляю Земное сопротивление. Мы можем найти точки соприкосновения.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -112,7 +112,7 @@
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>Когда ваше уродливое племя научилось строить и использовать коммуникатор? Вам это нужно? С каких пор разумные расы заключают сделки с огромными болезнями?</Text>
+            <Text>Когда ваши уродливые собратья научились создавать коммуникаторы и пользоваться ими? И зачем вам это? С каких пор разумные расы заключают сделки с рассадником заболеваний?</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -120,7 +120,7 @@
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>У меня есть сапоги, которые грознее вас. Извивайтесь на своих гниющих мирах, и я, возможно, отложу ваше уничтожение.</Text>
+            <Text>Да у меня башмаки пострашнее вас будут. Проваливайте в свои прогнивающие миры, и тогда вас уничтожат чуть позже.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -128,7 +128,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_TERRAN</ListenerFaction>
         </Requirements>
-        <Text>[I]Организм на экране перед вами извивается как в глубоко тревожном кошмаре.[/I]</Text>
+        <Text>[I]Организм на экране перед вами извивается, словно нечто прямиком из неспокойного кошмара.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -136,7 +136,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_FESTRON</ListenerFaction>
         </Requirements>
-        <Text>[I]Изображение бьющегося на экране существа напоминает личинку, если не обращать внимание на беспорядочный рост придатков и глаз.[/I]</Text>
+        <Text>[I]Трепещущее на экране существо напоминает личинку, если не брать во внимание беспорядочное расположение придатков и глаз.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -144,7 +144,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_XELOXI</ListenerFaction>
         </Requirements>
-        <Text>[I]Отвратительное червеобразное существо осмеливается попытаться установить глазной контакт.[/I]</Text>
+        <Text>[I]Омерзительное червеобразное существо осмеливается посмотреть вам в глаза.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -152,7 +152,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_YOR</ListenerFaction>
         </Requirements>
-        <Text>[I]Органическая жизнь перед вами не соответствует ни одной известной на данный момент эволюционной тенденции. Беззвучный == true.[/I]</Text>
+        <Text>[I]Органическая форма жизни перед вами не пошла не по одному из изученных эволюционных путей. Без комментариев.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -160,7 +160,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_MANTI</ListenerFaction>
         </Requirements>
-        <Text>[I]Даже учитывая многообразие океанов, ничто подобное существу, извивающемуся на экране, ранее не фиксировалось.[/I]</Text>
+        <Text>[I]Подводный мир разнообразен, однако ничего похожего на волнистое существо на экране еще не встречалось исследователям.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -168,7 +168,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_KRYNN</ListenerFaction>
         </Requirements>
-        <Text>[I]Масса органической материи перемещается по экрану. Она не издает звуков, но совершает множество невыразительных движений с помощью различных придатков и глаз.[/I]</Text>
+        <Text>[I]На экране перемещается масса органической материи. Она беззвучна, однако неописуемо двигает всевозможными придатками и глазами.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -176,7 +176,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
         </Requirements>
-        <Text>[I]Несколько резких движений нарушают тишину неразборчивого пришельца на экране.[/I]</Text>
+        <Text>[I]На экране немыслимый инопланетянин молча делает несколько резких движений.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -184,7 +184,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_KORATH</ListenerFaction>
         </Requirements>
-        <Text>[I]Живой организм перед вами выглядит мягким, слабым и (что наиболее отталкивающе) как будто он плохо пахнет.[/I]</Text>
+        <Text>[I]Трепещущая форма жизни перед вами кажется мягкой, слабой и, что самое отвратительное, ужасной на вкус.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -192,7 +192,7 @@
             <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             <ListenerFaction>FACTION_MOTH</ListenerFaction>
         </Requirements>
-        <Text>[I]Перед вами Излученный, раса, составляющая Космический Контаминант. Кроме их присутствия в галактике, очень мало что известно, кроме того, что они не могут общаться словесно.[/I]</Text>
+        <Text>[I]Перед вами Облученный — представитель расы, из который стоит Космическое заражение. О них мало что известно кроме того, что общаться вербально они не умеют.[/I]</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -204,21 +204,21 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Моргаю несколько раз в недоумении.[/I]</Text>
+            <Text>[I]В недоумении моргнуть несколько раз.[/I]</Text>
             <PreferenceWeight>20</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>Эм, привет? Давайте попытаемся ладить, наверное.</Text>
+            <Text>Эм-м, привет? Что ж, попробуем поладить.</Text>
             <PreferenceWeight>20</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Помахайте несколькими щупальцами перед экраном.[/I]</Text>
+            <Text>[I]Махать парой щупалец перед экраном.[/I]</Text>
             <PreferenceWeight>20</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -226,7 +226,7 @@
                 <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайтесь так, как будто киваете.[/I]</Text>
+            <Text>[I]Извиваться, изображая кивок.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -234,7 +234,7 @@
                 <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Шутливо размахиваю.[/I]</Text>
+            <Text>[I]Крутиться, шутя.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -242,7 +242,7 @@
                 <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[Я]Машу в сторону экрана.[/Я]</Text>
+            <Text>[I]Помахать в экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -250,7 +250,7 @@
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Помахай щупальцем, отмахиваясь от грубияна.[/I]</Text>
+            <Text>[I]Махать щупальцем, возмущаясь грубостью.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -258,7 +258,7 @@
                 <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Радостно извивайтесь.[/I]</Text>
+            <Text>[I]Радостно гнуться.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -266,7 +266,7 @@
                 <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Кивните знающе.[/I]</Text>
+            <Text>[I]Знающе трястись.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -274,7 +274,7 @@
                 <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Поднимите несколько блестящих предметов в знак согласия.[/I]</Text>
+            <Text>[I]Поднять пару блестящих предметов с одобрением.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -282,7 +282,7 @@
                 <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[Я]Поддерживайте задумчивый взгляд в глаза.[/Я]</Text>
+            <Text>[I]Долго вдумчиво смотреть в глаза.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -290,7 +290,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Приятно извивайтесь перед экраном.[/I]</Text>
+            <Text>[I]Довольно барахтаться перед экраном.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -298,7 +298,7 @@
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Пренебрежительно извивайтесь.[/I]</Text>
+            <Text>[I]Брезгливо корчиться.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -306,7 +306,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Хорошо. Эта встреча была насыщенной.</Text>
+            <Text>Что ж. Встреча выдалась насыщенной.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -314,7 +314,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_FESTRON</ListenerFaction>
             </Requirements>
-            <Text>Вы выглядите истощенным.</Text>
+            <Text>Выглядите истощенно.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -322,7 +322,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_XELOXI</ListenerFaction>
             </Requirements>
-            <Text>Я никак не могу понять, пресмыкаетесь ли вы или нет.</Text>
+            <Text>Мне не понять, вы что-то просите или нет.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -330,7 +330,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_YOR</ListenerFaction>
             </Requirements>
-            <Text>Вы интересное отклонение.</Text>
+            <Text>Какое любопытное отклонение.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -338,7 +338,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_MANTI</ListenerFaction>
             </Requirements>
-            <Text>Какие крайние обстоятельства должны были породить вас.</Text>
+            <Text>В каких же суровых условиях вы возникли.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -346,7 +346,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_KRYNN</ListenerFaction>
             </Requirements>
-            <Text>Приходите, изучите Путь. Искупление есть для всех.</Text>
+            <Text>Ну же, познайте Путь. Грехи будут отпущены всем.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -354,7 +354,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
             </Requirements>
-            <Text>Согласно протоколу первого контакта: Приветствуем, мы пришли с миром.</Text>
+            <Text>Протокол первого контакта: приветствуем, мы пришли с миром.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -362,7 +362,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_KORATH</ListenerFaction>
             </Requirements>
-            <Text>Самое доброе, что я могу сказать, это то, что ты - трата моего времени.</Text>
+            <Text>Мягко говоря, я нас вас только время зря потрачу.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -370,7 +370,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>Мы надеемся, что со временем мы сможем понимать друг друга.</Text>
+            <Text>Надеемся, что со временем мы поймем друг друга.</Text>
         <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -382,21 +382,21 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Поддерживайте интенсивный глазной контакт, пока незаметно не закроете Входящее Сообщение.[/I]</Text>
+            <Text>[I]Долго настойчиво смотреть в глаза, а потом тайком закрыть входящее сообщение.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>Чем меньше я вижу тебя, тем лучше.</Text>
+            <Text>Чем меньше я на вас смотрю, тем лучше.</Text>
             <PreferenceWeight>20</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Roll several eyes dismissively.[/I]</Text>
+            <Text>[I]Презрительно закатить пару глаз.[/I]</Text>
             <PreferenceWeight>20</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -404,7 +404,7 @@
                 <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Махните равнодушно щупальцем на экран.[/I]</Text>
+            <Text>[I]Небрежно махать щупальцем перед экраном.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -412,7 +412,7 @@
                 <SpeakerFaction>FACTION_FESTRON</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Сдвиньтесь и расширьтесь, чтобы казаться больше.[/I]</Text>
+            <Text>[I]Расшириться, чтобы казаться больше.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -420,7 +420,7 @@
                 <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайтесь, чтобы избежать обязательств.[/I]</Text>
+            <Text>[I]Корчиться из нежелания соглашаться.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -428,7 +428,7 @@
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Сверните угрожающий щупальце к экрану.[/I]</Text>
+            <Text>[I]Погрозить щупальцем экрану.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -436,7 +436,7 @@
                 <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайся от дискомфорта, избегая взгляда.[/I]</Text>
+            <Text>[I]Извиваться от неловкости, не глядя в глаза.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -444,7 +444,7 @@
                 <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Катает глазами, прежде чем отмахиваться в сторону экрана.[/I]</Text>
+            <Text>[I]Закатить глаза, а после небрежно махать перед экраном.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -452,7 +452,7 @@
                 <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Сохраняйте неприятный взгляд до тех пор, пока они не положат трубку.[/I]</Text>
+            <Text>[I]С неприязнью смотреть в глаза, пока трубку не положат.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -460,7 +460,7 @@
                 <SpeakerFaction>FACTION_BARATAK</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайтесь в поддельном смехе.[/I]</Text>
+            <Text>[I]Гнуться с насмешкой.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -468,7 +468,7 @@
                 <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Смотрите на экран, чтобы вызвать дискомфорт.[/I]</Text>
+            <Text>[I]Пялиться на экран, чтобы вызвать беспокойство.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -476,7 +476,7 @@
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Сердито бросьте ближайший свободный предмет в экран.[/I]</Text>
+            <Text>[I]Злостно кинуть первый попавшийся предмет в экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -484,7 +484,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_TERRAN</ListenerFaction>
             </Requirements>
-            <Text>Вы очень отвратительны.</Text>
+            <Text>Вы просто отвратительны.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -492,7 +492,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_FESTRON</ListenerFaction>
             </Requirements>
-            <Text>Ваша теплая извивающаяся масса идеальна для наших яиц.</Text>
+            <Text>Эта теплая извивающаяся масса подходит для наших яиц.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -500,7 +500,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_XELOXI</ListenerFaction>
             </Requirements>
-            <Text>Крайне отвратительно. Не пытайтесь связаться со мной снова.</Text>
+            <Text>Отвратительно. Больше не связывайтесь со мной.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -508,7 +508,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_YOR</ListenerFaction>
             </Requirements>
-            <Text>Вы представляете угрожающее отклонение.</Text>
+            <Text>Какое вы пугающее отклонение.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -516,7 +516,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_MANTI</ListenerFaction>
             </Requirements>
-            <Text>Взгляд на вас вызывает глубокое беспокойство.</Text>
+            <Text>Отчего-то смотреть на вас крайне неприятно.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -524,7 +524,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_KRYNN</ListenerFaction>
             </Requirements>
-            <Text>Оставайтесь в стороне от Пути, и мы проявим милосердие.</Text>
+            <Text>Не касайтесь Пути, и мы проявим милосердие.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -532,7 +532,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
             </Requirements>
-            <Text>Согласно дополнению о возможной паразитической форме жизни: это ваше предупреждение.</Text>
+            <Text>Возможно присоединение паразитический формы жизни: вы предупреждены.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -540,7 +540,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_KORATH</ListenerFaction>
             </Requirements>
-            <Text>Избавление вселенной от вашей слабости должно быть достаточно простым.</Text>
+            <Text>Должно быть, избавить вселенную от вашей слабости будет легко.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -548,7 +548,7 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerFaction>FACTION_MOTH</ListenerFaction>
             </Requirements>
-            <Text>Мы еще не определили, действительно ли вы опасны.</Text>
+            <Text>Мы еще не определили, представляете ли вы опасность.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -558,7 +558,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Жизненная форма раздавливает что-то маленькое в одном из своих щупалец. Они только что завоевали один из ваших миров.[/I]</Text>
+            <Text>[I]Форма жизни давит что-то небольшое своим щупальцем. Теперь один из ваших миров захвачен ею.[/I]</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -567,7 +567,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Извивающаяся форма жизни бросает что-то в экран, сохраняя интенсивное свирепство.[/I][BR][BR][COLOR=UIDefaultHighlight](Мы в состоянии войны)[/COLOR]</Text>
+            <Text>[I]Извивающаяся форма жизни швыряет что-то в экран, не сводя с вас сердитый взгляд.[/I][BR][BR][COLOR=UIDefaultHighlight](У нас война)[/COLOR]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -577,7 +577,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Бросьте горсть грязи в экран.[/I]</Text>
+            <Text>[I]Кинуть смесь в экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -587,7 +587,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайтесь от разочарования.[/I]</Text>
+            <Text>[I]Разочарованно гнуться.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -597,7 +597,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Масса органического вещества на экране протягивает клочок чего-то белого, казалось бы, просит о прекращении текущего конфликта.[/I]</Text>
+            <Text>[I]На экране масса органической материи протягивает что-то белое, и, по всей видимости, хочет завершения конфликта.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -607,7 +607,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Поднимите щупальце в знак согласия.[/I]</Text>
+            <Text>[I]Поднять щупальце, выражая согласие.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -617,7 +617,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Извивайтесь, показывая дискомфорт от текущих условий, но избегайте полного несогласия.[/I]</Text>
+            <Text>[I]Извиваться, демонстрируя недовольство текущими условиями, но не отказываясь полностью.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -627,7 +627,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Виляйте в поддельном смехе, чтобы категорически отказать в просьбе.[/I]</Text>
+            <Text>[I]Корчиться с насмешкой и категорически отказаться.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -637,7 +637,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Свободный объект отбрасывается в сторону, перед тем как конечности угрожающе размахиваются, предложение отклонено.[/I]</Text>
+            <Text>[I]Что-то небольшое летит в сторону, придатки грозно вертятся, предложение отклонено.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -647,7 +647,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Облученный форма жизни терпеливо смотрит на экран.[/I]</Text>
+            <Text>[I]Облученный терпеливо смотрит на экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -657,7 +657,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Существо на экране отчаянно извивается, бросая маниакальные взгляды. Несколько единственных свободных конечностей отмахивают вас.[/I]</Text>
+            <Text>[I]Существо на экране судорожно корчится, нервно оглядываясь, и прогоняет вас несколькими придатками.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -667,7 +667,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Существо на экране злобно извивается, ведет себя нервно и непредсказуемо. Оно совершенно занято Вечной войной. За короткое время, пока оно на экране, в экран бросаются несколько неразличимых предметов.[/I]</Text>
+            <Text>[I]Существо на экране злобно корчится и ведет себя безумно. Оно весьма озабочено Вечной войной и за свое короткое время на экране швыряет в него несколько трудноразличимых кредитов.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -677,7 +677,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Существо на экране колеблется в том, что можно было бы назвать смехом. Оно махает отмахивающим щупальцем, отказываясь помогать теперь, когда галактика обернулась против вас.[/I]</Text>
+            <Text>[I]То, как существо на экране трясется, можно с натяжкой назвать смехом. Оно небрежно машет щупальцем, отказываясь помочь, потому что на вас ополчилась вселенная.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -687,7 +687,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Существо на экране выглядит потрясенным и смущенным, по крайней мере, насколько это возможно, учитывая его внешность. Оно делает широкие жесты. Они так же заняты апокалипсисом, как и все остальные.[/I]</Text>
+            <Text>[I]Существо на экране, кажется, в потрясении и замешательстве, насколько это возможно, учитывая его внешний вид. Оно активно жестикулирует. Апокалипсис волнует его так же, как и всех остальных.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -697,7 +697,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Извивается в знак согласия на торговлю.[/I]</Text>
+            <Text>[I]Гнется, соглашаясь на торговлю.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -707,7 +707,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Злобно трясет экраном, торговое предложение неприемлемо.[/I]</Text>
+            <Text>[I]Гневно трясется перед экраном, торговля неприемлема.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -717,7 +717,7 @@
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Немой инопланетянин радостно машет на экран после принятия торгового предложения.[/I]</Text>
+            <Text>[I]Пришелец принимает торговое предложение и молча радостно машет перед экраном.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -727,7 +727,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Терпеливо смотрит на экран, ожидая вашего предложения.[/I]</Text>
+            <Text>[I]Терпеливо смотрит на экран, ожидая ваше предложение.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -737,7 +737,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Облученный форма жизни терпеливо смотрит на экран.[/I]</Text>
+            <Text>[I]Облученный терпеливо смотрит на экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -747,7 +747,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Облученный форма жизни терпеливо смотрит на экран.[/I]</Text>
+            <Text>[I]Облученный терпеливо смотрит на экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -757,7 +757,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Предлагает конкретную сделку:[/I] {TRADEGOOD:0}.</Text>
+            <Text>[I]Протягивает и предлагает:[/I] {TRADEGOOD:0}.</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -767,7 +767,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Широко жестикулирует, указывая на новые предметы, добавленные в торговлю.[/I]</Text>
+            <Text>[I]Активно жестикулирует насчет новых предметов в сделке.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -779,14 +779,14 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Совершите самый угрожающий жест, который вы можете придумать; они наверняка поймут, что это значит войну![/I]</Text>
+            <Text>[I]Сделать самый устрашающий жест, что придет в голову; пусть знают, что грядет война![/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Поднимите оружие, чтобы показать своё намерение начать войну.[/I]</Text>
+            <Text>[I]Поднять оружие, чтобы показать готовность воевать.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -798,14 +798,14 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Сделайте несколько замысловатых жестов в попытке выразить свое желание мира.[/I] (вам нужно исследовать Универсальный Переводчик, чтобы вести переговоры о мире)</Text>
+            <Text>[I]Несколькими активными жестами показать, что вы хотите мира.[/I] (Вам нужно исследовать «Универсальный переводчик», чтобы вести переговоры о мире.)</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Поднесите белый предмет, чтобы показать свои намерения вести переговоры о мире.[/I]</Text>
+            <Text>[I]Протянуть белый предмет, чтобы показать готовность к мирным приговорам.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -815,7 +815,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Живой организм нахмурился на экран, его напряженный взгляд наполнился гневом.[/I]</Text>
+            <Text>[I]Форма жизни сердито смотрит на экран, и ее взгляд полон злости.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -827,14 +827,14 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Сообщение, извивающееся в хаосе, абсолютно нечитаемо, единственным звуком, исходящим из связи, является низкий пузырящийся фоновый шум.[/I]</Text>
+            <Text>[I]Столь запутанное сообщение практически невозможно расшифровать. Единственный звук, который удается разобрать — странное тихое бульканье на фоне.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Форма жизни едва устанавливает зрительный контакт, презрительным щупальцем показывая отсутствие интереса к общению.[/I]</Text>
+            <Text>[I]Форма жизни едва ли смотрит вам в глаза и небрежно выражает щупальцем свою незаинтересованность.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -846,14 +846,14 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Махните несколькими щупальцами в знак сдачи.[/I]</Text>
+            <Text>[I]Повести парой щупалец, отказываясь.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Катает глазами в раздражении.[/I]</Text>
+            <Text>[I]Нервно закатить глаза.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -865,14 +865,14 @@
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Существо на экране отвечает глубоко тревожащими движениями.[/I]</Text>
+            <Text>[I]Существо на экране отвечает крайне неприятными движениями.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Существо на экране извивается от гнева, щупальца сворачиваются в явной угрозе.[/I]</Text>
+            <Text>[I]Существо на экране корчится от злости и угрожает извивающимися щупальцами.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -884,14 +884,14 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Выполните типичный жест агрессии, который, вероятно, не переводится.[/I]</Text>
+            <Text>[I]Показать типичный агрессивный жест, вероятно, не поддающийся переводу.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Уставьтесь проницательно на экран, чтобы вызвать глубокое беспокойство.[/I]</Text>
+            <Text>[I]Испытующе пялиться на экран, чтобы вызвать тревогу.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -903,14 +903,14 @@
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
                 <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
             </Requirements>
-            <Text>[I]Резко скорректируйте поведение, чтобы казаться расслабленным, избегая провоцирования войны в последний момент.[/I]</Text>
+            <Text>[I]Резко изобразить расслабленность, чтобы невзначай не развязать войну.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
             </Requirements>
-            <Text>[I]Махните несколькими пренебрежительными, шутливыми щупальцами, чтобы избежать развязывания войны.[/I]</Text>
+            <Text>[I]Небрежно и шутливо махать несколькими щупальцами, чтобы избежать войны.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>
@@ -920,7 +920,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_ABSOLUTE</SpeakerFaction>
             </Requirements>
-            <Text>[I]Облученный форма жизни терпеливо смотрит на экран.[/I]</Text>
+            <Text>[I]Облученный терпеливо смотрит на экран.[/I]</Text>
             <PreferenceWeight>50</PreferenceWeight>
         </FlavorTextOption>
     </FlavorTextDef>

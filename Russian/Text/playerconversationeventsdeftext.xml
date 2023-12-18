@@ -1,401 +1,854 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-  <StringTable>
-    <Label>Event_AncientArtifact_Name</Label>
-    <String>Древний Артефакт</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Dec</Label>
-    <String>Наши исследователи обнаружили древний артефакт неизвестного происхождения. Некоторые считают, что он содержит ключ к раскрытию передовых технологий, в то время как другие утверждают, что это реликвия наших предков и должна быть сохранена.[BR][BR]
+    <StringTable>
+        <Label>Event_AncientArtifact_Name</Label>
+        <String>Древний артефакт</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Dec</Label>
+        <String>Наши исследователи обнаружили древний артефакт неизвестного происхождения. Одни думают, что это ключ к открытию передовых технологий. Другие утверждают, что это реликвия наших предков, и потому стоит его сохранить.[BR][BR]Как нам поступить с этим артефактом?</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Opportunity_Bonus_Name</Label>
+        <String>Изучить артефакт ради технологического прогресса.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Tradition_Bonus_Name</Label>
+        <String>Сохранить артефакт как символ нашей истории.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Name</Label>
+        <String>Миграция странных существ</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Dec</Label>
+        <String>Через нашу территорию мигрируют странные космические существа. Они несут с собой лишь хаос и разрушения. Из-за сильного политического давления мы хотели уничтожить этих созданий. Однако мы знаем, что их судьба вам небезразлична.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Compassion_Name</Label>
+        <String>Защищать существ</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Compassion_Dec</Label>
+        <String>Мы защитим существ и поможем им безопасно преодолеть путь. Это улучшит нашу репутацию у миролюбивых фракций.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigrationCompassion_String1</Label>
+        <String>Вы защитили космических китов</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Pragmatism_Name</Label>
+        <String>Есть идея получше — мы разберемся с этими созданиями и получим новые знания.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_SpaceWhaleMigration_Pragmatism_Dec</Label>
+        <String>Эти существа ничего особо не почувствуют. Наверное.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Name</Label>
+        <String>Обмен технологиями</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Dec</Label>
+        <String>Наши отважные исследователи нашли артефакт Предтеч, оставленный так называемыми Арнорами. Нам никак не удается разгадать его загадку. Возможно, вам это удастся? Мы готовы дать вам возможность изучить артефакт, если вы поделитесь с нами полученными знаниями.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Cooperation_Bonus_Name</Label>
+        <String>Принять обмен, зная, что второй стороне он выгодней.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Cooperation_Bonus_Dec</Label>
+        <String>Приняв обмен технологиями, мы получили +25 единиц исследования. Но вторая сторона получила намного больше.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Cooperation_String1</Label>
+        <String>Вы согласились на обмен технологиями</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Cooperation_String2</Label>
+        <String>Ваша команда изучает артефакт, но, как назло, у них всё идет наперекосяк. -3 к отношениям с фракцией {PLAYERFACTION:1} на 20 месяцев и +25 единиц исследования для вас. </String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Independence_Bonus_Name</Label>
+        <String>Согласиться изучить артефакт и «случайно» его уничтожить.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Droppedit</Label>
+        <String>Вы умышленно уничтожили наш артефакт.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Isolation_Bonus_Name</Label>
+        <String>У нас нет на это времени.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Isolation_Bonus_Dec</Label>
+        <String>Отказавшись от обмена и изолировав себя, мы навредим дипломатическим отношениям, но сможем развиваться самостоятельно. -1 к отношениям с фракцией {PLAYERFACTION:1} на 20 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_TechnologyExchange_Isolation_String1</Label>
+        <String>Вы отказались помочь нам с артефактом.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Name</Label>
+        <String>Альтернативная энергия</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Desc</Label>
+        <String>Недавно наша цивилизация обнаружила альтернативный источник энергии. Мы уверены, что он откроет новую эпоху развития индустрии. Однако для работы этого источника необходим элерий — редкий для нашей территории ресурс. Нам нужна ваша помощь в развитии этого источника энергии. В обмен на это мы поделимся полученной прибылью.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Innovation_Name</Label>
+        <String>Предоставить элерий, даже если придется его занять.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Innovation_Bonus</Label>
+        <String>Энергосистема элерия</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Innovation_Dec</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 50 месяцев  </String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Tradition_Name</Label>
+        <String>Мы бы и рады помочь с проектом, но не хотим...</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Tradition_Dec</Label>
+        <String>{PLAYERFACTION:1}: -1 к отношениям на 25 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Tradition_String1</Label>
+        <String>Вы не поделились элерием для проекта.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AlternateEnergy_Innovation_String1</Label>
+        <String>Вы поделились элерием для проекта.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Name_5XA</Label>
+        <String>Пережившие катастрофу</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Dec_5XA</Label>
+        <String>На нашей планете случилась ужасающая природная катастрофа. Тысячи людей потеряли свой дом и ищут новый приют. Мы просим вас помочь нам в столь тяжелые времена. Сможете ли вы принять беженцев и помочь им найти новый дом?</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Compassion_Bonus_Name</Label>
+        <String>Принять беженцев.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Compassion_Bonus_Dec</Label>
+        <String>+1 к отношениям.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeesCompassion_String1</Label>
+        <String>Вы приняли наших беженцев.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Cruelty_Bonus_Name</Label>
+        <String>Есть идея получше — мы заберем их и сделаем рабами.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_Refugees_Cruelty_Bonus_Dec</Label>
+        <String>Продать беженцев своим людям за 300 кредитов. -2 к отношениям с фракцией {PLAYERFACTION:1} на 50 месяцев.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeesCruelty_String1</Label>
+        <String>Вы поработили беженцев!</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Name</Label>
+        <String>Спор за территорию</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Dec</Label>
+        <String>На нашей земле находятся спорные территории, богатые ресурсами. К сожалению, вражеская политическая фракция заявила о своих правах на них. Мы готовы к переговорам, но нам нужна ваша поддержка. Если вы поддержите наше заявление о правах на эти земли, мы поделимся с вами ресурсами. Если же вы займете нейтральную позицию, мы вряд ли сможем поддерживать дружеские отношения.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Compassion_Bonus_Name</Label>
+        <String>Поддержать их право на земли и получить ресурсы в надежде, что вражеская фракция не обретет власть.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Compassion_Bonus_Dec</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 75 ходов</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritoryCompassion_String1</Label>
+        <String>Ты поддержал мое утверждение.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Authority_Bonus_Name</Label>
+        <String>Отказаться и не вмешиваться в спор.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritory_Authority_Bonus_Dec</Label>
+        <String>{PLAYERFACTION:1}: -2 к отношениям на 25 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DisputedTerritoryAuthority_String1</Label>
+        <String>Вы заняли нейтральную позицию в споре за земли</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Name</Label>
+        <String>Помощь кораблю</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Dec</Label>
+        <String>Одно из наших грузовых судов попало в ионный шторм, потерпело бедствие и затерялось в космосе неподалеку от ваших территорий. Мы надеемся на вашу помощь.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Compassion_Bonus_Name</Label>
+        <String>Отправить команду для спасения корабля.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Compassion_Bonus_Dec</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShipCompassion_String1</Label>
+        <String>Ты помог нашему торговому кораблю, севшему на мель.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Authority_Bonus_Name</Label>
+        <String>Взять налог с груза ради выгоды.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShip_Authority_Bonus_Dec</Label>
+        <String>+300 кредитов и -2 к отношениям с фракцией {PLAYERFACTION:1} на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_DamagedTradeShipAuthority_String1</Label>
+        <String>Вы захватили наш корабль.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Name_0X56CB</Label>
+        <String>Артефакт Владыки Ужаса</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Dec_0X56CB</Label>
+        <String>Мы обнаружили некое устройство, оставленное некогда Владыкой Ужаса. Мы не уверены, что это на самом деле, и хотели бы предложить одному из ваших ученых взглянуть на артефакт.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Authority_Bonus_Name_0X56CB</Label>
+        <String>Забрать артефакт и активировать его.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Authority_Bonus_Dec_0X56CB</Label>
+        <String>{PLAYERFACTION:1}: неясно, но -1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifactAuthority_String1_0X56CB</Label>
+        <String>Вы оставили древний артефакт себе</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Compassion_Bonus_Name_0X56CB</Label>
+        <String>Собрать команду для изучения артефакта.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifact_Compassion_Bonus_Dec_0X56CB</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_AncientArtifactCompassion_String1_0X56CB</Label>
+        <String>Изучение артефакта.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Name_0X56CD</Label>
+        <String>Колонизация не удалась</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Dec_0X56CD</Label>
+        <String>Часть нашего народа решила захватить другие миры без нашего ведома. Их корабль потерпел бедствие, пассажиры погибли, а сам корабль унесло к вашей территории. Помогите нам вернуть корабль. Взамен вы можете забрать всё, что найдете на корабле.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Compassion_Bonus_Name_0X56CD</Label>
+        <String>Найти и вернуть корабль, оставив себе немалые запасы, найденные на корабле.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Compassion_Bonus_Dec_0X56CD</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Compassion_Bonus_Stat_0X56CD</Label>
+        <String>Товары с корабля</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisisCompassion_String1_0X56CD</Label>
+        <String>Вы вернули наших товарищей.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Cruelty_Bonus_Name_0X56CD</Label>
+        <String>Думаю, мы просто заберем корабль вместе с товарами.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisisEvil_String1_0X56CD</Label>
+        <String>Вы украли наши товары!</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_RefugeeCrisis_Evil_Bonus_Dec_0X56CD</Label>
+        <String>{PLAYERFACTION:1}: -1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Name_0X47AE</Label>
+        <String>Враг государства</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Dec_0X47AE</Label>
+        <String>Один из наших великих генералов затеял государственный переворот! Мы раскрыли его коварный план, но он скрылся от наших войск и сбежал на вашу планету. Ваше сотрудничество в его поимке и выдаче невероятно важно для нас.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Authority_Bonus_Name_0X47AE</Label>
+        <String>Мы найдем и доставим предателя</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Authority_Bonus_Dec_0X47AE</Label>
+        <String>{PLAYERFACTION:1}: +1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X57AE</Label>
+        <String>Это не наша забота. Пусть делает что хочет.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X47AE</Label>
+        <String>Мы вызвали недовольство фракции {PLAYERFACTION:1}, а беглец натворил немало бед. Но за ним забавно наблюдать.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitive_Calm_Bonus_Stat_0X47AE</Label>
+        <String>Занятный беглец</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CoupFugitiveAuthority_String1_0X47AE</Label>
+        <String>Вы принесли нам голову предателя.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Name_0X47AB</Label>
+        <String>Инвазивный вид</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Dec_0X47AB</Label>
+        <String>До нас дошли сведения, что с вашими товарами мы также получили жуков-вредителей. От них одни проблемы. Мы требуем выплаты в 500 кредитов — их как раз хватит на восстановление наших земель.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Comp_Bonus_Name_0X47AB</Label>
+        <String>Компенсировать ущерб.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Cruel_Bonus_Name_0X47AB</Label>
+        <String>Не наша забота.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Comp_Bonus_Dec_0X47AB</Label>
+        <String>Заплатить сколько попросят. Отдадим им месторождение монсатия.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Cruel_Bonus_Dec_0X47AB</Label>
+        <String>{PLAYERFACTION:1}: -1 к отношениям на 50 месяцев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_InvasiveSpecies_Cruel_String1_0X47AB</Label>
+        <String>Ваши жуки разрушают наш мир.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Name_0X9A7BC</Label>
+        <String>Культурный натиск</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Dec_0X9A7BC</Label>
+        <String>Безжалостный поток вашей музыки и культуры наводнил наш мир, заполонив каждый его уголок. Звонкие мелодии и заразительные ритмы звучат на каждом углу, внося суету в гармонию нашего мира и его жителей. Пестрые нити ваших традиций и обычаев вплетаются в нашу культуру, угрожая самому существованию нашей цивилизации. Просим немедленно вмешаться и утихомирить культурную бурю.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Authority_Bonus_Name_0X9A7BC</Label>
+        <String>Ввести строгие ограничения в культуре</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Authority_Bonus_Dec_0X9A7BC</Label>
+        <String>Мы потратили немало денег, но укрепили отношения с фракцией {PLAYERFACTION:1}. </String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasionAuthority_String1_0X9A7BC</Label>
+        <String>Вы приняли меры по сохранению культуры.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Compassion_Bonus_Name_0X9A7BC</Label>
+        <String>Поддерживать культурный обмен и распространять их культуру среди нашего народа.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Compassion_Bonus_Dec_0X9A7BC</Label>
+        <String>Поддерживать культурный обмен и распространять их культуру среди нашего народа. Однако мы не сможем влиять на развитие нового поколения...</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Calm_Bonus_Name_0X9A7BC</Label>
+        <String>Мы продадим нашу музыку местным исполнителям.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Calm_Bonus_Dec_0X9A7BC</Label>
+        <String>Нашим решением довольны обе стороны.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Calm_Bonus_Stat_0X9A7BC</Label>
+        <String>Культурный обмен</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasionCalm_String1_0X9A7BC</Label>
+        <String>Нам нравится ваша музыка.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Event_CulturalInvasion_Compassion_Bonus_Stat_0X9A7BC</Label>
+        <String>Соглашение об обмене</String>
+    </StringTable>
 
-Что нам следует сделать с этим артефактом?</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Opportunity_Bonus_Name</Label>
-    <String>Изучите артефакт для технологического прогресса.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Tradition_Bonus_Name</Label>
-    <String>Сохраните артефакт в качестве символа нашего наследия.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Name</Label>
-    <String>Миграция Космических Существ</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Dec</Label>
-    <String>Массовая миграция странных космических существ проходит через нашу территорию. Они создают хаос на своем пути. На нас оказывается большое политическое давление, чтобы уничтожить этих существ, но мы слышали, что вы неравнодушны к таким вещам.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Compassion_Name</Label>
-    <String>Защитите существ</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Compassion_Dec</Label>
-    <String>Мы защитим космических существ и обеспечим их безопасный проход, заслуживая доброжелательность других сострадательных фракций.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigrationCompassion_String1</Label>
-    <String>Вы защитили космических китов</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Pragmatism_Name</Label>
-    <String>У меня есть лучшая идея, мы уничтожим этих существ и извлечем из них новые знания.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_SpaceWhaleMigration_Pragmatism_Dec</Label>
-    <String>Эти существа не будут слишком страдать. Возможно.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Name</Label>
-    <String>Обмен Технологиями</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Dec</Label>
-    <String>Наши героические исследователи нашли артефакт Предтеч, оставленный так называемыми Арнорами. Мы не можем его понять. Нам предложили, что вы, возможно, сможете разгадать его. Мы готовы позволить вам взглянуть на него при условии, что вы поделитесь с нами тем, что обнаружите.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Cooperation_Bonus_Name</Label>
-    <String>Примите обмен, зная, что это принесет им больше пользы.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Cooperation_Bonus_Dec</Label>
-    <String>Принимая обмен технологиями, мы получаем +25 единиц исследований. Однако, они получили гораздо больше.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Cooperation_String1</Label>
-    <String>Вы приняли обмен технологиями</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Cooperation_String2</Label>
-    <String>Ваша команда будет изучать артефакт и столкнется с острым случаем "масляных пальцев". -3 к отношениям с {PLAYERFACTION:1} на 20 месяцев. +25 к исследованиям для вас.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Independence_Bonus_Name</Label>
-    <String>Согласиться посмотреть на артефакт, а затем "случайно" уничтожить его.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Droppedit</Label>
-    <String>Вы намеренно испортили наш артефакт.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Isolation_Bonus_Name</Label>
-    <String>Мы слишком заняты для этого.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Isolation_Bonus_Dec</Label>
-    <String>Отказавшись от обмена технологиями и изолировав себя, мы можем натянуть дипломатические отношения, но сможем сосредоточиться на своем пути. -1 отношения с {PLAYERFACTION:1} в течение 20 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_TechnologyExchange_Isolation_String1</Label>
-    <String>Вы отказались помочь нам с артефактом.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Name</Label>
-    <String>Альтернативный источник энергии</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Desc</Label>
-    <String>Наша цивилизация недавно обнаружила альтернативный источник энергии, который, как мы верим, приведет к революции в наших отраслях. Однако этот источник энергии требует Элериума, редкого ресурса на нашей территории. Мы просим вашей помощи в развитии этого источника энергии. Взамен мы готовы поделиться выгодами с вашей цивилизацией.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Innovation_Name</Label>
-    <String>Предоставьте Элериум для исследований, даже если нам придется занять немного.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Innovation_Bonus</Label>
-    <String>Энергетическая система Элериум</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Innovation_Dec</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 50 месяцев. </String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Tradition_Name</Label>
-    <String>Мы бы с удовольствием помогли с этим проектом, но мы не хотим...</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Tradition_Dec</Label>
-    <String>-1 к отношениям с {PLAYERFACTION:1} на протяжении 25 месяцев.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Tradition_String1</Label>
-    <String>Вы не помогли нам с проектом Elerium.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AlternateEnergy_Innovation_String1</Label>
-    <String>Вы помогли нам с проектом Elerium.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Name_5XA</Label>
-    <String>Беженцы от катастрофы</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Dec_5XA</Label>
-    <String>Наша родная планета страдает от разрушительного природного катастрофы. Тысячи наших людей были вынуждены покинуть свои дома и ищут убежища. Мы просим о вашей помощи в этот отчаянный момент. Примете ли вы этих беженцев и поможете им найти новый дом?</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Compassion_Bonus_Name</Label>
-    <String>Примите беженцев.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Compassion_Bonus_Dec</Label>
-    <String>+1 к отношениям..</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeesCompassion_String1</Label>
-    <String>Вы приняли наших беженцев.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Cruelty_Bonus_Name</Label>
-    <String>У меня есть лучшая идея. Мы подберем их и поставим на работу в качестве рабов.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_Refugees_Cruelty_Bonus_Dec</Label>
-    <String>Продайте их одному из ваших людей за 300 кредитов. -2 к отношениям с {PLAYERFACTION:1} в течение 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeesCruelty_String1</Label>
-    <String>Вы поработили наших беженцев!</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Name</Label>
-    <String>Спорная Территория</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Dec</Label>
-    <String>Наша территория включает в себя спорную область, богатую ресурсами. К сожалению, другая политическая фракция на нашей планете также претендует на нее. Мы открыты для переговоров, но нам нужна ваша поддержка. Если вы поддержите наши претензии, мы поделимся с вами ресурсами. Однако, если вы останетесь нейтральны, мы, возможно, не сможем поддерживать дружественные отношения.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Compassion_Bonus_Name</Label>
-    <String>Поддержите их претензии и поделитесь ресурсами, надеясь, что конкурирующая фракция никогда не придет к власти.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Compassion_Bonus_Dec</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 75 ходов.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritoryCompassion_String1</Label>
-    <String>Вы поддержали мои претензии на спорную территорию</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Authority_Bonus_Name</Label>
-    <String>Оставайтесь нейтральными и позвольте им разрешить спор.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritory_Authority_Bonus_Dec</Label>
-    <String>-2 к отношениям с {PLAYERFACTION:1} на протяжении 25 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DisputedTerritoryAuthority_String1</Label>
-    <String>Вы остались нейтральными на спорной территории</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Name</Label>
-    <String>Поврежденный Торговый Корабль</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Dec</Label>
-    <String>Один из наших грузовиков с родной планеты был поврежден ионным штормом, из-за чего он остался в глубоком космосе возле вашей территории. Нам бы хотелось получить некоторую помощь.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Compassion_Bonus_Name</Label>
-    <String>Отправьте помощь к кораблю, оказавшемуся в беде.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Compassion_Bonus_Dec</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShipCompassion_String1</Label>
-    <String>Вы отправили помощь нашему сбитому торговому кораблю</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Authority_Bonus_Name</Label>
-    <String>Используйте возможность обложить их груз налогом.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShip_Authority_Bonus_Dec</Label>
-    <String>+300 кредитов и -2 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_DamagedTradeShipAuthority_String1</Label>
-    <String>Вы захватили наш грузовик.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Name_0X56CB</Label>
-    <String>Артефакт Повелителя Ужаса</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Dec_0X56CB</Label>
-    <String>Мы нашли какое-то устройство, оставленное Повелителями Ужаса. Мы не совсем уверены, что это такое и хотели бы, чтобы один из ваших исследователей согласился его изучить.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Authority_Bonus_Name_0X56CB</Label>
-    <String>Возьмите артефакт и активируйте его.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Authority_Bonus_Dec_0X56CB</Label>
-    <String>Неизвестно, но -1 отношений с {PLAYERFACTION:1} в течение 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifactAuthority_String1_0X56CB</Label>
-    <String>Вы оставили древний артефакт для себя</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Compassion_Bonus_Name_0X56CB</Label>
-    <String>Создайте совместную рабочую группу для изучения артефакта.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifact_Compassion_Bonus_Dec_0X56CB</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_AncientArtifactCompassion_String1_0X56CB</Label>
-    <String>Группа по работе с Артефактом.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Name_0X56CD</Label>
-    <String>Неудачная попытка колонизации</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Dec_0X56CD</Label>
-    <String>Некоторые из наших людей решили попытаться колонизировать миры без нашего одобрения. Их корабль потерпел неудачу, и пассажиры мертвы, а корабль затерялся около вашего пространства. Мы просим вас вернуть корабль для нас. Вы можете оставить для себя то, что найдете на корабле.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Compassion_Bonus_Name_0X56CD</Label>
-    <String>Найдите и верните корабль, сохраняя огромный запас лакомств, который вы найдете на корабле.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Compassion_Bonus_Dec_0X56CD</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Compassion_Bonus_Stat_0X56CD</Label>
-    <String>Блага корабля беженцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisisCompassion_String1_0X56CD</Label>
-    <String>Вы вернули наших потерянных спутников.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Cruelty_Bonus_Name_0X56CD</Label>
-    <String>Думаю, мы просто заберем корабль и вещи на борту.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisisEvil_String1_0X56CD</Label>
-    <String>Вы украли наши товары!</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_RefugeeCrisis_Evil_Bonus_Dec_0X56CD</Label>
-    <String>-1 отношения с {PLAYERFACTION:1} в течение 50 месяцев.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Name_0X47AE</Label>
-    <String>Враг государства</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Dec_0X47AE</Label>
-    <String>Один из наших уважаемых генералов осмелился устроить против меня государственный переворот! Мы успешно сорвали его предательские планы, но ему удалось уйти от наших сил и укрыться на вашей родной планете. Крайне важно, чтобы вы сотрудничали в возвращении этого предателя нам.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Authority_Bonus_Name_0X47AE</Label>
-    <String>Мы найдем и доставим предателя</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Authority_Bonus_Dec_0X47AE</Label>
-    <String>+1 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X57AE</Label>
-    <String>Это действительно не наша проблема. Он может делать что хочет..</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Calm_Bonus_Dec_0X47AE</Label>
-    <String>Мы раздражаем {PLAYERFACTION:1}, и действия беглеца некоторое время доставляют нам боли. Но его выходки превращаются в комедийное шоу.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitive_Calm_Bonus_Stat_0X47AE</Label>
-    <String>Забавный беглец</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CoupFugitiveAuthority_String1_0X47AE</Label>
-    <String>Вы принесли нам голову нашего предателя.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Name_0X47AB</Label>
-    <String>Инвазивные Виды</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Dec_0X47AB</Label>
-    <String>Мы получаем сообщения о разрушениях из-за вредителей, которые пришли с вашей родной планеты и теперь находятся на нашей планете через импорт. Мы требуем, чтобы вы заплатили нам 500 кредитов на покрытие затрат по восстановлению окружающей среды.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Comp_Bonus_Name_0X47AB</Label>
-    <String>Компенсировать ущерб.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Cruel_Bonus_Name_0X47AB</Label>
-    <String>Не наша проблема.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Comp_Bonus_Dec_0X47AB</Label>
-    <String>Платите им то, что они хотят. Мы даём им депозит Monsantium и теряем один.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Cruel_Bonus_Dec_0X47AB</Label>
-    <String>-1 к отношениям с {PLAYERFACTION:1} на 50 месяцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_InvasiveSpecies_Cruel_String1_0X47AB</Label>
-    <String>Ваши буки наносят ущерб нашему миру.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Name_0X9A7BC</Label>
-    <String>Культурное Вторжение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Dec_0X9A7BC</Label>
-    <String>Неутомимый прилив музыки и культуры вашего народа затопил наши миры, проникнув в каждый уголок нашего общества. Яркие мелодии и заразительные ритмы эхом раздаются по нашим улицам, отвлекая наших граждан и нарушая гармонию нашего образа жизни. Яркий ковер ваших традиций и обычаев переплетается с нашим, угрожая разорвать самую ткань нашей цивилизации. Мы требуем, чтобы вы вмешались и успокоили эту бурю.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Authority_Bonus_Name_0X9A7BC</Label>
-    <String>Введение строгих культурных регуляций.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Authority_Bonus_Dec_0X9A7BC</Label>
-    <String>Мы тратим деньги и контролируем, но улучшаем отношения с {PLAYERFACTION:1}.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasionAuthority_String1_0X9A7BC</Label>
-    <String>Вы предприняли шаги для сохранения нашей культуры.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Compassion_Bonus_Name_0X9A7BC</Label>
-    <String>Содействуем культурному обмену, активно продвигая их культуру среди нашего народа.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Compassion_Bonus_Dec_0X9A7BC</Label>
-    <String>Способствуем культурному обмену, активно продвигая их культуру среди нашего народа. Это уменьшит нашу способность к генерации влияния.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Calm_Bonus_Name_0X9A7BC</Label>
-    <String>Мы будем лицензировать нашу музыку для местных исполнителей.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Calm_Bonus_Dec_0X9A7BC</Label>
-    <String>Мы улучшаем настроение людей с обеих сторон.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Calm_Bonus_Stat_0X9A7BC</Label>
-    <String>Программа культурного обмена</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasionCalm_String1_0X9A7BC</Label>
-    <String>Нашим людям нравится ваша музыка.</String>
-  </StringTable>
-  <StringTable>
-    <Label>Event_CulturalInvasion_Compassion_Bonus_Stat_0X9A7BC</Label>
-    <String>Соглашение о валютном обмене</String>
-  </StringTable>
+    <StringTable>
+        <Label>Event_CultureExchange_Name_0X9A7BC</Label>
+        <String>Фестиваль культурного обмена</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Dec_0X9A7BC</Label>
+        <String>У нас есть к тебе предложение. В интересах мира мы хотели бы провести фестиваль культурного обмена. Искусство, музыка и традиции обеих цивилизаций могли бы способствовать взаимопониманию и единению.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Choice1_0X9A7BC</Label>
+        <String>Провести фестиваль</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Choice1_Dec_0X9A7BC</Label>
+        <String>Мы согласились поддержать фестиваль — наплыв туристов и обмен культурными традициями могут пойти на пользу. Однако нам придется потратиться, чтобы проследить за порядком.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Choice2_0X9A7BC</Label>
+        <String>Отклонить предложение</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Choice2_Dec_0X9A7BC</Label>
+        <String>Мы отказались проводить культурное мероприятие. Для нас более важны стабильность и спокойствие в нашем мире. Однако это решение вряд ли обрадует фракцию {PLAYERFACTIONLONG:1}.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CultureExchange_Diplomatic_0X9A7BC</Label>
+        <String>Вы отказались провести фестиваль</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Name</Label>
+        <String>Предложение паломничества</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Dec</Label>
+        <String>Для нашего народа очень важна духовность. Согласно поверьям, есть земли, на которых люди могут установить контакт с древним Митлиаром, но они в ваших владениях. Мы будем благодарны, если вы пустите нас на эти земли.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Choice1_Name</Label>
+        <String>Пустить паломников.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Choice1_Dec</Label>
+        <String>Мы осознаем духовную ценность этого места и уважаем традиции, поэтому пропускаем паломников. Придется потратить часть контроля, чтобы обеспечить им безопасность.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Choice2_Name</Label>
+        <String>Нет, я отказываюсь.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_0x49B2_Choice2_Dec</Label>
+        <String>Нам еще не хватало инопланетных шпионов на нашей территории.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_GoodDiplomaticReason_0x49B2</Label>
+        <String>Благодарность за паломничество</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CivPilgrimage_NegativeDiplomaticReason_0x49B2</Label>
+        <String>Разочарование отказом</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Name</Label>
+        <String>Жуткий запрос</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Dec</Label>
+        <String>В жизни нашей прекрасной нации {PLAYERFACTIONLONG:1} наступает важный период — священный ритуал продолжения рода.[BR][BR]Чтобы ритуал прошел успешно, необходимы разумные существа для пиршества. Мы хотим, чтобы вы предоставили нам таких существ. Если вам тяжело решиться, просто выберите существ из тюрем. Так или иначе, важность этого события трудно переоценить. Примете ли вы сей жест доброй веры?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Choice1_Name</Label>
+        <String>Хорошо, скормим им всяких преступников.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Choice1_Dec</Label>
+        <String>Это решение вызовет волнения у населения, но улучшит дипломатические отношения... на какое-то время.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Choice2_Name</Label>
+        <String>Ни за что.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_0x15E9_Choice2_Dec</Label>
+        <String>Они будут недовольны таким решением, но наши люди и так вас особо не уважают.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_PositiveDiplomaticReason_0x15E9</Label>
+        <String>Вы поддержали фестиваль плоти</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_FeastProposal_NegativeDiplomaticReason_0x15E9</Label>
+        <String>Вы испортили фестиваль</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Name</Label>
+        <String>Кровавое предложение</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Dec</Label>
+        <String>Мы, {PLAYERFACTIONLONG:1}, уже долгие годы следуем нашей традиции проводить соревнования, чтобы выявить самых сильных и умных членов общества. Для разминки нашим воинам необходимы представители слабого вида, и ваш народ отлично подходит на эту роль.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Choice1_Name</Label>
+        <String>А можно посмотреть?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Choice1_Dec</Label>
+        <String>Наш народ ужаснется такому решению, но это поможет предотвратить конфликт с жестокой фракцией {PLAYERFACTIONLONG:1}.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Choice2_Name</Label>
+        <String>Отказаться от жуткой идеи</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_0x23F4_Choice2_Dec</Label>
+        <String>Наш народ будет этому рад, но наши отношения с фракцией ухудшатся.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_PositiveDiplomaticReason_0x23F4</Label>
+        <String>Вы знаете свое место</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SportRequest_NegativeDiplomaticReason_0x23F4</Label>
+        <String>Вы слишком дерзки</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Name</Label>
+        <String>Подводный фестиваль</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Dec</Label>
+        <String>Фракция {PLAYERFACTIONLONG:1} будет очень рада видеть ваш народ на нашем Подводном фестивале. Это особый праздник в честь наших предков-амфибий. От вас потребуются лучшие пловцы, готовые своими глазами увидеть глубины океана. Вам выпадет шанс получить уникальный опыт, но без рисков не обойтись. [BR][BR]Примете ли вы предложение?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Choice1_Name</Label>
+        <String>Мы отправим добровольцев.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Choice1_Dec</Label>
+        <String>Это отличная возможность для культурного обмена, хоть и определенный риск для наших пловцов.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Choice2_Name</Label>
+        <String>Это слишком опасное мероприятие.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_0x3C4D_Choice2_Dec</Label>
+        <String>Найдется немало желающих поучаствовать, но если кто-то погибнет, скандала не избежать.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_PositiveDiplomaticReason_0x3C4D</Label>
+        <String>Вы отличные пловцы</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_SubmersionFestival_NegativeDiplomaticReason_0x3C4D</Label>
+        <String>Вы трусы</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Name</Label>
+        <String>Под водой</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Dec</Label>
+        <String>Наш народ, {PLAYERFACTIONLONG:1}, обладает глубокой связью с водой. Потому мы хотели бы исследовать подводный мир ваших океанов и их обитателей, чтобы постичь тайны этих вод.[BR][BR]Уверяем, нами движет лишь научный интерес. Позволите нам провести исследование?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Choice1_Name</Label>
+        <String>Отличная идея.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Choice1_Dec</Label>
+        <String>Это шаг к межзвездному союзу, однако жители наших побережий обеспокоены.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Choice2_Name</Label>
+        <String>Нет, наши миры к такому не готовы.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_0x4F5A_Choice2_Dec</Label>
+        <String>Мы ценим свою автономию и беспокойство нашего народа. Доступ к морям будет лишь у нас.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_PositiveDiplomaticReason_0x4F5A</Label>
+        <String>Вы открыли нам доступ</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_OceanExploration_NegativeDiplomaticReason_0x4F5A</Label>
+        <String>Вы отказали в исследовании</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Name</Label>
+        <String>Смысл</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Dec</Label>
+        <String>Как ты знаешь, {PLAYERFACTIONLONG:1} были просвещены Путем. Мы хотим принести вам спасение, устанавливая святыни на ваших планетах и обучая ваш народ нашим священным верованиям. Прими Путь и позволь нам наставить тебя на путь истинный. Принимаешь ли ты?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Choice1_Name</Label>
+        <String>Отличная идея, стройте алтари.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Choice1_Dec</Label>
+        <String>На какое-то время это приостановит наше культурное влияние.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Choice2_Name</Label>
+        <String>Наш народ не заинтересован.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_0x5A1B_Choice2_Dec</Label>
+        <String>Они могут быть недовольны таким решением, но так мы сохраним свое влияние.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_PositiveDiplomaticReason_0x5A1B</Label>
+        <String>Вы приняли Смысл</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DevoutShrines_NegativeDiplomaticReason_0x5A1B</Label>
+        <String>Вы отказались</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Name</Label>
+        <String>Шпионы снов</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Dec</Label>
+        <String>Мы следим за вами. Мы знаем, что ваши люди способны проникать в сны народа {PLAYERFACTIONLONG:1}. И нет, мы не сошли с ума. [BR][BR]Мы требуем 10 единиц антиматерии, чтобы создать щит и обезопасить разум нашего народа.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Name</Label>
+        <String>Мы дадим вам антиматерию, но вряд ли она поможет.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice1_Dec</Label>
+        <String>Их претензии необоснованны, но так мы сохраним мир.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Name</Label>
+        <String>Значит, говорите, вы не сошли с ума...</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_0x8C3D_Choice2_Dec</Label>
+        <String>Они придут в ярость, но таким бредом нас не запугать.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_PositiveDiplomaticReason_0x8C3D</Label>
+        <String>Вы не следите за нами во сне</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_DreamSpyingAccusation_NegativeDiplomaticReason_0x8C3D</Label>
+        <String>Вы следите за нами во сне</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Name</Label>
+        <String>Орудия войны</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Dec</Label>
+        <String>Народу {PLAYERFACTIONLONG:1} удалось найти некоторые... ценные военные припасы. Возможно, вас они заинтересуют. Это оружие однозначно поможет вам стать сильнее. Однако эта сделка должна остаться в секрете. Ну как, по рукам?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Name</Label>
+        <String>Мощное оружие для наших кораблей? Отлично!</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Choice1_Dec</Label>
+        <String>Эти припасы нам пригодятся, но сделка снизит наши дипломатические навыки.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Name</Label>
+        <String>Мы откажемся.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_0xA12F_Choice2_Dec</Label>
+        <String>Мы не склонны принимать подозрительное оружие от других государств.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_PositiveDiplomaticReason_0xA12F</Label>
+        <String>Вы рады оружию</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_WarProfiteerDeal_NegativeDiplomaticReason_0xA12F</Label>
+        <String>Вы глупы</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Name</Label>
+        <String>Редкий шанс</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Dec</Label>
+        <String>У нас, народа {PLAYERFACTIONLONG:1}, есть предложение специально для вас. Редкий кристалл гармонии, способный улучшать благосостояние и продуктивность поселений. Просим взамен лишь небольшую сумму. </String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Choice1_Name</Label>
+        <String>Согласиться</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Choice1_Dec</Label>
+        <String>Хорошая идея.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Choice2_Name</Label>
+        <String>Нам это не по карману.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_TraderDeal_0xC45D_Choice2_Dec</Label>
+        <String>Лучше в другой раз, когда наша казна пополнится.</String>
+    </StringTable>
+    
+
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Name</Label>
+        <String>Уроки убеждения</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Dec</Label>
+        <String>Наши торговцы владеют искусством убеждения благодаря богатому опыту. Мы готовы поделиться с вами нашими секретами — конечно же, не бесплатно. Такие знания точно пригодятся вам в переговорах. Согласны?</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Choice1_Name</Label>
+        <String>Получить знания</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Choice1_Dec</Label>
+        <String>Искусство убеждения — важный навык. Мы согласны. С этими знаниями мы сможем выгодно торговать.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Choice2_Name</Label>
+        <String>Отказаться</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_PersuasionOffer_0xC45E_Choice2_Dec</Label>
+        <String>Мы придерживаемся своих методов переговоров.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Name</Label>
+        <String>Резонанс кристалла</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Dec</Label>
+        <String>Народ {PLAYERFACTION:1} предлагает вам сделку. Мы способны обнаружить гармонии, которые вам даже трудно представить. Мы готовы поделиться с вами знанием и обучить поиску гармоний — это продвинет вашу науку вперед. Однако взамен мы хотели бы получить доступ к вашим мирам с залежами уникальных кристаллов.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Choice1_Name</Label>
+        <String>Дать доступ.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Choice1_Dec</Label>
+        <String>Древние знания о вселенной бесценны. Мы согласны.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Choice2_Name</Label>
+        <String>Нет, спасибо.</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Choice2_Dec</Label>
+        <String>Наши ресурсы принадлежат лишь нам. Мы откажем, хотя они будут этим недовольны.</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>Event_CrystalResonance_0xC45F_Diplomacy</Label>
+        <String>Это была... ошибка</String>
+    </StringTable>
+    
+    
+
+
 </StringTableList>
