@@ -1,231 +1,258 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+    <StringTable>
+        <Label>TestRandomCoreWorldEvent_Name</Label>
+        <String>Отладка: тест случ. события осн. мира</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestRandomCoreWorldEvent_Dec</Label>
+        <String>Чего бы вы хотели на: {PLANETNAME}?</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestRandomColonyEvent_Name</Label>
+        <String>Отладка: тест случ. события колон.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestRandomColonyEvent_Dec</Label>
+        <String>Чего бы вы хотели на: {PLANETNAME}?</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_Name</Label>
+        <String>Отладка: тест событ. гражд.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_Dec</Label>
+        <String>Блуп-блоп-бип. Что бы вы хотели?</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_1_Bonus_Name</Label>
+        <String>Мне нужны граждане.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_1_Bonus_Dec</Label>
+        <String>Йор-солдат, корат-инженер, торианин-ученый.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_2_Bonus_Name</Label>
+        <String>Мне нужны лидеры.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_2_Bonus_Dec</Label>
+        <String>Человек-правитель, снафи-дипломат и йор-лидер.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_3_Bonus_Name</Label>
+        <String>Сейчас ничего.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestCitizenEvent_3_Bonus_Dec</Label>
+        <String>Ну и скука</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_Name</Label>
+        <String>Отладка: тест дипл. событ.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_Dec</Label>
+        <String>Мы нашли заплутавшего гражданина фракции {PLAYERFACTION:1}, он смотрит на нас с надеждой. Как отнесемся к нему?</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_1_Bonus_Name</Label>
+        <String>Тепло</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_1_Bonus_Dec</Label>
+        <String>Отношения: +5 навсегда</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_1_ModDec</Label>
+        <String>Вы были так сердечны</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_2_Bonus_Name</Label>
+        <String>Просто</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_2_Bonus_Dec</Label>
+        <String>Отношения: +1 на 3 месяца</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_2_ModDec</Label>
+        <String>Вы были так добры</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_3_Bonus_Name</Label>
+        <String>Плохо</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_3_Bonus_Dec</Label>
+        <String>Отношения: -5 навсегда</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestDiplomacyEvent_3_ModDec</Label>
+        <String>Вы были так злы</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Name</Label>
+        <String>Отладка: выбор планеты</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Dec</Label>
+        <String>Выбрать для тестовых заданий: {PLANETNAME}?</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_1_Name</Label>
+        <String>Да</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_1_Dec</Label>
+        <String>Ну же</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_2_Name</Label>
+        <String>Не</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_2_Dec</Label>
+        <String>Не нравится выбор</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_Name</Label>
+        <String>Отладка: выбор планеты ДАЛЕЕ</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_Dec</Label>
+        <String>Поздравляем, выбрано: {PLANETNAME}.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_1_Name</Label>
+        <String>Удалить флажок выбора планеты</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_1_Dec</Label>
+        <String>Я всё</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_2_Name</Label>
+        <String>Оставить флаж.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_PickAPlanet_Followup1_2_Dec</Label>
+        <String>Друг. задания ждут</String>
+    </StringTable>
+    <!-- Test popup -->
+    <StringTable>
+        <Label>TestEvent_Popup_Name</Label>
+        <String>Отл.: насел.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Popup_Dec</Label>
+        <String>Вы кого-то наняли, отлично. Теперь население вышей планеты будет расти.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Spawn_Faction_Choice_1_Dec</Label>
+        <String>Добавляет ториан</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Spawn_Faction_Choice_1_Bonus_Dec</Label>
+        <String>Торианская цивилизация: +1</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Spawn_SubFaction_Choice_1_Dec</Label>
+        <String>Выделяет подфракцию вашей цивилизации</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Spawn_SubFaction_Choice_1_Bonus_Dec</Label>
+        <String>Противник: +1</String>
+    </StringTable>
+    <StringTable>
+        <Label>TEST_SPAWN_SUB_FACTION_NAME</Label>
+        <String>Освобожденный</String>
+    </StringTable>
+    <StringTable>
+        <Label>TEST_SPAWN_SUB_FACTION_LEADERNAME</Label>
+        <String>Рен Сере</String>
+    </StringTable>
+    <StringTable>
+        <Label>TEST_SPAWN_SUB_FACTION_LEADER_DESC</Label>
+        <String>Человек из народа, поклявшийся оберегать его свободу.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Popup_1_Name</Label>
+        <String>Всё</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_Popup_1_Dec</Label>
+        <String>путем</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GrowthBonus</Label>
+        <String>Назн. правит.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_SpawnFaction_Name</Label>
+        <String>Появил. нов. фракция</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_SpawnFaction_Dec</Label>
+        <String>Поискать новую фракцию, появившуюся рядом с вами.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Name</Label>
+        <String>Скандал</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Dec</Label>
+        <String>Ходят слухи, что{GOVERNORNAME}, правитель планеты {PLANETNAME}, решает проблемы своих друзей за счет благосостояния граждан.[BR][BR]Наши советники провели расследование и выяснили, что на самом деле ничего подобного не происходит, и {GOVERNORNAME} не склонен к коррупции.[BR][BR]Тем не менее, общество негодует и требует наказания для правителя, если мы сами не замешаны в покровительстве коррупционеров.    </String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Support_Name</Label>
+        <String>Правитель невиновен, и не должен быть наказан.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Support_Dec</Label>
+        <String>{GOVERNORNAME} — [ICON=LeaderStat_Loyalty_Icon] верность: +10</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Support_Label</Label>
+        <String>Вы мне помогли</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Name</Label>
+        <String>Осудить правителя. Мир политики жесток.</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Dec</Label>
+        <String>{GOVERNORNAME} — [ICON=LeaderStat_Loyalty_Icon] верность: -10</String>
+    </StringTable>
+    <StringTable>
+        <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Label</Label>
+        <String>Вы осудили меня</String>
+    </StringTable>
+
   <StringTable>
-    <Label>TestRandomCoreWorldEvent_Name</Label>
-    <String>Отладка: Тестирование случайного события в центральном мире</String>
+    <Label>TestEvent_FreeShip_Name</Label>
+    <String>Отладка: Получи бесплатную доставку</String>
   </StringTable>
   <StringTable>
-    <Label>TestRandomCoreWorldEvent_Dec</Label>
-    <String>Что вы хотели бы видеть на {PLANETNAME}?</String>
+    <Label>TestEvent_FreeShip_Dec</Label>
+    <String>Тебе нужен боевой корабль или конструктор?</String>
   </StringTable>
   <StringTable>
-    <Label>TestRandomColonyEvent_Name</Label>
-    <String>Отладка: Тест Случайного События Колонии</String>
+    <Label>TestEvent_FreeShip_1_Name</Label>
+    <String>Боевой корабль.</String>
   </StringTable>
   <StringTable>
-    <Label>TestRandomColonyEvent_Dec</Label>
-    <String>Что вы хотели бы видеть на {PLANETNAME}?</String>
+    <Label>TestEvent_FreeShip_1_Dec</Label>
+    <String>+1 боевой корабль</String>
   </StringTable>
   <StringTable>
-    <Label>TestCitizenEvent_Name</Label>
-    <String>Отладка: Тестовое событие гражданина</String>
+    <Label>TestEvent_FreeShip_2_Name</Label>
+    <String>Конструктор.</String>
   </StringTable>
   <StringTable>
-    <Label>TestCitizenEvent_Dec</Label>
-    <String>Bloop blop beep. Что бы вы хотели?</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_1_Bonus_Name</Label>
-    <String>Дайте мне несколько Граждан.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_1_Bonus_Dec</Label>
-    <String>Солдат Йор, Инженер Корат, Ученый Ториан</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_2_Bonus_Name</Label>
-    <String>Дайте мне несколько Лидеров.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_2_Bonus_Dec</Label>
-    <String>Губернатор Человек, Дипломат Snathi и Лидер Yor.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_3_Bonus_Name</Label>
-    <String>Сейчас ничего нет.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestCitizenEvent_3_Bonus_Dec</Label>
-    <String>Как скучно</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_Name</Label>
-    <String>Отладка: Тестовое событие Дипломатии</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_Dec</Label>
-    <String>Мы нашли блуждающего гражданина {PLAYERFACTION:1}, и он смотрит на нас с надеждой. Как нам отнестись к нему?</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_1_Bonus_Name</Label>
-    <String>Будьте добры.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_1_Bonus_Dec</Label>
-    <String>+5 к отношениям бесконечно</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_1_ModDec</Label>
-    <String>Вы были добры к нам</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_2_Bonus_Name</Label>
-    <String>Все будет хорошо.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_2_Bonus_Dec</Label>
-    <String>+1 к отношениям на 3 месяца</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_2_ModDec</Label>
-    <String>Вы были нормальными для нас</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_3_Bonus_Name</Label>
-    <String>Будь грубым.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_3_Bonus_Dec</Label>
-    <String>-5 к отношениям на неопределенный срок</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestDiplomacyEvent_3_ModDec</Label>
-    <String>Вы были злы на нас</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Name</Label>
-    <String>Отладка: Выберите планету</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Dec</Label>
-    <String>Прайм {PLANETNAME} для тестовых квестов на планете?</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_1_Name</Label>
-    <String>Да</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_1_Dec</Label>
-    <String>Сделай это</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_2_Name</Label>
-    <String>Нет</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_2_Dec</Label>
-    <String>Не нравится выбор</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_Name</Label>
-    <String>Отладка: Выберите планету ПОСЛЕДУЮЩЕЕ ДЕЙСТВИЕ</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_Dec</Label>
-    <String>Поздравляем, {PLANETNAME} был выбран.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_1_Name</Label>
-    <String>Удалить флаг инициализации квеста</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_1_Dec</Label>
-    <String>Я закончил</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_2_Name</Label>
-    <String>Держите флаг</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_PickAPlanet_Followup1_2_Dec</Label>
-    <String>Вас ждут еще задания</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Popup_Name</Label>
-    <String>Отладка: Всплывающее окно</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Popup_Dec</Label>
-    <String>Вы наняли кого-то, хорошая работа. Они теперь также способствуют росту населения вашей планеты.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Spawn_Faction_Choice_1_Dec</Label>
-    <String>Создает Торианцев</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Spawn_Faction_Choice_1_Bonus_Dec</Label>
-    <String>+ 1 Цивилизация Ториан</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Spawn_SubFaction_Choice_1_Dec</Label>
-    <String>Создает подфракцию вашей цивилизации</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Spawn_SubFaction_Choice_1_Bonus_Dec</Label>
-    <String>+ 1 Противник</String>
-  </StringTable>
-  <StringTable>
-    <Label>TEST_SPAWN_SUB_FACTION_NAME</Label>
-    <String>Освобожденные</String>
-  </StringTable>
-  <StringTable>
-    <Label>TEST_SPAWN_SUB_FACTION_LEADERNAME</Label>
-    <String>Ren Sere</String>
-  </StringTable>
-  <StringTable>
-    <Label>TEST_SPAWN_SUB_FACTION_LEADER_DESC</Label>
-    <String>Человек народа, клянущийся сохранить свой народ свободным.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Popup_1_Name</Label>
-    <String>Круто</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_Popup_1_Dec</Label>
-    <String>бобы</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GrowthBonus</Label>
-    <String>Вербованный Губернатор</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_SpawnFaction_Name</Label>
-    <String>Появилась Новая Фракция</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_SpawnFaction_Dec</Label>
-    <String>Ищите новую фракцию, которая появилась рядом с вами.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Name</Label>
-    <String>Скандал</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Dec</Label>
-    <String>{GOVERNORNAME}, губернатор {PLANETNAME}, широко известен тем, что, по общему мнению, он предпочитает личных друзей за счет граждан своего мира.[BR][BR]Наши советники расследовали обвинения и определили, что они необоснованны, и {GOVERNORNAME} ничего плохого не сделал.[BR][BR]Тем не менее, существует громкий общественный протест, требующий от нас хотя бы как-то наказать губернатора, иначе мы будем казаться соучастниками предполагаемой коррупции.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Support_Name</Label>
-    <String>Губернатор не сделал ничего плохого, и мы поддержим его.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Support_Dec</Label>
-    <String>[ICON=LeaderStat_Loyalty_Icon] +10 к лояльности для {GOVERNORNAME}</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Support_Label</Label>
-    <String>Ты стоял рядом со мной</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Name</Label>
-    <String>Осудите губернатора. Это цена политики.</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Dec</Label>
-    <String>[ICON=LeaderStat_Loyalty_Icon] -10 к лояльности для {GOVERNORNAME}</String>
-  </StringTable>
-  <StringTable>
-    <Label>TestEvent_GovernorLoyalty_Choice_Condemn_Label</Label>
-    <String>Вы осудили меня</String>
+    <Label>TestEvent_FreeShip_2_Dec</Label>
+    <String>+1 конструктор</String>
   </StringTable>
 </StringTableList>

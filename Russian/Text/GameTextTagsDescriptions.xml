@@ -1,75 +1,74 @@
-<?xml version='1.0' encoding='utf-8'?>
-<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-  <StringTable>
-    <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
-    <String>Некоторые теги просто представляют собой название тега в {}.[BR]Синтаксис: {GAMETAG} [BR]Пример: "{PLANETNAME} - отличное место для жизни!"[BR]У других есть : за которым следует номер GameTextIndex, чтобы различать множественные возможные замены.[BR]В тексте беседы, 1 - это Говорящий (игрок, начинающий разговор), 2 - это Слушающий (игрок, принимающий разговор), а 3 - это Третий игрок (игрок, о котором говорят Говорящий и Слушающий).[BR]В разговорах, где что-то предлагается, используйте GameTextIndex, чтобы указать, кто дает предмет (AMOUNT, TECHNAME, OBJECTNAME)[BR]Синтаксис: {GAMETAG:#} [BR]Пример 1: "Мы, {PLAYERFACTIONLONG:1} объявляем вам, {PLAYERFACTIONLONG:2}, войну"[BR]Пример 2: "{PLAYERFACTION:3} больше не существует."</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
-    <String>Краткое название цивилизации игрока</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
-    <String>Название цивилизации игрока</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
-    <String>Подробное описание фракции игрока</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
-    <String>Список особенностей фракций игрока</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_ORIGINALTEXT</Label>
-    <String>Оригинальный текст с подстановками перед обработкой в пост-процессе</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_PREVIOUSCONV</Label>
-    <String>Текстовый контекст предыдущего диалога с подстановками перед обработкой в пост-процессе</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
-    <String>Больше не используется. Используйте PLAYERFACTION или PLAYERFACTIONLONG вместо этого</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
-    <String>Имя лидера цивилизации игрока</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
-    <String>Ходов до завершения проекта</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
-    <String>Название проекта в очереди на строительство (верфь или планета)</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
-    <String>Используется для условия победы, при котором игра закончилась</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
-    <String>Список игроков, которые выполнили условие для победы</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
-    <String>Название обсуждаемой планеты</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
-    <String>Количество чего-либо, обычно кредитов, которые предлагаются/требуются/запрашиваются</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
-    <String>Название предлагаемой/требуемой/запрашиваемой технологии.</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
-    <String>Название предлагаемого/требуемого/запрашиваемого объекта</String>
-  </StringTable>
-  <StringTable>
-    <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
-    <String>Имя обсуждаемого работника</String>
-  </StringTable>
+﻿<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+    <StringTable>
+        <Label>GAMETAG_SYNTAX_WITH_DESCRIPTION</Label>
+        <String>Некоторые теги – это просто название тега в {}.[BR]Синтаксис: {GAMETAG} [BR]Пример: «{PLANETNAME} – отличное место для жизни!»[BR]Другие имеют символ :, за которым следует число, являющееся индексом GameTextIndex, чтобы различать несколько возможных замен.[BR]В разговорных текстах, 1 - это Говорящий (игрок, инициирующий разговор), 2 - это Слушающий (игрок, поддерживающий разговор) и 3 - это Сторонний игрок (игрок, о котором говорят Говорящий и Слушающий).[BR]В разговорах, где что-то предлагается, используйте GameTextIndex, чтобы указать, кто дает этот предмет (AMOUNT, TECHNAME, OBJECTNAME)[BR]Синтаксис: {GAMETAG:#} [BR]Пример 1: «Мы, {PLAYERFACTIONLONG:1} объявляем войну вам, {PLAYERFACTIONLONG:2}&quot;[BR]Пример 2: « {PLAYERFACTION:3} больше не существуют».</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTION</Label>
+        <String>Краткое название цивилизации игрока</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONLONG</Label>
+        <String>Название цивилизации игрока</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERFACTIONDESCRIPTION</Label>
+        <String>Длинное описание фракции игрока</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERTRAITSLIST</Label>
+        <String>Список свойств фракций игроков</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_ORIGINALTEXT</Label>
+        <String>Оригинальный текст с заменами перед постобработкой</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_PREVIOUSCONV</Label>
+        <String>Текст предыдущего разговора с заменами перед постобработкой</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLAYERRACE</Label>
+        <String>Не используется. Используйте PLAYERFACTION или PLAYERFACTIONLONG</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_LEADERNAME</Label>
+        <String>Имя лидера цивилизации игрока</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_TURNSTOCOMPLETE</Label>
+        <String>Ходов до завершения проекта</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PROJECTNAME</Label>
+        <String>Название проекта в очереди строительства (верфь или планета)</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_VICTORYCONDITION</Label>
+        <String>Используется для определения условий победы</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_VICTORSLIST</Label>
+        <String>Список игроков, выполнивших условие победы</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_PLANETNAME</Label>
+        <String>Название обсуждаемой планеты</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_AMOUNT</Label>
+        <String>Количество чего-либо, обычно кредитов, предлагаемых/требуемых/запрашиваемых</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_TECHNAME</Label>
+        <String>Название предлагаемой/запраш./требуемой технологии</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_OBJECTNAME</Label>
+        <String>Название предлагаемого/запраш./требуемого объекта</String>
+    </StringTable>
+    <StringTable>
+        <Label>GAMETAG_DESCRIPTION_WORKERNAME</Label>
+        <String>Имя обсуждаемого рабочего</String>
+    </StringTable>
 </StringTableList>
