@@ -12,21 +12,21 @@
         <InternalName>GENERIC_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Die {PLAYERFACTIONLONG:1} sind eine Fraktion, die von {LEADERNAME:1} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:1}. Die {PLAYERFACTIONLONG:2} sind eine Fraktion, die von {LEADERNAME:2} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:2}. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:2}. Sie sind Rivalen verschiedener Spezies und Heimatwelten in einem intragalaktischen Konflikt um Vorherrschaft.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion sind eine Fraktion, die von {LEADERNAME:1} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:1}. Die {PLAYERFACTIONLONG:2} sind eine Fraktion, die von {LEADERNAME:2} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:2}. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:2}. Sie sind Rivalen verschiedener Spezies und Heimatwelten in einem intragalaktischen Konflikt um Vorherrschaft.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_PRETEXT_WITH_PREVIOUS_CONVERSATION</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Die {PLAYERFACTIONLONG:1} sind eine Fraktion, die von {LEADERNAME:1} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:1}.Die {PLAYERFACTIONLONG:2} sind eine Fraktion, die von {PLAYERFACTIONDESCRIPTION:2} regiert wird. Sie sind Rivalen verschiedener Spezies und Heimatwelten in einem intragalaktischen Konflikt um Vorherrschaft. Vorher hat {LEADERNAME:1} folgendes an {LEADERNAME:2} gesagt: {PREVIOUSCONV:0} </Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion sind eine Fraktion, die von {LEADERNAME:1} regiert wird. Sie haben die Persönlichkeitsmerkmale von {PLAYERTRAITS:1}.Die {PLAYERFACTIONLONG:2} sind eine Fraktion, die von {PLAYERFACTIONDESCRIPTION:2} regiert wird. Sie sind Rivalen verschiedener Spezies und Heimatwelten in einem intragalaktischen Konflikt um Vorherrschaft. Vorher hat {LEADERNAME:1} folgendes an {LEADERNAME:2} gesagt: {PREVIOUSCONV:0} </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>FACTION_DESCRIPTION_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1}-Fraktion gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -47,14 +47,14 @@
         <InternalName>GENERIC_CUSTOM_CIV_SPEAKER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1}-Fraktion gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>GENERIC_CUSTOM_CIV_LISTENER_PRETEXT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>{PLAYERFACTION:1} gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
+            <Text>{PLAYERFACTION:1}-Fraktion gehört zu einer Reihe von irdischen und außerirdischen Fraktionen, die in einem galaktischen Wettlauf um die Vorherrschaft im Weltraum konkurrieren. Sie werden wie folgt beschrieben: {PLAYERFACTIONDESCRIPTION:1}.[BR] Sie haben die folgenden Eigenschaften: {PLAYERTRAITS:1}</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <!-- OpenAI Prompts -->
@@ -125,14 +125,14 @@
         <InternalName>CUSTOM_CIV_DECLARE_WAR_AGGRESSIVE_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte verfassen Sie eine prägnante Antwort in der ersten Person von {LEADERNAME:1} an eine andere Fraktion {LEADERNAME:1} im Stil von als Reaktion auf {PLAYERFACTION:1} eine Kriegserklärung für den Einsatz in einem Strategiespiel. Sei aggressiv im Ton. Sei kreativ und wie {PLAYERFACTIONDESCRIPTION:1}, der sich selbst so beschreiben würde. Wiederhole keine Wörter in den Persönlichkeitsmerkmal-Beschreibungen. Antworte in weniger als 10 Wörtern. </Text>
+            <Text>Bitte verfassen Sie eine prägnante Antwort in der ersten Person von {LEADERNAME:1} an eine andere Fraktion {LEADERNAME:1} im Stil von als Reaktion auf {PLAYERFACTION:1}-Fraktion eine Kriegserklärung für den Einsatz in einem Strategiespiel. Sei aggressiv im Ton. Sei kreativ und wie {PLAYERFACTIONDESCRIPTION:1}, der sich selbst so beschreiben würde. Wiederhole keine Wörter in den Persönlichkeitsmerkmal-Beschreibungen. Antworte in weniger als 10 Wörtern. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
         <InternalName>CUSTOM_CIV_DECLARE_WAR_DISAPPOINTED_RESPONSE_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte verfassen Sie eine prägnante Antwort in der ersten Person von {LEADERNAME:1} an eine andere Fraktion {LEADERNAME:1} im Stil von als Reaktion auf die eine Kriegserklärung {PLAYERFACTION:1} in der Ego den Krieg für den Einsatz in einem Strategiespiel. Nutzen Sie einen Enttäuschend unverbindlichen Ton. Zeigen Sie Handelsbereitschaft. Seien Sie kreativ und beschreiben Sie sich als {PLAYERFACTIONDESCRIPTION:1}. Vermeiden Sie Wiederholungen bei den Charaktereigenschaften. Antworten Sie in weniger als 10 Wörtern. </Text>
+            <Text>Bitte verfassen Sie eine prägnante Antwort in der ersten Person von {LEADERNAME:1} an eine andere Fraktion {LEADERNAME:1} im Stil von als Reaktion auf die eine Kriegserklärung {PLAYERFACTION:1}-Fraktion in der Ego den Krieg für den Einsatz in einem Strategiespiel. Nutzen Sie einen Enttäuschend unverbindlichen Ton. Zeigen Sie Handelsbereitschaft. Seien Sie kreativ und beschreiben Sie sich als {PLAYERFACTIONDESCRIPTION:1}. Vermeiden Sie Wiederholungen bei den Charaktereigenschaften. Antworten Sie in weniger als 10 Wörtern. </Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -288,7 +288,7 @@
         <InternalName>GENERIC_CUSTOM_CIV_TRADE_RESPONSE_REJECT_PROMPT</InternalName>
         <MaxTokens>100</MaxTokens>
         <FlavorTextOption>
-            <Text>Bitte schreibe eine ablehnende Antwort auf ein Handelsangebot, das einer Fraktion namens {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel gemacht wird. Sei kreativ. {PLAYERFACTION:1} beschreibt sich selbst als {PLAYERFACTIONDESCRIPTION:1}. Verwende keine Eigenschaftsnamen direkt. Reagiere in weniger als 20 Wörtern. Lass ihre Ablehnung auf eine amüsante Art und Weise mit ihrer Selbstbeschreibung einhergehen. Ein Wort der Form {*:1} ist ein Markup, das sich auf den Sprecher bezieht und als unveränderlich angesehen werden sollte. Ein Wort der Form {*:2} ist ein Markup, das sich auf den Zuhörer bezieht und als unveränderlich angesehen werden sollte. Jeder generierte Text der Form {*} muss die Form {*:1} verwenden, wenn er sich auf den Sprecher bezieht, und {*:2}, wenn er sich auf den Hörer bezieht. Seed mit Zufallszahl: {PREVIOUSCONV:0}, gib den Seed nicht in deiner Antwort an.</Text>
+            <Text>Bitte schreibe eine ablehnende Antwort auf ein Handelsangebot, das einer Fraktion namens {PLAYERFACTION:1} in einem rundenbasierten Science-Fiction-Strategiespiel gemacht wird. Sei kreativ. {PLAYERFACTION:1}-Fraktion beschreibt sich selbst als {PLAYERFACTIONDESCRIPTION:1}. Verwende keine Eigenschaftsnamen direkt. Reagiere in weniger als 20 Wörtern. Lass ihre Ablehnung auf eine amüsante Art und Weise mit ihrer Selbstbeschreibung einhergehen. Ein Wort der Form {*:1} ist ein Markup, das sich auf den Sprecher bezieht und als unveränderlich angesehen werden sollte. Ein Wort der Form {*:2} ist ein Markup, das sich auf den Zuhörer bezieht und als unveränderlich angesehen werden sollte. Jeder generierte Text der Form {*} muss die Form {*:1} verwenden, wenn er sich auf den Sprecher bezieht, und {*:2}, wenn er sich auf den Hörer bezieht. Seed mit Zufallszahl: {PREVIOUSCONV:0}, gib den Seed nicht in deiner Antwort an.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
