@@ -4755,7 +4755,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_CRYSTALLINE</SpeakerFaction>
             </Requirements>
-            <Text>Θα περιμένουμε απλά την επίθεσή σας, έχουμε ήδη κάνει αυτό το λάθος.[BR][BR][COLOR=UIDefaultHighlight](Είμαστε σε πόλεμο)[/COLOR]. Αν είναι όνομα αρχείου απλά αντιγράψτε τα αγγλικά.</Text>
+            <Text>We will not simply wait for your attack, we made that mistake already.[BR][BR][COLOR=UIDefaultHighlight](We are at war)[/COLOR]</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -5750,6 +5750,22 @@
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We humbly agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
+                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+                <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+            </Requirements>
+            <Text>We are grateful for your mercy and agree to these terms.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>
                 <TradePersuaded>true</TradePersuaded>
             </Requirements>
             <Text>Είσαι πολύ πειστικός, ας κάνουμε εμπόριο..</Text>
@@ -5984,8 +6000,17 @@
         <FlavorTextOption>
             <Requirements>
                 <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerStronger</RelativeStrength>
             </Requirements>
             <Text>Μπορείς να ζήσεις. Για τώρα..</Text>
+        </FlavorTextOption>
+        <FlavorTextOption>
+            <Requirements>   
+                <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+                <RelativeStrength>SpeakerWeaker</RelativeStrength>
+            </Requirements>
+            <Text>You have our respect.</Text>
+            <PreferenceWeight>130</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>

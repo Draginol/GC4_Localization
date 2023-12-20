@@ -1,867 +1,984 @@
-<?xml version='1.0' encoding='utf-8'?>
-<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-  <StringTable>
-    <Label>Trait_SelfGovernance_Name</Label>
-    <String>Самоуправление</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfGovernance_Dec</Label>
-    <String>[I]Самым маленьким меньшинством является индивид. Вы не можете отрицать индивида и утверждать, что защищаете меньшинства.[/I][BR][BR][COLOR=UIDefaultHighlight]+8% поддержки на всех базовых планетах, кроме вашей родной, и бесплатный лидер[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MobilityRights_Name</Label>
-    <String>Права на Перемещение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MobilityRights_Dec</Label>
-    <String>[I]Наши бережливые инженеры космической базы настолько эффективны, что теперь могут добираться до ресурсов и планет, находящихся дальше в космосе.[/I][BR][BR][COLOR=UIDefaultHighlight]+2 к дальности космической базы[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_FreeTrade_Name</Label>
-    <String>Свободная Торговля</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_FreeTrade_Dec</Label>
-    <String>[I]При наличии соответствующей инфраструктуры, мы сможем гораздо лучше использовать возможности межзвездных путешествий.[/I][BR][BR][COLOR=UIDefaultHighlight]Дает бесплатный Грузовик и гражданина-Торговца[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Deregulation_Name</Label>
-    <String>Дерегуляция</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Deregulation_Dec</Label>
-    <String>[I]Когда какая-либо внешняя сила начинает контролировать рынок, это всегда будет на ее собственное преимущество и в ущерб самому рынку.[/I][BR][BR][COLOR=UIDefaultHighlight]+10% к глобальному доходу[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PrivateOwnership_Name</Label>
-    <String>Частная Собственность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PrivateOwnership_Dec</Label>
-    <String>[I]Мы так искусно строим космические базы, что теперь они могут обслуживать себя с помощью ресурсов, найденных вокруг них в космосе.[/I][BR][BR][COLOR=UIDefaultHighlight]Космическим базам больше не нужно платить за обслуживание[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_OpenCommunication_Name</Label>
-    <String>Открытое Общение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_OpenCommunication_Dec</Label>
-    <String>[I]Без преград для обмена знаниями и мнениями, позитивный дискурс распространяется по всей вселенной.[/I][BR][BR][COLOR=UIDefaultHighlight]Увеличьте генерацию влияния на 50% на всех планетах.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_IronFist_Name</Label>
-    <String>Железный Кулак</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_IronFist_Dec</Label>
-    <String>[I]Когда вы порете работника, это вдохновляет в нем огромную продуктивность, а также во всех, кто становится свидетелем этого события.[/I][BR][BR][COLOR=UIDefaultHighlight]+100 Контроля[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Prestige_Name</Label>
-    <String>Престиж</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Prestige_Dec</Label>
-    <String>[I]Знаменитости покажут вам, что ценит культура. Пока другие обожают тщетное и прекрасное или яркое и любознательное, мы чтим сильных.[/I][BR][BR][COLOR=UIDefaultHighlight]Двойной опыт для корабля[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Service_Name</Label>
-    <String>Служба</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Service_Dec</Label>
-    <String>[I]Военная служба гарантирует выживание и процветание коллектива посредством неустанных усилий по поддержанию порядка и единства.[/I][BR][BR][COLOR=UIDefaultHighlight]Солдаты Приносят Утверждение[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SecretPolice_Name</Label>
-    <String>Секретная Полиция</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SecretPolice_Dec</Label>
-    <String>[I]Теперь, когда наша империя простирается через звёзды, есть много темных уголков, куда мы можем исчезнуть смутьянов.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает политику Секретной полиции.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Intimidating_Name</Label>
-    <String>Устрашающий</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Intimidating_Dec</Label>
-    <String>[I]Взаимодействие с авторитарной галактической империей подобно торговле с черной дырой, где одно неправильное движение может привести к вашей окончательной гибели.[/I][BR][BR][COLOR=UIDefaultHighlight]Устрашение увеличивает воспринимаемую стоимость товаров на 15% вместо 5%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Conscription_Name</Label>
-    <String>Призыв</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Conscription_Dec</Label>
-    <String>[I]Призыв считается неотъемлемой и неизбежной обязанностью всех граждан.[/I][BR][BR][COLOR=UIDefaultHighlight]Предоставляет пять бесплатных транспортных средств[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Discipline_Name</Label>
-    <String>Дисциплина</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Discipline_Dec</Label>
-    <String>[I]Культивируя культуру дисциплины, эффективности и непрерывного улучшения, мы можем ускорить темпы прогресса в производстве.[/I][BR][BR][COLOR=UIDefaultHighlight]Спешка не ограничена[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Ambition_Name</Label>
-    <String>Амбиция</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Ambition_Dec</Label>
-    <String>[I]Вы можете отнять жизнь у раба. Но щедро вознаградите человека, и он добровольно отдаст свою жизнь.[/I][BR][BR][COLOR=UIDefaultHighlight]Лидеры стоят меньше при найме[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Recruiting_Name</Label>
-    <String>Набор персонала</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Recruiting_Dec</Label>
-    <String>[I]Где нет видения, там погибают люди.[/I][BR][BR][COLOR=UIDefaultHighlight]Сокращено время восстановления для использования исполнительного приказа "Набор Лидеров"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Incentives_Name</Label>
-    <String>Стимулы</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Incentives_Dec</Label>
-    <String>[I]Даже благотворительные люди любят хорошие вещи.[/I][BR][BR][COLOR=UIDefaultHighlight]+10 к лояльности для лидеров[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CelebrateTalent_Name</Label>
-    <String>Праздновать Талант</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CelebrateTalent_Dec</Label>
-    <String>[I]Равенство тащит вперёд наименее ценных, удерживая наиболее выдающихся. Мы должны отмечать достижения наших лидеров, а не сдерживать их.[/I][BR][BR][COLOR=UIDefaultHighlight]Увеличение одобрения после набора Лидера[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Merit_Name</Label>
-    <String>Заслуга</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Merit_Dec</Label>
-    <String>[I]В вашем обществе позиции власти и влияния зарабатываются, а не даруются. Прежде всего, признаются и вознаграждаются достижения и талант.[/I][BR][BR][COLOR=UIDefaultHighlight]Лидеры более экономичны в найме, что отражает принципы меритократии вашей цивилизации.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Poaching_Name</Label>
-    <String>Браконьерство</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Poaching_Dec</Label>
-    <String>[I]Зачем служить павшей империи, когда можно стать завоевателем?[/I][BR][BR][COLOR=UIDefaultHighlight]Когда вы захватываете Центральный Мир, вы сохраняете у себя Губернатора[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Fairness_Name</Label>
-    <String>Справедливость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Fairness_Dec</Label>
-    <String>[I]Справедливость способствует объединению разнообразных населений, создавая крепкую основу для устойчивого строительства империи.[/I][BR][BR][COLOR=UIDefaultHighlight]Повышение одобрения на 10% на всех планетах[/COLOR][BR][COLOR=UIDefaultHighlight]3 бесплатных корабля-колонии[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Representation_Name</Label>
-    <String>Представление</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Representation_Dec</Label>
-    <String>[I]Мы оцениваем успех не личными достижениями, а ростом и счастьем наших соседей.[/I][BR][BR][COLOR=UIDefaultHighlight]Все колонии генерируют +1 влияние в месяц.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Inclusivity_Name</Label>
-    <String>Инклюзивность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Inclusivity_Dec</Label>
-    <String>[I]Инклюзивная империя объединяет передовые технологии, разнообразные культуры и равные возможности, создавая привлекательное убежище для посторонних.[/I][BR][BR][COLOR=UIDefaultHighlight]Миры с уровнем одобрения более 50% получают +15% влияния.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SharedPurpose_Name</Label>
-    <String>Общая Цель</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SharedPurpose_Dec</Label>
-    <String>[I]Пусть каждая идея будет представлена, и успех или провал определяется ее достоинствами. В науке нет места для морали, есть только рациональность.[/I][BR][BR][COLOR=UIDefaultHighlight]+1 решительность гражданина мира[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Empowerment_Name</Label>
-    <String>Усиление</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Empowerment_Dec</Label>
-    <String>[I]Укрепление вызывает чувство ответственности у наших граждан, побуждая их к более активному участию в улучшении общества.[/I][BR][BR][COLOR=UIDefaultHighlight]+ 2 к глобальной усердности граждан и 5 бесплатных лидеров.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Diversity_Name</Label>
-    <String>Разнообразие</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Diversity_Dec</Label>
-    <String>[I]Разнообразие стимулирует инновации, содействует устойчивости и, в конечном итоге, укрепляет основу и рост империи.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане теперь увеличивают влияние на основной мир на 2% за каждый социальный навык.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_History_Name</Label>
-    <String>Священная История</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_History_Dec</Label>
-    <String>[I]Культура и уровень жизни на родной планете вызывают восхищение и зависть по всей галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Зал Традиций".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SocialTies_Name</Label>
-    <String>Социальные Связи</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SocialTies_Dec</Label>
-    <String>[I]Сообщество с крепкими социальными связями приоритизирует гармонию, уважение и общее благополучие всех.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане нашего вида больше не генерируют преступности.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CodeOfLaw_Name</Label>
-    <String>Кодекс Законов</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CodeOfLaw_Dec</Label>
-    <String>[I]В вековых традициях справедливости, древних и незыблемых, все находят утешение в уверенности справедливого и последовательного обращения под неизменным законом.[/I][BR][BR][COLOR=UIDefaultHighlight]Добавьте дополнительный слот для политики[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_FamilyValues_Name</Label>
-    <String>Семейные Ценности</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_FamilyValues_Dec</Label>
-    <String>[I]Наши космические базы в глубокой ночи космоса сияют, как звезды, сформированные из стекла и титана.[/I][BR][BR][COLOR=UIDefaultHighlight]Темпы роста населения увеличиваются на 25%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CulturalPride_Name</Label>
-    <String>Гордость культурой</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CulturalPride_Dec</Label>
-    <String>[I]Гордость за свою культуру - это мощная сила, способная вдохновлять отдельных людей и целые сообщества на преодоление трудностей, сохранение своего наследия и утверждение своего законного места в галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с характеристикой Традиционность производит +1 сырья к богатству за ход для своего центрального мира.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Devotion_Name</Label>
-    <String>Преданность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Devotion_Dec</Label>
-    <String>[I]Железо может связать человека, преданность может связать поколение.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с традиционной чертой характера производит +1 сырьевых минералов в ход для своего основного мира.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Dogma_Name</Label>
-    <String>Догма</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Dogma_Dec</Label>
-    <String>[I]Наш народ так горд, что представить себе идею подчинения иностранной культуре сложно.[/I][BR][BR][COLOR=UIDefaultHighlight]Все планеты получают +25% к сопротивлению[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Eureka_Name</Label>
-    <String>Эврика</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Eureka_Dec</Label>
-    <String>[I]Отбросьте страх перед переменами и примите открытия.[/I][BR][BR][COLOR=UIDefaultHighlight]Временное увеличение одобрения после открытия новой технологии и +30 к исследованию[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_DeepInvestigation_Name</Label>
-    <String>Глубокое Расследование</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_DeepInvestigation_Dec</Label>
-    <String>[I]Можно извлечь уроки даже из самых скромных источников.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 к исследованиям после обследования Аномалии[/COLOR][BR][COLOR=UIDefaultHighlight]Обнаруживает множество новых аномалий возле нашей родной планеты[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_EarlyAdoption_Name</Label>
-    <String>Раннее Принятие</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_EarlyAdoption_Dec</Label>
-    <String>[I]Раннее принятие технологии в быстро развивающейся вселенной - это как катание на космической волне, где те, кто осмелится покорять неизвестное, могут открыть для себя секреты звезд.[/I][BR][BR][COLOR=UIDefaultHighlight]Скидка на прорывные технологии увеличивается до 60%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Breakthrough_Name</Label>
-    <String>Прорыв</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Breakthrough_Dec</Label>
-    <String>[I]Неограниченная наука может все изменить, в хорошем или плохом.[/I][BR][BR][COLOR=UIDefaultHighlight]+100 к исследованию, открывает галактическое достижение "Гиперионский уменьшитель"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_RiskTaking_Name</Label>
-    <String>Принятие Риска</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_RiskTaking_Dec</Label>
-    <String>[I]Прогресс логики требует бескомпромиссного нападения на догматизм и риторику.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Акулий аквариум".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Futurist_Name</Label>
-    <String>Футурист</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Futurist_Dec</Label>
-    <String>[I]Не превозносите врачей, солдат или предпринимателей. Где бы они были без изобретений, которые привели к их профессии?[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает планетарное улучшение "Двигатель Возможностей"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_QuantumLeap_Name</Label>
-    <String>Квантовый Скачок</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_QuantumLeap_Dec</Label>
-    <String>[I]Пусть каждая идея будет представлена и пройдет или не пройдет на основе своих заслуг. В науке нет места морали, есть только рациональность.[/I][BR][BR][COLOR=UIDefaultHighlight]+1000 к исследованию[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Kindness_Name</Label>
-    <String>Доброта</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Kindness_Dec</Label>
-    <String>[I]Любовь и сострадание - это необходимость, а не роскошь. Без них мы не можем выжить.[/I][BR][BR][COLOR=UIDefaultHighlight] +1 к дипломатии[/COLOR][BR][COLOR=UIDefaultHighlight]3 корабля-строителя присоединяются к вам[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Charity_Name</Label>
-    <String>Благотворительность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Charity_Dec</Label>
-    <String>[I]В необъятных просторах космоса, щедрость никогда не приводила душу к нищете.[/I][BR][BR][COLOR=UIDefaultHighlight]-10% к глобальной преступности. Появляется корабль поддержки "Добрая воля".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Sustainability_Name</Label>
-    <String>Устойчивость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Sustainability_Dec</Label>
-    <String>[I]Наше отношение к природе - это не эксплуатация, а симбиоз, поддержание тонкого баланса, который обеспечивает жизнь на многие эоны вперед.[/I][BR][BR][COLOR=UIDefaultHighlight]-10% к общему загрязнению[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Altruism_Name</Label>
-    <String>Альтруизм</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Altruism_Dec</Label>
-    <String>[I]Когда вы не рассматриваете игру в построение империи как нулевую сумму, вы можете построить галактическую общину, от которой выигрывают все.[/I][BR][BR][COLOR=UIDefaultHighlight]+2 Дипломатия [BR][BR] Родной мир получает 10% всех ресурсов от всех родных миров цивилизаций, с которыми у нас дружественные отношения[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Empathy_Name</Label>
-    <String>Эмпатия</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Empathy_Dec</Label>
-    <String>[I]В условиях войны, эмпатия становится маяком надежды, напоминающим нам о нашем общем гармонии и потенциале для мира и понимания.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане больше не отрицательно реагируют на войну со своими родными цивилизациями.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Forgiveness_Name</Label>
-    <String>Прощение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Forgiveness_Dec</Label>
-    <String>[I]Признание и прощение ошибок всех инопланетных видов открывает дверь к совместному прогрессу.[/I][BR][BR][COLOR=UIDefaultHighlight]Игнорирует дипломатические штрафы за войну с союзниками или торговлю с врагами.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Consensus_Name</Label>
-    <String>Консенсус</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Consensus_Dec</Label>
-    <String>[I]Мы единогласно согласны, что общая радость от коллективного процветания перевешивает преходящее волнение от индивидуального триумфа.[/I][BR][BR][COLOR=UIDefaultHighlight]Ожидания граждан снижены на 50%, и граждане с чертой "Коллективизм" получают +10% одобрения.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Practicality_Name</Label>
-    <String>Практичность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Practicality_Dec</Label>
-    <String>[I]Среди всего, что необходимо империи, есть ли что-то более важное, чем надежная логистика?[/I][BR][BR][COLOR=UIDefaultHighlight]Создает 3 корабля снабжения.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Realism_Name</Label>
-    <String />
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Realism_Dec</Label>
-    <String>[I]Мы известны тем, что оцениваем товары по их объективной стоимости.[/I][BR][BR][COLOR=UIDefaultHighlight]Инопланетные цивилизации будут оценивать ваши сделки на 50% дороже.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_GoalOriented_Name</Label>
-    <String>Ориентированный на цель</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_GoalOriented_Dec</Label>
-    <String>[I]Наше руководство максимально использует имеющиеся ресурсы, сосредоточиваясь на достижении желаемых результатов и постоянно стремясь к улучшению и успеху.[/I][BR][BR][COLOR=UIDefaultHighlight]Бонус губернатора основного мира удваивается.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Flexibility_Name</Label>
-    <String>Гибкость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Flexibility_Dec</Label>
-    <String>[I]Гибкость позволяет адаптироваться к колебаниям рынка, способствуя взаимовыгодному обмену и стимулированию экономического роста.[/I][BR][BR][COLOR=UIDefaultHighlight]Цена продажи в Галактическом базаре +25%, цена покупки в Галактическом базаре -25%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Attrition_Name</Label>
-    <String>Истощение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Attrition_Dec</Label>
-    <String>[I]Открываясь Вселенной, мы также становимся ее частью. Она отвергает тех, кто противостоит нам.[/I][BR][BR][COLOR=UIDefaultHighlight]-25% к здоровью вражеских кораблей в наших границах[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Resilience_Name</Label>
-    <String>Устойчивость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Resilience_Dec</Label>
-    <String>[I]С каждой победой, наши силы становятся более уверенными в своей цели и более решительными в действиях, необходимых для ее достижения.[/I][BR][BR][COLOR=UIDefaultHighlight]+1% одобрения за каждую завоеванную планету[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Amiable_Name</Label>
-    <String>Приветливый</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Amiable_Dec</Label>
-    <String>[I]Наш разумный подход зарекомендовал нас, что облегчит наши дипломатические переговоры.[/I][BR][BR][COLOR=UIDefaultHighlight]+1 к Дипломатии[BR]Улучшенные торговые значения[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Negotiators_Name</Label>
-    <String>Переговорщики</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Negotiators_Dec</Label>
-    <String>[I]В переговорах мы не ищем личной выгоды; мы строим мосты для общего процветания и гармонии.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 Дипломатического капитала в месяц[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Responsibility_Name</Label>
-    <String>Ответственность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Responsibility_Dec</Label>
-    <String>[I]Ответственность у лидеров низкого уровня способствует эффективному управлению ресурсами, снижая затраты на обслуживание, поскольку государственные средства используются разумно, сводя к минимуму отходы и потери.[/I][BR][BR][COLOR=UIDefaultHighlight]+25% снижение затрат на обслуживание на уровне всей цивилизации[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Trustworthy_Name</Label>
-    <String>Надежный</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Trustworthy_Dec</Label>
-    <String>[I]Доверительность - это не просто личная добродетель; это краеугольный камень прочных связей и основа сплоченного сообщества.[/I][BR][BR][COLOR=UIDefaultHighlight]+1 к общественному рейтингу глобального гражданина[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Honesty_Name</Label>
-    <String>Честность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Honesty_Dec</Label>
-    <String>[I]Честность, самая благородная добродетель лидера, светит как маяк доверия, привлекает к нему людей и вдохновляет их на верность на протяжении веков.[/I][BR][BR][COLOR=UIDefaultHighlight]Все лидеры получают черту "Прозрачность".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Reliable_Name</Label>
-    <String>Надежный</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Reliable_Dec</Label>
-    <String>[I]Наше слово доверяют больше, чем любому контракту во вселенной.[/I][BR][BR][COLOR=UIDefaultHighlight]Другие расы будут торговать с нами на более выгодных условиях[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Spycraft_Name</Label>
-    <String>Шпионаж</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Spycraft_Dec</Label>
-    <String>[I]Реальность не имеет значения, важно только то, во что люди верят.[/I][BR][BR][COLOR=UIDefaultHighlight]+5 К Обману[BR]Все лидеры обладают чертой "Адвокат"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Detached_Name</Label>
-    <String>Отделенный</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Detached_Dec</Label>
-    <String>[I]Наше общество настолько отдалилось от потребительства, что у нас есть избыток товаров.[/I][BR][BR][COLOR=UIDefaultHighlight]3 бесплатных снабженческих корабля и +10% дохода на всех планетах.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CriminalTies_Name</Label>
-    <String>Преступные Связи</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CriminalTies_Dec</Label>
-    <String>[I]Мы так долго торговали и путешествовали с темными элементами галактики, что они начали видеть нас как одного из них.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает исполнительный приказ "Волна преступности".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Discretion_Name</Label>
-    <String>Скромность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Discretion_Dec</Label>
-    <String>[I]Наши люди гарантируют, что враждебным расам тяжело будет передвигаться по нашим территориям.[/I][BR][BR][COLOR=UIDefaultHighlight]Вражеские корабли в наших границах получают -1 к дальности датчиков и ходам[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Paranoia_Name</Label>
-    <String>Паранойя</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Paranoia_Dec</Label>
-    <String>[I]В тенистых просторах галактики, паранойя становится зловещим союзником.[/I][BR][BR][COLOR=UIDefaultHighlight]Все наши лидеры параноики[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CrimeLords_Name</Label>
-    <String>Повелители Преступности</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_CrimeLords_Dec</Label>
-    <String>[I]В этой неумолимой галактике процветают хитрые и безжалостные.[/I][BR][BR][COLOR=UIDefaultHighlight]Дает 3 новых Лидера и +3% Глобального Преступления[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_HiddenAgenda_Name</Label>
-    <String>Скрытая повестка</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_HiddenAgenda_Dec</Label>
-    <String>[I]Мы заслужили репутацию людей, с которыми можно договориться, и мы можем убедительно говорить, чтобы избежать всех конфликтов.[/I][BR][BR][COLOR=UIDefaultHighlight]Никто не объявит нам войну в течение следующих 50 ходов[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Independence_Name</Label>
-    <String>Независимость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Independence_Dec</Label>
-    <String>[I]Независимость в колониях способствует самостоятельности, позволяя им удовлетворять свои потребности и процветать автономно.[/I][BR][BR][COLOR=UIDefaultHighlight]-15% уменьшения от колоний[/COLOR][BR][COLOR=UIDefaultHighlight]Появляется корабль "Независимость"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Inviting_Name</Label>
-    <String>Приглашающий</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Inviting_Dec</Label>
-    <String>[I]Привлекательная культура служит маяком теплоты и единства, привлекая различные существа и внушая чувство принадлежности.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 Гражданина случайных видов[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Adaptable_Name</Label>
-    <String>Адаптивный</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Adaptable_Dec</Label>
-    <String>[I]Наш опыт в исследовании и колонизации снова окупился, позволив нам найти дополнительные используемые клетки на каждой из наших колоний.[/I][BR][BR][COLOR=UIDefaultHighlight]Получите 2 дополнительные клетки на каждой Планете[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfDeterminism_Name</Label>
-    <String>Самодетерминизм</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfDeterminism_Dec</Label>
-    <String>[I]Наше общество предоставляет индивидуумам возможность решать свое будущее, к лучшему или худшему.[/I][BR][BR][COLOR=UIDefaultHighlight]3 лидера присоединяются к нам. +3 ко всем характеристикам граждан с индивидуалистической чертой характера.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfSufficiency_Name</Label>
-    <String>Самодостаточность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfSufficiency_Dec</Label>
-    <String>[I]В постоянно меняющихся условиях войны и исследований, умение заботиться о себе является первостепенной важности.[/I][BR][BR][COLOR=UIDefaultHighlight]Все корабли получают увеличенную скорость ремонта.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Enticing_Name</Label>
-    <String>Заманчивый</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Enticing_Dec</Label>
-    <String>[I]Наша репутация выросла до такой степени, что любой мир в пределах нашего Влияния умоляет присоединиться к нашей Цивилизации.[/I][BR][BR][COLOR=UIDefaultHighlight]Все планеты и космические базы в пределах нашего Влияния присоединяются к нашей цивилизации[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Unification_Name</Label>
-    <String>Унификация</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Unification_Dec</Label>
-    <String>[I]Объединение переплетает нити различных цивилизаций, поднимая всех, кто принимает его единство, до новых высот мудрости и процветания.[/I][BR][BR][COLOR=UIDefaultHighlight]+100% Влияния на родной мир[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SharedBelief_Name</Label>
-    <String>Общее Убеждение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SharedBelief_Dec</Label>
-    <String>[I]Общие убеждения и ценности объединяют сердца и умы бесчисленных существ, сила их коллективного духа преодолевает границы индивидуального понимания.[/I][BR][BR][COLOR=UIDefaultHighlight] Вероятность того, что у новых граждан будет черта Коллективизма, увеличивается [BR][BR] Жилищные районы получают 2 уровня[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PreferredCulture_Name</Label>
-    <String>Предпочитаемая Культура</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PreferredCulture_Dec</Label>
-    <String>[I]Объединившись под знаменем предпочтительной культуры, разнообразные общества поднимаются на новые вершины прогресса и просвещения.[/I][BR][BR][COLOR=UIDefaultHighlight]+10% одобрения для видов нашей цивилизации.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Respect_Name</Label>
-    <String>Уважение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Respect_Dec</Label>
-    <String>[I]Уважение, основной принцип истинного лидерства, воспитывает несокрушимую верность.[/I][BR][BR][COLOR=UIDefaultHighlight]+10 бонус лояльности лидера[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Peacekeeping_Name</Label>
-    <String>Миротворчество</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Peacekeeping_Dec</Label>
-    <String>[I] Добрыми словами мудрый лидер успокаивает своих врагов, обезоруживая их враждебность и превращая противников в союзников, выстраивая гармоничный путь к долговечному миру. [/I][BR][BR][COLOR=UIDefaultHighlight]Все лидеры получают черту "Миротворец". [BR][BR] Дальность звездной базы +1. [BR][BR] +2 к дипломатии за поддержание мира[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Serenity_Name</Label>
-    <String>Спокойствие</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Serenity_Dec</Label>
-    <String>[I]Культура и уровень жизни нашей цивилизации вызывают восхищение и зависть по всей галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]У граждан с чертой характера "Пацифист" статистика увеличивается в четыре раза.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Intolerance_Name</Label>
-    <String>Нетерпимость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Intolerance_Dec</Label>
-    <String>[I]Нетерпимость подпитывает желание конфликта без оглядки на идентичность своих противников.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане больше не отрицательно реагируют на ведение войны с представителями своего вида.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Prejudice_Name</Label>
-    <String>Предубеждение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Prejudice_Dec</Label>
-    <String>[I]Предвзятость и дискриминация в отношении неполноценных рас являются необходимыми для поддержания превосходства и доминации над более слабыми видами в галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане, не принадлежащие к нашему виду, получают +2 к Дилижентности.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Censorship_Name</Label>
-    <String>Цензура</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Censorship_Dec</Label>
-    <String>[I]Сила цензуры заключается в ее зловещей способности манипулировать сознанием, подавлять несогласие и контролировать повествование.[/I][BR][BR][COLOR=UIDefaultHighlight]У фракций нет негативных побочных эффектов[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Oppression_Name</Label>
-    <String>Угнетение</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Oppression_Dec</Label>
-    <String>[I]Ценность угнетения заключается в его зловещей способности подчинять и контролировать массы.[/I][BR][BR][COLOR=UIDefaultHighlight]Преимущества фракции увеличены на 50%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Planning_Name</Label>
-    <String>Планирование</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Planning_Dec</Label>
-    <String>[I]Культура, основанная на организации и стратегическом планировании, порождает мощные флотилии.[/I][BR][BR][COLOR=UIDefaultHighlight]+8 к логистике[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Exploitation_Name</Label>
-    <String>Эксплуатация</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Exploitation_Dec</Label>
-    <String>[I]Это наш долг использовать труд и ресурсы слабых видов, ибо их ценность заключается только в служении нам.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает исполнительный приказ "Эксплуатация населения".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_AbuseOfPower_Name</Label>
-    <String>Злоупотребление Властью</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_AbuseOfPower_Dec</Label>
-    <String>[I]Сила в чистом виде проявляется при абсолютной власти.[/I][BR][BR][COLOR=UIDefaultHighlight]Удвойте количество контроля в месяц[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Tolerance_Name</Label>
-    <String>Толерантность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Tolerance_Dec</Label>
-    <String>[I]Истинный прогресс в любом обществе можно достичь только путем практики терпимости и принятия тех, кто отличается от нас.[/I][BR][BR][COLOR=UIDefaultHighlight]Центральные миры начинают с +100 Влияния и дополнительным +5 Влияния за ход[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Integrity_Name</Label>
-    <String>Целостность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Integrity_Dec</Label>
-    <String>[I]Когда отдельные лица и учреждения выбирают в качестве приоритета честность и порядочность, а не личную выгоду, уровень преступности и коррупции в обществе естественным образом снижается.[/I][BR][BR][COLOR=UIDefaultHighlight]Все преступления снижены на 50%[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Peacefulness_Name</Label>
-    <String>Миролюбивость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Peacefulness_Dec</Label>
-    <String>[I]Это непоколебимое стремление к миру приносит надежду цивилизациям, которые ценят его ценности.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Объединённые Планеты"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_UniversalRights_Name</Label>
-    <String>Универсальные Права</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_UniversalRights_Dec</Label>
-    <String>[I]Универсальные права и свободы для всех существ являются необходимыми для создания стабильного, процветающего и гармоничного общества.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с чертой Egalitarian предоставляет 1 сырых культурных единиц в каждом ходу.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Environmentalism_Name</Label>
-    <String>Экологизм</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Environmentalism_Dec</Label>
-    <String>[I]Сохранение и защита окружающей среды необходимы не только для выживания нашей планеты, но и для благополучия и процветания всех разнообразных форм жизни, которые считают ее своим домом.[/I][BR][BR][COLOR=UIDefaultHighlight]-50% загрязнения на всех мирах[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_GalacticCourt_Name</Label>
-    <String>Галактический Суд</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_GalacticCourt_Dec</Label>
-    <String>[I]Вселенский суд господствует величественно, раздавая справедливость безпристрастно и с состраданием, являясь маяком надежды для всех, кто ищет справедливости в хаосе вселенной.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение "Вселенский суд"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfReliance_Name</Label>
-    <String>Самостоятельность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SelfReliance_Dec</Label>
-    <String>[I]Триумф индивида над обстоятельствами - вот суть самостоятельности. Ваш народ ценит независимость и личную ответственность.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане получают +3 к их атрибутам.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Autonomy_Name</Label>
-    <String>Автономия</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Autonomy_Dec</Label>
-    <String>[I]Выбор принадлежит индивидууму. Ваше общество верит в личную свободу принятия решений.[/I][BR][BR] [COLOR=UIDefaultHighlight]Губернаторы получают +10 к лояльности, +1 к слотам политик.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PrivatePropertyRights_Name</Label>
-    <String>Права на Частную Собственность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_PrivatePropertyRights_Dec</Label>
-    <String>[I]Собственность уважается и защищается. Ваше общество ценит индивидуальные права на накопление и контроль над имуществом.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает специализацию Предприниматель и +1 слот для орбитального обновления на каждой планете.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Competitiveness_Name</Label>
-    <String>Конкурентоспособность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Competitiveness_Dec</Label>
-    <String>[I]Общество поощряет тех, кто стремится быть лучшим. Ваш народ ценит конкуренцию и стремление к совершенству.[/I][BR][BR][COLOR=UIDefaultHighlight]Все граждане, имеющие индивидуальный Трейт, теперь приносят +1 к сырой богатству своего основного мира.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Privacy_Name</Label>
-    <String>Приватность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Privacy_Dec</Label>
-    <String>[I]Право личности на приватность высоко ценится и защищено. Ваше общество уважает личное пространство, данные и коммуникации.[/I][BR][BR][COLOR=UIDefaultHighlight]Все граждане, обладающие чертой "Индивидуалист", получают бонус удовлетворенности на 25%.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Obedience_Name</Label>
-    <String>Послушание</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Obedience_Dec</Label>
-    <String>"[I]В вашем обществе единство и порядок ценятся превыше всего. Послушание приказам государства - это добродетель, а не бремя.[/I][BR][BR][COLOR=UIDefaultHighlight]Ожидания граждан снижены на 20%. Граждане с чертой "Тоталитаризм" обеспечивают +25% к [HS=HS_Manufacturing]Производству[/HS]. Появляется корабль поддержки "Порядок".[/COLOR]"</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Propaganda_Name</Label>
-    <String>Пропаганда</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Propaganda_Dec</Label>
-    <String>[I]Ваше государство контролирует информацию, искусно формируя общественное мнение в соответствии со своими интересами.[/I][BR][BR] [COLOR=UIDefaultHighlight]+10% влияния на всех основных планетах и увеличение роста населения благодаря эффективному государственному месседжингу.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Purges_Name</Label>
-    <String>Очищения</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Purges_Dec</Label>
-    <String>[I]Ваше государство поддерживает власть через страх, устраняя воспринимаемые угрозы своему контролю.[/I][BR][BR] [COLOR=UIDefaultHighlight]Беспорядки снижаются на всех основных мирах, а меры безопасности становятся более эффективными.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_LaborRights_Name</Label>
-    <String>Права трудящихся</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_LaborRights_Dec</Label>
-    <String>[I]Укрепите рабочий класс, признавая и защищая их права.[/I][BR][BR]  [COLOR=UIDefaultHighlight]Открывает доступ к Улучшению: Центр Профсоюзов.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_TechnologicalInnovation_Name</Label>
-    <String>Инновация</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_TechnologicalInnovation_Dec</Label>
-    <String>[I]Инновации - визитная карточка будущего.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане с прогрессивной чертой характера генерируют +1 сырой технологии за ход. Открывает улучшение "Инновационный комплекс".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Cooperation_Name</Label>
-    <String>Сотрудничество</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Cooperation_Dec</Label>
-    <String>[I]Общая цель команды служит общему благу.[/I][BR][BR][COLOR=UIDefaultHighlight]+1 к плодородию всех миров. Создает поддерживающий корабль "Переговорщик".[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Harmony_Name</Label>
-    <String>Гармония</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Harmony_Dec</Label>
-    <String>[I]Единство и мир являются первоочередными. Никакие индивидуальные разногласия не должны нарушать гармонию коллектива.[/I][BR][BR][COLOR=UIDefaultHighlight]+10% одобрения на всех Центральных Мирах и бесплатный Дипломат[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Fatalism_Name</Label>
-    <String>Фатализм</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Fatalism_Dec</Label>
-    <String>[Я]Все события предопределены и, следовательно, неизбежны. Бесполезно сопротивляться судьбе.[/Я][BR][BR][COLOR=UIDefaultHighlight]"Все равно мы все умрем" +20% к воинским навыкам[BR][BR]Открывает исполнительный приказ "Коммандос Смерти"[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MoralRelativism_Name</Label>
-    <String>Моральный Релятивизм</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MoralRelativism_Dec</Label>
-    <String>[I]Добро и зло - лишь вопрос точки зрения.[/I][BR][BR][COLOR=UIDefaultHighlight]Нигилисты на планете получают учетверенные показатели[BR][BR] Открывает модуль звездной базы связи "Маяк относительной этики"[BR][BR] Все варианты событий раскрывают понимание каждой идеологии[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Interdependence_Name</Label>
-    <String>Взаимозависимость</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_Interdependence_Dec</Label>
-    <String>[I]Когда один падает, мы все спотыкаемся. Когда один торжествует, мы все делимся победой. Давайте построим будущее, где никто не остается позади.[/I][BR][BR][COLOR=UIDefaultHighlight]Малые миры в нашем влиянии предоставляют в 3 раза больше ресурсов своему патронскому миру.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SocialSolidarity_Name</Label>
-    <String>Солидарность</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_SocialSolidarity_Dec</Label>
-    <String>[I]Мы - единое целое, единый голос, единая общая судьба. Только работая вместе, мы можем преодолеть наши трудности.[/I][BR][BR][COLOR=UIDefaultHighlight]+1% к одобрению центрального мира за каждую неуправляемую колонию в империи.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MassMobilization_Name</Label>
-    <String>Массовая Мобилизация</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_MassMobilization_Dec</Label>
-    <String>[I]В периоды нужды, каждый вносит свой вклад. Волна единства способна преодолеть любые препятствия.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает исполнительный ордер Массовая Мобилизация. +25% к максимальному производству во время войны.[/COLOR]</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_UnifiedCoordination_Name</Label>
-    <String>Единая Координация</String>
-  </StringTable>
-  <StringTable>
-    <Label>Trait_UnifiedCoordination_Dec</Label>
-    <String>[I]Как хорошо смазанная машина работает наша цивилизация. Каждая часть, каждый индивид, синхронизированы с остальными, работая на общее благо. Мы двигаемся как одно целое, и поэтому наш потенциал безграничен, позволяя нашим флотам становиться больше.[/I][BR][BR]    [COLOR=UIDefaultHighlight]+12 Логистика[/COLOR]</String>
-  </StringTable>
+﻿<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+    <StringTable>
+        <Label>Trait_SelfGovernance_Name</Label>
+        <String>Самоуправление</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfGovernance_Dec</Label>
+        <String>[I]Самое маленькое меньшинство - это человек. Нельзя отрицать личность и претендовать на роль защитника.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение во всех основных мирах: +8%, кроме родного мира, и 1 лидер[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MobilityRights_Name</Label>
+        <String>Передвижения</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MobilityRights_Dec</Label>
+        <String>[I]Наши инженеры звездных баз настолько эффективны, что теперь им доступны дальние ресурсы и планеты.[/I][BR][BR][COLOR=UIDefaultHighlight]Зона действия звездной базы: +2[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_FreeTrade_Name</Label>
+        <String>Торговля</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_FreeTrade_Dec</Label>
+        <String>[I]Соответствующая инфраструктура позволит нам гораздо лучше использовать возможности космических путешествий.[/I][BR][BR][COLOR=UIDefaultHighlight]Дает: фрахтовщик и торговец[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Deregulation_Name</Label>
+        <String>Дерегуляция</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Deregulation_Dec</Label>
+        <String>[I]Если внешние силы воздействуют на рынок, это всегда происходит в их интересах и в ущерб самому рынку.[/I][BR][BR][COLOR=UIDefaultHighlight]Общая прибыль+10%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PrivateOwnership_Name</Label>
+        <String>Собственность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PrivateOwnership_Dec</Label>
+        <String>[I]Мы достигли такого мастерства в строительстве звездных баз, что теперь они могут содержать себя за счет космических ресурсов.[/I][BR][BR][COLOR=UIDefaultHighlight]Звездные базы больше не платят за обслуживание[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_OpenCommunication_Name</Label>
+        <String>Взаимодействие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_OpenCommunication_Dec</Label>
+        <String>[I]Когда космическому общению не мешают барьеры, гораздо проще обмениваться знаниями и мнениями.[/I][BR][BR][COLOR=UIDefaultHighlight]Увеличение генерации влияния на 50% на всех планетах.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_IronFist_Name</Label>
+        <String>Жел. кулак</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_IronFist_Dec</Label>
+        <String>[I]Наказание работника повышает продуктивность его труда - и труда всех, кто это видел.[/I][BR][BR][COLOR=UIDefaultHighlight]Контроль: +100[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Prestige_Name</Label>
+        <String>Престиж</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Prestige_Dec</Label>
+        <String>[I]По знаменитостям видно, что ценится в культуре. Другие преклоняются перед пустыми и красивыми, яркими и интересными, мы же чтим сильных.[/I][BR][BR][COLOR=UIDefaultHighlight]Двойной опыт корабля[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Service_Name</Label>
+        <String>Служба</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Service_Dec</Label>
+        <String>[I]Военная служба обеспечивает выживание и благополучие общества благодаря стремлению к порядку и единству.[/I][BR][BR][COLOR=UIDefaultHighlight]Солдаты повышают одобрение[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SecretPolice_Name</Label>
+        <String>Тайная полиция</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SecretPolice_Dec</Label>
+        <String>[I]Наша империя простирается по всему космосу, и в ней много темных уголков, где могут затеряться нарушители спокойствия.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует политику тайной полиции[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Intimidating_Name</Label>
+        <String>Устрашение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Intimidating_Dec</Label>
+        <String>[I]Сотрудничество с авторитарной галактической империей подобно переговорам с черной дырой, где одно неверное движение может привести к гибели.[/I][BR][BR][COLOR=UIDefaultHighlight]Угроза увеличивает ценность товара не на 5%, а на 15%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Conscription_Name</Label>
+        <String>Призыв</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Conscription_Dec</Label>
+        <String>[I]Призыв считается важной и неизбежной обязанностью для всех граждан.[/I][BR][BR][COLOR=UIDefaultHighlight]Дает пять транспортов[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Discipline_Name</Label>
+        <String>Дисциплина</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Discipline_Dec</Label>
+        <String>[I]Поддерживая дисциплину, развивая эффективность и постоянно совершенствуясь, мы можем ускорить темпы развития производства.[/I][BR][BR][COLOR=UIDefaultHighlight]Стремление не ограничено[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Ambition_Name</Label>
+        <String>Амбиции</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Ambition_Dec</Label>
+        <String>[I]Можно лишить раба жизни. Но богато вознаградите его, и он отдаст свою жизнь добровольно.[/I][BR][BR][COLOR=UIDefaultHighlight]Лидеры стоят дешевле[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Recruiting_Name</Label>
+        <String>Рекрутинг</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Recruiting_Dec</Label>
+        <String>[I]Если народ не вести, он гибнет.[/I][BR][BR][COLOR=UIDefaultHighlight]Уменьшен период ожидания для приказа Набрать лидеров[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Incentives_Name</Label>
+        <String>Поощрения</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Incentives_Dec</Label>
+        <String>[I]Даже благотворители любят красивые вещи.[/I][BR][BR][COLOR=UIDefaultHighlight]Лояльность для лидеров: +10[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CelebrateTalent_Name</Label>
+        <String>Почитание таланта</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CelebrateTalent_Dec</Label>
+        <String>[I]Равенство подталкивает вперед наименее ценных, а самых выдающихся держит позади. Мы должны прославлять наших лидеров, а не ограничивать их.[/I][BR][BR][COLOR=UIDefaultHighlight]Повышение одобрения после привлечения лидера[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Merit_Name</Label>
+        <String>Заслуги</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Merit_Dec</Label>
+        <String>[I]В вашем обществе власть и влияние зарабатываются, а не даются. Достижения и таланты признаются и вознаграждаются.[/I][BR][BR][COLOR=UIDefaultHighlight]Лидеров нанимать выгоднее, что отражает меритократические принципы вашей цивилизации.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Poaching_Name</Label>
+        <String>Браконьерство</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Poaching_Dec</Label>
+        <String>[I]Зачем служить павшей империи, если можно стать завоевателем?[/I][BR][BR][COLOR=UIDefaultHighlight]Захватив основной мир, вы сохраняете губернатора[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Fairness_Name</Label>
+        <String>Справедливость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Fairness_Dec</Label>
+        <String>[I]Справедливость способствует сплочению различных слоев населения, создавая устойчивый фундамент для построения империи.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение во всех мирах: +10%[/COLOR][BR][COLOR=UIDefaultHighlight]3 колонистских корабля[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Representation_Name</Label>
+        <String>Репрезентация</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Representation_Dec</Label>
+        <String>[I]Мы измеряем успех не личными достижениями, а ростом и счастьем наших соседей.[/I][BR][BR][COLOR=UIDefaultHighlight]Все колонии генерируют +1 влияние в месяц.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Inclusivity_Name</Label>
+        <String>Инклюзивность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Inclusivity_Dec</Label>
+        <String>[I]Инклюзивная империя сочетает в себе передовые технологии, разнообразные культуры и равные возможности, привлекая чужаков.[/I][BR][BR][COLOR=UIDefaultHighlight]Миры с одобрением более 50% получают +15% влияния.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SharedPurpose_Name</Label>
+        <String>Общая цель</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SharedPurpose_Dec</Label>
+        <String>[I]Каждая идея должна быть озвучена, успех или провал зависит от ее достоинств. В науке нет места морали, только рациональность.[/I][BR][BR][COLOR=UIDefaultHighlight]Решительность гражданина: +1[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Empowerment_Name</Label>
+        <String>Возможности</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Empowerment_Dec</Label>
+        <String>[I]Чем больше возможностей, тем сильнее в гражданах чувство ответственности, и тем активнее они участвуют в улучшении жизни общества.[/I][BR][BR][COLOR=UIDefaultHighlight]Трудолюбие граждан мира: +2. Лидеры: 5.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Diversity_Name</Label>
+        <String>Разнообразие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Diversity_Dec</Label>
+        <String>[I]Разнообразие помогает инновациям, повышает жизнеспособность, укрепляет позиции и способствует росту империи.[/I][BR][BR][COLOR=UIDefaultHighlight]Теперь граждане повышают влияние основного мира на 2% за каждый социальный навык.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_History_Name</Label>
+        <String>Свящ. история</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_History_Dec</Label>
+        <String>[I]Культура и уровень жизни на родной планете вызывают восхищение и зависть во всей Галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает улучшение &quot;Зал традиций&quot;.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SocialTies_Name</Label>
+        <String>Социум</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SocialTies_Dec</Label>
+        <String>[I]В обществе с прочными социальными связями на первом месте стоят гармония, уважение и всеобщее благосостояние.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане нашего вида больше не производят преступность.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CodeOfLaw_Name</Label>
+        <String>Свод законов</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CodeOfLaw_Dec</Label>
+        <String>[I]Проверенные временем традиции правосудия, древние и незыблемые, дают всем уверенность в справедливом и последовательном отношении к ним со стороны закона.[/I][BR][BR][COLOR=UIDefaultHighlight]Добавляется слот политики[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_FamilyValues_Name</Label>
+        <String>Семья</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_FamilyValues_Dec</Label>
+        <String>[I]Наши звездные базы сверкают в космической ночи, как звезды из стекла и титана.[/I][BR][BR][COLOR=UIDefaultHighlight]Темпы роста населения увеличиваются на 25%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CulturalPride_Name</Label>
+        <String>Культура</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CulturalPride_Dec</Label>
+        <String>[I]Культурная гордость - мощная сила, способная вдохновить людей и сообщества на борьбу с невзгодами, сохранение своего наследия и утверждение своего законного места в галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с чертой Традиционный производит +1 богатства для своего основного мира.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Devotion_Name</Label>
+        <String>Преданность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Devotion_Dec</Label>
+        <String>[I]Железо может сковать человека, преданность может сковать поколение.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с чертой Традиционный производит +1 минералов для своего основного мира.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Dogma_Name</Label>
+        <String>Догма</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Dogma_Dec</Label>
+        <String>[I]Наш народ настолько горд, что уступить чужой культуре для него немыслимо.[/I][BR][BR][COLOR=UIDefaultHighlight]Все планеты получают +25% сопротивляемости[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Eureka_Name</Label>
+        <String>Эврика</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Eureka_Dec</Label>
+        <String>[I]Отбрось страх перемен и прими открытия.[/I][BR][BR][COLOR=UIDefaultHighlight]Временное повышение одобрения после открытия новой технологии и +30 исследований[/COLOR].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_DeepInvestigation_Name</Label>
+        <String>Исследования</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_DeepInvestigation_Dec</Label>
+        <String>[I]Даже из самых незначительных источников можно извлечь уроки.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 исследований после изучения Аномалии[/COLOR][BR][COLOR=UIDefaultHighlight]Открывает множество новых аномалий вблизи нашей родной планеты[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_EarlyAdoption_Name</Label>
+        <String>Быстрое освоение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_EarlyAdoption_Dec</Label>
+        <String>[I]Быстрое освоение технологий в стремительно развивающейся Вселенной подобно катанию на космической волне. Тот, кто решится покорить неизвестность, может открыть тайны звезд.[/I][BR][BR][COLOR=UIDefaultHighlight]Скидка на прорывные технологии увеличивается до 60%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Breakthrough_Name</Label>
+        <String>Прорыв</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Breakthrough_Dec</Label>
+        <String>[I]Наука, не связанная ограничениями, может изменить все.[/I][BR][BR][COLOR=UIDefaultHighlight]Исследования: +100, разблокирует галактическое достижение «Уменьшитель Гиперион»[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_RiskTaking_Name</Label>
+        <String>Риски</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_RiskTaking_Dec</Label>
+        <String>[I]Прогресс логики требует бескомпромиссного противостояния догмам и риторике.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует улучшение Shark Tank.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Futurist_Name</Label>
+        <String>Футуризм</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Futurist_Dec</Label>
+        <String>[I]Не прославляйте врачей, солдат или предпринимателей. Где бы они были без изобретений, которые помогли им в их ремесле?[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует планетарное улучшение «Двигатель возможностей»[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_QuantumLeap_Name</Label>
+        <String>Квантовый скачок</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_QuantumLeap_Dec</Label>
+        <String>[I]Каждая идея должна быть озвучена, успех или провал зависит от ее достоинств. В науке нет места морали, только рациональность[/I][BR][BR][COLOR=UIDefaultHighlight]Исследования: +1000[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Kindness_Name</Label>
+        <String>Доброта</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Kindness_Dec</Label>
+        <String>[I]Любовь и сострадание - это необходимость, а не роскошь. Без них мы не сможем выжить.[/I][BR][BR][COLOR=UIDefaultHighlight] +1 Дипломатия[/COLOR][BR][COLOR=UIDefaultHighlight]3 корабля-конструктора присоединяются к тебе[/COLOR].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Charity_Name</Label>
+        <String>Благотворительность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Charity_Dec</Label>
+        <String>[I]На просторах космоса щедрость никогда не приводила ни одну душу к разорению.[/I][BR][BR][COLOR=UIDefaultHighlight]Преступность: -10%. Появляется корабль «Добрая воля»[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Sustainability_Name</Label>
+        <String>Устойчивость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Sustainability_Dec</Label>
+        <String>[I]Наши отношения с природой - это не эксплуатация, а симбиоз, поддержание хрупкого равновесия, обеспечивающего жизнь на века.[/I][BR][BR][COLOR=UIDefaultHighlight]Глобальное загрязнение: -10%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Altruism_Name</Label>
+        <String>Альтруизм</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Altruism_Dec</Label>
+        <String>[I]Если не относиться к строительству империи как к игре с нулевым итогом, то можно построить сообщество, в котором выиграют все.[/I][BR][BR][COLOR=UIDefaultHighlight]+2 дипломатии [BR][BR] Родной мир получает 10% от всех поступлений от всех родных миров цивилизаций, с которыми мы в дружеских отношениях[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Empathy_Name</Label>
+        <String>Эмпатия</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Empathy_Dec</Label>
+        <String>[I]В разгар войны эмпатия становится лучом надежды, напоминая нам о нашей общей гармонии и возможности мира и взаимопонимания.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане больше не воспринимают войну с родными цивилизациями негативно.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Forgiveness_Name</Label>
+        <String>Прощение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Forgiveness_Dec</Label>
+        <String>[I]Признание и прощение ошибок всех инопланетных видов открывает путь к общему прогрессу.[/I][BR][BR][COLOR=UIDefaultHighlight]Игнорируются дипломатические штрафы за войну с союзниками или торговлю с врагами.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Consensus_Name</Label>
+        <String>Согласие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Consensus_Dec</Label>
+        <String>[I]Мы единодушно согласны с тем, что радость от совместного процветания превосходит минутный восторг от личного триумфа.[/I][BR][BR][COLOR=UIDefaultHighlight]Ожидания граждан снижаются на 50%, а граждане с чертой Коллективист получают +10% одобрения.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Practicality_Name</Label>
+        <String>Практичность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Practicality_Dec</Label>
+        <String>[I]Из всего того, чем должна обладать империя, есть ли что-то важнее продуманной логистики?[/I][BR][BR][COLOR=UIDefaultHighlight]Добавляет 3 корабля снабжения.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Realism_Name</Label>
+        <String>Реализм</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Realism_Dec</Label>
+        <String>[I]Мы известны тем, что оцениваем товары объективно.[/I][BR][BR][COLOR=UIDefaultHighlight]Инопланетные цивилизации оценят ваши сделки на 50% выше.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_GoalOriented_Name</Label>
+        <String>Цели</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_GoalOriented_Dec</Label>
+        <String>[I]Наше руководство эффективно использует ресурсы, сосредоточившись на достижении результатов, и постоянно совершенствуется.[/I][BR][BR][COLOR=UIDefaultHighlight]Бонус губернатора Основного мира удваивается.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Flexibility_Name</Label>
+        <String>Гибкость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Flexibility_Dec</Label>
+        <String>[I]Гибкость помогает адаптироваться к колебаниям рынка, способствуя взаимовыгодному обмену и росту экономики.[/I][BR][BR][COLOR=UIDefaultHighlight]Продажа на Галактическом базаре +25%, покупка на Галактическом базаре -25%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Attrition_Name</Label>
+        <String>Отсев</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Attrition_Dec</Label>
+        <String>[I]Когда мы открываемся Вселенной, она принимает и нас. Также она отвергает тех, кто противостоит нам.[/I][BR][BR][COLOR=UIDefaultHighlight]-25% ОЗ за вражеские корабли в наших границах[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Resilience_Name</Label>
+        <String>Устойчивость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Resilience_Dec</Label>
+        <String>[I]С каждой победой наши войска становятся все увереннее и стремятся победить снова.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение: +1% за покоренную планету[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Amiable_Name</Label>
+        <String>Дружелюбие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Amiable_Dec</Label>
+        <String>[I]Благоразумный подход создал нам репутацию, которая принесет нам пользу во всех дипломатических делах.[/I][BR][BR][COLOR=UIDefaultHighlight]Дипломатия: +1[BR]Повышение торговой стоимости[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Negotiators_Name</Label>
+        <String>Переговоры</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Negotiators_Dec</Label>
+        <String>[I]Ведя переговоры, мы не ищем личной выгоды, мы строим отношения ради взаимного процветания и гармонии.[/I][BR][BR][COLOR=UIDefaultHighlight]Дипломатический капитал: +3 в месяц[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Responsibility_Name</Label>
+        <String>Ответственность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Responsibility_Dec</Label>
+        <String>[I]Руководители низшего звена эффективно управляют ресурсами, снижая расходы, поскольку используют государственные средства с умом, сводя к минимуму потери.[/I][BR][BR][COLOR=UIDefaultHighlight]Снижение эксплуатационных расходов в цивилизации: +25%[/COLOR][COLOR=UIDefaultHighlight] [/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Trustworthy_Name</Label>
+        <String>Доверие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Trustworthy_Dec</Label>
+        <String>[I]Надежность - это не только личное качество, это фундамент прочных связей и основа сплоченного общества.[/I][BR][BR][COLOR=UIDefaultHighlight]Социальность гражданина: +1[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Honesty_Name</Label>
+        <String>Честность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Honesty_Dec</Label>
+        <String>[I]Честность, самая благородная добродетель лидера, светит как маяк, притягивая к себе людей и внушая преданность.[/I][BR][BR][COLOR=UIDefaultHighlight]Все лидеры получают черту Прозрачность.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Reliable_Name</Label>
+        <String>Надежность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Reliable_Dec</Label>
+        <String>[I]Нашему слову во Вселенной доверяют больше, чем любому договору.[/I][BR][BR][COLOR=UIDefaultHighlight]Другие расы будут торговать с нами с большей выгодой[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Spycraft_Name</Label>
+        <String>Шпионаж</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Spycraft_Dec</Label>
+        <String>[I]То, что реально, не имеет значения, важно лишь то, что люди считают реальным.[/I][BR][BR][COLOR=UIDefaultHighlight]+5 Обман[BR]Все лидеры обладают чертой Защитник[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Detached_Name</Label>
+        <String>Обособленность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Detached_Dec</Label>
+        <String>[I]Наше общество настолько отстранилось от потребительства, что появилось множество лишних товаров.[/I][BR][BR]	[COLOR=UIDefaultHighlight]3 корабля снабжения. Прибыль во всех мирах: +10%.[/COLOR]		</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CriminalTies_Name</Label>
+        <String>Криминал</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CriminalTies_Dec</Label>
+        <String>[I]Мы так долго торговали и путешествовали с сомнительными элементами галактики, что они воспринимают нас как своих.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует приказ Волна преступности.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Discretion_Name</Label>
+        <String>Защита</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Discretion_Dec</Label>
+        <String>[I]Мы следим за тем, чтобы враждебным расам было трудно пробраться на наши территории.[/I][BR][BR][COLOR=UIDefaultHighlight]Зона действия сенсора и ходы: -1, если вражеские корабли в наших границах.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Paranoia_Name</Label>
+        <String>Паранойя</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Paranoia_Dec</Label>
+        <String>[I]В теневых просторах галактики паранойя — зловещий союзник.[/I][BR][BR][COLOR=UIDefaultHighlight]Все наши Лидеры имеют черту Параноик[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CrimeLords_Name</Label>
+        <String>Криминальные Лорды</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_CrimeLords_Dec</Label>
+        <String>[I]В этой безжалостной галактике процветают хитрые и жестокие.[/I][BR][BR][COLOR=UIDefaultHighlight]3 новых лидера. Мировая преступность: +3%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_HiddenAgenda_Name</Label>
+        <String>Скрытая цель</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_HiddenAgenda_Dec</Label>
+        <String>[I]У нас сложилась репутация, что с нами можно договориться, и мы умеем выходить из любых конфликтов.[/I][BR][BR][COLOR=UIDefaultHighlight]Никто не объявит нам войну в течение следующих 50 ходов.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Independence_Name</Label>
+        <String>Независимость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Independence_Dec</Label>
+        <String>[I]Независимость колоний воспитывает в них уверенность в себе, позволяя им заботиться о собственных нуждах и процветать автономно.[/I][BR][BR][COLOR=UIDefaultHighlight]15% прибавки к Supply Attrition у колоний[/COLOR][BR][COLOR=UIDefaultHighlight]Разрождает корабль &quot;Независимость&quot;[/COLOR].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Inviting_Name</Label>
+        <String>Гостеприимство</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Inviting_Dec</Label>
+        <String>[I]Культура гостеприимства становится источником тепла и единства, объединяя разных людей и формируя чувство сопричастности.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане разных видов: +3[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Adaptable_Name</Label>
+        <String>Адаптив.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Adaptable_Dec</Label>
+        <String>[I]Наш опыт колонизации снова оправдал себя, позволив нам найти дополнительные полезные плитки на каждой из наших колоний.[/I][BR][BR][COLOR=UIDefaultHighlight]+2 дополнительные плитки на каждой планете[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfDeterminism_Name</Label>
+        <String>Самоопределение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfDeterminism_Dec</Label>
+        <String>[I]Наше общество позволяет человеку самому определять свое будущее, хорошо это или плохо.[/I][BR][BR][COLOR=UIDefaultHighlight]3 лидера присоединятся к нам. Все показатели граждан с чертой Индивидуалист: +3[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfSufficiency_Name</Label>
+        <String>Самообеспечение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfSufficiency_Dec</Label>
+        <String>[I]В постоянно меняющихся условиях умение позаботиться о себе становится решающим фактором.[/I][BR][BR][COLOR=UIDefaultHighlight]Скорость ремонта всех кораблей увеличивается.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Enticing_Name</Label>
+        <String>Привлекательность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Enticing_Dec</Label>
+        <String>[I]Наша репутация выросла настолько, что остальные миры хотят присоединиться к нашей цивилизации.[/I][BR][BR][COLOR=UIDefaultHighlight]Все планеты и звездные базы под нашим влиянием присоединяются к нашей цивилизации[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Unification_Name</Label>
+        <String>Объединение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Unification_Dec</Label>
+        <String>[I]Различные цивилизации, сплетаясь воедино, возносят всех, кто принимает это единство, к новым вершинам мудрости и процветания.[/I][BR][BR][COLOR=UIDefaultHighlight]Влияние родного мира: +100%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SharedBelief_Name</Label>
+        <String>Общая вера</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SharedBelief_Dec</Label>
+        <String>[I]Убеждения и ценности объединяют сердца и умы, и коллективный дух преодолевает все границы.[/I][BR][BR][COLOR=UIDefaultHighlight] Повышение вероятности того, что новые граждане будут обладать чертой Коллективизм [BR][BR] Жилые районы: +2 уровня[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PreferredCulture_Name</Label>
+        <String>Единая культура</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PreferredCulture_Dec</Label>
+        <String>[I]Объединившись в рамках одной культуры, неоднородное общество достигает новых высот прогресса и просвещения.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение: +10% для видов нашей цивилизации.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Respect_Name</Label>
+        <String>Уважение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Respect_Dec</Label>
+        <String>[I]Уважение, основа истинного лидерства, порождает безоговорочную преданность.[/I][BR][BR][COLOR=UIDefaultHighlight]Бонус преданности лидеру: +10[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Peacekeeping_Name</Label>
+        <String>Миротворчество</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Peacekeeping_Dec</Label>
+        <String>[I]Мудрый лидер добрым словом умиротворяет своих врагов, обезоруживает их, превращая противников в союзников и выстраивая гармоничный путь к миру.[/I][BR][BR][COLOR=UIDefaultHighlight]Все лидеры получают черту Миротворец [BR][BR] Зона действия звездной базы: +1. [BR][BR] Дипломатия: +2 за миротворчество[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Serenity_Name</Label>
+        <String>Покой</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Serenity_Dec</Label>
+        <String>[I]Культура и уровень жизни нашей цивилизации вызывают восхищение и зависть во всей Галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане с чертой Пацифист увеличивают свои показатели в четыре раза.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Intolerance_Name</Label>
+        <String>Нетерпимость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Intolerance_Dec</Label>
+        <String>[I]Нетерпимость подпитывает стремление к конфликтам, в которых не имеет значения личность противника.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане больше не воспринимают негативно войну с представителями своего вида.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Prejudice_Name</Label>
+        <String>Предрассудки</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Prejudice_Dec</Label>
+        <String>[I]Предрассудки и дискриминация низших рас необходимы для сохранения превосходства и доминирования над более слабыми видами в галактике.[/I][BR][BR][COLOR=UIDefaultHighlight]Трудолюбие: +2 для граждан других видов.[/COLOR][COLOR=UIDefaultHighlight] [/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Censorship_Name</Label>
+        <String>Цензура</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Censorship_Dec</Label>
+        <String>[I]Сила цензуры заключается в ее коварной способности манипулировать сознанием и подавлять инакомыслие.[/I][BR][BR][COLOR=UIDefaultHighlight]У фракций нет побочных эффектов[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Oppression_Name</Label>
+        <String>Угнетение</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Oppression_Dec</Label>
+        <String>[I]Смысл угнетения - злонамеренный контроль и подчинение масс.[/I][BR][BR][COLOR=UIDefaultHighlight]Преимущества фракций увеличены на 50%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Planning_Name</Label>
+        <String>Планирование</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Planning_Dec</Label>
+        <String>[I]Культура, основанная на организации и стратегическом планировании, порождает грозные флотилии.[/I][BR][BR][COLOR=UIDefaultHighlight]Логистика: +8[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Exploitation_Name</Label>
+        <String>Эксплуатация</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Exploitation_Dec</Label>
+        <String>[I]Наш долг - использовать труд и ресурсы более слабых видов, ибо их ценность заключается только в том, что они служат нам.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует приказ Эксплуатация населения[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_AbuseOfPower_Name</Label>
+        <String>Злоупотребление властью</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_AbuseOfPower_Dec</Label>
+        <String>[I]Власть непререкаема, когда обладает абсолютным авторитетом.[/I][BR][BR][COLOR=UIDefaultHighlight]Удваивает # контроля в месяц[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Tolerance_Name</Label>
+        <String>Терпимость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Tolerance_Dec</Label>
+        <String>[I]Истинный прогресс в любом обществе может быть достигнут только при условии принятия тех, кто отличается от нас самих.[/I][BR][BR][COLOR=UIDefaultHighlight]Основные миры начинают с +100 влияния, дополнительные +5 влияния за ход[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Integrity_Name</Label>
+        <String>Добросовестность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Integrity_Dec</Label>
+        <String>[I]Когда граждане и институты отдают предпочтение честности и порядочности, а не личной выгоде, преступность и коррупция снижаются.[/I][BR][BR][COLOR=UIDefaultHighlight]Вся преступность уменьшается на 50%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Peacefulness_Name</Label>
+        <String>Миролюбие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Peacefulness_Dec</Label>
+        <String>[I]Именно непоколебимая приверженность миру дает надежду цивилизациям, которые бережно сохраняют ценности.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует улучшение Объединенные планеты[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_UniversalRights_Name</Label>
+        <String>Всеобщие права</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_UniversalRights_Dec</Label>
+        <String>[I]Всеобщие права и свободы для всех необходимы для создания стабильного, процветающего и гармоничного общества.[/I][BR][BR][COLOR=UIDefaultHighlight]Каждый гражданин с чертой Эгалитарный предоставляет 1 единицу культуры за ход.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Environmentalism_Name</Label>
+        <String>Защита среды</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Environmentalism_Dec</Label>
+        <String>[I]Сохранение окружающей среды необходимо не только для выживания нашей планеты, но и для благополучия всех форм жизни, которые называют ее своим домом.[/I][BR][BR][COLOR=UIDefaultHighlight]Загрязнение во всех мирах: -50%[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_GalacticCourt_Name</Label>
+        <String>Суд Галактики</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_GalacticCourt_Dec</Label>
+        <String>[I]Галактический суд вершит правосудие беспристрастно и милосердно, служа всем, кто ищет справедливости во вселенной хаоса.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует улучшение Суд Галактики[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfReliance_Name</Label>
+        <String>Самостоятельность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SelfReliance_Dec</Label>
+        <String>[I]Победа личности над обстоятельствами - вот суть уверенности в себе. Ваши люди ценят независимость и личную ответственность.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане получают +3 к своим характеристикам.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Autonomy_Name</Label>
+        <String>Автономность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Autonomy_Dec</Label>
+        <String>[I]Выбор принадлежит личности. Ваше общество верит в свободу принятия решений.[/I][BR][BR] [COLOR=UIDefaultHighlight]Лояльность: +10 для губернаторов, +1 слот политики.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PrivatePropertyRights_Name</Label>
+        <String>Частная собственность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_PrivatePropertyRights_Dec</Label>
+        <String>[I]Собственность уважается и защищается. В вашем обществе ценятся права личности на накопление и контроль собственности.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует специализацию Предприниматель, +1 слот Модернизации орбиты на каждой планете.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Competitiveness_Name</Label>
+        <String>Конкурентоспособность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Competitiveness_Dec</Label>
+        <String>[I]Общество вознаграждает тех, кто стремится быть лучшим. Ваши граждане ценят конкуренцию и самосовершенствование.[/I][BR][BR]	 [COLOR=UIDefaultHighlight]Все граждане с чертой Индивидуалист предоставляют +1 богатства их основному миру.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Privacy_Name</Label>
+        <String>Частная жизнь</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Privacy_Dec</Label>
+        <String>[I]Право человека на частную жизнь высоко ценится и охраняется. Общество уважает личное пространство, данные и связи.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение: 25% для всех граждан с чертой Индивидуалист.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Obedience_Name</Label>
+        <String>Послушание</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Obedience_Dec</Label>
+        <String>[I]В вашем обществе единство и порядок ценятся превыше всего. Повиновение велениям государства - добродетель, а не бремя.[/I][BR][BR][COLOR=UIDefaultHighlight]Ожидания граждан снижены на 20%. Граждане с чертой &quot;Тоталитаризм&quot; дают на +25% больше [HS=HS_Manufacturing]Производства[/HS]. Порождает корабль поддержки &quot;Усилитель&quot;[/COLOR].</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Propaganda_Name</Label>
+        <String>Пропаганда</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Propaganda_Dec</Label>
+        <String>[I]Ваше государство контролирует информацию, умело управляя общественным мнением в соответствии со своими интересами.[/I][BR][BR] [COLOR=UIDefaultHighlight]Влияние во всех основных мирах: +10%. Увеличение прироста населения за счет эффективного воздействия.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Purges_Name</Label>
+        <String>Чистки</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Purges_Dec</Label>
+        <String>[I]Ваше государство поддерживает власть через страх, устраняя возможные угрозы.[/I][BR][BR] [COLOR=UIDefaultHighlight]Во всех основных мирах снижается уровень беспорядков, а меры безопасности становятся более эффективными.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_LaborRights_Name</Label>
+        <String>Права трудящихся</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_LaborRights_Dec</Label>
+        <String>[I]Роль рабочего класса повышается путем признания и защиты его прав.[/I][BR][BR] [COLOR=UIDefaultHighlight]Разблокирует улучшение Центр Союза.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_TechnologicalInnovation_Name</Label>
+        <String>Инновации</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_TechnologicalInnovation_Dec</Label>
+        <String>[I]Инновации - визитная карточка будущего.[/I][BR][BR][COLOR=UIDefaultHighlight]Граждане с чертой Прогрессивный генерируют +1 технологию за ход. Разблокирует улучшение Инновационный комплекс.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Cooperation_Name</Label>
+        <String>Сотруднич.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Cooperation_Dec</Label>
+        <String>[I]Амбиции команды служат общему благу.[/I][BR][BR][COLOR=UIDefaultHighlight]+1 плодородия для всех миров. Появляется корабль «Переговорщик»[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Harmony_Name</Label>
+        <String>Гармония</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Harmony_Dec</Label>
+        <String>[I]Единство и мир превыше всего. Никакие индивидуальные разногласия не должны нарушать гармонию коллектива.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение во всех основных мирах: +10%. 1 дипломат.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Fatalism_Name</Label>
+        <String>Фатализм</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Fatalism_Dec</Label>
+        <String>[I]Все события предопределены и потому неизбежны. Сопротивляться судьбе бесполезно.[/I][BR][BR][COLOR=UIDefaultHighlight] «Мы все умрем так или иначе». Военная служба: +20%[BR][BR] Разблокирует приказ Солдаты смерти[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MoralRelativism_Name</Label>
+        <String>Моральный релятивизм</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MoralRelativism_Dec</Label>
+        <String>[I]Хорошее и плохое - это лишь точки зрения.[/I][BR][BR][COLOR=UIDefaultHighlight]У нигилистов на планете показатели увеличиваются в четыре раза [BR][BR] Разблокирует коммуникационный модуль ЗБ &quot;Релятивистский этический маяк&quot; [BR][BR] Каждый выбор позволяет осознать все идеологии[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Interdependence_Name</Label>
+        <String>Взаимозависимость</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Interdependence_Dec</Label>
+        <String>[I]Когда падает один, оступаются все. Когда один побеждает, все разделяют победу. Давайте построим будущее, в котором никто не останется позади.[/I][BR][BR][COLOR=UIDefaultHighlight]Второстепенные миры предоставляют миру-спонсору в 3 раза больше ресурсов.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SocialSolidarity_Name</Label>
+        <String>Солидарность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SocialSolidarity_Dec</Label>
+        <String>[I]Мы - одно тело, один голос, одна общая судьба. Только работая вместе, мы сможем справиться с испытаниями.[/I][BR][BR][COLOR=UIDefaultHighlight]Одобрение основного мира: +1% для каждой колонии в империи без управления.[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MassMobilization_Name</Label>
+        <String>Общая мобилизация</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_MassMobilization_Dec</Label>
+        <String>[I]В трудные времена каждый вносит свой вклад. Единство способно преодолеть любые препятствия.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует приказ Общая мобилизация. Максимальное производство: +25% в военное время[/COLOR]</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_UnifiedCoordination_Name</Label>
+        <String>Единая координация</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_UnifiedCoordination_Dec</Label>
+        <String>[I]Хорошо отлаженная машина - вот что такое наша цивилизация. Каждая часть, каждый человек работает с остальными на общее благо. Мы движемся как единое целое, и поэтому наш потенциал безграничен, позволяя нашим флотам становиться все больше.[/I][BR][BR] [COLOR=UIDefaultHighlight]Логистика: +12[/COLOR]</String>
+    </StringTable>
+
+    <StringTable>
+        <Label>Trait_HiveMinds_Name</Label>
+        <String>Разум роя</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_HiveMind_Dec</Label>
+        <String>[I]Каждая личность действует в гармонии, ведомая общим сознанием. Понятие «Я» растворилось, превратив цивилизацию в мощную, единую сущность.[/I][BR][BR][COLOR=UIDefaultHighlight]Все подразделения и города функционируют согласованно, одновременные действия дают значительные бонусы. Разблокирована технология «Постсознание».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_TerrorStars_Name</Label>
+        <String>Звезды ужаса</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_TerrorStars_Dec</Label>
+        <String>[I]Просторы космоса таят в себе устрашающие чудеса, используемые нашей цивилизацией для господства и обороны.[/I][BR][BR][COLOR=UIDefaultHighlight]Усовершенствованное космическое оружие и межзвездные укрепления. Страх поражает врагов при встрече. Открывает технологию «Звезда Ужаса».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_Sanctuary_Name</Label>
+        <String>Святилище</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Sanctuary_Dec</Label>
+        <String>[I]В галактике, охваченной беспорядком, наша цивилизация воплощает надежду и безопасность.[/I][BR][BR][COLOR=UIDefaultHighlight]Дипломатические бонусы и усиленная оборона превращают наши территории в убежище для союзников и граждан. Открывает технологию «Согласие».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_Singularity_Name</Label>
+        <String>Сингулярн.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Singularity_Dec</Label>
+        <String>[I]Воплощая в жизнь достижения технического прогресса, наша цивилизация вот-вот превратится в нечто... трансцендентное.[/I][BR][BR][COLOR=UIDefaultHighlight]Большие бонусы во всех технологических начинаниях. Возможность эволюции в постбиологическое состояние. Разблокирует технологию «Технологическая сингулярность».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_Utopia_Name</Label>
+        <String>Утопия</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Utopia_Dec</Label>
+        <String>[I]Стремясь к совершенству, мы создали общество, где все процветают и царит гармония.[/I][BR][BR][COLOR=UIDefaultHighlight]Исключительное счастье, рост и процветание общества во всех системах. Все планеты получают 1000 единиц влияния. Разблокирована технология «Мечта об Утопии».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_Legacy_Name</Label>
+        <String>Наследие</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_Legacy_Dec</Label>
+        <String>[I]Уважая прошлое, наша цивилизация заботится о том, чтобы ее достижения и мудрость сохранялись на протяжении веков.[/I][BR][BR][COLOR=UIDefaultHighlight]Больше памятников, чудес и культурных достижений. Тщательно сохраняется история. Мы успешно сочетаем знания Предтеч с нашими собственными славными традициями. Престиж: 50 очков. Открывается технология «Славное наследие».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_BigBrother_Name</Label>
+        <String>Большой Брат</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_BigBrother_Dec</Label>
+        <String>[I]Каждое движение, каждый звук, каждая мысль контролируются в интересах общего блага.[/I][BR][BR][COLOR=UIDefaultHighlight]Безупречная внутренняя безопасность и слежка. Инакомыслие практически отсутствует. Ожидания граждан снижены на 50 единиц. Разблокирована технология «Координированные путешествия».[/COLOR]</String>
+    </StringTable>
+    
+    <StringTable>
+        <Label>Trait_SovereignIdentity_Name</Label>
+        <String>Идентичность</String>
+    </StringTable>
+    <StringTable>
+        <Label>Trait_SovereignIdentity_Dec</Label>
+        <String>[I]Превыше всего наша цивилизация ценит свою уникальную идентичность и независимость, твердо стоя перед лицом внешних влияний.[/I][BR][BR][COLOR=UIDefaultHighlight]Устойчивое сопротивление внешним культурным или дипломатическим влияниям. Усиление национальной гордости и единства. Статы всех граждан значительно увеличиваются. Разблокирует технологию Individual Divinity.[/COLOR].</String>
+    </StringTable>
+    
+	<!--Adding text for future culture trait updates after text lock 9.22.23-->
+	<!--Note: String labels have temporary _TK tag-->
+	<StringTable>
+		<Label>Trait_SelfGovernance_Dec_TK</Label>
+		<String>[I]Малейшее меньшинство - это индивид. Ты не можешь отрицать личность и утверждать, что защищаешь меньшинства.[/I][BR][BR][COLOR=UIDefaultHighlight]Губернаторы никогда не восстанут[/COLOR].</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Purges_Dec_TK</Label>
+		<String>[I]Ваше государство поддерживает власть с помощью страха, устраняя предполагаемые угрозы своему контролю.[/I][BR][BR]  [COLOR=UIDefaultHighlight]Открывает орбитальный ГУЛАГ [BR][BR] Открывает способность к чистке граждан[/COLOR].</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Prestige_Dec_TK</Label>
+		<String>[I]Слава покажет тебе, что ценит та или иная культура. В то время как другие поклоняются вульгарным и красивым или ярким и любопытным, мы почитаем сильных.[/I][BR][BR][COLOR=UIDefaultHighlight]Прогресс победы Престижа +25%[/COLOR].[COLOR=UIDefaultHighlight] [/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Censorship_Dec_TK</Label>
+		<String>[I]Власть цензуры заключается в ее зловещей способности манипулировать умами, подавлять инакомыслие и контролировать повествование.[/I][BR][BR][COLOR=UIDefaultHighlight]Иностранное влияние на наши миры сократилось на 50%[/COLOR].</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Collaboration_Name_TK</Label>
+		<String>Сотрудничество</String>
+	</StringTable>
+	<StringTable>
+		<Label>Trait_Collaboration_Dec_TK</Label>
+		<String>[I]Научное сотрудничество - краеугольный камень инноваций, продвигающий нас к будущему, построенному на совместных знаниях и коллективных открытиях.[/I][BR][BR][COLOR=UIDefaultHighlight]Открывает Hyperion Braintrust Improvement[/COLOR].</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Trustworthy_Dec_TK</Label>
+		<String>[I]Доверчивость - это не просто личная добродетель; это краеугольный камень прочных связей и опора сплоченного сообщества.[/I][BR][BR][COLOR=UIDefaultHighlight]Разблокирует улучшение денежного доверия Небулона[/COLOR].</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Trait_Peacefulness_Dec_TK</Label>
+		<String>[I]Постоянная приверженность миру приносит надежду цивилизациям, которые дорожат его ценностями.[/I][BR][BR][COLOR=UIDefaultHighlight]+3 Дипломатических баффа с каждой цивилизацией за наше миролюбие[/COLOR].</String>
+	</StringTable>
+	<StringTable>
+		<Label>Trait_Peacefulness_Diplo_Dec_TK</Label>
+		<String>Твое спокойствие</String>
+	</StringTable>
+
 </StringTableList>
