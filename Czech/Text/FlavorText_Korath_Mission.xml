@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FlavorTextDefs
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+
+    <!---->
+    <FlavorTextDef>
+        <InternalName>Korath_StartOfGame</InternalName>
+        <FlavorTextOption>
+            <Text>Vítej, entito. Stojíš před Korathem, nejvyšším zástupcem vesmíru a vrcholným představitelem Drenginů.[BR][BR]Je načase, abys pochopil naši doktrínu, hlavní myšlenku naší existence. [BR][BR]V rozlehlém vesmíru existuje přirozený řád, nevyslovená hierarchie, která řídí veškerý život. My, Korathové, jsme vrcholem tohoto řádu, vrcholem evoluce a vědomí. Naše filozofie není založena na zlobě, ale na logické nutnosti. [BR][BR]Uvažujte o jednoduchých činnostech, které podnikáte pro zachování svého vlastního životního prostředí. Když se ve vašem obydlí uhnízdí vosy, neodstraníte je? Považuje se za zlomyslnost zrekultivovat půdu bažin pro úkryt nebo vyhubit škůdce, kteří ohrožují vaši existenci? Tyto věci neděláte z nenávisti, ale z prvotní potřeby přežití a pokroku. [BR][BR]Stejně tak se díváme na jiné druhy, jako se vy díváte na tyto prosté tvory. Pro nás nejsou tak vnímaví jako my; chybí jim naše vědomí, naše hluboké pochopení vesmíru. Jejich existence se ve svém nižším vývojovém stupni nevyrovná té naší. Stejně jako vy můžete porážet dobytek pro obživu nebo vybíjet zvířata pro větší ekologickou rovnováhu, my tak jednáme pro udržení vesmírné rovnováhy. [BR][BR]Naše jednání je často mylně vykládáno jako krutost, ale v podstatě je to forma kosmického řízení. Likvidace slabších druhů je povinností, nikoli volbou. Je to odpovědnost, kterou neseme, abychom zajistili přežití a nadvládu nejvyšší formy života - Drenginů. [BR][BR]V tomto úkolu se nevyžíváme, je to břemeno, které přijímáme. Je to logický vývoj přirozeného řádu, nezbytný krok ke galaktické čistotě a rovnováze. Dopustit, aby se množily podřadné druhy, znamená vyvolat chaos, narušit křehkou podstatu vesmíru. [BR][BR]Vesmír není kolébkou laskavosti; je to říše neúprosných pravd. A ta pravda zní: jen ti nejsilnější, nejvyspělejší, mají právo utvářet budoucnost. To je podstata naší filozofie, jádro našeho bytí. Korathové neusilují o zlo; usilujeme o řád, pokrok a vzestup právoplatných vládců hvězd.[BR][BR]Ty, entito, máš vzácnou příležitost pozorovat nás při naší nezbytné práci. Raduj se z této příležitosti. Staň se svědkem Korathu v akci. Staň se svědkem přirozeného řádu vesmíru.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    <FlavorTextDef>
+        <InternalName>Conversation_KorathMeetOthers</InternalName>
+        <FlavorTextOption>
+            <Text>Ve velkém tkanivu vesmíru má každá nit své místo, každý druh svoji roli. [BR][BR]Jsme pozorovatelé, zpočátku žáci, kteří se snaží pochopit jedinečnou povahu jiných bytostí. Naší filozofií je pečlivé studium, abychom zjistili, jakou roli hraje každý druh ve velkém plánu. Je to křehká rovnováha, kterou nechceme bezdůvodně narušit. [BR][BR]Všimněte si, že zde, v tomto okamžiku vzájemného setkání, podáváme těmto tvorům ruku opatrného přátelství.  Uvědomte si však, že vesmír je místem rozhodnutí a následků a my, Korathové, jsme jeho bdělými strážci. [BR][BR]Budeme pozorovat a pak budeme jednat, abychom odstranili tento druh jako destabilizující prvek. Jedná se o akt očisty, nikoliv zlovolnosti. Je to chirurgické vyříznutí, přesné a zbavené zbytečné krutosti, podobně jako při prořezávání stromu pro zdraví celku.[BR][BR]Pozorujte. Učte se. Pochopte. A buďte vděční za službu, kterou poskytujeme.</Text>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Stojíme před vámi jako ti, kteří přežili svoji vlastní tragédii. Víme o vašem přesvědčení a o vašem pohledu na ostatní druhy jako na méněcenné. Ale věnujte nám pozornost: nejsme pouhými přízraky, které je třeba zavrhnout nebo vyhladit. [BR][BR]Naše historie je příkladem odolnosti vůči Yorům, svědectvím naší síly a vůle. Při našem prvním setkání vás vyzýváme, abyste přehodnotili své představy. Nejsme protivníci, které je třeba porazit, ale rovnocenní soupeři, které je třeba ve vesmírné aréně respektovat.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Zajímalo by mě, jak budeš chutnat.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Podívejme se, co vás opravňuje k další existenci.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ICONIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Je nepravděpodobné, že se dostanete do vesmírného programu.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Nepamatuji si, že by byl Drengin tak ošklivý. Dokonce až tak moc.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerFaction>FACTION_KORATH_Campaign_ReturnOfKorath</ListenerFaction>
+            </Requirements>
+            <Text>Nejsme Drenginové!</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Dokud je mír, můžeme obchodovat.</Text>
+            <PreferenceWeight>1000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Vaše kosti budou skvělou dekorací.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Váš příchod nás naplňuje hlubokými obavami. Vaše pověst vás předchází, stín vrhaný na hvězdy, symbol nespoutané zlovůle a ničení.[BR][BR]Naše civilizace, která se řídí zásadami osvícení a harmonie, je v příkrém rozporu s vaším bezohledným přístupem. Nehorázná neúcta Korathů k životu, k posvátnosti existence cítících lidí, je v našich očích ohavností.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Nemáte žádnou hodnotu. Nejste ani vnímaví, ani potrava.</Text>
+            <PreferenceWeight>500</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Vaše pleť má příjemný odstín.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Náš lid, Toriané, a naše vzpomínky na utrpení z rukou netvorů, jako jsi ty, jsou dlouhé a trpké. Váš druh, který pohrdá ostatními druhy jako pouhými nástroji, ztělesňuje samotnou podstatu našeho opovržení. [BR][BR]Jsme si velmi dobře vědomi zvěrstev, kterých se dopouštíte, odporných genetických zásahů, jejichž cílem je vytvořit poslušné, zkažené bytosti a nakládat s vnímajícím životem jako s dobytkem. Takové činy nejsou jen agresivní, jsou urážkou samotné podstaty toho, co znamená být vnímající. [BR][BR]Neodejdeme tiše do noci.
+                </Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Vždy je dobré najít čerstvé zásoby Torianů.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Zdá se, že jsi defektnější, než je pro tvůj druh typické.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+    
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Kývnutím hlavy vás přivítáme jako rovný s rovným, ale vzhledem k vaší pravé povaze, vás nespustíme z očí. Tvá síla je nepopiratelná.[BR][BR]Uznáváme tě jako impozantního hráče. Stejně jako my chápeš, že je nutné prosadit svoji nadvládu. Zatímco ty vládneš hrubou silou, protože to vyhovuje tvým omezeným schopnostem, my dáváme přednost jemnosti manipulace, umění řídit události ze stínu.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Kvazi-rozumný drak je sotva jemný.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Je směšné, když si nějaké zvíře myslí, že s námi může spolupracovat na naší úrovni.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+    
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_MAIN</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>My z podnikového sektoru se nevymlouváme. Vy, stejně jako všichni naši potenciální zákazníci, jste nad námi. Jste lepší než my.  Ale zvažte toto: místo toho, abyste nás vyhubili, berte nás jako druh, který by se dal využít. Limury z Thacosu IV, jež čistí ploutve žralokům Urho.</Text>
+            <PreferenceWeight>100000</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Možná vás necháme žít.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+    <FlavorTextDef>
+        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+        <FlavorTextOption>
+            <Requirements>
+                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+                <ListenerRaceTrait>ExterminatorsAbility</ListenerRaceTrait>
+            </Requirements>
+            <Text>Pro naše potřeby máme k dispozici technologii dronů. Nepotřebujeme další příživníky.</Text>
+            <PreferenceWeight>100</PreferenceWeight>
+        </FlavorTextOption>
+    </FlavorTextDef>
+
+
+</FlavorTextDefs>
