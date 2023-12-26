@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
     <!-- 1.5 Diplomacy additions. -->
-    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
+    <!-- {PLAYERFACTION:1}-Fraktion = Target Faction, {PLAYERFACTION:2}-Fraktion = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
     <FlavorTextDef>
         <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
         <FlavorTextOption>
@@ -73,7 +73,7 @@
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>Vielen Dank, wir sind sehr dankbar für die Unterstützung. Die Großzügigkeit der Fraktion {PLAYERFACTIONLONG:2} wird unter der Fraktion {PLAYERFACTIONLONG:1} für lange Zeit nicht vergessen werden.</Text>
+            <Text>Vielen Dank, wir sind sehr dankbar für die Unterstützung. Die Großzügigkeit der Fraktion {PLAYERFACTIONLONG:2} wird unter der Fraktion {PLAYERFACTIONLONG:1}-Fraktion für lange Zeit nicht vergessen werden.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -208,10 +208,10 @@
             <Requirements>
                 <PersonalityType>Benevolent</PersonalityType>
             </Requirements>
-            <Text>Grüße, {LEADERNAME:2}. Als Zivilisation, die im Schatten der {PLAYERFACTIONLONG:1} lebt, wäre es angemessen, wenn Sie uns {AMOUNT:2} Credits als Zeichen des Respekts zur Verfügung stellen.</Text>
+            <Text>Grüße, {LEADERNAME:2}. Als Zivilisation, die im Schatten der {PLAYERFACTIONLONG:1}-Fraktion lebt, wäre es angemessen, wenn Sie uns {AMOUNT:2} Credits als Zeichen des Respekts zur Verfügung stellen.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
-            <Text>{LEADERNAME:2}, es ist Zeit, dass Sie die Macht der {PLAYERFACTIONLONG:1} anerkennen. Wir fordern {AMOUNT:2} Kredite von Ihrer erbärmlichen Zivilisation.</Text>
+            <Text>{LEADERNAME:2}, es ist Zeit, dass Sie die Macht der {PLAYERFACTIONLONG:1}-Fraktion anerkennen. Wir fordern {AMOUNT:2} Kredite von Ihrer erbärmlichen Zivilisation.</Text>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
@@ -266,14 +266,14 @@
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
         <FlavorTextOption>
-            <Text>Die {PLAYERFACTION:2} lässt sich nicht herumschubsen... und die Größe Ihrer Macht ist fragwürdig.</Text>
+            <Text>Die {PLAYERFACTION:2}-Fraktion lässt sich nicht herumschubsen... und die Größe Ihrer Macht ist fragwürdig.</Text>
             <PreferenceWeight>1</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
             <Requirements>
                 <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
             </Requirements>
-            <Text>Die {PLAYERFACTION:2} fürchten dich nicht.</Text>
+            <Text>Die {PLAYERFACTION:2}-Fraktion fürchten dich nicht.</Text>
             <PreferenceWeight>10</PreferenceWeight>
         </FlavorTextOption>
         <FlavorTextOption>
@@ -309,7 +309,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Als eine Zivilisation mit derart großer Macht ist es nur angemessen, dass die Fraktion {PLAYERFACTIONLONG:1} Tribut von der Fraktion {PLAYERFACTIONLONG:2} erhält... Sagen wir {AMOUNT:2} Credits pro Monat?</Text>
+            <Text>Als eine Zivilisation mit derart großer Macht ist es nur angemessen, dass die Fraktion {PLAYERFACTIONLONG:1}-Fraktion Tribut von der Fraktion {PLAYERFACTIONLONG:2} erhält... Sagen wir {AMOUNT:2} Credits pro Monat?</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -334,7 +334,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_TECH_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Trotz unserer außerordentlichen Stärke im Vergleich zu der {PLAYERFACTIONLONG:2}-Fraktion haben wir bemerkt, dass Ihr über Wissen verfügt, welches uns unbekannt ist. Gebt uns Informationen über {TECHNAME:2}, und wir werden vielleicht der Versuchung widerstehen, uns Eure Schwäche zunutze zu machen.</Text>
+            <Text>Trotz unserer außerordentlichen Stärke im Vergleich zur {PLAYERFACTIONLONG:2}-Fraktion haben wir bemerkt, dass Ihr über Wissen verfügt, welches uns unbekannt ist. Gebt uns Informationen über {TECHNAME:2}, und wir werden vielleicht der Versuchung widerstehen, uns Eure Schwäche zunutze zu machen.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -438,9 +438,9 @@
     <FlavorTextDef>
         <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Als Mitglieder der {PLAYERFACTIONLONG:1}, bitten wir Sie inständig, uns in unserem Konflikt mit den verräterischen {PLAYERFACTIONLONG:3} zu unterstützen. In Dankbarkeit für Ihre Partnerschaft schlagen wir eine großzügige Belohnung von Credits vor {AMOUNT:1}. Werdet ihr euch in diesem Bestreben mit uns vereinen?</Text>
-            <Text>Wir, die Vertreter von {PLAYERFACTIONLONG:1}, wenden uns mit der Bitte um Ihre Hilfe im Kampf gegen {PLAYERFACTIONLONG:3}. Ihre Unterstützung wäre von unschätzbarem Wert, und wir versprechen Ihnen {AMOUNT:1} als Entschädigung für Ihre Dienstleistungen. Wirst du an unserer Seite stehen?</Text>
-            <Text>Im Namen der {PLAYERFACTIONLONG:1}, bitten wir Sie, uns Ihre Stärke gegen die gewaltige {PLAYERFACTIONLONG:3} zu leihen. Wir verpflichten uns, Ihren Mut mit {AMOUNT:1} Krediten zu belohnen, sollten Sie sich bereit erklären, an unserer Seite zu stehen. Wirst du dich uns in dieser Schlacht anschließen?</Text>
+            <Text>Als Mitglieder der {PLAYERFACTIONLONG:1}-Fraktion, bitten wir Sie inständig, uns in unserem Konflikt mit der verräterischen {PLAYERFACTIONLONG:3}-Fraktion zu unterstützen. In Dankbarkeit für Ihre Partnerschaft schlagen wir eine großzügige Belohnung von Credits vor {AMOUNT:1}. Werdet ihr euch in diesem Bestreben mit uns vereinen?</Text>
+            <Text>Wir, die Vertreter der {PLAYERFACTIONLONG:1}-Fraktion, wenden uns mit der Bitte um Ihre Hilfe im Kampf gegen die {PLAYERFACTIONLONG:3}-Fraktion. Ihre Unterstützung wäre von unschätzbarem Wert, und wir versprechen Ihnen {AMOUNT:1} als Entschädigung für Ihre Dienstleistungen. Wirst du an unserer Seite stehen?</Text>
+            <Text>Im Namen der {PLAYERFACTIONLONG:1}-Fraktion, bitten wir Sie, uns Ihre Stärke gegen die gewaltige {PLAYERFACTIONLONG:3}-Fraktion zu leihen. Wir verpflichten uns, Ihren Mut mit {AMOUNT:1} Credits zu belohnen, sollten Sie sich bereit erklären, an unserer Seite zu stehen. Wirst du dich uns in dieser Schlacht anschließen?</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -491,14 +491,14 @@
     <FlavorTextDef>
         <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Die {PLAYERFACTIONLONG:1} bieten Euch eine Gelegenheit: Die Fraktion {PLAYERFACTIONLONG:3} ist eine Bedrohung. Wir glauben, dass vorsorgliche Maßnahmen die beste Möglichkeit sind, um zu verhindern, dass sie eine übergroße Bedrohung werden.[BR][BR]Allerdings sind wir momentan nicht in einer guten Position, um mit ihnen zu verhandeln. Wenn ihr ihnen also den Krieg erklärt, werden wir Euch das Wissen über {TECHNAME:1} vermitteln.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} bringt einen Vorschlag: Die {PLAYERFACTIONLONG:3} werden zu einem echten Problem. Wir glauben, dass ein sofortiges Handeln der beste Weg ist, um zu verhindern, dass sie zu einer großen Bedrohung werden.[BR][BR]Trotz unserer derzeitigen Schwierigkeiten werden wir, wenn Sie ihnen den Krieg erklären, die Technologie {TECHNAME:1} zur Verfügung stellen, um Ihre Bemühungen in dem Konflikt zu unterstützen.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} schlagen einen Vertrag vor: Die {PLAYERFACTIONLONG:3} sind eine echte Bedrohung. Wir glauben, dass das Ergreifen von vorbeugenden Maßnahmen jetzt der beste Weg ist, um ihre Gefahr zu neutralisieren.[BR][BR]Obwohl wir im Moment nicht handeln können, gewähren wir Ihnen Zugang zum Wissen von {TECHNAME:1} um Ihren Kampf zu unterstützen, falls Sie den Krieg erklären würden.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} haben einen Vorschlag: Die {PLAYERFACTIONLONG:3} sind eine echte Bedrohung. Wir glauben, dass das Ergreifen von vorbeugenden Maßnahmen jetzt der beste Weg ist, um ihre Gefahr zu neutralisieren.[BR][BR]Derzeit fehlen uns die Ressourcen, um zu handeln. Wenn Sie jedoch den Krieg erklären, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, um Sie im Kampf zu unterstützen.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} schlagen eine Lösung vor: Die {PLAYERFACTIONLONG:3} werden zu einem großen Sorge. Wir glauben, dass ein sofortiges Handeln der beste Weg ist, sie davon abzuhalten, eine Bedrohung darzustellen.[BR][BR]Trotz unserer Schwierigkeiten, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, falls Sie den Krieg erklären würden.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} präsentieren eine Möglichkeit: Die {PLAYERFACTIONLONG:3} sind eine wachsende Drohung.[BR][BR]Wir halten es für wichtig, vorbeugende Maßnahmen zu ergreifen, bevor sie unaufhaltsam werden. Zurzeit sind wir nicht in der Lage, etwas zu tun. Dennoch, sollten Sie den Krieg erklären, werden wir Ihnen die Technologie {TECHNAME:1} zur Verfügung stellen.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} haben einen Plan: Die {PLAYERFACTIONLONG:3} sind eine echte Gefahr. Wir halten es für wichtig, vorbeugende Maßnahmen zu ergreifen, bevor sie unaufhaltsam werden.[BR][BR]Trotz der Tatsache, dass wir nicht direkt handeln können, werden wir Ihnen die Technologie {TECHNAME:1} zur Verfügung stellen, um in dem Kampf zu helfen.</Text>
-            <Text>Die {PLAYERFACTIONLONG:1} haben einen Vorschlag: Die {PLAYERFACTIONLONG:3} sind ein Grund für tiefe Sorgen. Wir denken, dass es am besten ist, vorbeugende Maßnahmen zu ergreifen, bevor sie zu einer großen Bedrohung werden.[BR][BR]Mit Bezug auf unsere aktuelle Schwierigkeiten, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, um im Kampf zu helfen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion bietet Euch eine Gelegenheit: Die Fraktion {PLAYERFACTIONLONG:3} ist eine Bedrohung. Wir glauben, dass vorsorgliche Maßnahmen die beste Möglichkeit sind, um zu verhindern, dass sie eine übergroße Bedrohung werden.[BR][BR]Allerdings sind wir momentan nicht in einer guten Position, um mit ihnen zu verhandeln. Wenn ihr ihnen also den Krieg erklärt, werden wir Euch das Wissen über {TECHNAME:1} vermitteln.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion bringt einen Vorschlag: Die {PLAYERFACTIONLONG:3}-Fraktion wird zu einem echten Problem. Wir glauben, dass ein sofortiges Handeln der beste Weg ist, um zu verhindern, dass sie zu einer großen Bedrohung werden.[BR][BR]Trotz unserer derzeitigen Schwierigkeiten werden wir, wenn Sie ihnen den Krieg erklären, die Technologie {TECHNAME:1} zur Verfügung stellen, um Ihre Bemühungen in dem Konflikt zu unterstützen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion schlägt einen Vertrag vor: Die {PLAYERFACTIONLONG:3}-Fraktion ist eine echte Bedrohung. Wir glauben, dass das Ergreifen von vorbeugenden Maßnahmen jetzt der beste Weg ist, um ihre Gefahr zu neutralisieren.[BR][BR]Obwohl wir im Moment nicht handeln können, gewähren wir Ihnen Zugang zum Wissen von {TECHNAME:1} um Ihren Kampf zu unterstützen, falls Sie den Krieg erklären würden.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion hat einen Vorschlag: Die {PLAYERFACTIONLONG:3}-Fraktion ist eine echte Bedrohung. Wir glauben, dass das Ergreifen von vorbeugenden Maßnahmen jetzt der beste Weg ist, um ihre Gefahr zu neutralisieren.[BR][BR]Derzeit fehlen uns die Ressourcen, um zu handeln. Wenn Sie jedoch den Krieg erklären, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, um Sie im Kampf zu unterstützen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion schlägt eine Lösung vor: Die {PLAYERFACTIONLONG:3}-Fraktion wird zu einem großen Sorge. Wir glauben, dass ein sofortiges Handeln der beste Weg ist, sie davon abzuhalten, eine Bedrohung darzustellen.[BR][BR]Trotz unserer Schwierigkeiten, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, falls Sie den Krieg erklären würden.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion unterbreitet euch einen Vorschlag: Die {PLAYERFACTIONLONG:3}-Fraktion ist eine wachsende Drohung.[BR][BR]Wir halten es für wichtig, vorbeugende Maßnahmen zu ergreifen, bevor sie unaufhaltsam werden. Zurzeit sind wir nicht in der Lage, etwas zu tun. Dennoch, sollten Sie den Krieg erklären, werden wir Ihnen die Technologie {TECHNAME:1} zur Verfügung stellen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion hat einen Plan: Die {PLAYERFACTIONLONG:3}-Fraktion ist eine echte Gefahr. Wir halten es für wichtig, vorbeugende Maßnahmen zu ergreifen, bevor sie unaufhaltsam werden.[BR][BR]Trotz der Tatsache, dass wir nicht direkt handeln können, werden wir Ihnen die Technologie {TECHNAME:1} zur Verfügung stellen, um in dem Kampf zu helfen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion hat einen Vorschlag: Die {PLAYERFACTIONLONG:3}-Fraktion ist ein Grund für tiefe Sorgen. Wir denken, dass es am besten ist, vorbeugende Maßnahmen zu ergreifen, bevor sie zu einer großen Bedrohung werden.[BR][BR]Mit Bezug auf unsere aktuelle Schwierigkeiten, werden wir Ihnen die Spitzentechnologie {TECHNAME:1} zur Verfügung stellen, um im Kampf zu helfen.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -536,7 +536,7 @@
     <FlavorTextDef>
         <InternalName>GIVE_TECH_MAIN</InternalName>
         <FlavorTextOption>
-            <Text>Die {PLAYERFACTIONLONG:1}-Fraktion möchte unsere Freundschaft mit einem Geschenk über das Wissen von {TECHNAME:1} unterstreichen.</Text>
+            <Text>Die {PLAYERFACTIONLONG:1}-Fraktionn möchte unsere Freundschaft mit einem Geschenk über das Wissen von {TECHNAME:1} unterstreichen.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -574,7 +574,7 @@
     <FlavorTextDef>
         <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Ausgezeichnet, die {PLAYERFACTIONLONG:1} dankt Euch.</Text>
+            <Text>Ausgezeichnet, die {PLAYERFACTIONLONG:1}-Fraktion dankt Euch.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -646,7 +646,7 @@
     <FlavorTextDef>
         <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
         <FlavorTextOption>
-            <Text>Ausgezeichnet, die {PLAYERFACTIONLONG:1} dankt Euch.</Text>
+            <Text>Ausgezeichnet, die {PLAYERFACTIONLONG:1}-Fraktion dankt Euch.</Text>
         </FlavorTextOption>
     </FlavorTextDef>
     <FlavorTextDef>
@@ -1428,7 +1428,7 @@
             <Requirements>
                 <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
             </Requirements>
-            <Text>Die ganze Galaxie ist voller schmutziger Aliens. Es geht.</Text>
+            <Text>Die ganze Galaxie ist voller schmutziger Aliens. Es ist ekelhaft.</Text>
             <Text>Habt Ihr jemals genug von den Geräuschen, die Euer abscheuliches Gesicht von sich gibt? Ja.</Text>
             <Text>Verschwendet meine und Eure Zeit nicht mit sinnlosem Geschwätz. Aber verschwendet vor allem nicht meine.</Text>
             <PreferenceWeight>100</PreferenceWeight>
