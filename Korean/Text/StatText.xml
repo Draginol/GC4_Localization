@@ -78,7 +78,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ColonyApproval</Label>
-    <String>콜로니 승인</String>
+    <String>콜로니 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_RandomTechSlots</Label>
@@ -142,11 +142,11 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_Approval</Label>
-    <String>[ICON=ApprovalStatIcon] 승인</String>
+    <String>[ICON=ApprovalStatIcon] 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATDEC_Approval</Label>
-    <String>승인은 시민들이 정부를 어떻게 보는지를 측정하는 지표입니다. 이는 [HS=HS_Taxes]세율[/HS], [HS=HS_Ideology]이데올로기[/HS], [HS=HS_Crime]범죄[/HS] 등에 영향을 받을 수 있습니다. 다른 종은 다른 동기를 가지므로 시민들이 좋아하고 싫어하는 것이 무엇인지 확인해보세요.[BR][BR]당신의 행성의 승인은 그 행성에 있는 모든 시민들의 평균 승인입니다.</String>
+    <String>지지율은 시민들이 정부를 어떻게 보는지를 측정하는 지표입니다. 이는 [HS=HS_Taxes]세율[/HS], [HS=HS_Ideology]이데올로기[/HS], [HS=HS_Crime]범죄[/HS] 등에 영향을 받을 수 있습니다. 다른 종은 다른 동기를 가지므로 시민들이 좋아하고 싫어하는 것이 무엇인지 확인해보세요.[BR][BR]당신의 행성의 지지율은 그 행성에 있는 모든 시민들의 평균 지지율입니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_GoodsAndServices</Label>
@@ -470,7 +470,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_TotalShipAttack</Label>
-    <String>공성 중인 선박이 포위된 행성에 가할 수 있는 피해.</String>
+    <String>공성 중인 함선이 포위된 행성에 가할 수 있는 피해.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_CanBeSurveyed</Label>
@@ -702,7 +702,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_HitPoints</Label>
-    <String>선박이 파괴되기 전에 감당할 수 있는 피해량.</String>
+    <String>함선이 파괴되기 전에 감당할 수 있는 피해량.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_HitPointsCap</Label>
@@ -790,7 +790,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Logistics</Label>
-    <String>물류는 함대에서 얼마나 많은 선박이 함께 운영될 수 있는지를 결정합니다. 모든 선박에는 물류 비용이 있고, 모든 플레이어는 물류 가치를 가지고 있습니다. 일반적으로, 큰 선박은 작은 선박보다 물류 비용이 더 많이 듭니다.</String>
+    <String>물류는 함대에서 얼마나 많은 함선이 함께 운영될 수 있는지를 결정합니다. 모든 함선에는 물류 비용이 있고, 모든 플레이어는 물류 가치를 가지고 있습니다. 일반적으로, 큰 함선은 작은 함선보다 물류 비용이 더 많이 듭니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_LogisticsCap</Label>
@@ -834,7 +834,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_SiegeAbility</Label>
-    <String>선박이 적 행성을 제압하는 능력의 척도.</String>
+    <String>함선이 적 행성을 제압하는 능력의 척도.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_TacticalSpeed</Label>
@@ -910,7 +910,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ShipMaintenance</Label>
-    <String>[ICON=Stat_Ship_Maintenance_Icon] 선박 유지보수</String>
+    <String>[ICON=Stat_Ship_Maintenance_Icon] 함선 유지보수</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_StarbaseMaintenance</Label>
@@ -1330,7 +1330,7 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Ship</Label>
-    <String>선박</String>
+    <String>함선</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Fleet</Label>
@@ -1338,7 +1338,7 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_AllShipsInFleet</Label>
-    <String>모든 함대의 선박들</String>
+    <String>모든 함대의 함선들</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Improvement</Label>
@@ -2298,7 +2298,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Crime</Label>
-    <String>범죄는 당신의 식민지의 수입을 감소시키며, 또한 새로운 시민이 범죄자로 생산될 확률을 높입니다. 이는 차례대로 범죄를 증가시킵니다. 범죄가 너무 높으면 시민들도 승인 패널티를 받게 됩니다.</String>
+    <String>범죄는 당신의 식민지의 수입을 감소시키며, 또한 새로운 시민이 범죄자로 생산될 확률을 높입니다. 이는 차례대로 범죄를 증가시킵니다. 범죄가 너무 높으면 시민들도 지지율 패널티를 받게 됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Pollution</Label>
@@ -2362,7 +2362,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Social</Label>
-    <String>Social은 지도자의 [HS=HS_Approval]Approval[/HS] 및 [HS=HS_Influence]Influence[/HS] 작업에 영향을 미칩니다. 높은 Social 기술은 외교관, 식민지 장관, 그리고 [HS=HS_Governor]Governors[/HS]에게 중요합니다.[BR][BR]시민들에게는, Social은 엔터테이너와 상인들에게 중요합니다.</String>
+    <String>사회 기술은 지도자의 [HS=HS_Approval]지지율[/HS] 및 [HS=HS_Influence]영향력[/HS] 작업에 영향을 미칩니다. 높은 사회 기술은 외교관, 식민지 장관, 그리고 [HS=HS_Governor]지배자[/HS]에게 중요합니다.[BR][BR]시민들에게는, 사회 기술은 엔터테이너와 상인들에게 중요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Diligence</Label>
@@ -2370,7 +2370,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Diligence</Label>
-    <String>근면성은 리더의 생산 관련 업무 기술을 수정합니다. 높은 근면성은 [HS=HS_Commander]Commanders[/HS] 및 [HS=HS_Governor]Governors[/HS]에게 중요하며, [HS=HS_Manufacturing]Manufacturing[/HS] 기반의 세계에서도 중요합니다.[BR][BR]시민들에게 있어서, 근면성은 노동자와 농부들에게 중요합니다.</String>
+    <String>근면성은 리더의 생산 관련 업무 기술을 수정합니다. 높은 근면성은 [HS=HS_Commander]사령관[/HS] 및 [HS=HS_Governor]지배자[/HS]에게 중요하며, [HS=HS_Manufacturing]제조[/HS] 기반의 세계에서도 중요합니다.[BR][BR]시민들에게 있어서, 근면성은 노동자와 농부들에게 중요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Resolve</Label>
@@ -2386,7 +2386,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Expectations</Label>
-    <String>기대치는 시민의 [HS=HS_Approval]승인[/HS]을 수정합니다. 높은 기대치를 가진 시민들은 엔터테인먼트와 호화로운 자원을 필요로 하며, 기대치가 낮은 시민들은 행복하게 유지하기가 훨씬 쉽습니다.[BR][BR]단위를 전문화하면 기대치가 높아집니다.</String>
+    <String>기대치는 시민의 [HS=HS_Approval]지지율[/HS]을 수정합니다. 높은 기대치를 가진 시민들은 엔터테인먼트와 호화로운 자원을 필요로 하며, 기대치가 낮은 시민들은 행복하게 유지하기가 훨씬 쉽습니다.[BR][BR]단위를 전문화하면 기대치가 높아집니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Loyalty</Label>
