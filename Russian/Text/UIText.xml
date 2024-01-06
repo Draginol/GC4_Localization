@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
     <StringTable>
         <Label>BEGIN_UITEXT</Label>
@@ -24,7 +25,7 @@
 		<String>Ответ позже.</String>
 	</StringTable>
 
-    <!-- Debug Only -->
+    
      <StringTable>
         <Label>CampaignName</Label>
         <String>A Campaign Title_tk</String>
@@ -9756,7 +9757,7 @@
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_MESSAGE</Label>
-        <String>Вы должны быть в состоянии войны с цивилизацией, чтобы атаковать. Вы хотите объявить войну: {PLAYERFACTION:1}?</String>
+        <String>Вы должны быть в состоянии войны с цивилизацией, чтобы напасть на неё. Хотите объявить войну {PLAYERFACTION:1}? Объявление войны выведет все ваши корабли из их территории перед атакой.</String>
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_CANNOT_ATTACK_MESSAGE</Label>
@@ -12251,9 +12252,7 @@
         <Label>PersonalityType_Desc_Totalitarianism</Label>
         <String>Верят в абсолютную власть и контроль со стороны государства, где все аспекты общественной и частной жизни регулируются единоличной властью.</String>
     </StringTable>
-    <!-- Strings are hard coded, See GalCivHelpers.cpp. Because of that and changes to the names for Supernova, label may not match display string below.
-	In this case we are replacing calm rather than using the new Benevolence which was added at a later time. This will intentionally change the base game name.
-	Done by Zack with Derek's approval -->
+    
     <StringTable>
         <Label>PersonalityType_PacifismPerTurn</Label>
         <String>[ICON=Calm_Icon] Благотворительность в месяц</String>
@@ -16042,7 +16041,7 @@
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_DESCRIPTION_LABEL</Label>
-        <String>Спасибо, что играете в Galactic Civilizations IV. Хотите оставить отзыв об игре?</String>
+        <String>Ваш отзыв об игре крайне важен для команды Stardock, чтобы создать лучшую игру и привлечь новых игроков. Если вы ещё не оставили отзыв, пожалуйста, сделайте это. Если вы уже написали отзыв, спасибо.[BR][BR]Спасибо, что играете в Galactic Civilizations IV.</String>
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_NEVER_BUTTON_LABEL</Label>
@@ -16958,7 +16957,7 @@
     </StringTable>
     <StringTable>
         <Label>Cruiser</Label>
-        <String>Броненосец</String>
+        <String>Крейсер</String>
     </StringTable>
     <StringTable>
         <Label>Siege</Label>
@@ -17404,10 +17403,7 @@
         <Label>Ateroid_Cancel_Label</Label>
         <String> </String>
     </StringTable>
-    <!-- <StringTable>
-    <Label>Asteroid_Decommision_Label</Label>
-    <String>Decommission</String>
-  </StringTable> -->
+    
     <StringTable>
         <Label>ASTEROID_BUILDMININGBASE_COST</Label>
         <String>Стоим.: %d кред.</String>
@@ -19142,7 +19138,7 @@
     </StringTable>
     <StringTable>
         <Label>PROMOTION_STATS_NoTile</Label>
-        <String>[COLOR=&quot;BrightRed&quot;]Нужно назначить на ячейку[/COLOR]</String>
+        <String>[COLOR="BrightRed"]Нужно назначить на ячейку[/COLOR]</String>
     </StringTable>
     <StringTable>
         <Label>PROMOTION_STATS_MustBeStationed</Label>
@@ -19302,7 +19298,7 @@
     </StringTable>
     <StringTable>
         <Label>Custom_Faction_Style_Text</Label>
-        <String>Измените корабль и сохраняйте шаблоны кораблей с помощью стиля кораблей цивилизации. Перетащите боевой шаблон на любой класс кораблей, чтобы изменить его.</String>
+        <String>Настройте Корабль и сохраните шаблоны Корабля, используемые стилем Кораблей вашей Цивилизации.</String>
     </StringTable>
     <StringTable>
         <Label>Crusade_Ship_Style_Name_Label</Label>
@@ -20928,7 +20924,7 @@
         <Label>RequiresCitizen</Label>
         <String>Нужен гражданин</String>
     </StringTable>
-    <!-- **********************STRINGS FOR OLDER SAVE GAMES*************************** -->
+    
     <StringTable>
         <Label>Megalopolis_Name</Label>
         <String>Мегаполис</String>
@@ -20937,7 +20933,7 @@
         <Label>Megalopolis_ShortDec</Label>
         <String>Пища позволяет строить города, которые увеличивают лимит населения колонии.</String>
     </StringTable>
-    <!-- ******************PREREQUISITE REASON STRINGS******************************** -->
+    
     <StringTable>
         <Label>RequiredTech</Label>
         <String>Треб. технол.: {CONDITION}</String>
@@ -25802,7 +25798,7 @@
         <String>Продвин. режим ред.</String>
     </StringTable>
 
-    <!-- ******************Mutiplayer Game List Wnd Tooltips************************** -->
+    
     <StringTable>
         <Label>MultiplayerGameListWnd_SortByGameName_Tooltip</Label>
         <String>Сорт. по: [COLOR=UIDefaultHot]имя игры[/COLOR]</String>
@@ -25951,12 +25947,12 @@
 	</StringTable>
 
 
-	<!-- ***************************************************************************** -->
+	
 
-    <!-- ******************DO NOT TRANSLATE THIS STRING******************************* -->
+    
     <StringTable>
         <Label>END_UITEXT</Label>
         <String>End Russian UIText</String>
     </StringTable>
-    <!-- ***************************************************************************** -->
+    
 </StringTableList>
