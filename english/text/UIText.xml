@@ -7541,8 +7541,8 @@
         <String>Capital</String>
     </StringTable>
     <StringTable>
-        <Label>Escort</Label>
-        <String>Escort</String>
+        <Label>Cruiser</Label>
+        <String>Cruiser</String>
     </StringTable>
     <StringTable>
         <Label>Assault</Label>
@@ -9758,7 +9758,7 @@
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_MESSAGE</Label>
-        <String>You must be at war with a civilization to attack them. Do you want to declare war on the {PLAYERFACTION:1}?</String>
+        <String>You must be at war with a civilization to attack them. Do you want to declare war on the {PLAYERFACTION:1}? Declaring war will move all ships outside of their territory before your attack.</String>
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_CANNOT_ATTACK_MESSAGE</Label>
@@ -13571,6 +13571,10 @@
         <String>%s is %ld turns away from an Influence Victory.</String>
     </StringTable>
     <StringTable>
+      <Label>ALERT_OtherCloseToInfluenceVictory_InfluenceLevel</Label>
+      <String>{OBJECTNAME} controls {AMOUNT}%% of the galaxy, and is nearing an Influence Victory.</String>
+    </StringTable>
+    <StringTable>
         <Label>ALERT_OtherCloseToPrestigeVictory</Label>
         <String>%s is nearing a prestige victory (%ld%%).</String>
     </StringTable>
@@ -15982,6 +15986,10 @@
         <Label>Southeast</Label>
         <String>Southeast</String>
     </StringTable>
+	  <StringTable>
+		    <Label>UISize_Tiny</Label>
+		    <String>Small</String>
+	  </StringTable>
     <StringTable>
         <Label>UISize_Small</Label>
         <String>Normal (HD)</String>
@@ -16044,7 +16052,7 @@
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_DESCRIPTION_LABEL</Label>
-        <String>Thank you for playing Galactic Civilizations IV. Would you like to review the game?</String>
+        <String>Your review of the game is incredibly important to helping the team at Stardock make the best game possible and reach new players. If you haven't reviewed the game yet, please leave a review. If you have already left a review, thank you.[BR][BR]Thank you for playing Galactic Civilizations IV.</String>
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_NEVER_BUTTON_LABEL</Label>
@@ -16957,10 +16965,6 @@
     <StringTable>
         <Label>Survey</Label>
         <String>Flag</String>
-    </StringTable>
-    <StringTable>
-        <Label>Cruiser</Label>
-        <String>Battleship</String>
     </StringTable>
     <StringTable>
         <Label>Siege</Label>
@@ -19304,7 +19308,7 @@
     </StringTable>
     <StringTable>
         <Label>Custom_Faction_Style_Text</Label>
-        <String>Customize the Ship and save the Ship templates used by your Civilizations Ship Style. Drag and Drop any combatable template to any Ship Class to change it.</String>
+        <String>Customize the Ship and save the Ship templates used by your Civilizations Ship Style.</String>
     </StringTable>
     <StringTable>
         <Label>Crusade_Ship_Style_Name_Label</Label>
@@ -19454,6 +19458,17 @@
         <Label>Crusade_Invasion_No_Defenders_Defeat</Label>
         <String>Our planet has no defending legions.  We must surrender!</String>
     </StringTable>
+	
+	 <StringTable>
+        <Label>SHIPS_IN_DEFENDER_TERRITORY_TELEPORTED_TITLE</Label>
+        <String>Fleets Moved Outside Enemy Territory</String>
+    </StringTable>
+    <StringTable>
+        <Label>SHIPS_IN_DEFENDER_TERRITORY_TELEPORTED_MESSAGE</Label>
+        <String>Fleets that you had in territory belonging to the {PLAYERFACTION} have been relocated to be outside their borders.</String>
+    </StringTable>
+	
+	
     <StringTable>
         <Label>HOTLOADING DISABLED_TITLE</Label>
         <String>Hotloading Disabled</String>
@@ -24067,12 +24082,40 @@
         <String> to all our worlds</String>
     </StringTable>
     <StringTable>
+      <Label>TRIGGERFOCUS_CAPITALWORLD</Label>
+      <String> to our Capital World</String>
+    </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_UNITS_CAPITALWORLD</Label>
+    <String> to Units on our Capital World</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_OUR_UNITS</Label>
+    <String> to all our Units</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_THEIR_UNITS_CAPITALWORLD</Label>
+    <String> to Units on their Capital World</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_THEIR_UNITS</Label>
+    <String> to all their Units</String>
+  </StringTable>
+    <StringTable>
+      <Label>TRIGGERFOCUS_SECONDARYPLAYER</Label>
+      <String> to them</String>
+    </StringTable>
+    <StringTable>
         <Label>TRIGGERFOCUS_ALL_THEIR_SHIPS</Label>
         <String> to all their Ships</String>
     </StringTable>
     <StringTable>
         <Label>TRIGGERFOCUS_ALL_THEIR_COLONIES</Label>
         <String> to all their worlds</String>
+    </StringTable>
+    <StringTable>
+      <Label>TRIGGERFOCUS_THEIR_CAPITALWORLD</Label>
+      <String> to their Capital World</String>
     </StringTable>
 	<StringTable>
 		<Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
@@ -24082,6 +24125,34 @@
         <Label>TRIGGERDURATION_FOR_X_TURNS</Label>
         <String>%s for %d Months</String>
     </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_US_HEADER</Label>
+    <String>We Get: </String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_THEM_HEADER</Label>
+    <String>They Get: </String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_SHIPS_SORTED</Label>
+    <String> to all Ships</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_COLONIES_SORTED</Label>
+    <String> to all worlds</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_CAPITALWORLD_SORTED</Label>
+    <String> to Capital World</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_UNITS_CAPITALWORLD_SORTED</Label>
+    <String> to Units on Capital World</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_UNITS_SORTED</Label>
+    <String> to all Units</String>
+  </StringTable>
     <StringTable>
         <Label>ColonyUpgrade_Farming_Name</Label>
         <String>Farming Upgrade</String>
