@@ -1,575 +1,493 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_MAIN</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Zkraťme to. Musím vědět, jak vypadá váš druh, abych věděl, co mám lovit, až zničíme vaše světy a zlomíme vaši vůli.</Text>
-		</FlavorTextOption>
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Vesmír patří Korathu, pouze Korathu. Vyhladíme každého, kdo se odváží existovat v naší přítomnosti.</Text>
-		</FlavorTextOption>
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Utíkejte a plačte tam, kde si myslíte, že vás to zachrání před zánikem z rukou Korathu.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Vidím, že i vyvrhelové Říše dokázali přežít. Myslím, že se můžeme pokusit spolu vycházet, jestli se ti zlepšila nálada.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Vaše dohoda s nečistými silami galaxie, přivede všechny do záhuby. Pokud to bude, co platné, prosíme tě, abys přehodnotil své směřování dějinami.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Ale ne. Opravdu jsem doufal, že jsou ty zvěsti nepravdivé.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Marnotratný klan se tedy vrací. Přišli jste znovu pokleknout před Říší? Vraťte se jako naše úderné jednotky a vesmír pozná hrůzu sjednoceného Císařství.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Hádají se teď Drenginové mezi sebou? Je vaše touha po konfliktu opravdu tak bezmezná?</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Ať si říkáš, jak chceš, s Drenginem nemáme slitování.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Ne! To není možné. Myslel jsem, že klan Korath byl vyhlazen, když padlo Císařství.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Dobře, Aliance přežije. Byl bych nerad, kdybych se nikdy nemohl pomstít.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
-			</Requirements>
-			<Text>Vězte, že klan Korath nectí žádnou milost, kterou Drenginská říše projevila. Žádný čin vás nezachrání před vyhlazením.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
-			</Requirements>
-			<Text>Skutečnost, že tvému křehkému, malému druhu bylo umožněno přežít, je důkazem toho, jak slabý vesmír dokáže být. Určitě to napravíme.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
-			</Requirements>
-			<Text>Říše selhala! Tvé řetězy tě jen poutají ke slabým. Jedinou cestou vpřed je zkáza! Klan Korath bude pokračovat v odkazu Drenginů. Vaše slabost nám není k ničemu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Nemysli si, že tě ušetříme jen proto, že jsi z kovu. Stejně dojdete k zániku a my vaše rozbitá těla použijeme k opravě našich zbraní a lodí.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
-			</Requirements>
-			<Text>Přežil jsi. Další selhání Císařství. Klan Korathů stejnou chybu neudělá.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
-			</Requirements>
-			<Text>Našli jsme vás. Tak dlouho ses skrýval v zákoutích vesmíru, ale tentokrát tě neztratíme. Klan Korath konečně zlikviduje vaši skupinu přeživších.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>To musí být vtip. Tak dlouho jsi přece nemohl přežít.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Doufám, že jen některá naše setkání budou takto nepřátelská.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Dávej si pozor na jazyk, nebo ti ho vytrhnu z ječící hlavy.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Zapomněl jsi, že klan Korath nemá slitování.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Naděje je častým omylem slabých.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Ha! Slabí Drenginové, stejně jako ti z Císařství, nejsou žádní Drenginové.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Dávejte na sebe pozor! Klan Korath nepotřebuje žádný důvod k vyhlazování slabých.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Nebudete to potřebovat.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Nic není dost silné, aby to zničilo klan Korathů.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Nemusíme pokračovat v tomto nepřátelství.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
-			</Requirements>
-			<Text>Doufám, že to ještě zvážíte, pokud budete mít čas.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
-			</Requirements>
-			<Text>Zjistíte, že jsme odolnější, než vypadáme. </Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
-			</Requirements>
-			<Text>Pozor na jazyk! Jste jen vzpurná legie.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Registrovaná hrozba. Očekáváme změnu výsledků.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
-			</Requirements>
-			<Text>Vyhrožujte, jak chcete. Ale já se vás nebojím.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
-			</Requirements>
-			<Text>Hnutí odporu je připraveno na to nejhorší, co můžete udělat.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Nejsme žádný žert.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Počkám, až skončíš se svými záchvaty vzteku.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Smějte se, dokud můžete. Klan Korath se brzy postará o váš zánik.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Naše cesta dějinami bude cestou dobývání.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Vzdejte se a Korath vás i vaše obavy uklidní.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Vy nabízíte řetězy, my vám nabídneme úlevu od ponížení prostřednictvím smrti.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Pamatujte si to jako okamžik, kdy jste si pojistili vlastní zkázu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Korath už není vázán pravidly Císařství a může vás konečně vymazat z existence.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>A to jsem si myslel, že tvůj nicotný odpor byl zadupán do země.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Zkuste to a já vám rád připomenu, co jsme udělali Císařství.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
-			</Requirements>
-			<Text>Tím je toto setkání ukončeno.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_MIMOT</ListenerFaction>
-			</Requirements>
-			<Text>Už jste byli poraženi, a budete poraženi znovu. S tím si nedělám starosti.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
-			</Requirements>
-			<Text>Se vzteklým válečným psem se dá dělat jen jedna věc.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Konverzace == zbytečná. Ukončete komunikaci.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TORIAN</ListenerFaction>
-			</Requirements>
-			<Text>Nejste tak hrozivý, jak si myslíte. Ukončuji tuto komunikaci.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
-			</Requirements>
-			<Text>Hnutí odporu zná vaši taktiku. Pro nás nepředstavujete hrozbu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Jsme unavení.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TAUNT_PLAYER</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Další odpor je marný. Korath se postará o váš zánik.</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-	
-	<FlavorTextDef>
-        <InternalName>DECLARE_WAR_MAIN</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Nechali jsme vás živořit už dost dlouho. Přišel čas roztrhat vaši civilizaci na kusy a zbavit galaxii vám podobných![BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce)[/COLOR]</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Už jsi byl Drenginům trnem v oku dost dlouho. Je na čase tě zadupat. Za deset let si na Pozemskou alianci nikdo nevzpomene.[BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce)[/COLOR]</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-				<ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
-			</Requirements>
-			<Text>Svému osudu ses vyhýbal dost dlouho. Koráthové tvoji bandu vyvrhelů rozdupou.[BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce)[/COLOR]</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>GENERIC_GREETING</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Pokud tu nejsi proto, aby ses vzdal svého vyhlazení klanem Korath, co chceš?</Text>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_REFUSE</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Rozmysli si tu nabídku, než tě roztrhám na kusy.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_PERFORMED</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Nemyslete si, že tento obchod zajišťuje vaši bezpečnost.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_WAITING</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Ať ten obchod stojí za můj čas, nebo si ho vezmu násilím.</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Dobře?</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-			</Requirements>
-			<Text>Myslíš si, že jsi hoden mluvit s Korathem?</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-		
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option215_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option216_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option217_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option218_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option219_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option220_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option221_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option222_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option223_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option224_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option225_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option226_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_MIMOT</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option227_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option228_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option229_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TORIAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option230_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option231_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option232_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option215_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option216_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option217_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option218_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option219_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option220_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option221_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option222_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option223_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option224_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_MIMOT</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option225_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option226_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option227_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TORIAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option228_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option229_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option230_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option200_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option201_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_NAVIGATORS</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option202_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option203_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option204_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ARCEAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option205_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TORIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option206_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_RESISTANCE</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option207_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option208_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_NAVIGATORS</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option209_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_MIMOT</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option210_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option211_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option212_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TORIAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option213_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option214_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option215_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TAUNT_PLAYER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>TAUNT_PLAYER_Option16_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option37_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option38_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+        <ListenerFaction>FACTION_RESISTANCE</ListenerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option39_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERIC_GREETING</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERIC_GREETING_Option38_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_REFUSE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_REFUSE_Option19_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_PERFORMED</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_PERFORMED_Option25_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_WAITING</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_WAITING_Option7_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>PLAYER_TRADE_COUNTER_OFFER_HEADER_Option2_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>EXTRA_OPTIONS_MAIN_TEXT_Option21_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
 </FlavorTextDefs>
