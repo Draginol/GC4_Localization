@@ -7541,8 +7541,8 @@
         <String>Hlavní město</String>
     </StringTable>
     <StringTable>
-        <Label>Escort</Label>
-        <String>Doprovod</String>
+        <Label>Cruiser</Label>
+        <String>Křižník</String>
     </StringTable>
     <StringTable>
         <Label>Assault</Label>
@@ -9758,7 +9758,7 @@
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_MESSAGE</Label>
-        <String>Než zaútočíte, tak musíte být s hráčem ve válce. Chcete vyhlásit válku {PLAYERFACTION:1}?</String>
+        <String>Než zaútočíte, tak musíte být s hráčem ve válce. Chcete vyhlásit válku {PLAYERFACTION:1}? Vyhlášením války se před útokem přesunou všechny lodě mimo jejich území.</String>
     </StringTable>
     <StringTable>
         <Label>DECLARE_WAR_MAP_POPUP_CANNOT_ATTACK_MESSAGE</Label>
@@ -13571,6 +13571,10 @@
         <Label>ALERT_OtherCloseToInfluenceVictory</Label>
         <String>%s je %ld kol od vítězství vlivem.</String>
     </StringTable>
+	<StringTable>
+      <Label>ALERT_OtherCloseToInfluenceVictory_InfluenceLevel</Label>
+      <String>{OBJECTNAME} ovládá {AMOUNT}% galaxie a blíží se k vítězství vlivem.</String>
+    </StringTable>
     <StringTable>
         <Label>ALERT_OtherCloseToPrestigeVictory</Label>
         <String>%s se blíží vítězství prestiží (%ld%%).</String>
@@ -15983,6 +15987,10 @@
         <Label>Southeast</Label>
         <String>Jihovýchod</String>
     </StringTable>
+	<StringTable>
+		    <Label>UISize_Tiny</Label>
+		    <String>Malý</String>
+	  </StringTable>
     <StringTable>
         <Label>UISize_Small</Label>
         <String>Normální (HD)</String>
@@ -16045,7 +16053,7 @@
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_DESCRIPTION_LABEL</Label>
-        <String>Děkujeme za hraní Galactic Civilizations IV. Můžete prosím ohodnotit naši hru?</String>
+        <String>Vaše hodnocení hry je nesmírně důležité, protože pomáhá týmu Stardock vytvořit co nejlepší hru a oslovit nové hráče. Pokud jste hru ještě nehodnotili, zanechte prosím recenzi. Pokud jste již recenzi zanechali, děkujeme vám.[BR][BR]Děkujeme, že jste si zahráli Galactic Civilizations IV.</String>
     </StringTable>
     <StringTable>
         <Label>PLAYERREVIEW_NEVER_BUTTON_LABEL</Label>
@@ -16958,10 +16966,6 @@
     <StringTable>
         <Label>Survey</Label>
         <String>Průzkumník</String>
-    </StringTable>
-    <StringTable>
-        <Label>Cruiser</Label>
-        <String>Bitevní loď</String>
     </StringTable>
     <StringTable>
         <Label>Siege</Label>
@@ -19306,7 +19310,7 @@
     </StringTable>
     <StringTable>
         <Label>Custom_Faction_Style_Text</Label>
-        <String>Přizpůsobte si loď a uložte šablony lodí se stylem vaší civilizace. Přetažením libovolné bojové šablony na libovolnou třídu lodi, ji pak můžete změnit.</String>
+        <String>Přizpůsobte si loď a uložte šablony lodí se stylem vaší civilizace.</String>
     </StringTable>
     <StringTable>
         <Label>Crusade_Ship_Style_Name_Label</Label>
@@ -19456,6 +19460,15 @@
         <Label>Crusade_Invasion_No_Defenders_Defeat</Label>
         <String>Naše planeta nemá žádné obranné legie. Musíme se vzdát!</String>
     </StringTable>
+	<StringTable>
+        <Label>SHIPS_IN_DEFENDER_TERRITORY_TELEPORTED_TITLE</Label>
+        <String>Přesun flotil mimo nepřátelské území</String>
+    </StringTable>
+    <StringTable>
+        <Label>SHIPS_IN_DEFENDER_TERRITORY_TELEPORTED_MESSAGE</Label>
+        <String>Flotily, které jste měli na území patřícím {PLAYERFACTION}, byly přemístěny mimo jejich hranice.</String>
+    </StringTable>
+	
     <StringTable>
         <Label>HOTLOADING DISABLED_TITLE</Label>
         <String>Rychlonahrávání zakázáno</String>
@@ -24066,6 +24079,30 @@
         <Label>TRIGGERFOCUS_ALL_OUR_COLONIES</Label>
         <String> všem našim světům</String>
     </StringTable>
+	 <StringTable>
+      <Label>TRIGGERFOCUS_CAPITALWORLD</Label>
+      <String> do našeho Hlavního světa</String>
+    </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_UNITS_CAPITALWORLD</Label>
+    <String> k jednotkám v našem Hlavním světě</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_OUR_UNITS</Label>
+    <String> všem našim jednotkám</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_THEIR_UNITS_CAPITALWORLD</Label>
+    <String> k jednotkám v jejich Hlavním světě</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_THEIR_UNITS</Label>
+    <String> všem svým jednotkám</String>
+  </StringTable>
+    <StringTable>
+      <Label>TRIGGERFOCUS_SECONDARYPLAYER</Label>
+      <String> na ně</String>
+    </StringTable>
     <StringTable>
         <Label>TRIGGERFOCUS_ALL_THEIR_SHIPS</Label>
         <String> všem jejich lodím</String>
@@ -24075,6 +24112,10 @@
         <String> všem jejich světům</String>
     </StringTable>
 	<StringTable>
+      <Label>TRIGGERFOCUS_THEIR_CAPITALWORLD</Label>
+      <String> do jejich Hlavního světa</String>
+    </StringTable>
+	<StringTable>
 		<Label>STATADJUSTMENT_FOR_GOVERNOR</Label>
 		<String>{AMOUNT} pro {GOVERNORNAME}</String>
 	</StringTable>
@@ -24082,6 +24123,34 @@
         <Label>TRIGGERDURATION_FOR_X_TURNS</Label>
         <String>%s po %d měsíců</String>
     </StringTable>
+	<StringTable>
+    <Label>TRIGGERFOCUS_US_HEADER</Label>
+    <String>Získáme: </String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_THEM_HEADER</Label>
+    <String>Získají: </String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_SHIPS_SORTED</Label>
+    <String> všem lodím</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_COLONIES_SORTED</Label>
+    <String> všem světům</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_CAPITALWORLD_SORTED</Label>
+    <String> do Hlavního světa</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_UNITS_CAPITALWORLD_SORTED</Label>
+    <String> k jednotkám v Hlavním světě</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERFOCUS_ALL_UNITS_SORTED</Label>
+    <String> všem jednotkám</String>
+  </StringTable>
     <StringTable>
         <Label>ColonyUpgrade_Farming_Name</Label>
         <String>Vylepšení zemědělství</String>

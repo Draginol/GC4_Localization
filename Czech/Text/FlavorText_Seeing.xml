@@ -1,482 +1,409 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_MAIN</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Vidíme vás. Vítáme vás.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>No, to je ale podívaná. Chápeš?</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Dobrý den! Vypadáš mile! Prosím, buďte laskaví.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Jste v tomto sektoru nováčkem, je to tak? Nabízím vám jednoduchou nabídku: buď se podřídíte Drenginskému impériu, nebo se připravte na vyhlazení.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_YOR</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Váš organický vzhled se vymyká našim současným představám o složení organického života.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Dobrý den, dobrý den. Omlouvám se za rozptýlení; je toho hodně, na co se musím soustředit. Dívám se na tebe: můžeš nám pomoci najít něco v tomto obrovském prostoru?</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Ach, zdravím vás. Doufám, že se ti v této části galaxie žije dobře. Byli bychom skvělými partnery, kdybys měl zájem o nějakou tajnou práci.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Poznáváme váš hyperpohon. Je nám povědomý.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
-			</Requirements>
-			<Text>Vidíme vaši formu. Rozumíme vaší biologii.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MANTI</ListenerFaction>
-			</Requirements>
-			<Text>Zaznamenáváme mnoho expanzí a rychlý vývoj.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Přejeme si vidět více. Od syntetiků se toho můžeme hodně naučit.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Vidíme válku jako nevyhnutelnou.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MOTH</ListenerFaction>
-			</Requirements>
-			<Text>Uznáváme. Jsme obeznámeni.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
-			</Requirements>
-			<Text>Uznáváme. Víme, že jste nebezpeční.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Vidíme vás. Vítáme vás.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Nerozumíme tomu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Nebojíme se vás.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Vážíme si toho.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Můžeme vám pomoci.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Vezmeme v úvahu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Díky, jsem si jistý, že naše je daleko lepší.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Nepovažuji vás za hrozbu; zírejte, jak chcete.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_FESTRON</ListenerFaction>
-			</Requirements>
-			<Text>Pak pochopíte potřeby našich líhní.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MANTI</ListenerFaction>
-			</Requirements>
-			<Text>Čas je velmi důležitý.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Nejsi tak hloupý, jak jsem slyšel.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MOTH</ListenerFaction>
-			</Requirements>
-			<Text>Ach, malí Intueři. Vítej zpátky mezi hvězdami.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
-			</Requirements>
-			<Text>[I]Obraťte několik očí v sloup.[/I]</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Jsme z vás unavení. Sbohem.</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Toho si nevážíme.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Neuspějete.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Zvážíme to.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_MANTI</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>Nepomůžeme vám.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_DRATH</SpeakerFaction>
-				<ListenerFaction>FACTION_SEEING</ListenerFaction>
-			</Requirements>
-			<Text>WNebudeme to brát v úvahu.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_TERRAN</ListenerFaction>
-			</Requirements>
-			<Text>Jak si váš sektor dokázal poradit bez našeho hyperpohonu, je nám záhadou.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_YOR</ListenerFaction>
-			</Requirements>
-			<Text>Negativní.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_DRENGIN</ListenerFaction>
-			</Requirements>
-			<Text>Vidíte to, co chci, abyste viděli.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MANTI</ListenerFaction>
-			</Requirements>
-			<Text>Měli jsme důvod k rychlému vývoji.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_KORATH</ListenerFaction>
-			</Requirements>
-			<Text>Máte pravdu. Připravte se na ten den.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_MOTH</ListenerFaction>
-			</Requirements>
-			<Text>Ano, jsem rád, že sis vzpomněl.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
-			</Requirements>
-			<Text>[I]Výhrůžně ukážete chapadlem na obrazovku.[/I]</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TAUNT_PLAYER</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Viděli jsme. Přijeli jsme. Dobyli jsme vaši planetu.</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-	
-	<FlavorTextDef>
-        <InternalName>DECLARE_WAR_MAIN</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Jsme z vás unavení. Jsme s vámi ve válce.[BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce)[/COLOR]</Text>
-		</FlavorTextOption>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-				<ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
-			</Requirements>
-			<Text>Sledujeme vás dost dlouho. Vymýtíme vás.[BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce)[/COLOR]</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>GENERIC_GREETING</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Čekáme.</Text>
-		</FlavorTextOption>
-		
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_REFUSE</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Neschvalujeme.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_PERFORMED</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Jsme vděční.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>TRADE_OFFER_WAITING</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Čekáme. Ukažte nám svoji nabídku.</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Zvažujeme.</Text>
-			<PreferenceWeight>50</PreferenceWeight>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-
-	<FlavorTextDef>
-		<InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
-
-		<FlavorTextOption>
-			<Requirements>
-				<SpeakerFaction>FACTION_SEEING</SpeakerFaction>
-			</Requirements>
-			<Text>Mluvíme spolu?</Text>
-		</FlavorTextOption>
-
-	</FlavorTextDef>
-		
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option240_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option241_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MIMOT</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option242_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option243_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_YOR</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option244_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option245_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option246_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option247_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_FESTRON</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option248_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MANTI</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option249_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option250_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option251_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MOTH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option252_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option253_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option238_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option239_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option240_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option241_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option242_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option243_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option244_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option245_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_FESTRON</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option246_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MANTI</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option247_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option248_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MOTH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option249_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option250_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option223_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_TERRAN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option224_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRENGIN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option225_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option226_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_MANTI</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option227_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_DRATH</SpeakerFaction>
+        <ListenerFaction>FACTION_SEEING</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option228_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option229_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option230_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option231_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MANTI</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option232_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_KORATH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option233_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_MOTH</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option234_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option235_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TAUNT_PLAYER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>TAUNT_PLAYER_Option17_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option41_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+        <ListenerFaction>FACTION_ABSOLUTE</ListenerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option42_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERIC_GREETING</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERIC_GREETING_Option47_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_REFUSE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_REFUSE_Option20_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_PERFORMED</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_PERFORMED_Option26_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_WAITING</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_WAITING_Option8_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_TRADE_COUNTER_OFFER_HEADER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>PLAYER_TRADE_COUNTER_OFFER_HEADER_Option3_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>EXTRA_OPTIONS_MAIN_TEXT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SEEING</SpeakerFaction>
+      </Requirements>
+      <StringKey>EXTRA_OPTIONS_MAIN_TEXT_Option22_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
 </FlavorTextDefs>

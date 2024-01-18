@@ -1,64 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<FlavorTextDefs
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    <FlavorTextDef>
-        <InternalName>TERROR_STAR_ATTACK_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>
-        Talotic yopitu mul nesin, {PLAYERFACTION:2}.[BR][BR][COLOR=UIDefaultHighlight](Kdybyste měli hádat, jsou velmi naštvaní, že jste jim zničili planetu.)[/COLOR]
-      </Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>
-        Toto zvěrstvo nebude nikdy zapomenuto, {PLAYERFACTION:2}. Neodpočineme si, dokud nebudete zničeni.[BR][BR][COLOR=UIDefaultHighlight](Jsme ve válce, dokud jedna z našich civilizací nezemře.)[/COLOR]
-      </Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>TERROR_STAR_ATTACK_RESPONSE_CRUEL</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Bwahahaha...Měl bys vidět svůj obličej!</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Smrtelné výkřiky tvého lidu jsou hudbou pro mé uši.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>TERROR_STAR_ATTACK_RESPONSE_PRAGMATIC</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Stejně bys mi nerozuměl.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Je třeba přinášet oběti.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>TERROR_STAR_ATTACK_RESPONSE_RIGHTEOUS</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Možná mi nerozumíte, ale prokazuji galaxii laskavost, když ji zbavuji vaší civilizace.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Galaxii bude bez vaší civilizace lépe.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
+<?xml version='1.0' encoding='utf-8'?>
+<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
+  <FlavorTextDef>
+    <InternalName>TERROR_STAR_ATTACK_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>TERROR_STAR_ATTACK_MAIN_Option0_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>TERROR_STAR_ATTACK_MAIN_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TERROR_STAR_ATTACK_RESPONSE_CRUEL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_CRUEL_Option0_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_CRUEL_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TERROR_STAR_ATTACK_RESPONSE_PRAGMATIC</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_PRAGMATIC_Option0_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_PRAGMATIC_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TERROR_STAR_ATTACK_RESPONSE_RIGHTEOUS</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_RIGHTEOUS_Option0_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>TERROR_STAR_ATTACK_RESPONSE_RIGHTEOUS_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
 </FlavorTextDefs>
