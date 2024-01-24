@@ -385,7 +385,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[It's cute how you think that we'll just hand over our knowledge of {TECHNAME:2}. Do your own homework.]]></Text>
+      <Text><![CDATA[We refuse to give you {TECHNAME:2}. Do your own homework.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -410,7 +410,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Of course. May we continue to work together for the benefit of both of our empires.]]></Text>
+      <Text><![CDATA[We agree in the name of improving the relations of both our civilizations.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -424,7 +424,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I am sorry, but the {PLAYERFACTIONLONG:2} cannot help you at this time.]]></Text>
+      <Text><![CDATA[We are not in a position to help you at this time.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -435,14 +435,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Would you consider a gift of the knowledge of {TECHNAME:2} to help us out?]]></Text>
+      <Text><![CDATA[Would you consider sharing the knowledge of {TECHNAME:2} to help us?]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Of course. May we continue to work together for the benefit of both of our empires.]]></Text>
+      <Text><![CDATA[Of course. May we continue to work together for the benefit of both of our civilizations.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -467,14 +467,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. Please, {LEADERNAME:2} help us out by giving us {AMOUNT:2} credits.]]></Text>
+      <Text><![CDATA[Our war with the {PLAYERFACTIONLONG:3} goes poorly. We beg you, {LEADERNAME:2} help us out by giving us {AMOUNT:2} credits.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I agree.]]></Text>
+      <Text><![CDATA[I agree. We will give you credits.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -499,14 +499,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. We could use your help, {LEADERNAME:2}. Would you provide us with {TECHNAME:2}?]]></Text>
+      <Text><![CDATA[Our civilization is being destroyed by the {PLAYERFACTIONLONG:3}. We could use your help, {LEADERNAME:2}. Would you provide us with {TECHNAME:2}?]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[I agree.]]></Text>
+      <Text><![CDATA[I will share our technology with you.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -520,7 +520,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[The {PLAYERFACTIONLONG:2} has its own problems. No.]]></Text>
+      <Text><![CDATA[I'm sorry but we worked hard for that technology.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -531,7 +531,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[We are being attacked by the {PLAYERFACTIONLONG:3}. The situation is dire, {LEADERNAME:2}. Only if you declare war on the {PLAYERFACTIONLONG:3} can we hope to survive.]]></Text>
+      <Text><![CDATA[The war with the {PLAYERFACTIONLONG:3} is not going well. The situation is dire, {LEADERNAME:2}. [BR]]BR]Only if you declare war on the {PLAYERFACTIONLONG:3} can we hope to survive.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -714,14 +714,14 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
       <Requirements>
         <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Your starbase {OBJECTNAME} is a direct threat to our interests. We demand that you remove it at once.]]></Text>
+      <Text><![CDATA[Your starbase {OBJECTNAME} is  now within our area of influence. We demand that you remove it at once.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Fine, we will destroy it immediately.]]></Text>
+      <Text><![CDATA[Very well. We will destroy the starbase.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -742,7 +742,7 @@ xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[You understand that this throws your intentions into question, {LEADERNAME:2}.]]></Text>
+      <Text><![CDATA[You need to come to terms with the new territorial reality, {LEADERNAME:2}.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
