@@ -1,7 +1,10 @@
-<?xml version='1.0' encoding='utf-8'?>
-<FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Data/Schema/FlavorText.xsd">
+<?xml version="1.0" encoding="utf-8"?>
 
-  
+<FlavorTextDefs
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../../../Data/Schema/FlavorText.xsd">
+
+  <!-- ** Portraits - Citizens ** -->
   <FlavorTextDef>
     <InternalName>PORTRAIT</InternalName>
 
@@ -11,7 +14,7 @@
         <IgnoreGender>true</IgnoreGender>
         <CitizenRace>CITIZEN_RACE</CitizenRace>
       </Requirements>
-      <Text>"Retrato_Ciudadano_Terráqueos-01.png"</Text>
+      <Text>Citizen_Portrait_Terrans-01.png</Text>
       <Text>Citizen_Portrait_Terrans-02.png</Text>
       <Text>Citizen_Portrait_Terrans-03.png</Text>
       <Text>Citizen_Portrait_Terrans-04.png</Text>
@@ -23,7 +26,7 @@
       <Text>Citizen_Portrait_Terrans-12.png</Text>
       <Text>Citizen_Portrait_Terrans-13.png</Text>
       <Text>Citizen_Portrait_Terrans-14.png</Text>
-      
+      <!-- Must be higher than built-in UnitPortraits.xml weights, so they can be overridden -->
       <PreferenceWeight>200</PreferenceWeight>
     </FlavorTextOption>
 
