@@ -1,1596 +1,1595 @@
 <?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
-    <!-- 1.5 Diplomacy additions. -->
-    <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Estamos muy agradecidos. No olvidaremos tu generosidad.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Lamentamos mucho, pero no podemos justificar el ayudarte en este momento. Quizás si tuviéramos relaciones más cercanas podríamos encontrar los fondos... pero tal como están las cosas, creemos que es mejor que guardemos nuestros activos para nosotros mismos.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>¿Parecemos el tipo de personas que dan caridad a los extraterrestres?</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>¿Acabas de pedir dinero seriamente a una civilización que practica la esclavitud?</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>ParanoidAbility</SpeakerRaceTrait>
-            </Requirements>
-            <Text>Debe ser alguna artimaña. ¡Vete!</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Lamentable, quizás en otra ocasión.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Muchas gracias, agradecemos el apoyo. La generosidad de {PLAYERFACTIONLONG:2} perdurará en {PLAYERFACTIONLONG:1} por años venideros.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>De nada, anhelamos que esto acerque nuestras civilizaciones en el futuro.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Sin interés en deberle nada, si desea ayudar, manténgase al margen.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>Ranom lesitir yacasus cerin, sab omoric ero re metini tibu.[BR](Necesitas investigar el Traductor Universal)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Lamento que te sientas así.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- End 1.5 Diplomacy additions. -->
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>(Debes indagar sobre el Traductor Universal para comerciar)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Tengo una propuesta comercial para ti.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>(no puedes comerciar con quien estás en guerra)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>(no puedes comerciar con quien estás en guerra)</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>(no puedes dialogar con alguien con quien estás en guerra)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>(no puedes dialogar con alguien con quien estás en guerra)</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_CONVERSATION</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>(Debes investigar el Traductor Universal para dialogar)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Desearía conversar sobre algo contigo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_MORE_OPTIONS</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>(Debes investigar el Traductor Universal para dialogar)</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Tengo otra cosa en mente...</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DIPLOMACY_WND_DONE</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>GARBLED_TEXT</ResponseTag>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>VETE, NO TIENES SENTIDO</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Adiós.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Sarah's temp stuff -->
-    <!-- Conversation: DemandCredits -->
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITS_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <PersonalityType>Benevolent</PersonalityType>
-            </Requirements>
-            <Text>Saludos, {LEADERNAME:2}. Morando en la sombra de {PLAYERFACTIONLONG:1}, sería apropiado que nos otorgaras {AMOUNT:2} créditos en señal de respeto.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>{LEADERNAME:2}, reconoce el poder de {PLAYERFACTIONLONG:1}. Exigimos {AMOUNT:2} créditos de tu civilización lamentable.</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
-            </Requirements>
-            <Text>Considera esto un diezmo de {AMOUNT:2} créditos por tu lealtad a nuestra causa.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
-            </Requirements>
-            <Text>Los gastos aumentan; necesitaremos {AMOUNT:2} créditos adicionales.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Muy bien, por ahora, el {PLAYERFACTIONLONG:2} te concederá lo que deseas.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
-            </Requirements>
-            <Text>Nuestra raza tiene una memoria infinita. No olvidaremos esta amenaza velada.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>TimeTravelersAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Tu civilización nos obligó a pagar antes. Pagamos. Pero no terminó bien para ti.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Hacer que te dé cosas gratis no va a hacer que estemos menos enfadados. Pero la muerte tampoco. Así que bien, tómalo.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Tienes la ventaja ahora. Pero cuando vivas como mi esclavo, reviviremos este día.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>La {PLAYERFACTION:2} no se dejará intimidar... y la magnitud de tu poder es cuestionable.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
-            </Requirements>
-            <Text>Los {PLAYERFACTION:2} no te temen.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Lárgate.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SneakyAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Estás faroleando</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Apuesto a que no eres serio.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Vas a arrepentirte de esto.</Text>
-            <Text>Un error peligroso.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: DemandCreditsPerTurn -->
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Como civilización poderosa, es adecuado que {PLAYERFACTIONLONG:1} reciba tributo de {PLAYERFACTIONLONG:2}... ¿qué tal {AMOUNT:2} créditos al mes?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Por ahora, el {PLAYERFACTIONLONG:2} acatará esta solicitud.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>¿Gran poder? No seas ridículo; lárgate, {LEADERNAME:1}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Respuesta errónea. Pronto percibirás las secuelas de tu error.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: DemandTech -->
-    <FlavorTextDef>
-        <InternalName>DEMAND_TECH_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>A pesar de nuestra descomunal fortaleza frente a {PLAYERFACTIONLONG:2}, reconocemos que posees sabiduría que aún nos elude. Ilústranos sobre {TECHNAME:2} y podríamos ignorar la tentación de explotar tu debilidad.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Muy bien, por ahora, el {PLAYERFACTIONLONG:2} te concederá lo que deseas.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} no será manejado a antojo... y la magnitud de tu poder es discutible.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Vas a arrepentirte de esto.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: RequestCredits help me -->
-    <FlavorTextDef>
-        <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:3} nos asedia. Tú, {LEADERNAME:2}, ofrécenos {AMOUNT:2} créditos en auxilio.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Concuerdo. Asistiremos.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Agradecemos tu auxilio.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} posee sus propios males. No.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: RequestTech help me -->
-    <FlavorTextDef>
-        <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Las defensas sufren el asedio de {PLAYERFACTIONLONG:3}, tu ayuda, {LEADERNAME:2}, es vital. ¿Podrías proporcionarnos {TECHNAME:2}?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Muy bien.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Agradecemos profundamente su generosidad y prontitud, {LEADERNAME:2}. Valoramos sinceramente que haya compartido {TECHNAME:2} en nuestro momento de necesidad.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:2} posee sus propios males. No.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: RequestTech help me -->
-    <FlavorTextDef>
-        <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:3} nos asedia, {LEADERNAME:2}, estamos al límite. Nuestra supervivencia depende de tu guerra contra {PLAYERFACTIONLONG:3}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Comprendemos la gravedad de tu situación y te respaldamos. Declararemos guerra a {PLAYERFACTIONLONG:3}, uniendo fuerzas para garantizar tu supervivencia. Juntos, venceremos esta amenaza.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Tu apoyo en esta crítica situación es invaluable, {LEADERNAME:2}. Estamos verdaderamente agradecidos por tu compromiso de luchar junto a nosotros contra {PLAYERFACTIONLONG:3}. Juntos, triunfaremos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>Lo lamento, no..</Text>
-            <Text>No.</Text>
-            <Text>De ninguna manera.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: PayCreditsForDeclareWarOnOther -->
-    <!-- Default: a request, happy if they oblige -->
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Como miembros de {PLAYERFACTIONLONG:1}, te rogamos nos auxilies en nuestro conflicto con el traidor {PLAYERFACTIONLONG:3}. En agradecimiento, proponemos una generosa recompensa de {AMOUNT:1} créditos. ¿Te unes a nosotros en este empeño?</Text>
-            <Text>Nosotros, los representantes de {PLAYERFACTIONLONG:1}, nos acercamos a ti con una petición de ayuda en la lucha contra {PLAYERFACTIONLONG:3}. Tu apoyo sería inestimable y prometemos {AMOUNT:1} créditos como compensación por tus servicios. ¿Estás con nosotros?</Text>
-            <Text>En nombre de la {PLAYERFACTIONLONG:1}, te rogamos que nos prestes tu fuerza contra la formidable {PLAYERFACTIONLONG:3}. Nos comprometemos a recompensar tu valor con {AMOUNT:1} créditos, si aceptas estar a nuestro lado. ¿Te unirás a nosotros en esta batalla?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Declararemos guerra a {PLAYERFACTIONLONG:3} en beneficio de nuestras civilizaciones.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Sabía que podíamos confiar en ti. ¡Gracias!</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No.</Text>
-            <Text>No podemos ir a la guerra en este momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Seguro compartes que el {PLAYERFACTIONLONG:3} es una plaga en nuestra galaxia. Asúme tu deber, declárale guerra; te respaldaremos con {AMOUNT:1} créditos para eliminar toda preocupación económica.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Declararemos guerra a {PLAYERFACTIONLONG:3}. Nos mantenemos unidos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No nos interesa ser mercenarios para tu beneficio, {LEADERNAME:1}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Te verás obligado a tomar partido pronto, entonces desearás haber aceptado nuestra generosa oferta.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: PayTechForDeclareWarOnOther -->
-    <FlavorTextDef>
-        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>La {PLAYERFACTIONLONG:1} te trae una oportunidad: Los {PLAYERFACTIONLONG:3} son una amenaza. Creemos en actuar antes de que se conviertan en un peligro insuperable.[BR][BR]Sin embargo, ahora no podemos enfrentarlos. Entonces, si les declaras la guerra, te brindaremos el conocimiento de {TECHNAME:1} para tu lucha.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} trae una propuesta: La {PLAYERFACTIONLONG:3} se está convirtiendo en un verdadero problema. Creemos que tomar medidas ahora es la mejor manera de prevenir que se conviertan en una amenaza mayor.[BR][BR]A pesar de nuestras limitaciones actuales, si declaras la guerra a ellos, te proporcionaremos la tecnología de {TECHNAME:1} para apoyar tus esfuerzos en el conflicto.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} propone un acuerdo: La {PLAYERFACTIONLONG:3} representa un peligro significativo. Creemos que es crucial actuar antes de que se conviertan en una fuerza avasalladora.[BR][BR]Aunque no podemos actuar en este momento, si inicias la guerra contra ellos, te concederemos acceso al conocimiento de {TECHNAME:1} para ayudar en tu lucha.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} viene con una propuesta: La {PLAYERFACTIONLONG:3} son una amenaza seria. Creemos que tomar medidas preventivas ahora es la mejor manera de neutralizar su peligro.[BR][BR]Actualmente, carecemos de los recursos para actuar. Sin embargo, si usted lidera el ataque y declara la guerra contra ellos, proporcionaremos la tecnología de vanguardia de {TECHNAME:1} para ayudarlo en la batalla.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} ofrece una solución: La {PLAYERFACTIONLONG:3} se está convirtiendo en un problema importante. Creemos que tomar medidas ahora es el mejor camino para evitar que sean una amenaza.[BR][BR]A pesar de nuestras limitaciones actuales, si inicias la guerra contra ellos, te ofreceremos el conocimiento avanzado de {TECHNAME:1} para apoyar tus esfuerzos.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} presenta una oportunidad: La {PLAYERFACTIONLONG:3} son una amenaza en crecimiento. Creemos que es importante tomar medidas preventivas antes de que se vuelvan imparables.[BR][BR]En este momento, no podemos actuar. Sin embargo, si declaras la guerra contra ellos, te concederemos acceso a la tecnología de {TECHNAME:1} para ayudarte en el conflicto.</Text>
-            <Text>El {PLAYERFACTIONLONG:1} viene con un plan: El {PLAYERFACTIONLONG:3} representa un verdadero peligro. Creemos que tomar acción ahora es la mejor manera de neutralizar la amenaza que representan.[BR][BR]Aunque no podemos actuar en este momento, si inicias la guerra contra ellos, te proporcionaremos el conocimiento de {TECHNAME:1} para apoyar tu lucha.</Text>
-            <Text>La {PLAYERFACTIONLONG:1} propone un trato: La {PLAYERFACTIONLONG:3} son una preocupación grave. Creemos que es mejor tomar medidas preventivas antes de que se conviertan en una gran amenaza.[BR][BR]Dadas nuestras limitaciones actuales, si declaras la guerra contra ellos, te proporcionaremos la tecnología de vanguardia de {TECHNAME:1} para ayudar en tus esfuerzos en la batalla.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Declararemos guerra a {PLAYERFACTIONLONG:3}, uniendo fuerzas por el bien de nuestras civilizaciones.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Sabía que podíamos confiar en ti. ¡Gracias!</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No podemos arriesgarnos a la guerra en este momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: GiveCredits -->
-    <FlavorTextDef>
-        <InternalName>GIVE_CREDITS_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:1} desea sellar nuestra amistad con un obsequio de {AMOUNT:1} créditos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Gracias por este obsequio.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: GiveTech -->
-    <FlavorTextDef>
-        <InternalName>GIVE_TECH_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>El {PLAYERFACTIONLONG:1} desea sellar nuestra amistad con el regalo del conocimiento de {TECHNAME:1}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Gracias por este obsequio.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: OnPlayerDead -->
-    <FlavorTextDef>
-        <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Las {PLAYERFACTIONLONG:3} han sido devastadas.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
-        <FlavorTextOption>
-            <Text>Entendido.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Conversation: DemandStarbaseRemoval -->
-    <FlavorTextDef>
-        <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Vuestra estación estelar {OBJECTNAME} amenaza directamente nuestros intereses. Exigimos su inmediata eliminación.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Bien, lo aniquilaremos al instante.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Excelente, posees el aprecio del {PLAYERFACTIONLONG:1}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No, la base estelar permanece inmóvil.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Comprendes que esto cuestiona tus intenciones, {LEADERNAME:2}.</Text>
-            <Text>Esto genera dudas sobre tus motivos, {LEADERNAME:2}.</Text>
-            <Text>Esto cuestiona tus verdaderas intenciones, {LEADERNAME:2}.</Text>
-            <Text>Esto levanta sospechas sobre tus intenciones, {LEADERNAME:2}.</Text>
-            <Text>Esto arroja una sombra sobre tus motivos, {LEADERNAME:2}.</Text>
-            <Text>Esto pone tus intenciones bajo el foco, {LEADERNAME:2}.</Text>
-            <Text>Esto pone en duda la credibilidad de tus motivos, {LEADERNAME:2}.</Text>
-            <Text>Esto pone tus intenciones bajo escrutinio, {LEADERNAME:2}.</Text>
-            <Text>Esto plantea preguntas sobre la autenticidad de tus motivos, {LEADERNAME:2}.</Text>
-            <Text>Esto pone en duda tu propósito, {LEADERNAME:2}.</Text>
-            <Text>Esto cuestiona la autenticidad de tus intenciones, {LEADERNAME:2}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- DemandAscensionStarbase -->
-    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
-    <FlavorTextDef>
-        <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Ansío tu estación estelar {OBJECTNAME}. Sin tu entrega, la arrancaremos con fuerza.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Cálmate. Lo quitaremos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Tomaste la decisión correcta.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No, gracias.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Entonces, es guerra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Anhelamos tu base estelar {OBJECTNAME}, poseedora de un cristal de ascensión. Ofrecemos {AMOUNT:1} a cambio.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>De acuerdo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Excelente, posees el aprecio del {PLAYERFACTIONLONG:1}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
-        <FlavorTextOption>
-            <Text>No.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>No renunciaremos a esto, {LEADERNAME:2}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
-    <FlavorTextDef>
-        <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
-        <FlavorTextOption>
-            <Text>Es hora de terminar esta guerra. ¿Aceptarías estos términos?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_INIT_TRADE_TECHBUY_INTRO</InternalName>
-        <FlavorTextOption>
-            <Text>La {PLAYERFACTIONLONG:2} posee conocimientos que nos interesan. ¿Aceptarías esto a cambio?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- Get off my lawn -->
-    <FlavorTextDef>
-        <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>{PLAYERFACTIONLONG:2}, vemos que estás acumulando fuerzas fuera de nuestra puerta. Deberías detenerte.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <NoMin>true</NoMin>
-                    <RangeMax>-4</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, vemos que estás acumulando fuerzas fuera de nuestra puerta. Deberías detenerte.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>-3</RangeMin>
-                    <RangeMax>3</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>{PLAYERFACTIONLONG:2}, vemos que estás acumulando fuerzas fuera de nuestra puerta. Deberías detenerte.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>4</RangeMin>
-                    <NoMax>true</NoMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>{PLAYERFACTIONLONG:2} Aunque nos agradas, no nos gusta la acumulación militar que estamos viendo.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, te apreciamos, pero el incremento de presencia militar nos preocupa.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, valoramos nuestra relación contigo, pero el aumento militar es motivo de preocupación para nosotros.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, tenemos una relación positiva contigo, pero la reciente expansión militar nos preocupa.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, disfrutamos de nuestra amistad, pero el creciente presencia militar es una fuente de inquietud para nosotros.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, tenemos un aprecio por ti, pero el incremento en la acumulación militar nos causa preocupación.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, apreciamos nuestra alianza, pero el aumento en la actividad militar nos resulta inquietante.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, valoramos nuestra asociación, pero el creciente presencia militar es una fuente de alarma para nosotros.</Text>
-            <Text>{PLAYERFACTIONLONG:2}, tenemos una buena relación contigo, pero la intensificación de la expansión militar nos preocupa.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>No hay nada que ver aquí...</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <NoMin>true</NoMin>
-                    <RangeMax>-4</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>¿Por qué no me detienes?</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>-3</RangeMin>
-                    <RangeMax>3</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>No hay nada que ver aquí...</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>4</RangeMin>
-                    <NoMax>true</NoMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Necesitas confiar en nosotros, amigo.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Observaremos con cuidado.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <NoMin>true</NoMin>
-                    <RangeMax>-4</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Observaremos con cuidado.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>-3</RangeMin>
-                    <RangeMax>3</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Estaremos vigilándote.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelationsRange>
-                    <RangeMin>4</RangeMin>
-                    <NoMax>true</NoMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Espero, por tu bien, que nuestra confianza no esté mal puesta.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Te advertimos, {LEADERNAME:2}, los {PLAYERFACTIONLONG:3} poseen un ejército poderoso. Mantén la cautela.</Text>
-            <Text>Se recomienda precaución, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} posee una fuerza militar formidable. Ten en cuenta sus capacidades.</Text>
-            <Text>Una advertencia, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} tiene una fuerte presencia militar. Procede con precaución.</Text>
-            <Text>Ten cuidado, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} posee un poderoso ejército. Procede con precaución en tus tratos con ellos.</Text>
-            <Text>Ten cuidado, {LEADERNAME:2}. Los {PLAYERFACTIONLONG:3} poseen un poderoso arsenal militar. Tenlo en cuenta en tus interacciones con ellos.</Text>
-            <Text>Ten cuidado, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} tiene una presencia militar significativa. Debes estar atento a su fuerza y capacidades.</Text>
-            <Text>Un aviso, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} posee una formidable fuerza militar. Tenga esto en cuenta en sus tratos con ellos.</Text>
-            <Text>Un aviso, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} tiene un fuerte armamento militar. Procede con precaución al interactuar con ellos.</Text>
-            <Text>Una advertencia, {LEADERNAME:2}. La {PLAYERFACTIONLONG:3} tiene una potente presencia militar. Procede con precaución y ten en cuenta su fuerza.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Gracias por el aviso. Seremos cautelosos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Siempre.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Parece que tienes dificultades con el {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Acepta este {OBJECTNAME:1} para asistirte en tu lucha.</Text>
-            <Text>Parece que estás enfrentando dificultades con el {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Permítenos ofrecer este {OBJECTNAME:1} como un gesto de apoyo para tu conflicto.</Text>
-            <Text>Hemos notado su lucha contra los {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Por favor, acepte este {OBJECTNAME:1} de nuestra parte como señal de nuestro apoyo a su esfuerzo bélico.</Text>
-            <Text>Parece que la {PLAYERFACTIONLONG:3} te está dando problemas, {LEADERNAME:2}. Nos gustaría presentarte este {OBJECTNAME:1} para ayudarte en tu lucha contra ellos.</Text>
-            <Text>Vemos que estás teniendo dificultades con {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Permítenos darte este {OBJECTNAME:1} como muestra de nuestro apoyo a tus esfuerzos bélicos.</Text>
-            <Text>Tu conflicto con el {PLAYERFACTIONLONG:3} no ha pasado desapercibido, {LEADERNAME:2}. Te ofrecemos este {OBJECTNAME:1} como símbolo de nuestro apoyo a tu esfuerzo bélico.</Text>
-            <Text>Somos conscientes de tu lucha contra el {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Por favor, acepta este {OBJECTNAME:1} como señal de nuestro compromiso en apoyar tu esfuerzo bélico.</Text>
-            <Text>Parece que la {PLAYERFACTIONLONG:3} te está causando problemas, {LEADERNAME:2}. Permítenos proporcionarte este {OBJECTNAME:1} como demostración de nuestro apoyo en tu lucha contra ellos.</Text>
-            <Text>Entendemos que te enfrentas a desafíos de la {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Por favor, acepta este {OBJECTNAME:1} de nuestra parte como un símbolo de nuestro apoyo a tus esfuerzos de guerra.</Text>
-            <Text>Parece que los {PLAYERFACTIONLONG:3} están resultando difíciles, {LEADERNAME:2}. Nos gustaría ofrecerte este {OBJECTNAME:1} como muestra de nuestro apoyo en tu conflicto contra ellos.</Text>
-            <Text>Tu batalla con {PLAYERFACTIONLONG:3} no ha pasado desapercibida, {LEADERNAME:2}. Por favor, acepta este {OBJECTNAME:1} de nuestra parte como una señal de nuestro compromiso para asistir en tu esfuerzo bélico.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Text>Tu ayuda llega en un momento oportuno. Gracias.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
-        <FlavorTextOption>
-            <Text>Siempre socorremos a nuestros amigos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>{LEADERNAME:2}, ganas. Nos rendimos y entregaremos todos nuestros activos restantes en tus manos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
-        <FlavorTextOption>
-            <Text>Me alegra que hayas visto la razón.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Podemos estar acabados, {LEADERNAME:2}, pero eres un tonto si crees que entregaremos a nuestra gente bajo tu custodia. Todos nuestros activos restantes serán entregados a nuestros amigos, los {PLAYERFACTIONLONG:3}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
-        <FlavorTextOption>
-            <Text>Haz lo que quieras, aunque al final importará poco.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>No nos queda opción, {LEADERNAME:2}, debemos rendirnos ante {PLAYERFACTIONLONG:3}. Has sido bueno con nosotros, así que deseamos entregarte lo que resta de nuestra civilización. ¡Usa nuestros recursos para contraatacar a {PLAYERFACTIONLONG:3}!</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
-        <FlavorTextOption>
-            <Text>Gracias.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Colonizaste un planeta, ahora demuestra que no te quedarás atrapado. Construye un astillero.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Bien, yo [I]supongo[/I]...</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_2</InternalName>
-        <FlavorTextOption>
-            <Text>¿Cómo diablos se supone que haga eso?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_COUNTERRESPONSE_2</InternalName>
-        <FlavorTextOption>
-            <Text>Estoy seguro de que esto aclarará tus dudas.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Por fin. Es hora de construir una nave constructora para iniciar la expansión.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Bien...</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Eres tan bueno siguiendo instrucciones. Construye una base estelar con ese constructor... y ¿sabes qué? Colócala donde quieras, como un regalo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Vaya, eres exigente...</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Eres un monstruo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_DESTROYEDTERRANS_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Sin lamentos, siempre Drengi.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_PLANETTRADE_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Un bonito planeta posees, ese {OBJECTNAME}. ¿Qué tal si nos lo cedes? Pagaremos {AMOUNT:1}, no somos ladrones. Pero si rechazas, la diplomacia se esfuma.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Bien, engullo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE_2</InternalName>
-        <FlavorTextOption>
-            <Text>¿Y si optamos por no?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Vaya, has metido la pata ahora.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>Claro que sí.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_TESTING_MAIN</InternalName>
-        <FlavorTextOption>
-            <Text>Alégrate, tu prueba es exitosa.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CAMPAIGN1_TESTING_RESPONSE</InternalName>
-        <FlavorTextOption>
-            <Text>¡Hurra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Tendemos a valorar la rentabilidad de la ruta comercial por encima de las opciones ideológicas de esa civilización.</Text>
-            <Text>En nuestras relaciones con otras civilizaciones, la rentabilidad de la ruta comercial tiene mayor importancia que su postura ideológica.</Text>
-            <Text>El éxito financiero de nuestras empresas comerciales tiene prioridad sobre cualquier diferencia cultural o moral.</Text>
-            <Text>La utilidad de una ruta comercial rentable tiene prioridad sobre las creencias de las civilizaciones involucradas.</Text>
-            <Text>En nuestro enfoque hacia el comercio, se priorizan los beneficios económicos por encima de cualquier consideración ideológica.</Text>
-            <Text>Priorizamos el éxito de la ruta comercial por encima de cualquier creencia conflictiva con las civilizaciones con las que interactuamos.</Text>
-            <Text>La estabilidad financiera en el comercio supera cualquier discrepancia ideológica con las civilizaciones con las que hacemos negocios.</Text>
-            <Text>Nuestro enfoque en el comercio se centra principalmente en la rentabilidad de la ruta, en lugar de las creencias de las civilizaciones involucradas.</Text>
-            <Text>El éxito del comercio es de mayor importancia para nosotros que cualquier ideología divergente de las civilizaciones con las que interactuamos.</Text>
-            <Text>Priorizamos el resultado económico de la ruta comercial por encima de cualquier diferencia ideológica con las civilizaciones involucradas.</Text>
-            <Text>Nuestras transacciones comerciales ponen un mayor énfasis en el éxito financiero por encima de cualquier contraste ideológico con las civilizaciones con las que interactuamos.</Text>
-            <PreferenceWeight>10</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>STANDARD_RESPONSE</ResponseTo>
-            </Requirements>
-            <Text>Fin de la Comunicación</Text>
-            <PreferenceWeight>910</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
-                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Vanas palabras de un poder insignificante.</Text>
-            <Text>¿Estás buscando que te destruyamos?</Text>
-            <Text>Realmente estás tentando al destino.</Text>
-            <PreferenceWeight>910</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Esta vez, haré caso omiso a esas palabras.</Text>
-            <Text>Podrías vivir para lamentar tu insolencia.</Text>
-            <Text>An unfortunate attitude.</Text>
-            <PreferenceWeight>332</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
-                <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>¿No deberías estar engrasándote o algo así?</Text>
-            <Text>Para un robot espacial, tienes mucha actitud.</Text>
-            <Text>¿No deberías estar preparándome unas tostadas justo ahora?</Text>
-            <PreferenceWeight>5</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Corresponderemos con quien nos plazca.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Su dinero vale tanto como el de cualquier otro.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Desde nuestra perspectiva, todos poseen igual valor para ser nuestros esclavos.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>XenophobicAbility</ListenerRaceTrait>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Nos resultáis bastante desagradables.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
-                <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Los dogmas orgánicos nos interesan poco.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_OPENBORDERS_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Nos alegra saberlo.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_ATWAR_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>¡Os resistiremos!</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
-                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Somos máquinas. Tus alardes carecen de importancia.</Text>
-            <PreferenceWeight>80</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_TECHVICTORYWORRY_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Lamento, pero debemos proseguir en nuestra búsqueda del conocimiento supremo.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Cualquier enemigo en ciernes descubriría que somos más duros de lo que aparentamos.</Text>
-            <Text>Podrías descubrir que sería un error fatal atacarnos.</Text>
-            <Text>Pronto te darás cuenta de que somos más fuertes de lo que parecemos.</Text>
-            <Text>Subestimarnos sería un error costoso.</Text>
-            <Text>No se debe subestimar nuestra resiliencia.</Text>
-            <Text>Atacarnos resultaría ser un error fatal.</Text>
-            <Text>Podemos parecer frágiles, pero en realidad, somos una fuerza formidable.</Text>
-            <Text>Cualquier intento de atacarnos resultaría en consecuencias nefastas.</Text>
-            <Text>Nuestra fortaleza no es fácilmente perceptible, pero no debe ser subestimada.</Text>
-            <Text>Cualquier acción hostil hacia nosotros resultaría en consecuencias devastadoras.</Text>
-            <Text>Descubrirás que somos más robustos de lo que parecemos.</Text>
-            <Text>Cometer el error de atacarnos sería un grave desliz.</Text>
-            <Text>Podemos parecer débiles, pero estamos lejos de serlo.</Text>
-            <Text>Cualquier intención hostil hacia nosotros se encontraría con graves consecuencias.</Text>
-            <Text>Poseemos una fuerza oculta que no debería ser subestimada.</Text>
-            <Text>Pronto aprenderás que atacarnos sería un grave error.</Text>
-            <Text>Nuestra apariencia puede ser engañosa, pero nuestra determinación no lo es.</Text>
-            <Text>Cualquier intento de hacernos daño resultaría en consecuencias desastrosas.</Text>
-            <Text>No te dejes engañar por nuestra apariencia, somos una fuerza formidable.</Text>
-            <Text>Atacarnos sería un error fatal.</Text>
-            <Text>Nuestra fortaleza no es inmediatamente perceptible, pero no debe ser subestimada.</Text>
-            <Text>Cualquier acción hostil hacia nosotros tendría graves consecuencias.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_ASCENSIONVICTORYWORRY_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Según los folletos, ascensión implica convivir con leones, corderos y mesas de frutas.</Text>
-            <PreferenceWeight>20</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Ah, eso. Todos saben que el jengibre y el chocolate son los más potentes del universo.</Text>
-            <Text>No podemos evitar que las personas se interesen en los maravillosos productos de MetaAppleDisneyGooglePlus.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerFaction>FACTION_YOR</ListenerFaction>
-                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Biológicos, deben aprender la supremacía de las máquinas.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>La verdad, esperaba que no lo notaras...</Text>
-            <Text>Comprendo. Solo que nuestra cultura es tan maravillosa.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
-                <ListenerFaction>FACTION_TERRAN</ListenerFaction>
-                <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Jamás has degustado chocolate, se nota.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
-            </Requirements>
-            <Text>¿Eh?</Text>
-            <Text>No tengo ni idea de lo que acaban de decir.</Text>
-            <PreferenceWeight>4</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ResponseTo>TALK_YOR_GENERAL</ResponseTo>
-            </Requirements>
-            <Text>Es un debate clasificado PG. En otras palabras, mejor no profundizar en los detalles.</Text>
-            <PreferenceWeight>120</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
-            </Requirements>
-            <Text>Veremos.</Text>
-            <Text>Aceptado.</Text>
-            <PreferenceWeight>5</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Text>Aceptado.</Text>
-            <Text>Entendido.</Text>
-            <Text>Tomaremos en cuenta lo que has dicho.</Text>
-            <Text>Entendemos.</Text>
-            <Text>Tomaremos su mensaje en consideración.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- End Game text -->
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
-        <FlavorTextOption>
-            <Text>A través de tu uso creativo de armas, naves y naves con armas, has puesto tu bota en el cuello de la galaxia. Todos tus enemigos han sido aplastados, sus planetas sometidos y sus ciudadanos obligados a ondear tu bandera. No fue bonito, pero nunca tuvo que serlo, ¿verdad?</Text>
-        </FlavorTextOption>
-        <!-- <FlavorTextOption>
+  <!-- 1.5 Diplomacy additions. -->
+  <!-- {PLAYERFACTION:1} = Target Faction, {PLAYERFACTION:2} = Player Faction. {LEADERNAME:1} = Target Leader, {LEADERNAME:2} = Player Leader -->
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU_Option2_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_ACCEPT_RETURN_TO_MENU_Option3_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_Option2_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_Option3_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_Option4_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerRaceTrait>SlaversAbility</SpeakerRaceTrait>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_Option5_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerRaceTrait>ParanoidAbility</SpeakerRaceTrait>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_Option6_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_ASK_FOR_HELP_REJECT_RETURN_TO_MENU_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_ACCEPT_RETURN_TO_MENU_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>AI_RESPOND_OFFER_FOREIGN_AID_REJECT_RETURN_TO_MENU_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- End 1.5 Diplomacy additions. -->
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_START_TRADE</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_START_TRADE_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_START_TRADE_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_TRADE_DISABLED_FOR_WAR_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_CONVERSATION_DISABLED_FOR_WAR_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_CONVERSATION</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_CONVERSATION_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_CONVERSATION_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_MORE_OPTIONS</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_MORE_OPTIONS_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_MORE_OPTIONS_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DIPLOMACY_WND_DONE</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>GARBLED_TEXT</ResponseTag>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>DIPLOMACY_WND_DONE_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DIPLOMACY_WND_DONE_Option1_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Sarah's temp stuff -->
+  <!-- Conversation: DemandCredits -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <PersonalityType>Benevolent</PersonalityType>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITS_MAIN_Option1_0</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KRYNN</SpeakerFaction>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_MAIN_Option2_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_IRIDIUM</SpeakerFaction>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_MAIN_Option3_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITS_RESPONSE_ACCEPT_Option0_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_ACCEPT_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>TimeTravelersAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_ACCEPT_Option2_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_ACCEPT_Option3_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_ACCEPT_Option4_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_Option2_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SneakyAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_Option3_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_Option4_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+      <StringKey>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER_Option0_1</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: DemandCreditsPerTurn -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITSPERTURN_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: DemandTech -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_TECH_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_TECH_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_TECH_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_TECH_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: RequestCredits help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_CREDITS_HELPME_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_Option0_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_CREDITS_HELPME_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: RequestTech help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_TECH_HELPME_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_TECH_HELPME_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: RequestTech help me -->
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_WAR_HELPME_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>REQUEST_WAR_HELPME_RESPONSE_REJECT_Option0_0</StringKey>
+      <StringKey>REQUEST_WAR_HELPME_RESPONSE_REJECT_Option0_1</StringKey>
+      <StringKey>REQUEST_WAR_HELPME_RESPONSE_REJECT_Option0_2</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: PayCreditsForDeclareWarOnOther -->
+  <!-- Default: a request, happy if they oblige -->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN_Option0_0</StringKey>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN_Option0_1</StringKey>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN_Option0_2</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT_Option0_0</StringKey>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT_Option0_1</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- If on bad terms and more powerful, change to a demand you expect to be met -->
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: PayTechForDeclareWarOnOther -->
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_0</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_1</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_2</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_3</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_4</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_5</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_6</StringKey>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN_Option0_7</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: GiveCredits -->
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>GIVE_CREDITS_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>GIVE_CREDITS_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: GiveTech -->
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>GIVE_TECH_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>GIVE_TECH_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: OnPlayerDead -->
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>ON_PLAYER_DEAD_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <StringKey>ON_PLAYER_DEAD_RESPONSE_OK_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Conversation: DemandStarbaseRemoval -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_STARBASE_REMOVAL_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_1</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_2</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_3</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_4</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_5</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_6</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_7</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_8</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_9</StringKey>
+      <StringKey>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER_Option0_10</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- DemandAscensionStarbase -->
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (START) -->
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_ASCENSION_STARBASE_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>OFFER_ASCENSION_STARBASE_TRADE_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
+    <FlavorTextOption>
+      <StringKey>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END) -->
+  <FlavorTextDef>
+    <InternalName>AI_INIT_TRADE_PEACE_INTRO</InternalName>
+    <FlavorTextOption>
+      <StringKey>AI_INIT_TRADE_PEACE_INTRO_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_INIT_TRADE_TECHBUY_INTRO</InternalName>
+    <FlavorTextOption>
+      <StringKey>AI_INIT_TRADE_TECHBUY_INTRO_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- Get off my lawn -->
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option2_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_0</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_1</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_2</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_3</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_4</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_5</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_6</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_7</StringKey>
+      <StringKey>WARN_MILITARY_BUILDUP_MAIN_Option3_8</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_Option2_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_Option3_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER_Option0_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <NoMin>true</NoMin>
+          <RangeMax>-4</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER_Option1_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>-3</RangeMin>
+          <RangeMax>3</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER_Option2_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelationsRange>
+          <RangeMin>4</RangeMin>
+          <NoMax>true</NoMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER_Option3_0</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_0</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_1</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_2</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_3</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_4</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_5</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_6</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_7</StringKey>
+      <StringKey>WARN_DANGEROUS_PLAYER_MAIN_Option0_8</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_DANGEROUS_PLAYER_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_0</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_1</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_2</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_3</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_4</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_5</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_6</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_7</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_8</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_9</StringKey>
+      <StringKey>HELP_FRIENDLY_PLAYER_MAIN_Option0_10</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <StringKey>HELP_FRIENDLY_PLAYER_ACCEPT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
+    <FlavorTextOption>
+      <StringKey>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_RESPONSE_1_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
+    <FlavorTextOption>
+      <StringKey>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSHIPYARDHINT_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_2</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSHIPYARDHINT_RESPONSE_2_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSHIPYARDHINT_COUNTERRESPONSE_2</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSHIPYARDHINT_COUNTERRESPONSE_2_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDCONSTRUCTORHINT_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDCONSTRUCTORHINT_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDCONSTRUCTORHINT_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSTARBASEHINT_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_BUILDSTARBASEHINT_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_BUILDSTARBASEHINT_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_DESTROYEDTERRANS_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_DESTROYEDTERRANS_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_DESTROYEDTERRANS_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_DESTROYEDTERRANS_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_PLANETTRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_PLANETTRADE_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_PLANETTRADE_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_PLANETTRADE_RESPONSE_2</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_PLANETTRADE_RESPONSE_2_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_REFUSEDPLANETTRADE_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_REFUSEDPLANETTRADE_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_REFUSEDPLANETTRADE_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_TESTING_MAIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_TESTING_MAIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CAMPAIGN1_TESTING_RESPONSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>CAMPAIGN1_TESTING_RESPONSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_2</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_3</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_4</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_5</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_6</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_7</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_8</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_9</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option0_10</StringKey>
+      <PreferenceWeight>10</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>STANDARD_RESPONSE</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option1_0</StringKey>
+      <PreferenceWeight>910</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
+        <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option2_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option2_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option2_2</StringKey>
+      <PreferenceWeight>910</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option3_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option3_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option3_2</StringKey>
+      <PreferenceWeight>332</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerRaceTrait>SyntheticLife</SpeakerRaceTrait>
+        <ResponseTo>TAUNTING_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option4_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option4_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option4_2</StringKey>
+      <PreferenceWeight>5</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option5_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>EntrepreneursAbility</ListenerRaceTrait>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option6_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SlaversAbility</ListenerRaceTrait>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option7_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>XenophobicAbility</ListenerRaceTrait>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option8_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+        <ResponseTo>TRADE_OPPOSINGCULTURE_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option9_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_OPENBORDERS_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option10_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_ATWAR_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option11_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>SyntheticLife</ListenerRaceTrait>
+        <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option12_0</StringKey>
+      <PreferenceWeight>80</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_TECHVICTORYWORRY_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option13_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_EASYTARGET_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_2</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_3</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_4</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_5</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_6</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_7</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_8</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_9</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_10</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_11</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_12</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_13</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_14</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_15</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_16</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_17</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_18</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_19</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_20</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option14_21</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_ASCENSIONVICTORYWORRY_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option15_0</StringKey>
+      <PreferenceWeight>20</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+        <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option16_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option16_1</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerFaction>FACTION_YOR</ListenerFaction>
+        <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option17_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option18_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option18_1</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_ALTARIAN</SpeakerFaction>
+        <ListenerFaction>FACTION_TERRAN</ListenerFaction>
+        <ResponseTo>CULTURE_FLIP_TALK_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option19_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerHasUniversalTranslator>false</ListenerHasUniversalTranslator>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option20_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option20_1</StringKey>
+      <PreferenceWeight>4</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ResponseTo>TALK_YOR_GENERAL</ResponseTo>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option21_0</StringKey>
+      <PreferenceWeight>120</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <ListenerRaceTrait>DeterminedAbility</ListenerRaceTrait>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option22_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option22_1</StringKey>
+      <PreferenceWeight>5</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option23_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option23_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option23_2</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option23_3</StringKey>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option23_4</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- End Game text -->
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_CONQUEST</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_CONQUEST_Option0_0</StringKey>
+    </FlavorTextOption>
+    <!-- <FlavorTextOption>
       <Requirements>
         <ListenerFaction>FACTION_DRENGIN</ListenerFaction>
       </Requirements>
       <Text>Through force of arms and sheer cruelty, {PLAYERFACTIONLONG:2} has achieved its rightful place in the galaxy.</Text>
     </FlavorTextOption> -->
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
-        <FlavorTextOption>
-            <Text>Tu cultura se ha extendido por toda la galaxia. Los alienígenas en todas partes buscan emular las costumbres de tu pueblo, añadiendo o quitando extremidades según sea necesario para adaptarse mejor a su visión de la vida perfecta que llevas. ¿Quién necesita conquistar los cuerpos cuando ya eres dueño de sus corazones y mentes?</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_RESEARCH</InternalName>
-        <FlavorTextOption>
-            <Text>Usando sus poderosos cerebros, su cultura ha desvelado los secretos no solo de este universo, sino del más allá. Dejen que los simplones de la galaxia peleen por el polvo y los fragmentos de roca en los que se posan. Para su gente, algo mucho más grande los está llamando.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_ASCENSION</InternalName>
-        <FlavorTextOption>
-            <Text>Tu estudio de las formas de los Precursores está completo, y tu pueblo pronto será indistinguible de los mismos Precursores. Habiendo dominado su tecnología y forma de pensar, tu pueblo está a punto de emprender un viaje que las mentes menos desarrolladas de esta galaxia ni siquiera pueden comenzar a comprender.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_ASCENSION_DEFEAT</InternalName>
-        <FlavorTextOption>
-            <Text>Otra raza ha seguido el camino de los Precursores y ha ascendido. Aunque nuestra destrucción no es inmediata, nos has conducido a convertirnos en evolutivamente obsoletos. Nuestras naves espaciales y láseres tienen poco significado para una raza más allá de la mortalidad, para quienes el tiempo y el espacio son juguetes de niños. Para ellos, ni siquiera somos verdaderamente conscientes, somos polvo que vaga por la galaxia, ignorados o destruidos según lo dicten sus caprichos.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_ALLIANCE</InternalName>
-        <FlavorTextOption>
-            <Text>Y con el trazo de una pluma, la paz estaba finalmente al alcance. Una paz que perduraría, ya que se había cimentado en una base de confianza y respeto mutuos. Con sus mentes y recursos ya no desperdiciados en la sed interminable de guerra, pronto desciende una nueva era dorada de prosperidad sobre tu pueblo y sus aliados.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_TURNLIMIT</InternalName>
-        <FlavorTextOption>
-            <Text>Durante años, tu gente luchó y se esforzó en el escenario galáctico con tus ambiciosos y intrigantes vecinos. Aunque ninguna raza jamás obtuvo una ventaja decisiva, cuando el conflicto se convirtió en una guerra de desgaste, fueron tus gente quienes finalmente terminaron en la mejor posición.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_PRESTIGE</InternalName>
-        <FlavorTextOption>
-            <Text>Durante años, tu gente luchó y se esforzó en el escenario galáctico con tus ambiciosos y intrigantes vecinos. Aunque ninguna raza jamás obtuvo una ventaja decisiva, cuando el conflicto se convirtió en una guerra de desgaste, fueron tus gente quienes finalmente terminaron en la mejor posición.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_UNITEDPLANETS</InternalName>
-        <FlavorTextOption>
-            <Text>No deberías estar viendo esto.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_DEFEAT</InternalName>
-        <FlavorTextOption>
-            <Text>Y con eso, tu civilización colapsó. Por un tiempo, tu gente siguió viviendo, dispersa por la galaxia como refugiados y ermitaños. Pero el poder de tu especie nunca regresó. ¿Serán recordados tus seres en museos y libros de texto, o borrados de la memoria de todos los seres? Nunca lo sabrás. Ya no te corresponde a ti decirlo.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>END_GAME_PARAGRAPH_RETIRED</InternalName>
-        <FlavorTextOption>
-            <Text>Construir una civilización que abarque la galaxia lleva mucho tiempo, y no todos tienen la paciencia para ello. ¿Comprenderán tus personas que hiciste lo mejor que pudiste, o te maldecirán por abandonarlos mientras los extraterrestres devoran sus huesos? No dejes que te quite el sueño (debería quitarte el sueño).</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>STOLE_CREDITS</InternalName>
-        <FlavorTextOption>
-            <Text>Nuestro diplomático {OBJECTNAME} ha sustraído {AMOUNT:2} créditos del {PLAYERFACTION:3}</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>UNIT_STOLE_TECH</InternalName>
-        <FlavorTextOption>
-            <Text>Nuestro diplomático {OBJECTNAME} sustrajo la tecnología {TECHNAME:2} de {PLAYERFACTION:3}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>UNIT_STOLE_TECH_RESPONSE_OK</InternalName>
-        <FlavorTextOption>
-            <Text>Sigue con el buen hacer.</Text>
-        </FlavorTextOption>
-<!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>STOLE_TECH</InternalName>
-        <FlavorTextOption>
-            <Text>Hemos sustraído la tecnología {TECHNAME:2} de los {PLAYERFACTION:3}.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>STOLE_TECH_FAIL</InternalName>
-        <FlavorTextOption>
-            <Text>Nuestro ojo cósmico ha observado a la {PLAYERFACTION:3}. Aunque no se detectaron nuevas tecnologías, hemos recopilado algunos conocimientos sobre métodos de investigación distintos a los nuestros. [BR][BR][COLOR=UIDefaultHighlight][ICON=Stat_Research_Icon] +25% Progreso de Investigación[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-    <FlavorTextDef>
-		<InternalName>STOLE_TECH_FAIL_NO_RESEARCH</InternalName>
-		<FlavorTextOption>
-			<Text>Nuestro ojo cósmico ha observado a la {PLAYERFACTION:3}. No se detectaron nuevas tecnologías, y no teníamos ningún proyecto de investigación propio para comparar con el suyo.</Text>
-		</FlavorTextOption>
-	</FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
-        <FlavorTextOption>
-            <Text>Excelente.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-		<InternalName>STOLE_TECH_RESPONSE_OK_NO_RESEARCH</InternalName>
-		<FlavorTextOption>
-			<Text>Qué insensatos fuimos.</Text>
-		</FlavorTextOption>
-	</FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GENERIC</InternalName>
-        <FlavorTextOption>
-            <Text>Descripción del Relleno</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>¿Qué repugnante contaminante de criatura cruza mi pantalla?</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Es un placer conocerle, amable Korath.</Text>
-            <PreferenceWeight>1</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Modera tus modales, Korath. Aquí, no intimidas a nadie.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GENERIC_GREETING</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Haz esto rápido, escoria alienígena.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>DECLARE_WAR_MAIN</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>How wretched a life you must live, not being one of us. Soon it will be over, for you and all your kind.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Has demostrado tu valía, extraterrestre. Basta de lucha. Atendamos nuestras heridas.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>AI_CREATED_TRADE_OFFER</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Mira, extraterrestre. Un ofrecimiento, un obsequio. Serías un necio al rechazarlo.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>TRADE_OFFER_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Aceptamos, extraterrestre, tu propuesta.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>La galaxia rebosa de extraterrestres inmundos. Es nauseabundo.</Text>
-            <Text>¿Alguna vez te cansas de los sonidos que emite tu rostro horrendo? Yo sí.</Text>
-            <Text>No malgastes mi tiempo ni el tuyo con charlas inútiles. Pero sobre todo, no desperdicies el mío.</Text>
-            <PreferenceWeight>100</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>También es un placer hablar contigo, Korath.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
-            </Requirements>
-            <Text>Pareces más feo que de costumbre hoy.</Text>
-            <PreferenceWeight>50</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <!-- FROM INTRIGUE -->
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_LOSE</InternalName>
-        <FlavorTextOption>
-            <Text>Estamos programados para unas elecciones en 5 meses. Los encuestadores informan que es probable que [COLOR=UIDefaultHighlight]perdamos por una gran mayoría[/COLOR].[BR][BR]Las elecciones requieren que vigilemos de cerca nuestra calificación de aprobación. Los votantes no se dejarán influenciar fácilmente por medidas a corto plazo y considerarán su moral a lo largo de un período largo. Todas las cosas que aumentan la aprobación nos ayudarán a ganar elecciones como la reducción de la tasa de impuestos y la construcción de mejoras de aprobación. O podemos considerar formas de gobierno que no llevan a cabo elecciones. Si perdemos una elección, caeremos en un [COLOR=UIDefaultHighlight]Gobierno de Coalición[/COLOR] que limita nuestro poder. Incluyendo bloquear nuestra capacidad para declarar la guerra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_LOW</InternalName>
-        <FlavorTextOption>
-            <Text>Estamos programados para unas elecciones en 5 meses. Los encuestadores informan que probablemente [COLOR=UIDefaultHighlight]perderemos, pero será ajustado[/COLOR]. Deberíamos concentrarnos en aumentar la moral.[BR][BR]Las elecciones requieren que observemos de cerca nuestra tasa de aprobación. Los votantes no se dejarán influir fácilmente por medidas a corto plazo y considerarán su moral a largo plazo. Todas las cosas que aumentan la aprobación nos ayudarán a ganar elecciones como bajar la tasa de impuestos y construir mejoras de aprobación. O podemos considerar formas de gobierno que no realicen elecciones. Si perdemos una elección, caeremos a un [COLOR=UIDefaultHighlight]Gobierno de Coalición[/COLOR] que limita nuestro poder. Incluyendo bloquear nuestra capacidad de declarar guerra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_HIGH</InternalName>
-        <FlavorTextOption>
-            <Text>Tenemos programadas unas elecciones en 5 meses. Los encuestadores informan que es probable que [COLOR=UIDefaultHighlight]ganemos, pero será ajustado[/COLOR]. No podemos permitir que la moral decaiga. [BR][BR]Las elecciones requieren que vigilemos atentamente nuestra tasa de aprobación. Los votantes no serán fácilmente influenciados por medidas a corto plazo y considerarán su moral a largo plazo. Todas las cosas que aumentan la aprobación nos ayudarán a ganar elecciones, como reducir la tasa de impuestos y construir mejoras en la aprobación. O podemos considerar formas de gobierno que no realicen elecciones. Si perdemos una elección caeremos en un [COLOR=UIDefaultHighlight]Gobierno de Coalición[/COLOR] que limitará nuestro poder. Incluyendo bloquear nuestra capacidad para declarar la guerra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_WIN</InternalName>
-        <FlavorTextOption>
-            <Text>Estamos programados para unas elecciones en 5 meses. Los encuestadores informan que es probable que [COLOR=UIDefaultHighlight]ganemos por aplastante mayoría[/COLOR].[BR][BR]Las elecciones requieren que vigilemos de cerca nuestro índice de aprobación. Los votantes no se dejarán influenciar fácilmente por medidas a corto plazo y considerarán su moral a lo largo de un largo período. Todas las cosas que aumentan la aprobación nos ayudarán a ganar elecciones, como la reducción de la tasa de impuestos y la construcción de mejoras de aprobación. O podemos considerar formas de gobierno que no realicen elecciones. Si perdemos una elección, caeremos a un [COLOR=UIDefaultHighlight]Gobierno de Coalición[/COLOR] que limita nuestro poder. Incluyendo el bloqueo de nuestra capacidad para declarar la guerra.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_RESPONSE_ECONOMY</InternalName>
-        <FlavorTextOption>
-            <Text>Repasemos nuestras opciones económicas. [COLOR=UIDefaultHighlight](Se abre la pantalla de Economía)[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_RESPONSE_GOVERNMENT</InternalName>
-        <FlavorTextOption>
-            <Text>Revisemos nuestras opciones gubernamentales. [COLOR=UIDefaultHighlight](Abre la pantalla del Gobierno)[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>ELECTION_WARNING_RESPONSE_WAIT</InternalName>
-        <FlavorTextOption>
-            <Text>Dame un momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING</InternalName>
-        <FlavorTextOption>
-            <Text>Nuestro gobierno es insuficiente para las necesidades de nuestra creciente civilización. Las nuevas colonias se quejan de que el gobierno solo sirve al mundo natal y las decisiones en nuestros mundos se están retrasando cada vez más por niveles cada vez más profundos de burocracia.[BR][BR]Los gobiernos solo son efectivos para administrar un cierto número de mundos. Una vez que se excede este [COLOR=UIDefaultHighlight]Límite de Colonias[/COLOR], sufrimos una penalización de moral por cada colonia que controlamos más allá de este límite.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_GOVERNMENT</InternalName>
-        <FlavorTextOption>
-            <Text>Revisemos nuestras opciones gubernamentales. [COLOR=UIDefaultHighlight](Abre la pantalla del Gobierno)[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING_RESPONSE_WAIT</InternalName>
-        <FlavorTextOption>
-            <Text>Dame un momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING_TECH</InternalName>
-        <FlavorTextOption>
-            <Text>Nuestro gobierno es insuficiente para las necesidades de nuestra civilización en crecimiento. Las nuevas colonias se quejan de que el gobierno solo sirve a la metrópoli y las decisiones en nuestros mundos se ven cada vez más retrasadas por la burocracia. [BR][BR]Los gobiernos solo son efectivos en la gestión de un cierto número de mundos. Una vez que se excede este [COLOR=UIDefaultHighlight]Límite de Colonias[/COLOR], sufrimos una penalización de Moral por cada Colonia que exceda este límite. Desafortunadamente, no hemos descubierto ningún gobierno que aumente nuestro Límite de Colonias. Deberíamos descubrir tecnologías que permitan formas de gobierno más avanzadas, ya sea por investigación o comerciando con otras civilizaciones.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_TECH</InternalName>
-        <FlavorTextOption>
-            <Text>Repasemos nuestras opciones de Investigación. [COLOR=UIDefaultHighlight](Abre la pantalla de Investigación)[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT</InternalName>
-        <FlavorTextOption>
-            <Text>Dame un momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CHOOSE_FIRST_GOVERNMENT</InternalName>
-        <FlavorTextOption>
-            <Text>Ahora que hemos expandido más allá de nuestro mundo natal, los colonos claman por estructura. Es hora de que elijamos una forma de gobierno que esté preparada para manejar una civilización galáctica.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_GO_NOW</InternalName>
-        <FlavorTextOption>
-            <Text>¡Genial, comencemos! [COLOR=UIDefaultHighlight](Abre la pantalla de Gobierno)[/COLOR]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_WAIT</InternalName>
-        <FlavorTextOption>
-            <Text>Dame un momento.</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
-    <FlavorTextDef>
-        <InternalName>LEADER_OPINION_OF_PLAYER</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <StatRange>
-                    <Stat>Loyalty</Stat>
-                    <Range>
-                        <NoMin>true</NoMin>
-                        <RangeMax>30</RangeMax>
-                    </Range>
-                </StatRange>
-            </Requirements>
-            <Text>[I]"Tu incompetencia es materia de leyenda."[/I]</Text>
-            <Text>[I]"Estás llevando a nuestra civilización a la ruina."[/I]</Text>
-            <Text>[I]"Sobrevivimos a pesar de tu liderazgo mediocre."[/I]</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <StatRange>
-                    <Stat>Loyalty</Stat>
-                    <Range>
-                        <RangeMin>70</RangeMin>
-                        <NoMax>true</NoMax>
-                    </Range>
-                </StatRange>
-            </Requirements>
-            <Text>[I]"Nuestra civilización florece gracias a tu gobierno."[/I]</Text>
-            <Text>[I]"Tienes mi apoyo eterno."[/I]</Text>
-            <Text>[I]"Te sirvo con honor."[/I]</Text>
-        </FlavorTextOption>
-        <FlavorTextOption>
-            <Requirements>
-                <StatRange>
-                    <Stat>Loyalty</Stat>
-                    <Range>
-                        <RangeMin>30</RangeMin>
-                        <RangeMax>70</RangeMax>
-                    </Range>
-                </StatRange>
-            </Requirements>
-            <Text>[I]"Eres un gobernante competente, pero no excepcional."[/I]</Text>
-            <Text>[I]"Eres un capaz administrador de nuestra civilización, pero deberíamos aspirar a más."[/I]</Text>
-            <Text>[I]"No tengo una opinión fuerte en un sentido u otro."[/I]</Text>
-        </FlavorTextOption>
-    </FlavorTextDef>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_INFLUENCE</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_INFLUENCE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_RESEARCH</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_RESEARCH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_ASCENSION</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_ASCENSION_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_ASCENSION_DEFEAT</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_ASCENSION_DEFEAT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_ALLIANCE</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_ALLIANCE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_TURNLIMIT</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_TURNLIMIT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_PRESTIGE</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_PRESTIGE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_UNITEDPLANETS</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_UNITEDPLANETS_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_DEFEAT</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_DEFEAT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>END_GAME_PARAGRAPH_RETIRED</InternalName>
+    <FlavorTextOption>
+      <StringKey>END_GAME_PARAGRAPH_RETIRED_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_CREDITS</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_CREDITS_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>UNIT_STOLE_TECH</InternalName>
+    <FlavorTextOption>
+      <StringKey>UNIT_STOLE_TECH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>UNIT_STOLE_TECH_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <StringKey>UNIT_STOLE_TECH_RESPONSE_OK_Option0_0</StringKey>
+    </FlavorTextOption>
+    <!--STOLE_TECH is currently only used by the Cosmic Eye Executive Order and the text is written as such.-->
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_TECH</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_TECH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_TECH_FAIL</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_TECH_FAIL_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_TECH_FAIL_NO_RESEARCH</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_TECH_FAIL_NO_RESEARCH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_TECH_RESPONSE_OK</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_TECH_RESPONSE_OK_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>STOLE_TECH_RESPONSE_OK_NO_RESEARCH</InternalName>
+    <FlavorTextOption>
+      <StringKey>STOLE_TECH_RESPONSE_OK_NO_RESEARCH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERIC</InternalName>
+    <FlavorTextOption>
+      <StringKey>GENERIC_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option239_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_PEACEFUL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_PEACEFUL_Option237_0</StringKey>
+      <PreferenceWeight>1</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_NEUTRAL</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_NEUTRAL_Option222_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERIC_GREETING</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERIC_GREETING_Option46_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>DECLARE_WAR_MAIN</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>DECLARE_WAR_MAIN_Option40_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>ASK_FOR_PEACE_MAIN_Option3_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>AI_CREATED_TRADE_OFFER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>AI_CREATED_TRADE_OFFER_Option22_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>TRADE_OFFER_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <ResponseTag>KORATH_DECLARE_WAR_ON_PLAYER</ResponseTag>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>TRADE_OFFER_ACCEPT_Option13_0</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_MAIN_Option56_0</StringKey>
+      <StringKey>GENERAL_CONVERSATION_MAIN_Option56_1</StringKey>
+      <StringKey>GENERAL_CONVERSATION_MAIN_Option56_2</StringKey>
+      <PreferenceWeight>100</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option24_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_KORATH</SpeakerFaction>
+      </Requirements>
+      <StringKey>GENERAL_CONVERSATION_ACCEPT_Option25_0</StringKey>
+      <PreferenceWeight>50</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <!-- FROM INTRIGUE -->
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_LOSE</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_LOSE_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_LOW</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_LOW_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_HIGH</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_HIGH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_WIN</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_WIN_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_RESPONSE_ECONOMY</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_RESPONSE_ECONOMY_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_RESPONSE_GOVERNMENT</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_RESPONSE_GOVERNMENT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>ELECTION_WARNING_RESPONSE_WAIT</InternalName>
+    <FlavorTextOption>
+      <StringKey>ELECTION_WARNING_RESPONSE_WAIT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING_RESPONSE_GOVERNMENT</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_RESPONSE_GOVERNMENT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING_RESPONSE_WAIT</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_RESPONSE_WAIT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING_TECH</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_TECH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_TECH</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_TECH_RESPONSE_TECH_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT</InternalName>
+    <FlavorTextOption>
+      <StringKey>COLONY_LIMIT_WARNING_TECH_RESPONSE_WAIT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CHOOSE_FIRST_GOVERNMENT</InternalName>
+    <FlavorTextOption>
+      <StringKey>CHOOSE_FIRST_GOVERNMENT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_GO_NOW</InternalName>
+    <FlavorTextOption>
+      <StringKey>CHOOSEFIRSTGOVERNMENT_RESPONSE_GO_NOW_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>CHOOSEFIRSTGOVERNMENT_RESPONSE_WAIT</InternalName>
+    <FlavorTextOption>
+      <StringKey>CHOOSEFIRSTGOVERNMENT_RESPONSE_WAIT_Option0_0</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>LEADER_OPINION_OF_PLAYER</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <StatRange>
+          <Stat>Loyalty</Stat>
+          <Range>
+            <NoMin>true</NoMin>
+            <RangeMax>30</RangeMax>
+          </Range>
+        </StatRange>
+      </Requirements>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option0_0</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option0_1</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option0_2</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <StatRange>
+          <Stat>Loyalty</Stat>
+          <Range>
+            <RangeMin>70</RangeMin>
+            <NoMax>true</NoMax>
+          </Range>
+        </StatRange>
+      </Requirements>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option1_0</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option1_1</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option1_2</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <Requirements>
+        <StatRange>
+          <Stat>Loyalty</Stat>
+          <Range>
+            <RangeMin>30</RangeMin>
+            <RangeMax>70</RangeMax>
+          </Range>
+        </StatRange>
+      </Requirements>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option2_0</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option2_1</StringKey>
+      <StringKey>LEADER_OPINION_OF_PLAYER_Option2_2</StringKey>
+    </FlavorTextOption>
+  </FlavorTextDef>
 </FlavorTextDefs>

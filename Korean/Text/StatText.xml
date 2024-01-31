@@ -78,7 +78,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ColonyApproval</Label>
-    <String>콜로니 승인</String>
+    <String>식민지 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_RandomTechSlots</Label>
@@ -130,7 +130,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_IsHomeworld</Label>
-    <String>[ICON=Stat_Temp_Icon] 본향 행성</String>
+    <String>[ICON=Stat_Temp_Icon] 고향 행성</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_IsCapital</Label>
@@ -142,11 +142,11 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_Approval</Label>
-    <String>[ICON=ApprovalStatIcon] 승인</String>
+    <String>[ICON=ApprovalStatIcon] 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATDEC_Approval</Label>
-    <String>승인은 시민들이 정부를 어떻게 보는지를 측정하는 지표입니다. 이는 [HS=HS_Taxes]세율[/HS], [HS=HS_Ideology]이데올로기[/HS], [HS=HS_Crime]범죄[/HS] 등에 영향을 받을 수 있습니다. 다른 종은 다른 동기를 가지므로 시민들이 좋아하고 싫어하는 것이 무엇인지 확인해보세요.[BR][BR]당신의 행성의 승인은 그 행성에 있는 모든 시민들의 평균 승인입니다.</String>
+    <String>지지율은 시민들이 정부를 어떻게 보는지를 측정하는 지표입니다. 이는 [HS=HS_Taxes]세율[/HS], [HS=HS_Ideology]이데올로기[/HS], [HS=HS_Crime]범죄[/HS] 등에 영향을 받을 수 있습니다. 다른 종은 다른 동기를 가지므로 시민들이 좋아하고 싫어하는 것이 무엇인지 확인해보세요.[BR][BR]당신의 행성의 지지율은 그 행성에 있는 모든 시민들의 평균 지지율입니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_GoodsAndServices</Label>
@@ -266,7 +266,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_Mining</Label>
-    <String>당신의 별 기지들이 매월 수집하는 전략 자원들로부터 얻은 총 자원 수입니다.</String>
+    <String>당신의 항성기지들이 매월 수집하는 전략 자원들로부터 얻은 총 자원 수입니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_ColonyTaxRevenue</Label>
@@ -282,7 +282,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_Influence</Label>
-    <String>영향력은 당신의 문명의 국경 확장을 제어합니다. 충분히 높은 영향력이 있다면, 다른 문명의 국경을 압도하고 심지어 그들의 세계를 당신의 통제 아래로 뒤집을 수 있습니다.</String>
+    <String>영향력은 당신 문명의 국경 확장을 제어합니다. 충분히 높은 영향력이 있다면, 다른 문명의 국경을 압도하고 심지어 그들의 세계를 당신의 통제 아래로 뒤집을 수 있습니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_InfluenceTally</Label>
@@ -302,11 +302,11 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_Tourism</Label>
-    <String>당신의 관광 수입의 절반은 [HS=HS_ColonyGrossIncome]Income[/HS]에 적용되고, 절반은 [HS=HS_Influence]Influence[/HS]에 적용됩니다.</String>
+    <String>당신의 관광 수입 절반은 [HS=HS_ColonyGrossIncome]수입[/HS]에 적용되고, 절반은 [HS=HS_Influence]영향력[/HS]에 적용됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATDEC_Tourism_Supernova</Label>
-    <String>관광은 귀하의 지배 영역의 크기에 따라 [HS=HS_ColonyGrossIncome]Income[/HS]을 얼마나 얻을 수 있는지를 증가시킵니다.</String>
+    <String>관광은 귀하의 지배 영역의 크기에 따라 [HS=HS_ColonyGrossIncome]수입[/HS]을 얼마나 얻을 수 있는지를 증가시킵니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_TourismIncome</Label>
@@ -314,7 +314,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_TourismIncome</Label>
-    <String>관광 수입이 당신의 [HS=HS_ColonyGrossIncome]Income[/HS]에 적용됩니다.</String>
+    <String>관광 수입이 당신의 [HS=HS_ColonyGrossIncome]수입[/HS]에 적용됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Food</Label>
@@ -330,7 +330,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ColonySpending</Label>
-    <String>[ICON=Stat_Credits_Icon] 콜로니 지출</String>
+    <String>[ICON=Stat_Credits_Icon] 식민지 지출</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_CreditSpending</Label>
@@ -470,7 +470,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_TotalShipAttack</Label>
-    <String>공성 중인 선박이 포위된 행성에 가할 수 있는 피해.</String>
+    <String>공성 중인 함선이 포위된 행성에 가할 수 있는 피해.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_CanBeSurveyed</Label>
@@ -630,7 +630,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_Durantium</Label>
-    <String>[ICON=Stat_Durantium_Icon] 듀란티움</String>
+    <String>[ICON=Stat_Durantium_Icon] 두란튬</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Antimatter</Label>
@@ -650,7 +650,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_DurantiumCost</Label>
-    <String>[ICON=Stat_Durantium_Icon] 듀란티움 비용</String>
+    <String>[ICON=Stat_Durantium_Icon] 두란튬 비용</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_AntimatterCost</Label>
@@ -670,7 +670,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_DurantiumNet</Label>
-    <String>[ICON=Stat_Durantium_Icon] 듀란티움 네트</String>
+    <String>[ICON=Stat_Durantium_Icon] 두란튬 네트</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_AntimatterNet</Label>
@@ -702,7 +702,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_HitPoints</Label>
-    <String>선박이 파괴되기 전에 감당할 수 있는 피해량.</String>
+    <String>함선이 파괴되기 전에 감당할 수 있는 피해량.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_HitPointsCap</Label>
@@ -762,7 +762,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_MassCap</Label>
-    <String>[ICON=Moves_Icon] 용량</String>
+    <String>[ICON=Moves_Icon] 이동력</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_SensorRangeMass</Label>
@@ -790,7 +790,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Logistics</Label>
-    <String>물류는 함대에서 얼마나 많은 선박이 함께 운영될 수 있는지를 결정합니다. 모든 선박에는 물류 비용이 있고, 모든 플레이어는 물류 가치를 가지고 있습니다. 일반적으로, 큰 선박은 작은 선박보다 물류 비용이 더 많이 듭니다.</String>
+    <String>물류는 함대에서 얼마나 많은 함선이 함께 운영될 수 있는지를 결정합니다. 모든 함선에는 물류 비용이 있고, 모든 플레이어는 물류 가치를 가지고 있습니다. 일반적으로, 큰 함선은 작은 함선보다 물류 비용이 더 많이 듭니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_LogisticsCap</Label>
@@ -834,7 +834,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_SiegeAbility</Label>
-    <String>선박이 적 행성을 제압하는 능력의 척도.</String>
+    <String>함선이 적 행성을 제압하는 능력의 척도.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_TacticalSpeed</Label>
@@ -910,11 +910,11 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ShipMaintenance</Label>
-    <String>[ICON=Stat_Ship_Maintenance_Icon] 선박 유지보수</String>
+    <String>[ICON=Stat_Ship_Maintenance_Icon] 함선 유지보수</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_StarbaseMaintenance</Label>
-    <String>[ICON=Stat_Starbase_Maintenance_Icon] 스타베이스 유지보수</String>
+    <String>[ICON=Stat_Starbase_Maintenance_Icon] 항성기지 유지보수</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_PolicyMaintenance</Label>
@@ -986,7 +986,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_IsProbe</Label>
-    <String>[ICON=CanSurveyIcon] 프로브</String>
+    <String>[ICON=CanSurveyIcon] 탐사선</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_IsMiner</Label>
@@ -1026,7 +1026,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_CanConstruct</Label>
-    <String>[ICON=Stat_Temp_Icon] 별 기지 및 조선소 건설</String>
+    <String>[ICON=Stat_Temp_Icon] 항성기지 및 조선소 건설</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_CanCreateTradeRoute</Label>
@@ -1054,11 +1054,11 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_ShipRange</Label>
-    <String>[ICON=Shiprange_Icon] 배 범위</String>
+    <String>[ICON=Shiprange_Icon] 함선 범위</String>
   </StringTable>
   <StringTable>
     <Label>STATDESC_ShipRange</Label>
-    <String>우리의 행성과 별 기지에서 멀리 떨어져 비탐사선이 이동할 수 있는 거리.</String>
+    <String>우리의 행성과 항성기지에서 멀리 떨어져 비탐사선이 이동할 수 있는 거리.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Accuracy</Label>
@@ -1174,7 +1174,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_StarbaseRange</Label>
-    <String>[ICON=Stat_Temp_Icon] 별 기지 범위</String>
+    <String>[ICON=Stat_Temp_Icon] 항성기지 범위</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_MoveCost</Label>
@@ -1318,11 +1318,11 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Colony</Label>
-    <String>콜로니</String>
+    <String>식민지</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Starbase</Label>
-    <String>스타베이스</String>
+    <String>항성기지</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Shipyard</Label>
@@ -1330,7 +1330,7 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Ship</Label>
-    <String>선박</String>
+    <String>함선</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Fleet</Label>
@@ -1338,7 +1338,7 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_AllShipsInFleet</Label>
-    <String>모든 함대의 선박들</String>
+    <String>모든 함대의 함선들</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_Improvement</Label>
@@ -1354,7 +1354,7 @@
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_StarbaseModule</Label>
-    <String>스타베이스 모듈</String>
+    <String>항성기지 모듈</String>
   </StringTable>
   <StringTable>
     <Label>MODIFIERTARGETNAME_TradeRoute</Label>
@@ -1594,7 +1594,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_DurantiumIncome</Label>
-    <String>[ICON=Stat_Durantium_Icon] 듀란튬</String>
+    <String>[ICON=Stat_Durantium_Icon] 두란튬</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_AntimatterIncome</Label>
@@ -1610,27 +1610,27 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_UltraSpice</Label>
-    <String>[ICON=Icon_Res_UltraSpice] 아노르 스파이스</String>
+    <String>[ICON=Icon_Res_UltraSpice] 아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_UltraSpiceCost</Label>
-    <String>[ICON=Icon_Res_UltraSpice] 아르노어 스파이스</String>
+    <String>[ICON=Icon_Res_UltraSpice] 아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_UltraSpiceIncome</Label>
-    <String>[ICON=Icon_Res_UltraSpice] 아르노어 스파이스</String>
+    <String>[ICON=Icon_Res_UltraSpice] 아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_UltraSpice</Label>
-    <String>Arnor 스파이스</String>
+    <String>아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_UltraSpiceCost</Label>
-    <String>Arnor 스파이스</String>
+    <String>아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_UltraSpiceIncome</Label>
-    <String>아르노어 스파이스</String>
+    <String>아노르 향신료</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_EpimetheusPollen</Label>
@@ -1778,7 +1778,7 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_CrystallizedElerium</Label>
-    <String>[ICON=Icon_Res_CrystallizedElerium] 결정화된 엘러리움</String>
+    <String>[ICON=Icon_Res_CrystallizedElerium] 결정화된 엘레륨</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_CrystallizedEleriumCost</Label>
@@ -1786,15 +1786,15 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_CrystallizedEleriumIncome</Label>
-    <String>[ICON=Icon_Res_CrystallizedElerium] 결정화된 엘러리움</String>
+    <String>[ICON=Icon_Res_CrystallizedElerium] 결정화된 엘레륨</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_CrystallizedElerium</Label>
-    <String>결정화된 엘러리움</String>
+    <String>결정화된 엘레륨</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_CrystallizedEleriumCost</Label>
-    <String>결정화된 엘러리움</String>
+    <String>결정화된 엘레륨</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_CrystallizedEleriumIncome</Label>
@@ -1802,27 +1802,27 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_XanthiumDeposit</Label>
-    <String>[ICON=Icon_Res_XanthiumDeposit] 잔티움 광맥</String>
+    <String>[ICON=Icon_Res_XanthiumDeposit] 잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_XanthiumDepositCost</Label>
-    <String>[ICON=Icon_Res_XanthiumDeposit] 잔티움 광맥</String>
+    <String>[ICON=Icon_Res_XanthiumDeposit] 잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_XanthiumDepositIncome</Label>
-    <String>[ICON=Icon_Res_XanthiumDeposit] 잔티움 광맥</String>
+    <String>[ICON=Icon_Res_XanthiumDeposit] 잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_XanthiumDeposit</Label>
-    <String>잔티움 광맥</String>
+    <String>잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_XanthiumDepositCost</Label>
-    <String>잔티움 광맥</String>
+    <String>잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_XanthiumDepositIncome</Label>
-    <String>잔티움 광맥</String>
+    <String>잔튬 광맥</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_AurorusArboretum</Label>
@@ -2138,35 +2138,35 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_SnugglerColony</Label>
-    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 콜로니</String>
+    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_SnugglerColonyCost</Label>
-    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 콜로니</String>
+    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_SnugglerColonyIncome</Label>
-    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 콜로니</String>
+    <String>[ICON=Icon_Res_SnugglerColony] 스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_SnugglerColony</Label>
-    <String>스너글러 콜로니</String>
+    <String>스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_SnugglerColonyCost</Label>
-    <String>스너글러 콜로니</String>
+    <String>스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_SnugglerColonyIncome</Label>
-    <String>스너글러 콜로니</String>
+    <String>스너글러 식민지</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_Elerium</Label>
-    <String>Elerium</String>
+    <String>엘레륨</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_Durantium</Label>
-    <String>Durantium</String>
+    <String>두란튬</String>
   </StringTable>
   <StringTable>
     <Label>ICONLESS_STATNAME_Antimatter</Label>
@@ -2298,7 +2298,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Crime</Label>
-    <String>범죄는 당신의 식민지의 수입을 감소시키며, 또한 새로운 시민이 범죄자로 생산될 확률을 높입니다. 이는 차례대로 범죄를 증가시킵니다. 범죄가 너무 높으면 시민들도 승인 패널티를 받게 됩니다.</String>
+    <String>범죄는 당신의 식민지 수입을 감소시키며, 또한 새로운 시민이 범죄자로 생산될 확률을 높입니다. 이는 차례대로 범죄를 증가시킵니다. 범죄가 너무 높으면 시민들도 지지율 패널티를 받게 됩니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Pollution</Label>
@@ -2354,15 +2354,15 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Intelligence</Label>
-    <String>지능은 [HS=HS_Research]연구[/HS] 및 관련 작업을 수정합니다. 지도자들에게는 기술 장관과 [HS=HS_Governor]지배자들[/HS]에게 지능은 기술 중심의 세계에 중요합니다.[BR][BR]시민들에게는 지능이 과학자들에게 중요합니다.</String>
+    <String>지능은 [HS=HS_Research]연구[/HS] 및 관련 작업을 수정합니다. 지도자들에게는 기술 장관과 [HS=HS_Governor]지도자들[/HS]에게 지능은 기술 중심의 세계에 중요합니다.[BR][BR]시민들에게는 지능이 과학자들에게 중요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Social</Label>
-    <String>[ICON=LeaderStat_Social_Icon] 사회 기술</String>
+    <String>[ICON=LeaderStat_Social_Icon] 사회성</String>
   </StringTable>
   <StringTable>
     <Label>STATDESC_Social</Label>
-    <String>Social은 지도자의 [HS=HS_Approval]Approval[/HS] 및 [HS=HS_Influence]Influence[/HS] 작업에 영향을 미칩니다. 높은 Social 기술은 외교관, 식민지 장관, 그리고 [HS=HS_Governor]Governors[/HS]에게 중요합니다.[BR][BR]시민들에게는, Social은 엔터테이너와 상인들에게 중요합니다.</String>
+    <String>사회성은 지도자의 [HS=HS_Approval]지지율[/HS] 및 [HS=HS_Influence]영향력[/HS] 작업에 영향을 미칩니다. 높은 사회성은 외교관, 식민지 장관, 그리고 [HS=HS_Governor]지도자[/HS]에게 중요합니다.[BR][BR]시민들에게는, 사회성은 엔터테이너와 상인들에게 중요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Diligence</Label>
@@ -2370,15 +2370,15 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Diligence</Label>
-    <String>근면성은 리더의 생산 관련 업무 기술을 수정합니다. 높은 근면성은 [HS=HS_Commander]Commanders[/HS] 및 [HS=HS_Governor]Governors[/HS]에게 중요하며, [HS=HS_Manufacturing]Manufacturing[/HS] 기반의 세계에서도 중요합니다.[BR][BR]시민들에게 있어서, 근면성은 노동자와 농부들에게 중요합니다.</String>
+    <String>근면성은 리더의 생산 관련 업무 기술을 수정합니다. 높은 근면성은 [HS=HS_Commander]사령관[/HS] 및 [HS=HS_Governor]지도자[/HS]에게 중요하며, [HS=HS_Manufacturing]제조[/HS] 기반의 세계에서도 중요합니다.[BR][BR]시민들에게 있어서, 근면성은 노동자와 농부들에게 중요합니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Resolve</Label>
-    <String>[ICON=LeaderStat_Resolve_Icon] 해결</String>
+    <String>[ICON=LeaderStat_Resolve_Icon] 결의</String>
   </StringTable>
   <StringTable>
     <Label>STATDESC_Resolve</Label>
-    <String>Resolve는 지도자의 군사적 업무 수행 능력을 수정합니다. 높은 Resolve는 강력한 [HS=HS_Commander]Commander[/HS]를 만듭니다.[BR][BR]시민들에게는 Resolve가 병사들에게 중요합니다. 한 행성의 모든 시민들의 Resolve가 그 행성의 [HS=HS_Resistance]Resistance[/HS]에 더해집니다.</String>
+    <String>결의는 지도자의 군사적 업무 수행 능력을 수정합니다. 높은 결의는 강력한 [HS=HS_Commander]사령관[/HS]을 만듭니다.[BR][BR]시민들에게는 군인을 위한 결의가 중요합니다. 한 행성 모든 시민의 결의가 그 행성의 [HS=HS_Resistance]저항[/HS]에 더해집니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Expectations</Label>
@@ -2386,7 +2386,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_Expectations</Label>
-    <String>기대치는 시민의 [HS=HS_Approval]승인[/HS]을 수정합니다. 높은 기대치를 가진 시민들은 엔터테인먼트와 호화로운 자원을 필요로 하며, 기대치가 낮은 시민들은 행복하게 유지하기가 훨씬 쉽습니다.[BR][BR]단위를 전문화하면 기대치가 높아집니다.</String>
+    <String>기대치는 시민의 [HS=HS_Approval]지지율[/HS]을 수정합니다. 높은 기대치를 가진 시민들은 엔터테인먼트와 호화로운 자원을 필요로 하며, 기대치가 낮은 시민들은 행복하게 유지하기가 훨씬 쉽습니다.[BR][BR]단위를 전문화하면 기대치가 높아집니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_Loyalty</Label>
@@ -2402,7 +2402,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_ApprovalFromSoldierUnits</Label>
-    <String>병사로 배정된 시민들에 의해 승인이 제공되었습니다.</String>
+    <String>병사로 배정된 시민들에 의해 지지율이 제공되었습니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_IdeologyIndividualism</Label>
@@ -2642,23 +2642,23 @@
   </StringTable>
   <StringTable>
     <Label>STATDEC_RushCosts</Label>
-    <String>프로젝트를 급행하는 데 드는 비용에 대한 보너스 수정자.</String>
+    <String>프로젝트를 즉시 완료하는 데 드는 비용에 대한 보너스 수정자.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_ApprovalFromClericUnits</Label>
-    <String>클레릭 유닛으로부터의 승인</String>
+    <String>클레릭 유닛으로부터의 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATDEC_ApprovalFromClericUnits</Label>
-    <String>당신의 행성에서 Clerics에 의해 승인이 제공되었습니다.</String>
+    <String>당신의 행성에서 클레릭에 의해 지지율이 제공되었습니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_ApprovalFromScientistUnits</Label>
-    <String>과학자 유닛으로부터의 승인</String>
+    <String>과학자 유닛으로부터의 지지율</String>
   </StringTable>
   <StringTable>
     <Label>STATDEC_ApprovalFromScientistUnits</Label>
-    <String>콜로니에 과학자가 있을 때 승인 보너스.</String>
+    <String>식민지에 과학자가 있을 때 지지율 보너스.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_AOERange</Label>
@@ -2706,7 +2706,7 @@
   </StringTable>
   <StringTable>
     <Label>STATDESC_CanIgnoreAtWarWithHomeworld</Label>
-    <String>당신이 그들의 종족과 전쟁 중인 경우, 정복한 행성의 시민들은 더 이상 승인 점수를 주지 않습니다.</String>
+    <String>당신이 그들의 종족과 전쟁 중인 경우, 정복한 행성의 시민들은 더 이상 지지율 점수를 주지 않습니다.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_IntimidationBonus</Label>
@@ -2814,11 +2814,11 @@
   </StringTable>
   <StringTable>
     <Label>STATNAME_GovernorColonyStatsPremium</Label>
-    <String>지배자 콜로니 통계 프리미엄</String>
+    <String>지도자 식민지 통계 프리미엄</String>
   </StringTable>
   <StringTable>
     <Label>STATDESC_GovernorColonyStatsPremium</Label>
-    <String>지배자에 의해 영향을 받는 콜로니 통계에 대한 부스트.</String>
+    <String>지도자에 의해 영향을 받는 식민지 통계에 대한 부스트.</String>
   </StringTable>
   <StringTable>
     <Label>STATNAME_BattleRating</Label>

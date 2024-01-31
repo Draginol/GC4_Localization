@@ -1,129 +1,115 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
   <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Jeśli istnieje sposób, aby was uratować, to znajdziemy go.</Text>
-            <PreferenceWeight>10000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Jesteśmy {PLAYERFACTION:1}. Nasze eksperymenty poszły nie tak. Teraz to on przejął kontrolę. Nie zostało nic innego jak tylko umrzeć. [BR][BR]Należy zniszczyć {PLAYERFACTION:2}.</Text>
-            <PreferenceWeight>10000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Nie zostaniemy wymazani.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Jesteśmy {PLAYERFACTION:1}. Przybyliśmy tu z alternatywnej przyszłości, w której frakcja {PLAYERFACTION:2} sama zniszczyła wszechświat.[BR][BR]Musimy was powstrzymać. Przygotujcie się na zniszczenie.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Powinniście wracać na swoje drzewo, szkodniki.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Wasz koniec jest bliski. Jesteśmy {PLAYERFACTION:1}. [BR][BR]Oczyścimy galaktykę ze wszystkich podrzędnych Sciuridów.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>Powinniście pozostać martwi.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
-    <FlavorTextDef>
-        <InternalName>FIRST_CONTACT_MAIN</InternalName>
-        <FlavorTextOption>
-            <Requirements>
-                <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
-                <RelationsRange>
-                    <RangeMin>-999</RangeMin>
-                    <RangeMax>-2</RangeMax>
-                </RelationsRange>
-            </Requirements>
-            <Text>[COLOR=UIDefaultHighlight](Nadchodzi zaszyfrowana transmisja)[/COLOR][BR][BR]Galaktyka myślała, że nie żyjemy. Wkrótce dowiecie się, jak bardzo się mylili. Przygotujcie się na śmierć.</Text>
-            <PreferenceWeight>1000</PreferenceWeight>
-        </FlavorTextOption>
-    </FlavorTextDef>
-
-
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_TRADE_Option10_0</StringKey>
+      <PreferenceWeight>10000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SLYNE</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option190_0</StringKey>
+      <PreferenceWeight>10000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_TRADE_Option11_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_THALAN</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option191_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_TRADE_Option12_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_SNATHI</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option192_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_RESPONSE_TRADE</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_RESPONSE_TRADE_Option13_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
+  <FlavorTextDef>
+    <InternalName>FIRST_CONTACT_MAIN</InternalName>
+    <FlavorTextOption>
+      <Requirements>
+        <SpeakerFaction>FACTION_XENDAR</SpeakerFaction>
+        <RelationsRange>
+          <RangeMin>-999</RangeMin>
+          <RangeMax>-2</RangeMax>
+        </RelationsRange>
+      </Requirements>
+      <StringKey>FIRST_CONTACT_MAIN_Option193_0</StringKey>
+      <PreferenceWeight>1000</PreferenceWeight>
+    </FlavorTextOption>
+  </FlavorTextDef>
 </FlavorTextDefs>

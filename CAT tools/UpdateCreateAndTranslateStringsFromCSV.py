@@ -7,7 +7,7 @@ import openai
 import time
 import xml.dom.minidom
 
-additional_strings_version = "v22"  # Variable to set the version of additional strings file
+additional_strings_version = "v23"  # Variable to set the version of additional strings file
 
 def prettify_xml(element):
     """
@@ -173,7 +173,6 @@ def main():
 
 if __name__ == "__main__":
     openai_api_key = os.getenv('OPENAI_API_KEY')
-    additional_strings_version = "v22"  # Variable to set the version of additional strings file
 
     if openai_api_key is None:
         print("OPENAI_API_KEY is not set.")
