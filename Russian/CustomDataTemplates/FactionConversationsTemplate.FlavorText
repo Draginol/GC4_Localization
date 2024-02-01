@@ -1,24 +1,24 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/FlavorText.xsd">
 
   <FlavorTextDef>
     <InternalName>FIRST_CONTACT_MAIN</InternalName>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTag>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы рады встрече с вами, {PLAYERFACTION:2}]]></Text>
+      <Text><![CDATA[<![CDATA[Рады познакомиться с вами, {PLAYERFACTION:2}.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTag>
       <Requirements>
-        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTION:1} с нетерпением ждут возможности узнать больше о {PLAYERFACTION:2}]]></Text>
+      <Text><![CDATA[<![CDATA[Мы {PLAYERFACTION:1} с нетерпением ждем возможности узнать больше о {PLAYERFACTION:2}]]>.]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -29,9 +29,9 @@
     <InternalName>GENERAL_CONVERSATION_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Вы один среди множества галактик, {LEADERNAME:2}, действуйте осторожно.]]></Text>
+      <Text><![CDATA[<![CDATA[Ты один в галактике многих {LEADERNAME:2}, ступай осторожно.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
   </FlavorTextDef>
@@ -40,9 +40,9 @@
     <InternalName>GENERAL_CONVERSATION_ACCEPT</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Точно так же, {LEADERNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Ликвидация {LEADERNAME:1}.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
   </FlavorTextDef>
@@ -54,17 +54,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Рад также познакомиться с вами.]]></Text>
+      <Text><![CDATA[<![CDATA[Приятно познакомиться и с тобой.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[В ожидании возможности узнать вас лучше.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы с нетерпением ждем возможности узнать о тебе побольше.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -77,17 +77,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Посмотрим, насколько мы будем рады встрече с вами после того, как узнаем вас получше.]]></Text>
+      <Text><![CDATA[<![CDATA[Посмотрим, насколько мы будем рады знакомству с тобой после того, как узнаем тебя получше]]>.]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_FIRST_CONTACT</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Уверен, что ты полюбишь нас, когда узнаешь нас получше.]]></Text>
+      <Text><![CDATA[<![CDATA[Я уверен, что ты полюбишь нас, когда узнаешь поближе]]>.]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -101,9 +101,9 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_FIRST_CONTACT</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_FIRST_CONTACT]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Мы открыты для торговли. [COLOR=UIDefaultHighlight](Открывает Торговлю)[/COLOR].]]></Text>
+      <Text><![CDATA[<![CDATA[Мы открыты для торговли. [COLOR=UIDefaultHighlight](Открывает торговлю)[/COLOR]. ]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -113,20 +113,20 @@
     <InternalName>DECLARE_WAR_MAIN</InternalName>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTag>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Приготовьтесь к войне!]]></Text>
+      <Text><![CDATA[<![CDATA[Подготовьтесь к войне!]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTag>
       <Requirements>
-        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Вы готовы к войне, {PLAYERFACTION:2}?]]></Text>
+      <Text><![CDATA[<![CDATA[Готовы ли вы к войне, {PLAYERFACTION:2}?]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -139,17 +139,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Приносите! Мы раздавим вас, как вредителей.]]></Text>
+      <Text><![CDATA[<![CDATA[Принеси его! Мы раздавим тебя как паразитов.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[О, мы готовы. Ты пожалеешь об этом дне!]]></Text>
+      <Text><![CDATA[<![CDATA[О, мы готовы. Ты будешь жалеть об этом дне!]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -162,17 +162,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_DECLARE_WAR</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Жаль, что нам не удалось все уладить.]]></Text>
+      <Text><![CDATA[<![CDATA[Жаль, что мы не смогли договориться.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_DECLARE_WAR</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_DECLARE_WAR]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Нам жаль, что вы считаете войну необходимой опцией, но мы увидим, кто лучше подготовлен.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы сожалеем, что ты посчитал войну необходимым вариантом, но мы еще посмотрим, кто окажется лучше подготовленным.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
    
@@ -183,20 +183,20 @@
     <InternalName>ASK_FOR_PEACE_MAIN</InternalName>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTag>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Давайте завершим эту войну и примиримся.]]></Text>
+      <Text><![CDATA[<![CDATA[Позволь нам закончить эту войну и загладить свою вину.]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
-      <ResponseTag>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTag>
+      <ResponseTag><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTag>
       <Requirements>
-        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Давайте закончим эту войну.]]></Text>
+      <Text><![CDATA[<![CDATA[Давайте прекратим войну.]]>]]></Text>
       <PreferenceWeight>50</PreferenceWeight>
     </FlavorTextOption>
 
@@ -208,17 +208,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Конечно.]]></Text>
+      <Text><![CDATA[<![CDATA[Да.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Звучит хорошо.]]></Text>
+      <Text><![CDATA[<![CDATA[Звучит неплохо.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -229,17 +229,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Потрясающе.]]></Text>
+      <Text><![CDATA[<![CDATA[Замечательно.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Отлично.]]></Text>
+      <Text><![CDATA[<![CDATA[Прекрасно.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -251,17 +251,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_SPEAKER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Нет. Просто нет.]]></Text>
+      <Text><![CDATA[<![CDATA[Нет. Только нет.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE</ResponseTo>
+        <ResponseTo><![CDATA[CUSTOM_FACTION_LISTENER_ASK_FOR_PEACE]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[Нет.]]></Text>
+      <Text><![CDATA[<![CDATA[Неа.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -272,17 +272,17 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Вы делаете ошибку.]]></Text>
+      <Text><![CDATA[<![CDATA[Вы ошибаетесь.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <ListenerFaction>CUSTOM_FACTION</ListenerFaction>
+        <ListenerFaction><![CDATA[CUSTOM_FACTION]]></ListenerFaction>
       </Requirements>
-      <Text><![CDATA[Ладно, будь так.]]></Text>
+      <Text><![CDATA[<![CDATA[Прекрасно. Будь таким.]]>]]></Text>
       <PreferenceWeight>2</PreferenceWeight>
     </FlavorTextOption>
 
@@ -294,9 +294,9 @@
     <InternalName>DEMAND_CREDITS_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы требуем, чтобы вы дали нам {КОЛИЧЕСТВО:2} кредитов.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы требуем, чтобы ты выдал нам {AMOUNT:2} кредитов.]]>]]></Text>
       <PreferenceWeight>100</PreferenceWeight>
     </FlavorTextOption>
 
@@ -306,9 +306,9 @@
     <InternalName>DEMAND_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>DEMAND_CREDITS_CUSTOM_FACTION</ResponseTo>
+        <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2} дадут вам то, что вы хотите, пока что.]]></Text>
+      <Text><![CDATA[<![CDATA[Прибор {PLAYERFACTIONLONG:2} даст тебе то, что ты хочешь, пока что.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -316,16 +316,16 @@
     <InternalName>DEMAND_CREDITS_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <ResponseTo>DEMAND_CREDITS_CUSTOM_FACTION</ResponseTo>
+        <ResponseTo><![CDATA[DEMAND_CREDITS_CUSTOM_FACTION]]></ResponseTo>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTION:2} не позволит себя толкать.]]></Text>
+      <Text><![CDATA[<![CDATA[При этом {PLAYERFACTION:2} не будет толкаться.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITS_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль это, но не настолько, как вам будет.]]></Text>
+      <Text><![CDATA[<![CDATA[Я сожалею об этом, но не так сильно, как ты.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -334,30 +334,30 @@
     <InternalName>DEMAND_CREDITSPERTURN_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Заплатите нам {AMOUNT:2} кредитов в день и поздравьте себя с тем, что вы прожили еще один день.]]></Text>
+      <Text><![CDATA[<![CDATA[Плати нам {AMOUNT:2} кредитов в день и поздравляй себя с тем, что прожил еще один день.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Ты негодяй, {LEADERNAME:1}, но мы выполним это требование, пока.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы обижаемся на тебя, {LEADERNAME:1}, но мы выполним эту просьбу, пока что.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Ты негодяй, {LEADERNAME:1}, и мы не будем терпеть это.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы смеемся тебе в лицо, {LEADERNAME:1}, уходи.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_CREDITSPERTURN_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль это слышать. Но не так жаль, как вам будет.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне очень жаль это слышать. Но не так жаль, как будет тебе.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -366,30 +366,30 @@
     <InternalName>DEMAND_TECH_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Дайте нам информацию о {TECHNAME:2}, и, возможно, это поможет нашим отношениям.]]></Text>
+      <Text><![CDATA[<![CDATA[Поделись с нами информацией о {TECHNAME:2}, и, возможно, это поможет нашим отношениям.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[В надежде поддержать хорошие отношения, {PLAYERFACTIONLONG:2} предоставит вам то, что вы хотите, пока что.]]></Text>
+      <Text><![CDATA[<![CDATA[В надежде сохранить хорошие отношения, {PLAYERFACTIONLONG:2} даст тебе то, что ты хочешь, пока.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мило, что вы думаете, что мы просто передадим вам наши знания о {TECHNAME:2}. Выполняйте свою работу самостоятельно.]]></Text>
+      <Text><![CDATA[<![CDATA[Красиво, что ты думаешь, будто мы просто передадим тебе наши знания о {TECHNAME:2}. Делай домашнее задание сам.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_TECH_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль это слышать. Но не так жаль, как вам будет.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне очень жаль это слышать. Но не так жаль, как будет тебе.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -398,30 +398,30 @@
     <InternalName>REQUEST_CREDITS_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Вы бы рассмотрели возможность помочь нам, подарив {AMOUNT:2} кредитов?]]></Text>
+      <Text><![CDATA[<![CDATA[Не мог бы ты помочь нам, подарив {AMOUNT:2} кредитов?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Конечно. Давайте продолжим работать вместе для блага наших обеих империй.]]></Text>
+      <Text><![CDATA[<![CDATA[Да будет наш совместный труд на благо наших цивилизаций долог и успешен.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Спасибо вам, ваша поддержка очень ценится!]]></Text>
+      <Text><![CDATA[<![CDATA[Спасибо, твоя поддержка очень ценится!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} не может помочь вам в настоящее время.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} не может помочь тебе в данный момент.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -430,30 +430,30 @@
     <InternalName>REQUEST_TECH_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Рассмотрели бы вы возможность подарить нам знание {TECHNAME:2} для нашей помощи?]]></Text>
+      <Text><![CDATA[<![CDATA[Можешь ли ты подумать о даре знаний {TECHNAME:2} , чтобы помочь нам?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Конечно. Давайте продолжим совместную работу во благо обеих наших империй.]]></Text>
+      <Text><![CDATA[<![CDATA[Да будет наш совместный труд на благо наших цивилизаций долог и успешен.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Ваша помощь очень ценится! Спасибо!]]></Text>
+      <Text><![CDATA[<![CDATA[Твоя помощь очень ценится! Спасибо!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} не в состоянии помочь вам с вашим запросом в данный момент.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} не может помочь тебе с твоим запросом в данный момент.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -462,30 +462,30 @@
     <InternalName>REQUEST_CREDITS_HELPME_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы подвергаемся атаке от {PLAYERFACTIONLONG:3}. Пожалуйста, {LEADERNAME:2}, помогите нам, предоставив {AMOUNT:2} кредитов.]]></Text>
+      <Text><![CDATA[<![CDATA[На нас напали {PLAYERFACTIONLONG:3}. Пожалуйста, {LEADERNAME:2} помоги нам, дав {AMOUNT:2} кредитов.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Согласен.]]></Text>
+      <Text><![CDATA[<![CDATA[Согласен.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы ценим вашу помощь.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы ценим вашу помощь.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_CREDITS_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2} не может помочь вам в данный момент.]]></Text>
+      <Text><![CDATA[<![CDATA[В данный момент {PLAYERFACTIONLONG:2} не может тебе помочь.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -494,30 +494,30 @@
     <InternalName>REQUEST_TECH_HELPME_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы подвергаемся атаке {PLAYERFACTIONLONG:3}. Нам нужна ваша помощь, {LEADERNAME:2}. Не могли бы вы предоставить нам {TECHNAME:2}?]]></Text>
+      <Text><![CDATA[<![CDATA[На нас напали {PLAYERFACTIONLONG:3}. Нам бы пригодилась твоя помощь, {LEADERNAME:2}. Не мог бы ты предоставить нам {TECHNAME:2}?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Согласен.]]></Text>
+      <Text><![CDATA[<![CDATA[Согласен.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Спасибо за предоставление вашей технологии.]]></Text>
+      <Text><![CDATA[<![CDATA[Благодарим, что поделились этой технологией.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_TECH_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[У {PLAYERFACTIONLONG:2} есть свои проблемы. Нет.]]></Text>
+      <Text><![CDATA[<![CDATA[У {PLAYERFACTIONLONG:2} есть свои проблемы. Нет.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -526,30 +526,30 @@
     <InternalName>REQUEST_WAR_HELPME_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы подвергаемся атаке со стороны {PLAYERFACTIONLONG:3}. Ситуация критическая, {LEADERNAME:2}. Наше выживание возможно только в случае, если вы объявите войну {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[На нас нападают {PLAYERFACTIONLONG:3}. Ситуация плачевная, {LEADERNAME:2}. Только если ты объявишь войну {PLAYERFACTIONLONG:3} , мы сможем надеяться на выживание.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Хорошо. Мы объявим им войну.]]></Text>
+      <Text><![CDATA[<![CDATA[Очень хорошо. Мы объявим им войну.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Ваша помощь ценится.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы ценим вашу помощь.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>REQUEST_WAR_HELPME_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2} в настоящее время не может объявить войну {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[В данный момент {PLAYERFACTIONLONG:2} не может объявить войну {PLAYERFACTIONLONG:3}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -559,30 +559,30 @@
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:3} представляют угрозу, и мы были бы благодарны за помощь в их устранении. Вы примете {AMOUNT:1} кредитов за выполнение этой задачи для нас?]]></Text>
+      <Text><![CDATA[<![CDATA[Эти {PLAYERFACTIONLONG:3} опасны, и мы были бы признательны за помощь в избавлении от них. Не согласишься ли ты взять {AMOUNT:1} кредитов, чтобы сделать это для нас?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы объявим войну {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы объявим войну цивилизации {PLAYERFACTIONLONG:3}. ]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Я знал, что мы можем положиться на тебя. Спасибо!]]></Text>
+      <Text><![CDATA[<![CDATA[Я знал, что мы можем на тебя рассчитывать. Спасибо!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} просто не может взять на себя эту нагрузку сейчас.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне жаль, но цивилизация {PLAYERFACTIONLONG:2} сейчас не в состоянии принять на себя это бремя.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -591,30 +591,30 @@
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Объявите войну {PLAYERFACTIONLONG:3} и мы предоставим {AMOUNT:1} кредитов, чтобы устранить любые затраты.]]></Text>
+      <Text><![CDATA[<![CDATA[Объяви войну {PLAYERFACTIONLONG:3} и мы предоставим {AMOUNT:1} кредиты, чтобы снять любые заботы о расходах.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы объявляем войну {PLAYERFACTIONLONG:3}. Давайте продолжим работать вместе во благо наших империй.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы объявляем войну {PLAYERFACTIONLONG:3}. Пусть мы и дальше работаем вместе на благо обеих наших цивилизаций.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы не желаем быть наемниками для вашей выгоды, {LEADERNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}, мы не хотим быть наемниками и таскать для вас каштаны из огня.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_CREDITS_FOR_DECLAREWARONOTHER_DEMAND_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Вы скоро будете вынуждены выбрать сторону, и тогда пожалеете, что не приняли наше щедрое предложение.]]></Text>
+      <Text><![CDATA[<![CDATA[Скоро вам придется искать союзников. Тогда вы пожалеете, что не согласились принять наше щедрое предложение.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -623,30 +623,30 @@
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:3} представляют собой угрозу, и мы были бы благодарны за помощь в их уничтожении. Объявите им войну, и мы предоставим вам знания {TECHNAME:1}, которые помогут вам в борьбе.]]></Text>
+      <Text><![CDATA[<![CDATA[Они {PLAYERFACTIONLONG:3} опасны, и мы будем благодарны за помощь в избавлении от них. Объяви им войну, и мы дадим тебе знания {TECHNAME:1} , чтобы помочь в твоей борьбе.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы объявим войну {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы объявим войну цивилизации {PLAYERFACTIONLONG:3}. ]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Я знал, что мы можем рассчитывать на тебя. Спасибо!]]></Text>
+      <Text><![CDATA[<![CDATA[Я знал, что мы можем на тебя рассчитывать. Спасибо!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>PAY_TECH_FOR_DECLAREWARONOTHER_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мне жаль, но {PLAYERFACTIONLONG:2} просто не может сейчас взять на себя эту нагрузку.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне жаль, но цивилизация {PLAYERFACTIONLONG:2} сейчас не в состоянии принять на себя это бремя.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -655,16 +655,16 @@
     <InternalName>GIVE_CREDITS_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:1} хотел бы отметить нашу дружбу подарком в {AMOUNT:1} кредитов.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:1} хочет подарить вам {AMOUNT:1} кред., чтобы ознаменовать начало нашей дружбы.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>GIVE_CREDITS_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Спасибо за этот подарок.]]></Text>
+      <Text><![CDATA[<![CDATA[Спасибо за этот подарок.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -673,16 +673,16 @@
     <InternalName>GIVE_TECH_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:1} желает отметить нашу дружбу подарком знаний о {TECHNAME:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:1} хочет подарить вам технологию {TECHNAME:1}, чтобы ознаменовать начало нашей дружбы.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>GIVE_TECH_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Спасибо вам за этот подарок.]]></Text>
+      <Text><![CDATA[<![CDATA[Спасибо за этот подарок.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -691,16 +691,16 @@
     <InternalName>ON_PLAYER_DEAD_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:3} были уничтожены.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:3} были уничтожены.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>ON_PLAYER_DEAD_RESPONSE_OK</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Понял.]]></Text>
+      <Text><![CDATA[<![CDATA[Понятно.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -709,37 +709,37 @@
     <InternalName>DEMAND_STARBASE_REMOVAL_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Ваша космическая база {OBJECTNAME} представляет прямую угрозу нашим интересам. Мы требуем немедленного ее демонтажа.]]></Text>
+      <Text><![CDATA[<![CDATA[Ваша звездная база {OBJECTNAME} представляет прямую угрозу нашим интересам. Мы требуем, чтобы ты немедленно ее убрал.]]>.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Хорошо, мы немедленно уничтожим это.]]></Text>
+      <Text><![CDATA[<![CDATA[Хорошо, мы сразу же уничтожим ее.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Отлично, вы заслужили признание от {PLAYERFACTIONLONG:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Прекрасно, вы заслужили признательность цивилизации {PLAYERFACTIONLONG:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Нет, космическая база остается на своем месте.]]></Text>
+      <Text><![CDATA[<![CDATA[Нет, звездная база останется на месте.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_STARBASE_REMOVAL_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Вы понимаете, что это ставит под сомнение ваши намерения, {LEADERNAME:2}.]]></Text>
+      <Text><![CDATA[<![CDATA[Вы понимаете, что это бросает тень на ваши намерения, {LEADERNAME:2}?]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -749,37 +749,37 @@
     <InternalName>DEMAND_ASCENSION_STARBASE_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мне нужна ваша звездная база {OBJECTNAME}. Если вы не отдадите ее нам, мы заберем ее у вас силой.]]></Text>
+      <Text><![CDATA[<![CDATA[Мне нужна твоя звездная база {OBJECTNAME}. Если ты не отдашь ее нам, мы заберем ее у тебя силой.]]>.]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Успокойтесь. Мы это удалим.]]></Text>
+      <Text><![CDATA[<![CDATA[Успокойся. Мы его уберем.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Вы сделали правильный выбор.]]></Text>
+      <Text><![CDATA[<![CDATA[Вы сделали правильный выбор.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Нет, спасибо.]]></Text>
+      <Text><![CDATA[<![CDATA[Нет, спасибо.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>DEMAND_ASCENSION_STARBASE_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Тогда это война.]]></Text>
+      <Text><![CDATA[<![CDATA[Тогда - война.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -788,37 +788,37 @@
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы хотим вашу звездную базу {OBJECTNAME}, у неё есть врата восхождения. Мы дадим вам {AMOUNT:1} за неё.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы хотим получить твою звездную базу {OBJECTNAME}, на ней есть врата вознесения. Мы дадим тебе за нее {AMOUNT:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Хорошо.]]></Text>
+      <Text><![CDATA[<![CDATA[Ладно.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Отлично, вы заслужили признание от {PLAYERFACTIONLONG:1}.]]></Text>
+      <Text><![CDATA[<![CDATA[Прекрасно, вы заслужили признательность цивилизации {PLAYERFACTIONLONG:1}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Нет.]]></Text>
+      <Text><![CDATA[<![CDATA[Нет.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
   <FlavorTextDef>
     <InternalName>OFFER_ASCENSION_STARBASE_TRADE_RESPONSE_REJECT_COUNTER</InternalName>
     <FlavorTextOption>
-      <Text><![CDATA[Мы не отступим, {LEADERNAME:2}.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы так просто не отступимся, {LEADERNAME:2}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
   <!-- PAUL THIS IS THE NEW CONVERSATION I ADDED (END)-->
@@ -829,45 +829,45 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как вы накапливаете силы у нашего порога. Вам следует прекратить это.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как ты наращиваешь силы за нашим порогом. Тебе следует прекратить это.]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
         <RelationsRange>
           <NoMin>true</NoMin>
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как вы собираете силы прямо у нашего порога. Вам следует прекратить это.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как ты наращиваешь силы за нашим порогом. Тебе следует прекратить это.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
         <RelationsRange>
           <RangeMin>-3</RangeMin>
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как вы накапливаете силы у наших дверей. Вам следует прекратить это.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2}, мы видим, как ты наращиваешь силы за нашим порогом. Тебе следует прекратить это.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
         <RelationsRange>
           <RangeMin>4</RangeMin>
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[{PLAYERFACTIONLONG:2} Несмотря на то, что вы нам нравитесь, нам не нравится наблюдать за вашим военным наращиванием.]]></Text>
+      <Text><![CDATA[<![CDATA[{PLAYERFACTIONLONG:2} Хотя вы нам нравитесь, нам не по душе очевидное наращивание вооружений.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -880,7 +880,7 @@
     <InternalName>WARN_MILITARY_BUILDUP_ACCEPT</InternalName>
 
     <FlavorTextOption>
-      <Text><![CDATA[Здесь нечего смотреть...]]></Text>
+      <Text><![CDATA[<![CDATA[Здесь ничего нет...]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
@@ -891,7 +891,7 @@
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Почему вы не останавливаете меня?]]></Text>
+      <Text><![CDATA[<![CDATA[Почему бы вам меня не остановить?]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -902,7 +902,7 @@
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Здесь нечего смотреть...]]></Text>
+      <Text><![CDATA[<![CDATA[Здесь ничего нет...]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -913,7 +913,7 @@
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Вам нужно нам доверять, друг.]]></Text>
+      <Text><![CDATA[<![CDATA[Вам нужно довериться нам, друг наш.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -924,7 +924,7 @@
     <InternalName>WARN_MILITARY_BUILDUP_ACCEPT_COUNTER</InternalName>
 
     <FlavorTextOption>
-      <Text><![CDATA["Мы просто посмотрим на это."]]></Text>
+      <Text><![CDATA[<![CDATA[Посмотрим.]]>]]></Text>
       <PreferenceWeight>1</PreferenceWeight>
     </FlavorTextOption>
 
@@ -935,7 +935,7 @@
           <RangeMax>-4</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Мы просто проверим это.]]></Text>
+      <Text><![CDATA[<![CDATA[Посмотрим.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -946,7 +946,7 @@
           <RangeMax>3</RangeMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Мы будем следить за тобой.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы будем наблюдать за вами.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -957,7 +957,7 @@
           <NoMax>true</NoMax>
         </RelationsRange>
       </Requirements>
-      <Text><![CDATA[Я надеюсь, ради вас, что наше доверие не было напрасным.]]></Text>
+      <Text><![CDATA[<![CDATA[Ради вашего же блага надеюсь, что мы не ошиблись, доверившись вам.]]>]]></Text>
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
 
@@ -967,9 +967,9 @@
     <InternalName>WARN_DANGEROUS_PLAYER_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы должны предупредить вас, {LEADERNAME:2}, {PLAYERFACTIONLONG:3} собрали мощную армию. Будьте настороже.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы должны предупредить тебя, {LEADERNAME:2}, {PLAYERFACTIONLONG:3} создали мощную армию. Опасайся их.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -977,9 +977,9 @@
     <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Спасибо за предупреждение. Мы будем осторожны.]]></Text>
+      <Text><![CDATA[<![CDATA[Спасибо за предупреждение. Мы будем осторожны.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -987,9 +987,9 @@
     <InternalName>WARN_DANGEROUS_PLAYER_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Всегда.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы всегда начеку.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -997,9 +997,9 @@
     <InternalName>HELP_FRIENDLY_PLAYER_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Кажется, вы испытываете некоторые трудности с {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Пожалуйста, примите этот {OBJECTNAME:1} от нас, чтобы помочь вам в военных усилиях.]]></Text>
+      <Text><![CDATA[<![CDATA[Похоже, у тебя небольшие проблемы с {PLAYERFACTIONLONG:3}, {LEADERNAME:2}. Пожалуйста, прими от нас этот {OBJECTNAME:1} , чтобы помочь твоим военным усилиям.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1007,9 +1007,9 @@
     <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Ваша помощь приходит в самый подходящий момент. Спасибо.]]></Text>
+      <Text><![CDATA[<![CDATA[Твоя помощь пришла как нельзя вовремя. Спасибо.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1017,9 +1017,9 @@
     <InternalName>HELP_FRIENDLY_PLAYER_ACCEPT_COUNTER</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы всегда помогаем нашим друзьям.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы всегда помогаем нашим друзьям.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1027,9 +1027,9 @@
     <InternalName>PLAYER_SURRENDER_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{LEADERNAME:2}, вы победили. Мы сдаемся и передаем все наши оставшиеся активы ваших руки.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:2}, ты победил. Мы сдаёмся и передадим все наши оставшиеся активы в твои руки.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1037,9 +1037,9 @@
     <InternalName>PLAYER_SURRENDER_RESPONSE_1</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Рад, что вы увидели разумное.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы рады, что вы образумились.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1047,9 +1047,9 @@
     <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Мы, возможно, и проиграли, {LEADERNAME:2}, но ты глупец, если думаешь, что мы отдадим наших людей тебе под опеку. Все наши оставшиеся активы будут переданы нашим друзьям из {PLAYERFACTIONLONG:3}.]]></Text>
+      <Text><![CDATA[<![CDATA[Мы, может, и закончили, {LEADERNAME:2}, но ты дурак, если думаешь, что мы отдадим наших людей под твою опеку. Все наши оставшиеся активы будут переданы нашим друзьям {PLAYERFACTIONLONG:3}.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1057,9 +1057,9 @@
     <InternalName>PLAYER_SURRENDER_WITH_BENEFICIARY_RESPONSE_1</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Делайте, как хотите, хотя в конечном итоге это мало что изменит.]]></Text>
+      <Text><![CDATA[<![CDATA[Делайте, как хотите, в конечном итоге разница невелика.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1067,9 +1067,9 @@
     <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_MAIN</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[У нас нет выбора, {LEADERNAME:2}, нам придется сдаться {PLAYERFACTIONLONG:3}. Вы были добры к нам в прошлом, поэтому мы хотим передать вам остаток нашей империи. Используйте наши ресурсы, чтобы нанести ответный удар {PLAYERFACTIONLONG:3}!]]></Text>
+      <Text><![CDATA[<![CDATA[У нас нет выбора, {LEADERNAME:2}, мы вынуждены сдаться {PLAYERFACTIONLONG:3}. В прошлом ты был добр к нам, поэтому мы хотим отдать тебе остатки нашей империи. Используй наши ресурсы, чтобы нанести ответный удар по {PLAYERFACTIONLONG:3}!]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1077,9 +1077,9 @@
     <InternalName>PLAYER_SURRENDER_GIVE_TO_BENEFICIARY_RESPONSE_1</InternalName>
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[Спасибо.]]></Text>
+      <Text><![CDATA[<![CDATA[Спасибо.]]>]]></Text>
     </FlavorTextOption>
   </FlavorTextDef>
 
@@ -1090,12 +1090,12 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{LEADERNAME:1}: Хорошо, давайте торговать.]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Это приемлемо.]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Согласен.]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Это работает.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Отлично, давайте торговать.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Это приемлемо.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Согласен.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Это работает.]]>]]></Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 
@@ -1106,12 +1106,12 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{LEADERNAME:1}: Это предложение неприемлемо.]]></Text>
-      <Text><![CDATA[{ИМЯ_ЛИДЕРА:1}: Нет.]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Это мне не подойдет]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Нам нужно больше.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Это предложение неприемлемо.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Нет.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: У меня это не сработает.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Нам нужно больше.]]>]]></Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 
@@ -1123,10 +1123,10 @@
 
     <FlavorTextOption>
       <Requirements>
-        <SpeakerFaction>CUSTOM_FACTION</SpeakerFaction>
+        <SpeakerFaction><![CDATA[CUSTOM_FACTION]]></SpeakerFaction>
       </Requirements>
-      <Text><![CDATA[{LEADERNAME:1}: Я рад, что мы смогли прийти к соглашению.]]></Text>
-      <Text><![CDATA[{LEADERNAME:1}: Это был хороший день.]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Хорошо, что мы смогли придти к соглашению.]]>]]></Text>
+      <Text><![CDATA[<![CDATA[{LEADERNAME:1}: Это был хороший день.]]>]]></Text>
       <PreferenceWeight>30</PreferenceWeight>
     </FlavorTextOption>
 

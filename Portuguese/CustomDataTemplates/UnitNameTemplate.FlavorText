@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <FlavorTextDefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Data/Schema/FlavorText.xsd">
 
 
-  
+  <!-- ** Citizens - Last Names ** -->
   <FlavorTextDef>
     <InternalName>LASTNAME</InternalName>
     
@@ -12,15 +12,15 @@
         <IgnoreGender>true</IgnoreGender>
         <CitizenRace>CITIZEN_RACE</CitizenRace>
       </Requirements>
-      <Text><![CDATA[Smith]]></Text>
-      <Text><![CDATA[Jones]]></Text>
-      
+      <Text><![CDATA[<![CDATA[Smith]]>]]></Text>
+      <Text><![CDATA[<![CDATA[Jones]]>]]></Text>
+      <!-- Must be higher than built-in UnitNamesText.xml weights, so they can be overridden -->
       <PreferenceWeight>200</PreferenceWeight>
     </FlavorTextOption>
 
   </FlavorTextDef>
 
-  
+  <!-- ** First Name - Citizens ** -->
   <FlavorTextDef>
     <InternalName>FIRSTNAME</InternalName>
 
@@ -30,9 +30,9 @@
         <IgnoreGender>true</IgnoreGender>
         <CitizenRace>CITIZEN_RACE</CitizenRace>
       </Requirements>
-      <Text><![CDATA[Bob]]></Text>
-      <Text><![CDATA[Joe]]></Text>
-      
+      <Text><![CDATA[<![CDATA[Bob]]>]]></Text>
+      <Text><![CDATA[<![CDATA[Joe]]>]]></Text>
+      <!-- Must be higher than built-in UnitNamesText.xml weights, so they can be overridden -->
       <PreferenceWeight>200</PreferenceWeight>
     </FlavorTextOption>
 
