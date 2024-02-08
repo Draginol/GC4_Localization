@@ -340,8 +340,8 @@ class TranslationApp(QMainWindow):
         prompt = f"Please preserve the format and translate the following text using [BR] tags to indicate line breaks into {target_language}. Each line should have up to 24 characters before a [BR] tag is required.  Note that the output text should contain no actual carriage returns but must have a [BR] every 24 characters. The [BR] tags will serve as line break indicators for an external application to process later. Text to translate: {text}."
 
         try:
-            response = openai.chat.completions.create(
-                model="gpt-4-1106-preview",
+            response = openai.ChatCompletion.create(
+                model="gpt-4-turbo-preview",
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=4000,
                 n=1,
