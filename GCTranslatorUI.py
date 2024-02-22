@@ -337,7 +337,7 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"Please preserve the format and translate the following text using [BR] tags to indicate line breaks into {target_language}. Each line should have up to 24 characters before a [BR] tag is required.  Note that the output text should contain no actual carriage returns but must have a [BR] every 24 characters. The [BR] tags will serve as line break indicators for an external application to process later. Text to translate: {text}."
+        prompt = f"In the context of a Sci-Fi video game, given the string table entry label '{label_name}' as context, translate the following text into {target_language}. Respect all formatting codes and do not include the label. Add spaces without breaking meaning if a phrase is long to ensure word wrapping is not broken. Text to translate: {text}"
 
         try:
             response = openai.ChatCompletion.create(
