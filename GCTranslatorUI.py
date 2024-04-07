@@ -337,7 +337,7 @@ class TranslationApp(QMainWindow):
     def translate_to_language(self, text, row, target_language):
         label_item = self.table.item(row, 2)  # Assuming the Label column is at index 2
         label_name = label_item.text()
-        prompt = f"Please preserve the format and translate the following text using [BR] tags to indicate line breaks into {target_language}. Each line should have up to 24 characters before a [BR] tag is required.  Note that the output text should contain no actual carriage returns but must have a [BR] every 24 characters. The [BR] tags will serve as line break indicators for an external application to process later. Text to translate: {text}."
+        prompt = f"In the context of a Sci-Fi game please translate the following into the {target_language}. Preserve the string formatting codes. For example, [I] and [/I] and other types of brackets. Important: ONLY output the translated string. Text to translate: {text}."
 
         try:
             response = openai.chat.completions.create(
@@ -372,11 +372,11 @@ class TranslationApp(QMainWindow):
             translated_text = self.translate_to_language(english_text, row, target_language)
             return row, translated_text
 
-        CHUNK_SIZE = 32
+        CHUNK_SIZE = 128
         chunks = [selected_rows[i:i + CHUNK_SIZE] for i in range(0, len(selected_rows), CHUNK_SIZE)]
 
         for chunk in chunks:
-            with ThreadPoolExecutor(max_workers=32) as executor:
+            with ThreadPoolExecutor(max_workers=128) as executor:
                 results = list(executor.map(translate_row, chunk))
 
             for row, translated_text in results:
