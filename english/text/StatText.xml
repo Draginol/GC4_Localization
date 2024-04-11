@@ -432,7 +432,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDEC_PlanetaryDefense</Label>
-        <String>Planetary defense improvements help to stop invading forces long before they ever reach the surface of your colony.</String>
+        <String>[HS=HS_PlanetaryDefense]Planetary Defense[/HS] [HS=HS_Improvement]Improvements[/HS] increase a Colony's ability to resist Invasion and extend how long it takes an invading [HS=HS_Fleet]Fleet[/HS] to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_ResistanceBonus</Label>
@@ -440,7 +440,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDEC_ResistanceBonus</Label>
-        <String>Resistance will help your population defend itself when invaded, and make it less susceptible to foreign influences.</String>
+        <String>Resistance measures how resilient a Colony is to foreign [HS=HS_Influence]Influence[/HS]. A higher Resistance will cause it to take longer for a Colony to rebel when in another Civilization's [HS=HS_ZoneOfControl]Zone of Control[/HS].</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_PlanetaryDefensesHP</Label>
@@ -448,7 +448,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDEC_PlanetaryDefensesHP</Label>
-        <String>The amount of damage that your colony can take before being defenseless during an invasion.</String>
+        <String>A rating of how powerful the Colony's defenses are. Higher [HS=HS_PlanetaryDefense]Planetary Defenses[/HS] cause Invasions to take more [HS=HS_Months]Turns[/HS] and require [HS=HS_Fleet]Fleets[/HS] to have higher [ICON=Conquest_Icon] Conquest Ratings to try to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_PlanetaryDefensesMaxHP</Label>
@@ -468,7 +468,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDEC_PlanetaryDefensesMaxHP</Label>
-        <String>The amount of damage that your colony can take before being defenseless during an invasion.</String>
+        <String>A rating of how powerful the Colony's defenses are. Higher [HS=HS_PlanetaryDefense]Planetary Defenses[/HS] cause Invasions to take more [HS=HS_Months]Turns[/HS] and require [HS=HS_Fleet]Fleets[/HS] to have higher [ICON=Conquest_Icon] Conquest Ratings to try to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_PlanetaryDefensesRepairAbility</Label>
@@ -840,7 +840,7 @@
     </StringTable>
     <StringTable>
         <Label>STATNAME_SiegeAbility</Label>
-        <String>[ICON=Moves_Icon] Conquest Rating</String>
+        <String>[ICON=Conquest_Icon] Conquest Rating</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_SiegeEffectiveness</Label>
@@ -999,6 +999,10 @@
         <String>[ICON=CanSurveyIcon] Battleship</String>
     </StringTable>
     <StringTable>
+        <Label>STATNAME_IsCommand</Label>
+        <String>[ICON=CanSurveyIcon] Command</String>
+    </StringTable>
+    <StringTable>
         <Label>STATNAME_IsProbe</Label>
         <String>[ICON=CanSurveyIcon] Probe</String>
     </StringTable>
@@ -1019,12 +1023,24 @@
         <String>[ICON=CanSurveyIcon] Frigate</String>
     </StringTable>
     <StringTable>
+        <Label>STATNAME_IsCorvette</Label>
+        <String>[ICON=CanSurveyIcon] Corvette</String>
+    </StringTable>
+    <StringTable>
         <Label>STATNAME_IsCruiser</Label>
         <String>[ICON=CanSurveyIcon] Cruiser</String>
     </StringTable>
     <StringTable>
+        <Label>STATNAME_IsDestroyer</Label>
+        <String>[ICON=CanSurveyIcon] Destroyer</String>
+    </StringTable>
+    <StringTable>
         <Label>STATNAME_IsDreadnought</Label>
         <String>[ICON=CanSurveyIcon] Dreadnought</String>
+    </StringTable>
+    <StringTable>
+        <Label>STATNAME_IsCarrier</Label>
+        <String>[ICON=CanSurveyIcon] Carrier</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_IsSiege</Label>
@@ -2842,6 +2858,23 @@
         <Label>STATDESC_BattleRating</Label>
         <String>Combination of weapon power, fire rates, ranges, defense capabilities, and hit point capacity, indicating general battle effectiveness.</String>
     </StringTable>
+
+    <StringTable>
+        <Label>STATNAME_BattleRating_SpecComp</Label>
+        <String>[ICON=CombatRatingIcon] Specialized Attack</String>
+    </StringTable>
+    <StringTable>
+        <Label>STATDESC_BattleRating_SpecComp</Label>
+        <String>The combat rating of components with unique and specialized offensive capabilities.</String>
+    </StringTable>
+    <StringTable>
+        <Label>STATNAME_BattleRating_DefOnly</Label>
+        <String>[ICON=CombatRatingIcon] Specialized Defense</String>
+    </StringTable>
+    <StringTable>
+        <Label>STATDESC_BattleRating_DefOnly</Label>
+        <String>Combination of weapon power, fire rates, ranges, defense capabilities, and hit point capacity, indicating general battle effectiveness.[BR][BR]This variant of the modifier only applied when weapons are present.</String>
+    </StringTable>
   <StringTable>
     <Label>STATNAME_OwnedClustersCount</Label>
     <String>Owned Sectors</String>
@@ -2849,5 +2882,45 @@
   <StringTable>
     <Label>STATDESC_OwnedClustersCount</Label>
     <String>Number of Sectors the faction has majority control over.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>STATNAME_WarWeariness</Label>
+    <String>War Weariness</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>STATDESC_WarWeariness</Label>
+    <String>Your citizens grow weary of being at war for so long.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>STATNAME_AssaultAttack</Label>
+    <String>Assault Attack Troops</String>
+  </StringTable>
+  
+  <StringTable>
+    <Label>STATDESC_AssaultAttack</Label>
+    <String>A measure of how many assault troops are available. Assault troops are used to take over vessels. Assault Attack Troops can be countered with Assault Defense Troops.</String>
+  </StringTable>
+  
+  <StringTable>
+    <Label>STATNAME_AssaultDefense</Label>
+    <String>Assault Defense Troops</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>STATDESC_AssaultDefense</Label>
+    <String>A measure of how many defense troops are available. Defense troops defend vessels from boarding actions, preventing ships from being taken over. Assault Defense Troops are used to counter Assault Attack Troops.</String>
+  </StringTable>
+  
+  <StringTable>
+    <Label>STATNAME_AssaultRange</Label>
+    <String>Assault Range</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>STATDESC_AssaultRange</Label>
+    <String>The effective range of assault shuttles. The Assault Range is how far assault shuttles can travel to another ship to initiate a boarding action.</String>
   </StringTable>
 </StringTableList>

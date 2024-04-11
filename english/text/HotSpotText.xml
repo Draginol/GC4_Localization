@@ -455,7 +455,7 @@
 	</StringTable>
 	<StringTable>
 		<Label>Hotspot_ConqueringPlanetsDec</Label>
-		<String>All colonized planets have a [ICON=Conquest_Icon] Planetary Conquest rating. This represents how defended a planet is and how much military might it will take to overcome its defenses. [HS=HS_Fleet]Fleets[/HS] have a Conquest Rating, representing how equipped they are to besiege a planet. Some ships, like Transport ships, are better equipped to Conquer planets than others.[BR][BR]To initiate a siege, issue a [HS=HS_ShipMovement]Move[/HS] command to a [HS=HS_Fleet]Fleet[/HS] with the target being the Planet to conquer. When the [HS=HS_Fleet]Fleet[/HS] reaches the Planet, it will initiate a siege if its [ICON=Conquest_Icon] Conquest Rating is high enough to overcome the Planet's [ICON=Conquest_Icon] Conquest Rating.</String>
+		<String>All colonized planets have a [ICON=Stat_Planetary_Defense_Icon] Planetary Defense rating. This represents how defended a planet is and how much military might it will take to overcome its defenses. [HS=HS_Fleet]Fleets[/HS] have a [ICON=Conquest_Icon] Conquest Rating, representing how equipped they are to besiege a planet. Some ships, like Transport ships, are better equipped to Conquer planets than others.[BR][BR]To initiate a siege, issue a [HS=HS_ShipMovement]Move[/HS] command to a [HS=HS_Fleet]Fleet[/HS] with the target being the Planet to conquer. When the [HS=HS_Fleet]Fleet[/HS] reaches the Planet, it will initiate a siege if its [ICON=Conquest_Icon] Conquest Rating is high enough to overcome the Planet's [ICON=Stat_Planetary_Defense_Icon] Defense Rating.</String>
 	</StringTable>
 
 	<StringTable>
@@ -505,5 +505,14 @@
 		<String>Citizens make up the population of your core worlds, they can be specialized to modify a planet's outputs or are required for building certain ship classes.</String>
 	</StringTable>
 
-   
+	<StringTable>
+		<Label>Hotspot_WeaponCooldown_Label</Label>
+		<String>Weapon Cooldown</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_WeaponCooldown_Desc</Label>
+		<String>Weapon Cooldown is the time it takes for a weapon to rearm. It measures the number of Turns in combat between shots. Reducing Weapon Cooldown allows a weapon to fire more frequently.</String>
+	</StringTable>
+
+
 </StringTableList>

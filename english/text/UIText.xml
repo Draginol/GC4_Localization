@@ -3398,7 +3398,7 @@
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Fighter</Label>
-    <String>Fighters</String>
+    <String>[HS=HS_PointDefense]Fighters[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Frigate</Label>
@@ -4265,8 +4265,16 @@
     <String>Focus on Engineering</String>
   </StringTable>
   <StringTable>
-    <Label>FocusWarfareTooltip</Label>
-    <String>Focus on Warfare</String>
+    <Label>FocusWeaponsTooltip</Label>
+    <String>Focus on Weapons</String>
+  </StringTable>
+  <StringTable>
+    <Label>FocusDefenseTooltip</Label>
+    <String>Focus on Defense</String>
+  </StringTable>
+  <StringTable>
+    <Label>FocusConquestTooltip</Label>
+    <String>Focus on Conquest</String>
   </StringTable>
   <StringTable>
     <Label>FocusGovernanceTooltip</Label>
@@ -5065,16 +5073,20 @@
     <String>Restart Battle</String>
   </StringTable>
   <StringTable>
-    <Label>BATTLE_LOG_TOOLTIP_ATTACK_TOTAL_LABEL</Label>
-    <String>Attack (Potential)</String>
+    <Label>BATTLE_LOG_TOOLTIP_ATTACK_BASE_LABEL</Label>
+    <String>Base</String>
   </StringTable>
   <StringTable>
-    <Label>BATTLE_LOG_TOOLTIP_ATTACK_READY_LABEL</Label>
-    <String>Attack (Ready)</String>
+    <Label>BATTLE_LOG_TOOLTIP_ATTACK_MOD_LABEL</Label>
+    <String>Battle Modifiers</String>
   </StringTable>
   <StringTable>
-    <Label>BATTLE_LOG_TOOLTIP_ATTACK_READY_IN_RANGE_LABEL</Label>
-    <String>Attack (Ready, In-Range)</String>
+    <Label>BATTLE_LOG_TOOLTIP_DEFENSE_MOD_LABEL</Label>
+    <String>Defense</String>
+  </StringTable>
+  <StringTable>
+  <Label>BATTLE_LOG_TOOLTIP_ATTACK_POTENTIAL_LABEL</Label>
+  <String>Potential</String>
   </StringTable>
   <StringTable>
     <Label>BATTLE_LOG_TOOLTIP_ATTACK_DAMAGE_LABEL</Label>
@@ -5916,10 +5928,22 @@
     <Label>SELECTED_CULTURE_TRAIT_LABEL</Label>
     <String>Selected Trait</String>
   </StringTable>
+  
   <StringTable>
     <Label>RESEARCH_WEAPONS_LABEL</Label>
-    <String>Warfare</String>
+    <String>Weapons</String>
   </StringTable>
+
+  <StringTable>
+    <Label>RESEARCH_DEFENSE_LABEL</Label>
+    <String>Defense</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>RESEARCH_CONQUEST_LABEL</Label>
+    <String>Logistics</String>
+  </StringTable>
+  
   <StringTable>
     <Label>Open</Label>
     <String>Open</String>
@@ -7302,7 +7326,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_PICK_CLASS_LABEL</Label>
-    <String>Choose Ship Class</String>
+    <String>Set Doctrine for Ship Type</String>
   </StringTable>
   <StringTable>
     <Label>ROTATIONNAME</Label>
@@ -7310,7 +7334,7 @@
   </StringTable>
   <StringTable>
     <Label>UPGRADE_DESIGN_LABEL</Label>
-    <String>New Design</String>
+    <String>New Ship Class</String>
   </StringTable>
   <StringTable>
     <Label>SLIDERLABEL</Label>
@@ -7414,7 +7438,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_ECONOMIC_LABEL</Label>
-    <String>Colonization</String>
+    <String>Science</String>
   </StringTable>
   <StringTable>
     <Label>ASSAULT_SHIP_LABEL</Label>
@@ -7574,6 +7598,10 @@
   </StringTable>
   <StringTable>
     <Label>PLANETARYPROJECT_UNLOCKED_LABEL</Label>
+    <String>%s</String>
+  </StringTable>
+  <StringTable>
+    <Label>INVASION_TACTIC_UNLOCKED_LABEL</Label>
     <String>%s</String>
   </StringTable>
   <StringTable>
@@ -10392,6 +10420,10 @@
   <StringTable>
     <Label>RESEARCH_TRADE_LABEL</Label>
     <String>Research %s to begin trade routes</String>
+  </StringTable>
+  <StringTable>
+    <Label>BUILD_FREIGHTER_LABEL</Label>
+    <String>Construct a freighter and send it to an ally's planet to establish a trade route.</String>
   </StringTable>
   <StringTable>
     <Label>IDEOLOGY_AVAILABLE_LABEL</Label>
@@ -13220,7 +13252,7 @@
   </StringTable>
   <StringTable>
     <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
-    <String>Growth comes from the non-synthetic citizens on your world. But it can be increased by improvements like Fertility Clinics and Hospitals and significantly decreased on worlds with high pollution.</String>
+    <String>Growth comes from the non-synthetic citizens on your world. Planetary Improvements and Citizen Roles can be leveraged to increase Growth. However, Growth can also be significantly decreased on worlds with high pollution.</String>
   </StringTable>
   <StringTable>
     <Label>APPROVAL_TITLE_HAPPY</Label>
@@ -13296,7 +13328,7 @@
   </StringTable>
   <StringTable>
     <Label>PlanetaryDefensesHPFormatString</Label>
-    <String>{VALUE}/{AMOUNT}</String>
+    <String>{AMOUNT}</String>
   </StringTable>
   <StringTable>
     <Label>PopulationFormatString</Label>
@@ -13523,6 +13555,14 @@
     <String>Range</String>
   </StringTable>
   <StringTable>
+    <Label>SHIP_DESIGNER_CATEGORY_AssaultAttack</Label>
+    <String>Assault Attack</String>
+  </StringTable>
+  <StringTable>
+    <Label>SHIP_DESIGNER_CATEGORY_AssaultDefense</Label>
+    <String>Assault Defense</String>
+  </StringTable>
+  <StringTable>
     <Label>MANUFACTURING_OVERFLOW_FORMAT</Label>
     <String>Accrued Manufacturing Points: %d</String>
   </StringTable>
@@ -13703,16 +13743,24 @@
     <String>The %s attacked %s with %s.</String>
   </StringTable>
   <StringTable>
+    <Label>ALERT_BesiegedPlanet_Invading</Label>
+    <String>Our siege of {PLANETNAME} will complete in {AMOUNT} months.</String>
+  </StringTable>
+  <StringTable>
     <Label>ALERT_BesiegedPlanet</Label>
-    <String>%s is under siege!</String>
+    <String>Our planet {PLANETNAME} is under siege, and will fall in {AMOUNT} months.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ALERT_SiegeInterrupted</Label>
+    <String>The siege of {PLANETNAME} has been interrupted!</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetWin</Label>
-    <String>We have conquered the planet %s.</String>
+    <String>We have conquered the planet {PLANETNAME}.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetLoss</Label>
-    <String>%s has been conquered.</String>
+    <String>{PLANETNAME} has been conquered.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ShipUpgradeAvailable</Label>
@@ -16984,11 +17032,11 @@
   </StringTable>
   <StringTable>
     <Label>SpecialtyShips</Label>
-    <String>Featured Ships</String>
+    <String>Featured Classes</String>
   </StringTable>
   <StringTable>
     <Label>MilitaryShips</Label>
-    <String>Combat Ships</String>
+    <String>Combat Classes</String>
   </StringTable>
   <StringTable>
     <Label>MissionShips</Label>
@@ -18823,6 +18871,10 @@
     <String>%s Executive Order</String>
   </StringTable>
   <StringTable>
+    <Label>OPERATIONAL_ABILITY_UNLOCKED_LABEL</Label>
+    <String>%s Operational Ability</String>
+  </StringTable>
+  <StringTable>
     <Label>ShipyardConstruction_Desc</Label>
     <String>Manufacturing used to build ships at shipyards.</String>
   </StringTable>
@@ -19201,6 +19253,10 @@
   <StringTable>
     <Label>FLEETTOOLTIP_COMMANDER_ABILITIES_LIST</Label>
     <String>Special Abilities:</String>
+  </StringTable>
+  <StringTable>
+    <Label>FLEETTOOLTIP_COMPONENT_ABILITIES_LIST</Label>
+    <String>Special Components:</String>
   </StringTable>
   <StringTable>
     <Label>FLEETTOOLTIP_GENERIC_ABILITIES_LIST</Label>
@@ -21084,6 +21140,10 @@
     <String>{CONDITION} required</String>
   </StringTable>
   <StringTable>
+    <Label>RequiredStat_CanInvade</Label>
+    <String>Transport required</String>
+  </StringTable>
+  <StringTable>
     <Label>RequiredRelations</Label>
     <String>Relation {CONDITION} required</String>
   </StringTable>
@@ -21488,7 +21548,7 @@
     <String>Selected Color Catagory name</String>
   </StringTable>
   <StringTable>
-    <Label>PolicyButton</Label>
+    <Label>PolicyButton</Label> 
     <String>Civilization[BR][COLOR=UIDefaultHot]Manage your civilization's laws and policies.[/COLOR]</String>
   </StringTable>
   <StringTable>
@@ -24037,10 +24097,14 @@
     <Label>BazzarButtonTooltip</Label>
     <String>Galactic Bazaar[BR][COLOR=UIDefaultHot]Buy and sell the galaxy's most valuable resources.[/COLOR]</String>
   </StringTable>
-  <StringTable>
-    <Label>TechLeadsToValueFormat</Label>
-    <String>[ICON=UNLOCK_ICON_TECH] {TECHNAME}</String>
-  </StringTable>
+	<StringTable>
+		<Label>TradeButtonTooltip</Label>
+		<String>Trade Routes[BR][COLOR=UIDefaultHot]View your civilization's trade routes.[/COLOR]</String>
+	</StringTable>
+	<StringTable>
+		<Label>TechLeadsToValueFormat</Label>
+		<String>[ICON=UNLOCK_ICON_TECH] {TECHNAME}</String>
+	</StringTable>
   <StringTable>
     <Label>PlanetDistrictCount_Format</Label>
     <String>%ld x </String>
@@ -24224,6 +24288,14 @@
   <StringTable>
     <Label>TRIGGERDURATION_FOR_X_TURNS</Label>
     <String>%s for %d Months</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERDURATION_FOR_X_TURNS_REMAINING</Label>
+    <String> for %d more Months</String>
+  </StringTable>
+  <StringTable>
+    <Label>TRIGGERDURATION_LAST_TURN</Label>
+    <String> (last month)</String>
   </StringTable>
   <StringTable>
     <Label>TRIGGERFOCUS_US_HEADER</Label>
@@ -24819,8 +24891,16 @@
     <String>Engineering Focus techs</String>
   </StringTable>
   <StringTable>
-    <Label>TechnologyLibraryFilter_Warfare</Label>
-    <String>Warfare Focus techs</String>
+    <Label>TechnologyLibraryFilter_Weapons</Label>
+    <String>Weapon Focus techs</String>
+  </StringTable>
+  <StringTable>
+    <Label>TechnologyLibraryFilter_Defense</Label>
+    <String>Defense Focus techs</String>
+  </StringTable>
+  <StringTable>
+    <Label>TechnologyLibraryFilter_Conquest</Label>
+    <String>Conquest Focus techs</String>
   </StringTable>
   <StringTable>
     <Label>TechnologyLibraryFilter_Governance</Label>
@@ -25739,6 +25819,15 @@
     <String>[B]Diplomacy[/B][BR][COLOR=UIDefaultHot]Requires Universal Translator[/COLOR]</String>
   </StringTable>
   <StringTable>
+    <Label>SuperNova_MAINGAME_NEED_TECH_FORMAT</Label>
+    <String>[B]Trade Routes[/B][BR][COLOR=BrightRed]Requires %s.[/COLOR]</String>
+  </StringTable>
+
+    <StringTable>
+	    <Label>SuperNova_NOTRADEROUTES</Label>
+	    <String>[B]Trade Routes[/B][BR][COLOR=BrightRed]You don't have any trade routes.[/COLOR]</String>
+    </StringTable>
+  <StringTable>
     <Label>FIRST_UNHIDE_PLANETWND_Title</Label>
     <String>Planet Management</String>
   </StringTable>
@@ -26118,6 +26207,7 @@
     <Label>Mods_Details</Label>
     <String>Mod Details</String>
   </StringTable>
+	
   <StringTable>
     <Label>UI_Color_Absolute</Label>
     <String>Contaminant</String>
@@ -26131,6 +26221,119 @@
     <Label>CustomCiv_CivShortName_Label</Label>
     <String>Civilization Short Name</String>
   </StringTable>
+
+	<StringTable>
+		<Label>InvasionPlanetaryDefenseTitle</Label>
+		<String>Planetary Defense:</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionConquestRatingTitle</Label>
+		<String>Conquest Rating:</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionAttackingForceTitle</Label>
+		<String>Attacking Force</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionDefendingForceTitle</Label>
+		<String>Defending Force</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionDefendingCitizensTitle</Label>
+		<String>Defending Citizens</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionDefensiveSystemsTitle</Label>
+		<String>Defensive Systems</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionEstimatedDurationTitle</Label>
+		<String>Estimated Duration:</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionCasualtiesSystemsTitle</Label>
+		<String>Casualties:</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionPlanetaryDamageSystemsTitle</Label>
+		<String>Planetary Damage:</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionEfficiencySystemsTitle</Label>
+		<String>Efficiency:</String>
+	</StringTable>
+  
+  <StringTable>
+    <Label>MOD_SOURCE_CATEGORY_INVASIONTACTIC</Label>
+    <String>Invasion Tactic</String>
+  </StringTable>
+
+  <StringTable>
+		<Label>InvasionReportCaptureTitle</Label>
+		<String>Date Captured:</String>
+	</StringTable>
+  <StringTable>
+    <Label>BeamAccuracyLabel</Label>
+    <String>Beam Accuracy</String>
+  </StringTable>
+
+  <StringTable>
+		<Label>InvasionReportTakenTitle</Label>
+		<String>Taken From:</String>
+	</StringTable>
+  <StringTable>
+    <Label>MissileAccuracyLabel</Label>
+    <String>Missile Accuracy</String>
+  </StringTable>
+
+  <StringTable>
+		<Label>InvasionReportTacticUsedTitle</Label>
+		<String>Tactic Used:</String>
+	</StringTable>
+  <StringTable>
+    <Label>KineticAccuracyLabel</Label>
+    <String>Kinetic Accuracy</String>
+  </StringTable>
+
+	<StringTable>
+		<Label>InvasionReportEffectsTitle</Label>
+		<String>Invasion Effects</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionReportTileDamageTitle</Label>
+		<String>Planetary Tile Damage</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionReportScreenTitle</Label>
+		<String>Capture of Planet Name</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionReportRaceNameTitle</Label>
+		<String>Race Name</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionReportDateTitle</Label>
+		<String>Date</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>InvasionReportTacticNameTitle</Label>
+		<String>Tactic Name</String>
+	</StringTable>
+
 
   <!-- ***************************************************************************** -->
 

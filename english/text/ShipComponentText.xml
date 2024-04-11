@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<StringTableList
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
     <!-- Created with the GC4 editor -->
     <!-- ShipComponentText.xml -->
     <StringTable>
@@ -402,7 +400,7 @@
     </StringTable>
     <StringTable>
         <Label>Chaff_Dec</Label>
-        <String>Increases Evasion</String>
+        <String>Reduces damage done by [ICON=MissileAttackIcon] Missile Attacks.</String>
     </StringTable>
     <StringTable>
         <Label>PointDefense_Name</Label>
@@ -468,6 +466,25 @@
         <Label>TitaniumPlating_Dec</Label>
         <String>Increases Armor Rating</String>
     </StringTable>
+    <StringTable>
+        <Label>NeuroflexPlating_Name</Label>
+        <String>Neuroflex Plating</String>
+    </StringTable>
+    <StringTable>
+        <Label>NeuroflexPlating_Dec</Label>
+        <String>Increases Armor Rating</String>
+    </StringTable>
+
+<StringTable>
+    <Label>DiamonicCompositeArmor_Name</Label>
+    <String>Diamonic Composite Armor</String>
+</StringTable>
+
+<StringTable>
+    <Label>DiamonicCompositeArmor_Dec</Label>
+    <String>Increases Armor Rating</String>
+</StringTable>
+
     <StringTable>
         <Label>CarbonCrystalComposite_Name</Label>
         <String>Carbon Crystal Plating</String>
@@ -578,7 +595,7 @@
     </StringTable>
     <StringTable>
         <Label>CarrierModule_Dec</Label>
-        <String>Carries 4 Fast and deadly Fighters</String>
+        <String>Carries 4 Fast and deadly Assault Fighters</String>
     </StringTable>
     <StringTable>
         <Label>AssaultCarrierModule_Name</Label>
@@ -1494,6 +1511,14 @@
         <String>A special module required in order to enable Battleship class ships.</String>
     </StringTable>
     <StringTable>
+        <Label>CommandModule_Name</Label>
+        <String>Command Ship Module</String>
+    </StringTable>
+    <StringTable>
+        <Label>CommandModule_Dec</Label>
+        <String>A special module required in order to enable Command Ship class ships.</String>
+    </StringTable>
+    <StringTable>
         <Label>FighterModule_Name</Label>
         <String>Fighter Module</String>
     </StringTable>
@@ -1515,7 +1540,15 @@
     </StringTable>
     <StringTable>
         <Label>FrigateModule_Dec</Label>
-        <String>A special module required in order to enable Destroyer class ships.</String>
+        <String>A special module required in order to enable Frigate class ships.</String>
+    </StringTable>
+    <StringTable>
+        <Label>CorvetteModule_Name</Label>
+        <String>Corvette Module</String>
+    </StringTable>
+    <StringTable>
+        <Label>CorvetteModule_Dec</Label>
+        <String>A special module required in order to enable Corvette class ships.</String>
     </StringTable>
     <StringTable>
         <Label>CruiserModule_Name</Label>
@@ -1526,12 +1559,28 @@
         <String>A special module required in order to enable Cruiser class ships.</String>
     </StringTable>
     <StringTable>
+        <Label>DestroyerModule_Name</Label>
+        <String>Destroyer Module</String>
+    </StringTable>
+    <StringTable>
+        <Label>DestroyerModule_Dec</Label>
+        <String>A special module required in order to enable Destroyer class ships.</String>
+    </StringTable>
+    <StringTable>
         <Label>DreadnoughtModule_Name</Label>
         <String>Dreadnought Module</String>
     </StringTable>
     <StringTable>
         <Label>DreadnoughtModule_Dec</Label>
         <String>A special module required in order to enable Dreadnought class ships.</String>
+    </StringTable>
+    <StringTable>
+        <Label>CarriershipModule_Name</Label>
+        <String>Carrier Module</String>
+    </StringTable>
+    <StringTable>
+        <Label>CarriershipModule_Dec</Label>
+        <String>A special module required in order to enable Carrier class ships.</String>
     </StringTable>
     <StringTable>
         <Label>SiegeModule_Name</Label>
@@ -1664,7 +1713,646 @@
     <StringTable>
         <Label>FleetShieldModule_Dec</Label>
         <String>Provides its shields to every ship in the fleet</String>
+    </StringTable>  
+    <StringTable>
+      <Label>IonGun_Name</Label>
+      <String>Ion Cannon</String>
+    </StringTable>
+    <StringTable>
+      <Label>IonGun_Dec</Label>
+      <String>TM and E ltd. EN-4211 Targeted Ionized Delivery System.[BR][BR]Fires an ionized blast of energy to disable a target's [HS=HS_PointDefense]Evasion[/HS] capabilities.</String>
+    </StringTable>
+    <StringTable>
+      <Label>TimeDilator_Name</Label>
+      <String>Time Dilator</String>
+    </StringTable>
+    <StringTable>
+      <Label>TimeDilator_Dec</Label>
+      <String>GravLabs Project 328 "The Time Dilator."[BR][BR]Uses intense bursts of gravitation to warp time dilation in a localized area to halt the cooldown of a target's weapons, resulting in a significantly reduced rate of fire.</String>
+    </StringTable>
+    <StringTable>
+      <Label>CloakingDevice_Name</Label>
+      <String>Cloaking Device</String>
+    </StringTable>
+    <StringTable>
+      <Label>CloakingDevice_Dec</Label>
+      <String>TM and E ltd. MI-4335 Acquisition Disruption System.[BR][BR]Deploys a combination of visual and instrument manipulation to cloak the equipped ship, rendering the ship un-targetable by enemy weapons.</String>
+    </StringTable>
+    <StringTable>
+      <Label>NeutronScrambler_Name</Label>
+      <String>Neutron Scrambler</String>
+    </StringTable>
+    <StringTable>
+      <Label>NeutronScrambler_Dec</Label>
+      <String>GravLabs Project 152 "The Neutron Scrambler."[BR][BR]Excites the particles around a target to reduce the target's [HS=HS_Accuracy]Accuracy[/HS].</String>
+    </StringTable>
+    <StringTable>
+      <Label>TheronRay_Name</Label>
+      <String>Theron Ray</String>
+    </StringTable>
+    <StringTable>
+      <Label>TheronRay_Dec</Label>
+      <String>Radiates a beam that disorients targets to such a degree it causes them to take increased damage. Only affects [HS=HS_CarbonBased]Carbon Based[/HS] lifeforms.</String>
+    </StringTable>
+    <StringTable>
+      <Label>ShatteringPulse_Name</Label>
+      <String>Shattering Pulse</String>
+    </StringTable>
+    <StringTable>
+      <Label>ShatteringPulse_Dec</Label>
+      <String>Emits signals that disorient targets to such a degree that it causes them to take increased damage. Only affects [HS=HS_SiliconBased]Silicon Based[/HS] lifeforms.</String>
+    </StringTable>
+    <StringTable>
+      <Label>UVField_Name</Label>
+      <String>UV Field</String>
+    </StringTable>
+    <StringTable>
+      <Label>UVField_Dec</Label>
+      <String>Produces emissions that disorient targets to such a degree that it causes them to take increased damage. Only affects [HS=HS_AmmoniaBased]Ammonia Based[/HS] lifeforms.</String>
+    </StringTable>
+    <StringTable>
+      <Label>VampireModule_Name</Label>
+      <String>Vampire Module</String>
+    </StringTable>
+    <StringTable>
+      <Label>VampireModule_Dec</Label>
+      <String>Meridoc Vampire Module.[BR][BR] Enhances the functionality of all weapons on the equipped ship, allowing damage done to targets to be absorbed and converted into repairs for the equipped ship.</String>
+    </StringTable>
+    <StringTable>
+      <Label>ShieldBubble_Name</Label>
+      <String>Shield Bubble</String>
+    </StringTable>
+    <StringTable>
+      <Label>ShieldBubble_Dec</Label>
+      <String>Provides shielding to the equipped ship's allies. At the start of combat, the Shield Bubble ensures all ships in fleet have a shield at least as strong as a percentage of the equipped ship's shield strength. Ships with stronger shields are unaffected.</String>
+    </StringTable>
+    <StringTable>
+      <Label>RepairNaniteCloud_Name</Label>
+      <String>Repair Nanite Cloud</String>
+    </StringTable>
+    <StringTable>
+      <Label>RepairNaniteCloud_Dec</Label>
+      <String>VTE Specialized Nanotech var. Repair.[BR][BR]A housing unit that produces a dense grouping of nanite drones that will repair structural damage. When an ally within range is damaged in combat, Repair Nanites will be released to repair the damage and restore some of the ship's [HS=HS_HitPoints]Hit Points[/HS].</String>
+    </StringTable>
+  <StringTable>
+    <Label>Reflector_Name</Label>
+    <String>Reflector</String>
+  </StringTable>
+    <StringTable>
+      <Label>Reflector_Dec</Label>
+        <String>Reduces the damage done by [ICON=BeamAttackIcon] Beam Attacks.</String>
+    </StringTable>
+  <StringTable>
+    <Label>EWeb_Name</Label>
+    <String>E-Web</String>
+  </StringTable>
+  <StringTable>
+    <Label>EWeb_Dec</Label>
+        <String>Reduces the damage done by [ICON=KineticAttackIcon] Kinetic Attacks.</String>
+  </StringTable>
+  <StringTable>
+    <Label>AssaultShuttle_Name</Label>
+    <String>Assault Shuttle</String>
+  </StringTable>
+  <StringTable>
+    <Label>AssaultShuttles_Name</Label>
+    <String>Assault Shuttles</String>
+  </StringTable>
+  <StringTable>
+    <Label>AssaultShuttles_Dec</Label>
+    <String>Short-range transport shuttles that allow Assault Marines to board hostile vessels. Assault Marines specialize in close-quarters combat associated with battles on ships. When Assault Marines successfully board and wipe out a ship, they claim the ship for the civilization, changing its ownership.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MarineModule_Name</Label>
+    <String>Marine Berthing</String>
+  </StringTable>
+  <StringTable>
+    <Label>MarineModule_Dec</Label>
+    <String>Berthing units give housing and space to Defense Marines, which helps resist the boarding actions of hostile units. Defense Marines make it much harder for enemies to take over a ship.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>NuclearWarhead_Name</Label>
+    <String>Nuclear Warhead</String>
+  </StringTable>
+  <StringTable>
+    <Label>NuclearWarhead_Dec</Label>
+        <String>Celestitech E-53 "Atomic Devastator" Nuclear Warhead.[BR][BR]A missile-propelled warhead that delivers a nuclear payload with a distinctive damage profile.</String>
+  </StringTable>
+  <StringTable>
+    <Label>SuperHeatedPlasmaLauncher_Name</Label>
+    <String>Super-Heated Plasma Launcher</String>
+  </StringTable>
+  <StringTable>
+    <Label>SuperHeatedPlasmaLauncher_Dec</Label>
+    <String>Westinghouse M1K Crude Plasma Pod.[BR][BR]Launches sprays of unrestrained plasma at short range with a distinctive damage profile.</String>
+  </StringTable>
+  <StringTable>
+    <Label>RipperNaniteCloud_Name</Label>
+    <String>Ripper Nanite Cloud</String>
+  </StringTable>
+  <StringTable>
+    <Label>RipperNaniteCloud_Dec</Label>
+     <String>VTE Specialized Nanotech var. Ripper.[BR][BR]A dense grouping of nanites used to cause tear and cut at the external structure of a ship with a distinctive damage profile.</String>
+  </StringTable>  
+  <StringTable>
+    <Label>CausticWasteThrower_Name</Label>
+    <String>Caustic Waste Thrower</String>
+  </StringTable>
+  <StringTable>
+    <Label>CausticWasteThrower_Dec</Label>
+    <String>Nurgit Weaponized Waste Recycler.[BR][BR]Releases a liquid-like compound of caustic waste that burns through a ship's hull with a distinctive damage profile.</String>
+  </StringTable>
+  <StringTable>
+    <Label>HeatArray_Name</Label>
+    <String>Heat Array</String>
+  </StringTable>
+  <StringTable>
+    <Label>HeatArray_Dec</Label>
+        <String>Walther B-9 Energy Transfer System.[BR][BR]Focuses radiation that causes heat to build up on a target, which can warp a ship's structure with a distinctive damage profile.</String>
+  </StringTable>
+  <StringTable>
+    <Label>NapalmInfusedPlasma_Name</Label>
+    <String>Napalm Infused Plasma</String>
+  </StringTable>
+  <StringTable>
+    <Label>NapalmInfusedPlasma_Dec</Label>
+        <String>General Destruction Vacuum Resilient Napalm.[BR][BR]A mixture of plasma and napalm that produces a burning plasma that thrives in a vacuum and has a devastating and distinctive damage profile.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MassGravityDriver_Name</Label>
+    <String>Mass Gravity Driver</String>
+  </StringTable>
+  <StringTable>
+    <Label>MassGravityDriver_Dec</Label>
+        <String>Copeland Industries Weaponized Mass Driver.[BR][BR]Launches magnetized projectiles at high speeds that warp gravity around them and have a distinctive damage profile.</String>
+    </StringTable>
+    <StringTable>
+        <Label>PrototypeRailgun_Name</Label>
+        <String>Prototype Railgun</String>
+    </StringTable>
+    <StringTable>
+        <Label>PrototypeRailgun_Dec</Label>
+        <String>Arsenal Prototype 117.[BR][BR]A variation of the Railgun that utilizes experimental (often unsafe) technology and ammunition with very poor accuracy which results in a distinctive damage profile.</String>
+    </StringTable>
+    <StringTable>
+        <Label>CloseRangeTurrets_Name</Label>
+        <String>Close-Range Turrets</String>
+    </StringTable>
+    <StringTable>
+        <Label>CloseRangeTurrets_Dec</Label>
+        <String>General Destruction Self-Defense Turrets.[BR][BR]A series of hull-mounted turrets that can hammer a target's hull with a small caliber fire. They only work at incredibly close range and do very little damage, but they can give a ship an edge in a hectic fight.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>LeadBarrier_Name</Label>
+    <String>Lead Barrier</String>
+  </StringTable>
+  <StringTable>
+    <Label>LeadBarrier_Dec</Label>
+    <String>Greatly reduces the damage done by Nuclear weapons.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CoolingArmor_Name</Label>
+    <String>Cooling Armor</String>
+  </StringTable>
+  <StringTable>
+    <Label>CoolingArmor_Dec</Label>
+    <String>Reduces the damage done by Super-Heated Plasma.</String>
+  </StringTable>
+  <StringTable>
+    <Label>EMPShield_Name</Label>
+    <String>EMP Shield</String>
+  </StringTable>
+  <StringTable>
+    <Label>EMPShield_Dec</Label>
+    <String>Prevents the damage done by Nanite attacks.</String>
+  </StringTable>
+  <StringTable>
+    <Label>LayeredHullPlating_Name</Label>
+    <String>Layered Hull Plating</String>
+  </StringTable>
+  <StringTable>
+    <Label>LayeredHullPlating_Dec</Label>
+    <String>Greatly reduces the damage done by Caustic weapons.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ReflectivePlating_Name</Label>
+    <String>Reflective Plating</String>
+  </StringTable>
+  <StringTable>
+    <Label>ReflectivePlating_Dec</Label>
+    <String>Reduces the damage done by Heat.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExternalFoamExtinguishers_Name</Label>
+    <String>External Foam Extinguishers</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExternalFoamExtinguishers_Dec</Label>
+    <String>Negates any damage done by Napalm.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GravityCorrector_Name</Label>
+    <String>Gravity Corrector</String>
+  </StringTable>
+  <StringTable>
+    <Label>GravityCorrector_Dec</Label>
+    <String>Reduces the damage done by Mass projectiles.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>HS_Accuracy_Desc</Label>
+    <String>Accuracy is a rating of how likely a ship is to hit a target. Higher Accuracy scores make a ship more likely to hit its target with a given attack.</String>
+  </StringTable>  
+  <StringTable>
+    <Label>BattleComponent_Cooldown</Label>
+    <String>[ICON=Cooldown_Stat_Icon] Cooldown</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Cooldown_Format</Label>
+    <String>%d rounds</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_DT</Label>
+    <String>[ICON=Damage_Stat_Icon] Damage Threshold</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Effect</Label>
+    <String>Effect</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Range</Label>
+    <String>[ICON=Range_Stat_Icon] Range</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Range_Units</Label>
+    <String> km</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_PerBattle</Label>
+    <String>[ICON=PerTurn_StatIcon] Uses Per Battle</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_PerBattle_Once</Label>
+    <String>Once</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_PerBattle_Unlimited</Label>
+    <String>Unlimited</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_RaceTraitReq</Label>
+    <String>[ICON=LeaderStat_Expectations_Icon] Target Trait</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_AccuracyMod</Label>
+    <String>Accuracy</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_AttackMod</Label>
+    <String>Attack</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_EvasionMod</Label>
+    <String>Evasion</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_HitPointsMod</Label>
+    <String>Hit Points</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ShieldsMod</Label>
+    <String>Shields</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_BeamDefense</Label>
+    <String>Beam Def.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_KineticDefense</Label>
+    <String>Kinetic Def.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_MissileDefense</Label>
+    <String>Missile Def.</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_BlockTargeting</Label>
+    <String>Targetable</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_BlockTargeting_Value</Label>
+    <String>No</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_DisableEvade</Label>
+    <String>Evasion</String>
+  </StringTable>
+  <StringTable>
+    <Label>BattleComponent_DisableEvade_Value</Label>
+    <String>Disabled</String>
+  </StringTable>
+
+
+  <StringTable>
+    <Label>BattleComponent_PauseWeaponCooldown</Label>
+    <String>Cooldown</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_PauseWeaponCooldown_Value</Label>
+    <String>Paused</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Vampire</Label>
+    <String>Vampirism</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Vampire_Value</Label>
+    <String>Leeches health</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelf</Label>
+    <String>Self</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelf_Format</Label>
+    <String>%s</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelfTeam</Label>
+    <String>Team</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelfTeam_Format</Label>
+    <String>%s for Team</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelfTeamOthers</Label>
+    <String>Teammates</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToSelfTeamOthers_Format</Label>
+    <String>%s for Teammates</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToTarget</Label>
+    <String>Enemy</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToTarget_Format</Label>
+    <String>%s for Enemy</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToTargetTeam</Label>
+    <String>Enemy Team</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToTargetTeam_Format</Label>
+    <String>%s for Enemy Team</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToAll</Label>
+    <String>All Combatants</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ApplyModifierToAll_Format</Label>
+    <String>%s for All Combatants</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Duration</Label>
+    <String>[ICON=Duration_Stat_Icon] Duration</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_DurationFormat</Label>
+    <String>%s rounds</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_DurationInfinite</Label>
+    <String>Infinite</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_ShieldBubble_Value_Format</Label>
+    <String>Up to {VALUE} of Host</String>
+  </StringTable>
+  
+  <StringTable>
+    <Label>BattleComponent_Target</Label>
+    <String>[ICON=BattleComponentTarget_StatIcon] Target</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>BattleComponent_Tooltip_Effects</Label>
+    <String>Battle Modifiers</String>
+  </StringTable>
+  
+    <StringTable>
+        <Label>BattleComponent_Tooltip_Target</Label>
+        <String>Target</String>
+    </StringTable>
+  
+    <StringTable>
+        <Label>BattleComponent_Tooltip_Targets</Label>
+        <String>Targets</String>
     </StringTable>
 
-
+   <StringTable>
+        <Label>GluonDisintegrator_Name</Label>
+        <String>Gluon Disintegrator</String>
+    </StringTable>
+    <StringTable>
+        <Label>GluonDisintegrator_Dec</Label>
+        <String>Astrotech M-8 "Anti-Cohesion" Gluon Beam Emitter.[BR][BR]A highly advanced beam weapon that unravels molecular bonds using targeted gluon disturbances. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>GluonCapacitation_Name</Label>
+        <String>Gluon Capacitation</String>
+    </StringTable>
+    <StringTable>
+        <Label>GluonCapacitation_Dec</Label>
+        <String>Astrotech M-8o "Anti-Cohesion" Gluon Beam Emitter.[BR][BR]Enhances beam weapons by increasing their gluon energy storage and discharge capacity. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>DisruptorPulseArray_Name</Label>
+        <String>Disruptor Pulse Array</String>
+    </StringTable>
+    <StringTable>
+        <Label>DisruptorPulseArray_Dec</Label>
+        <String>Walther Va-2 Disruptor Unit[BR][BR]A weapon system that emits powerful pulses capable of disrupting atomic and subatomic structures. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Phasors_Name</Label>
+        <String>Phasors</String>
+    </StringTable>
+    <StringTable>
+        <Label>Phasors_Dec</Label>
+        <String>Westinghouse P5KA4 advanced phased energy weapon system.[BR][BR]High-intensity energy beams with precise targeting. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedPhasors_Name</Label>
+        <String>Enhanced Phasors</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedPhasors_Dec</Label>
+        <String>Westinghouse P5KA4 mk2 advanced phased energy weapon system.[BR][BR]Advanced phasors with improved beam intensity and efficiency. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>CoilAcceleratorArray_Name</Label>
+        <String>Coil Accelerator Array</String>
+    </StringTable>
+    <StringTable>
+        <Label>CoilAcceleratorArray_Dec</Label>
+        <String>Arsenal Mk XIX rapid-fire railgun.[BR][BR]Rapid-fire kinetic weapon that accelerates projectiles to high velocities. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>NeutoniumPiercerManifest_Name</Label>
+        <String>Neutonium Piercer Manifest</String>
+    </StringTable>
+    <StringTable>
+        <Label>NeutoniumPiercerManifest_Dec</Label>
+        <String>General Destruction Neutonium Piercer Mk I.[BR][BR]Utilizes dense neutronium to pierce through the toughest armors. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>NeutroniumEmitterCannons_Name</Label>
+        <String>Neutronium Emitter Cannons</String>
+    </StringTable>
+    <StringTable>
+        <Label>NeutroniumEmitterCannons_Dec</Label>
+        <String>General Destruction Neutronium Cannon Mk I.[BR][BR]Emits high-density neutronium projectiles for massive kinetic impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedNeutroniumCannon_Name</Label>
+        <String>Enhanced Neutronium Cannon</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedNeutroniumCannon_Dec</Label>
+        <String>General Destruction Neutronium Cannon Mk I.[BR][BR]Advanced cannon that maximizes neutronium projectile effectiveness and speed. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>GravitonVortexArray_Name</Label>
+        <String>Graviton Vortex Array</String>
+    </StringTable>
+    <StringTable>
+        <Label>GravitonVortexArray_Dec</Label>
+        <String>Copeland Industries "Vortex" Array.[BR][BR]Generates a controlled graviton field to create destructive vortexes. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedGravitonVortexArray_Name</Label>
+        <String>Enhanced Graviton Vortex Array</String>
+    </StringTable>
+    <StringTable>
+        <Label>EnhancedGravitonVortexArray_Dec</Label>
+        <String>Copeland Industries Enhanced "Vortex" Array.[BR][BR]Amplifies graviton vortex generation for increased kinetic impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>QuantumCatapult_Name</Label>
+        <String>Quantum Catapult</String>
+    </StringTable>
+    <StringTable>
+        <Label>QuantumCatapult_Dec</Label>
+        <String>Meridoc "Quantum" Catapult MK-IV.[BR][BR]Utilizes quantum mechanics to launch projectiles with unparalleled velocity and impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>HiggsFieldCrusher_Name</Label>
+        <String>Higgs Field Crusher</String>
+    </StringTable>
+    <StringTable>
+        <Label>HiggsFieldCrusher_Dec</Label>
+        <String>Meridoc Higgs Field Manipulator.[BR][BR]Disrupts the Higgs field to momentarily increase target mass and induce catastrophic collapse. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_CerberusWarheads_Name</Label>
+        <String>Cerberus Warheads</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_CerberusWarheads_Dec</Label>
+        <String>Sandrala "Cerberus" Complex Missile.[BR][BR]Missiles with complex multi-layered warheads capable of inflicting cascading damage.[HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_LeviathanTorpedoes_Name</Label>
+        <String>Leviathan Torpedoes</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_LeviathanTorpedoes_Dec</Label>
+        <String>Sandrala "Leviathan" Medium Torpedo.[BR][BR]The Leviathan torpedo uses a shaped antimatter warhead and delivery system to devastate the enemy. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_FuriousLeviathanTorpedoes_Name</Label>
+        <String>Furious Leviathan Torpedoes</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_FuriousLeviathanTorpedoes_Dec</Label>
+        <String>Sandrala "Furious Leviathan" Medium HE Torpedo.[BR][BR]The Leviathan Torpedo upgraded with weight redistributed to deliver High Explosive antimatter variant warheads. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_IcarionMissileCluster_Name</Label>
+        <String>Icarion Missile Cluster</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_IcarionMissileCluster_Dec</Label>
+        <String>Raytheonix "Icarion" Cluster Missile System.[BR][BR]The Icarion missile system uses volleys of antimatter-infused missiles to spread the damage across the enemy's hull. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_OrionsSpear_Name</Label>
+        <String>Orion's Spear</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_OrionsSpear_Dec</Label>
+        <String>The "Orion's Spear" Missile Deployment System.[BR][BR]The Orion's Spear system is a devastating single-target missile launcher that utilizes antimatter to shatter through enemy defenses. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_TritonsRevenge_Name</Label>
+        <String>Triton's Revenge</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_TritonsRevenge_Dec</Label>
+        <String>GH-32 specialized.[BR][BR]Built upon the original Triton Torpedo design, Triton's Revenge uses antimatter and increased missile guidance to better focus its damage. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_KleinsDread_Name</Label>
+        <String>Klein's Dread</String>
+    </StringTable>
+    <StringTable>
+        <Label>Missile_KleinsDread_Dec</Label>
+        <String>Raytheonix Mk 65 "Dread" Torpedos[BR][BR]Klein's Dread torpedos strain against the fabric of space-time to quickly deliver destruction to the enemy. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range.</String>
+    </StringTable>
 </StringTableList>
