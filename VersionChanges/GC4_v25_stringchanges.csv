@@ -1,0 +1,769 @@
+Label,String
+LoyalAbility_Dec,Leaders all have +10 Loyalty and cost 25% less to recruit. +5 Cultural Points when a Leader is assigned to a Command Ship.
+Event_AncientWormhole_Bonus_Name_0X1F4CD,Take the Wormhole Generator artifact.
+Event_AncientWormhole_Bonus_Dec_0X1F4CD,Wormhole Generator artifact goes to the vault.
+CITIZEN_DESCRIPTION_PRETEXT_NO_TRAITS_Option0_0,Consider one of a number of terrestrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. 
+CITIZEN_BIOLOGY_PROMPT_Option0_0,"Based on this short description, which of the following biologies seems more applicable. '''1. Terrestrial Carbon based life; 2. Aquatic based life; 3. Silicon based life; 4. Robotic or Synthetic; 5. Ammonia based life''' As an example, any bipedal or quadrapedal animal would be '''1''', any fish or other sea-life would be '''2''', any partially electronic beings would be '''3''', any fully manufactured beings would be '''4''', and any gaseous being would be '''5'''. Output only a number with no commentary."
+CITIZEN_DESCRIPTION_PROMPT_Option0_0,"Based on this short description, output a creative two sentence description of the citizens of this species. Remember, the description is of the citizens not of the civilization."
+CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0,"Based on this short description, choose one of the following that best describes the species that would represent them in the context of a sci-fi universe. Now choose which species best describes them: '''1. Humans; 2. Elves. 3; Humanoid cats; 4. Felines such as tigers; 5. Robots; 6. Vampires; 7. Dragons; 8. Birds; 9. Amphibians; 10. Dogs; 11. Insects; 12. Crystal; 13. Trees; 14. Reptiles; 15. Demons; 16. Beautiful women; 17. Humanoid; 18. Dwarves; 19. Cyborg; 20. Plants; 21. Zombies; 22. Something else.''' Consider the description as being more important than the traits. If the description mentions a member of a given species, use that species. For example '''Drake''' indicates '''Dragons'''; '''Ant''' indicates '''Insects''', '''Canary''' indicates '''Birds'''. Only Silicon or Synthetic lifeforms can be Robots. Remember only output a single number with NO COMMENTARY or other text."
+BorderSkirmish_Name_1,{PLAYERFACTION:2} Skirmish
+WarOfExpansion_Name_1,{PLAYERFACTION:2} Border Dispute
+WarOfConquest_Name_1,Conquest of the {PLAYERFACTION:2}
+WarOfAnnihilation_Name_1,Annihilation of the {PLAYERFACTION:2}
+Hotspot_ConqueringPlanetsDec,"All colonized planets have a [ICON=Stat_Planetary_Defense_Icon] Planetary Defense rating. This represents how defended a planet is and how much military might it will take to overcome its defenses. [HS=HS_Fleet]Fleets[/HS] have a [ICON=Conquest_Icon] Conquest Rating, representing how equipped they are to besiege a planet. Some ships, like Transport ships, are better equipped to Conquer planets than others.[BR][BR]To initiate a siege, issue a [HS=HS_ShipMovement]Move[/HS] command to a [HS=HS_Fleet]Fleet[/HS] with the target being the Planet to conquer. When the [HS=HS_Fleet]Fleet[/HS] reaches the Planet, it will initiate a siege if its [ICON=Conquest_Icon] Conquest Rating is high enough to overcome the Planet's [ICON=Stat_Planetary_Defense_Icon] Defense Rating."
+Trait_Kindness_Dec,"[I]Love and compassion are necessities, not luxuries. Without them, we cannot survive.[/I][BR][BR][COLOR=UIDefaultHighlight] Permanent bonus to Approval based on Pacifism Cultural Awareness[/COLOR][BR][COLOR=UIDefaultHighlight] +1 Diplomacy[/COLOR][BR][COLOR=UIDefaultHighlight]3 Constructor ships join you[/COLOR]"
+AidEconomy_ShortDec,Provides 100 credits
+CentauronEmporium_Name,Centauron Emporium
+MasterColonizationTech_Name,Science
+MasterTech_Warfare_Name,Weapons
+MasterTech_Warfare_ShortDec,Allows adding weapons to our ships.
+MasterTech_Warfare_Dec,Allows adding weapons to our ships.
+MasterTheCallingTech_ShortDec,Allows the Krynniac Temple to upgrade to the Krynniac Mission.
+MasterTheOrderTech_ShortDec,Allows the Krynniac Mission to upgrade to the Krynniac Order and construction of the Krynniac Sanctuary.
+MasterThePathofShadows_ShortDec,Allows construction of the Temple of Whispers.
+MasterTech_AsteroidMining_ShortDec,Allows us to start building Asteroid Miners that boost our world's manufacturing.
+MasterTech_KineticDischargeMiniaturization_Name,Coil Acceleration
+MasterTech_KineticDischargeMiniaturization_ShortDec,"A variation on railguns and gauss cannons, using magnetic coils for projectile acceleration."
+MasterTech_KineticAugmentation_Name,Neutronium Weapons
+MasterTech_HyperFieldMassDrivers_Name,Neutronium Augmentations
+MasterTech_ImprovedKineticWeaponDoctrine_Name,Neutronium Mastery
+MasterTech_GravitonGuns_Name,Graviton Weapons
+MasterTech_ExoticMassWeaponry_Name,Gravitonic Vortex Weapons
+MasterTech_InertiaEnhancement_Name,Electrodynamic Gravitonics
+MasterTech_KineticWeaponMastery_Name,Quantum Catapults
+MasterTech_MassManipulation_Name,Higgs Fields Disruption
+MasterTech_MassManipulation_Dec,"A breakthrough in particle sciences has enabled us to disrupt the Higghs field via projectiles which are are arguably massless, at least until a quantum chain reaction decays to a certain point. By mixing these particles with conventional matter, we can fire practically wafer-thin projectiles which become far heavier on the way to their target."
+MasterTech_MissilePayloadOptimization_Name,Matadrox Missile Components
+MasterTech_MissilePayloadOptimization_ShortDec,Enhance missile efficacy with Matadrox component integration.
+MasterTech_ImprovedMissileWarfareDoctrine_Name,Cerberus Warhead Ensemble
+MasterTech_PayloadMiniaturization_Name,Leviathan Warheads
+MasterTech_AdaptiveMissileSystem_Name,Fury Missile Enhancements
+MasterTech_AdaptiveMissileSystem_ShortDec,Elevate missile intelligence with Fury Missile Enhancements.
+MasterTech_ImprovedMissileProduction_Name,Icarion Warhead Clusters
+MasterTech_ImprovedMissileProduction_ShortDec,Refine tactics with the Cerberus Warhead Ensemble's multi-target capabilities.
+MasterTech_AntimatterDetonation_ShortDec,Maximize destruction with advanced Antimatter Detonation techniques.
+MasterTech_AntimatterDetonation_Dec,"Antimatter Detonation technology harnesses the universe's most potent energy source, allowing for unprecedented destructive power. By annihilating matter upon contact, this tech offers a leap in missile warfare, ensuring that our payloads deliver cataclysmic damage with unparalleled efficiency. A game-changer in strategic offense."
+MasterTech_AdvancedMissileDoctrine_Name,Orion's Spear
+MasterTech_AdvancedMissileDoctrine_ShortDec,Semi-Sentient Missile System
+MasterTech_MissileWarfareMastery_Name,Orion's Fury
+TerranAllianceCorvette_Name,Dauntless
+TerranAllianceCorvetteEnhanced_Name,Intrepid 
+Chaff_Dec,Reduces damage done by [ICON=MissileAttackIcon] Missile Attacks.
+CarrierModule_Dec,Carries 4 Fast and deadly Assault Fighters
+FrigateModule_Dec,A special module required in order to enable Frigate class ships.
+PresetCategory_Fighter_Dec,Fighter Category ships are Tiny Hull vessels that have increased [HS=HS_PointDefense]Evasion[/HS].
+PresetCategory_Bomber_Dec,Bomber Category ships are Tiny Hull vessels that deal increased Damage.
+PresetCategory_Frigate_Dec,Frigate Category ships are Small Hull vessels that have increased [HS=HS_Accuracy]Accuracy[/HS].
+PresetCategory_Cruiser_Dec,Cruiser Category ships are Medium Hull vessels that have increased Weapon Range.
+PresetCategory_Battleship_Dec,Battleship Category ships are Large Hull vessels that have increased [HS=HS_ArmorRating]Armor[/HS].
+PresetCategory_Dreadnought_Dec,Dreadnought Category ships are Huge Hull vessels that have increased [HS=HS_ShieldStrength]Shield Strength[/HS].
+PresetCategory_Siege_Dec,Siege Category ships are Small Hull vessels that have an increased Conquest Rating.
+PresetCategory_Invader_Dec,Invader Category ships are Cargo Hull vessels that have a highly increased Conquest Rating.
+NEW_DESIGN_BENEFITS_LABEL_Fighter,+25% [HS=HS_PointDefense]Evasion[/HS]
+NEW_DESIGN_BENEFITS_LABEL_Bomber,+10% Damage
+NEW_DESIGN_BENEFITS_LABEL_Frigate,+25% [HS=HS_Accuracy]Accuracy[/HS]
+NEW_DESIGN_SPECS_LABEL_Cruiser,Medium combat ship
+NEW_DESIGN_BENEFITS_LABEL_Cruiser,+10% Weapon Range
+NEW_DESIGN_BENEFITS_LABEL_Siege,+12 Conquest Rating
+NEW_DESIGN_BENEFITS_LABEL_Battleship,+10% [HS=HS_ArmorRating]Armor[/HS]
+NEW_DESIGN_BENEFITS_LABEL_Dreadnought,+10% [HS=HS_ShieldStrength]Shield Strength[/HS]
+NEW_DESIGN_BENEFITS_LABEL_Constructor,Creates a [HS=HS_Starbase]Starbase[/HS]
+NEW_DESIGN_BENEFITS_LABEL_Invader,+40 Conquest Rating
+AttackOrder_FighterFirst_Name,Smallest Combatants
+AttackOrder_BomberFirst_Name,Bombers
+AttackOrder_FrigateFirst_Name,Gunships
+AttackOrder_CruiserFirst_Name,Capital Ships
+AttackOrder_SupportFirst_Name,Support Ships
+AttackOrder_NeverAttackFirst_Name,Return Fire Only
+OperationalAbility_LongReach_Name,Long Shot
+ProximaCentauriSystem_Dec,The home system of the exiled Terran Resistance. It contains a class 23 [HS=HS_MountainousWorld]Mountainous[/HS] world and a single small world.
+STATDEC_PlanetaryDefense,[HS=HS_PlanetaryDefense]Planetary Defense[/HS] [HS=HS_Improvement]Improvements[/HS] increase a Colony's ability to resist Invasion and extend how long it takes an invading [HS=HS_Fleet]Fleet[/HS] to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.
+STATDEC_ResistanceBonus,Resistance measures how resilient a Colony is to foreign [HS=HS_Influence]Influence[/HS]. A higher Resistance will cause it to take longer for a Colony to rebel when in another Civilization's [HS=HS_ZoneOfControl]Zone of Control[/HS].
+STATDEC_PlanetaryDefensesHP,A rating of how powerful the Colony's defenses are. Higher [HS=HS_PlanetaryDefense]Planetary Defenses[/HS] cause Invasions to take more [HS=HS_Months]Turns[/HS] and require [HS=HS_Fleet]Fleets[/HS] to have higher [ICON=Conquest_Icon] Conquest Ratings to try to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.
+STATDEC_PlanetaryDefensesMaxHP,A rating of how powerful the Colony's defenses are. Higher [HS=HS_PlanetaryDefense]Planetary Defenses[/HS] cause Invasions to take more [HS=HS_Months]Turns[/HS] and require [HS=HS_Fleet]Fleets[/HS] to have higher [ICON=Conquest_Icon] Conquest Ratings to try to [HS=HS_ConqueringPlanets]Conquer[/HS] the Colony.
+STATNAME_SiegeAbility,[ICON=Conquest_Icon] Conquest Rating
+Tutorial2_Name,Science
+SHIP_DESIGNER_CATEGORY_Fighter,[HS=HS_PointDefense]Fighters[/HS]
+RESEARCH_WEAPONS_LABEL,Weapons
+RESEARCH_ECONOMIC_LABEL,Science
+GROWTH_TOOLTIP_DESCRIPTION,"Growth comes from the non-synthetic citizens on your world. Planetary Improvements and Citizen Roles can be leveraged to increase Growth. However, Growth can also be significantly decreased on worlds with high pollution."
+PlanetaryDefensesHPFormatString,{AMOUNT}
+ALERT_BesiegedPlanet,"Our planet {PLANETNAME} is under siege, and will fall in {AMOUNT} months."
+ALERT_ConqueredPlanetWin,We have conquered the planet {PLANETNAME}.
+ALERT_ConqueredPlanetLoss,{PLANETNAME} has been conquered.
+Unit_Entrepreneur_Dec,Entrepreneurs provide boost a world's [HS=HS_ColonyGrossIncome]Income[/HS] based on their Social trait.
+Unit_Entrepreneur2_Name,Economist
+Unit_Entrepreneur2_Dec,Economists provide [HS=HS_TradeLicensesMax]Trade Licenses[/HS] as well as boost a world's [HS=HS_ColonyGrossIncome]Income[/HS] based on their Social and [HS=Manufacturing]Manufacturing[/HS] based on their Diligence.
+WarAims_BorderSkirmish_Name,War of Defense
+WarAims_BorderSkirmish_Desc,A short-term war with the intent to preempt aggression and protect borders. Declaring a War of Defense carries minor diplomatic penalties.[BR][BR]Gain [HS=HS_AggressiveNeighbor]Aggressive Neighbor[/HS]
+WarAims_WarOfExpansion_Desc,A moderate-length war with the intent to expand borders and spread influence. Declaring a War of Expansion results in diplomatic penalties.[BR][BR]Gain [HS=HS_DangerousNeighbor]Dangerous Neighbor[/HS]
+WarAims_WarOfConquest_Desc,A long-term war with the intent to claim vast expanses of enemy territory. Declaring a War of Conquest comes with harsher diplomatic penalties.[BR][BR]Gain [HS=HS_GalacticThreat]Galactic Threat[/HS]
+WarAims_WarOfAnnihilation_Desc,A prolonged war with the intent to wipe out the enemy civilization. Declaring a War of Annihilation will carry severe diplomatic penalties.[BR][BR]Gain [HS=HS_ClearAndPresentDanger]Clear and Present Danger[/HS]
+WarAction_CaptureCoreWorld_Name,Conquer Core World
+WarAction_CaptureColony_Name,Conquer Colony
+WarAction_CaptureColony_Completed_Name,Colonies Conquered
+WarAction_CaptureStarbase_Name,Conquer Starbase
+WarAction_CaptureStarbase_Completed_Name,Starbase Conquered
+WAR_NAME_BORDER_SKIRMISH_GENERIC_1,War of Defense
+BattleClass_Probe_Name,Probe
+BattleClass_Probe_Description,Probe
+BattleClass_Miner_Name,Miner
+BattleClass_Miner_Description,Miner
+BattleClass_Survey_Name,Flag
+BattleClass_Survey_Description,Flag
+BattleClass_Fighter_Name,Fighter
+BattleClass_Fighter_Description,Fighter
+BattleClass_Frigate_Name,Frigate
+BattleClass_Frigate_Description,Frigate
+BattleClass_Cruiser_Name,Cruiser
+BattleClass_Cruiser_Description,Cruiser
+BattleClass_Battleship_Name,Battleship
+BattleClass_Battleship_Description,Battleship
+BattleClass_Dreadnought_Name,Dreadnought
+BattleClass_Dreadnought_Description,Dreadnought
+BattleClass_Colony_Name,Colony
+BattleClass_Colony_Description,Colony
+BattleClass_Constructor_Name,Constructor
+BattleClass_Constructor_Description,Constructor
+BattleClass_Freighter_Name,Freighter
+BattleClass_Freighter_Description,Freighter
+BattleClass_SupplyShip_Name,Supply Ship
+BattleClass_SupplyShip_Description,Supply Ship
+BattleClass_Siege_Name,Siege
+BattleClass_Siege_Description,Siege
+BattleClass_Invader_Name,Invader
+BattleClass_Invader_Description,Invader
+BattleClass_Undeclared_Name,Undeclared
+BattleClass_Undeclared_Description,Undeclared
+BattleClass_Mercenary_Name,Mercenary
+BattleClass_Mercenary_Description,Mercenary
+BattleClass_Bomber_Name,Bomber
+BattleClass_Bomber_Description,Bomber
+BattleClass_CombatShipClass_Name,Combat Ship Class
+BattleClass_CombatShipClass_Description,Combat Ship Class
+BattleClass_Support_Name,Support
+BattleClass_Support_Description,Support
+BattleClass_HypergateShip_Name,Hypergate Ship
+BattleClass_HypergateShip_Description,Hypergate Ship
+BattleClass_Carrier_Name,Carrier
+BattleClass_Carrier_Description,Carrier
+BorderSkirmish_SimpleName,War of Defense
+BorderSkirmish_Name_3,{PLAYERFACTION:2} Minor Conflict
+BorderSkirmish_Name_4,{PLAYERFACTION:1} Defensive Campaign
+BorderSkirmish_Name_5,The {PLAYERFACTION:2} War of Defense
+WarOfExpansion_SimpleName,War of Expansion
+WarOfExpansion_Name_2,{PLAYERFACTION:1} Annexation Campaign
+WarOfExpansion_Name_3,{PLAYERFACTION:2} Conflict
+WarOfExpansion_Name_4,The {PLAYERFACTION:2} War of Expansion
+WarOfConquest_SimpleName,War of Conquest
+WarOfConquest_Name_2,{PLAYERFACTION:2} Major Conflict
+WarOfConquest_Name_3,{PLAYERFACTIONLONG:1} Territory Conquest
+WarOfConquest_Name_4,The {PLAYERFACTION:2} War of Conquest
+WarOfConquest_Name_5,{PLAYERFACTION:1} Conquest Campaign
+WarOfAnnihilation_SimpleName,War of Annihilation
+WarOfAnnihilation_Name_2,End of the {PLAYERFACTION:2}
+WarOfAnnihilation_Name_3,{PLAYERFACTION:1} - {PLAYERFACTION:2} War
+WarOfAnnihilation_Name_4,The {PLAYERFACTION:2} War of Annihilation
+WarOfAnnihilation_Name_5,{PLAYERFACTION:1} Eradication Campaign
+Hotspot_WeaponCooldown_Label,Weapon Cooldown
+Hotspot_WeaponCooldown_Desc,Weapon Cooldown is the time it takes for a weapon to rearm. It measures the number of Turns in combat between shots. Reducing Weapon Cooldown allows a weapon to fire more frequently.
+ConquestBonus_SourceFallback,Conquest Rating Bonus
+Tactic_EstimatedDuration_Label,Estimated Duration:
+Tactic_EstimatedDuration_ValueFormat,{AMOUNT} Months
+Tactic_DuringSiege_Header,During Siege
+Tactic_AfterSiege_Header,After Siege
+Tactic_Format_FlatBonus,[COLOR={TINTCOLOR}]{VALUE} {STATNAME}[/COLOR]
+Tactic_Format_MultBonus,[COLOR={TINTCOLOR}]{VALUE}% {STATNAME}[/COLOR]
+Tactic_Format_KilledCitizens,Kills {AMOUNT}% of citizens
+Tactic_Format_DestroyedImps,Kills {AMOUNT}% of improvements
+Tactic_Format_BombardedTiles,Ravages {AMOUNT}% of planet tiles
+Tactic_Format_ChangedTiles,Changes {AMOUNT}% of planet tiles into {CHANGEDTILELIST}
+InvasionReport_Label_KilledUnits,[ICON=InvasionResults_KilledCitizens] Citizens Killed
+InvasionReport_Label_BombardedTiles,[ICON=InvasionResults_BombardedTiles] Tiles Bombarded
+InvasionReport_Title_ChangedTiles,[ICON=InvasionResults_BombardedTiles] Changed Tiles
+Tactic_Format_LiberateDescription,"Create splinter faction, with {VALUE} [HS=HS_Diplomacy]Diplomacy[/HS] for {DURATION} Months"
+InvasionReport_Label_LiberateOwner,[ICON=InvasionResults_NewFactionOwner] New Faction
+InvasionReport_Liberate_Description,{VALUE} [HS=HS_Diplomacy]Diplomacy[/HS] for {DURATION} Months
+InvasionTactic_PlanetaryAssault_Name,Planetary Assault
+InvasionTactic_PlanetaryAssault_Description,Follow general siege protocol to wear down the planet and eventually exert a total claim over the planet. Siege protocol focuses on minimizing casualties and collateral damage.
+InvasionTactic_PlanetaryAssault_OnConqueredEffects,Assault Conquered
+InvasionTactic_OrbitalBombardment_Name,Orbital Bombardment
+InvasionTactic_OrbitalBombardment_Description,Use ship-mounted artillery to wreak havoc and destruction across the planet. The devastation caused by an orbital bombardment makes a world easier to conquer at the cost of favor and infrastructure.
+InvasionTactic_OrbitalBombardment_OnConqueredEffects,Bombardment Conquered
+InvasionTactic_Propaganda_Name,Propaganda
+InvasionTactic_Propaganda_Description,"Employ psychological and media tactics to win the hearts and minds of the populace. Slowly bring the citizenry to accept their change in ownership, preserving morale, life, and infrastructure."
+InvasionTactic_Propaganda_OnConqueredEffects,Propaganda Conquered
+InvasionTactic_BiologicalAttacks_Name,Biological Attacks
+InvasionTactic_BiologicalAttacks_Description,Use genetically engineered pathogens targeted at the citizenry. Facilitate a faster invasion without damaging the existing infrastructure but make the planet less inhabitable by organic life.
+InvasionTactic_BiologicalAttacks_OnConqueredEffects,Biological Attack Conquered
+InvasionTactic_EMPAttacks_Name,EMP Attacks
+InvasionTactic_EMPAttacks_Description,Use targeted EMP bursts to disrupt production and damage synthetic citizens. Facilitate a faster invasion without damaging the existing infrastructure but slow down manufacturing and damage tech.
+InvasionTactic_EMPAttacks_OnConqueredEffects,EMP Attack Conquered
+InvasionTactic_ShatterAttacks_Name,Shatter Attacks
+InvasionTactic_ShatterAttacks_Description,Use target frequencies that cause physical damage to silicon-based lifeforms. Facilitate a faster invasion without damaging the existing infrastructure but damaging the planet's raw materials.
+InvasionTactic_ShatterAttacks_OnConqueredEffects,Shatter Attack Conquered
+InvasionTactic_SurfaceInvasions_Name,Surface Invasions
+InvasionTactic_SurfaceInvasions_Description,"Put units on the planet's surface to conduct an invasion. Units can minimize infrastructure damage, but the ensuing battles will cost some lives and those that survive will take longer to adapt to new authority."
+InvasionTactic_SurfaceInvasions_OnConqueredEffects,Surface Invasion Conquered
+InvasionTactic_AnnihilateTargets_Name,Annihilate Targets
+InvasionTactic_AnnihilateTargets_Description,Show no mercy. Unleash all havoc upon the planet. Bombard it with artillery and send in the troops to eliminate resistance. Use efficiency and brutality to ensure nothing of the enemy remains at the end of the siege.
+InvasionTactic_Liberate_Name,Liberate
+InvasionTactic_Liberate_Description,Bring freedom to the people. Carefully choose targets and utilize propaganda tactics to revoke the authority of the current owner. The planet will not be conquered but instead will be allowed to become its own faction.
+MasterTech_Weapons_Name,Weapons
+MasterTech_Weapons_ShortDec,Allows adding weapons to our ships.
+MasterTech_Weapons_Dec,Allows adding weapons to our ships.
+MasterTech_Defense_Name,Defense
+MasterTech_Defense_ShortDec,Allows adding defenses to our ships.
+MasterTech_Defense_Dec,Allows adding defenses to our ships.
+MasterTech_Conquest_Name,Conquest
+MasterTech_Conquest_ShortDec,Allows the invasion of other worlds.
+MasterTech_Conquest_Dec,Allows the invasion of other worlds.
+Tech_Sanctuary_Name,Sanctuary
+MasterTech_ExperimentalWeapons_Name,Experimental Weapons
+MasterTech_ExperimentalWeapons_ShortDec,Frontiers in armament technology and materials science.
+MasterTech_ExperimentalWeapons_Dec,"By harnessing the latest in quantum computing and nanomaterials, 'Experimental Weapons' offers a leap forward in armaments, enabling the creation of devices with unprecedented destructive capability and precision. This technology not only pushes the boundaries of known physics but also opens up new strategies in warfare, ensuring that our fleets hold the upper hand in any encounter."
+MasterTech_AssaultShuttles_Name,Assault Shuttles
+MasterTech_AssaultShuttles_ShortDec,Rapid deployment and boarding capabilities.
+MasterTech_AssaultShuttles_Dec,"The advent of Assault Shuttles marks a new era in tactical warfare, offering unmatched speed and agility for deploying troops directly into the heart of enemy territory. These advanced crafts are designed for quick strikes and fast extractions, enabling our forces to dominate space-to-ground engagements."
+MasterTech_IonWeapons_Name,Ion Weapons
+MasterTech_IonWeapons_ShortDec,Advanced armaments that destabilize at the molecular level.
+MasterTech_IonWeapons_Dec,"Ion Weapons technology harnesses highly charged particles to disrupt enemy systems and infrastructure. By striking targets with beams of ions, these weapons can penetrate shields more effectively than conventional arms, causing internal damage that is both swift and devastating."
+MasterTech_TimeDilationWeapons_Name,Time Dilation Weapons
+MasterTech_ExoticEnergies_Name,Exotic Energies
+MasterTech_ExoticEnergies_ShortDec,Harnessing the unknown for advanced power applications.
+MasterTech_ExoticEnergies_Dec,"Exotic Energies technology represents a breakthrough in the understanding and application of energy forms beyond the standard spectrum. This advancement allows for the creation of weapons, shields, and power sources with capabilities far exceeding current limits, opening new avenues for exploration, defense, and warfare."
+MasterTech_TimeDilationWeapons_ShortDec,Warping time to dominate battles.
+MasterTech_TimeDilationWeapons_Dec,"Time Dilation Weapons leverage the manipulation of time to disorient and neutralize opponents. By creating localized fields where time flows at a dramatically altered rate, these weapons can effectively incapacitate enemy forces, equipment, and defenses, providing a significant advantage in any conflict scenario."
+MasterTech_NaniteDefenseSystems_Name,Nanite Defense Systems
+MasterTech_CloakingDevices_Name,Cloaking Devices
+MasterTech_CloakingDevices_ShortDec,Mastering the art of invisibility.
+MasterTech_CloakingDevices_Dec,"Cloaking Devices represent a pinnacle in stealth technology, enabling ships and structures to become virtually invisible to the naked eye and radar detection. This tech not only provides a strategic advantage in evading enemy surveillance and attacks but also opens up new possibilities for reconnaissance and surprise maneuvers, fundamentally altering the dynamics of warfare and espionage."
+MasterTech_TheronicWeaponry_Name,Theronic Weaponry
+MasterTech_TheronicWeaponry_ShortDec,Harnessing thermo-nuclear reactions for unparalleled destruction.
+MasterTech_TheronicWeaponry_Dec,"Theronic Weaponry integrates advanced thermo-nuclear fusion processes to create weapons of unprecedented power. This technology allows for the construction of arms that can unleash devastating energy blasts, capable of annihilating entire fleets or obliterating planetary defenses in a single strike, marking a new era in warfare technology."
+MasterTech_NaniteDefenseSystems_ShortDec,Microscopic guardians for macroscopic security.
+MasterTech_NaniteDefenseSystems_Dec,"Nanite Defense Systems utilize swarms of microscopic robots to protect and repair spacecraft and infrastructure. These nanites can quickly respond to breaches, structural damage, or incoming projectiles, offering a dynamic and adaptive layer of defense that significantly enhances survivability in the face of enemy aggression."
+MasterTech_NeutronWeapons_Name,Neutron Manipulation
+MasterTech_NeutronWeapons_ShortDec,Enables the distortion of subspace reducing enemy targeting abilities.
+MasterTech_NeutronWeapons_Dec,"Neutron Manipulation marks a significant leap forward in strategic warfare, utilizing neutron emission to inflict maximum interference on enemy sensor equipment. This precision makes them particularly effective in neutralizing targets where the goal is to get close before striking. If they can't hit you, you can get closer."
+MasterTech_DamageReflection_Name,Damage Reflection
+MasterTech_DamageReflection_ShortDec,Turn the tide by using enemy forces against them.
+MasterTech_DamageReflection_Dec,"Damage Reflection technology represents a paradigm shift in defensive capabilities, enabling the absorption and redirection of incoming energy attacks back towards the aggressor. This not only provides a robust layer of protection but also introduces a psychological deterrent, as adversaries must now consider the potential repercussions of their assaults being turned against them."
+MasterTech_Shocktroopers_Name,Shocktroopers
+MasterTech_Shocktroopers_ShortDec,Elite troops for boarding enemy starships.
+MasterTech_Shocktroopers_Dec,"Shocktroopers are the vanguard of modern interstellar warfare, equipped with heavy-duty armor and cutting-edge weaponry designed for rapid starship assault and breaching operations. Trained to operate in any environment, these elite units specialize in delivering a decisive first strike, overwhelming enemy defenses with sheer firepower and tenacity."
+MasterTech_BiologicalTargeting_Name,Biological Targeting
+MasterTech_BiologicalTargeting_ShortDec,Precision weaponry tailored to enemy vulnerabilities.
+MasterTech_BiologicalTargeting_Dec,"Biological Targeting technology revolutionizes warfare by enabling the development of weapons systems that can identify and exploit the specific biological weaknesses of different alien species. This approach allows for unprecedented efficiency in combat, minimizing collateral damage and ensuring that engagements are as brief as they are decisive."
+MasterTech_DesperateMeasures_Name,Desperate Measures
+MasterTech_DesperateMeasures_ShortDec,Last-resort weaponry for existential threats.
+MasterTech_DesperateMeasures_Dec,"In the face of overwhelming threats to our civilization's very existence, Desperate Measures encompasses the development and deployment of extreme weapons. These are designed without regard for the usual constraints of warfare, targeting alien species indiscriminately to ensure survival at any cost. Such weapons are a testament to the dire situations that necessitate their creation, marking a dark chapter in the annals of interstellar conflict."
+MasterTech_Logistics_Name,Logistics
+MasterTech_Logistics_ShortDec,Optimizing supply chains for maximum efficiency.
+MasterTech_Logistics_Dec,"Logistics technology represents a comprehensive approach to managing the flow of resources, personnel, and information across vast interstellar distances. By integrating advanced AI algorithms, predictive analytics, and real-time monitoring systems, this advancement ensures that our supply chains are optimized for efficiency, resilience, and adaptability, enabling our civilization to thrive in the face of logistical challenges."
+NeuroflexPlating_Name,Neuroflex Plating
+NeuroflexPlating_Dec,Increases Armor Rating
+DiamonicCompositeArmor_Name,Diamonic Composite Armor
+DiamonicCompositeArmor_Dec,Increases Armor Rating
+CommandModule_Name,Command Ship Module
+CommandModule_Dec,A special module required in order to enable Command Ship class ships.
+CorvetteModule_Name,Corvette Module
+CorvetteModule_Dec,A special module required in order to enable Corvette class ships.
+DestroyerModule_Name,Destroyer Module
+DestroyerModule_Dec,A special module required in order to enable Destroyer class ships.
+CarriershipModule_Name,Carrier Module
+CarriershipModule_Dec,A special module required in order to enable Carrier class ships.
+IonGun_Name,Ion Cannon
+IonGun_Dec,TM and E ltd. EN-4211 Targeted Ionized Delivery System.[BR][BR]Fires an ionized blast of energy to disable a target's [HS=HS_PointDefense]Evasion[/HS] capabilities.
+TimeDilator_Name,Time Dilator
+TimeDilator_Dec,"GravLabs Project 328 ""The Time Dilator.""[BR][BR]Uses intense bursts of gravitation to warp time dilation in a localized area to halt the cooldown of a target's weapons, resulting in a significantly reduced rate of fire."
+CloakingDevice_Name,Cloaking Device
+CloakingDevice_Dec,"TM and E ltd. MI-4335 Acquisition Disruption System.[BR][BR]Deploys a combination of visual and instrument manipulation to cloak the equipped ship, rendering the ship un-targetable by enemy weapons."
+NeutronScrambler_Name,Neutron Scrambler
+NeutronScrambler_Dec,"GravLabs Project 152 ""The Neutron Scrambler.""[BR][BR]Excites the particles around a target to reduce the target's [HS=HS_Accuracy]Accuracy[/HS]."
+TheronRay_Name,Theron Ray
+TheronRay_Dec,Radiates a beam that disorients targets to such a degree it causes them to take increased damage. Only affects [HS=HS_CarbonBased]Carbon Based[/HS] lifeforms.
+ShatteringPulse_Name,Shattering Pulse
+ShatteringPulse_Dec,Emits signals that disorient targets to such a degree that it causes them to take increased damage. Only affects [HS=HS_SiliconBased]Silicon Based[/HS] lifeforms.
+UVField_Name,UV Field
+UVField_Dec,Produces emissions that disorient targets to such a degree that it causes them to take increased damage. Only affects [HS=HS_AmmoniaBased]Ammonia Based[/HS] lifeforms.
+VampireModule_Name,Vampire Module
+VampireModule_Dec,"Meridoc Vampire Module.[BR][BR] Enhances the functionality of all weapons on the equipped ship, allowing damage done to targets to be absorbed and converted into repairs for the equipped ship."
+ShieldBubble_Name,Shield Bubble
+ShieldBubble_Dec,"Provides shielding to the equipped ship's allies. At the start of combat, the Shield Bubble ensures all ships in fleet have a shield at least as strong as a percentage of the equipped ship's shield strength. Ships with stronger shields are unaffected."
+RepairNaniteCloud_Name,Repair Nanite Cloud
+RepairNaniteCloud_Dec,"VTE Specialized Nanotech var. Repair.[BR][BR]A housing unit that produces a dense grouping of nanite drones that will repair structural damage. When an ally within range is damaged in combat, Repair Nanites will be released to repair the damage and restore some of the ship's [HS=HS_HitPoints]Hit Points[/HS]."
+Reflector_Name,Reflector
+Reflector_Dec,Reduces the damage done by [ICON=BeamAttackIcon] Beam Attacks.
+EWeb_Name,E-Web
+EWeb_Dec,Reduces the damage done by [ICON=KineticAttackIcon] Kinetic Attacks.
+AssaultShuttle_Name,Assault Shuttle
+AssaultShuttles_Name,Assault Shuttles
+AssaultShuttles_Dec,"Short-range transport shuttles that allow Assault Marines to board hostile vessels. Assault Marines specialize in close-quarters combat associated with battles on ships. When Assault Marines successfully board and wipe out a ship, they claim the ship for the civilization, changing its ownership."
+MarineModule_Name,Marine Berthing
+MarineModule_Dec,"Berthing units give housing and space to Defense Marines, which helps resist the boarding actions of hostile units. Defense Marines make it much harder for enemies to take over a ship."
+NuclearWarhead_Name,Nuclear Warhead
+NuclearWarhead_Dec,"Celestitech E-53 ""Atomic Devastator"" Nuclear Warhead.[BR][BR]A missile-propelled warhead that delivers a nuclear payload with a distinctive damage profile."
+SuperHeatedPlasmaLauncher_Name,Super-Heated Plasma Launcher
+SuperHeatedPlasmaLauncher_Dec,Westinghouse M1K Crude Plasma Pod.[BR][BR]Launches sprays of unrestrained plasma at short range with a distinctive damage profile.
+RipperNaniteCloud_Name,Ripper Nanite Cloud
+RipperNaniteCloud_Dec,VTE Specialized Nanotech var. Ripper.[BR][BR]A dense grouping of nanites used to cause tear and cut at the external structure of a ship with a distinctive damage profile.
+CausticWasteThrower_Name,Caustic Waste Thrower
+CausticWasteThrower_Dec,Nurgit Weaponized Waste Recycler.[BR][BR]Releases a liquid-like compound of caustic waste that burns through a ship's hull with a distinctive damage profile.
+HeatArray_Name,Heat Array
+HeatArray_Dec,"Walther B-9 Energy Transfer System.[BR][BR]Focuses radiation that causes heat to build up on a target, which can warp a ship's structure with a distinctive damage profile."
+NapalmInfusedPlasma_Name,Napalm Infused Plasma
+NapalmInfusedPlasma_Dec,General Destruction Vacuum Resilient Napalm.[BR][BR]A mixture of plasma and napalm that produces a burning plasma that thrives in a vacuum and has a devastating and distinctive damage profile.
+MassGravityDriver_Name,Mass Gravity Driver
+MassGravityDriver_Dec,Copeland Industries Weaponized Mass Driver.[BR][BR]Launches magnetized projectiles at high speeds that warp gravity around them and have a distinctive damage profile.
+PrototypeRailgun_Name,Prototype Railgun
+PrototypeRailgun_Dec,Arsenal Prototype 117.[BR][BR]A variation of the Railgun that utilizes experimental (often unsafe) technology and ammunition with very poor accuracy which results in a distinctive damage profile.
+CloseRangeTurrets_Name,Close-Range Turrets
+CloseRangeTurrets_Dec,"General Destruction Self-Defense Turrets.[BR][BR]A series of hull-mounted turrets that can hammer a target's hull with a small caliber fire. They only work at incredibly close range and do very little damage, but they can give a ship an edge in a hectic fight."
+LeadBarrier_Name,Lead Barrier
+LeadBarrier_Dec,Greatly reduces the damage done by Nuclear weapons.
+CoolingArmor_Name,Cooling Armor
+CoolingArmor_Dec,Reduces the damage done by Super-Heated Plasma.
+EMPShield_Name,EMP Shield
+EMPShield_Dec,Prevents the damage done by Nanite attacks.
+LayeredHullPlating_Name,Layered Hull Plating
+LayeredHullPlating_Dec,Greatly reduces the damage done by Caustic weapons.
+ReflectivePlating_Name,Reflective Plating
+ReflectivePlating_Dec,Reduces the damage done by Heat.
+ExternalFoamExtinguishers_Name,External Foam Extinguishers
+ExternalFoamExtinguishers_Dec,Negates any damage done by Napalm.
+GravityCorrector_Name,Gravity Corrector
+GravityCorrector_Dec,Reduces the damage done by Mass projectiles.
+HS_Accuracy_Desc,Accuracy is a rating of how likely a ship is to hit a target. Higher Accuracy scores make a ship more likely to hit its target with a given attack.
+BattleComponent_Cooldown,[ICON=Cooldown_Stat_Icon] Cooldown
+BattleComponent_Cooldown_Format,%d rounds
+BattleComponent_DT,[ICON=Damage_Stat_Icon] Damage Threshold
+BattleComponent_Effect,Effect
+BattleComponent_Range,[ICON=Range_Stat_Icon] Range
+BattleComponent_Range_Units, km
+BattleComponent_PerBattle,[ICON=PerTurn_StatIcon] Uses Per Battle
+BattleComponent_PerBattle_Once,Once
+BattleComponent_PerBattle_Unlimited,Unlimited
+BattleComponent_RaceTraitReq,[ICON=LeaderStat_Expectations_Icon] Target Trait
+BattleComponent_AccuracyMod,Accuracy
+BattleComponent_AttackMod,Attack
+BattleComponent_EvasionMod,Evasion
+BattleComponent_HitPointsMod,Hit Points
+BattleComponent_ShieldsMod,Shields
+BattleComponent_BeamDefense,Beam Def.
+BattleComponent_KineticDefense,Kinetic Def.
+BattleComponent_MissileDefense,Missile Def.
+BattleComponent_BlockTargeting,Targetable
+BattleComponent_BlockTargeting_Value,No
+BattleComponent_DisableEvade,Evasion
+BattleComponent_DisableEvade_Value,Disabled
+BattleComponent_PauseWeaponCooldown,Cooldown
+BattleComponent_PauseWeaponCooldown_Value,Paused
+BattleComponent_Vampire,Vampirism
+BattleComponent_Vampire_Value,Leeches health
+BattleComponent_ApplyModifierToSelf,Self
+BattleComponent_ApplyModifierToSelf_Format,%s
+BattleComponent_ApplyModifierToSelfTeam,Team
+BattleComponent_ApplyModifierToSelfTeam_Format,%s for Team
+BattleComponent_ApplyModifierToSelfTeamOthers,Teammates
+BattleComponent_ApplyModifierToSelfTeamOthers_Format,%s for Teammates
+BattleComponent_ApplyModifierToTarget,Enemy
+BattleComponent_ApplyModifierToTarget_Format,%s for Enemy
+BattleComponent_ApplyModifierToTargetTeam,Enemy Team
+BattleComponent_ApplyModifierToTargetTeam_Format,%s for Enemy Team
+BattleComponent_ApplyModifierToAll,All Combatants
+BattleComponent_ApplyModifierToAll_Format,%s for All Combatants
+BattleComponent_Duration,[ICON=Duration_Stat_Icon] Duration
+BattleComponent_DurationFormat,%s rounds
+BattleComponent_DurationInfinite,Infinite
+BattleComponent_ShieldBubble_Value_Format,Up to {VALUE} of Host
+BattleComponent_Target,[ICON=BattleComponentTarget_StatIcon] Target
+BattleComponent_Tooltip_Effects,Battle Modifiers
+BattleComponent_Tooltip_Target,Target
+BattleComponent_Tooltip_Targets,Targets
+GluonDisintegrator_Name,Gluon Disintegrator
+GluonDisintegrator_Dec,"Astrotech M-8 ""Anti-Cohesion"" Gluon Beam Emitter.[BR][BR]A highly advanced beam weapon that unravels molecular bonds using targeted gluon disturbances. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost."
+GluonCapacitation_Name,Gluon Capacitation
+GluonCapacitation_Dec,"Astrotech M-8o ""Anti-Cohesion"" Gluon Beam Emitter.[BR][BR]Enhances beam weapons by increasing their gluon energy storage and discharge capacity. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost."
+DisruptorPulseArray_Name,Disruptor Pulse Array
+DisruptorPulseArray_Dec,Walther Va-2 Disruptor Unit[BR][BR]A weapon system that emits powerful pulses capable of disrupting atomic and subatomic structures. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.
+Phasors_Name,Phasors
+Phasors_Dec,Westinghouse P5KA4 advanced phased energy weapon system.[BR][BR]High-intensity energy beams with precise targeting. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.
+EnhancedPhasors_Name,Enhanced Phasors
+EnhancedPhasors_Dec,Westinghouse P5KA4 mk2 advanced phased energy weapon system.[BR][BR]Advanced phasors with improved beam intensity and efficiency. [HS=HS_BeamWeapon]Beam weapons[/HS] provide moderate damage at a reasonable manufacturing cost.
+CoilAcceleratorArray_Name,Coil Accelerator Array
+CoilAcceleratorArray_Dec,Arsenal Mk XIX rapid-fire railgun.[BR][BR]Rapid-fire kinetic weapon that accelerates projectiles to high velocities. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.
+NeutoniumPiercerManifest_Name,Neutonium Piercer Manifest
+NeutoniumPiercerManifest_Dec,General Destruction Neutonium Piercer Mk I.[BR][BR]Utilizes dense neutronium to pierce through the toughest armors. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.
+NeutroniumEmitterCannons_Name,Neutronium Emitter Cannons
+NeutroniumEmitterCannons_Dec,General Destruction Neutronium Cannon Mk I.[BR][BR]Emits high-density neutronium projectiles for massive kinetic impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.
+EnhancedNeutroniumCannon_Name,Enhanced Neutronium Cannon
+EnhancedNeutroniumCannon_Dec,General Destruction Neutronium Cannon Mk I.[BR][BR]Advanced cannon that maximizes neutronium projectile effectiveness and speed. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.
+GravitonVortexArray_Name,Graviton Vortex Array
+GravitonVortexArray_Dec,"Copeland Industries ""Vortex"" Array.[BR][BR]Generates a controlled graviton field to create destructive vortexes. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost."
+EnhancedGravitonVortexArray_Name,Enhanced Graviton Vortex Array
+EnhancedGravitonVortexArray_Dec,"Copeland Industries Enhanced ""Vortex"" Array.[BR][BR]Amplifies graviton vortex generation for increased kinetic impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost."
+QuantumCatapult_Name,Quantum Catapult
+QuantumCatapult_Dec,"Meridoc ""Quantum"" Catapult MK-IV.[BR][BR]Utilizes quantum mechanics to launch projectiles with unparalleled velocity and impact. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost."
+HiggsFieldCrusher_Name,Higgs Field Crusher
+HiggsFieldCrusher_Dec,Meridoc Higgs Field Manipulator.[BR][BR]Disrupts the Higgs field to momentarily increase target mass and induce catastrophic collapse. [HS=HS_KineticWeapon]Kinetic Weapons[/HS] combine high damage with a high Manufacturing cost.
+Missile_CerberusWarheads_Name,Cerberus Warheads
+Missile_CerberusWarheads_Dec,"Sandrala ""Cerberus"" Complex Missile.[BR][BR]Missiles with complex multi-layered warheads capable of inflicting cascading damage.[HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_LeviathanTorpedoes_Name,Leviathan Torpedoes
+Missile_LeviathanTorpedoes_Dec,"Sandrala ""Leviathan"" Medium Torpedo.[BR][BR]The Leviathan torpedo uses a shaped antimatter warhead and delivery system to devastate the enemy. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_FuriousLeviathanTorpedoes_Name,Furious Leviathan Torpedoes
+Missile_FuriousLeviathanTorpedoes_Dec,"Sandrala ""Furious Leviathan"" Medium HE Torpedo.[BR][BR]The Leviathan Torpedo upgraded with weight redistributed to deliver High Explosive antimatter variant warheads. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_IcarionMissileCluster_Name,Icarion Missile Cluster
+Missile_IcarionMissileCluster_Dec,"Raytheonix ""Icarion"" Cluster Missile System.[BR][BR]The Icarion missile system uses volleys of antimatter-infused missiles to spread the damage across the enemy's hull. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_OrionsSpear_Name,Orion's Spear
+Missile_OrionsSpear_Dec,"The ""Orion's Spear"" Missile Deployment System.[BR][BR]The Orion's Spear system is a devastating single-target missile launcher that utilizes antimatter to shatter through enemy defenses. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_TritonsRevenge_Name,Triton's Revenge
+Missile_TritonsRevenge_Dec,"GH-32 specialized.[BR][BR]Built upon the original Triton Torpedo design, Triton's Revenge uses antimatter and increased missile guidance to better focus its damage. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+Missile_KleinsDread_Name,Klein's Dread
+Missile_KleinsDread_Dec,"Raytheonix Mk 65 ""Dread"" Torpedos[BR][BR]Klein's Dread torpedos strain against the fabric of space-time to quickly deliver destruction to the enemy. [HS=HS_MissileWeapon]Missile weapons[/HS] are slightly weaker in battle but can be used to attack enemy fleets at range."
+PresetCategory_Corvette_Name,Corvette
+PresetCategory_Corvette_Dec,Corvette Category ships are Small Hull vessels that have increased [HS=HS_HitPoints]Hit Points[/HS].
+PresetCategory_Destroyer_Name,Destroyer
+PresetCategory_Destroyer_Dec,Destroyer Category ships are Medium Hull vessels that have decreased [HS=HS_WeaponCooldown]Weapon Cooldown[/HS].
+PresetCategory_Command_Name,Command Ship
+PresetCategory_Command_Dec,Command Category ships are Large Hull vessels that decrease the [HS=HS_WeaponCooldown]Weapon Cooldown[/HS] of all ships in their fleet but have reduced [HS=HS_HitPoints]Hit Points[/HS].
+PresetCategory_Carrier_Name,Carrier
+PresetCategory_Carrier_Dec,Carrier Category ships are Huge Hull vessels that bring additional [HS=HS_FighterCategory]Fighters[/HS] and [HS=HS_BomberCategory]Bombers[/HS] into Battles.
+NEW_DESIGN_SPECS_LABEL_Corvette,Small combat ship
+NEW_DESIGN_BENEFITS_LABEL_Corvette,+25% [HS=HS_HitPoints]Hit Points[/HS]
+NEW_DESIGN_SPECS_LABEL_Destroyer,Medium combat ship
+NEW_DESIGN_BENEFITS_LABEL_Destroyer,-10% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS]
+NEW_DESIGN_SPECS_LABEL_Command,Large capital combat ship
+NEW_DESIGN_BENEFITS_LABEL_Command,"-10% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS] Allies in Fleet, -50% [HS=HS_HitPoints]Hit Points[/HS]"
+NEW_DESIGN_SPECS_LABEL_Carrier,Huge capital combat ship
+NEW_DESIGN_BENEFITS_LABEL_Carrier,Carries Additional [HS=HS_FighterCategory]Fighters[/HS] and [HS=HS_BomberCategory]Bombers[/HS] into Battles
+BattleBehavior_Corvette_Name,Corvette
+TargetingRuleType_Retaliatory,Attacks only when attacked first
+AttackOrder_Legacy_Name,Legacy
+AttackOrder_DreadnoughtFirst_Name,Largest Combatants
+AttackOrder_AttackersFirst_Name,Frontline Combatants
+AttackOrder_AttackClosest_Name,Attack Closest
+Doctrine_Assault_Name,Assault
+Doctrine_Screener_Name,Screener
+OperationalAbility_Ace_Desc,+75% Accuracy Against Fighters
+OperationalAbility_Assassin_Desc,"+50% Attack, +25% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS]"
+OperationalAbility_Barrage_Desc,-25% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS]
+OperationalAbility_Blitz_Desc,+50% Tactical Speed
+OperationalAbility_Command_Desc,"Allies +10% Accuracy, -25% [HS=HS_HitPoints]Hit Points[/HS]"
+OperationalAbility_Defender_Desc,+50% Accuracy Against [HS=HS_FighterCategory]Fighters[/HS] and [HS=HS_BomberCategory]Bombers[/HS]
+OperationalAbility_FocusFire_Desc,+10% Attack
+OperationalAbility_Fortress_Desc,"+100% [HS=HS_HitPoints]Hit Points[/HS], -75% Tactical Speed"
+OperationalAbility_GiantSlayer_Desc,+50% Attack Against Large and Huge [HS=HS_HullSize]Hull[/HS] Ships
+OperationalAbility_Ghost_Desc,+25% [HS=HS_PointDefense]Evasion[/HS]
+OperationalAbility_Hunter_Desc,+25% Attack and +25% Accuracy Against [HS=HS_FrigateCategory]Frigates[/HS] and [HS=HS_CorvetteCategory]Corvettes[/HS]
+OperationalAbility_LongReach_Desc,+25% Weapon Range
+OperationalAbility_Noncombatant_Desc,Self-defense only
+OperationalAbility_Precision_Desc,+25% Accuracy
+OperationalAbility_Skirmisher_Desc,"-75% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS], -25% Weapon Range"
+OperationalAbility_Sniper_Desc,+50% Accuracy
+OperationalAbility_Taunt_Desc,"Always hit first, -90% HP Cap"
+OperationalAbility_Opportunist_Name,Opportunist
+OperationalAbility_Opportunist_Desc,Recharge on kill
+OperationalAbility_None_Name,None
+OperationalAbility_None_Desc,Empty
+OperationalAbility_Assault_Name,Assault
+OperationalAbility_Assault_Desc,-50% [HS=HS_WeaponCooldown]Weapon Cooldown[/HS]
+OperationalAbility_Rush_Name,Rush
+OperationalAbility_Rush_Desc,+25% Tactical Speed
+OperationalAbility_Sentinel_Name,Sentinel
+OperationalAbility_Sentinel_Desc,+75% Attack Against [HS=HS_BomberCategory]Bombers[/HS]
+STATNAME_IsCommand,[ICON=CanSurveyIcon] Command
+STATNAME_IsCorvette,[ICON=CanSurveyIcon] Corvette
+STATNAME_IsDestroyer,[ICON=CanSurveyIcon] Destroyer
+STATNAME_IsCarrier,[ICON=CanSurveyIcon] Carrier
+STATNAME_BattleRating_SpecComp,[ICON=CombatRatingIcon] Specialized Attack
+STATDESC_BattleRating_SpecComp,The combat rating of components with unique and specialized offensive capabilities.
+STATNAME_BattleRating_DefOnly,[ICON=CombatRatingIcon] Specialized Defense
+STATDESC_BattleRating_DefOnly,"Combination of weapon power, fire rates, ranges, defense capabilities, and hit point capacity, indicating general battle effectiveness.[BR][BR]This variant of the modifier only applied when weapons are present."
+STATNAME_WarWeariness,War Weariness
+STATDESC_WarWeariness,Your citizens grow weary of being at war for so long.
+STATNAME_AssaultAttack,Assault Attack Troops
+STATDESC_AssaultAttack,A measure of how many assault troops are available. Assault troops are used to take over vessels. Assault Attack Troops can be countered with Assault Defense Troops.
+STATNAME_AssaultDefense,Assault Defense Troops
+STATDESC_AssaultDefense,"A measure of how many defense troops are available. Defense troops defend vessels from boarding actions, preventing ships from being taken over. Assault Defense Troops are used to counter Assault Attack Troops."
+STATNAME_AssaultRange,Assault Range
+STATDESC_AssaultRange,The effective range of assault shuttles. The Assault Range is how far assault shuttles can travel to another ship to initiate a boarding action.
+TestEvent_WarAim_Underdog_Name,Underdog
+TestEvent_WarAim_Underdog_Dec,"You are losing the war, but a band of privateers think that you have a good cause and have offered to help.  What do you ask them for?"
+TestEvent_WarAim_Underdog_1_Name,A combat ship.
+TestEvent_WarAim_Underdog_1_Dec,+1 combat ship
+TestEvent_WarAim_Underdog_2_Name,Money
+TestEvent_WarAim_Underdog_2_Dec,+500 credits
+FocusWeaponsTooltip,Focus on Weapons
+FocusDefenseTooltip,Focus on Defense
+FocusConquestTooltip,Focus on Conquest
+BATTLE_LOG_TOOLTIP_ATTACK_BASE_LABEL,Base
+BATTLE_LOG_TOOLTIP_ATTACK_MOD_LABEL,Battle Modifiers
+BATTLE_LOG_TOOLTIP_DEFENSE_MOD_LABEL,Defense
+BATTLE_LOG_TOOLTIP_ATTACK_POTENTIAL_LABEL,Potential
+RESEARCH_DEFENSE_LABEL,Defense
+RESEARCH_CONQUEST_LABEL,Logistics
+INVASION_TACTIC_UNLOCKED_LABEL,%s
+BUILD_FREIGHTER_LABEL,Construct a freighter and send it to an ally's planet to establish a trade route.
+SHIP_DESIGNER_CATEGORY_AssaultAttack,Assault Attack
+SHIP_DESIGNER_CATEGORY_AssaultDefense,Assault Defense
+ALERT_BesiegedPlanet_Invading,Our siege of {PLANETNAME} will complete in {AMOUNT} months.
+ALERT_SiegeInterrupted,The siege of {PLANETNAME} has been interrupted!
+OPERATIONAL_ABILITY_UNLOCKED_LABEL,%s Operational Ability
+FLEETTOOLTIP_COMPONENT_ABILITIES_LIST,Special Components:
+RequiredStat_CanInvade,Transport required
+TradeButtonTooltip,Trade Routes[BR][COLOR=UIDefaultHot]View your civilization's trade routes.[/COLOR]
+TRIGGERDURATION_FOR_X_TURNS_REMAINING, for %d more Months
+TRIGGERDURATION_LAST_TURN, (last month)
+TechnologyLibraryFilter_Weapons,Weapon Focus techs
+TechnologyLibraryFilter_Defense,Defense Focus techs
+TechnologyLibraryFilter_Conquest,Conquest Focus techs
+SuperNova_MAINGAME_NEED_TECH_FORMAT,[B]Trade Routes[/B][BR][COLOR=BrightRed]Requires %s.[/COLOR]
+SuperNova_NOTRADEROUTES,[B]Trade Routes[/B][BR][COLOR=BrightRed]You don't have any trade routes.[/COLOR]
+InvasionPlanetaryDefenseTitle,Planetary Defense:
+InvasionConquestRatingTitle,Conquest Rating:
+InvasionAttackingForceTitle,Attacking Force
+InvasionDefendingForceTitle,Defending Force
+InvasionDefendingCitizensTitle,Defending Citizens
+InvasionDefensiveSystemsTitle,Defensive Systems
+InvasionEstimatedDurationTitle,Estimated Duration:
+InvasionCasualtiesSystemsTitle,Casualties:
+InvasionPlanetaryDamageSystemsTitle,Planetary Damage:
+InvasionEfficiencySystemsTitle,Efficiency:
+MOD_SOURCE_CATEGORY_INVASIONTACTIC,Invasion Tactic
+InvasionReportCaptureTitle,Date Captured:
+BeamAccuracyLabel,Beam Accuracy
+InvasionReportTakenTitle,Taken From:
+MissileAccuracyLabel,Missile Accuracy
+InvasionReportTacticUsedTitle,Tactic Used:
+KineticAccuracyLabel,Kinetic Accuracy
+InvasionReportEffectsTitle,Invasion Effects
+InvasionReportTileDamageTitle,Planetary Tile Damage
+InvasionReportScreenTitle,Capture of Planet Name
+InvasionReportRaceNameTitle,Race Name
+InvasionReportDateTitle,Date
+InvasionReportTacticNameTitle,Tactic Name
+BattleComponentText_IonGun_Start,IonGun Start
+BattleComponentText_IonGun_End,IonGun End
+BattleComponentText_TimeDilator_Start,TimeDilator Start
+BattleComponentText_TimeDilator_End,TimeDilator End
+BattleComponentText_CloakingDevice_Start,CloakingDevice Start
+BattleComponentText_CloakingDevice_End,CloakingDevice End
+BattleComponentText_NeutronScrambler_Start,Neutron Scrambler Start
+BattleComponentText_NeutronScrambler_End,Neutron Scrambler End
+BattleComponentText_TheronRay_Start,Theron Ray Start
+BattleComponentText_TheronRay_End,Theron Ray End
+BattleComponentText_ShatteringPulse_Start,Shattering Pulse Start
+BattleComponentText_ShatteringPulse_End,Shattering Pulse End
+BattleComponentText_UVField_Start,UV Field Start
+BattleComponentText_UVField_End,UV Field End
+BattleComponentText_VampireModule_Start,VampireModule Start
+BattleComponentText_VampireModule_End,VampireModule End
+BattleComponentText_ShieldBubble_Start,Shield Bubble Start
+BattleComponentText_ShieldBubble_End,Shield Bubble End
+BattleComponentText_RepairNaniteCloud_Start,Repair Nanite Cloud Start
+BattleComponentText_RepairNaniteCloud_End,Repair Nanite Cloud End
+BattleComponentWeapon_Nuclear,Nuclear
+BattleComponentWeapon_Plasma,Super-Heated Plasma
+BattleComponentWeapon_RipNanite,Nanite
+BattleComponentWeapon_Caustic,Caustic
+BattleComponentWeapon_Heat,Heat
+BattleComponentWeapon_Napalm,Napalm
+BattleComponentWeapon_Mass,Mass
+BattleComponentWeapon_PROTORAIL,Prototype Rail Projectile
+BattleComponentWeapon_SMALLCALIBER,Small Caliber
+BV_BattleModifiersHeader,Battle Modifiers
+BV_AttackBreakdown,Attack Breakdown
+BV_DefenseBreakdown,Defense Breakdown
+BV_CooldownPaused,-
+BV_AccuracyBreakdown,Accuracy Breakdown
+BV_HitPointsMod_TacticalRepair,Tactical Repair
+BV_HitPointsMod_Vampire,Vampire
+BV_StartingHitPoints,Start
+BV_DamageReduction,Damage Resistance
+BV_BeamDamageReduction,Beam Damage Resistance
+BV_MissileDamageReduction,Missile Damage Resistance
+BV_KineticDamageReduction,Kinetic Damage Resistance
+BV_AssaultTakenOver,Captured!
+BV_AssaultTroops,Assault Troops
+BV_AssaultAttackTooltipHeader,Assault Attack
+BV_DefendingAssaultTroops,Defending Troops
+BV_AssaultTroopsDefeated,Defending Troops Defeated
+BV_DefendingAssaultTroopsRemaining,Defending Troops Remaining
+BV_BlockTargeting,Cannot Be Targeted
+Commands_Screen_Title,Fleet Wide Commands
+Commands_Shipyard_Building_String,“All [COLOR=Red]Shipyards[/COLOR] building [COLOR=UIDefaultHighlight] {OBJECTNAME:1} [/COLOR] should build [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commands_Shipyard_Sending_Build_String,“All [COLOR=Red]Shipyards[/COLOR] sending to [COLOR=UIDefaultHighlight] {OBJECTNAME:1} [/COLOR] should build [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commands_Shipyard_Sending_Go_String,“All [COLOR=Red]Shipyards[/COLOR] sending to [COLOR=UIDefaultHighlight] {OBJECTNAME:1} [/COLOR] should send to [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commands_Ships_Of_Type_String,“All [COLOR=Red]Ships[/COLOR] of type [COLOR=UIDefaultHighlight]{OBJECTNAME:1}[/COLOR] should go to [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commands_Ships_Go_String,“All [COLOR=Red]Ships[/COLOR] going to [COLOR=UIDefaultHighlight]{OBJECTNAME:1}[/COLOR] should go to [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commands_Fleet_String,“All [COLOR=Red]Fleets[/COLOR] going to [COLOR=UIDefaultHighlight]{OBJECTNAME:1}[/COLOR] should go to [COLOR=Green]{OBJECTNAME:2}[/COLOR].”
+Commmands_No_Command,...
+Commands_Re-Assign_Value,Building with a Destination...
+Commands_Title,Command
+Commands_Tip_Dec,Give civilization wide commands to to your Shipyards and Fleets
+Give_Command_Value,Give Command
+Policy_Trade_Button,Trade Route Breakdown
+Policy_Commands_Button,Fleet Wide Commands
+ADoctrine_Screen_Title,Edit Class
+NewClassLabel,New Ship Class
+Doctrine_Title,Edit Class
+Doctrine_Dec,The Class of your ship will determine its behavior in battle. New options can be Learned though Research and Ideology.
+Doctrine_Operational_Abilities_Title_1,Operational Ability 1
+Doctrine_Choose_Title,Choose 1
+Doctrine_Operational_Abilities_Title_2,Operational Ability 2
+Doctrine_Targeting_Order_Title,Targeting Priority
+Doctrine_Detials_Title,New Combat Doctrine
+Doctrine_Detials_Dec,"Operational Abilities and Targeting Priorities can change a ship's behavior in combat, with different combinations resulting in noticeably different tactics."
+Doctrine_Set_Button,Save Class
+Doctrine_Ship_Title,Doctrine
+Doctrine_Set_Bonus,Ability Bonus Description
+Doctrine_Ship_Type_Title,Operational Ability
+Doctrine_Operational_Abilities_Title,Operational Ability
+Doctrine_Set_Order_Temp,[ICON=Priorities_Arrow_1] Capital Ships [ICON=Priorities_Arrow_2] Cruisers [ICON=Priorities_Arrow_3] Fighters
+ClassCategoryTitle,Category
+ClassTypeTitle,Class Type
+Combat_Class_Title,Combatant
+Specialty_Class_Title,Specialty
+ClassChoose1Title,Choose 1
+EDITCLASSBUTTONLABEL,Edit Class
+CREATECLASSBUTTONLABEL,Create New Class
+SAVE_BATTLE_CLASS_LABEL,Save Class
+Operational_Abilities_Name_Title,Operational Ability Name
+Targeting_Priority_Title_Title,Targeting Priority Name
+Operational_Abilities_Matchup_Format,Against {TARGET}:
+Operational_Abilities_Matchup_WithinText_Format,Against {TARGET}s
+Operational_Abilities_Matchup_All,Against All:
+EDIT_BATTLE_CLASS_DISABLED_DLC_REQUIRED,Editing Class requires Warlords DLC.
+EDIT_BATTLE_CLASS_DISABLED_OVERRIDE_DEFAULTS,Overrides of default Classes do not persist between games but can be edited in game.
+NEW_BATTLE_CLASS_DISABLED_DLC_REQUIRED,Creating a new Class requires Warlords DLC.
+EDIT_BATTLE_CLASS_DISABLED_UNDECLARED,Undeclared Class cannot be edited.
+FILTER_ALL_BATTLE_CLASES_LABEL,All Classes
+Population_ReservedUnits_Tooltip_Singular,{VALUE} citizen in transit to this planet.
+GrowthAndPopulationToolTip_CitizensInTransit,Citizens in transit:
+TradeIncomeTitle,Trade Value:
+TradeLicensesTitle,Trade Licenses:
+TotalTradeIncomeTitle,Total Trade Income Per Turn: 
+TradeScreenText,Galactic Trade can greatly contribute to your economy and help you build diplomatic relationships with your neighbors.
+TradeRoute_Planet_To_Planet_Label,{PLANETNAME:1} to {PLANETNAME:2}
+WarAims_Months_At_War,[ICON=Turn_Icon] Months at War
+DiplomaticMod_AggressiveNeighbor_HSDesc,A minor reputation gained by declaring a War of Defense that affects [HS=HS_Diplomacy]Diplomacy[/HS].[BR][BR][COLOR=UIDefaultHighlight]-1 Diplomacy with all Civilizations[/COLOR]
+DiplomaticMod_DangerousNeighbor_HSDesc,A reputation gained by declaring a War of Expansion that affects [HS=HS_Diplomacy]Diplomacy[/HS].[BR][BR][COLOR=UIDefaultHighlight]-2 Diplomacy with all Civilizations[/COLOR]
+DiplomaticMod_GalacticThreat_HSDesc,A harsh reputation gained by declaring a War of Conquest that affects [HS=HS_Diplomacy]Diplomacy[/HS].[BR][BR][COLOR=UIDefaultHighlight]-3 Diplomacy with all Civilizations[/COLOR]
+DiplomaticMod_ClearAndPresentDanger_HSDesc,A severe reputation gained by declaring a War of Annihilation that affects [HS=HS_Diplomacy]Diplomacy[/HS].[BR][BR][COLOR=UIDefaultHighlight]-4 Diplomacy with all Civilizations[/COLOR]
+Event_WarWeariness_8F3C_Name,The Call for Peace
+Event_WarWeariness_8F3C_Desc,"{LEADERNAME}, renowned for their peace advocacy, urgently contacts you. ""The primary objective of our war has been achieved,"" they argue, ""Continuing this conflict will only result in needless loss and expenditure. It's time we sought peace for the sake of all involved."""
+Event_WarWeariness_8F3C_Choice1_Name,Reject the Call
+Event_WarWeariness_8F3C_Choice1_Desc,"You dismiss the plea of {LEADERNAME}, asserting that the war will continue under your discretion. ""The cost is necessary for our ultimate victory,"" you declare, knowing this decision may strain loyalty within your ranks."
+Event_WarWeariness_8F3C_Choice2_Name,Promise Peace
+Event_WarWeariness_8F3C_Choice2_Desc,"Acknowledging the concerns of {LEADERNAME}, you pledge to initiate peace talks. ""We will seek an end to this conflict,"" you promise, hoping to uphold your word and prevent further fallout."
+Event_WarWeariness_9E6Z_Name,Reckoning of Promises
+Event_WarWeariness_9E6Z_Desc,"{LEADERNAME} approaches you again, their disappointment palpable. ""You vowed to pursue peace, yet the conflict rages on. How many more must suffer before you act?"" they implore, challenging you to fulfill your earlier promise or admit the shifting tides of war."
+Event_WarWeariness_9E6Z_Choice1_Name,Declare Continuation
+Event_WarWeariness_9E6Z_Choice1_Desc,"With a heavy heart, you inform {LEADERNAME} that the situation has evolved. ""Our path to peace is not as clear as we hoped,"" you explain. ""The war must go on for now."" You brace yourself for the impact this will have on your people's loyalty."
+Event_WarWeariness_9E6Z_Choice2_Name,Assure Diligence
+Event_WarWeariness_9E6Z_Choice2_Desc,"""Your concerns are heard, and not in vain,"" you assure {LEADERNAME}. ""We are actively seeking peace, but such negotiations require time."" You hope this reassurance strengthens your cause and maintains the trust of your allies and citizens alike."
+Event_WarWeariness_A1B2_Name,Fractures of Trust
+Event_WarWeariness_A1B2_Desc,"""I've defended your promises of peace, believing in your words,"" {LEADERNAME} confronts you, their frustration barely contained. ""Yet, here we stand, farther from peace than ever. How do you justify this to those who've placed their trust in you?"""
+Event_WarWeariness_A1B2_Choice1_Name,Confess Deception
+Event_WarWeariness_A1B2_Choice1_Desc,"With a sigh, you drop the facade. ""Our strategy demanded it,"" you admit. ""True peace was never an immediate option."" You prepare for the fallout, knowing this confession might shatter the remaining loyalty of your closest followers."
+Event_WarWeariness_A1B2_Choice2_Name,Renew Promise of Peace
+Event_WarWeariness_A1B2_Choice2_Desc,"""Please, just a bit more patience,"" you plead, attempting to salvage the situation. ""Negotiations are delicate, but we're on the cusp of peace."" Your words are a gamble, promising an end that you must now do everything to achieve."
+Event_WarWeariness_Final_Name,Broken Bonds
+Event_WarWeariness_Final_Desc,"{LEADERNAME} approaches you one last time, their disappointment palpable. ""I've come to realize promises are just words to you,"" they state coldly. ""Your actions have revealed the truth of your intentions. There's nothing left to say."" With that, they turn their back, marking the end of your alliance."
+Event_WarWeariness_Final_Choice_Name,Let the matter drop.
+Event_WarWeariness_Final_Choice_Desc,"As {LEADERNAME}'s words sink in, you're left to confront the harsh reality of your choices. There's no denying the path you've chosen, and with a heavy heart, you accept the consequences. The war continues but at what cost?"
+Event_WarWeariness_EV31_Name,Planetary Defense Concerns
+Event_WarWeariness_EV31_Desc,"Amidst the current war, a message from {PLANETNAME} reaches your desk, carrying the collective unease of its people. They feel exposed, defenseless against potential threats, a sentiment amplified by the war's shadow looming over them. The plea is clear: a request to bolster their planetary defenses, if only to provide a semblance of safety and reassurance. You could also ignore their cries, leaving them to fend for themselves against the specter of insecurity."
+Event_WarWeariness_EV31_Enhance_Choice,Invest in some crude defenses.
+Event_WarWeariness_EV31_Enhance_Desc,"In a gesture of support, you allocate resources to construct rudimentary defense structures. While more symbolic than tactical, this act serves to lift spirits and reinforce faith in your leadership at the cost of precious Durantium."
+Event_WarWeariness_EV31_Neglect_Choice,Ignore the request.
+Event_WarWeariness_EV31_Neglect_Desc,"Opting to concentrate resources elsewhere, you disregard the planetary appeal. This decision, practical from a strategic standpoint, risks dampening the morale of your citizens, who must now grapple with their vulnerabilities unaided."
+Event_WarWeariness_EU01_Name,Planetary Unease
+Event_WarWeariness_EU01_Desc,"As the war trudges on, despite our strategic objectives being met, The population of {PLANETNAME} grows increasingly uneasy. The delay in peace negotiations has not gone unnoticed, stirring concerns about the future among the populace."
+Event_WarWeariness_EU01_Choice_Desc,Understood.
+Event_WarWeariness_EU02_Name,Growing Insecurity
+Event_WarWeariness_EU02_Desc,"With the war's objectives seemingly achieved, the continued conflict has left {PLANETNAME} feeling particularly vulnerable. The absence of peace has sown seeds of fear and uncertainty among its citizens, affecting the colony's overall spirit."
+Event_WarWeariness_EU02_Choice_Desc,Understood.
+Event_WarWeariness_EU03_Name,Exhaustion from War
+Event_WarWeariness_EU03_Desc,"Despite reaching the war's goals, the ongoing conflict has not ceased, leading to widespread exhaustion on {PLANETNAME}. The relentless pace of production to support the war effort is taking its toll on the workforce and machinery alike."
+Event_WarWeariness_EU03_Choice_Desc,Understood.
+Event_WarWeariness_EU04_Name,Desperation and Crime
+Event_WarWeariness_EU04_Desc,"As the war drags past its objectives, {PLANETNAME} experiences desperation among its citizens. This desperation has manifested in an uptick in criminal activities, as many feel abandoned by the extended conflict and uncertain future."
+Event_WarWeariness_EU04_Choice_Desc,Understood.
+Event_WarWeariness_WP01_Name,War Profiteers' Hideout
+Event_WarWeariness_WP01_Desc,"War profiteers have been discovered operating on {PLANETNAME}. Their presence increases criminal activities, but their removal might provoke pirate attacks nearby."
+Event_WarWeariness_WP01_Allow_Desc,"Allow them to operate, accepting the rise in crime as a cost of their clandestine activities."
+Event_WarWeariness_WP01_DriveOff_Desc,"Expel them, risking retaliation in the form of pirate raids near the planet."
+Event_WarWeariness_WP02_Name,Pirate Shipyard's Toll
+Event_WarWeariness_WP02_Desc,"With the war dragging beyond its intended objectives, a pirate shipyard has emerged due to the increasing number of war profiteers in the area. Near our space, exploiting the prolonged conflict. This operation is significantly impacting the wealth of our planets, as these war profiteers intercept valuable resources meant for the economy."
+Event_WarWeariness_WP02_Understood_Desc,Understood.
+Event_WarWeariness_WP03_Name,Profiteers' Ultimatum
+Event_WarWeariness_WP03_Desc," A shadow economy has flourished as the war stretches beyond its intended goals. A notorious cadre of war profiteers, emboldened by the protracted conflict, has approached your administration. They offer a simple yet morally ambiguous proposition: overlook their siphoning of resources from Starbases, and in return, they'll limit the disruption their operations could cause. Rejecting their terms may bring swift and criminal retribution, spreading fear and chaos across your planets as the war drags on."
+Event_WarWeariness_WP03_Accept_Desc,"Reluctantly agree to the profiteers' terms, compromising to maintain a semblance of stability."
+Event_WarWeariness_WP03_Reject_Desc,"Reject the war profiteers' offer. This decision, while morally sound, will incur their wrath."
+Event_WarWeariness_WP04_Name,Smuggler's Dilemma
+Event_WarWeariness_WP04_Desc,"In the shadow of a conflict that has long outlived its strategic objectives, the inhabitants of {PLANETNAME} find themselves relying on smugglers for basic necessities. These smugglers, operating under the guise of benefactors, have inadvertently introduced a wave of criminality that threatens to engulf the planet. As desperation grows with the war's prolongation, so does the dilemma of whether to curb their activities, risking the immediate well-being of your people, or tolerate a necessary evil in exchange for survival."
+Event_WarWeariness_WP04_Ignore_Desc,Turn a blind eye to the smugglers' operations.
+Event_WarWeariness_WP04_CrackDown_Desc,Resolve to restore order and initiate a crackdown on the smugglers' network.
+Event_WarWeariness_WP05_Name,Trade Route Turmoil
+Event_WarWeariness_WP05_Desc,"With the war's strategic objectives long surpassed, the prolonged conflict has given rise to an unscrupulous breed of war profiteers. These opportunistic entities have infested the trade routes, leeching off the vital arteries of commerce that sustain our civilization. Their activities not only siphon off the wealth meant for reconstruction and aid but also cripple the efficiency of our trade networks, exacerbating the economic strain caused by a war that refuses to end."
+Event_WarWeariness_WP05_Understood_Desc,Understood.
+Event_WarWeariness_EP01_Name,Protests Against the Ongoing War
+Event_WarWeariness_EP01_Desc,"The protracted conflict has finally boiled over into public unrest on {PLANETNAME}. Crowds gather, their voices united in protest against the continuation of a war they see as needless and wasteful. The sentiment across the planet is clear: peace should be negotiated, and further sacrifices are unacceptable."
+Event_WarWeariness_EP01_Crackdown_Desc,Enforce a strict crackdown on dissenting voices.
+Event_WarWeariness_EP01_BestInterest_Desc,Reassure the populace that their leadership is acting with their best interest in mind.
+Event_WarWeariness_EP01_FutureSecurity_Desc,Reinforce the importance of securing a stable future.
+Event_WarWeariness_DC04_Name,Diplomatic Stance under Suspicion
+Event_WarWeariness_DC04_Desc,"While our victory on the battlefield is celebrated, the delayed peace negotiations have not gone unnoticed. Allies and neutral observers alike question the delay, hinting at a potential mistrust in our ability to lead toward a peaceful resolution."
+Event_WarWeariness_DC04_Understood_Desc,Understood.
+Event_WarWeariness_DC03_Name,Concerns of Unnecessary Carnage
+Event_WarWeariness_DC03_Desc,"As our war efforts persist past the achievement of our goals, several galactic entities express concern over the unnecessary destruction and loss of life. Their warnings hint at a growing dissatisfaction and a potential reevaluation of diplomatic relations."
+Event_WarWeariness_DC03_Understood_Desc,Understood.
+Event_WarWeariness_DC02_Name,Diplomatic Tensions Rise
+Event_WarWeariness_DC02_Desc,"Intelligence reports indicate a growing unease among our allies and neighbors. The prolongation of a conflict, already deemed won, seeds doubt in our motives. This unease threatens to strain diplomatic ties as calls for peace grow louder."
+Event_WarWeariness_DC02_Understood_Desc,Understood.
+Event_WarWeariness_DC01_Name,Rising International Concern
+Event_WarWeariness_DC01_Desc,"Rumors have reached your ears that other civilizations are growing concerned over our prolonged conflict. Some fear that our original war goals might have been a pretext for a greater, more encompassing conflict. This could jeopardize our diplomatic relations globally."
+Event_WarWeariness_DC01_Understood_Desc,Understood.
+Event_WarWeariness_DC05_Name,Suspected Warmonger
+Event_WarWeariness_DC05_Desc,"The continuation of the war, well beyond its strategic goals, isolates us on the galactic stage. Other civilizations view our actions with increasing suspicion, believing our intentions may not be as clear-cut as once thought."
+Event_WarWeariness_DC05_Understood_Desc,Understood.
+Event_WarWeariness_GenericLeaderPromise_Dec,{LeaderName} will remember your promised to seek peace.
+Event_WarWeariness_LE01_Name,Stressful Times
+Event_WarWeariness_LE01_Desc,"Amidst the lingering shadows of the war, a notable leader expresses concerns over the escalating stress levels among the populace. The strain of the prolonged conflict has made daily tasks and responsibilities increasingly challenging. The leader looks to you, hoping for a swift and peaceful resolution to the war's tensions."
+Event_WarWeariness_LE01_Choice1_Title,Promise to seek peace.
+Event_WarWeariness_LE01_Choice2_Title,Pressure to maintain focus.
+Event_WarWeariness_LE02_Name,Unfulfilled Promises
+Event_WarWeariness_LE02_Desc,"Returning with deep frustrations, the leader confronts you about the elusive promised peace. The prolonged conflict and unmet assurances have left them questioning the path ahead."
+Event_WarWeariness_LE02_Choice1_Title,Dismiss the leader.
+Event_WarWeariness_LE03_Name,A Leader's Concern
+Event_WarWeariness_LE03_Desc,"A leader approaches with a heavy heart, troubled by the war's continuation beyond its intended goals. They express deep concern for the people's well-being and the growing unease among the populace. 'The weight of prolonged conflict bears down on us all,' they confide, seeking reassurance or action to mitigate the strain."
+Event_WarWeariness_LE03_Choice1_Title,Promise to seek peace.
+Event_WarWeariness_LE03_Choice2_Title,Pressure to persevere.
+Event_WarWeariness_LE04_Name,Logistical Limitations
+Event_WarWeariness_LE04_Desc,"Another leader comes forward, visibly stressed by the logistical nightmares spawned by the war's overextension. 'Our resources are stretched thin, and the people grow weary of unending demands,' they lament, seeking a directive to alleviate the pressure without compromising the war effort."
+Event_WarWeariness_LE04_Choice1_Title,Reassure and promise relief.
+Event_WarWeariness_LE04_Choice2_Title,Insist on maintaining course.
+Event_WarWeariness_LE05_Name,Rumors of Unrest
+Event_WarWeariness_LE05_Desc,"A governor brings rumors of unrest stirring among the populace, exacerbated by the war dragging past its objectives. 'The people's patience wears thin, and the murmurs of discontent grow louder each day,' they report, seeking guidance on how to best address the burgeoning dissent."
+Event_WarWeariness_LE05_Choice1_Title,Advise direct swift action.
+Event_WarWeariness_LE05_Choice2_Title,Encourage persuasive measures.
+Event_WarWeariness_AR01_Name,Rebel Outbreak
+Event_WarWeariness_AR01_Desc,"On {PLANETNAME}, a war prolonged beyond its objectives has given rise to anti-war rebels. Marking their opposition, they have significantly disrupted the planet's manufacturing capabilities, urging an immediate cease to hostilities. The leadership faces a crucial decision: to crack down on these activities or to publicly announce efforts to conclude the war."
+Event_WarWeariness_AR01_Choice1_Title,Initiate a crackdown.
+Event_WarWeariness_AR01_Choice2_Title,Announce an increase in peace efforts.
+Event_WarWeariness_AR02_Name,Rebel Escalation
+Event_WarWeariness_AR02_Desc,"Despite attempts to negotiate peace, the war lingers, emboldening the rebels on {PLANETNAME}. Their numbers swell as more join their cause, driven by disillusionment and anger. The planet stands on the brink of widespread unrest."
+Event_WarWeariness_AR02_Choice1_Title,Increase crack down efforts.
+Event_WarWeariness_AR02_Choice2_Title,Reiterate peace promises.
+Event_WarWeariness_AR03_Name,Countermeasures
+Event_WarWeariness_AR03_Desc,"In the wake of the crackdown and the continued war, the rebels on {PLANETNAME} have begun to retaliate, targeting the planet's defenses. This act of defiance not only undermines the planet's security but also strains the already limited resources."
+Event_WarWeariness_AR03_Choice1_Title,Intensify crackdown.
+Event_WarWeariness_AR03_Choice2_Title,Focus on maintaining defenses.
+Event_WarWeariness_AR04_Name,Riot Aftermath
+Event_WarWeariness_AR04_Desc,"The rebels' unrest escalates into a full-blown riot on {PLANETNAME}, significantly impacting manufacturing, spiking crime rates, and hindering growth. The administration is now forced to navigate these tumultuous times with limited options. The rebels threaten to continue to escalate their strikes until the drawn-out war is brought to an end and peace is negotiated."
+Event_WarWeariness_AR04_Choice1_Title,Attempt to maintain order.
+Event_WarWeariness_AR05_Name,Unending Unrest
+Event_WarWeariness_AR05_Desc,"The anti-war rebellion has morphed into an ongoing crisis on {PLANETNAME}. Despite efforts to quell the unrest, the riot continues unabated, further disrupting the fabric of society with no end in sight as the war lingers. The rebels refuse to give up until peace is negotiated and the war with its goals accomplished is brought to an end."
+Event_WarWeariness_AR05_Choice1_Title,Attempt to maintain order.

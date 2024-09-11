@@ -1,3 +1,9 @@
+# This script provides a graphical interface for the user to select two directories containing XML files with StringTable entries.
+# It compares the StringTable entries between the two selected directories (considered updated and older strings, respectively),
+# identifies updated or new strings in the 'updated' directory compared to the 'older' directory, and then exports these differences
+# to a CSV file chosen by the user. The CSV output includes labels and their corresponding string values.
+
+
 import os
 import csv
 import tkinter as tk

@@ -1,3 +1,10 @@
+# This script provides functionality to automatically translate and update XML string table files based on input from a CSV file.
+# It uses OpenAI's GPT model for translations, tailored to the context of a Sci-Fi video game, ensuring adherence to formatting codes.
+# The script supports multiple languages, updating existing XML files with new translations or adding them to an "AdditionalStrings" file.
+# It includes a GUI for file selection and outputs translation updates to specified XML files within a structured directory hierarchy.
+# The script also formats the XML output to be human-readable and ensures the XML declaration is included in each file.
+
+
 import csv
 import os
 import xml.etree.ElementTree as ET
@@ -7,7 +14,7 @@ import openai
 import time
 import xml.dom.minidom
 
-additional_strings_version = "v23"  # Variable to set the version of additional strings file
+additional_strings_version = "v25"  # Variable to set the version of additional strings file
 
 def prettify_xml(element):
     """
@@ -168,8 +175,12 @@ def main():
         print("No file selected.")
         return
 
-    root_dir = os.path.dirname(csv_file)
-    update_xml_files(csv_file, root_dir)
+    root_dir = filedialog.askdirectory(title='Select Root Directory')
+    if not root_dir:
+        print("No directory selected.")
+    else:
+        update_xml_files(csv_file, root_dir)
+
 
 if __name__ == "__main__":
     openai_api_key = os.getenv('OPENAI_API_KEY')
