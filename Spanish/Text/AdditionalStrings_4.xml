@@ -46,7 +46,7 @@
   </StringTable>
   <StringTable>
     <Label>GiveHope_Dec</Label>
-    <String>Da una serie de discursos inspiradores al mundo núcleo objetivo para aumentar su aprobación.</String>
+    <String>Da una serie de discursos inspiradores al mundo central objetivo para aumentar su [HS=HS_Approval]Aprobación[/HS] durante 25 turnos.</String>
   </StringTable>
   <StringTable>
     <Label>Mitosis_Name</Label>
@@ -202,7 +202,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyDec</Label>
-    <String>[ICON=AutoSurvey_Icon] El Auto-Sondeo solo está disponible para [HS=HS_Ship]Naves[/HS] con Módulos de Sondeo. Una [HS=HS_Ship]Nave[/HS] en modo [ICON=AutoSurvey_Icon] Auto-Sondeo se moverá sin órdenes directas, intentando localizar [HS=HS_Anomaly]Anomalías[/HS]. Cuando una [HS=HS_Ship]Nave[/HS] en modo [ICON=AutoSurvey_Icon] Auto-Sondeo está cerca de una [HS=HS_Anomaly]Anomalía[/HS], realizará un [HS=HS_SurveyOrder]Sondeo[/HS] de la [HS=HS_Anomaly ]Anomalía[/HS] sin órdenes directas.</String>
+    <String>[ICON=AutoSurvey_Icon] Auto-Encuesta solo está disponible para [HS=HS_Ship]Naves[/HS] con Módulos de Encuesta. Una [HS=HS_Ship]Nave[/HS] en modo [ICON=AutoSurvey_Icon] Auto-Encuesta se moverá sin órdenes directas, tratando de localizar [HS=HS_Anomaly]Anomalías[/HS]. Cuando una [HS=HS_Ship]Nave[/HS] en modo [ICON=AutoSurvey_Icon] Auto-Encuesta esté cerca de una [HS=HS_Anomaly]Anomalía[/HS], [HS=HS_SurveyOrder]Encuestará[/HS] la [HS=HS_Anomaly]Anomalía[/HS] sin órdenes directas.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeTitle</Label>
@@ -450,7 +450,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConqueringPlanetsDec</Label>
-    <String>Todos los planetas colonizados tienen una calificación de [ICON=Conquest_Icon] Conquista Planetaria. Esto representa cuán defendido está un planeta y cuánto poder militar se necesitará para superar sus defensas. Las [HS=HS_Fleet]Flotas[/HS] tienen una Calificación de Conquista, que representa cuán equipadas están para asediar un planeta. Algunas naves, como los de transporte, están mejor equipados para Conquistar planetas que otras.[BR][BR]Para iniciar un asedio, emite un comando de [HS=HS_ShipMovement]Movimiento[/HS] a una [HS=HS_Fleet]Flota[/HS] con el objetivo siendo el Planeta a conquistar. Cuando la [HS=HS_Fleet]Flota[/HS] llega al Planeta, iniciará un asedio si su Calificación de [ICON=Conquest_Icon] Conquista es lo suficientemente alta para superar la Calificación de [ICON=Conquest_Icon] Conquista del Planeta.</String>
+    <String>Todos los planetas colonizados tienen una calificación de Defensa Planetaria [ICON=Stat_Planetary_Defense_Icon]. Esto representa cuán defendido está un planeta y cuánta fuerza militar se necesitará para superar sus defensas. Las [HS=HS_Fleet]Flotas[/HS] tienen una calificación de [ICON=Conquest_Icon] Conquista, representando cuán equipadas están para sitiar un planeta. Algunos barcos, como los barcos de Transporte, están mejor equipados para Conquistar planetas que otros.[BR][BR]Para iniciar un asedio, emite un comando de [HS=HS_ShipMovement]Mover[/HS] a una [HS=HS_Fleet]Flota[/HS] con el objetivo siendo el Planeta a conquistar. Cuando la [HS=HS_Fleet]Flota[/HS] llega al Planeta, iniciará un asedio si su calificación de [ICON=Conquest_Icon] Conquista es suficientemente alta para superar la calificación de Defensa [ICON=Stat_Planetary_Defense_Icon] del Planeta.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyTitle</Label>
@@ -498,11 +498,11 @@
   </StringTable>
   <StringTable>
     <Label>Trait_Purges_Dec_TK</Label>
-    <String>[I]Tu estado mantiene el poder a través del miedo, eliminando las amenazas percibidas a su control.[/I][BR][BR] [COLOR=UIDefaultHighlight]Desbloquea el Gulag Orbital [BR][BR] Desbloquea la habilidad de Purgar a los ciudadanos[/COLOR]</String>
+    <String>[I]Tu estado mantiene el poder mediante el miedo, eliminando las amenazas percibidas a su control.[/I][BR][BR] [COLOR=UIDefaultHighlight]Desbloquea Gulag Orbital [BR][BR] Desbloquea la habilidad de Purgar ciudadanos[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Prestige_Dec_TK</Label>
-    <String>[I]Los famosos te mostrarán lo que una cultura valora. Mientras otros adoran lo vano y hermoso o lo brillante y curioso, nosotros veneramos a los fuertes.[/I][BR][BR][COLOR=UIDefaultHighlight]Progreso de victoria de prestigio +25% [/COLOR]</String>
+    <String>[I]Los famosos te mostrarán lo que una cultura valora. Mientras otros adoran lo vano y bello o lo brillante y curioso, nosotros veneramos a los fuertes.[/I][BR][BR][COLOR=UIDefaultHighlight]Las naves ganan experiencia más rápidamente. Progreso de victoria por prestigio +25%[/COLOR]</String>
   </StringTable>
   <StringTable>
     <Label>Trait_Censorship_Dec_TK</Label>
@@ -646,7 +646,7 @@
   </StringTable>
   <StringTable>
     <Label>BrainBugs_ShortDec</Label>
-    <String>Epicentro para aumentar el [HS=HS_Consuming]Consumidor[/HS] de la población e [HS=HS_Intelligence]Inteligencia[/HS] en un 50%. El efecto aumenta a medida que sube de nivel.</String>
+    <String>Epicentro para aumentar el [HS=HS_Consuming]Consumidor[/HS] de la población e [HS=HS_Intelligence]Inteligencia[/HS] en un 50%%. El efecto aumenta a medida que sube de nivel.</String>
   </StringTable>
   <StringTable>
     <Label>SocialBugs_Name</Label>
@@ -710,7 +710,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_StarshipRefits_ShortDec</Label>
-    <String>Permite que las naves sean mejoradas con el mejor equipo, así como viajar mucho más rápido en territorio aliado.</String>
+    <String>Permite que las naves sean actualizadas con el mejor equipo, así como viajar mucho más rápido en territorio amigo.</String>
   </StringTable>
   <StringTable>
     <Label>MasterTech_StarshipRefits_Dec</Label>
@@ -734,7 +734,7 @@
   </StringTable>
   <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_ShortDec</Label>
-    <String>Nos permite utilizar tecnologías alienígenas como propias.</String>
+    <String>Nos permite adaptar nuestros [HS=HS_SensorRange]sensores[/HS] para la observación de señales distantes.</String>
   </StringTable>
   <StringTable>
     <Label>MasterTech_TechnologicalAssimilation_Dec</Label>
@@ -1050,7 +1050,7 @@
   </StringTable>
   <StringTable>
     <Label>SporeModule_Dec</Label>
-    <String>Durante la invasión, mata a toda la población del mundo.</String>
+    <String>Durante la invasión, el Módulo de Esporas mata a toda la población del mundo.</String>
   </StringTable>
   <StringTable>
     <Label>RelativeEthicsModule_Name</Label>
@@ -1142,7 +1142,7 @@
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_UnlockPolicyScreen_Dec</Label>
-    <String>Establece la [HS=HS_Tech]Tecnología[/HS] en estudio en el [HS=HS_ResearchCenter]Centro de Investigación[/HS]. Debemos investigar las Políticas Coloniales, que nos permitirán ver información importante sobre toda la Alianza y promulgar [HS=HS_Policy ]Políticas[/HS]. Cuando la investigación esté completa, la [HS=HS_Tech]Tecnología[/HS] dará acceso al [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Menú de la Civilización[/HS].[BR][BR]Cada nuevo [HS=HS_Months]Turno[/HS] añade progreso a la [HS=HS_Tech]Tecnología[/HS] activa en el Centro de Investigación. La mayoría de las [HS=HS_Tech]Tecnologías[/HS] requieren varios [HS=HS_Months]Turnos[/HS] para completarse. Para aumentar la velocidad a la que se completa la investigación, aumenta la [ICON=Stat_Research_Icon] [HS=HS_Research]Investigación[/HS] generada desde [HS=HS_CoreWorld]Mundos Centrales[/HS].</String>
+    <String>Establece la [HS=HS_Tech]Tecnología[/HS] que se está investigando en el [HS=HS_ResearchCenter]Centro de Investigación[/HS]. Deberíamos investigar Políticas Coloniales, lo que nos permitirá ver información importante sobre toda la Alianza y promulgar [HS=HS_Policy]Políticas[/HS]. Cuando la investigación esté completa, la [HS=HS_Tech]Tecnología[/HS] otorgará acceso al [ICON=Menu_CivilizationMenu_Icon] [HS=HS_CivilizationMenu]Menú de Civilización[/HS].[BR][BR]Cada nuevo [HS=HS_Months]Turno[/HS] añade progreso a la [HS=HS_Tech]Tecnología[/HS] activa en el Centro de Investigación. La mayoría de las [HS=HS_Tech]Tecnologías[/HS] toman varios [HS=HS_Months]Turnos[/HS] en completarse. Para aumentar la velocidad a la que se completa la investigación, aumenta la [ICON=Stat_Research_Icon] [HS=HS_Research]Investigación[/HS] que se genera desde los [HS=HS_CoreWorld]Mundos Núcleo[/HS].</String>
   </StringTable>
   <StringTable>
     <Label>Campaign_Tutorail_EnactAPolicy</Label>

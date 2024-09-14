@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>OperationalAbility_Noncombatant_Name</Label>
+    <String>Невовлечение</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_Option0_0</Label>
+    <String>{PLAYERFACTION:1} является одной из нескольких земных и внеземных фракций, которые являются соперниками в галактической гонке за доминирование в космосе. Они описываются следующим образом: {PLAYERFACTIONDESCRIPTION:1}. У них есть следующие черты: {PLAYERTRAITS:1}</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_BIOLOGY_PROMPT_Option0_0</Label>
+    <String>1</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_PROMPT_Option0_0</Label>
+    <String>Основываясь на этом кратком описании, предложите творческое однословное имя для этого вида. Помните, необходимо указать только одно слово для названия этого вида.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PROMPT_Option0_0</Label>
+    <String>Основываясь на этом кратком описании, составьте творческое описание из двух предложений о гражданах этого вида. Помните, описание касается граждан, а не цивилизации.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_AFFINITY_PROMPT_Option0_0</Label>
+    <String>Исходя из этого краткого описания, какая из следующих направленностей кажется наиболее подходящей. Верните обратно номер, соответствующий этим: '''1 Тоталитаризм; 2. Пацифизм; 3. Нигилизм; 4. Коллективизм; 5. Прогрессивизм; 6. Индивидуализм; 7. Эгалитаризм; 8. Традиционализм;''' Выведите только номер без комментариев.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_PERSONALITY_PROMPT_Option0_0</Label>
+    <String>Исходя из этого краткого описания, какие два из следующих направлений кажутся наиболее подходящими. Выведите обратно список номеров, разделённых запятыми, соответствующих этим: '''{RACEPERSONALITIES:1}''' Выводите только список номеров, разделённых запятыми, без комментариев. Формат вывода должен быть следующим: '''17, 13'''</String>
+  </StringTable>
+  <StringTable>
+    <Label>RACE_TRAITS_PROMPT_Option0_0</Label>
+    <String>Основываясь на этом кратком описании, укажите номер черты, которая лучше всего их описывает. Вот черты. '''{RACETRAITS:1}''' Введите один номер без комментариев.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0</Label>
+    <String>Основываясь на этом кратком описании, выберите один из следующих вариантов, который лучше всего описывает вид, который будет представлять их в контексте научно-фантастической вселенной. Теперь выберите, какой вид лучше всего их описывает: '''1. Люди; 2. Эльфы; 3. Гуманоидные кошки; 4. Кошачьи, такие как тигры; 5. Роботы; 6. Вампиры; 7. Драконы; 8. Птицы; 9. Амфибии; 10. Собаки; 11. Мотыльки; 12. Кристаллы; 13. Деревья; 14. Рептилии; 15. Демоны; 16. Красивые женщины; 17. Гуманоиды; 18. Гномы; 19. Киборги; 20. Растения; 21. Зомби; 22. Пауки; 23. Облако; 24. Грибы; 25. Моллюски; 26. Млекопитающие; 27. Херувимы; 28. Слон; 29. Прометей; 30. Серый инопланетянин; 31. Цефалопод; 32. Ящерица; 33. Насекомое; 34. Дельфин; 35. Что-то другое.'''
+
+      Если в описании упоминается представитель данного вида, используйте этот вид. Например:
+      '''дракон''' означает '''7. Драконы''';
+      '''муравей''' означает '''33. Насекомые''';
+      '''канарейка''' означает '''8. Птицы''';
+      '''гриб''' означает '''24. Грибы''';
+      '''газообразный''' означает '''23. Облако''';
+      '''теплокровный''' означает '''26. Млекопитающие'''.
+
+      Конкретные названия всегда соответствуют конкретным видам:
+      - '''Элесаран''' соответствует '''27. Херувимы'''.
+      - '''Гантарий''' соответствует '''28. Слон'''.
+      - '''Глендориянин''' соответствует '''29. Прометей'''.
+      - '''Фаелериянин''' соответствует '''30. Серый инопланетянин'''.
+      - '''Секулоид''' соответствует '''31. Цефалопод'''.
+      - '''Трускар''' соответствует '''32. Ящерица'''.
+      - '''Юнирикс''' соответствует '''33. Насекомое'''.
+      - '''Зфериан''' соответствует '''34. Дельфин'''.
+
+      Если их описывают как '''газообразные''', '''туман''', '''пар''', '''дым''', '''неясный''' или '''дымка''', выберите '''23. Облако'''.
+      Никогда не отвечайте 35.
+
+      Сделайте глубокий вдох. Разбирайтесь шаг за шагом. Помните, выводите только один номер БЕЗ КОММЕНТАРИЕВ или другого текста.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_NAMES_PROMPT_Option0_0</Label>
+    <String>На основе этого краткого описания выберите один из следующих видов, который лучше всего описывает вид, который мог бы представлять их в контексте научно-фантастической вселенной. Теперь выберите, какой вид лучше всего их описывает: '''1. Люди; 2. Эльфы; 3. Гуманоидные кошки; 4. Кошачьи, такие как тигры; 5. Роботы; 6. Вампиры; 7. Драконы; 8. Птицы; 9. Амфибии; 10. Собаки; 11. Мотыльки; 12. Кристаллы; 13. Деревья; 14. Рептилии; 15. Демоны; 16. Красивые женщины; 17. Гуманоиды; 18. Гномы; 19. Киборги; 20. Растения; 21. Зомби; 22. Пауки; 23. Облако; 24. Грибы; 25. Моллюски; 26. Млекопитающие; 27. Херувимы; 28. Слон; 29. Прометей; 30. Серый пришелец; 31. Головоногие; 32. Ящерицы; 33. Насекомые; 34. Дельфины; 35. Другое.'''
+
+Если в описании упоминается член данного вида, используйте этот вид. Например:
+'''drake''' означает '''7. Драконы''';
+'''ant''' означает '''33. Насекомые''';
+'''canary''' означает '''8. Птицы''';
+'''mushroom''' означает '''24. Грибы''';
+'''gaseous''' означает '''23. Облако''';
+'''warm blooded''' означает '''26. Млекопитающие'''.
+
+Конкретные названия всегда соответствуют конкретным видам:
+- '''Elesaran''' соответствует '''27. Херувимы'''.
+- '''Ganthari''' соответствует '''28. Слон'''.
+- '''Glendorian''' соответствует '''29. Прометей'''.
+- '''Phaelerian''' соответствует '''30. Серый пришелец'''.
+- '''Seculoid''' соответствует '''31. Головоногие'''.
+- '''Truskar''' соответствует '''32. Ящерицы'''.
+- '''Unirix''' соответствует '''33. Насекомые'''.
+- '''Zpherian''' соответствует '''34. Дельфины'''.
+
+Если их описывают как '''gaseous''', '''mist''', '''vapor''', '''smoke''', '''nebulous''', или '''fume''' выберите '''23. Облако'''.
+Вы никогда не должны отвечать 35.
+
+Глубоко дышите. Работайте пошагово. Помните, что нужно вывести только один номер без комментариев или другого текста.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_1</Label>
+    <String>{PLAYERFACTION:2} Столкновение</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_2</Label>
+    <String>Пограничный Столкновение {YEAR}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfExpansion_Name_1</Label>
+    <String>{PLAYERFACTION:2} Пограничный Спор</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfConquest_Name_1</Label>
+    <String>Завоевание {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfAnnihilation_Name_1</Label>
+    <String>Уничтожение {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>Doctrine_CommandAndControl_Name</Label>
+    <String>Командование и Контроль</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Benevolent</Label>
+    <String>Доброжелательный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Neutral</Label>
+    <String>Прагматичный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Merciless</Label>
+    <String>Безжалостный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Aggressive</Label>
+    <String>Агрессивный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Peaceful</Label>
+    <String>Миролюбивый</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cruel</Label>
+    <String>Жестокий</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Expansionist</Label>
+    <String>Экспансионист</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Greedy</Label>
+    <String>Жадный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Opportunistic</Label>
+    <String>Опportunisticкий</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Scientific</Label>
+    <String>Научный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Diplomatic</Label>
+    <String>Дипломатичный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cultural</Label>
+    <String>Культурный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Spiritual</Label>
+    <String>Духовный</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Trader</Label>
+    <String>Торговец</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Xenophobic</Label>
+    <String>Ксенофобский</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Totalitarianism</Label>
+    <String>Тоталитаризм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Pacifism</Label>
+    <String>Пацифизм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Nihilism</Label>
+    <String>Нигилизм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Individualism</Label>
+    <String>Индивидуализм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Collectivism</Label>
+    <String>Коллективизм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Progressivism</Label>
+    <String>Прогрессивизм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Egalitarianism</Label>
+    <String>Эгалитаризм</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Traditionalism</Label>
+    <String>Традиционализм</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowObject_DefaultFormat</Label>
+    <String>Разрешает {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockObject_DefaultFormat</Label>
+    <String>Блоки {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowTech_Format</Label>
+    <String>Разрешает технологию {TECHNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockTech_Format</Label>
+    <String>Блоки {TECHNAME} Технологии</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowsOrbitalImprovement_Format</Label>
+    <String>Позволяет орбитальное улучшение {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockOrbitalImprovement_Format</Label>
+    <String>Блокирует орбитальное улучшение {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowPlanetaryImprovement_Format</Label>
+    <String>Позволяет {OBJECTNAME} планетарное улучшение</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockPlanetaryImprovement_Format</Label>
+    <String>Блокирует {OBJECTNAME} Планетарное Улучшение</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowEO_Format</Label>
+    <String>Разблокирует {OBJECTNAME} Исполнительный Указ</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockEO_Format</Label>
+    <String>Блоки {OBJECTNAME} Исполнительный Приказ</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_2DIGITVLUE</Label>
+    <String>00</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LongShipName</Label>
+    <String>Т.А.С. ДлинноеИмяКорабля М2-001</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Round</Label>
+    <String>Раунд 1</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LogTitle</Label>
+    <String>Журнал Битвы</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShipClass</Label>
+    <String>Класс Корабля Название</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowLog</Label>
+    <String>Показать журнал боя</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Targeting</Label>
+    <String>Наведение</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_WeaponName</Label>
+    <String>Название Оружия</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_AttackPotential</Label>
+    <String>[ICON=AttackIcon] Атака (Потенциал)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Battle_Log_FullyDefended</Label>
+    <String>Полностью Защищено</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Absorption</Label>
+    <String>[ICON=AbsorptionIcon] Поглощено</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Evasion</Label>
+    <String>[ICON=EvasionIcon] Уклонился</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Mitigated</Label>
+    <String>[ICON=MitigationIcon] Смягчено</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_NoTarget</Label>
+    <String>Получение Цели...</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowShipHud</Label>
+    <String>Показать Худы Корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_HideShipHud</Label>
+    <String>Скрыть Худы Корабля</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Completed_Actions</Label>
+    <String>Цели Войны Достигнуты</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Progress</Label>
+    <String>Прогресс</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Justification</Label>
+    <String>Оправдание Военных Целей</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Remaining</Label>
+    <String>[ICON=JustificationStatIcon] Оставшиеся месяцы</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Over</Label>
+    <String>[ICON=JustificationStatIcon] Месяцы Сверхурочно</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Name</Label>
+    <String>Кошачьи Фатальности</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Dec</Label>
+    <String>Загадочные и ловкие, Кошачьи Фаталы известны своими быстрыми рефлексами и любопытной, но часто опасной натурой.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Name</Label>
+    <String>Киборги</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Dec</Label>
+    <String>Слияние машины и плоти, Киборги известны своими усиленными способностями и выносливостью.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Name</Label>
+    <String>Космические Демоны</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Dec</Label>
+    <String>С огромной репутацией, Демоны известны своей мощной тёмной техномагией и внушительным присутствием.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Name</Label>
+    <String>Космические Дварфы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Dec</Label>
+    <String>Крепкие и надёжные, Дварфы знамениты своим мастерством и любовью к подземельям различных миров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Name</Label>
+    <String>Космические Эльфы</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Dec</Label>
+    <String>Изящные и гармонично сливающиеся с природой, Эльфы обладают глубокими знаниями техномагии и древних преданий.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Name</Label>
+    <String>Звездные Лягушки</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Dec</Label>
+    <String>Лягушки известны своей способностью прыгать и уникальными навыками выживания.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Name</Label>
+    <String>Гуманоиды</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Dec</Label>
+    <String>Разнообразные и адаптируемые, Гуманоиды способны процветать в различных средах и обществах.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Name</Label>
+    <String>Ящерка</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Dec</Label>
+    <String>Хладнокровные и хитрые, Ящерицы известны своими инстинктами выживания и быстрой ловкостью.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Name</Label>
+    <String>Разумные Растения</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Dec</Label>
+    <String>Растущие и процветающие, растения обладают уникальной связью с природным миром и его энергиями.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Name</Label>
+    <String>Вампирический</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Dec</Label>
+    <String>Таинственные и притягательные, Вампиры известны своим кажущимся бессмертием и мощными квази-мистическими способностями.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Name</Label>
+    <String>Война Обороны</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Desc</Label>
+    <String>Краткосрочная война с целью предотвратить агрессию и защитить границы. Объявление Войны во имя Обороны влечёт за собой незначительные дипломатические штрафы.[BR][BR]Получите [HS=HS_AggressiveNeighbor]Агрессивного Соседа[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Name</Label>
+    <String>Война Расширения</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Desc</Label>
+    <String>Умеренно длинная война с целью расширения границ и распространения влияния. Объявление Войны Расширения приводит к дипломатическим штрафам.[BR][BR]Получите [HS=HS_DangerousNeighbor]Опасный Сосед[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Name</Label>
+    <String>Война Завоевания</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Desc</Label>
+    <String>Длительная война с целью захвата обширных территорий противника. Объявление Войны Завоевания влечёт за собой более суровые дипломатические санкции.[BR][BR]Получите [HS=HS_GalacticThreat]Галактическую Угрозу[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Name</Label>
+    <String>Война Уничтожения</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Desc</Label>
+    <String>Продолжительная война с целью уничтожить вражескую цивилизацию. Объявление Войны на Уничтожение повлечет за собой суровые дипломатические последствия.[BR][BR]Получите [HS=HS_ClearAndPresentDanger]Непосредственную и Явную Угрозу[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Name</Label>
+    <String>Завоевать Центральный Мир</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Completed_Name</Label>
+    <String>Завоевание Центральных Миров</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Desc</Label>
+    <String>+5 Очков Военной Цели</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Name</Label>
+    <String>Завоевать Колонию</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Completed_Name</Label>
+    <String>Колонии Завоеваны</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Desc</Label>
+    <String>+2 Пункта Военной Цели</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Name</Label>
+    <String>Завоевать Звездную Базу</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Completed_Name</Label>
+    <String>Звездная база Завоевана</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Desc</Label>
+    <String>+1 Очко Военной Цели</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Name</Label>
+    <String>Выиграно Флотское Сражение</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Completed_Name</Label>
+    <String>Выигранные космические сражения</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Desc</Label>
+    <String>Очки военной цели, начисленные, составляют 10% от боевого рейтинга вражеского флота</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_AggressiveNeighbor</Label>
+    <String>Агрессивный Сосед</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_DangerousNeighbor</Label>
+    <String>Опасный Сосед</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_GalacticThreat</Label>
+    <String>Галактическая Угроза</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_ClearAndPresentDanger</Label>
+    <String>Непосредственная и Явная Угроза</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_BORDER_SKIRMISH_GENERIC_1</Label>
+    <String>Война Обороны</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_EXPANSION_GENERIC_1</Label>
+    <String>Война Расширения</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_CONQUEST_GENERIC_1</Label>
+    <String>Война Завоевания</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_ANNIHILATION_GENERIC_1</Label>
+    <String>Война Уничтожения</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetWnd_Next_Citizen_Reserved_Slot</Label>
+    <String>Ожидание для Граждан в Переходе</String>
+  </StringTable>
+  <StringTable>
+    <Label>Population_ReservedUnits_Tooltip</Label>
+    <String>{VALUE} граждан в пути на эту планету.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivName_Label</Label>
+    <String>Название Цивилизации</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivShortName_Label</Label>
+    <String>Цивилизация Краткое Имя</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_NO_TRAITS_Option0_0</Label>
+    <String>Рассмотрите одну из нескольких земных и внеземных фракций, которые являются соперниками в галактической гонке за доминирование в космосе. Они описываются следующим образом: {PLAYERFACTIONDESCRIPTION:1}.</String>
+  </StringTable>
+</StringTableList>

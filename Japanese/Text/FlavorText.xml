@@ -5426,7 +5426,6 @@
     </FlavorTextOption>
     <FlavorTextOption>
       <Requirements>
-        <RelativeStrength>SpeakerMuchWeaker</RelativeStrength>
         <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
       </Requirements>
       <StringKey>GENERIC_GREETING_Option6_0</StringKey>
@@ -5434,7 +5433,7 @@
     </FlavorTextOption>
     <FlavorTextOption>
       <Requirements>
-        <RelativeStrength>SpeakerMuchStronger</RelativeStrength>
+        <RelativeStrength>SpeakerStronger</RelativeStrength>
         <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
       </Requirements>
       <StringKey>GENERIC_GREETING_Option7_0</StringKey>
@@ -6442,9 +6441,15 @@
       <PreferenceWeight>10</PreferenceWeight>
     </FlavorTextOption>
     <FlavorTextOption>
-      <StringKey>CONTACT_REFUSAL_Option1_0</StringKey>
+      <Requirements>
+        <RelativeStrength>SpeakerStronger</RelativeStrength>
+        <RequiredDiplomacyFlag>AtWar</RequiredDiplomacyFlag>
+      </Requirements>
       <StringKey>CONTACT_REFUSAL_Option1_1</StringKey>
       <StringKey>CONTACT_REFUSAL_Option1_2</StringKey>
+    </FlavorTextOption>
+    <FlavorTextOption>
+      <StringKey>CONTACT_REFUSAL_Option1_0</StringKey>
     </FlavorTextOption>
   </FlavorTextDef>
   <FlavorTextDef>

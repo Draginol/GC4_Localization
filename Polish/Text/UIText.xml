@@ -24,7 +24,6 @@
     <Label>DELAYBUTTON</Label>
     <String>Zdecyduj później.</String>
   </StringTable>
-  
   <StringTable>
     <Label>CampaignName</Label>
     <String>A Campaign Title_tk</String>
@@ -168,6 +167,14 @@
   <StringTable>
     <Label>BATTLE_VIEWER_DISABLED_MP_TOOLTIP</Label>
     <String>Przeglądarka bitew jest wyłączona w trybie wieloosobowym.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_AI_BATTLES_TOOLTIP</Label>
+    <String>Podgląd walki jest [BR]dostępny tylko dla [BR]pojedynków Ludźmi.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_BY_OPTION_TOOLTIP</Label>
+    <String>Podgląd bitwy jest[BR] wyłączony w tej sesji.</String>
   </StringTable>
   <StringTable>
     <Label>BATTLE_VIEWER_SKIP_TITLE</Label>
@@ -1307,7 +1314,7 @@
   </StringTable>
   <StringTable>
     <Label>SecondsUnits</Label>
-    <String>- %s</String>
+    <String>s</String>
   </StringTable>
   <StringTable>
     <Label>TurnTimeLimitValue</Label>
@@ -3407,7 +3414,7 @@
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Fighter</Label>
-    <String>Fightery</String>
+    <String>[HS=HS_PointDefense]Myśliwce[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Frigate</Label>
@@ -4182,6 +4189,10 @@
     <String>Ta część jest zbyt ciężka do zamontowania. Najpierw usuń niektóre inne komponenty.</String>
   </StringTable>
   <StringTable>
+    <Label>DESIGNER_MAX_CAPACITY_BODY_LABEL_SMALL_HULL</Label>
+    <String>Ta część jest za ciężka,[BR] by zamontować ją na[BR] tym kadłubie.</String>
+  </StringTable>
+  <StringTable>
     <Label>DESIGNER_LANDING_NEW_DESIGN_ENTRY_LABEL</Label>
     <String>Nowy Projekt</String>
   </StringTable>
@@ -4555,7 +4566,7 @@
   </StringTable>
   <StringTable>
     <Label>S_LABEL</Label>
-    <String>- %S</String>
+    <String>S</String>
   </StringTable>
   <StringTable>
     <Label>T_LABEL</Label>
@@ -5287,7 +5298,7 @@
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_ASTEROIDS</Label>
-    <String>[ICON=Stat_Productive_Icon]</String>
+    <String>[IKONA=Asteroidy_Stat_Ikona]</String>
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_RESOURCES</Label>
@@ -5879,7 +5890,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_WEAPONS_LABEL</Label>
-    <String>Wojna</String>
+    <String>Bronie</String>
   </StringTable>
   <StringTable>
     <Label>Open</Label>
@@ -7239,7 +7250,7 @@
   </StringTable>
   <StringTable>
     <Label>PERCENT_STRING</Label>
-    <String>{AMOUNT} %</String>
+    <String>{AMOUNT}%</String>
   </StringTable>
   <StringTable>
     <Label>MULTIPLY_FORMAT</Label>
@@ -7263,7 +7274,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_PICK_CLASS_LABEL</Label>
-    <String>Wybierz klasę statku</String>
+    <String>Ustal Doktrynę dla Typu Statku</String>
   </StringTable>
   <StringTable>
     <Label>ROTATIONNAME</Label>
@@ -7271,7 +7282,7 @@
   </StringTable>
   <StringTable>
     <Label>UPGRADE_DESIGN_LABEL</Label>
-    <String>Nowy Projekt</String>
+    <String>Nowa Klasa Statku</String>
   </StringTable>
   <StringTable>
     <Label>SLIDERLABEL</Label>
@@ -7375,7 +7386,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_ECONOMIC_LABEL</Label>
-    <String>Kolonizacja</String>
+    <String>Nauka</String>
   </StringTable>
   <StringTable>
     <Label>ASSAULT_SHIP_LABEL</Label>
@@ -7739,7 +7750,7 @@
   </StringTable>
   <StringTable>
     <Label>STATION_ACTION_LABEL</Label>
-    <String>Stacjonujący</String>
+    <String>Stacjonuje w {OBJECTNAME}</String>
   </StringTable>
   <StringTable>
     <Label>DO_SURVEY_ACTION_LABEL</Label>
@@ -8915,19 +8926,19 @@
   </StringTable>
   <StringTable>
     <Label>ASSAULT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Myśliwce</String>
+    <String>Myśliwce Szturmowe</String>
   </StringTable>
   <StringTable>
     <Label>INTERCEPTOR_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Myśliwce</String>
+    <String>Myśliwce Przechwytujące</String>
   </StringTable>
   <StringTable>
     <Label>ESCORT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Myśliwce</String>
+    <String>Myśliwce eskortowe</String>
   </StringTable>
   <StringTable>
     <Label>GUARDIAN_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Myśliwce</String>
+    <String>Myśliwce Strażników</String>
   </StringTable>
   <StringTable>
     <Label>BONUS_SOURCE_FIGHTERS</Label>
@@ -9123,19 +9134,19 @@
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_CULTURAL</Label>
-    <String>Dodaj 25% bonusu do wpływów na [HS=HS_Week]Miesiąc[/HS] dla obu cywilizacji poprzez udostępnianie kultury.</String>
+    <String>Daj premię {AMOUNT} do {STATNAME} na [HS=HS_Week]miesiąc[/HS] obu cywilizacjom dzięki dzieleniu się kulturą.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_FREETRADE</Label>
-    <String>Daj 25% bonus do bogactwa obu cywilizacji dzięki udostępnianiu Rynków.</String>
+    <String>Daj {AMOUNT} premię do {STATNAME} obu cywilizacji poprzez dzielenie się Rynkami.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_SLAVE</Label>
-    <String>Przyznaj 25% bonus do produkcji i bogactwa kolonii dla innej cywilizacji, zgadzając się na otwarcie rynków niewolniczych.</String>
+    <String>Dodaj {AMOUNT} premię do produkcji kolonii i bogactwa dla innej cywilizacji, zgadzając się na otwarcie rynków niewolników.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_ResearchTradeTreaty</Label>
-    <String>Daj 25% bonus do badań obu cywilizacji poprzez udostępnianie technologii.</String>
+    <String>Daj bonus {AMOUNT} do {STATNAME} obu cywilizacjom poprzez dzielenie się Technologiami.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_STRATEGICRESOURCE</Label>
@@ -10291,7 +10302,7 @@
   </StringTable>
   <StringTable>
     <Label>Extreme_World_Cannot_Colonize</Label>
-    <String>Nie można kolonizować</String>
+    <String>Wymaga Ekstremalnej Kolonizacji</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Yor</Label>
@@ -11079,7 +11090,7 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER</Label>
-    <String>Osobowość AI</String>
+    <String>Osobowość</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER_SUBTEXT</Label>
@@ -11171,11 +11182,11 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_TITLE</Label>
-    <String>Rasa Obywateli</String>
+    <String>Gatunek Obywatela</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT</Label>
-    <String>Wybierz domyślną rasę obywateli w swojej cywilizacji</String>
+    <String>Wybierz domyślny gatunek obywateli w swojej cywilizacji</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT2</Label>
@@ -12209,7 +12220,6 @@
     <Label>PersonalityType_Desc_Totalitarianism</Label>
     <String>Wierzy w absolutną władzę i kontrolę państwa, z wszystkimi aspektami życia publicznego i prywatnego pod rządami jednej władzy.</String>
   </StringTable>
-  
   <StringTable>
     <Label>PersonalityType_PacifismPerTurn</Label>
     <String>[ICON=Calm_Icon] Życzliwość na miesiąc</String>
@@ -12272,7 +12282,7 @@
   </StringTable>
   <StringTable>
     <Label>PersonalityType_EgalitarianismPerTurn</Label>
-    <String>[ICON=Egalitarianizm_Ikona] Egalitaryzm na miesiąc</String>
+    <String>[ICON=Egalitarianism_Icon] Egalitaryzm na miesiąc</String>
   </StringTable>
   <StringTable>
     <Label>PersonalityType_Desc_Egalitarianism</Label>
@@ -13072,7 +13082,7 @@
   </StringTable>
   <StringTable>
     <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
-    <String>Wzrost populacji zależy od nie-syntetycznych obywateli na twojej planecie. Można go jednak zwiększyć poprzez ulepszenia takie jak Kliniki Płodności i Szpitale, a znacznie zredukować na światach o wysokim poziomie zanieczyszczenia.</String>
+    <String>Wzrost wynika z niesyntetycznych obywateli twojego świata. Ulepszenia planetarne i Role Obywateli mogą być wykorzystane do zwiększenia Wzrostu. Jednakże, Wzrost może być także znacznie zmniejszony na światach z wysokim poziomem zanieczyszczenia.</String>
   </StringTable>
   <StringTable>
     <Label>APPROVAL_TITLE_HAPPY</Label>
@@ -13148,7 +13158,7 @@
   </StringTable>
   <StringTable>
     <Label>PlanetaryDefensesHPFormatString</Label>
-    <String>{VALUE}/{AMOUNT}</String>
+    <String>{KWOTA}</String>
   </StringTable>
   <StringTable>
     <Label>PopulationFormatString</Label>
@@ -13380,11 +13390,11 @@
   </StringTable>
   <StringTable>
     <Label>CanSupplySocial_Value</Label>
-    <String>Transportuje rafinowane towary do innej kolonii, dostarczając %ld punktów produkcji.</String>
+    <String>Transportuje przetworzone towary do innej kolonii, dostarczając %ld przechowywanych towarów.</String>
   </StringTable>
   <StringTable>
     <Label>CanSupplyMilitary_Value</Label>
-    <String>Transportuje przetworzone towary do innego stoczni, dostarczając %ld punktów produkcji.</String>
+    <String>Transportuje rafinowane towary do innej stoczni, dostarczając %ld Przechowywanych Towarów.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_SAVE_FAILED_TITLE</Label>
@@ -13536,15 +13546,15 @@
   </StringTable>
   <StringTable>
     <Label>ALERT_BesiegedPlanet</Label>
-    <String>%s jest pod oblężeniem!</String>
+    <String>Nasza planeta {PLANETNAME} jest oblężona i upadnie za {AMOUNT} miesięcy.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetWin</Label>
-    <String>Podbiliśmy planetę %s.</String>
+    <String>Zdobyliśmy planetę {PLANETNAME}.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetLoss</Label>
-    <String>%s został podbity.</String>
+    <String>{PLANETNAME} została podbita.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ShipUpgradeAvailable</Label>
@@ -14444,7 +14454,7 @@
   </StringTable>
   <StringTable>
     <Label>STACKED_SHIP_BAR_TITLE</Label>
-    <String>Układane Statki lub Floty:</String>
+    <String>Statki lub Floty ułożone w kafelku.</String>
   </StringTable>
   <StringTable>
     <Label>RALLY_CONTEXT_UPGRADE_FLEET_ERROR</Label>
@@ -14496,7 +14506,7 @@
   </StringTable>
   <StringTable>
     <Label>PLAYERACHIEVEMENT_HSTEXT</Label>
-    <String>Tylko jedna taka poprawka może być zbudowana na cywilizację.</String>
+    <String>Można zbudować i używać tylko jedną taką ulepszoną strukturę na cywilizację.</String>
   </StringTable>
   <StringTable>
     <Label>IMP_TOOLTIP_COLONYUNIQUE</Label>
@@ -15168,7 +15178,7 @@
   </StringTable>
   <StringTable>
     <Label>INVASION_INITIATION_CASUALTIES_PERCENTAGE_FORMAT</Label>
-    <String>- %s</String>
+    <String>%s %%</String>
   </StringTable>
   <StringTable>
     <Label>INVASION_INITIATION_DEFENDER_CASUALTIES</Label>
@@ -16804,11 +16814,11 @@
   </StringTable>
   <StringTable>
     <Label>SpecialtyShips</Label>
-    <String>Wyróżnione statki</String>
+    <String>Prezentowane Klasy</String>
   </StringTable>
   <StringTable>
     <Label>MilitaryShips</Label>
-    <String>Statki Bojowe</String>
+    <String>Klasy Bojowe</String>
   </StringTable>
   <StringTable>
     <Label>MissionShips</Label>
@@ -16881,10 +16891,6 @@
   <StringTable>
     <Label>Survey</Label>
     <String>Statek flagowy</String>
-  </StringTable>
-  <StringTable>
-    <Label>Cruiser</Label>
-    <String>Krążownik</String>
   </StringTable>
   <StringTable>
     <Label>Siege</Label>
@@ -17330,7 +17336,6 @@
     <Label>Ateroid_Cancel_Label</Label>
     <String> </String>
   </StringTable>
-  
   <StringTable>
     <Label>ASTEROID_BUILDMININGBASE_COST</Label>
     <String>Koszt: %d kredytów</String>
@@ -17749,7 +17754,7 @@
   </StringTable>
   <StringTable>
     <Label>STARBASE_TYPE_TYPE</Label>
-    <String>Typ Stacji Kosmicznej:</String>
+    <String>Typ Stacji Gwiezdnej</String>
   </StringTable>
   <StringTable>
     <Label>CHOOSE_TECH</Label>
@@ -19956,10 +19961,6 @@
     <String>Dodaj Portret</String>
   </StringTable>
   <StringTable>
-    <Label>CHOOSE_FEMALE_LABEL</Label>
-    <String>Dodaj Kobietę</String>
-  </StringTable>
-  <StringTable>
     <Label>CHOOSE_PORTRAITS_LABEL</Label>
     <String>Nazwy i Portrety Obywateli</String>
   </StringTable>
@@ -20851,7 +20852,6 @@
     <Label>RequiresCitizen</Label>
     <String>Wymaga Obywatela</String>
   </StringTable>
-  
   <StringTable>
     <Label>Megalopolis_Name</Label>
     <String>Megalopolis</String>
@@ -20860,7 +20860,6 @@
     <Label>Megalopolis_ShortDec</Label>
     <String>Użyj jedzenia do budowy miasta, które zwiększy liczbę ludności, którą twoja kolonia może utrzymać.</String>
   </StringTable>
-  
   <StringTable>
     <Label>RequiredTech</Label>
     <String>Wymagana technologia {CONDITION}</String>
@@ -20900,10 +20899,6 @@
   <StringTable>
     <Label>RequiredTrait</Label>
     <String>Wymagana cecha cywilizacji {CONDITION}</String>
-  </StringTable>
-  <StringTable>
-    <Label>RequiredCitizenRace</Label>
-    <String>Wymagana biologia {CONDITION}</String>
   </StringTable>
   <StringTable>
     <Label>RequiredGalaxySize</Label>
@@ -21739,7 +21734,7 @@
   </StringTable>
   <StringTable>
     <Label>CrimePenalty_Desc</Label>
-    <String>Jest zbyt wiele przestępstw</String>
+    <String>Jest przestępstwo</String>
   </StringTable>
   <StringTable>
     <Label>MutantPenalty_Desc</Label>
@@ -22823,7 +22818,7 @@
   </StringTable>
   <StringTable>
     <Label>ColonyLimitLabel</Label>
-    <String>Limit Kolonii [ICON=Colony_Limit_Icon]</String>
+    <String>[ICON=Colony_Limit_Icon] Limit Kolonii</String>
   </StringTable>
   <StringTable>
     <Label>MilitaryShipsOnlyLabel</Label>
@@ -23391,7 +23386,7 @@
   </StringTable>
   <StringTable>
     <Label>Concept_Improvement_Dec</Label>
-    <String>Ulepszenia mogą być budowane na twoich [HS=HS_CoreWorld]Kluczowych Światach[/HS]. Reprezentują one znaczącą budowę na tym świecie i mogą dostarczyć wiele bonusów. Istnieje kilka typów Ulepszeń: [BR][BR][ICON=Approval_Stat_Icon] [HS=HS_Approval]Zaakceptowanie[/HS][BR][BR][ICON=Stat_Food_Icon] [HS=HS_Food]Jedzenie[/HS][BR][BR][ICON=Stat_Influence_Icon] [HS=HS_Influence]Wpływy[/HS][BR][BR][ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Produkcja[/HS][BR][BR][ICON=Stat_Military_Power_Icon] [HS=HS_Military]Wojskowość[/HS][BR][BR][ICON=Stat_Population_Icon] [HS=HS_Population]Populacja[/HS][BR][BR][ICON=Stat_Research_Icon] [HS=HS_Research]Badania[/HS][BR][BR][ICON=Stat_Tourism_Income_Icon] [HS=HS_Tourism]Turystyka[/HS][BR][BR][ICON=Stat_Economic_Power_Icon] [HS=HS_ColonyGrossIncome]Bogactwo</String>
+    <String>Ulepszenia mogą być budowane na twoich [HS=HS_CoreWorld]Kluczowych Światach[/HS]. Reprezentują one znaczącą budowę na tym świecie i mogą dostarczyć wiele bonusów. Istnieje kilka typów Ulepszeń: [BR][BR][ICON=Approval_Stat_Icon] [HS=HS_Approval]Zaakceptowanie[/HS][BR][BR][ICON=Stat_Food_Icon] [HS=HS_Food]Jedzenie[/HS][BR][BR][ICON=Stat_Influence_Icon] [HS=HS_Influence]Wpływy[/HS][BR][BR][ICON=Manufacturing_Stat_Icon] [HS=HS_Manufacturing]Produkcja[/HS][BR][BR][ICON=Stat_Military_Power_Icon] [HS=HS_Military]Wojskowość[/HS][BR][BR][ICON=Stat_Population_Icon] [HS=HS_Population]Populacja[/HS][BR][BR][ICON=Stat_Research_Icon] [HS=HS_Research]Badania[/HS][BR][BR][ICON=Stat_Tourism_Income_Icon] [HS=HS_Tourism]Turystyka[/HS][BR][BR][ICON=Stat_Economic_Power_Icon] [HS=HS_ColonyGrossIncome]Bogactwo[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>Concept_Instability_Name</Label>
@@ -25713,7 +25708,6 @@
     <Label>SHIP_DESIGNER_AdvancedEditMode</Label>
     <String>Zaawansowany Tryb Edycji</String>
   </StringTable>
-  
   <StringTable>
     <Label>MultiplayerGameListWnd_SortByGameName_Tooltip</Label>
     <String>Sortuj według: [COLOR=UIDefaultHot]Nazwa gry[/COLOR]</String>
@@ -25802,11 +25796,16 @@
     <Label>ResearchTurnsRemaining</Label>
     <String>%d miesiąc(e) do zakończenia badań</String>
   </StringTable>
-  
-  
   <StringTable>
     <Label>END_UITEXT</Label>
     <String>Koniec angielskiego tekstu UI</String>
   </StringTable>
-  
+  <StringTable>
+    <Label>SHIP_DESIGNER_TAB_SUPPORT</Label>
+    <String>Wsparcie</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnableCheats</Label>
+    <String>Włącz Konsolę Kodów</String>
+  </StringTable>
 </StringTableList>

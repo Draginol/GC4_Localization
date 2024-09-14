@@ -158,7 +158,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoSurveyDec</Label>
-    <String>[ICON=AutoSurvey_Icon] Auto-Survey jest dostępny tylko dla [HS=HS_Ship]Statków[/HS] z Modułami Badawczymi. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey porusza się bez bezpośrednich poleceń, próbując zlokalizować [HS=HS_Anomaly]Anomalie[/HS]. Gdy [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey jest blisko [HS=HS_Anomaly]Anomalii[/HS], przeprowadzi [HS=HS_SurveyOrder]Badanie[/HS] [HS=HS_Anomaly ]Anomalii[/HS] bez bezpośrednich poleceń.</String>
+    <String>[ICON=AutoSurvey_Icon] Auto-Survey jest dostępny tylko dla [HS=HS_Ship]Statków[/HS] z modułami badawczymi. [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey będzie się poruszał bez bezpośrednich rozkazów, próbując zlokalizować [HS=HS_Anomaly]Anomalie[/HS]. Gdy [HS=HS_Ship]Statek[/HS] w trybie [ICON=AutoSurvey_Icon] Auto-Survey jest blisko [HS=HS_Anomaly]Anomalii[/HS], automatycznie przeprowadzi [HS=HS_SurveyOrder]Badanie[/HS] [HS=HS_Anomaly]Anomalii[/HS] bez bezpośrednich rozkazów.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_AutoColonizeTitle</Label>
@@ -406,7 +406,7 @@
   </StringTable>
   <StringTable>
     <Label>Hotspot_ConqueringPlanetsDec</Label>
-    <String>Wszystkie skolonizowane planety mają wskaźnik [ICON=Conquest_Icon] podboju planetarnego. Przedstawia on, jak dobrze broniona jest planeta i jak dużo siły militarnej potrzeba do przełamania obrony. [HS=HS_Fleet]Floty[/HS] mają ocenę podboju określającą, jak dobrze są przygotowane do oblegania planety. Niektóre statki, takie jak statki transportowe, są lepiej przystosowane do podboju planet niż inne.[BR][BR]Aby rozpocząć oblężenie, wydaj polecenie [HS=HS_ShipMovement]przemieszczenia[/HS] [HS=HS_Fleet]floty[/HS] do planety, którą chcesz podbić. Gdy [HS=HS_Fleet]flota[/HS] dotrze do planety, rozpocznie się oblężenie, o ile wskaźnik [ICON=Conquest_Icon] podboju floty będzie wystarczająco wysoki, aby pokonać wskaźnik [ICON=Conquest_Icon] podboju planety.</String>
+    <String>Wszystkie skolonizowane planety mają ocenę [ICON=Stat_Planetary_Defense_Icon] Obrony Planetarnej. To reprezentuje, jak bardzo planeta jest broniona i ile siły militarnej będzie potrzebne, aby przezwyciężyć jej obronę. [HS=HS_Fleet]Floty[/HS] mają ocenę [ICON=Conquest_Icon] Zdolności Podboju, przedstawiającą, jak są wyposażone do oblężenia planety. Niektóre statki, takie jak statki transportowe, są lepiej wyposażone do podbijania planet niż inne.[BR][BR]Aby zainicjować oblężenie, wydaj polecenie [HS=HS_ShipMovement]Przesuń[/HS] do [HS=HS_Fleet]Floty[/HS] z celem będącym Planetą do podboju. Gdy [HS=HS_Fleet]Flota[/HS] dotrze do Planety, zainicjuje oblężenie, jeśli jej ocena [ICON=Conquest_Icon] Zdolności Podboju jest wystarczająco wysoka, aby przezwyciężyć Ocenę Obrony [ICON=Stat_Planetary_Defense_Icon] Planety.</String>
   </StringTable>
   <StringTable>
     <Label>Hotspot_StandbyTitle</Label>
@@ -416,8 +416,6 @@
     <Label>Hotspot_StandbyDec</Label>
     <String>Rozkazu gotowości można używać, aby statek pozostał bezczynny do odwołania. W przeciwieństwie do innych rozkazów, które mają warunki przerywające bezczynność, statki w trybie gotowości nie opuszczą go, dopóki nie odbiorą odpowiedniego rozkazu.</String>
   </StringTable>
-  
-  
   <StringTable>
     <Label>Hotspot_Biology</Label>
     <String>Biologia</String>

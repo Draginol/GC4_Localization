@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>OperationalAbility_Noncombatant_Name</Label>
+    <String>Non-Engagement</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_Option0_0</Label>
+    <String>{PLAYERFACTION:1} fait partie d'un certain nombre de factions terrestres et extraterrestres qui sont rivales dans une course à l'échelle galactique pour dominer l'espace. Ils sont décrits comme suit : {PLAYERFACTIONDESCRIPTION:1}. Ils possèdent les traits suivants : {PLAYERTRAITS:1}</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_BIOLOGY_PROMPT_Option0_0</Label>
+    <String>Sur la base de cette courte description, laquelle des biologies suivantes semble la plus applicable. '''1. Vie basée sur le carbone terrestre; 2. Vie basée sur l'aquatique; 3. Vie basée sur le silicium; 4. Robotique ou Synthétique; 5. Vie basée sur l'ammoniac''' Par exemple, tout animal bipède ou quadrupède serait '''1''', tout poisson ou autre vie marine serait '''2''', tout être partiellement électronique serait '''3''', tout être entièrement fabriqué serait '''4''', et tout être gazeux serait '''5'''. Sortie uniquement un numéro sans commentaire.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_PROMPT_Option0_0</Label>
+    <String>Basé sur cette courte description, trouvez un nom créatif en un seul mot pour cette espèce. Souvenez-vous, donnez uniquement un mot pour nommer cette espèce.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PROMPT_Option0_0</Label>
+    <String>Sur la base de cette courte description, produisez une description créative en deux phrases des citoyens de cette espèce. Rappelez-vous, la description concerne les citoyens et non la civilisation.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_AFFINITY_PROMPT_Option0_0</Label>
+    <String>Basé sur cette courte description, lequel des suivants semble le plus approprié. Renvoyez un numéro correspondant à ceux-ci : '''1 Totalitarisme ; 2. Pacifisme ; 3. Nihilisme ; 4. Collectivisme ; 5. Progressisme ; 6. Individualisme ; 7. Égalitarisme ; 8. Traditionalisme ;''' Renvoyez uniquement un numéro sans commentaire.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_PERSONALITY_PROMPT_Option0_0</Label>
+    <String>Sur la base de cette courte description, lesquels des deux points suivants semblent les plus appropriés. Renvoyez une liste de nombres séparés par des virgules correspondant à ces derniers : '''{RACEPERSONALITIES:1}'''. Renvoyez uniquement la liste de nombres séparés par des virgules sans aucun commentaire. La sortie doit être formatée comme suit : '''17, 13'''</String>
+  </StringTable>
+  <StringTable>
+    <Label>RACE_TRAITS_PROMPT_Option0_0</Label>
+    <String>Sur la base de cette courte description, indiquez le numéro du trait qui les décrit le mieux. Voici les traits. '''{RACETRAITS:1}''' Donnez un seul numéro sans commentaire.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0</Label>
+    <String>Sur la base de cette brève description, choisissez l'une des options suivantes qui décrit le mieux l'espèce qui les représenterait dans le contexte d'un univers de science-fiction. Maintenant, choisissez quelle espèce les décrit le mieux : '''1. Humains ; 2. Elfes ; 3. Chats humanoïdes ; 4. Félins tels que les tigres ; 5. Robots ; 6. Vampires ; 7. Dragons ; 8. Oiseaux ; 9. Amphibiens ; 10. Chiens ; 11. Papillons de nuit ; 12. Cristal ; 13. Arbres ; 14. Reptiles ; 15. Démons ; 16. Belles femmes ; 17. Humanoïde ; 18. Nains ; 19. Cyborg ; 20. Plantes ; 21. Zombies ; 22. Araignées ; 23. Nuage ; 24. Champignon ; 25. Mollusques ; 26. Mammifères ; 27. Chérubins ; 28. Éléphant ; 29. Prométhéen ; 30. Alien gris ; 31. Céphalopode ; 32. Lézard ; 33. Insecte ; 34. Dauphin ; 35. Autre chose.'''
+
+      Si la description mentionne un membre d'une espèce donnée, utilisez cette espèce. Par exemple :
+      '''dragonneau''' indique '''7. Dragons''' ;
+      '''fourmi''' indique '''33. Insectes''' ;
+      '''canari''' indique '''8. Oiseaux''' ;
+      '''champignon''' indique '''24. Champignon''' ;
+      '''gazeux''' indique '''23. Nuage''' ;
+      '''à sang chaud''' indique '''26. Mammifères'''.
+
+      Les noms spécifiques correspondent toujours à des espèces spécifiques :
+      - '''Elesaran''' correspond à '''27. Chérubins'''.
+      - '''Ganthari''' correspond à '''28. Éléphant'''.
+      - '''Glendorian''' correspond à '''29. Prométhéen'''.
+      - '''Phaelerian''' correspond à '''30. Alien gris'''.
+      - '''Seculoid''' correspond à '''31. Céphalopode'''.
+      - '''Truskar''' correspond à '''32. Lézard'''.
+      - '''Unirix''' correspond à '''33. Insecte'''.
+      - '''Zpherian''' correspond à '''34. Dauphin'''.
+
+      S'ils sont décrits comme '''gazeux''', '''brouillard''', '''vapeur''', '''fumée''', '''nébuleux''', ou '''fumée''' choisissez '''23. Nuage'''.
+      Vous ne devez jamais répondre avec 35.
+
+      Prenez une grande respiration. Travaillez étape par étape. Rappelez-vous de ne sortir qu'un seul numéro SANS COMMENTAIRE ni autre texte.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_NAMES_PROMPT_Option0_0</Label>
+    <String>Pour une espèce extraterrestre avec cette description, veuillez créer 25 noms uniques pour des êtres extraterrestres individuels, chacun séparé par une virgule. La plupart des noms doivent avoir un prénom et un nom de famille. Répondez avec UNIQUEMENT la liste séparée par des virgules. AUCUN commentaire, AUCUN numérotage.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_1</Label>
+    <String>Escarmouche de {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_2</Label>
+    <String>Escarmouche Frontalière {YEAR}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfExpansion_Name_1</Label>
+    <String>Conflit Frontalier de {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfConquest_Name_1</Label>
+    <String>Conquête des {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfAnnihilation_Name_1</Label>
+    <String>Anéantissement des {PLAYERFACTION:2}</String>
+  </StringTable>
+  <StringTable>
+    <Label>Doctrine_CommandAndControl_Name</Label>
+    <String>Commandement et Contrôle</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Benevolent</Label>
+    <String>Bienveillant</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Neutral</Label>
+    <String>Pragmatique</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Merciless</Label>
+    <String>Impitoyable</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Aggressive</Label>
+    <String>Agressif</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Peaceful</Label>
+    <String>Pacifique</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cruel</Label>
+    <String>Cruel</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Expansionist</Label>
+    <String>Expansionniste</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Greedy</Label>
+    <String>Cupide</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Opportunistic</Label>
+    <String>Opportuniste</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Scientific</Label>
+    <String>Scientifique</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Diplomatic</Label>
+    <String>Diplomatique</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cultural</Label>
+    <String>Culturel</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Spiritual</Label>
+    <String>Spirituel</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Trader</Label>
+    <String>Marchand</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Xenophobic</Label>
+    <String>Xénophobe</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Totalitarianism</Label>
+    <String>Totalitarisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Pacifism</Label>
+    <String>Pacifisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Nihilism</Label>
+    <String>Nihilisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Individualism</Label>
+    <String>Individualisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Collectivism</Label>
+    <String>Collectivisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Progressivism</Label>
+    <String>Progressisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Egalitarianism</Label>
+    <String>Égalitarisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Traditionalism</Label>
+    <String>Traditionalisme</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowObject_DefaultFormat</Label>
+    <String>Permet à {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockObject_DefaultFormat</Label>
+    <String>Blocs {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowTech_Format</Label>
+    <String>Permet la technologie {TECHNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockTech_Format</Label>
+    <String>Blocs {TECHNAME} Tech</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowsOrbitalImprovement_Format</Label>
+    <String>Permet l'Amélioration Orbitale de {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockOrbitalImprovement_Format</Label>
+    <String>Bloque l'Amélioration Orbitale {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowPlanetaryImprovement_Format</Label>
+    <String>Permet l'Amélioration Planétaire de {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockPlanetaryImprovement_Format</Label>
+    <String>Bloque l'Amélioration Planétaire {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowEO_Format</Label>
+    <String>Débloque {OBJECTNAME} Ordonnance Exécutive</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockEO_Format</Label>
+    <String>Blocs {OBJECTNAME} Ordonnance Exécutive</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_2DIGITVLUE</Label>
+    <String>00</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LongShipName</Label>
+    <String>T.A.S. NomLongVaisseau M2-001</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Round</Label>
+    <String>Manche 1</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LogTitle</Label>
+    <String>Journal de Combat</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShipClass</Label>
+    <String>Nom de Classe de Vaisseau</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowLog</Label>
+    <String>Afficher le journal de bataille</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Targeting</Label>
+    <String>Ciblage</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_WeaponName</Label>
+    <String>Nom de l'Arme</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_AttackPotential</Label>
+    <String>[ICON=AttackIcon] Attaque (Potentiel)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Battle_Log_FullyDefended</Label>
+    <String>Entièrement Défendu</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Absorption</Label>
+    <String>[ICON=AbsorptionIcon] Absorbé</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Evasion</Label>
+    <String>[ICON=EvasionIcon] Évité</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Mitigated</Label>
+    <String>[ICON=MitigationIcon] Atténué</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_NoTarget</Label>
+    <String>Acquisition de la cible...</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowShipHud</Label>
+    <String>Afficher les HUDs du vaisseau</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_HideShipHud</Label>
+    <String>Masquer les HUDs du vaisseau</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Completed_Actions</Label>
+    <String>Objectifs de Guerre Atteints</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Progress</Label>
+    <String>Progrès</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Justification</Label>
+    <String>ObjectifsDeGuerre_Justification</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Remaining</Label>
+    <String>[ICON=JustificationStatIcon] Mois Restants</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Over</Label>
+    <String>[ICON=JustificationStatIcon] Mois Supplémentaires</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Name</Label>
+    <String>Félines Fatales</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Dec</Label>
+    <String>Mystérieuses et agiles, les Fatales Félines sont connues pour leurs réflexes rapides et leur nature curieuse mais souvent dangereuse.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Name</Label>
+    <String>Cyborgues</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Dec</Label>
+    <String>Une fusion de machine et de chair, les Cyborgs sont connus pour leurs capacités améliorées et leur résilience.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Name</Label>
+    <String>Démons de l'Espace</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Dec</Label>
+    <String>Avec une réputation redoutable, les Démons sont connus pour leur puissante magie techno sombre et leur présence imposante.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Name</Label>
+    <String>Nains de l'Espace</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Dec</Label>
+    <String>Robustes et solides, les Nains sont renommés pour leur savoir-faire et leur amour du monde souterrain de divers mondes.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Name</Label>
+    <String>Elfes de l'Espace</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Dec</Label>
+    <String>Élégants et en harmonie avec la nature, les Elfes possèdent une connaissance profonde de la techno magie et des anciennes légendes.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Name</Label>
+    <String>Grenouilles des Étoiles</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Dec</Label>
+    <String>Les grenouilles sont connues pour leur capacité de saut et leurs compétences de survie uniques.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Name</Label>
+    <String>Humanoïdes</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Dec</Label>
+    <String>Divers et adaptables, les Humanoïdes sont capables de prospérer dans divers environnements et sociétés.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Name</Label>
+    <String>Lézard</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Dec</Label>
+    <String>Sang-froid et rusés, les Lézards sont connus pour leurs instincts de survie et leur agilité rapide.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Name</Label>
+    <String>Plantes Conscientes</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Dec</Label>
+    <String>Grandissant et prospérant, les Plantes possèdent une connexion unique au monde naturel et à ses énergies.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Name</Label>
+    <String>Vampirique</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Dec</Label>
+    <String>Mystérieux et séduisants, les Vampires sont connus pour leur apparente immortalité et leurs puissantes capacités quasi-mystiques.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Name</Label>
+    <String>Guerre de Défense</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Desc</Label>
+    <String>Une guerre à court terme dans le but de prévenir l'agression et de protéger les frontières. Déclarer une Guerre de Défense entraîne de légères pénalités diplomatiques.[BR][BR]Gagnez [HS=HS_AggressiveNeighbor]Voisin Agressif[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Name</Label>
+    <String>Guerre d'Expansion</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Desc</Label>
+    <String>Une guerre de longueur modérée avec l'intention d'élargir les frontières et de répandre l'influence. Déclarer une Guerre d'Expansion entraîne des pénalités diplomatiques.[BR][BR]Obtenez [HS=HS_DangerousNeighbor]Voisin Dangereux[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Name</Label>
+    <String>Guerre de Conquête</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Desc</Label>
+    <String>Une guerre de longue durée avec l'intention de revendiquer de vastes étendues du territoire ennemi. Déclarer une Guerre de Conquête entraîne des pénalités diplomatiques plus sévères.[BR][BR]Gagnez [HS=HS_GalacticThreat]Menace Galactique[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Name</Label>
+    <String>Guerre d'Anéantissement</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Desc</Label>
+    <String>Une guerre prolongée avec l'intention d'anéantir la civilisation ennemie. Déclarer une Guerre d'Annihilation entraînera de lourdes pénalités diplomatiques.[BR][BR]Obtenez [HS=HS_ClearAndPresentDanger]Un Danger Clair et Présent[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Name</Label>
+    <String>Conquérir le Monde Central</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Completed_Name</Label>
+    <String>Mondes Centraux Conquis</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Desc</Label>
+    <String>+5 Points d'Objectif de Guerre</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Name</Label>
+    <String>Conquérir Colonie</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Completed_Name</Label>
+    <String>Colonies Conquises</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Desc</Label>
+    <String>+2 Points de But de Guerre</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Name</Label>
+    <String>Conquérir la Base Stellaire</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Completed_Name</Label>
+    <String>Base Stellaire Conquise</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Desc</Label>
+    <String>+1 Points de But de Guerre</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Name</Label>
+    <String>Victoire Flotte Bataille</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Completed_Name</Label>
+    <String>Batailles de Flotte Gagnées</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Desc</Label>
+    <String>Les points d'objectif de guerre attribués représentent 10% de la cote de combat de la flotte ennemie.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_AggressiveNeighbor</Label>
+    <String>Voisin Agressif</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_DangerousNeighbor</Label>
+    <String>Voisin Dangereux</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_GalacticThreat</Label>
+    <String>Menace Galactique</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_ClearAndPresentDanger</Label>
+    <String>Danger Clair et Présent</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_BORDER_SKIRMISH_GENERIC_1</Label>
+    <String>Guerre de Défense</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_EXPANSION_GENERIC_1</Label>
+    <String>Guerre d'Expansion</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_CONQUEST_GENERIC_1</Label>
+    <String>Guerre de Conquête</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_ANNIHILATION_GENERIC_1</Label>
+    <String>Guerre d'Anéantissement</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetWnd_Next_Citizen_Reserved_Slot</Label>
+    <String>En attente pour les Citoyens en Transit</String>
+  </StringTable>
+  <StringTable>
+    <Label>Population_ReservedUnits_Tooltip</Label>
+    <String>{VALUE} citoyens en transit vers cette plan ète.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivName_Label</Label>
+    <String>Nom de la civilisation</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivShortName_Label</Label>
+    <String>Nom court de la civilisation</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_NO_TRAITS_Option0_0</Label>
+    <String>Considérez l'une des nombreuses factions terrestres et extraterrestres qui sont rivales dans une course à échelle galactique pour dominer l'espace. Elles sont décrites comme suit : {PLAYERFACTIONDESCRIPTION:1}.</String>
+  </StringTable>
+</StringTableList>

@@ -208,7 +208,7 @@
     </StringTable>
     <StringTable>
         <Label>STATNAME_NaturalLeagueFavor</Label>
-        <String>Natural League Favor</String>
+        <String>Natural League Citizen Approval</String>
     </StringTable>
     <StringTable>
         <Label>STATDEC_NaturalLeagueFavor</Label>
@@ -216,7 +216,7 @@
     </StringTable>
     <StringTable>
         <Label>STATNAME_WarforgedFavor</Label>
-        <String>Warforged Favor</String>
+        <String>Warforged Citizen Approval</String>
     </StringTable>
     <StringTable>
         <Label>STATDEC_WarforgedFavor</Label>
@@ -338,6 +338,12 @@
         <Label>STATDEC_Food</Label>
         <String>Planets produce food that is consumed by your organic citizens. To get more, colonize new worlds, or specialize your citizens into Farmers.</String>
     </StringTable>
+
+  <StringTable>
+    <Label>STATNAME_FoodBonus</Label>
+    <String>[ICON=Stat_Food_Icon] Food Stores</String>
+  </StringTable>
+  
     <StringTable>
         <Label>STATNAME_ColonyNetIncome</Label>
         <String>[ICON=Stat_Credits_Net_Icon] Income</String>
@@ -556,7 +562,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDESC_Diplomacy</Label>
-        <String>Diplomacy Bonus is a modifier on your relations with other civilizations. A higher Diplomacy will make them more likely to trade with you and to offer you treaties, while less likely to declare war on you. Each civilization leader has their own personality, and will evaluate their relationship with you differently.</String>
+        <String>Diplomacy Bonus is a modifier on your relations with other civilizations. A higher Diplomacy will make them more likely to trade with you and to offer you [HS=HS_Treaties]Treaties[/HS], while less likely to declare war on you. Each civilization leader has their own personality, and will evaluate their relationship with you differently.</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_DiplomaticCapital</Label>
@@ -2720,7 +2726,7 @@
     </StringTable>
     <StringTable>
         <Label>STATDESC_BazaarDiscount</Label>
-        <String>Discount when buying at the Galactic Bazaar.</String>
+        <String>Discount when buying at the Galactic Bazaar. (Max Effect: 50%)</String>
     </StringTable>
     <StringTable>
         <Label>STATNAME_MemberCount</Label>
@@ -2896,7 +2902,7 @@
 
   <StringTable>
     <Label>STATNAME_AssaultAttack</Label>
-    <String>Assault Attack Troops</String>
+    <String>[ICON=Assault_Attack_Stat_Icon] Assault Attack Troops</String>
   </StringTable>
   
   <StringTable>
@@ -2906,7 +2912,7 @@
   
   <StringTable>
     <Label>STATNAME_AssaultDefense</Label>
-    <String>Assault Defense Troops</String>
+    <String>[ICON=Assault_Defense_Stat_Icon] Assault Defense Troops</String>
   </StringTable>
 
   <StringTable>
@@ -2923,4 +2929,16 @@
     <Label>STATDESC_AssaultRange</Label>
     <String>The effective range of assault shuttles. The Assault Range is how far assault shuttles can travel to another ship to initiate a boarding action.</String>
   </StringTable>
+
+<!-- Treaty Hotspot added for Navigator Description -->
+  <StringTable>
+    <Label>HS_Treaties_Name</Label>
+    <String>Treaties</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>HS_Treaties_Desc</Label>
+    <String>Treaties are mutually beneficial agreements established between friendly civilizations through trade.[BR][BR]The ability to establish Treaties is an important function of [HS=HS_Diplomacy]Diplomacy[/HS]</String>
+  </StringTable>
+
 </StringTableList>

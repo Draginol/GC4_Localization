@@ -176,7 +176,7 @@
 	</StringTable>
 	<StringTable>
 		<Label>Hotspot_AutoSurveyDec</Label>
-		<String>[ICON=AutoSurvey_Icon] Auto-Survey is only available to [HS=HS_Ship]Ships[/HS] with Survey Modules. A [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode will move without direct orders, trying to locate [HS=HS_Anomaly]Anomalies[/HS]. When a [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode is near an [HS=HS_Anomaly]Anomaly[/HS], it will [HS=HS_SurveyOrder]Survey[/HS] the [HS=HS_Anomaly ]Anomaly[/HS] without direct orders.</String>
+		<String>[ICON=AutoSurvey_Icon] Auto-Survey is only available to [HS=HS_Ship]Ships[/HS] with Survey Modules. A [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode will move without direct orders, trying to locate [HS=HS_Anomaly]Anomalies[/HS]. When a [HS=HS_Ship]Ship[/HS] in [ICON=AutoSurvey_Icon] Auto-Survey mode is near an [HS=HS_Anomaly]Anomaly[/HS], it will [HS=HS_SurveyOrder]Survey[/HS] the [HS=HS_Anomaly]Anomaly[/HS] without direct orders.</String>
 	</StringTable>
 
 	<StringTable>
@@ -479,6 +479,24 @@
 	</StringTable>
 
 	<StringTable>
+		<Label>Hotspot_Phenotype</Label>
+		<String>Phenotype</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_PhenotypeDec</Label>
+		<String>Phenotype is an aspect of [HS=HS_Biology]Biology[/HS] that affects how a [HS=HS_Species]Species[/HS] grows its population and the type of environment it prefers. It can define some distinct characteristics.</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_Species</Label>
+		<String>Species</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_SpeciesDec</Label>
+		<String>A Civilization's Species defines many aspects of the Civilization, such as how it [HS=HS_Growth]Grows[/HS] its [HS=HS_Population]Population[/HS], what [HS=HS_PlanetType]Planet Types[/HS] are preferred, and what Skills Citizens are more likely to be stronger or weaker in. Species can even change the Civilization's reliance on [HS=HS_Food]Food[/HS] or other resources.[BR][BR]Species are characterized by their [HS=HS_Phenotype]Phenotype[/HS] and other Stats.[BR][BR][COLOR=UIDefaultHighlight_Red](Species DLC unlocks ability to create Custom Species.)[/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
 		<Label>Hotspot_CulturalAffinity</Label>
 		<String>Cultural Affinity</String>
 	</StringTable>
@@ -512,6 +530,69 @@
 	<StringTable>
 		<Label>Hotspot_WeaponCooldown_Desc</Label>
 		<String>Weapon Cooldown is the time it takes for a weapon to rearm. It measures the number of Turns in combat between shots. Reducing Weapon Cooldown allows a weapon to fire more frequently.</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_WarAims_Label</Label>
+		<String>War Aims</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_WarAims_Desc</Label>
+		<String>[COLOR=UIDefaultHighlight_Red](Warlords DLC Required)[/COLOR][BR][BR]War Aims are chosen when a Civilization declares war. They establish the scale of a war, with smaller-scale wars being easier to complete and coming with fewer diplomatic penalties. Once a War Aim is achieved, it is advisable to make peace. A war that surpasses its declared goal will result in unrest across the civilization and negatively impact diplomatic standing.</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_InvasionTactics_Label</Label>
+		<String>Invasion Tactics</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_InvasionTactics_Desc</Label>
+		<String>Invasion Tactics are the methods used to take over a [HS=HS_CoreWorld]Core World[/HS]. They affect how long it takes to take over a [HS=HS_CoreWorld]Core World[/HS] and what effects the planet and its settlement will suffer. New Invasion Tactics can be unlocked by unlocking certain [HS=HS_Tech]Techs[/HS].[BR][BR][COLOR=UIDefaultHighlight_Red](Warlords DLC unlocks additional Invasion Tactics.)[/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_Doctrines_Label</Label>
+		<String>Doctrines</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_Doctrines_Desc</Label>
+		<String>Combat ships use Doctrines to specialize their behavior in combat. Doctrines combine the [HS=HS_OperationalAbilities]Operational Ability[/HS] and [HS=HS_TargetingPriorities]Targeting Priorities[/HS] assigned to a combat ship. Doctrines can be established for a new Ship Class in the Ship Designer when setting up a new Ship Class. Doctrines can be edited for all ships of a Ship Class at a [HS=HS_Shipyard]Shipyard[/HS], and the effect will be immediate.[BR][BR][COLOR=UIDefaultHighlight_Red](Warlords DLC is required to edit Doctrines.)[/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_ShipClass_Label</Label>
+		<String>Ship Class</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_ShipClass_Desc</Label>
+		<String>Ship Class is the combination of [HS=HS_ShipType]Ship Type[/HS] and [HS=HS_Doctrines]Doctrine[/HS]. </String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_OperationalAbilities_Label</Label>
+		<String>Operational Abilities</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_OperationalAbilities_Desc</Label>
+		<String>Operational Abilities are benefits given to a [HS=HS_ShipClass]Ship Class[/HS] by its set [HS=HS_Doctrines]Doctrine[/HS]. They can help a ship specialize in a specific combat role or minimize a design's weaknesses.[BR][BR][COLOR=UIDefaultHighlight_Red](Warlords DLC unlocks additional Operational Abilities.)[/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_TargetingPriorities_Label</Label>
+		<String>Targeting Priorities</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_TargetingPriorities_Desc</Label>
+		<String>Targeting Priorities determines in what order a [HS=HS_ShipClass]Ship Class[/HS] will engage enemy ships in combat. This can help ships focus on their specialization and greatly influence combat flow. Targeting Priorities are set by the [HS=HS_Doctrines]Doctrine[/HS] associated with a [HS=HS_ShipClass]Ship Class[/HS].[BR][BR][COLOR=UIDefaultHighlight_Red](Warlords DLC unlocks additional Targeting Priorities.)[/COLOR]</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Hotspot_ShipType_Label</Label>
+		<String>Ship Type</String>
+	</StringTable>
+	<StringTable>
+		<Label>Hotspot_ShipType_Desc</Label>
+		<String>Ship Type determines the [HS=HS_HullSize]Hull Size[/HS] and innate benefit of a ship. Ship Type helps a ship perform a specialized role in combat.[BR][BR][COLOR=UIDefaultHighlight_Red](Warlords DLC unlocks additional Ship Types.)[/COLOR]</String>
 	</StringTable>
 
 

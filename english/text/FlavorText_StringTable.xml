@@ -1270,7 +1270,7 @@
   </StringTable>
   <StringTable>
     <Label>FIRST_CONTACT_RESPONSE_PEACEFUL_Option49_0</Label>
-    <String>Our creators, the Iconians, knew them. We inherited their world.</String>
+    <String>Their memory, our birthright, shall be reclaimed in due time.</String>
   </StringTable>
   <StringTable>
     <Label>FIRST_CONTACT_RESPONSE_PEACEFUL_Option50_0</Label>
@@ -3150,7 +3150,7 @@
   </StringTable>
   <StringTable>
     <Label>GENERIC_GREETING_Option6_1</Label>
-    <String>This war has not gone as we had  hoped.</String>
+    <String>This war has not gone as we had hoped.</String>
   </StringTable>
   <StringTable>
     <Label>GENERIC_GREETING_Option7_0</Label>
@@ -8596,8 +8596,8 @@
     <String>Consider one of a number of terrestrial and extraterrestrial factions that are rivals in a galactic scale race to dominate space. They are described as follows: {PLAYERFACTIONDESCRIPTION:1}. </String>
   </StringTable>
   <StringTable>
-    <Label>CITIZEN_BIOLOGY_PROMPT_Option0_0</Label>
-    <String>Based on this short description, which of the following biologies seems more applicable. '''1. Terrestrial Carbon based life; 2. Aquatic based life; 3. Silicon based life; 4. Robotic or Synthetic; 5. Ammonia based life''' As an example, any bipedal or quadrapedal animal would be '''1''', any fish or other sea-life would be '''2''', any partially electronic beings would be '''3''', any fully manufactured beings would be '''4''', and any gaseous being would be '''5'''. Output only a number with no commentary.</String>
+    <Label>CITIZEN_PHENOTYPE_PROMPT_Option0_0</Label>
+    <String>Based on this short description, which of the following biologies seems more applicable. '''1. Humanoid; 2. Reptilian; 3. Cybernetic; 4. Avian; 5. Aquatic; 6. Insectoid; 7. Fungal; 8. Crystalline; 9. Gaseous; 10. Silicon Based; 11. Plantoid; 12. Mammalian; 13. Arachnoid; 14. Radiotrophic; 15. Molluscoid''' '''Some examples of 1 are Elves, Dwarves, Terrans, and Cyclops; 2 are Geckos, Lizards, and Wyverns; 3 are Terminators, Borg, and Cylons; 4 are Eagles, Parrots, and Griffins; 5 are Dolphins, Mermaids, and Krakens; 6 are Ants, Beetles, and Mantises; 7 are Mushrooms, Yeasts, and Myconids; 8 are Quartz Golems, Diamond Giants, and Crystal Dragons; 9 are Air Elementals, Gas Clouds, and Nebula Beings; 10 are Silicon-based Lifeforms, Siliconoids, and Rock Beasts; 11 are Ents, Dryads, and Florans; 12 are Lions, Bears, and Rabbits; 13 are Spiders, Scorpions, and Arachne; 14 are Radiotrophic Fungi, Black Mold, and Extremophiles; 15 are Octopuses, Squids, and Nautiluses''' Output only a number with no commentary.</String>
   </StringTable>
   <StringTable>
     <Label>CITIZEN_SPECIES_PROMPT_Option0_0</Label>
@@ -8622,7 +8622,31 @@
   <StringTable>
     <Label>CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0</Label>
     <!--TODO: These should probably be in an enum in XML-->
-    <String>Based on this short description, choose one of the following that best describes the species that would represent them in the context of a sci-fi universe. Now choose which species best describes them: '''1. Humans; 2. Elves. 3; Humanoid cats; 4. Felines such as tigers; 5. Robots; 6. Vampires; 7. Dragons; 8. Birds; 9. Amphibians; 10. Dogs; 11. Insects; 12. Crystal; 13. Trees; 14. Reptiles; 15. Demons; 16. Beautiful women; 17. Humanoid; 18. Dwarves; 19. Cyborg; 20. Plants; 21. Zombies; 22. Something else.''' Consider the description as being more important than the traits. If the description mentions a member of a given species, use that species. For example '''Drake''' indicates '''Dragons'''; '''Ant''' indicates '''Insects''', '''Canary''' indicates '''Birds'''. Only Silicon or Synthetic lifeforms can be Robots. Remember only output a single number with NO COMMENTARY or other text.</String>
+    <String>Based on this short description, choose one of the following that best describes the species that would represent them in the context of a sci-fi universe. Now choose which species best describes them: '''1. Humans; 2. Elves; 3. Humanoid cats; 4. Felines such as tigers; 5. Robots; 6. Vampires; 7. Dragons; 8. Birds; 9. Amphibians; 10. Dogs; 11. Moths; 12. Crystal; 13. Trees; 14. Reptiles; 15. Demons; 16. Beautiful women; 17. Humanoid; 18. Dwarves; 19. Cyborg; 20. Plants; 21. Zombies; 22. Spiders; 23. Cloud; 24. Fungus; 25. Mollusks; 26. Mammals; 27. Cherubim; 28. Elephant; 29. Promethean; 30. Gray Alien; 31. Cephalopod; 32. Lizard; 33. Insect; 34. Dolphin; 35. Something else.'''
+
+      If the description mentions a member of a given species, use that species. For example:
+      '''drake''' indicates '''7. Dragons''';
+      '''ant''' indicates '''33. Insects''';
+      '''canary''' indicates '''8. Birds''';
+      '''mushroom''' indicates '''24. Fungus''';
+      '''gaseous''' indicates '''23. Cloud''';
+      '''warm blooded''' indicates '''26. Mammals'''.
+
+      Specific names always map to specific species:
+      - '''Elesaran''' matches with '''27. Cherubim'''.
+      - '''Ganthari''' matches with '''28. Elephant'''.
+      - '''Glendorian''' matches with '''29. Promethean'''.
+      - '''Phaelerian''' matches with '''30. Gray Alien'''.
+      - '''Seculoid''' matches with '''31. Cephalopod'''.
+      - '''Truskar''' matches with '''32. Lizard'''.
+      - '''Unirix''' matches with '''33. Insect'''.
+      - '''Zpherian''' matches with '''34. Dolphin'''.
+
+      If they are described as '''gaseous''', '''mist''', '''vapor''', '''smoke''', '''nebulous''', or '''fume''' choose '''23. Cloud'''.
+      You should never respond with 35.
+
+      Take a deep breath. Work it out step by step. Remember only output a single number with NO COMMENTARY or other text.
+    </String>
   </StringTable>
   <StringTable>
     <Label>CITIZEN_NAMES_PROMPT_Option0_0</Label>

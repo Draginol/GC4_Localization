@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>OperationalAbility_Noncombatant_Name</Label>
+    <String>非戦闘参加</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_Option0_0</Label>
+    <String>{PLAYERFACTION:1}は、宇宙を支配するために競争している多数の地球内外の勢力の一つです。以下 のように説明されています：{PLAYERFACTIONDESCRIPTION:1}。彼らは次の特徴を持っています：{PLAYERTRAITS:1}</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_BIOLOGY_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づいて、以下の生物学のうち、どれがもっとも 適用されそうか。'''1. 陸生の炭素ベースの生命体; 2. 水生の生命体; 3. シリコン ベースの生命体; 4. ロボティックまたは合成; 5. アンモニアベースの生命体''' 例えば、二足歩行または四足歩行の動物は'''1'''、魚やその他の海洋生物は'''2'''、部分的に電子的な存在は'''3'''、完全に製造された存在は'''4'''、気体の存在は'''5'''になる。数字のみを出力し、コメントは不要です。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づき、この種族のために創造的な単語の名前を出力してください。この種族の名前として、単語を1つだけ出力してください。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づいて、この種族の市民についての創造的な二文の説明を出力してください。説明は文明ではなく、市民のものであることを忘れないでください。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_AFFINITY_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づいて、次のうちどれが最も適切な焦点と思われますか。これらに対応する番号を返信してください：'''1. 全体主義; 2. 平和主義; 3. ニヒリズム; 4. 集団主義; 5. 進歩主義; 6. 個人主義; 7. 平等主義; 8. 伝統主義;''' 数字のみを返信してください。コメントは不要です。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_PERSONALITY_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づいて、以下の焦点のうちどれが最も適切か二つ選んでください。これらに対応する番号のカンマ区切りリストを出力してください。「{RACEPERSONALITIES:1}」番号のカンマ区切りリストのみをコメントなしで出力してください。出力は以下の形式であるべきです：「17, 13」</String>
+  </StringTable>
+  <StringTable>
+    <Label>RACE_TRAITS_PROMPT_Option0_0</Label>
+    <String>この短い説明に基づき、彼らを最もよく表している特性の番号を出力してください。こちらが特性です。 '''{RACETRAITS:1}''' コメントなしで単一の数字を出力してください。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0</Label>
+    <String>この簡単な説明に基づいて、サイエンスフィクションの宇宙の文脈で彼らを表す種を最もよく表しているものを次の中から選んでください。次に、どの種が彼らを最もよく表しているかを選んでください: '''1. 人間; 2. エルフ; 3. 人型猫; 4. トラのようなネコ科動物; 5. ロボット; 6. ヴァンパイア; 7. ドラゴン; 8. 鳥; 9. 両生類; 10. 犬; 11. 蛾; 12. クリスタル; 13. 木; 14. 爬虫類; 15. 悪魔; 16. 美しい女性; 17. 人型; 18. ドワーフ; 19. サイボーグ; 20. 植物; 21. ゾンビ; 22. クモ; 23. 雲; 24. 菌類; 25. 軟体動物; 26. 哺乳類; 27. ケルビム; 28. 象; 29. プロメテウス; 30. グレイエイリアン; 31. 頭足類; 32. トカゲ; 33. 昆虫; 34. イルカ; 35. その他。'''
+
+      説明に特定の種のメンバーが言及されている場合、その種を使用してください。例えば：
+      '''ドラゴン'''は'''7. ドラゴン'''を示します;
+      '''アリ'''は'''33. 昆虫'''を示します;
+      '''カナリア'''は'''8. 鳥'''を示します;
+      '''キノコ'''は'''24. 菌類'''を示します;
+      '''気体'''は'''23. 雲'''を示します;
+      '''温血'''は'''26. 哺乳類'''を示します。
+
+      特定の名前は常に特定の種に対応します:
+      - '''エレサラン'''は'''27. ケルビム'''と一致します。
+      - '''ガンタリ'''は'''28. 象'''と一致します。
+      - '''グレンドリアン'''は'''29. プロメテウス'''と一致します。
+      - '''フェーリアン'''は'''30. グレイエイリアン'''と一致します。
+      - '''セクロイド'''は'''31. 頭足類'''と一致します。
+      - '''トラスカー'''は'''32. トカゲ'''と一致します。
+      - '''ユニリックス'''は'''33. 昆虫'''と一致します。
+      - '''ゼフェリアン'''は'''34. イルカ'''と一致します。
+
+      彼らが'''気体''', '''霧''', '''蒸気''', '''煙''', '''曖昧''', または'''煙霧'''として描写されている場合、'''23. 雲'''を選んでください。
+      決して35で応答しないでください。
+
+      深呼吸をして、一歩一歩考えましょう。必ず一つの</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_NAMES_PROMPT_Option0_0</Label>
+    <String>この説明に基づく異星人種族のために、個々の異星人のための25個のユニークな名前を作成してください。ほとんどの名前には名（ファーストネーム）と姓（ラストネーム）が含まれているべきです。カンマ区切りリストのみを回答してください。コメントはなしで、番号付けも不要です。
+    </String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_1</Label>
+    <String>{PLAYERFACTION:2} 小競り合い</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_2</Label>
+    <String>国境の小競り合い {YEAR}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfExpansion_Name_1</Label>
+    <String>{PLAYERFACTION:2} 国境紛争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfConquest_Name_1</Label>
+    <String>{PLAYERFACTION:2} の征服</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfAnnihilation_Name_1</Label>
+    <String>{PLAYERFACTION:2}の全滅</String>
+  </StringTable>
+  <StringTable>
+    <Label>Doctrine_CommandAndControl_Name</Label>
+    <String>指揮と統制</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Benevolent</Label>
+    <String>慈悲深い</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Neutral</Label>
+    <String>実用主義的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Merciless</Label>
+    <String>冷酷な</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Aggressive</Label>
+    <String>攻撃的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Peaceful</Label>
+    <String>平和的な</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cruel</Label>
+    <String>残酷</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Expansionist</Label>
+    <String>拡張主義者</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Greedy</Label>
+    <String>欲深い</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Opportunistic</Label>
+    <String>機会主義的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Scientific</Label>
+    <String>科学的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Diplomatic</Label>
+    <String>外交的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cultural</Label>
+    <String>カルチュラル</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Spiritual</Label>
+    <String>スピリチュアル</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Trader</Label>
+    <String>トレーダー</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Xenophobic</Label>
+    <String>排外的</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Totalitarianism</Label>
+    <String>全体主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Pacifism</Label>
+    <String>平和主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Nihilism</Label>
+    <String>ニヒリズム</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Individualism</Label>
+    <String>個人主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Collectivism</Label>
+    <String>コレクティビズム</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Progressivism</Label>
+    <String>進歩主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Egalitarianism</Label>
+    <String>平等主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Traditionalism</Label>
+    <String>伝統主義</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowObject_DefaultFormat</Label>
+    <String>{OBJECTNAME}を許可します</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockObject_DefaultFormat</Label>
+    <String>ブロック {オブジェクトネーム}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowTech_Format</Label>
+    <String>{TECHNAME}テックを許可します</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockTech_Format</Label>
+    <String>ブロック {TECHNAME} テック</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowsOrbitalImprovement_Format</Label>
+    <String>{OBJECTNAME} の軌道 改善を許可します</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockOrbitalImprovement_Format</Label>
+    <String>{OBJECTNAME} 軌道改善をブロックします</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowPlanetaryImprovement_Format</Label>
+    <String>{OBJECTNAME} の惑星改善を許可します</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockPlanetaryImprovement_Format</Label>
+    <String>ブロック {OBJECTNAME} 惑星改善</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowEO_Format</Label>
+    <String>{OBJECTNAME} エグゼクティブ オーダーのアンロック</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockEO_Format</Label>
+    <String>ブロック {OBJECTNAME} 執行命令</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_2DIGITVLUE</Label>
+    <String>00</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LongShipName</Label>
+    <String>T.A.S. ロングシップネーム M2-001</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Round</Label>
+    <String>ラウンド 1</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LogTitle</Label>
+    <String>バトル ログ</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShipClass</Label>
+    <String>船のクラス名</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowLog</Label>
+    <String>バトルログを表示</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Targeting</Label>
+    <String>ターゲティング</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_WeaponName</Label>
+    <String>武器名</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_AttackPotential</Label>
+    <String>[ICON=AttackIcon] 攻撃（ポテンシャル）</String>
+  </StringTable>
+  <StringTable>
+    <Label>Battle_Log_FullyDefended</Label>
+    <String>完全に守り切った</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Absorption</Label>
+    <String>[ICON=AbsorptionIcon] 吸収された</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Evasion</Label>
+    <String>[ICON=EvasionIcon] 回避成功</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Mitigated</Label>
+    <String>[ICON=MitigationIcon] 軽減された</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_NoTarget</Label>
+    <String>ターゲットを取得中...</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Completed_Actions</Label>
+    <String>戦争目標達成</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Progress</Label>
+    <String>進行中</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Justification</Label>
+    <String>戦争目的_正当化</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Remaining</Label>
+    <String>[ICON=JustificationStatIcon] 残り月数</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Over</Label>
+    <String>[ICON=JustificationStatIcon] 月の残業時間</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Name</Label>
+    <String>ネコミミ ファタールズ</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Dec</Label>
+    <String>神秘的で敏捷な、フェリン ファタールズは、彼らの速い反射神経と好奇心旺盛だがよく危険な性質で知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Name</Label>
+    <String>サイボーグたち</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Dec</Label>
+    <String>機械と肉体の融合であるサイボーグは、向上した能力と 強靭さで知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Name</Label>
+    <String>宇宙デーモン</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Dec</Label>
+    <String>恐ろしい評判を持っている、デーモンは彼らの 強力なダークテクノマジックと威圧的な 存在感で知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Name</Label>
+    <String>宇宙ドワーフたち</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Dec</Label>
+    <String>頑丈で強固、ドワーフは様々な世界の地下を愛し、その 手工芸の技術で有名です。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Name</Label>
+    <String>宇宙エルフ</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Dec</Label>
+    <String>優雅で自然と調和しているエルフは、テクノマジックと古代の伝承に関する深い知識を持っています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Name</Label>
+    <String>スター フロッグス</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Dec</Label>
+    <String>カエルは跳躍力と独自の生存スキルで知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Name</Label>
+    <String>ヒューマノイドたち</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Dec</Label>
+    <String>多様で適応性があり、ヒューマノイドはさまざまな環境や社会で繁栄することができます。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Name</Label>
+    <String>トカゲ</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Dec</Label>
+    <String>冷血で狡猾な、トカゲは生存本能と 素早い敏捷性で知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Name</Label>
+    <String>知性を持つ植物</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Dec</Label>
+    <String>成長して繁栄する、植物は自然界とそのエネルギーに対して独自の繋がりを持っている。</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Name</Label>
+    <String>ヴァンパイアック</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Dec</Label>
+    <String>神秘的で魅力的な、ヴァンパイアは その見かけ上の不死性と強力な類似の神秘的能力で 知られています。</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Name</Label>
+    <String>防衛の戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Desc</Label>
+    <String>侵略を先制して防ぎ、国境を守るための短期間の戦争です。防衛戦争 を宣言すると、わずかな外交的ペナルティが発生します。[BR][BR] [HS=HS_AggressiveNeighbor]攻撃的な隣人[/HS] を獲得</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Name</Label>
+    <String>拡張の戦い</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Desc</Label>
+    <String>国境を拡大し、影響力を広げることを目的とした、適度な長さの戦争。拡大戦争を宣言すると、外交上のペナルティが発生します。[BR][BR][HS=HS_DangerousNeighbor]危険な隣人[/HS]を獲得します。</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Name</Label>
+    <String>征服の戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Desc</Label>
+    <String>敵の広大な領土を主張する意図を持つ長期戦争。征服戦争を宣言することは、より厳しい外交的ペナルティを伴います。[BR][BR][HS=HS_GalacticThreat]銀河の脅威[/HS]を得る</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Name</Label>
+    <String>絶滅戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Desc</Label>
+    <String>敵の文明を根絶やしにする意図を持つ長期戦争です。 殲滅戦争を宣言すると、深刻な外交ペナルティが課せられます。[BR][BR] [HS=HS_ClearAndPresentDanger]明白かつ差し迫った危険[/HS] を獲得します</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Name</Label>
+    <String>コアワールドを征服する</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Completed_Name</Label>
+    <String>コア ワールズ 征服済み</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Desc</Label>
+    <String>+5 戦争目標ポイント</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Name</Label>
+    <String>コロニーを征服する</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Completed_Name</Label>
+    <String>植民地征服済み</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Desc</Label>
+    <String>+2 戦争目標ポイント</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Name</Label>
+    <String>スターベースを征服する</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Completed_Name</Label>
+    <String>スターベースを征服した</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Desc</Label>
+    <String>+1 戦争目標ポイント</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Name</Label>
+    <String>艦隊戦勝利</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Completed_Name</Label>
+    <String>艦隊戦勝利</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Desc</Label>
+    <String>敵艦隊の 戦闘評価の 10%が 戦争目標ポイント として授与されます。</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_AggressiveNeighbor</Label>
+    <String>攻撃的な隣人</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_DangerousNeighbor</Label>
+    <String>危険な隣人</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_GalacticThreat</Label>
+    <String>銀河の脅威</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_ClearAndPresentDanger</Label>
+    <String>明確で現在の危険</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_BORDER_SKIRMISH_GENERIC_1</Label>
+    <String>防衛の戦い</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_EXPANSION_GENERIC_1</Label>
+    <String>拡大の戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_CONQUEST_GENERIC_1</Label>
+    <String>征服の戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_ANNIHILATION_GENERIC_1</Label>
+    <String>消滅の戦争</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowShipHud</Label>
+    <String>船のハドを表示</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_HideShipHud</Label>
+    <String>シップ ハド を 隠 す</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetWnd_Next_Citizen_Reserved_Slot</Label>
+    <String>トランジット中の市民のために保持中</String>
+  </StringTable>
+  <StringTable>
+    <Label>Population_ReservedUnits_Tooltip</Label>
+    <String>この惑星への移住中の{VALUE} 市民。</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivName_Label</Label>
+    <String>文明の名前</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivShortName_Label</Label>
+    <String>文明の短縮名</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_NO_TRAITS_Option0_0</Label>
+    <String>地球および地球外の、銀河規模の競争で宇宙を支配するために競い 合う数ある派閥のうちの一つを考えてみてください。彼らは次のように 記述されています: {PLAYERFACTIONDESCRIPTION:1}。</String>
+  </StringTable>
+</StringTableList>

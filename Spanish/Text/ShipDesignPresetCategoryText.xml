@@ -6,7 +6,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Probe_Dec</Label>
-    <String>Las sondas, con alcance ilimitado, exploran la galaxia. Poseen un vasto rango sensorial y son ignoradas por piratas y monstruos.</String>
+    <String>Con alcance ilimitado, las sondas se pueden usar para explorar la galaxia. Tienen un amplio rango de sensores y son ignoradas por piratas, monstruos espaciales y centinelas precursores.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Miner_Name</Label>
@@ -30,7 +30,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Fighter_Dec</Label>
-    <String>Los luchadores son naves pequeñas y maniobrables que se enfocan primero en otros cazas, para luego acechar a los enormes buques capitales, susceptibles a ser asediados.</String>
+    <String>Las naves de la categoría de combate son embarcaciones de casco pequeño que tienen un aumento en la [HS=HS_PointDefense]Evasión[/HS].</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Bomber_Name</Label>
@@ -38,7 +38,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Bomber_Dec</Label>
-    <String>Los bombarderos son naves pequeñas y maniobrables que acosan a las grandes naves capitales, susceptibles de ser abrumadas.</String>
+    <String>Las naves de categoría Bombardero son de Casco Pequeño que infligen mayor Daño.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Frigate_Name</Label>
@@ -46,7 +46,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Frigate_Dec</Label>
-    <String>Diseñado para proteger naves valiosas de bombarderos y cazas entrantes.</String>
+    <String>Las naves de la categoría Fragata son embarcaciones de Casco Pequeño que tienen una [HS=HS_Accuracy]Precisión[/HS] aumentada.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Cruiser_Name</Label>
@@ -54,7 +54,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Cruiser_Dec</Label>
-    <String>Diseñado para eliminar fragatas y otros cruceros del campo de batalla.</String>
+    <String>Los barcos de la categoría Crucero son naves de casco mediano que tienen un alcance de arma aumentado.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Battleship_Name</Label>
@@ -62,7 +62,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Battleship_Dec</Label>
-    <String>Una gran nave capital con un increíble arsenal de capacidades ofensivas y defensivas. Vulnerable a cazas y bombarderos.</String>
+    <String>Las naves de la categoría Acorazado son buques de Casco Grande que tienen un aumento en la [HS=HS_ArmorRating]Armadura[/HS].</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Dreadnought_Name</Label>
@@ -70,7 +70,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Dreadnought_Dec</Label>
-    <String>La nave capital más grande y peligrosa de la galaxia. Diseñada para dominar completamente el campo de batalla. Vulnerable a cazas y bombarderos.</String>
+    <String>Las naves de la categoría Acorazado son embarcaciones de Casco Enorme que tienen un aumento en la [HS=HS_ShieldStrength]Fuerza del Escudo[/HS].</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Colony_Name</Label>
@@ -110,7 +110,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Siege_Dec</Label>
-    <String>Una nave de guerra diseñada para poder conquistar colonias.</String>
+    <String>Las naves de la categoría de asedio son embarcaciones de casco pequeño que tienen una calificación de conquista aumentada.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Invader_Name</Label>
@@ -118,7 +118,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Invader_Dec</Label>
-    <String>Una nave de transporte llena de soldados para conquistar mundos enteros.</String>
+    <String>Las naves de la categoría Invasor son navíos de Casco de Carga que tienen una calificación de Conquista significativamente aumentada.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Undeclared_Name</Label>
@@ -182,7 +182,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Fighter</Label>
-    <String>Es el último objetivo en combate, prioriza atacar a bombarderos</String>
+    <String>+25% [HS=HS_PointDefense]Evasión[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Bomber</Label>
@@ -190,7 +190,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Bomber</Label>
-    <String>Ataca primero a los barcos más grandes</String>
+    <String>+10% de Daño</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Frigate</Label>
@@ -198,7 +198,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Frigate</Label>
-    <String>Objetivos: cazas y bombarderos</String>
+    <String>+25% [HS=HS_Accuracy]Precisión[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Survey</Label>
@@ -210,11 +210,11 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Cruiser</Label>
-    <String>Nave de combate mediana, ataca fragatas</String>
+    <String>Nave de combate mediana</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Cruiser</Label>
-    <String>Prioriza Fragatas primero,</String>
+    <String>+10% Alcance de Arma</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Siege</Label>
@@ -222,7 +222,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Siege</Label>
-    <String>[ICON=Moves_Icon] Mejora de Conquista +5[BR][ICON=Moves_Icon] Bonus de Asedio +25%</String>
+    <String>+12 Calificación de Conquista</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Battleship</Label>
@@ -230,7 +230,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Battleship</Label>
-    <String>[ICON=TacticalSpeed_Icon] Velocidad Táctica -5</String>
+    <String>+10% [HS=HS_ArmorRating]Armadura[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Dreadnought</Label>
@@ -238,7 +238,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Dreadnought</Label>
-    <String>[ICON=TacticalSpeed_Icon] Velocidad Táctica -10</String>
+    <String>+10% [HS=HS_ShieldStrength]Fuerza del Escudo[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Colony</Label>
@@ -254,7 +254,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Constructor</Label>
-    <String>Crea o mejora estaciones estelares</String>
+    <String>Crea una [HS=HS_Starbase]Estrella base[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Invader</Label>
@@ -262,7 +262,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Invader</Label>
-    <String>[ICON=Moves_Icon] Mejora de Conquista +10[BR][ICON=Moves_Icon] Bonus de Asedio +100%</String>
+    <String>+40 Puntuación de Conquista</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Freighter</Label>

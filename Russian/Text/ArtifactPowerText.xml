@@ -1,792 +1,771 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
-    <!-- Created with the GC4 editor -->
-    <!-- ArtifactPowerText.xml -->
-    <StringTable>
-        <Label>ResearchCharge_Name</Label>
-        <String>Архив Предтеч</String>
-    </StringTable>
-    <StringTable>
-        <Label>ResearchCharge_Dec</Label>
-        <String>Архив с почти бесконечным запасом знаний. Его активация позволит нам мгновенно завершить текущее исследование. [COLOR=UIDefaultHighlight]Завершает текущее исследование[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>SocialConstruction_Name</Label>
-        <String>Нанозавод</String>
-    </StringTable>
-    <StringTable>
-        <Label>SocialConstruction_Dec</Label>
-        <String>Может произвести всё, что нам необходимо. Активация позволит мгновенно добиться прогресса в социальном проекте выбр. планеты. [COLOR=UIDefaultHighlight]+100 к планет. производству[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>MilitaryConstruction_Name</Label>
-        <String>Спираль мотивации</String>
-    </StringTable>
-    <StringTable>
-        <Label>MilitaryConstruction_Dec</Label>
-        <String>Наследие древней расы рабовладельцев. Ее активация повышает производительность на целевой верфи. [COLOR=UIDefaultHighlight]+500 к производству на верфи[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetInfluence_Name</Label>
-        <String>Звенящее сердце</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetInfluence_Dec</Label>
-        <String>Осколок сердца творения. Его активация значительно увеличит наше влияние на целевой планете. [COLOR=UIDefaultHighlight]+500 к влиянию[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetClass_Name</Label>
-        <String>Гибр. биомасса</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetClass_Dec</Label>
-        <String>Этот артефакт генерирует материю, богатую первичными органическими соединениями. Такая материя способна повысить класс любой планеты. [COLOR=UIDefaultHighlight]+2 пол. клетки, +1 к с/х[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetRepair_Name</Label>
-        <String>Мнемо-наноботы</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetRepair_Dec</Label>
-        <String>Эти наноботы самовоспроизводятся в соответствии с чертежами корабля, на котором они применяются. [COLOR=UIDefaultHighlight]Полностью восстанавливают флот[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetResetMoves_Name</Label>
-        <String>Ускоритель</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetResetMoves_Dec</Label>
-        <String>Внепространственные материалы быстро расходуются, но временно ускоряют передвижение флота. [COLOR=UIDefaultHighlight]Восстанавливает ходы флота[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetIncreaseMoves_Name</Label>
-        <String>Ускоритель грав. пузыря</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetIncreaseMoves_Dec</Label>
-        <String>Внепространственные материалы быстро расходуются, но обеспечивают постоянное ускорение этого флота. [COLOR=UIDefaultHighlight]Увеличивает количество ходов флота[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetAttack_Name</Label>
-        <String>Арнорск. угли</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetAttack_Dec</Label>
-        <String>Из обломков этого арнорского оружия можно получить источники питания, которые увеличивают силу атаки целевого флота. [COLOR=UIDefaultHighlight]+3 к атаке[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetExp_Name</Label>
-        <String>Нейросвязь</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetExp_Dec</Label>
-        <String>Благодаря непосредственной связи нашего командования с кораблем наш флот будет эффективнее и оперативнее, чем у врагов. [COLOR=UIDefaultHighlight]+10 очков опыта[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetDefense_Name</Label>
-        <String>Кузница-матрешка</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetDefense_Dec</Label>
-        <String>Пространственная свертка материи позволяет создавать сверхпрочную броню, выходящую за рамки законов физики. Это увеличит защиту целевого флота. [COLOR=UIDefaultHighlight] +15 к защите[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetHitpoints_Name</Label>
-        <String>Арнор. гало</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetHitpoints_Dec</Label>
-        <String>При активации этого арнорского символа целевой флот становится крепче и получает дополнительные ОЗ. [COLOR=UIDefaultHighlight]+10% к ОЗ[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>Wormhole_Name</Label>
-        <String>Ген. червоточин</String>
-    </StringTable>
-    <StringTable>
-        <Label>Wormhole_Dec</Label>
-        <String>Бездействующая ныне часть галактической магистрали, активация которой отправит флот в другую часть галактики. А вот в какую — неизвестно. [COLOR=UIDefaultHighlight]Телепортирует флот в случайную точку[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FOWReveal_Name</Label>
-        <String>Зеркало измерений</String>
-    </StringTable>
-    <StringTable>
-        <Label>FOWReveal_Dec</Label>
-        <String>Неизвестно, почему этот артефакт Предтеч оказался брошен. Он позволяет в подробностях рассмотреть определенную область галактики. [COLOR=UIDefaultHighlight]Открывает область на карте[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetDamage_Name</Label>
-        <String>Коллайд. бетатрона</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetDamage_Dec</Label>
-        <String>Генерирует искривляющий пространство луч, который наносит серьезный урон всему вражескому флоту. [COLOR=UIDefaultHighlight]25% к урону[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpawnOverlord_Name</Label>
-        <String>Нанопередатчик</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpawnOverlord_Dec</Label>
-        <String>Позволяет отправить в любую часть галактики рой нанороботов, которые мгновенно соберут там боевой корабль. [COLOR=UIDefaultHighlight]Дает корабль «Оверлорд»[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>CagedMonster_Name</Label>
-        <String>Ловушка измерений</String>
-    </StringTable>
-    <StringTable>
-        <Label>CagedMonster_Dec</Label>
-        <String>Существо из другого измерения было заперто в нашем. Мы можем его выпустить, но оно может напасть и на нас. [COLOR=UIDefaultHighlight]Призывает слабого космического монстра[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpaceMonster_Name</Label>
-        <String>Преумбральн. маяк</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpaceMonster_Dec</Label>
-        <String>Призывает монстра из дальнего космоса. Однако учтите, что он не дает власти над тем существом, что явится на его зов. [COLOR=UIDefaultHighlight]Призывает сильного косм. монстра[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetPopulation_Name</Label>
-        <String>Сфера Бернала</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetPopulation_Dec</Label>
-        <String>Полностью автономное жилище с синтетической рабочей силой, которое можно разместить на любой планете. [COLOR=UIDefaultHighlight]+1 гражданин-йор[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>GlobalApproval_Name</Label>
-        <String>Эмпат. машина</String>
-    </StringTable>
-    <StringTable>
-        <Label>GlobalApproval_Dec</Label>
-        <String>Это устройство способно генерировать успокаивающее поле, окутывающее все наши планеты, хотя его влияние временное. [COLOR=UIDefaultHighlight]+25% к одобрению на 25 месяцев[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetResistance_Name</Label>
-        <String>Сенсор предвидения</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetResistance_Dec</Label>
-        <String>Этот квантовый сенсор предупредит вас об опасности задолго до первых признаков ее присутствия. [COLOR=UIDefaultHighlight]+10% к сопротивлению[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>ConvertDeadWorld_Name</Label>
-        <String>Споры Иггдрасиля</String>
-    </StringTable>
-    <StringTable>
-        <Label>ConvertDeadWorld_Dec</Label>
-        <String>Внутри этой сферы — целая экосистема. Используйте ее на мертвой планете, чтобы вдохнуть в нее новую жизнь. [COLOR=UIDefaultHighlight]Превращает мертвую планету в планету класса 5[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetApproval_Name</Label>
-        <String>Маяк гармонии</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetApproval_Dec</Label>
-        <String>На 25 месяцев повышает [COLOR=UIDefaultHighlight]одобрение[/COLOR] целевого мира на 10%. У населения возникает устойчивое чувство удовлетворения.</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetCrime_Name</Label>
-        <String>Маяк хаоса</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetCrime_Dec</Label>
-        <String>На 25 месяцев снижает [COLOR=UIDefaultHighlight]одобрение[/COLOR] целевого мира. Навсегда повышает [COLOR=UIDefaultHighlight]преступность[/COLOR] мира.</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetPollution_Name</Label>
-        <String>Клим. очиститель</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetPollution_Dec</Label>
-        <String>Может отфильтровать атмосферу целой планеты. [COLOR=UIDefaultHighlight]-20% от загрязнения[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>GalacticFestival_Name</Label>
-        <String>Галакт. фестиваль</String>
-    </StringTable>
-    <StringTable>
-        <Label>GalacticFestival_Dec</Label>
-        <String>Проведение во всех наших мирах грандиозного фестиваля на 12 месяцев повысит наш [HS=HS_Tourism]туризм[/HS].</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>ImpressCitizens_Name</Label>
-        <String>Призвать граждан</String>
-    </StringTable>
-    <StringTable>
-        <Label>ImpressCitizens_Dec</Label>
-        <String>Наш народ в вашей власти. Пора бы запомнить. Дает колонизаторский и инженерный корабли.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>DraftColonists_Name</Label>
-        <String>Набр. колонистов</String>
-    </StringTable>
-    <StringTable>
-        <Label>DraftColonists_Dec</Label>
-        <String>Иногда мы не можем ждать добровольцев. Дает бесплатный колонизаторский корабль.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ImpressConstructors_Name</Label>
-        <String>Призвать инженеров</String>
-    </StringTable>
-    <StringTable>
-        <Label>ImpressConstructors_Dec</Label>
-        <String>Нам нужен инженерный корабль. Сейчас же.</String>
-    </StringTable>
-    <StringTable>
-        <Label>MartialLaw_Name</Label>
-        <String>Воен. пол-е</String>
-    </StringTable>
-    <StringTable>
-        <Label>MartialLaw_Dec</Label>
-        <String>Повышает вашу [HS=HS_Manufacturing]промышленность[/HS], но снижает [HS=HS_Research]исследования[/HS] и [HS=HS_Approval]одобрение[/HS] на 50 ходов.</String>
-    </StringTable>
-    <StringTable>
-        <Label>IllicitDeals_Name</Label>
-        <String>Контрабанда</String>
-    </StringTable>
-    <StringTable>
-        <Label>IllicitDeals_Dec</Label>
-        <String>Многим нужны наши услуги, и они готовы заплатить. Дает кредиты, но повышает [HS=HS_Crime]преступность[/HS] в нашей цивилизации.</String>
-    </StringTable>
-    <StringTable>
-        <Label>PrintMoney_Name</Label>
-        <String>Эмиссия</String>
-    </StringTable>
-    <StringTable>
-        <Label>PrintMoney_Dec</Label>
-        <String>Денежная эмиссия обеспечивает краткосрочный достаток ценой инфляции, снижая [HS=HS_Approval]одобрение[/HS] примерно на год.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExploitNature_Name</Label>
-        <String>Исчерпать ресурсы</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExploitNature_Dec</Label>
-        <String>В трудную минуту мы можем исчерпать все ресурсы на землях правительства. Это вызовет проблемы с загрязнением на целый год.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExhortGovernors_Name</Label>
-        <String>Поборы с прав-лей</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExhortGovernors_Dec</Label>
-        <String>Наши правители щедро пожертвуют на наше дело, но им это не понравится. [COLOR=UIDefaultHighlight]Дает 100 кредитов за каждого правителя[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>InviteLeaders_Name</Label>
-        <String>Пригл. лидеров</String>
-    </StringTable>
-    <StringTable>
-        <Label>InviteLeaders_Dec</Label>
-        <String>Поиск самых талантливых позволит нанять 3 новых лидеров.</String>
-    </StringTable>
-    <StringTable>
-        <Label>CallElection_Name</Label>
-        <String>Выборы</String>
-    </StringTable>
-    <StringTable>
-        <Label>CallElection_Dec</Label>
-        <String>Реформировать правительство, обеспечивая больший уровень благосостояния, но повышая [HS=HS_Expectations]ожидания[/HS] граждан.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ColonialSupplies_Name</Label>
-        <String>Снабжение колоний</String>
-    </StringTable>
-    <StringTable>
-        <Label>ColonialSupplies_Dec</Label>
-        <String>Крупная поставка грузов в наши колонии снизит их [HS=HS_ColonyDecay]распад[/HS] на 25 месяцев.</String>
-    </StringTable>
-    <StringTable>
-        <Label>PressureScientists_Name</Label>
-        <String>Давление на ученых</String>
-    </StringTable>
-    <StringTable>
-        <Label>PressureScientists_Dec</Label>
-        <String>Давление на наших ученых даст немедленный прирост +50 к [HS=HS_Research]исследованиям[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>InspireScientists_Name</Label>
-        <String>Вдохновить ученых</String>
-    </StringTable>
-    <StringTable>
-        <Label>InspireScientists_Dec</Label>
-        <String>Вдохновение наших ученых даст немедленный прирост +50 к [HS=HS_Research]исследованиям[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>DistantVision_Name</Label>
-        <String>Далекий взор</String>
-    </StringTable>
-    <StringTable>
-        <Label>DistantVision_Dec</Label>
-        <String>При помощи артефакта Предтеч мы можем заглянуть в дальний космос. [COLOR=UIDefaultHighlight]Открывает область на карте[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>TelescopeTakeover_Name</Label>
-        <String>Захват телескопа</String>
-    </StringTable>
-    <StringTable>
-        <Label>TelescopeTakeover_Dec</Label>
-        <String>У частных корпораций есть исследовательское оборудование, которым мы можем воспользоваться. [COLOR=UIDefaultHighlight]Открывает область на карте[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>DraftCivilianShips_Name</Label>
-        <String>Рекв. гражд. кораблей</String>
-    </StringTable>
-    <StringTable>
-        <Label>DraftCivilianShips_Dec</Label>
-        <String>Безопасность важнее частной собственности. Дает трех бесплатных защитников.</String>
-    </StringTable>
-    <StringTable>
-        <Label>MassMobilization_Name</Label>
-        <String>Общая мобилизация</String>
-    </StringTable>
-    <StringTable>
-        <Label>MassMobilization_Dec</Label>
-        <String>Чувство общего долга упрощает поиск добровольцев. [COLOR=UIDefaultHighlight]Дает бесплатный транспорт[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>CrimeWave_Name</Label>
-        <String>Разгул</String>
-    </StringTable>
-    <StringTable>
-        <Label>CrimeWave_Dec</Label>
-        <String>Дерните пару ниточек, чтобы создать целые преступные сети. [COLOR=UIDefaultHighlight]Вызывает на целевой планете разгул криминала, на 24 месяца повышая [HS=HS_Crime]преступность[/HS] на 200%.[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExploitPopulation_Name</Label>
-        <String>Угнетение населения</String>
-    </StringTable>
-    <StringTable>
-        <Label>ExploitPopulation_Dec</Label>
-        <String>Эксплуатация рабочей силы всей империи. [COLOR=UIDefaultHighlight]+200% к показателям всех планет на 5 мес.[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>GoodWillTour_Name</Label>
-        <String>Тур добр. воли</String>
-    </StringTable>
-    <StringTable>
-        <Label>GoodWillTour_Dec</Label>
-        <String>Тур доброй воли, повышающий ваш уровень дипломатии с другими цивилизациями. [COLOR=UIDefaultHighlight]+1 к дипломатии на 30 ходов[/COLOR]</String>
-    </StringTable>
-    <StringTable>
-        <Label>ForcedOvertime_Name</Label>
-        <String>Принуд. перераб.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ForcedOvertime_Dec</Label>
-        <String>Целевая верфь делает больше работы, но ваши граждане будут несчастны.</String>
-    </StringTable>
-    <StringTable>
-        <Label>DefenseSentinels_Artifact_Name</Label>
-        <String>Часовые-защитники</String>
-    </StringTable>
-    <StringTable>
-        <Label>DefenseSentinels_Artifact_Dec</Label>
-        <String>Дает выбранной колонии дрона-защитника. Такие дроны защищают от слабых атак, но не могут покинуть планету.</String>
-    </StringTable>
-    <StringTable>
-        <Label>QuestArtifact_OrbOfDraginol_Artifact_Name</Label>
-        <String>Артефакт карман. вселен.</String>
-    </StringTable>
-    <StringTable>
-        <Label>QuestArtifact_OrbOfDraginol_Artifact_Dec</Label>
-        <String>Артефакт, способный открыть карманную вселенную, где, как говорят, спрятана Сфера Драгинола.</String>
-    </StringTable>
-    <StringTable>
-        <Label>ImpressForeignFleet_Name</Label>
-        <String>Призвать чужой флот</String>
-    </StringTable>
-    <StringTable>
-        <Label>ImpressForeignFleet_Dec</Label>
-        <String>Захватить флот другой цивилизации в пределах ваших границ. Не работает с флотами, с которыми вы воюете.</String>
-    </StringTable>
-    <StringTable>
-        <Label>EnlistPirateFleet_Name</Label>
-        <String>Призв. пират. флот</String>
-    </StringTable>
-    <StringTable>
-        <Label>EnlistPirateFleet_Dec</Label>
-        <String>Нанять пиратский флот.</String>
-    </StringTable>
-    <StringTable>
-        <Label>EnlistPirateWorld_Name</Label>
-        <String>Призв. пират. мир</String>
-    </StringTable>
-    <StringTable>
-        <Label>EnlistPirateWorld_Dec</Label>
-        <String>Нанять пиратский мир.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSurveyModule_Name</Label>
-        <String>Древний исслед. модуль</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSurveyModule_Dec</Label>
-        <String>Позволяет выбранному кораблю исследовать аномалии.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Unlock_Upgrade_FoodReplicator_Name</Label>
-        <String>Древний синтезатор пищи</String>
-    </StringTable>
-    <StringTable>
-        <Label>Unlock_Upgrade_FoodReplicator_Dec</Label>
-        <String>Обеспечивает длительные путешествия едой, повышая дальность корабля.</String>
-    </StringTable>
-    <StringTable>
-        <Label>GuiltMagnifier_Name</Label>
-        <String>Усилитель вины</String>
-    </StringTable>
-    <StringTable>
-        <Label>GuiltMagnifier_Dec</Label>
-        <String>Правонарушители сильнее чувствуют свою вину. Снижает [HS=HS_Crime]преступность[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Found_WeaponJammer_Name</Label>
-        <String>Найденный подавитель</String>
-    </StringTable>
-    <StringTable>
-        <Label>Found_WeaponJammer_Dec</Label>
-        <String>Не украли, а нашли.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnergyWeapon_Name</Label>
-        <String>Эн. нагнетатель</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnergyWeapon_Dec</Label>
-        <String>При установке на корабль энергетический нагнетатель усиливает его энергетическое оружие.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddMissileWeapon_Name</Label>
-        <String>Прототип боегол-ки</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddMissileWeapon_Dec</Label>
-        <String>Повышает наступательные возможности вашего корабля, усиливая мощь ракет.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddKineticWeapon_Name</Label>
-        <String>Мод. ЭМ-катапульты</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddKineticWeapon_Dec</Label>
-        <String>Высвободите древнюю могущественную кинетическую силу, повысив огневую мощь вашего корабля и нанося значительный ущерб вражеским кораблям и сооружениям.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddTacticalThrusterUpgradeModule_Name</Label>
-        <String>Улучшение тактических двигателей</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddTacticalThrusterUpgradeModule_Dec</Label>
-        <String>Этот модуль при помощи совершенных технологий значительно повышает любому кораблю скорость и маневренность в бою.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEngineUpgradeModule_Name</Label>
-        <String>Межзвездн. двиг.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEngineUpgradeModule_Dec</Label>
-        <String>Повышает гиперпростр. скорость целевого корабля.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryPollutionRemoverModule_Name</Label>
-        <String>Атмосферный очиститель</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryPollutionRemoverModule_Dec</Label>
-        <String>Снижает загрязнение колонии, эффективно расщепляя вредные частицы и токсины.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddShipArmorModule_Name</Label>
-        <String>Модуль бронепластин</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddShipArmorModule_Dec</Label>
-        <String>Повышает броню целевого корабля.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryBroadcasterModule_Name</Label>
-        <String>Модуль планетар. передатчика</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryBroadcasterModule_Dec</Label>
-        <String>Повышает влияние планеты на окружающие системы. </String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryCultureModule_Name</Label>
-        <String>Планетар. культурн. модуль</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryCultureModule_Dec</Label>
-        <String>Применение позволяет найти ранее неизвестные достопримечательности планеты, повышая ее культурную ценность.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryDefenseModule_Name</Label>
-        <String>Добавить мод. планет. обороны</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPlanetaryDefenseModule_Dec</Label>
-        <String>Обеспечивает дополнительную линию обороны целевой планеты от вторжений.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnemyDestablizerModule_Name</Label>
-        <String>Модуль дестабилизации врага</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnemyDestablizerModule_Dec</Label>
-        <String>Повышает преступность на целевом чужом мире.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnemyDefenseSabotageModule_Name</Label>
-        <String>Модуль саботажа обороны врага</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddEnemyDefenseSabotageModule_Dec</Label>
-        <String>Подрывает способность врага противостоять вторжениям. Применяется на чужих планетах.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPropagandizeEnemyCitizensModule_Name</Label>
-        <String>Деморализующий артефакт</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPropagandizeEnemyCitizensModule_Dec</Label>
-        <String>Значительно снижает влияние целевой чужой планеты.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPoisonEnemyPlanetModule_Name</Label>
-        <String>Модуль яд. газа</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddPoisonEnemyPlanetModule_Dec</Label>
-        <String>Значительно снижает плодородие целевого чужого мира на месяц.</String>
-    </StringTable>
-    <StringTable>
-        <Label>DepleteEnemyPlanetResourcesModule_Name</Label>
-        <String>Массив обнуления ресурсов</String>
-    </StringTable>
-    <StringTable>
-        <Label>DepleteEnemyPlanetResourcesModule_Dec</Label>
-        <String>Окисляет минералы на целевом чужом мире, снижая ценность ресурсов планеты.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddFriendlyPlanetMineralScanner_Name</Label>
-        <String>Сканер минералов</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddFriendlyPlanetMineralScanner_Dec</Label>
-        <String>Одноразовый сканер находит ранее неизвестные источники минералов на нашем целевом мире.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddFriendlyPlanetTechFinderModule_Name</Label>
-        <String>Сканер технологий</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddFriendlyPlanetTechFinderModule_Dec</Label>
-        <String>Обнаруживает ранее неизвестные технологии, оставшиеся от Предтеч, повышая базовый техн. уровень планеты.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSummonLeaderToServeYouModule_Name</Label>
-        <String>Модуль призыва лидера</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSummonLeaderToServeYouModule_Dec</Label>
-        <String>Призывает друж. советника-йор, созданного Предтечами.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddRoboticServantsForPlanetModule_Name</Label>
-        <String>Модуль роботов-слуг</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddRoboticServantsForPlanetModule_Dec</Label>
-        <String>Добавляет дружественного слугу Йора на целевую основную планету.</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddRoboticStarDrone_Name</Label>
-        <String>Роботизир. зв. дрон</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddRoboticStarDrone_Dec</Label>
-        <String>Мгновенно создает маленький, но смертоносный боевой дрон.</String>
-    </StringTable>
-    <StringTable>
-        <Label>DeathCommandos_Name</Label>
-        <String>Солдаты смерти</String>
-    </StringTable>
-    <StringTable>
-        <Label>DeathCommandos_Dec</Label>
-        <String>Точечная атака ваших самых бесстрашных и опытных сил. Снижает ОЗ каждого корабля во вражеском флоте на 25%.</String>
-    </StringTable>
-    <StringTable>
-		<Label>CosmicEye_Name</Label>
-		<String>Око Космоса</String>
-    </StringTable>
-    <StringTable>
-		<Label>CosmicEye_Dec</Label>
-		<String>Откройте часть карты с помощью Ока Космоса. Если оно увидит планету другой цивилизации, есть вероятность украсть технологию.</String>
-    </StringTable>
-    <StringTable>
-        <Label>Pandemonium_Name</Label>
-        <String>Пандемониум</String>
-    </StringTable>
-    <StringTable>
-        <Label>Pandemonium_Dec</Label>
-        <String>Окажите негативное телепатическое влияние на целую планету. Можно снизить либо [HS=HS_PlanetaryDefense]оборону планеты[/HS], [HS=HS_Influence]влияние[/HS] и [HS=HS_Approval]одобрение[/HS], либо [HS=HS_Manufacturing]промышленность[/HS] и [HS=HS_Research]исследования[/HS].</String>
-    </StringTable>
-    <StringTable>
-        <Label>Serenity_Name</Label>
-        <String>Покой</String>
-    </StringTable>
-    <StringTable>
-        <Label>Serenity_Dec</Label>
-        <String>Окажите позитивное телепатическое влияние на целую планету. Модно повысить либо [HS=HS_Growth]рост[/HS] и [HS=HS_Approval]одобрение[/HS], либо [HS=HS_Influence]влияние[/HS] и [HS=HS_Tourism]туризм[/HS].</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>ForcedLabor_Name</Label>
-        <String>Рабский труд</String>
-    </StringTable>
-    <StringTable>
-        <Label>ForcedLabor_Dec</Label>
-        <String>Народ много работает. А может еще больше.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>ForcedTraining_Name</Label>
-        <String>Обучение рабов</String>
-    </StringTable>
-    <StringTable>
-        <Label>ForcedTraining_Dec</Label>
-        <String>Обучает рабов, повышая опыт целевого флота.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>RushNewCitizen_Name</Label>
-        <String>Производство населения</String>
-    </StringTable>
-    <StringTable>
-        <Label>RushNewCitizen_Dec</Label>
-        <String>Без дюрантия мы можем быстро создать новых граждан, перерабатывая отходы.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>FleetIncreaseMovesEO_Name</Label>
-        <String>Ускорить движение флота</String>
-    </StringTable>
-    <StringTable>
-        <Label>FleetIncreaseMovesEO_Dec</Label>
-        <String>Использовать полномочия для концентрации усилий на оптимизации скорости одного флота.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>MilitaryConstructionEO_Name</Label>
-        <String>Повышение пр-ва на верфи</String>
-    </StringTable>
-    <StringTable>
-        <Label>MilitaryConstructionEO_Dec</Label>
-        <String>Сосредоточить наши усилия на быстром снабжении конкретной верфи ресурсами.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>InfluenceBroadcast_Name</Label>
-        <String>Культура вещания</String>
-    </StringTable>
-    <StringTable>
-        <Label>InfluenceBroadcast_Dec</Label>
-        <String>Модуль с оптимизированным сообщением, которое наверняка убедит других ассимилироваться с нашей культурой.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>PlanetTiles_Name</Label>
-        <String>Модиф. планету</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetTiles_Dec</Label>
-        <String>Приспособить планету под наш вид. +1 пригодная для использования клетка. Только для основных миров.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Recapitalize_Name</Label>
-        <String>Рекапитализ-я</String>
-    </StringTable>
-    <StringTable>
-        <Label>Recapitalize_Dec</Label>
-        <String>Создать новый капитал путем рекапитализации за счет статуса резервной валюты.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>SpawnMiner_Name</Label>
-        <String>Нан. шахт.</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpawnMiner_Dec</Label>
-        <String>Нанять опытных шахтеров для эффективной добычи полезных ресурсов и повышения производительности.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>SpawnFreighter_Name</Label>
-        <String>Наймите торг. корабль</String>
-    </StringTable>
-    <StringTable>
-        <Label>SpawnFreighter_Dec</Label>
-        <String>Наймите опытных торговцев для управления кораблем, чтобы расширить ваши торговые пути.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>AddSiege_Name</Label>
-        <String>Добавить Шок. Войска</String>
-    </StringTable>
-    <StringTable>
-        <Label>AddSiege_Dec</Label>
-        <String>Установите шоковых штурмовиков на целевой корабль, чтобы помочь в завоевании миров.</String>
-    </StringTable>
-    
-    <StringTable>
-        <Label>PlanetFertilityIncrease_Name</Label>
-        <String>Удобр. планету</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetFertilityIncrease_Dec</Label>
-        <String>Увеличивает плодородие целевой колонии.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>GiveHope_Name</Label>
-        <String>Дай Надежду</String>
-    </StringTable>
-    <StringTable>
-        <Label>GiveHope_Dec</Label>
-        <String>Произнесите серию вдохновляющих речей на целевой основной мир, чтобы повысить их одобрение.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Mitosis_Name</Label>
-        <String>Митоз</String>
-    </StringTable>
-    <StringTable>
-        <Label>Mitosis_Dec</Label>
-        <String>Инициируйте митоз у Облученного Гражданина на целевой планете.[BR][BR]+1 [COLOR=UIDefaultHighlight]Гражданин[/COLOR]</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>Swarm_Name</Label>
-        <String>Рой</String>
-    </StringTable>
-    <StringTable>
-        <Label>Swarm_Dec</Label>
-        <String>В течение шести месяцев все представители нашего вида, обладающие [HS=HS_Consuming]Поглощения[/HS], увидят удвоение своих способностей.</String>
-    </StringTable>
-
-    <StringTable>
-        <Label>PlanetVision_Name</Label>
-        <String>Планетарное ясновидение</String>
-    </StringTable>
-    <StringTable>
-        <Label>PlanetVision_Dec</Label>
-        <String>Значительно расширьте обзор сенсоров целевого мира, чтобы увидеть, что находится рядом с ним на расстоянии. Эффект начинается через месяц.</String>
-    </StringTable>
-
+  <StringTable>
+    <Label>ResearchCharge_Name</Label>
+    <String>Архив Предтеч</String>
+  </StringTable>
+  <StringTable>
+    <Label>ResearchCharge_Dec</Label>
+    <String>Архив почти безграничных знаний. Активировав его, мы можем мгновенно завершить наше текущее исследование.[BR][BR][COLOR=UIDefaultHighlight]Завершить текущее исследование[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>SocialConstruction_Name</Label>
+    <String>Нанозавод</String>
+  </StringTable>
+  <StringTable>
+    <Label>SocialConstruction_Dec</Label>
+    <String>Способен производить все, что нам нужно. Активация позволяет нам мгновенно продвигаться в социальном проекте выбранной планеты.[BR][BR][COLOR=UIDefaultHighlight]+100 Производство планеты[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>MilitaryConstruction_Name</Label>
+    <String>Спираль мотивации</String>
+  </StringTable>
+  <StringTable>
+    <Label>MilitaryConstruction_Dec</Label>
+    <String>Остаток древней расы работорговцев. При активации он вдохновляет на продуктивность и увеличивает производство на выбранной верфи.[BR][BR][COLOR=UIDefaultHighlight]+500 к производству на верфи[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetInfluence_Name</Label>
+    <String>Звенящее сердце</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetInfluence_Dec</Label>
+    <String>Осколок из сердца творения. Активация значительно увеличивает Влияние выбранной планеты.[BR][BR][COLOR=UIDefaultHighlight]+500 Влияние[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetClass_Name</Label>
+    <String>Гибр. биомасса</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetClass_Dec</Label>
+    <String>Этот артефакт производит материал, богатый проторганическими веществами. Этот материал может улучшить класс любого мира, на который мы его используем.[BR][BR][COLOR=UIDefaultHighlight]+2 Используемые плитки, +1 Фермерство[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetRepair_Name</Label>
+    <String>Мнемо-наноботы</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetRepair_Dec</Label>
+    <String>Эти наниты немедленно перестроят себя в соответствии с архитектурными записями корабля, которому они подвергаются.[BR][BR][COLOR=UIDefaultHighlight]Полностью ремонтирует флот[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetResetMoves_Name</Label>
+    <String>Ускоритель</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetResetMoves_Dec</Label>
+    <String>Внеземные материалы расходуются быстро, но временно увеличивают скорость перемещения флота.[BR][BR][COLOR=UIDefaultHighlight]Сброс перемещений флота[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetIncreaseMoves_Name</Label>
+    <String>Ускоритель грав. пузыря</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetIncreaseMoves_Dec</Label>
+    <String>Внеземные материалы быстро потребляются, но дадут этому флоту постоянное ускорение скорости передвижения.[BR][BR][COLOR=UIDefaultHighlight]+1 к передвижению флота[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetAttack_Name</Label>
+    <String>Арнорск. угли</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetAttack_Dec</Label>
+    <String>Это разрушенное оружие Арнора можно собрать для источников энергии, которые улучшат атаку выбранного флота.[BR][COLOR=UIDefaultHighlight]+3 к атаке[/COLOR][BR][COLOR=WarRed]Целевой флот должен иметь оружие.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetExp_Name</Label>
+    <String>Нейросвязь</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetExp_Dec</Label>
+    <String>Объединив наш командный состав с самим кораблем, мы можем создать флот, который будет более отзывчивым и реактивным, чем наши враги.[BR][BR][COLOR=UIDefaultHighlight]+10 очков опыта[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetDefense_Name</Label>
+    <String>Кузница-матрешка</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetDefense_Dec</Label>
+    <String>Складывание материалов через измерения создает покрытие, более прочное, чем позволяет физика, увеличивая защиту выбранного флота.[BR][BR][COLOR=UIDefaultHighlight] +15 к защите[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetHitpoints_Name</Label>
+    <String>Арнор. гало</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetHitpoints_Dec</Label>
+    <String>Активируя этот символ Арнор, вы придадите некоторую степень этой постоянности выбранному флоту, увеличивая его очки жизни.[BR][BR][COLOR=UIDefaultHighlight]+10% Очков Жизни[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Wormhole_Name</Label>
+    <String>Ген. червоточин</String>
+  </StringTable>
+  <StringTable>
+    <Label>Wormhole_Dec</Label>
+    <String>Эта бывшая часть галактического ретранслятора находится в спящем состоянии. Активация отправит выбранный флот куда-то, но у нас нет контроля над тем, куда именно.[BR][BR][COLOR=UIDefaultHighlight]Случайная телепортация флота[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FOWReveal_Name</Label>
+    <String>Зеркало измерений</String>
+  </StringTable>
+  <StringTable>
+    <Label>FOWReveal_Dec</Label>
+    <String>Этот артефакт Предтеч был оставлен здесь по неизвестным причинам. Он позволяет нам видеть заданную область космоса в мельчайших деталях.[BR][BR][COLOR=UIDefaultHighlight]Раскрыть область карты[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetDamage_Name</Label>
+    <String>Коллайд. бетатрона</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetDamage_Dec</Label>
+    <String>Способен искривлять пространство с помощью луча, наносящего значительный урон всей вражеской флотилии.[BR][BR][COLOR=UIDefaultHighlight]25% урона[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnOverlord_Name</Label>
+    <String>Нанопередатчик</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnOverlord_Dec</Label>
+    <String>Способен передавать поток нанитов в любую часть галактики и мгновенно строить военный корабль.[BR][BR][COLOR=UIDefaultHighlight]Создать корабль класса крейсер[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>CagedMonster_Name</Label>
+    <String>Ловушка измерений</String>
+  </StringTable>
+  <StringTable>
+    <Label>CagedMonster_Dec</Label>
+    <String>Существо было вынуждено покинуть другое измерение и оказалось в нашем. Мы могли бы освободить его, но оно могло бы напасть и на нас.[BR][BR][COLOR=UIDefaultHighlight]Призвать малого космического монстра[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpaceMonster_Name</Label>
+    <String>Преумбральн. маяк</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpaceMonster_Dec</Label>
+    <String>Этот маяк вызовет монстра из далекого космоса. Но будьте осторожны, он не дает никакого контроля над монстром.[BR][BR][COLOR=UIDefaultHighlight]Призвать мощного Космического Монстра[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetPopulation_Name</Label>
+    <String>Сфера Бернала</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetPopulation_Dec</Label>
+    <String>Эта самодостаточная среда обитания может быть развернута на любой планете и поставляется с синтетической рабочей силой.[BR][BR][COLOR=UIDefaultHighlight]+1 гражданин Йор[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>GlobalApproval_Name</Label>
+    <String>Эмпат. машина</String>
+  </StringTable>
+  <StringTable>
+    <Label>GlobalApproval_Dec</Label>
+    <String>Это устройство способно передавать успокаивающую волну по всем нашим мирам, хотя его влияние временно.[BR][BR][COLOR=UIDefaultHighlight]+25% одобрения на 25 месяцев[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetResistance_Name</Label>
+    <String>Сенсор предвидения</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetResistance_Dec</Label>
+    <String>Этот квантовый датчик предупреждает об угрозах до того, как появится какое-либо известное указание на их присутствие.[BR][BR][COLOR=UIDefaultHighlight]+10% к сопротивлению[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>ConvertDeadWorld_Name</Label>
+    <String>Споры Иггдрасиля</String>
+  </StringTable>
+  <StringTable>
+    <Label>ConvertDeadWorld_Dec</Label>
+    <String>Вся экосистема содержится в этой сфере. Разместив её на мёртвых мирах, весь мир оживёт.[BR][BR][COLOR=UIDefaultHighlight]Преобразовать мёртвый мир в планету класса 5[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetApproval_Name</Label>
+    <String>Маяк гармонии</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetApproval_Dec</Label>
+    <String>Увеличивает [COLOR=UIDefaultHighlight]одобрение[/COLOR] целевого мира на 10% на 25 месяцев. Создает устойчивое чувство удовлетворения и довольства среди жителей.[BR][BR][COLOR=UIDefaultHighlight]+10% одобрения[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetCrime_Name</Label>
+    <String>Маяк хаоса</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetCrime_Dec</Label>
+    <String>Снижает [COLOR=UIDefaultHighlight]одобрение[/COLOR] целевого мира на 25 месяцев. Навсегда увеличивает [COLOR=UIDefaultHighlight]уровень преступности[/COLOR] в мире.[BR][BR][COLOR=UIDefaultHighlight]-20% одобрение[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetPollution_Name</Label>
+    <String>Клим. очиститель</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetPollution_Dec</Label>
+    <String>Способен фильтровать атмосферу всей планеты.[BR][BR][COLOR=UIDefaultHighlight]-20% Загрязнения[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>GalacticFestival_Name</Label>
+    <String>Галакт. фестиваль</String>
+  </StringTable>
+  <StringTable>
+    <Label>GalacticFestival_Dec</Label>
+    <String>Проведение во всех наших мирах грандиозного фестиваля на 12 месяцев повысит наш [HS=HS_Tourism]туризм[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressCitizens_Name</Label>
+    <String>Призвать граждан</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressCitizens_Dec</Label>
+    <String>Наш народ в вашей власти. Пора бы запомнить. Дает колонизаторский и инженерный корабли.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DraftColonists_Name</Label>
+    <String>Набр. колонистов</String>
+  </StringTable>
+  <StringTable>
+    <Label>DraftColonists_Dec</Label>
+    <String>Иногда мы не можем позволить себе ждать добровольцев. Это предоставит бесплатный колониальный корабль.[BR][BR]Уменьшает [HS=HS_Approval]одобрение[/HS] на 10 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressConstructors_Name</Label>
+    <String>Призвать инженеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressConstructors_Dec</Label>
+    <String>Нам нужен Конструкторский Корабль, и он нужен нам сейчас.[BR][BR]Снижает [HS=HS_Approval]Одобрение[/HS] на 10 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MartialLaw_Name</Label>
+    <String>Воен. пол-е</String>
+  </StringTable>
+  <StringTable>
+    <Label>MartialLaw_Dec</Label>
+    <String>Повышает вашу [HS=HS_Manufacturing]промышленность[/HS], но снижает [HS=HS_Research]исследования[/HS] и [HS=HS_Approval]одобрение[/HS] на 50 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>IllicitDeals_Name</Label>
+    <String>Контрабанда</String>
+  </StringTable>
+  <StringTable>
+    <Label>IllicitDeals_Dec</Label>
+    <String>Многим нужны наши услуги, и они готовы заплатить. Дает кредиты, но повышает [HS=HS_Crime]преступность[/HS] в нашей цивилизации.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PrintMoney_Name</Label>
+    <String>Эмиссия</String>
+  </StringTable>
+  <StringTable>
+    <Label>PrintMoney_Dec</Label>
+    <String>Денежная эмиссия обеспечивает краткосрочный достаток ценой инфляции, снижая [HS=HS_Approval]одобрение[/HS] примерно на год.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExploitNature_Name</Label>
+    <String>Исчерпать ресурсы</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExploitNature_Dec</Label>
+    <String>В трудную минуту мы можем исчерпать все ресурсы на землях правительства. Это вызовет проблемы с загрязнением на целый год.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExhortGovernors_Name</Label>
+    <String>Поборы с прав-лей</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExhortGovernors_Dec</Label>
+    <String>Наши губернаторы щедро пожертвуют на наше дело. Но им это не понравится. [COLOR=UIDefaultHighlight]Обеспечивает 100 кредитов за каждого губернатора[/COLOR][BR][BR]Снижает лояльность губернатора на 20 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>InviteLeaders_Name</Label>
+    <String>Пригл. лидеров</String>
+  </StringTable>
+  <StringTable>
+    <Label>InviteLeaders_Dec</Label>
+    <String>Поиск самых талантливых позволит нанять 3 новых лидеров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CallElection_Name</Label>
+    <String>Выборы</String>
+  </StringTable>
+  <StringTable>
+    <Label>CallElection_Dec</Label>
+    <String>Реформировать правительство, обеспечивая больший уровень благосостояния, но повышая [HS=HS_Expectations]ожидания[/HS] граждан.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ColonialSupplies_Name</Label>
+    <String>Снабжение колоний</String>
+  </StringTable>
+  <StringTable>
+    <Label>ColonialSupplies_Dec</Label>
+    <String>Крупная поставка грузов в наши колонии снизит их [HS=HS_ColonyDecay]распад[/HS] на 25 месяцев.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PressureScientists_Name</Label>
+    <String>Давление на ученых</String>
+  </StringTable>
+  <StringTable>
+    <Label>PressureScientists_Dec</Label>
+    <String>Давление на наших ученых даст немедленный прирост +50 к [HS=HS_Research]исследованиям[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>InspireScientists_Name</Label>
+    <String>Вдохновить ученых</String>
+  </StringTable>
+  <StringTable>
+    <Label>InspireScientists_Dec</Label>
+    <String>Вдохновение наших ученых даст немедленный прирост +50 к [HS=HS_Research]исследованиям[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>DistantVision_Name</Label>
+    <String>Далекий взор</String>
+  </StringTable>
+  <StringTable>
+    <Label>DistantVision_Dec</Label>
+    <String>Используя артефакт Предтеч, мы можем заглянуть в отдаленную часть космоса.[BR][BR][COLOR=UIDefaultHighlight]Открыть область карты[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>TelescopeTakeover_Name</Label>
+    <String>Захват телескопа</String>
+  </StringTable>
+  <StringTable>
+    <Label>TelescopeTakeover_Dec</Label>
+    <String>У частных корпораций есть исследовательское оборудование, которым мы можем воспользоваться. [COLOR=UIDefaultHighlight]Открывает область на карте[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>DraftCivilianShips_Name</Label>
+    <String>Рекв. гражд. кораблей</String>
+  </StringTable>
+  <StringTable>
+    <Label>DraftCivilianShips_Dec</Label>
+    <String>Безопасность важнее частной собственности. Это обеспечит трех бесплатных защитников.[BR][BR]Снижает [HS=HS_Approval]одобрение[/HS] на 25 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MassMobilization_Name</Label>
+    <String>Общая мобилизация</String>
+  </StringTable>
+  <StringTable>
+    <Label>MassMobilization_Dec</Label>
+    <String>Чувство общего долга упрощает поиск добровольцев. [COLOR=UIDefaultHighlight]Дает бесплатный транспорт[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>CrimeWave_Name</Label>
+    <String>Разгул</String>
+  </StringTable>
+  <StringTable>
+    <Label>CrimeWave_Dec</Label>
+    <String>Дерните пару ниточек, чтобы создать целые преступные сети. [COLOR=UIDefaultHighlight]Вызывает на целевой планете разгул криминала, на 24 месяца повышая [HS=HS_Crime]преступность[/HS] на 200%.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExploitPopulation_Name</Label>
+    <String>Угнетение населения</String>
+  </StringTable>
+  <StringTable>
+    <Label>ExploitPopulation_Dec</Label>
+    <String>Воспользуйтесь рабочей силой всей империи.[BR][BR][COLOR=UIDefaultHighlight]+150% ко всем производствам планет на 5 месяцев.[BR][/COLOR][BR]Снижает [HS=HS_Approval]Одобрение[/HS] на 15 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GoodWillTour_Name</Label>
+    <String>Тур добр. воли</String>
+  </StringTable>
+  <StringTable>
+    <Label>GoodWillTour_Dec</Label>
+    <String>Отправьтесь в тур[BR] доброй воли, чтобы[BR] улучшить свою[BR] дипломатию с[BR] иностранными[BR] цивилизациями.[BR] [COLOR=UIDefaultHighlight]+1 к[BR] дипломатии на 30[BR] месяцев[/COLOR].</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedOvertime_Name</Label>
+    <String>Принуд. перераб.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedOvertime_Dec</Label>
+    <String>На целевой верфи выполняется больше работы, но вашим гражданам это не понравится.[BR][BR]Улучшает вашу [HS=HS_Military]Армию[/HS] на 10 ходов и снижает [HS=HS_Approval]Одобрение[/HS] на 30 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DefenseSentinels_Artifact_Name</Label>
+    <String>Часовые-защитники</String>
+  </StringTable>
+  <StringTable>
+    <Label>DefenseSentinels_Artifact_Dec</Label>
+    <String>Дает выбранной колонии дрона-защитника. Такие дроны защищают от слабых атак, но не могут покинуть планету.</String>
+  </StringTable>
+  <StringTable>
+    <Label>QuestArtifact_OrbOfDraginol_Artifact_Name</Label>
+    <String>Артефакт карман. вселен.</String>
+  </StringTable>
+  <StringTable>
+    <Label>QuestArtifact_OrbOfDraginol_Artifact_Dec</Label>
+    <String>Артефакт, способный открыть карманную вселенную, где, как говорят, спрятана Сфера Драгинола.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressForeignFleet_Name</Label>
+    <String>Призвать чужой флот</String>
+  </StringTable>
+  <StringTable>
+    <Label>ImpressForeignFleet_Dec</Label>
+    <String>Возьмите под свой контроль флот другой цивилизации, находящейся в ваших границах. Нельзя использовать на флотах, с которыми вы находитесь в состоянии войны.[BR][BR][COLOR=UIDefaultHighlight]-3 к дипломатии с исходной цивилизацией на 50 месяцев[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnlistPirateFleet_Name</Label>
+    <String>Призв. пират. флот</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnlistPirateFleet_Dec</Label>
+    <String>Нанять пиратский флот.</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnlistPirateWorld_Name</Label>
+    <String>Призв. пират. мир</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnlistPirateWorld_Dec</Label>
+    <String>Нанять пиратский мир.</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSurveyModule_Name</Label>
+    <String>Древний исслед. модуль</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSurveyModule_Dec</Label>
+    <String>Позволяет целевому космическому кораблю обследовать аномалии.[BR][BR][COLOR=UIDefaultHighlight]+1 модуль флага[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Unlock_Upgrade_FoodReplicator_Name</Label>
+    <String>Древний синтезатор пищи</String>
+  </StringTable>
+  <StringTable>
+    <Label>Unlock_Upgrade_FoodReplicator_Dec</Label>
+    <String>Обеспечивает пищей для дальних путешествий, увеличивая дальность плавания корабля.[BR][BR][COLOR=UIDefaultHighlight]+5 к дальности корабля[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>GuiltMagnifier_Name</Label>
+    <String>Усилитель вины</String>
+  </StringTable>
+  <StringTable>
+    <Label>GuiltMagnifier_Dec</Label>
+    <String>Заставляет людей чувствовать себя более виноватыми за неправильные поступки.[BR][BR][HS=HS_Crime]-5% Преступность[/HS]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Found_WeaponJammer_Name</Label>
+    <String>Найденный подавитель</String>
+  </StringTable>
+  <StringTable>
+    <Label>Found_WeaponJammer_Dec</Label>
+    <String>Мы не крали это. Мы нашли это.[BR][BR][COLOR=UIDefaultHighlight]+5 Уклонение[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnergyWeapon_Name</Label>
+    <String>Эн. нагнетатель</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnergyWeapon_Dec</Label>
+    <String>Когда установлено на корабль, устройство Энергетический Наполнитель улучшает энергетическое оружие судна.[BR][BR][COLOR=UIDefaultHighlight]+2 к Атаке Лучами[/COLOR][BR][COLOR=WarRed]Целевая флотилия должна иметь Лучевое оружие.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddMissileWeapon_Name</Label>
+    <String>Прототип боегол-ки</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddMissileWeapon_Dec</Label>
+    <String>Улучшает наступательные возможности вашего корабля, добавляя превосходную ракетную огневую мощь.[BR][BR][COLOR=UIDefaultHighlight]+2 к ракетной атаке[/COLOR][BR][COLOR=WarRed]Целевой флот должен иметь ракетное оружие.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddKineticWeapon_Name</Label>
+    <String>Мод. ЭМ-катапульты</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddKineticWeapon_Dec</Label>
+    <String>Освободите древнюю и мощную кинетическую силу, увеличивая огневую мощь вашего корабля.[BR][BR][COLOR=UIDefaultHighlight]+2 Кинетическая атака[/COLOR][BR][COLOR=WarRed]Целевой флот должен иметь кинетическое оружие.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddTacticalThrusterUpgradeModule_Name</Label>
+    <String>Улучшение тактических двигателей</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddTacticalThrusterUpgradeModule_Dec</Label>
+    <String>Этот модуль использует передовые технологии для значительного увеличения боевой скорости и маневренности любого корабля, к которому он применяется.[BR][BR][COLOR=UIDefaultHighlight]+25% к тактической скорости[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEngineUpgradeModule_Name</Label>
+    <String>Межзвездн. двиг.</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEngineUpgradeModule_Dec</Label>
+    <String>Увеличивает скорость гиперпространства целевого корабля.[BR][BR][COLOR=UIDefaultHighlight]+1 Перемещения[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryPollutionRemoverModule_Name</Label>
+    <String>Атмосферный очиститель</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryPollutionRemoverModule_Dec</Label>
+    <String>Уменьшает загрязнение на колонии, эффективно расщепляя вредные частицы и токсины.[BR][BR][COLOR=UIDefaultHighlight]-10% Загрязнение[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddShipArmorModule_Name</Label>
+    <String>Модуль бронепластин</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddShipArmorModule_Dec</Label>
+    <String>Обеспечивает повышенную защиту брони для целевого корабля.[BR][BR][COLOR=UIDefaultHighlight]+2 к броне[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryBroadcasterModule_Name</Label>
+    <String>Модуль планетар. передатчика</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryBroadcasterModule_Dec</Label>
+    <String>Усиливает влияние планеты на окружающие системы.[BR][BR][COLOR=UIDefaultHighlight]+500 Влияния[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryCultureModule_Name</Label>
+    <String>Планетар. культурн. модуль</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryCultureModule_Dec</Label>
+    <String>При применении обнаруживает ранее неизвестные точки интереса на планете, что приводит к увеличению культурного значения этого мира.[BR][BR][COLOR=UIDefaultHighlight]+3 Культурный Вклад[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryDefenseModule_Name</Label>
+    <String>Добавить мод. планет. обороны</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPlanetaryDefenseModule_Dec</Label>
+    <String>Обеспечивает дополнительный уровень защиты от вторжений на целевую планету.[BR][BR][COLOR=UIDefaultHighlight]+30 Планетарная защита[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnemyDestablizerModule_Name</Label>
+    <String>Модуль дестабилизации врага</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnemyDestablizerModule_Dec</Label>
+    <String>Способствует преступной деятельности на целевой чужой планете.[BR][BR][COLOR=UIDefaultHighlight]+10 Преступность[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnemyDefenseSabotageModule_Name</Label>
+    <String>Модуль саботажа обороны врага</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddEnemyDefenseSabotageModule_Dec</Label>
+    <String>Выводит из строя способность врага защищаться от вторжений. Нацеливайтесь на планету для использования.[BR][BR][COLOR=WarRed]Должны быть в состоянии войны с целью.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPropagandizeEnemyCitizensModule_Name</Label>
+    <String>Деморализующий артефакт</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPropagandizeEnemyCitizensModule_Dec</Label>
+    <String>Существенно снижает Влияние целевой чужой планеты.[BR][BR][COLOR=UIDefaultHighlight]-5 Рост Влияния[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPoisonEnemyPlanetModule_Name</Label>
+    <String>Модуль яд. газа</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddPoisonEnemyPlanetModule_Dec</Label>
+    <String>Значительно снижает плодородие целевого чужого мира за месяц.[BR][BR][COLOR=WarRed]Цель должна находиться в состоянии войны.[/COLOR][BR][BR][COLOR=UIDefaultHighlight]-10 Фермерство[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>DepleteEnemyPlanetResourcesModule_Name</Label>
+    <String>Массив обнуления ресурсов</String>
+  </StringTable>
+  <StringTable>
+    <Label>DepleteEnemyPlanetResourcesModule_Dec</Label>
+    <String>Окисляет минералы на целевой чужой планете, снижает минеральную ценность планеты.[BR][BR][COLOR=UIDefaultHighlight]-2 Минерала[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddFriendlyPlanetMineralScanner_Name</Label>
+    <String>Сканер минералов</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddFriendlyPlanetMineralScanner_Dec</Label>
+    <String>Одноразовый сканер обнаруживает ранее неизвестные источники минералов на нашей целевой планете.[BR][BR][COLOR=UIDefaultHighlight]+2 минерала[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddFriendlyPlanetTechFinderModule_Name</Label>
+    <String>Сканер технологий</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddFriendlyPlanetTechFinderModule_Dec</Label>
+    <String>Обнаруживает ранее неизвестные фрагменты технологий, оставленные Предтечами, увеличивая базовый технологический рейтинг планеты.[BR][BR][COLOR=UIDefaultHighlight]+2 Технология[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSummonLeaderToServeYouModule_Name</Label>
+    <String>Модуль призыва лидера</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSummonLeaderToServeYouModule_Dec</Label>
+    <String>Призывает дружелюбного советника Йор, созданного Предтечами.[BR][BR][COLOR=UIDefaultHighlight]+1 Лидер Йор[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddRoboticServantsForPlanetModule_Name</Label>
+    <String>Модуль роботов-слуг</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddRoboticServantsForPlanetModule_Dec</Label>
+    <String>Добавляет дружелюбного слугу Йор на целевой основной мир.[BR][BR][COLOR=UIDefaultHighlight]+1 гражданин Йор[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddRoboticStarDrone_Name</Label>
+    <String>Роботизир. зв. дрон</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddRoboticStarDrone_Dec</Label>
+    <String>Мгновенно создаёт небольшой, но смертоносный дрон-оружие.[BR][BR][COLOR=UIDefaultHighlight]Создать корабль класса Корвет[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>DeathCommandos_Name</Label>
+    <String>Солдаты смерти</String>
+  </StringTable>
+  <StringTable>
+    <Label>DeathCommandos_Dec</Label>
+    <String>Развяжите свои самые фаталистические и опытные силы для целенаправленной атаки. [BR][BR][COLOR=UIDefaultHighlight]Уменьшает HP каждого корабля во флоте врага на 25%.[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>CosmicEye_Name</Label>
+    <String>Око Космоса</String>
+  </StringTable>
+  <StringTable>
+    <Label>CosmicEye_Dec</Label>
+    <String>Откройте часть карты с помощью Ока Космоса. Если оно увидит планету другой цивилизации, есть вероятность украсть технологию.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Pandemonium_Name</Label>
+    <String>Пандемониум</String>
+  </StringTable>
+  <StringTable>
+    <Label>Pandemonium_Dec</Label>
+    <String>Окажите негативное телепатическое влияние на целую планету. Можно снизить либо [HS=HS_PlanetaryDefense]оборону планеты[/HS], [HS=HS_Influence]влияние[/HS] и [HS=HS_Approval]одобрение[/HS], либо [HS=HS_Manufacturing]промышленность[/HS] и [HS=HS_Research]исследования[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>Serenity_Name</Label>
+    <String>Покой</String>
+  </StringTable>
+  <StringTable>
+    <Label>Serenity_Dec</Label>
+    <String>Окажите позитивное телепатическое влияние на целую планету. Модно повысить либо [HS=HS_Growth]рост[/HS] и [HS=HS_Approval]одобрение[/HS], либо [HS=HS_Influence]влияние[/HS] и [HS=HS_Tourism]туризм[/HS].</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedLabor_Name</Label>
+    <String>Рабский труд</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedLabor_Dec</Label>
+    <String>Люди работают усердно. Они могли бы работать усерднее.[BR][BR]Уменьшает [HS=HS_Approval]Одобрение[/HS] на 12 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedTraining_Name</Label>
+    <String>Обучение рабов</String>
+  </StringTable>
+  <StringTable>
+    <Label>ForcedTraining_Dec</Label>
+    <String>Обучает рабов, повышая опыт целевого флота.</String>
+  </StringTable>
+  <StringTable>
+    <Label>RushNewCitizen_Name</Label>
+    <String>Производство населения</String>
+  </StringTable>
+  <StringTable>
+    <Label>RushNewCitizen_Dec</Label>
+    <String>Без дюрантия мы можем быстро создать новых граждан, перерабатывая отходы.</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetIncreaseMovesEO_Name</Label>
+    <String>Ускорить движение флота</String>
+  </StringTable>
+  <StringTable>
+    <Label>FleetIncreaseMovesEO_Dec</Label>
+    <String>Использовать полномочия для концентрации усилий на оптимизации скорости одного флота.</String>
+  </StringTable>
+  <StringTable>
+    <Label>MilitaryConstructionEO_Name</Label>
+    <String>Повышение пр-ва на верфи</String>
+  </StringTable>
+  <StringTable>
+    <Label>MilitaryConstructionEO_Dec</Label>
+    <String>Сосредоточить наши усилия на быстром снабжении конкретной верфи ресурсами.</String>
+  </StringTable>
+  <StringTable>
+    <Label>InfluenceBroadcast_Name</Label>
+    <String>Культура вещания</String>
+  </StringTable>
+  <StringTable>
+    <Label>InfluenceBroadcast_Dec</Label>
+    <String>Этот модуль содержит оптимизированное сообщение, которое наверняка заставит других пожелать ассимилироваться в нашу культуру.[BR][BR][COLOR=UIDefaultHighlight]+300 Влияние[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetTiles_Name</Label>
+    <String>Модиф. планету</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetTiles_Dec</Label>
+    <String>Увеличьте использование этой планеты для нашего вида. Добавляет +3 к её используемым плиткам. Следует использовать только на основных мирах.[BR][BR][COLOR=UIDefaultHighlight]+3 Используемых плитки[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Recapitalize_Name</Label>
+    <String>Рекапитализ-я</String>
+  </StringTable>
+  <StringTable>
+    <Label>Recapitalize_Dec</Label>
+    <String>Создать новый капитал путем рекапитализации за счет статуса резервной валюты.</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnMiner_Name</Label>
+    <String>Нан. шахт.</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnMiner_Dec</Label>
+    <String>Нанять опытных шахтеров для эффективной добычи полезных ресурсов и повышения производительности.</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnFreighter_Name</Label>
+    <String>Наймите торг. корабль</String>
+  </StringTable>
+  <StringTable>
+    <Label>SpawnFreighter_Dec</Label>
+    <String>Наймите опытных торговцев для управления кораблем, чтобы расширить ваши торговые пути.</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSiege_Name</Label>
+    <String>Добавить Шок. Войска</String>
+  </StringTable>
+  <StringTable>
+    <Label>AddSiege_Dec</Label>
+    <String>Установите шоковых штурмовиков на целевой корабль, чтобы помочь в завоевании миров.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetFertilityIncrease_Name</Label>
+    <String>Удобр. планету</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetFertilityIncrease_Dec</Label>
+    <String>Увеличивает плодородие целевой колонии.</String>
+  </StringTable>
+  <StringTable>
+    <Label>GiveHope_Name</Label>
+    <String>Дай Надежду</String>
+  </StringTable>
+  <StringTable>
+    <Label>GiveHope_Dec</Label>
+    <String>Произнесите серию вдохновляющих речей на целевой основной мир, чтобы увеличить их [HS=HS_Approval]одобрение[/HS] на 25 ходов.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Mitosis_Name</Label>
+    <String>Митоз</String>
+  </StringTable>
+  <StringTable>
+    <Label>Mitosis_Dec</Label>
+    <String>Инициируйте митоз у Облученного Гражданина на целевой планете.[BR][BR]+1 [COLOR=UIDefaultHighlight]Гражданин[/COLOR]</String>
+  </StringTable>
+  <StringTable>
+    <Label>Swarm_Name</Label>
+    <String>Рой</String>
+  </StringTable>
+  <StringTable>
+    <Label>Swarm_Dec</Label>
+    <String>В течение шести месяцев все представители нашего вида, обладающие [HS=HS_Consuming]Поглощения[/HS], увидят удвоение своих способностей.</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetVision_Name</Label>
+    <String>Планетарное ясновидение</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetVision_Dec</Label>
+    <String>Значительно расширьте обзор сенсоров целевого мира, чтобы увидеть, что находится рядом с ним на расстоянии. Эффект начинается через месяц.</String>
+  </StringTable>
 </StringTableList>

@@ -6,7 +6,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Probe_Dec</Label>
-    <String>Sonden haben eine unbegrenzte Reichweite und können zur Erkundung der Galaxie eingesetzt werden. Sie haben eine große Sensorreichweite und werden von Piraten und Monstern ignoriert.</String>
+    <String>Mit unbegrenzter Reichweite können Sonden zur Erkundung der Galaxie verwendet werden. Sie haben eine große Sensorreichweite und werden von Piraten, Weltraummonstern und Vorläufer-Wächtern ignoriert.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Miner_Name</Label>
@@ -30,7 +30,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Fighter_Dec</Label>
-    <String>Jäger sind kleine, wendige Schiffe, die zuerst Bomber und dann andere Jäger ins Visier nehmen und sich dann den großen Hauptkampfschiffen zuwenden, die anfällig für Schwarmangriffe sind.</String>
+    <String>Schiffe der Kategorie Kämpfer sind kleine Hüllenfahrzeuge, die eine erhöhte [HS=HS_PointDefense]Ausweichfähigkeit[/HS] haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Bomber_Name</Label>
@@ -38,7 +38,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Bomber_Dec</Label>
-    <String>Bomber sind kleine, wendige Schiffe, die sich auf die großen Hauptkampfschiffe konzentrieren, die anfällig für Schwärme sind.</String>
+    <String>Bomber-Kategorie Schiffe sind kleine Rumpffahrzeuge, die erhöhten Schaden verursachen.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Frigate_Name</Label>
@@ -46,7 +46,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Frigate_Dec</Label>
-    <String>Entwickelt, um wertvolle Schiffe vor anfliegenden Bombern und Jägern zu schützen.</String>
+    <String>Fregatten-Kategorie-Schiffe sind Kleinhüllenfahrzeuge, die eine erhöhte [HS=HS_Accuracy]Genauigkeit[/HS] haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Cruiser_Name</Label>
@@ -54,7 +54,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Cruiser_Dec</Label>
-    <String>Entwickelt, um Fregatten und andere Kreuzer vom Schlachtfeld zu entfernen.</String>
+    <String>Kreuzer-Kategorie Schiffe sind Schiffe mit mittlerem Rumpf, die eine erhöhte Waffenreichweite haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Battleship_Name</Label>
@@ -62,7 +62,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Battleship_Dec</Label>
-    <String>Ein großes Kapitalschiff mit einem beeindruckenden Arsenal an Angriffs- und Verteidigungsfähigkeiten. Anfällig für Jäger und Bomber.</String>
+    <String>Schlachtschiff-Kategorie Schiffe sind Großhüllenfahrzeuge, die erhöhte [HS=HS_ArmorRating]Panzerung[/HS] haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Dreadnought_Name</Label>
@@ -70,7 +70,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Dreadnought_Dec</Label>
-    <String>Das größte und gefährlichste Großkampfschiff der Galaxie. Entworfen, um das Schlachtfeld vollkommen zu beherrschen. Anfällig für Jäger und Bomber.</String>
+    <String>Schiffe der Dreadnought-Kategorie sind riesige Rumpfschiffe, die eine erhöhte [HS=HS_ShieldStrength]Schildstärke[/HS] haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Colony_Name</Label>
@@ -110,7 +110,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Siege_Dec</Label>
-    <String>Ein Kriegsschiff, entwickelt um Kolonien erobern zu können.</String>
+    <String>Belagerungskategorie-Schiffe sind kleine Hüllengefäße, die eine erhöhte Eroberungsrate haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Invader_Name</Label>
@@ -118,7 +118,7 @@
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Invader_Dec</Label>
-    <String>Ein Transportraumschiff voller Soldaten, um ganze Welten zu erobern.</String>
+    <String>Invasoren-Kategorie-Schiffe sind Frachtrumpfschiffe, die eine stark erhöhte Eroberungsbewertung haben.</String>
   </StringTable>
   <StringTable>
     <Label>PresetCategory_Undeclared_Name</Label>
@@ -182,7 +182,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Fighter</Label>
-    <String>Im Kampf als letztes Ziel anvisiert, greift zuerst Bomber an</String>
+    <String>+25% [HS=HS_PointDefense]Ausweichen[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Bomber</Label>
@@ -190,7 +190,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Bomber</Label>
-    <String>Greift zuerst die größten Schiffe an</String>
+    <String>+10% Schaden</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Frigate</Label>
@@ -198,7 +198,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Frigate</Label>
-    <String>Zielt auf Jäger und Bomber</String>
+    <String>+25% [HS=HS_Accuracy]Genauigkeit[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Survey</Label>
@@ -210,11 +210,11 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Cruiser</Label>
-    <String>Mittleres Kampfschiff, zielt auf Fregatten</String>
+    <String>Mittleres Kampfschiff</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Cruiser</Label>
-    <String>Greift zuerst Fregatten an,</String>
+    <String>+10% Waffenreichweite</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Siege</Label>
@@ -222,7 +222,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Siege</Label>
-    <String>[ICON=Moves_Icon] Eroberungswertung +5[BR][ICON=Moves_Icon] Belagerungsbonus +25%</String>
+    <String>+12 Eroberungsbewertung</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Battleship</Label>
@@ -230,7 +230,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Battleship</Label>
-    <String>[ICON=TacticalSpeed_Icon] Taktische Geschwindigkeit -5</String>
+    <String>+10% [HS=HS_ArmorRating]Panzerung[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Dreadnought</Label>
@@ -238,7 +238,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Dreadnought</Label>
-    <String>[ICON=TacticalSpeed_Icon] Taktische Geschwindigkeit -10</String>
+    <String>+10% [HS=HS_ShieldStrength]Schildstärke[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Colony</Label>
@@ -254,7 +254,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Constructor</Label>
-    <String>Erstellt Sternenbasen</String>
+    <String>Erstellt eine [HS=HS_Starbase]Sternenbasis[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Invader</Label>
@@ -262,7 +262,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_BENEFITS_LABEL_Invader</Label>
-    <String>[ICON=Moves_Icon] Eroberungswertung +10[BR][ICON=Moves_Icon] Belagerungsbonus +100%</String>
+    <String>+40 Eroberungsbewertung</String>
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_SPECS_LABEL_Freighter</Label>

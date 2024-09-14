@@ -20,7 +20,6 @@
     <Label>GOODBYEBUTTON</Label>
     <String>Auf Wiedersehen</String>
   </StringTable>
-  
   <StringTable>
     <Label>CampaignName</Label>
     <String>Ein Kampagnentitel_tk</String>
@@ -164,6 +163,14 @@
   <StringTable>
     <Label>BATTLE_VIEWER_DISABLED_MP_TOOLTIP</Label>
     <String>Kampfansicht sind für Multiplayer deaktiviert.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_AI_BATTLES_TOOLTIP</Label>
+    <String>Kampfbetrachter ist nur[BR] für Mensch gegen[BR] Mensch Kämpfe[BR] aktiviert.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_BY_OPTION_TOOLTIP</Label>
+    <String>Kampfansicht ist in[BR] dieser Sitzung[BR] deaktiviert.</String>
   </StringTable>
   <StringTable>
     <Label>BATTLE_VIEWER_SKIP_TITLE</Label>
@@ -3387,7 +3394,7 @@
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Fighter</Label>
-    <String>Jäger</String>
+    <String>[Jagdflugzeuge]Kämpfer[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Frigate</Label>
@@ -4160,6 +4167,10 @@
   <StringTable>
     <Label>DESIGNER_MAX_CAPACITY_BODY_LABEL</Label>
     <String>Dieses Teil ist zu schwer zum Befestigen. Bitte entfernt vorher andere Komponenten.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DESIGNER_MAX_CAPACITY_BODY_LABEL_SMALL_HULL</Label>
+    <String>Dieser Teil ist zu[BR] schwer, um ihn auf[BR] diesem Rumpf zu[BR] montieren.</String>
   </StringTable>
   <StringTable>
     <Label>DESIGNER_LANDING_NEW_DESIGN_ENTRY_LABEL</Label>
@@ -5263,7 +5274,7 @@
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_ASTEROIDS</Label>
-    <String>[ICON=Stat_Productive_Icon]</String>
+    <String>[ICON=Asteroids_Stat_Icon]</String>
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_RESOURCES</Label>
@@ -5855,7 +5866,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_WEAPONS_LABEL</Label>
-    <String>Kriegsführung</String>
+    <String>Waffen</String>
   </StringTable>
   <StringTable>
     <Label>Open</Label>
@@ -7215,7 +7226,7 @@
   </StringTable>
   <StringTable>
     <Label>PERCENT_STRING</Label>
-    <String>{AMOUNT} %</String>
+    <String>{MENGE}%</String>
   </StringTable>
   <StringTable>
     <Label>MULTIPLY_FORMAT</Label>
@@ -7239,7 +7250,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_PICK_CLASS_LABEL</Label>
-    <String>Wähle Schiffsklasse</String>
+    <String>Festlegen der Doktrin für Schiffstyp</String>
   </StringTable>
   <StringTable>
     <Label>ROTATIONNAME</Label>
@@ -7247,7 +7258,7 @@
   </StringTable>
   <StringTable>
     <Label>UPGRADE_DESIGN_LABEL</Label>
-    <String>Neues Design</String>
+    <String>Neue Schiffsklasse</String>
   </StringTable>
   <StringTable>
     <Label>SLIDERLABEL</Label>
@@ -7351,7 +7362,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_ECONOMIC_LABEL</Label>
-    <String>Kolonisierung</String>
+    <String>Wissenschaft</String>
   </StringTable>
   <StringTable>
     <Label>ASSAULT_SHIP_LABEL</Label>
@@ -7707,7 +7718,7 @@
   </StringTable>
   <StringTable>
     <Label>STATION_ACTION_LABEL</Label>
-    <String>Stationiert</String>
+    <String>Stationiert bei {OBJECTNAME}</String>
   </StringTable>
   <StringTable>
     <Label>DO_SURVEY_ACTION_LABEL</Label>
@@ -8883,19 +8894,19 @@
   </StringTable>
   <StringTable>
     <Label>ASSAULT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Jäger</String>
+    <String>Angriffsjäger</String>
   </StringTable>
   <StringTable>
     <Label>INTERCEPTOR_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Jäger</String>
+    <String>Abfangjäger</String>
   </StringTable>
   <StringTable>
     <Label>ESCORT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Jäger</String>
+    <String>Eskortenjäger</String>
   </StringTable>
   <StringTable>
     <Label>GUARDIAN_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Jäger</String>
+    <String>Hüter-Kämpfer</String>
   </StringTable>
   <StringTable>
     <Label>BONUS_SOURCE_FIGHTERS</Label>
@@ -9091,19 +9102,19 @@
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_CULTURAL</Label>
-    <String>Gewährt beiden Zivilisationen einen Einflussbonus von 25% pro [HS=HS_Week]Monat[/HS] durch gemeinsame Kultur.</String>
+    <String>Geben Sie einen Bonus von {AMOUNT} zu {STATNAME} pro [HS=HS_Week]Monat[/HS] an beide Zivilisationen durch den Austausch von Kultur.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_FREETRADE</Label>
-    <String>Gewährt beiden Zivilisationen einen Forschungs- und Wohlstandsbonus von 25% durch gemeinsame Märkte.</String>
+    <String>Erhalte einen {AMOUNT} Bonus auf das {STATNAME} beider Zivilisationen durch das Teilen von Märkten.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_SLAVE</Label>
-    <String>Gewährt der anderen Zivilisation einen Fertigungs- und Wohlstandsbonus von 25% durch gemeinsame Sklavenmärkte.</String>
+    <String>Erteilen Sie {AMOUNT} Bonus für die Kolonieproduktion und den Reichtum der anderen Zivilisation, indem Sie zustimmen, Sklavenmärkte zu öffnen.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_ResearchTradeTreaty</Label>
-    <String>Gewährt beiden Zivilisationen einen Forschungsbonus von 25% durch gemeinsame Technologien.</String>
+    <String>Gewähren Sie einen Bonus von {AMOUNT} für {STATNAME} beider Zivilisationen durch das Teilen von Technologien.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_STRATEGICRESOURCE</Label>
@@ -10259,7 +10270,7 @@
   </StringTable>
   <StringTable>
     <Label>Extreme_World_Cannot_Colonize</Label>
-    <String>Kann nicht kolonisieren</String>
+    <String>Erfordert extreme Kolonisierung</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Yor</Label>
@@ -11047,7 +11058,7 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER</Label>
-    <String>KI-Persönlichkeit</String>
+    <String>Persönlichkeit</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER_SUBTEXT</Label>
@@ -11135,11 +11146,11 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_TITLE</Label>
-    <String>Bürgervolk</String>
+    <String>Bürger Spezies</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT</Label>
-    <String>Wählt das standardmäßige Volk der Bürger in Eurer Zivilisation</String>
+    <String>Wählen Sie die Standardart der Bürger in Ihrer Zivilisation aus</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT2</Label>
@@ -12173,7 +12184,6 @@
     <Label>PersonalityType_Desc_Totalitarianism</Label>
     <String>Glaubt an die absolute Macht und Kontrolle durch den Staat, bei der alle Aspekte des öffentlichen und privaten Lebens unter der Herrschaft einer einzigen Autorität stehen.</String>
   </StringTable>
-  
   <StringTable>
     <Label>PersonalityType_PacifismPerTurn</Label>
     <String>[ICON=Calm_Icon] Wohlwollen pro Monat</String>
@@ -13032,7 +13042,7 @@
   </StringTable>
   <StringTable>
     <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
-    <String>Wachstum kommt von nicht synthetischen Bürgern auf unserer Welt. Kann durch Verbesserungen wie Fruchtbarkeitskliniken und Krankenhäuser erhöht und auf Welten mit hoher Verschmutzung deutlich verringert werden.</String>
+    <String>Wachstum entsteht durch die nicht-synthetischen Einwohner auf deiner Welt. Planetare Verbesserungen und Bürgerrollen können genutzt werden, um das Wachstum zu steigern. Jedoch kann das Wachstum auf Welten mit hoher Verschmutzung auch deutlich verringert werden.</String>
   </StringTable>
   <StringTable>
     <Label>APPROVAL_TITLE_HAPPY</Label>
@@ -13108,7 +13118,7 @@
   </StringTable>
   <StringTable>
     <Label>PlanetaryDefensesHPFormatString</Label>
-    <String>{VALUE}/{AMOUNT}</String>
+    <String>{AMOUNT}</String>
   </StringTable>
   <StringTable>
     <Label>PopulationFormatString</Label>
@@ -13340,11 +13350,11 @@
   </StringTable>
   <StringTable>
     <Label>CanSupplySocial_Value</Label>
-    <String>Transportiert raffinierte Güter zu einer anderen Kolonie, was %ld Fertigungspunkte einbringt.</String>
+    <String>Transportiert raffinierte Waren zu einer anderen Kolonie und stellt %ld gelagerte Waren bereit.</String>
   </StringTable>
   <StringTable>
     <Label>CanSupplyMilitary_Value</Label>
-    <String>Transportiert raffinierte Güter zu einer anderen Schiffswerft, was %ld Fertigungspunkte einbringt.</String>
+    <String>Transportiert raffinierte Waren zu einer anderen Werft und stellt %ld gelagerte Waren bereit.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_SAVE_FAILED_TITLE</Label>
@@ -13496,15 +13506,15 @@
   </StringTable>
   <StringTable>
     <Label>ALERT_BesiegedPlanet</Label>
-    <String>%s wird belagert!</String>
+    <String>Unser Planet {PLANETNAME} wird belagert und wird in {AMOUNT} Monaten fallen.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetWin</Label>
-    <String>Wir haben den Planeten erobert %s.</String>
+    <String>Wir haben den Planeten {PLANETNAME} erobert.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetLoss</Label>
-    <String>%s wurde erobert.</String>
+    <String>{PLANETNAME} wurde erobert.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ShipUpgradeAvailable</Label>
@@ -14404,7 +14414,7 @@
   </StringTable>
   <StringTable>
     <Label>STACKED_SHIP_BAR_TITLE</Label>
-    <String>Gestapelte Schiffe oder Flotten:</String>
+    <String>Schiffe oder Flotten gestapelt in Kachel.</String>
   </StringTable>
   <StringTable>
     <Label>RALLY_CONTEXT_UPGRADE_FLEET_ERROR</Label>
@@ -16704,11 +16714,11 @@
   </StringTable>
   <StringTable>
     <Label>SpecialtyShips</Label>
-    <String>Ausgewählte Schiffe</String>
+    <String>Hervorgehobene Klassen</String>
   </StringTable>
   <StringTable>
     <Label>MilitaryShips</Label>
-    <String>Kampfschiffe</String>
+    <String>Kampfklassen</String>
   </StringTable>
   <StringTable>
     <Label>MissionShips</Label>
@@ -16781,10 +16791,6 @@
   <StringTable>
     <Label>Survey</Label>
     <String>Erkundungsschiff</String>
-  </StringTable>
-  <StringTable>
-    <Label>Cruiser</Label>
-    <String>Kreuzer</String>
   </StringTable>
   <StringTable>
     <Label>Siege</Label>
@@ -17230,7 +17236,6 @@
     <Label>Ateroid_Cancel_Label</Label>
     <String> </String>
   </StringTable>
-  
   <StringTable>
     <Label>ASTEROID_BUILDMININGBASE_COST</Label>
     <String>Kosten: %d Credits</String>
@@ -17649,7 +17654,7 @@
   </StringTable>
   <StringTable>
     <Label>STARBASE_TYPE_TYPE</Label>
-    <String>Sternenbasis-Typ:</String>
+    <String>Sternbasis- Typ</String>
   </StringTable>
   <StringTable>
     <Label>CHOOSE_TECH</Label>
@@ -18057,7 +18062,7 @@
   </StringTable>
   <StringTable>
     <Label>Planet_Context_Type_Assign</Label>
-    <String>Weist einen Gouverneur zum Verwalten zu</String>
+    <String>Gouverneur zuweisen</String>
   </StringTable>
   <StringTable>
     <Label>SUMMARY_TAB_CITIZENS_TITLE</Label>
@@ -19844,10 +19849,6 @@
     <String>Porträt hinzufügen</String>
   </StringTable>
   <StringTable>
-    <Label>CHOOSE_FEMALE_LABEL</Label>
-    <String>Weiblich hinzufügen</String>
-  </StringTable>
-  <StringTable>
     <Label>CHOOSE_PORTRAITS_LABEL</Label>
     <String>Namen und Porträts der Bürger</String>
   </StringTable>
@@ -20735,7 +20736,6 @@
     <Label>RequiresCitizen</Label>
     <String>Benötigt Bürger</String>
   </StringTable>
-  
   <StringTable>
     <Label>Megalopolis_Name</Label>
     <String>Megalopolis</String>
@@ -20744,7 +20744,6 @@
     <Label>Megalopolis_ShortDec</Label>
     <String>Mit Nahrung bauen Sie eine Stadt auf und erhöhen die Bevölkerung, die Ihre Kolonie aufrechterhalten kann.</String>
   </StringTable>
-  
   <StringTable>
     <Label>RequiredTech</Label>
     <String>{CONDITION} Tech. erforderlich</String>
@@ -20784,10 +20783,6 @@
   <StringTable>
     <Label>RequiredTrait</Label>
     <String>Eigenschaft der Zivilisation {CONDITION} erforderlich</String>
-  </StringTable>
-  <StringTable>
-    <Label>RequiredCitizenRace</Label>
-    <String>Biologie {CONDITION} erforderlich</String>
   </StringTable>
   <StringTable>
     <Label>RequiredGalaxySize</Label>
@@ -21615,7 +21610,7 @@
   </StringTable>
   <StringTable>
     <Label>CrimePenalty_Desc</Label>
-    <String>Es gibt zu viel Kriminalität</String>
+    <String>Es gibt Verbrechen</String>
   </StringTable>
   <StringTable>
     <Label>MutantPenalty_Desc</Label>
@@ -22987,7 +22982,7 @@
   </StringTable>
   <StringTable>
     <Label>RerollTechDesc</Label>
-    <String>Erhaltet einen neue Auswahl an Technologien. Erhöht Forschungszeit um 10 %.</String>
+    <String>Erhaltet einen neue Auswahl an Technologien. Erhöht Forschungszeit um 10%.</String>
   </StringTable>
   <StringTable>
     <Label>RerollTechOutOfRerolls</Label>
@@ -23571,7 +23566,7 @@
   </StringTable>
   <StringTable>
     <Label>ASSIGNGOVERNORTITLE</Label>
-    <String>Weist einen Gouverneur zu, um den Planeten zu verwalten</String>
+    <String>Gouverneur zuweisen</String>
   </StringTable>
   <StringTable>
     <Label>ASSIGNDIPLOMATTITLE</Label>
@@ -24791,7 +24786,7 @@
   </StringTable>
   <StringTable>
     <Label>NestedTooltipHint</Label>
-    <String>[I]Shift[/I] halten, um Tooltip festzustellen</String>
+    <String>[I]Umschalttaste[/I] halten, um Tooltip festzustellen</String>
   </StringTable>
   <StringTable>
     <Label>Notification_UnderSiege_Short</Label>
@@ -25553,7 +25548,6 @@
     <Label>SHIP_DESIGNER_AdvancedEditMode</Label>
     <String>Erweiterter Bearbeitungsmodus</String>
   </StringTable>
-  
   <StringTable>
     <Label>MultiplayerGameListWnd_SortByGameName_Tooltip</Label>
     <String>Sortieren nach: [COLOR=UIDefaultHot]Spielname[/COLOR]</String>
@@ -25626,11 +25620,16 @@
     <Label>HighlightPlanetTiles</Label>
     <String>Planetenkacheln hervorheben</String>
   </StringTable>
-  
-  
   <StringTable>
     <Label>END_UITEXT</Label>
     <String>End German UIText</String>
   </StringTable>
-  
+  <StringTable>
+    <Label>SHIP_DESIGNER_TAB_SUPPORT</Label>
+    <String>Unterstützung</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnableCheats</Label>
+    <String>Cheat-Konsole aktivieren</String>
+  </StringTable>
 </StringTableList>

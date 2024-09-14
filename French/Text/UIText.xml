@@ -20,7 +20,6 @@
     <Label>GOODBYEBUTTON</Label>
     <String>Au revoir</String>
   </StringTable>
-  
   <StringTable>
     <Label>CampaignName</Label>
     <String>Un titre de campagne_tk</String>
@@ -164,6 +163,14 @@
   <StringTable>
     <Label>BATTLE_VIEWER_DISABLED_MP_TOOLTIP</Label>
     <String>Le Visualisateur de Bataille est désactivé en multijoueur.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_AI_BATTLES_TOOLTIP</Label>
+    <String>Le visionneur de bataille[BR] est uniquement activé[BR] pour les combats[BR] Homme vs Homme.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BATTLE_VIEWER_DISABLED_BY_OPTION_TOOLTIP</Label>
+    <String>Le visionneur de bataille[BR] est désactivé pour cette[BR] session..</String>
   </StringTable>
   <StringTable>
     <Label>BATTLE_VIEWER_SKIP_TITLE</Label>
@@ -2171,7 +2178,7 @@
   </StringTable>
   <StringTable>
     <Label>Progressivism_Label</Label>
-    <String>Progrèsisme</String>
+    <String>Progressisme</String>
   </StringTable>
   <StringTable>
     <Label>Progressivism_Label_W_Icon</Label>
@@ -3387,7 +3394,7 @@
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Fighter</Label>
-    <String>Chasseurs</String>
+    <String>[HS=HS_PointDefense]Chasseurs[/HS]</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Frigate</Label>
@@ -3903,7 +3910,7 @@
   </StringTable>
   <StringTable>
     <Label>SURFACE_40_NAME</Label>
-    <String>Échelle</String>
+    <String>Écailles</String>
   </StringTable>
   <StringTable>
     <Label>SURFACE_41_NAME</Label>
@@ -4160,6 +4167,10 @@
   <StringTable>
     <Label>DESIGNER_MAX_CAPACITY_BODY_LABEL</Label>
     <String>Cette pièce est trop lourde à installer. Retirez d'abord quelques autres composants.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DESIGNER_MAX_CAPACITY_BODY_LABEL_SMALL_HULL</Label>
+    <String>Cette partie est trop[BR] lourde pour être montée[BR] sur cette coque..</String>
   </StringTable>
   <StringTable>
     <Label>DESIGNER_LANDING_NEW_DESIGN_ENTRY_LABEL</Label>
@@ -5263,7 +5274,7 @@
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_ASTEROIDS</Label>
-    <String>[ICON=Stat_Productive_Icon]</String>
+    <String>[ICON=Asteroids_Stat_Icon]</String>
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_RESOURCES</Label>
@@ -5771,7 +5782,7 @@
   </StringTable>
   <StringTable>
     <Label>CLOSEBUTTON</Label>
-    <String>Fermer</String>
+    <String>Proche</String>
   </StringTable>
   <StringTable>
     <Label>UPGRADEBUTTON</Label>
@@ -5855,7 +5866,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_WEAPONS_LABEL</Label>
-    <String>Science militaire</String>
+    <String>Armes</String>
   </StringTable>
   <StringTable>
     <Label>Open</Label>
@@ -6275,7 +6286,7 @@
   </StringTable>
   <StringTable>
     <Label>Load_Transport_Convert</Label>
-    <String>Planche</String>
+    <String>Embarquer</String>
   </StringTable>
   <StringTable>
     <Label>INPRODUCTIONLABLE</Label>
@@ -7215,7 +7226,7 @@
   </StringTable>
   <StringTable>
     <Label>PERCENT_STRING</Label>
-    <String>{AMOUNT} %</String>
+    <String>{AMOUNT}%</String>
   </StringTable>
   <StringTable>
     <Label>MULTIPLY_FORMAT</Label>
@@ -7239,7 +7250,7 @@
   </StringTable>
   <StringTable>
     <Label>NEW_DESIGN_PICK_CLASS_LABEL</Label>
-    <String>Choisissez la classe du vaisseau</String>
+    <String>Définir la Doctrine pour le Type de Vaisseau</String>
   </StringTable>
   <StringTable>
     <Label>ROTATIONNAME</Label>
@@ -7247,7 +7258,7 @@
   </StringTable>
   <StringTable>
     <Label>UPGRADE_DESIGN_LABEL</Label>
-    <String>Nouveau design</String>
+    <String>Nouvelle Classe de Vaisseau</String>
   </StringTable>
   <StringTable>
     <Label>SLIDERLABEL</Label>
@@ -7351,7 +7362,7 @@
   </StringTable>
   <StringTable>
     <Label>RESEARCH_ECONOMIC_LABEL</Label>
-    <String>Colonisation</String>
+    <String>Science</String>
   </StringTable>
   <StringTable>
     <Label>ASSAULT_SHIP_LABEL</Label>
@@ -7483,7 +7494,7 @@
   </StringTable>
   <StringTable>
     <Label>Cruiser</Label>
-    <String>Escorte</String>
+    <String>Croiseur</String>
   </StringTable>
   <StringTable>
     <Label>Assault</Label>
@@ -7707,7 +7718,7 @@
   </StringTable>
   <StringTable>
     <Label>STATION_ACTION_LABEL</Label>
-    <String>Posté</String>
+    <String>En poste à {OBJECTNAME}</String>
   </StringTable>
   <StringTable>
     <Label>DO_SURVEY_ACTION_LABEL</Label>
@@ -8883,19 +8894,19 @@
   </StringTable>
   <StringTable>
     <Label>ASSAULT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Chasseurs</String>
+    <String>Chasseurs d'assaut</String>
   </StringTable>
   <StringTable>
     <Label>INTERCEPTOR_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Chasseurs</String>
+    <String>Chasseurs d'interception</String>
   </StringTable>
   <StringTable>
     <Label>ESCORT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Chasseurs</String>
+    <String>Chasseurs d'escorte</String>
   </StringTable>
   <StringTable>
     <Label>GUARDIAN_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Chasseurs</String>
+    <String>Chasseurs Gardiens</String>
   </StringTable>
   <StringTable>
     <Label>BONUS_SOURCE_FIGHTERS</Label>
@@ -9091,19 +9102,19 @@
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_CULTURAL</Label>
-    <String>Donner un bonus de 25 % à l'influence par [HS=HS_Week]mois[/HS] aux deux civilisations par le partage de la culture.</String>
+    <String>Donne un bonus de {AMOUNT} à {STATNAME} par [HS=HS_Week]Mois[/HS] pour les deux civilisations grâce au partage de la culture.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_FREETRADE</Label>
-    <String>Donnez un bonus de 25% de richesse aux deux civilisations en partageant vos marchés.</String>
+    <String>Donne un bonus de {AMOUNT} à la {STATNAME} des deux civilisations grâce au partage des marchés.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_SLAVE</Label>
-    <String>Donnez un bonus de 25% à la fabrication et à la richesse des colonies de l'autre civilisation en acceptant de lui ouvrir vos marchés d'esclaves.</String>
+    <String>Donnez un bonus de {AMOUNT} à la fabrication des colonies et à la richesse de l'autre civilisation en acceptant d'ouvrir des marchés aux esclaves.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_ResearchTradeTreaty</Label>
-    <String>Donnez un bonus de 25% de recherche aux deux civilisations en partageant vos technologies.</String>
+    <String>Offre un bonus de {AMOUNT} à {STATNAME} des deux civilisations grâce au partage de technologies.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_STRATEGICRESOURCE</Label>
@@ -10259,7 +10270,7 @@
   </StringTable>
   <StringTable>
     <Label>Extreme_World_Cannot_Colonize</Label>
-    <String>Ne peut pas coloniser</String>
+    <String>Nécessite une Colonisation Extrême</String>
   </StringTable>
   <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Yor</Label>
@@ -10667,7 +10678,7 @@
   </StringTable>
   <StringTable>
     <Label>AIInitatedTradeWaitMsg_Message</Label>
-    <String>Voudrais échanger avec toi, mais est occupé à commercer avec les %s en ce moment. Souhaitez-vous refuser l'offre ou attendre qu'ils soient disponibles ?</String>
+    <String>%s voudrais échanger avec toi, mais est occupé à commercer avec les %s en ce moment. Souhaitez-vous refuser l'offre ou attendre qu'ils soient disponibles?</String>
   </StringTable>
   <StringTable>
     <Label>DECLINEBUTTON</Label>
@@ -11047,7 +11058,7 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER</Label>
-    <String>Personnalité d'IA</String>
+    <String>Personnalité</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_PERSONALITY_HEADER_SUBTEXT</Label>
@@ -11135,11 +11146,11 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_TITLE</Label>
-    <String>Course des Citoyens</String>
+    <String>Espèce Citoyenne</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT</Label>
-    <String>Choisissez la race par défaut des citoyens de votre civilisation</String>
+    <String>Choisissez l'espèce par défaut des citoyens de votre civilisation</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT2</Label>
@@ -12173,7 +12184,6 @@
     <Label>PersonalityType_Desc_Totalitarianism</Label>
     <String>Croît en un pouvoir absolu et un contrôle exercé par l'État, avec tous les aspects de la vie publique et privée sous la gouvernance d'une seule autorité.</String>
   </StringTable>
-  
   <StringTable>
     <Label>PersonalityType_PacifismPerTurn</Label>
     <String>[ICON=Calm_Icon] Bonté par Mois</String>
@@ -13032,7 +13042,7 @@
   </StringTable>
   <StringTable>
     <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
-    <String>La croissance provient des citoyens non-synthétiques sur votre planète. Mais elle peut être augmentée grâce à des améliorations telles que les Cliniques de Fertilité et les Hôpitaux, et considérablement réduite sur les mondes avec une forte pollution.</String>
+    <String>La croissance provient des citoyens non-synthétiques de votre monde. Les améliorations planétaires et les rôles des citoyens peuvent être exploités pour augmenter la croissance. Cependant, la croissance peut également être considérablement réduite sur les mondes à haute pollution.</String>
   </StringTable>
   <StringTable>
     <Label>APPROVAL_TITLE_HAPPY</Label>
@@ -13108,7 +13118,7 @@
   </StringTable>
   <StringTable>
     <Label>PlanetaryDefensesHPFormatString</Label>
-    <String>{VALUE}/{AMOUNT}</String>
+    <String>{MONTANT}</String>
   </StringTable>
   <StringTable>
     <Label>PopulationFormatString</Label>
@@ -13340,11 +13350,11 @@
   </StringTable>
   <StringTable>
     <Label>CanSupplySocial_Value</Label>
-    <String>Transporte des biens raffinés vers une autre colonie et procure %ld points de fabrication.</String>
+    <String>Transporte des marchandises raffinées vers une autre colonie fournissant %ld Marchandises Stockées.</String>
   </StringTable>
   <StringTable>
     <Label>CanSupplyMilitary_Value</Label>
-    <String>Transporte des biens raffinés vers un autre chantier astronaval et procure %ld points de fabrication.</String>
+    <String>Transporte des marchandises raffinées vers un autre chantier naval fournissant %ld marchandises stockées.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_SAVE_FAILED_TITLE</Label>
@@ -13464,7 +13474,7 @@
   </StringTable>
   <StringTable>
     <Label>ALERT_OtherCloseToPrestigeVictory</Label>
-    <String>%s est sur le point de remporter une victoire de prestige (%ld% %).</String>
+    <String>%s est sur le point de remporter une victoire de prestige (%ld%%).</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_UPGoingToMeet</Label>
@@ -13496,15 +13506,15 @@
   </StringTable>
   <StringTable>
     <Label>ALERT_BesiegedPlanet</Label>
-    <String>%s est assiégé !</String>
+    <String>Notre planète {PLANETNAME} est assiégée et tombera dans {AMOUNT} mois.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetWin</Label>
-    <String>Nous avons conquis la planète %s.</String>
+    <String>Nous avons conquis la planète {PLANETNAME}.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ConqueredPlanetLoss</Label>
-    <String>%s a été conquis.</String>
+    <String>{PLANETNAME} a été conquis.</String>
   </StringTable>
   <StringTable>
     <Label>ALERT_ShipUpgradeAvailable</Label>
@@ -14188,7 +14198,7 @@
   </StringTable>
   <StringTable>
     <Label>TREATYAGREEMENTS_DURATION_FORMAT</Label>
-    <String>%d mois</String>
+    <String>%ld mois</String>
   </StringTable>
   <StringTable>
     <Label>TREATYAGREEMENTS_DURATION_INFINITE</Label>
@@ -14404,7 +14414,7 @@
   </StringTable>
   <StringTable>
     <Label>STACKED_SHIP_BAR_TITLE</Label>
-    <String>Flottes ou vaisseaux empilés</String>
+    <String>Vaisseaux ou flottes empilés dans la tuile.</String>
   </StringTable>
   <StringTable>
     <Label>RALLY_CONTEXT_UPGRADE_FLEET_ERROR</Label>
@@ -16404,7 +16414,7 @@
   </StringTable>
   <StringTable>
     <Label>STATBREAKDOWN_TOOLTIP_SPENDING_TITLE</Label>
-    <String>%s représente %ld% des dépenses</String>
+    <String>%s représente %ld%s des dépenses</String>
   </StringTable>
   <StringTable>
     <Label>STATBREAKDOWN_TOOLTIP_SPENDING_MANUFACTURING_TITLE</Label>
@@ -16704,11 +16714,11 @@
   </StringTable>
   <StringTable>
     <Label>SpecialtyShips</Label>
-    <String>Vaisseaux en vedette</String>
+    <String>Classes en Vedette</String>
   </StringTable>
   <StringTable>
     <Label>MilitaryShips</Label>
-    <String>Vaisseaux de combat</String>
+    <String>Classes de combat</String>
   </StringTable>
   <StringTable>
     <Label>MissionShips</Label>
@@ -16781,10 +16791,6 @@
   <StringTable>
     <Label>Survey</Label>
     <String>Drapeau</String>
-  </StringTable>
-  <StringTable>
-    <Label>Cruiser</Label>
-    <String>Croiseur</String>
   </StringTable>
   <StringTable>
     <Label>Siege</Label>
@@ -17230,7 +17236,6 @@
     <Label>Ateroid_Cancel_Label</Label>
     <String> </String>
   </StringTable>
-  
   <StringTable>
     <Label>ASTEROID_BUILDMININGBASE_COST</Label>
     <String>Coût : %d crédits</String>
@@ -17649,7 +17654,7 @@
   </StringTable>
   <StringTable>
     <Label>STARBASE_TYPE_TYPE</Label>
-    <String>Type de base stellaire :</String>
+    <String>Type de base stellaire</String>
   </StringTable>
   <StringTable>
     <Label>CHOOSE_TECH</Label>
@@ -19844,10 +19849,6 @@
     <String>Ajouter des portraits</String>
   </StringTable>
   <StringTable>
-    <Label>CHOOSE_FEMALE_LABEL</Label>
-    <String>Ajouter une femme</String>
-  </StringTable>
-  <StringTable>
     <Label>CHOOSE_PORTRAITS_LABEL</Label>
     <String>Noms et portraits des citoyens</String>
   </StringTable>
@@ -20735,7 +20736,6 @@
     <Label>RequiresCitizen</Label>
     <String>Exige Citoyen</String>
   </StringTable>
-  
   <StringTable>
     <Label>Megalopolis_Name</Label>
     <String>Mégalopole</String>
@@ -20744,7 +20744,6 @@
     <Label>Megalopolis_ShortDec</Label>
     <String>Utilisez de la nourriture pour construire une ville qui augmentera la capacité en population de votre colonie.</String>
   </StringTable>
-  
   <StringTable>
     <Label>RequiredTech</Label>
     <String>Tech {CONDITION} nécessaire</String>
@@ -20784,10 +20783,6 @@
   <StringTable>
     <Label>RequiredTrait</Label>
     <String>{CONDITION} trait de civilisation requis</String>
-  </StringTable>
-  <StringTable>
-    <Label>RequiredCitizenRace</Label>
-    <String>{CONDITION} biologie requise</String>
   </StringTable>
   <StringTable>
     <Label>RequiredGalaxySize</Label>
@@ -21615,7 +21610,7 @@
   </StringTable>
   <StringTable>
     <Label>CrimePenalty_Desc</Label>
-    <String>Il y a trop de criminalité</String>
+    <String>Il y a un crime</String>
   </StringTable>
   <StringTable>
     <Label>MutantPenalty_Desc</Label>
@@ -24027,7 +24022,7 @@
   </StringTable>
   <StringTable>
     <Label>TaxRateTooltip</Label>
-    <String>Modifie [HS=HS_Taxes]Taux d'Impôt[/HS] à {VALUE:0} %% et ajuste [HS=HS_Approval]Approbation[/HS] de {VALUE:1} %%</String>
+    <String>Modifie [HS=HS_Taxes]Taux d'Impôt[/HS] à {VALUE:0}% et ajuste [HS=HS_Approval]Approbation[/HS] de {VALUE:1}%</String>
   </StringTable>
   <StringTable>
     <Label>NeedGovernmentTierUpgradeAvailable</Label>
@@ -25553,7 +25548,6 @@
     <Label>SHIP_DESIGNER_AdvancedEditMode</Label>
     <String>Mode d'édition avancé</String>
   </StringTable>
-  
   <StringTable>
     <Label>MultiplayerGameListWnd_SortByGameName_Tooltip</Label>
     <String>Tri par : [COLOR=UIDefaultHot]Nom du jeu[/COLOR]</String>
@@ -25626,11 +25620,16 @@
     <Label>HighlightPlanetTiles</Label>
     <String>Mettez en évid. les tuiles planète</String>
   </StringTable>
-  
-  
   <StringTable>
     <Label>END_UITEXT</Label>
     <String>End French UIText</String>
   </StringTable>
-  
+  <StringTable>
+    <Label>SHIP_DESIGNER_TAB_SUPPORT</Label>
+    <String>Support</String>
+  </StringTable>
+  <StringTable>
+    <Label>EnableCheats</Label>
+    <String>Activer la console de triche</String>
+  </StringTable>
 </StringTableList>

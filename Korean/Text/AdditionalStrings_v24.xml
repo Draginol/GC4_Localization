@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StringTableList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schema/Lib/StringTable.xsd">
+  <StringTable>
+    <Label>OperationalAbility_Noncombatant_Name</Label>
+    <String>비전투 참여 제외</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_Option0_0</Label>
+    <String>{PLAYERFACTION:1}은 지상 및 외계 세력 중 하나로, 우주를 지배하기 위한 은하 규모의 경쟁에서 경쟁자입니다. 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}. 다음과 같은 특성을 가지고 있습니다: {PLAYERTRAITS:1}</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_BIOLOGY_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 다음 중 어떤 생물학이 더 적용 가능한 것 같습니까. '''1. 지상의 탄소 기반 생명; 2. 수생 기반 생명; 3. 실리콘 기반 생명; 4. 로봇 또는 합성; 5. 암모니아 기반 생명''' 예를 들어, 어떤 이족보행 또는 사족보행 동물은 '''1''', 어떤 물고기나 다른 해양 생명은 '''2''', 어떤 부분적으로 전자적인 존재는 '''3''', 어떤 완전히 제조된 존재는 '''4''', 어떤 기체 상태의 존재는 '''5'''입니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 이 종의 창의적인 단어 이름을 제시하십시오. 기억하십시오, 이 종을 명명하기 위해 오직 단어 하나만 출력하십시오.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 이 종족의 시민들에 대한 창의적인 두 문장 설명을 제시하세요. 
+기억하세요, 설명은 문명이 아닌 시민들에 관한 것입니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_AFFINITY_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 다음 중 가장 적합한 초점은 무엇입니까? 이에 해당하는 숫자를 출력하십시오: '''1 전체주의; 2. 평화주의; 3. 니힐리즘; 4 집단주의; 5 진보주의; 6. 개인주의; 7. 평등주의; 8. 전통주의;''' 주석 없이 숫자만 출력하십시오.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CULTURAL_PERSONALITY_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 다음 중 가장 적합한 두 가지 초점은 무엇입니까? 이에 해당하는 숫자의 쉼표로 구분된 목록을 출력하십시오: '''{RACEPERSONALITIES:1}''' 주석 없이 숫자의 쉼표로 구분된 목록만 출력하십시오. 출력 형식은 다음과 같아야 합니다: '''17, 13'''</String>
+  </StringTable>
+  <StringTable>
+    <Label>RACE_TRAITS_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 기반으로, 그들을 가장 잘 설명하는 특성의 번호를 출력하세요. 여기 특성들이 있습니다. '''{RACETRAITS:1}''' 설명 없이 단일 번호만 출력하세요.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_SPECIES_CATEGORY_PROMPT_Option0_0</Label>
+    <String>이 짧은 설명을 바탕으로, 공상 과학 우주에서 그들을 대표할 수 있는 종을 가장 잘 설명하는 항목을 선택하십시오. 이제 그들을 가장 잘 설명하는 종을 선택하십시오: '''1. 인간; 2. 엘프; 3. 인간형 고양이; 4. 호랑이와 같은 고양이과 동물; 5. 로봇; 6. 뱀파이어; 7. 드래곤; 8. 새; 9. 양서류; 10. 개; 11. 나방; 12. 수정; 13. 나무; 14. 파충류; 15. 악마; 16. 아름다운 여성; 17. 인간형; 18. 드워프; 19. 사이보그; 20. 식물; 21. 좀비; 22. 거미; 23. 구름; 24. 균류; 25. 연체동물; 26. 포유류; 27. 큐비람; 28. 코끼리; 29. 프로메테우스; 30. 회색 외계인; 31. 두족류; 32. 도마뱀; 33. 곤충; 34. 돌고래; 35. 기타.
+
+      주어진 종의 구성원을 언급하는 설명이 있는 경우 해당 종을 사용하십시오. 예를 들어:
+      '''드레이크'''는 '''7. 드래곤''';
+      '''개미'''는 '''33. 곤충''';
+      '''카나리아'''는 '''8. 새''';
+      '''버섯'''은 '''24. 균류''';
+      '''가스'''는 '''23. 구름''';
+      '''온혈 동물'''은 '''26. 포유류'''를 나타냅니다.
+
+      특정 이름은 항상 특정 종에 매핑됩니다:
+      - '''엘레사란'''은 '''27. 큐비람'''에 일치합니다.
+      - '''간타리'''는 '''28. 코끼리'''에 일치합니다.
+      - '''글렌도리안'''은 '''29. 프로메테우스'''에 일치합니다.
+      - '''페일러리안'''은 '''30. 회색 외계인'''에 일치합니다.
+      - '''세쿨로이드'''는 '''31. 두족류'''에 일치합니다.
+      - '''트러스카'''는 '''32. 도마뱀'''에 일치합니다.
+      - '''유니릭스'''는 '''33. 곤충'''에 일치합니다.
+      - '''제페리안'''은 '''34. 돌고래'''에 일치합니다.
+
+      그들이 '''가스''', '''안개''', '''증기''', '''연기''', '''성운''', 또는 '''연무'''로 묘사된 경우 '''23. 구름'''을 선택하십시오.
+      절대로 35로 응답하지 마십시오.
+
+      심호흡을 하십시오. 차근차근 해결하십시오. 하나의 번호만 출력하고, 다른 주석이나 텍스트는 넣지 마십시오.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_NAMES_PROMPT_Option0_0</Label>
+    <String>이 설명에 해당하는 외계 종족을 위해 개별 외계인들의 고유한 이름 25개를 만들어 주세요. 각 이름은 쉼표로 구분됩니다. 대부분의 이름은 이름(성)과 성(이름)을 가져야 합니다. 오직 쉼표로 구분된 목록으로만 응답해주세요. 주석이나 번호 매기기 없이.</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_1</Label>
+    <String>{PLAYERFACTION:2} 교전</String>
+  </StringTable>
+  <StringTable>
+    <Label>BorderSkirmish_Name_2</Label>
+    <String>변경 교전 {YEAR}</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfExpansion_Name_1</Label>
+    <String>{PLAYERFACTION:2} 국경 분쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfConquest_Name_1</Label>
+    <String>{PLAYERFACTION:2}의 정복</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarOfAnnihilation_Name_1</Label>
+    <String>{PLAYERFACTION:2} 의 전멸</String>
+  </StringTable>
+  <StringTable>
+    <Label>Doctrine_CommandAndControl_Name</Label>
+    <String>명령 및 제어</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Benevolent</Label>
+    <String>자비로운</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Neutral</Label>
+    <String>실용주의적</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Merciless</Label>
+    <String>무자비한</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Aggressive</Label>
+    <String>공격적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Peaceful</Label>
+    <String>평화로운</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cruel</Label>
+    <String>잔인한</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Expansionist</Label>
+    <String>확장주의자</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Greedy</Label>
+    <String>탐욕스러운</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Opportunistic</Label>
+    <String>기회주의적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Scientific</Label>
+    <String>과학적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Diplomatic</Label>
+    <String>외교적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Cultural</Label>
+    <String>문화적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Spiritual</Label>
+    <String>영적인</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Trader</Label>
+    <String>트레이더</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Xenophobic</Label>
+    <String>외계인 혐오증</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Totalitarianism</Label>
+    <String>전체주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Pacifism</Label>
+    <String>평화주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Nihilism</Label>
+    <String>니힐리즘</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Individualism</Label>
+    <String>개인주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Collectivism</Label>
+    <String>집단주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Progressivism</Label>
+    <String>진보주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Egalitarianism</Label>
+    <String>평등주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>PersonalityTypeShort_Traditionalism</Label>
+    <String>전통주의</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowObject_DefaultFormat</Label>
+    <String>{OBJECTNAME}을(를) 허용함</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockObject_DefaultFormat</Label>
+    <String>블록 {OBJECTNAME}</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowTech_Format</Label>
+    <String>{TECHNAME} 기술을 허용함</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockTech_Format</Label>
+    <String>블록스 {TECHNAME} 테크</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowsOrbitalImprovement_Format</Label>
+    <String>{OBJECTNAME} 궤도 개선을 허용합니다</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockOrbitalImprovement_Format</Label>
+    <String>{OBJECTNAME} 궤도 개선을 차단합니다</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowPlanetaryImprovement_Format</Label>
+    <String>{OBJECTNAME} 행성 개선을 허용함</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockPlanetaryImprovement_Format</Label>
+    <String>{OBJECTNAME} 행성 개선을 차단합니다</String>
+  </StringTable>
+  <StringTable>
+    <Label>AllowEO_Format</Label>
+    <String>{OBJECTNAME} 집행 명령 해제</String>
+  </StringTable>
+  <StringTable>
+    <Label>BlockEO_Format</Label>
+    <String>블록 {OBJECTNAME} 집행 명령</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_2DIGITVLUE</Label>
+    <String>00</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LongShipName</Label>
+    <String>T.A.S. 롱쉽네임 M2-001</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Round</Label>
+    <String>라운드 1</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_LogTitle</Label>
+    <String>전투 기록</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShipClass</Label>
+    <String>선박 등급 이름</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowLog</Label>
+    <String>전투 기록 보기</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Targeting</Label>
+    <String>타겟팅</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_WeaponName</Label>
+    <String>무기 이름</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_AttackPotential</Label>
+    <String>[ICON=AttackIcon] 공격 (잠재력)</String>
+  </StringTable>
+  <StringTable>
+    <Label>Battle_Log_FullyDefended</Label>
+    <String>완전히 방어함</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Absorption</Label>
+    <String>[ICON=AbsorptionIcon] 흡수됨</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Evasion</Label>
+    <String>[ICON=EvasionIcon] 회피됨</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_Mitigated</Label>
+    <String>[ICON=MitigationIcon] 완화됨</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_NoTarget</Label>
+    <String>대상을 확보 중...</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Completed_Actions</Label>
+    <String>전쟁 목표 달성</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Progress</Label>
+    <String>진행 상황</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Justification</Label>
+    <String>전쟁목표_정당화</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Remaining</Label>
+    <String>[ICON=JustificationStatIcon] 남은 월 수</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_Time_Over</Label>
+    <String>[ICON=JustificationStatIcon] 초과 근무 개월 수</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Name</Label>
+    <String>펠라인 파탈스</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_CatGirl_Dec</Label>
+    <String>신비롭고 민첩한, 펠라인 파탈스는 그들의 빠른 반사 신경과 호기심 많지만 종종 위험한 성격으로 알려져 있다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Name</Label>
+    <String>사이보그들</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Cyborg_Dec</Label>
+    <String>기계와 살의 융합으로, 사이보그는 그들의 향상된 능력과 회복력으로 알려져 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Name</Label>
+    <String>우주 악마들</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Demon_Dec</Label>
+    <String>무시무시한 명성으로, 데몬은 그들의 강력한 어둠의 테크노 마법과 위협적인 존재감으로 알려져 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Name</Label>
+    <String>우주 드워프들</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Dwarves_Dec</Label>
+    <String>튼튼하고 강건한 드워프는 다양한 세계의 지하를 사랑하며 그들의 장인 정신으로 유명합니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Name</Label>
+    <String>우주 엘프들</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Elves_Dec</Label>
+    <String>우아하며 자연과 조화를 이루는 엘프들은 기술 마법과 고대의 전설에 대해 깊은 지식을 가지고 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Name</Label>
+    <String>별 개구리들</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Frog_Dec</Label>
+    <String>개구리는 뛰어난 도약 능력과 독특한 생존 기술로 알려져 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Name</Label>
+    <String>휴머노이드</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Humanoid_Dec</Label>
+    <String>다양하고 적응력이 뛰어난 휴머노이드는 다양한 환경과 사회에서 번성할 수 있는 능력을 가지고 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Name</Label>
+    <String>도마뱀</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Lizard_Dec</Label>
+    <String>한랭혈과 교활함으로, 리자드들은 그들의 생존 본능과 빠른 민첩성으로 알려져 있다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Name</Label>
+    <String>감각이 있는 식물</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Plant_Dec</Label>
+    <String>성장하고 번창하는 식물들은 자연 세계와 그 에너지에 대한 독특한 연결을 가지고 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Name</Label>
+    <String>뱀파이릭</String>
+  </StringTable>
+  <StringTable>
+    <Label>Race_Vampire_Dec</Label>
+    <String>신비롭고 매혹적인, 뱀파이어는 그들의 보이는 불멸과 강력한 준-신비적 능력으로 알려져 있습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Name</Label>
+    <String>방어 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_BorderSkirmish_Desc</Label>
+    <String>단기간의 전쟁으로, 공격을 선제적으로 차단하고 국경을 보호하려는 의도입니다. 방어 전쟁을 선언하면 소규모 외교적 패널티가 있습니다.[BR][BR][HS=HS_AggressiveNeighbor]공격적 이웃[/HS]을 얻습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Name</Label>
+    <String>확장 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfExpansion_Desc</Label>
+    <String>국경을 확장하고 영향력을 퍼뜨리기 위한 의도를 가진 중간 길이의 전쟁. 확장 전쟁을 선언하면 외교적 불이익을 받게 됩니다.[BR][BR][HS=HS_DangerousNeighbor]위험한 이웃[/HS]을 얻습니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Name</Label>
+    <String>정복의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfConquest_Desc</Label>
+    <String>적국의 광활한 영토를 차지하려는 의도로 벌이는 장기전입니다. 정복 전쟁을 선포하면 더욱 가혹한 외교적 처벌을 받게 됩니다.[BR][BR][HS=HS_GalacticThreat]은하 위협[/HS]을 획득합니다</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Name</Label>
+    <String>멸망의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAims_WarOfAnnihilation_Desc</Label>
+    <String>적대 문명을 완전히 제거하려는 의도로 진행되는 장기 전쟁입니다. 파멸의 전쟁을 선언하면 심각한 외교적 불이익을 받게 됩니다.[BR][BR][HS=HS_ClearAndPresentDanger]명백하고 현존하는 위험[/HS]을 얻습니다</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Name</Label>
+    <String>코어 월드를 정복하다</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Completed_Name</Label>
+    <String>핵심 세계 정복됨</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureCoreWorld_Desc</Label>
+    <String>+5 전쟁 목표 점수</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Name</Label>
+    <String>식민지 정복</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Completed_Name</Label>
+    <String>식민지 정복 완료</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureColony_Desc</Label>
+    <String>+2 전쟁 목표 점수</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Name</Label>
+    <String>스타베이스 정복</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Completed_Name</Label>
+    <String>별기지 정복됨</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_CaptureStarbase_Desc</Label>
+    <String>+1 전쟁 목표 점수</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Name</Label>
+    <String>함대 전투 승리</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Completed_Name</Label>
+    <String>함대 전투 승리</String>
+  </StringTable>
+  <StringTable>
+    <Label>WarAction_WonFleetBattle_Desc</Label>
+    <String>전쟁 목표 점수는 적 함대의 전투 등급의 10%가 부여됩니다.</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_AggressiveNeighbor</Label>
+    <String>공격적인 이웃</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_DangerousNeighbor</Label>
+    <String>위험한 이웃</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_GalacticThreat</Label>
+    <String>은하 위협</String>
+  </StringTable>
+  <StringTable>
+    <Label>DiplomaticModifier_ClearAndPresentDanger</Label>
+    <String>명확하고 현재의 위험</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_BORDER_SKIRMISH_GENERIC_1</Label>
+    <String>방어의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_EXPANSION_GENERIC_1</Label>
+    <String>확장의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_CONQUEST_GENERIC_1</Label>
+    <String>정복의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>WAR_NAME_ANNIHILATION_GENERIC_1</Label>
+    <String>멸망의 전쟁</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_ShowShipHud</Label>
+    <String>선박 HUD 표시</String>
+  </StringTable>
+  <StringTable>
+    <Label>BV_HideShipHud</Label>
+    <String>선박 HUD 숨기기</String>
+  </StringTable>
+  <StringTable>
+    <Label>PlanetWnd_Next_Citizen_Reserved_Slot</Label>
+    <String>이송 중인 시민을 위한 보류 공간</String>
+  </StringTable>
+  <StringTable>
+    <Label>Population_ReservedUnits_Tooltip</Label>
+    <String>이 행성으로 이동 중인 {VALUE} 명의 시민들.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivName_Label</Label>
+    <String>문명 이름</String>
+  </StringTable>
+  <StringTable>
+    <Label>CustomCiv_CivShortName_Label</Label>
+    <String>문명 짧은 이름</String>
+  </StringTable>
+  <StringTable>
+    <Label>CITIZEN_DESCRIPTION_PRETEXT_NO_TRAITS_Option0_0</Label>
+    <String>지상 및 외계 파벌 중 하나를 고려하십시오. 이들은 우주를 지배하기 위한 은하 규모의 경쟁에서 경쟁자입니다. 그들은 다음과 같이 설명됩니다: {PLAYERFACTIONDESCRIPTION:1}.</String>
+  </StringTable>
+</StringTableList>

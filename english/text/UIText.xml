@@ -3617,6 +3617,10 @@
     <String>Luxar</String>
   </StringTable>
   <StringTable>
+		<Label>SHIP_DESIGNER_CATEGORY_SCO</Label>
+		<String>SCO</String>
+	</StringTable>
+  <StringTable>
     <Label>SHIP_DESIGNER_CATEGORY_Navigators</Label>
     <String>Navigators</String>
   </StringTable>
@@ -5232,6 +5236,10 @@
     <Label>QUICKBUILDPLANETBUTTON</Label>
     <String>Construct Ship</String>
   </StringTable>
+	<StringTable>
+		<Label>INACCESSIBLEINSHIPYARD</Label>
+		<String>Unavailable in Shipyard Screen</String>
+	</StringTable>
   <StringTable>
     <Label>DEFENSESTABLABEL</Label>
     <String>Defenses</String>
@@ -5320,9 +5328,13 @@
     <Label>STARCONTEXT_DATA_PLANETS</Label>
     <String>[ICON=Planets_Icon]</String>
   </StringTable>
+	<StringTable>
+		<Label>STARCONTEXT_DATA_DEAD_PLANETS</Label>
+		<String>[ICON=Dead_Planets_Icon]</String>
+	</StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_ASTEROIDS</Label>
-    <String>[ICON=Stat_Productive_Icon]</String>
+    <String>[ICON=Asteroids_Stat_Icon]</String>
   </StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_RESOURCES</Label>
@@ -5336,6 +5348,10 @@
     <Label>STARCONTEXT_DATA_PLANETS_TEXT</Label>
     <String>Planets</String>
   </StringTable>
+	<StringTable>
+		<Label>STARCONTEXT_DATA_DEAD_PLANETS_TEXT</Label>
+		<String>Dead Planets</String>
+	</StringTable>
   <StringTable>
     <Label>STARCONTEXT_DATA_ASTEROIDS_TEXT</Label>
     <String>Asteroids</String>
@@ -6057,6 +6073,10 @@
     <String>Enable Mods</String>
   </StringTable>
   <StringTable>
+    <Label>EnableCheats</Label>
+    <String>Enable Cheat Console</String>
+  </StringTable>
+  <StringTable>
     <Label>EnableTutorial</Label>
     <String>Enable Tutorial</String>
   </StringTable>
@@ -6379,6 +6399,10 @@
   <StringTable>
     <Label>ShowAutoPilotLines</Label>
     <String>Show All Fleet Paths</String>
+  </StringTable>
+  <StringTable>
+    <Label>ShowDestinationMarker</Label>
+    <String>Show Destination Marker</String>
   </StringTable>
   <StringTable>
     <Label>MANUFACTURINGSPENDINGRATIOLABEL</Label>
@@ -7302,7 +7326,7 @@
   </StringTable>
   <StringTable>
     <Label>PERCENT_STRING</Label>
-    <String>{AMOUNT} %</String>
+    <String>{AMOUNT}%</String>
   </StringTable>
   <StringTable>
     <Label>MULTIPLY_FORMAT</Label>
@@ -7344,6 +7368,10 @@
     <Label>OBSOLETE_LABEL</Label>
     <String>Obsolete</String>
   </StringTable>
+    <StringTable>
+	    <Label>OBSOLETE_WARNING</Label>
+	    <String>Obsoleting a ship design will remove it entirely from the current game. Is this ok?</String>
+    </StringTable>
   <StringTable>
     <Label>MISSING_STRING_LABEL</Label>
     <String>Missing String</String>
@@ -7797,6 +7825,10 @@
     <String>Idling</String>
   </StringTable>
   <StringTable>
+    <Label>IDLE_ACTION_LABEL_ALT_FOR_SEARCH</Label>
+    <String>Idle</String>
+  </StringTable>
+  <StringTable>
     <Label>SIEGE_ACTION_LABEL</Label>
     <String>Besieging (%lu [HS=HS_Week]Months[/HS] remaining)</String>
   </StringTable>
@@ -7806,7 +7838,7 @@
   </StringTable>
   <StringTable>
     <Label>STATION_ACTION_LABEL</Label>
-    <String>Stationed</String>
+    <String>Stationed at {OBJECTNAME}</String>
   </StringTable>
   <StringTable>
     <Label>DO_SURVEY_ACTION_LABEL</Label>
@@ -8207,6 +8239,10 @@
   <StringTable>
     <Label>SHIP_DESIGNER_TAB_SPECIAL</Label>
     <String>Special</String>
+  </StringTable>
+  <StringTable>
+    <Label>SHIP_DESIGNER_TAB_SUPPORT</Label>
+    <String>Support</String>
   </StringTable>
   <StringTable>
     <Label>QUEUEEJECTSHIPSBUTTONLABEL</Label>
@@ -8982,19 +9018,19 @@
   </StringTable>
   <StringTable>
     <Label>ASSAULT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Fighters</String>
+    <String>Assault Fighters</String>
   </StringTable>
   <StringTable>
     <Label>INTERCEPTOR_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Fighters</String>
+    <String>Interceptor Fighters</String>
   </StringTable>
   <StringTable>
     <Label>ESCORT_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Fighters</String>
+    <String>Escort Fighters</String>
   </StringTable>
   <StringTable>
     <Label>GUARDIAN_FIGHTER_FLEETTOOLTIP</Label>
-    <String>Fighters</String>
+    <String>Guardian Fighters</String>
   </StringTable>
   <StringTable>
     <Label>BONUS_SOURCE_FIGHTERS</Label>
@@ -9084,6 +9120,17 @@
     <Label>TURNDISTANCETITLE</Label>
     <String>Distance</String>
   </StringTable>
+  
+  <StringTable>
+    <Label>TURN_DISTANCE_SINGULAR</Label>
+    <String>{AMOUNT} Month</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>TURN_DISTANCE_PLURAL</Label>
+    <String>{AMOUNT} Months</String>
+  </StringTable>
+  
   <StringTable>
     <Label>DISBANDBUTTON</Label>
     <String>Disband</String>
@@ -9190,19 +9237,19 @@
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_CULTURAL</Label>
-    <String>Give a 25% bonus to influence per [HS=HS_Week]Month[/HS] to both civilizations through the sharing of culture.</String>
+    <String>Give a {AMOUNT} bonus to {STATNAME} per [HS=HS_Week]Month[/HS] to both civilizations through the sharing of culture.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_FREETRADE</Label>
-    <String>Give a 25% bonus to the wealth of both civilizations though the sharing of Markets.</String>
+    <String>Give a {AMOUNT}bonus to the {STATNAME} of both civilizations though the sharing of Markets.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_SLAVE</Label>
-    <String>Give a 25% bonus to colony manufacturing and wealth to the other civilization by agreeing to open slave markets.</String>
+    <String>Give a {AMOUNT} bonus to colony manufacturing and wealth to the other civilization by agreeing to open slave markets.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_ResearchTradeTreaty</Label>
-    <String>Give a 25% bonus to research of both civilizations though the sharing of Technologies.</String>
+    <String>Give a {AMOUNT} bonus to {STATNAME} of both civilizations though the sharing of Technologies.</String>
   </StringTable>
   <StringTable>
     <Label>TREATY_DESCRIPTION_STRATEGICRESOURCE</Label>
@@ -11255,12 +11302,28 @@
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT</Label>
-    <String>Choose the default race of the citizens in your civilization</String>
+    <String>Choose the default species of the citizens in your civilization</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_PIC_CITIZENRACE_INFOTEXT2</Label>
     <String> </String>
   </StringTable>
+
+  <StringTable>
+    <Label>CUSTOM_FACTION_CHOOSE_PIC_LOADING_TITLE</Label>
+    <String>Loading</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>CUSTOM_FACTION_CHOOSE_PIC_LOADING_INFOTEXT</Label>
+    <String>Loading...</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>CUSTOM_FACTION_CHOOSE_PIC_LOADING_INFOTEXT2</Label>
+    <String> </String>
+  </StringTable>
+
   <StringTable>
     <Label>CUSTOM_FACTION_CHOOSE_STAR_SYSTEM_TITLE</Label>
     <String>Choose a Home Star System</String>
@@ -13246,7 +13309,15 @@
     <Label>Policies_Approval_With_Icon</Label>
     <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
   </StringTable>
-  <StringTable>
+	<StringTable>
+		<Label>Policies_Approval_Icon_Only</Label>
+		<String>[ICON=Stat_Morale_Icon]</String>
+	</StringTable>
+	<StringTable>
+		<Label>Policies_TaxRate_Icon_Only</Label>
+		<String>[ICON=GC_TextRate_Icon]</String>
+	</StringTable>
+	<StringTable>
     <Label>Policies_Government_With_Icon</Label>
     <String>[ICON=Stat_Morale_Icon] [HS=HS_Approval]Approval[/HS]</String>
   </StringTable>
@@ -13254,6 +13325,18 @@
     <Label>GROWTH_TOOLTIP_DESCRIPTION</Label>
     <String>Growth comes from the non-synthetic citizens on your world. Planetary Improvements and Citizen Roles can be leveraged to increase Growth. However, Growth can also be significantly decreased on worlds with high pollution.</String>
   </StringTable>
+	<StringTable>
+		<Label>APPROVAL_ICON_HAPPY</Label>
+		<String>[ICON=APPROVAL_HAPPY_ICON]</String>
+	</StringTable>
+	<StringTable>
+		<Label>APPROVAL_ICON_CONTENT</Label>
+		<String>[ICON=APPROVAL_CONTENT_ICON]</String>
+	</StringTable>
+	<StringTable>
+		<Label>APPROVAL_ICON_SAD</Label>
+		<String>[ICON=APPROVAL_SAD_ICON]</String>
+	</StringTable>
   <StringTable>
     <Label>APPROVAL_TITLE_HAPPY</Label>
     <String>[ICON=APPROVAL_HAPPY_ICON] Approval</String>
@@ -13568,11 +13651,11 @@
   </StringTable>
   <StringTable>
     <Label>CanSupplySocial_Value</Label>
-    <String>Hauls refined goods to another colony providing %ld manufacturing points.</String>
+    <String>Hauls refined goods to another colony providing %ld Stored Goods.</String>
   </StringTable>
   <StringTable>
     <Label>CanSupplyMilitary_Value</Label>
-    <String>Hauls refined goods to another shipyard providing %ld manufacturing points.</String>
+    <String>Hauls refined goods to another shipyard providing %ld Storeed Goods.</String>
   </StringTable>
   <StringTable>
     <Label>CUSTOM_FACTION_WND_SAVE_FAILED_TITLE</Label>
@@ -14459,6 +14542,14 @@
     <String>Self</String>
   </StringTable>
   <StringTable>
+     <Label>STARBASE_EFFECTS_OWNER_SHIPS_AND_COLONIES</Label>
+     <String>Colonies and Ships</String>
+  </StringTable>
+  <StringTable>
+	<Label>STARBASE_EFFECTS_ENEMY_SHIPS_AND_COLONIES</Label>
+    <String>Enemy Colonies and Ships</String>
+  </StringTable>
+  <StringTable>
     <Label>STARBASE_EFFECTS_HEADER_OWNER_SHIPS</Label>
     <String>Ships and Fleets</String>
   </StringTable>
@@ -14477,6 +14568,10 @@
   <StringTable>
     <Label>STARBASE_EFFECTS_HEADER_ENEMY_COLONIES</Label>
     <String>Enemy Colonies</String>
+  </StringTable>
+  <StringTable>
+    <Label>STARBASE_EFFECTS_HEADER_RELICS_AND_ASCENSION_GATES</Label>
+    <String>Relics and Ascension Crystals</String>
   </StringTable>
   <StringTable>
     <Label>STARBASE_EFFECTS_HEADER_RELICS</Label>
@@ -14660,8 +14755,16 @@
   </StringTable>
   <StringTable>
     <Label>STACKED_SHIP_BAR_TITLE</Label>
-    <String>Stacked Ships or Fleets:</String>
+    <String>Ships or Fleets Stacked in tile.</String>
   </StringTable>
+	<StringTable>
+		<Label>STACKED_SHIP_BAR_UP</Label>
+		<String>Move Up</String>
+	</StringTable>
+	<StringTable>
+		<Label>STACKED_SHIP_BAR_DOWN</Label>
+		<String>Move Down</String>
+	</StringTable>
   <StringTable>
     <Label>RALLY_CONTEXT_UPGRADE_FLEET_ERROR</Label>
     <String>Can only upgrade individual ships.</String>
@@ -14712,7 +14815,7 @@
   </StringTable>
   <StringTable>
     <Label>PLAYERACHIEVEMENT_HSTEXT</Label>
-    <String>Only one of this improvement can be built per civilization.</String>
+    <String>Only one of this improvement can be built and in use per civilization.</String>
   </StringTable>
   <StringTable>
     <Label>IMP_TOOLTIP_COLONYUNIQUE</Label>
@@ -14826,6 +14929,10 @@
     <Label>Hotkey_CompleteTechResearch</Label>
     <String>Complete Tech Research</String>
   </StringTable>
+	<StringTable>
+		<Label>Hotkey_PlaceRallyPoint</Label>
+		<String>Place Rally Point</String>
+	</StringTable>
   <StringTable>
     <Label>Hotkey_SpewShownWindows</Label>
     <String>List Visible Windows</String>
@@ -15569,6 +15676,10 @@
   <StringTable>
     <Label>UPLOADMOD_FACTION_INFO_TEXT</Label>
     <String>The following name and description will appear in the Workshop. Use these to let players know what makes your Civilization special and why they should consider downloading it.</String>
+  </StringTable>
+  <StringTable>
+    <Label>UPLOADMOD_SPECIES_INFO_TEXT</Label>
+    <String>The following name and description will appear in the Workshop. Use these to let players know what makes your Species special and why they should consider downloading it.</String>
   </StringTable>
   <StringTable>
     <Label>UPLOADMOD_SHIP_INFO_TEXT</Label>
@@ -17976,7 +18087,7 @@
   </StringTable>
   <StringTable>
     <Label>STARBASE_TYPE_TYPE</Label>
-    <String>Starbase Type:</String>
+    <String>Starbase Type</String>
   </StringTable>
   <StringTable>
     <Label>CHOOSE_TECH</Label>
@@ -18189,6 +18300,14 @@
   <StringTable>
     <Label>MOD_TYPE_CIV_DESCRIPTION</Label>
     <String>Play as a new Faction</String>
+  </StringTable>
+  <StringTable>
+    <Label>MOD_TYPE_SPECIES</Label>
+    <String>Species</String>
+  </StringTable>
+  <StringTable>
+    <Label>MOD_TYPE_SPECIES_DESCRIPTION</Label>
+    <String>New Species to create custom Factions</String>
   </StringTable>
   <StringTable>
     <Label>MOD_TYPE_SHIPSTYLESET</Label>
@@ -20194,6 +20313,22 @@
     <String>To use a custom portrait, create a 128x128 PNG image, then copy it here:</String>
   </StringTable>
   <StringTable>
+    <Label>CHOOSE_CITIZEN_ADVISOR_TITLE_MILITARY</Label>
+    <String>Choose Military Advisor Portrait</String>
+  </StringTable>
+  <StringTable>
+    <Label>CHOOSE_CITIZEN_ADVISOR_TITLE_CULTURE</Label>
+    <String>Choose Culture Advisor Portrait</String>
+  </StringTable>
+  <StringTable>
+    <Label>CHOOSE_CITIZEN_ADVISOR_TITLE_ECONOMICS</Label>
+    <String>Choose Economic Advisor Portrait</String>
+  </StringTable>
+  <StringTable>
+    <Label>CHOOSE_CITIZEN_ADVISOR_TITLE_RESEARCH</Label>
+    <String>Choose Research Advisor Portrait</String>
+  </StringTable>
+  <StringTable>
     <Label>CHOOSE_MY_PORTRAITS_LABEL</Label>
     <String>My Portraits</String>
   </StringTable>
@@ -20202,8 +20337,12 @@
     <String>Add Portrait</String>
   </StringTable>
   <StringTable>
+    <Label>CHOOSE_MALE_LABEL</Label>
+    <String>Add Variant Y</String>
+  </StringTable>
+  <StringTable>
     <Label>CHOOSE_FEMALE_LABEL</Label>
-    <String>Add Female</String>
+    <String>Add Variant X</String>
   </StringTable>
   <StringTable>
     <Label>CHOOSE_PORTRAITS_LABEL</Label>
@@ -21153,7 +21292,11 @@
   </StringTable>
   <StringTable>
     <Label>RequiredCitizenRace</Label>
-    <String>{CONDITION} biology required</String>
+    <String>{CONDITION} species required</String>
+  </StringTable>
+  <StringTable>
+    <Label>RequiredPhenotype</Label>
+    <String>{CONDITION} phenotype required</String>
   </StringTable>
   <StringTable>
     <Label>RequiredGalaxySize</Label>
@@ -21995,7 +22138,7 @@
   </StringTable>
   <StringTable>
     <Label>CrimePenalty_Desc</Label>
-    <String>There is too much crime</String>
+    <String>There is crime</String>
   </StringTable>
   <StringTable>
     <Label>MutantPenalty_Desc</Label>
@@ -23485,6 +23628,10 @@
     <Label>CivilizationStandings</Label>
     <String>Civilization Standings</String>
   </StringTable>
+	<StringTable>
+		<Label>CivilizationDetails</Label>
+		<String>Civilization Details</String>
+	</StringTable>
   <StringTable>
     <Label>DiplomaticAdvisor_EnemyStrong</Label>
     <String>We are past the point of words, violence is all that is left. But I urge caution, they mean to wipe us out and they have the power to do it.</String>
@@ -23780,6 +23927,10 @@
   <StringTable>
     <Label>Concept_ShipUpgrade_Name</Label>
     <String>Ship Upgrades</String>
+  </StringTable>
+  <StringTable>
+    <Label>Concept_InstalledShipUpgrades_Name</Label>
+    <String>Installed Upgrades</String>
   </StringTable>
   <StringTable>
     <Label>Concept_ShipUpgrade_Dec</Label>
@@ -24100,6 +24251,10 @@
 	<StringTable>
 		<Label>TradeButtonTooltip</Label>
 		<String>Trade Routes[BR][COLOR=UIDefaultHot]View your civilization's trade routes.[/COLOR]</String>
+	</StringTable>
+	<StringTable>
+		<Label>AutomationButtonTooltip</Label>
+		<String>Automation[BR][COLOR=UIDefaultHot]Give commands to your Shipyards and Fleets.[/COLOR]</String>
 	</StringTable>
 	<StringTable>
 		<Label>TechLeadsToValueFormat</Label>
@@ -24678,8 +24833,40 @@
     <String>Decommission this shipyard for {AMOUNT} [ICON=Stat_Credits_Icon] credits.</String>
   </StringTable>
   <StringTable>
+    <Label>DecommissionStarbaseTooltip</Label>
+    <String>Decommission this starbase for {AMOUNT} [ICON=Stat_Credits_Icon] credits.</String>
+  </StringTable>
+	<StringTable>
+		<Label>DecommissionStructureTooltip</Label>
+		<String>Decommission Mega Structure.</String>
+	</StringTable>
+	<StringTable>
+		<Label>PowerStructureTooltip</Label>
+		<String>Power On / Off Structure.</String>
+	</StringTable>
+	<StringTable>
+		<Label>ManageStructureTooltip</Label>
+		<String>Manage Mega Structure.</String>
+	</StringTable>
+  <StringTable>
     <Label>CreateDesignTooltip</Label>
     <String>Use the Ship Designer to manage your designs or create a new ones.</String>
+  </StringTable>
+  <StringTable>
+    <Label>CultureAdvisorTitle</Label>
+    <String>Culture Advisor</String>
+  </StringTable>
+  <StringTable>
+    <Label>EconomicAdvisorTitle</Label>
+    <String>Economic Advisor</String>
+  </StringTable>
+  <StringTable>
+    <Label>MilitaryAdvisorTitle</Label>
+    <String>Military Advisor</String>
+  </StringTable>
+  <StringTable>
+    <Label>ResearchAdvisorTitle</Label>
+    <String>Research Advisor</String>
   </StringTable>
   <StringTable>
     <Label>CultureAdvisedShip</Label>
@@ -26334,8 +26521,82 @@
 		<String>Tactic Name</String>
 	</StringTable>
 
+	<StringTable>
+		<Label>PopupBattleLogHideTitle</Label>
+		<String>Hide Log</String>
+	</StringTable>
+	
+	<StringTable>
+        <Label>DiscountFromChoices</Label>
+        <String>Event Choices</String>
+    </StringTable>
 
-  <!-- ***************************************************************************** -->
+	<StringTable>
+		<Label>Species_Names_Screen_Title</Label>
+		<String>Add Species Names</String>
+	</StringTable>
+
+  <StringTable>
+    <Label>Species_Names_First_Title</Label>
+    <String>First Name</String>
+  </StringTable>
+  
+	<StringTable>
+		<Label>Species_First_Names_Variant1_Title</Label>
+		<String>Variant Y</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Species_First_Names_Variant2_Title</Label>
+		<String>Variant X</String>
+	</StringTable>
+
+	<StringTable>
+		<Label>Species_Names_Surnames_Title</Label>
+		<String>Surnames</String>
+	</StringTable>
+	
+	<StringTable>
+		<Label>Species_Names_Save_Title</Label>
+		<String>Save Names</String>
+	</StringTable>
+
+  <StringTable>
+    <Label>AreYouSure_LoseSavedChanges_Title</Label>
+    <String>Warning</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>AreYouSure_LoseSavedChanges_Msg</Label>
+    <String>You have unsaved changes, are you sure you want to go back?</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>StatCalc_Entry_Format</Label>
+    <String>{VALUE:0}, {VALUE:1} per {STATNAME}</String>
+  </StringTable>
+    
+  <StringTable>
+    <Label>ApprovalMod_Generic_Entry_Format</Label>
+    <String>{VALUE} - {CONDITION}</String>
+  </StringTable>
+
+  <StringTable>
+    <Label>ApprovalMod_Mult_Entry_Format</Label>
+    <String>{VALUE} per {CONDITION}</String>
+  </StringTable>
+  
+  <StringTable>
+    <Label>ApprovalMod_PercentMult_Entry_Format</Label>
+    <String>Up to {VALUE} based on {CONDITION}</String>
+  </StringTable>
+
+	<StringTable>
+		<Label>Starbase_Colony_Effects</Label>
+		<String>Colony Effects</String>
+	</StringTable>
+
+	<!-- ***************************************************************************** -->
 
   <!-- ******************DO NOT TRANSLATE THIS STRING******************************* -->
   <StringTable>
